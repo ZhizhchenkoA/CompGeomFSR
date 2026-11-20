@@ -1,0 +1,9 @@
+.vscode/
+build/
+CMakeLists.txt.user
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+__pycache__/
+.~lock

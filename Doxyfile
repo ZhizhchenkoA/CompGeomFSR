@@ -1,0 +1,63 @@
+PROJECT_NAME           = "Geometry Workbench"
+PROJECT_BRIEF          = "Интерактивный учебный стенд по компьютерной геометрии"
+PROJECT_NUMBER         = 1.0
+OUTPUT_DIRECTORY       = build/docs
+CREATE_SUBDIRS         = NO
+OUTPUT_LANGUAGE        = Russian
+INPUT                  = src docs/README.md docs/mainpage.md docs/architecture.md
+FILE_PATTERNS          = *.h *.cpp *.md
+RECURSIVE              = YES
+EXCLUDE_PATTERNS       = */build/* */ui_*.h
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+EXTRACT_STATIC         = YES
+HIDE_UNDOC_MEMBERS     = NO
+HIDE_UNDOC_CLASSES     = NO
+WARN_IF_UNDOCUMENTED   = NO
+WARN_IF_DOC_ERROR      = YES
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
+GENERATE_TREEVIEW      = YES
+DISABLE_INDEX          = NO
+SEARCHENGINE           = YES
+SOURCE_BROWSER         = YES
+INLINE_SOURCES         = NO
+REFERENCES_RELATION    = YES
+REFERENCED_BY_RELATION = YES
+ALPHABETICAL_INDEX     = YES
+QUIET                  = NO
+JAVADOC_AUTOBRIEF      = YES
+MULTILINE_CPP_IS_BRIEF = YES
+TAB_SIZE               = 4
+INPUT_ENCODING         = UTF-8
+OUTPUT_LANGUAGE        = Russian
+
+# Graphviz-интеграция: классы, include-зависимости и графы вызовов.
+HAVE_DOT               = YES
+DOT_IMAGE_FORMAT       = svg
+INTERACTIVE_SVG        = YES
+CLASS_GRAPH            = YES
+COLLABORATION_GRAPH    = YES
+GROUP_GRAPHS           = YES
+INCLUDE_GRAPH          = YES
+INCLUDED_BY_GRAPH      = YES
+GRAPHICAL_HIERARCHY    = YES
+CALL_GRAPH             = YES
+CALLER_GRAPH           = YES
+DOT_GRAPH_MAX_NODES    = 80
+UML_LOOK               = YES
+TEMPLATE_RELATIONS     = YES
+
+# Дополнительные артефакты для интеграции с IDE и внешними генераторами.
+GENERATE_XML           = YES
+GENERATE_TAGFILE       = build/docs/geometry-workbench.tag
+GENERATE_HTMLHELP      = NO
+
+# Пример кода отображается в разделе Examples.
+EXAMPLE_PATH           = docs/examples
+EXAMPLE_RECURSIVE      = YES
+
+# Пользовательские команды, которые видны в HTML как отдельные смысловые блоки.
+ALIASES                = "complexity=\\par Complexity:" \
+                         "invariant=\\par Invariant:" \
+                         "educational=\\par Educational note:"

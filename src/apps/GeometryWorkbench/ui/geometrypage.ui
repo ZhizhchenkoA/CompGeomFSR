@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GeometryPage</class>
+ <widget class="QWidget" name="GeometryPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Геометрия</string>
+  </property>
+  <layout class="QHBoxLayout" name="pageLayout">
+   <property name="spacing">
+    <number>16</number>
+   </property>
+   <item>
+    <widget class="QSplitter" name="mainSplitter">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <widget class="QWidget" name="controlPanel" native="true">
+      <layout class="QVBoxLayout" name="controlLayout">
+       <property name="spacing">
+        <number>14</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="pageTitleLabel">
+         <property name="styleSheet">
+          <string notr="true">color: #0f172a; font-size: 28px; font-weight: 700;</string>
+         </property>
+         <property name="text"><string>Предикат поворота</string></property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="taskInfoLabel">
+         <property name="text">
+          <string>Выберите задачу.</string>
+         </property>
+         <property name="styleSheet"><string notr="true">color: #243047; font-size: 16px; line-height: 1.35;</string></property>
+         <property name="wordWrap"><bool>true</bool></property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="onlineCheckBox">
+         <property name="styleSheet"><string notr="true">font-size: 15px; color: #243047;</string></property>
+         <property name="text"><string>Онлайн-пересчёт при перетаскивании</string></property>
+         <property name="checked"><bool>true</bool></property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="calculateButton">
+         <property name="styleSheet"><string notr="true">background: #2563eb; border: none; border-radius: 7px; color: white; font-size: 15px; font-weight: 600; padding: 8px 14px;</string></property>
+         <property name="text"><string>Рассчитать</string></property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="circumcirclesCheckBox">
+         <property name="styleSheet"><string notr="true">font-size: 15px; color: #243047;</string></property>
+         <property name="text"><string>Описанные окружности</string></property>
+         <property name="checked"><bool>true</bool></property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="polygonComboBox">
+         <item>
+          <property name="text"><string>Многоугольник A</string></property>
+         </item>
+         <item>
+          <property name="text"><string>Многоугольник B</string></property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSlider" name="bezierSlider">
+         <property name="minimum"><number>0</number></property><property name="maximum"><number>100</number></property><property name="value"><number>40</number></property>
+         <property name="orientation"><enum>Qt::Horizontal</enum></property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="hintLabel">
+         <property name="wordWrap"><bool>true</bool></property>
+         <property name="text"></property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="resultLabel">
+         <property name="minimumSize"><size><width>0</width><height>44</height></size></property>
+         <property name="styleSheet"><string notr="true">background: white; border: 1px solid #cbd5e1; border-radius: 8px; color: #0f172a; font-size: 16px; font-weight: 600; padding: 8px;</string></property>
+         <property name="text">
+          <string>Результат: —</string>
+         </property>
+         <property name="wordWrap"><bool>true</bool></property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="clearButton">
+         <property name="styleSheet"><string notr="true">background: #e2e8f0; border: none; border-radius: 7px; color: #1e293b; font-size: 15px; font-weight: 600; padding: 8px 14px;</string></property>
+         <property name="text">
+          <string>Очистить</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="otherTaskLabel">
+         <property name="styleSheet"><string notr="true">color: #64748b; font-size: 12px;</string></property>
+         <property name="text"><string>Перейти к другой задаче</string></property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="taskComboBox">
+         <item><property name="text"><string>1. Предикат поворота</string></property></item>
+         <item><property name="text"><string>2. Пересечение двух отрезков</string></property></item>
+         <item><property name="text"><string>3. Предикат с длинной арифметикой</string></property></item>
+         <item><property name="text"><string>4. Автотесты (CTest)</string></property></item>
+         <item><property name="text"><string>5. Выпуклая оболочка</string></property></item>
+         <item><property name="text"><string>6. Триангуляция Делоне</string></property></item>
+         <item><property name="text"><string>7. Пересечение выпуклых (A ∩ B)</string></property></item>
+         <item><property name="text"><string>8. Объединение выпуклых (A ∪ B)</string></property></item>
+         <item><property name="text"><string>9. Разность выпуклых (A \ B)</string></property></item>
+         <item><property name="text"><string>10. Зарезервировано</string></property></item>
+         <item><property name="text"><string>11. Зарезервировано</string></property></item>
+         <item><property name="text"><string>12. Зарезервировано</string></property></item>
+         <item><property name="text"><string>13. Кривые Безье</string></property></item>
+        </widget>
+       </item>
+       <item>
+        <spacer name="controlSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+     <widget class="GeometryCanvas" name="canvas" native="true"/>
+     <widget class="LongArithmeticPage" name="longArithmeticPage" native="true"/>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>GeometryCanvas</class>
+   <extends>QWidget</extends>
+   <header>geometrycanvas.h</header>
+  </customwidget>
+  <customwidget>
+   <class>LongArithmeticPage</class>
+   <extends>QWidget</extends>
+   <header>longarithmeticpage.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
