@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="dir_6a7c92b0021fec4eddd929a8741c2c20" kind="dir">
+    <compoundname>src/lib/geometry_qt</compoundname>
+    <innerfile refid="conversion_8cpp">conversion.cpp</innerfile>
+    <innerfile refid="conversion_8h">conversion.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/lib/geometry_qt/"/>
+  </compounddef>
+</doxygen>

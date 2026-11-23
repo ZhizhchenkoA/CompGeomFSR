@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="dir_49e56c817e5e54854c35e136979f97ca" kind="dir">
+    <compoundname>docs</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<sect1 id="dir_49e56c817e5e54854c35e136979f97ca_1autotoc_md0">
+<title>Geometry Workbench — документация</title></sect1>
+<sect1 id="dir_49e56c817e5e54854c35e136979f97ca_1autotoc_md1">
+<title>Назначение</title><para>Проект — Qt-приложение для интерактивной демонстрации алгоритмов компьютерной геометрии. Пользователь выбирает задачу, задаёт точки кликами или полями ввода, а страница передаёт данные в чистые C++-библиотеки и визуализирует результат.</para>
+</sect1>
+<sect1 id="dir_49e56c817e5e54854c35e136979f97ca_1autotoc_md2">
+<title>Архитектура</title><para><itemizedlist>
+<listitem><para><computeroutput>src/apps/GeometryWorkbench</computeroutput> — приложение Qt: главное окно, выбор задания, холст и формы.</para>
+</listitem><listitem><para><computeroutput>src/lib/geometry</computeroutput> — алгоритмы над точками и многоугольниками без зависимости от Qt: предикаты, пересечения, оболочка, Делоне и булевы операции.</para>
+</listitem><listitem><para><computeroutput>src/lib/geometry_qt</computeroutput> — единственный адаптер координат: экранная ось <computeroutput>Y</computeroutput> направлена вниз, математическая — вверх.</para>
+</listitem><listitem><para><computeroutput>src/lib/bigint</computeroutput> — знаковое целое произвольной длины и точный разбор десятичных чисел для задания 3.</para>
+</listitem><listitem><para><computeroutput>src/lib/bezier</computeroutput> — вычисление кривых Безье и уровней де Кастельжо для задания 13.</para>
+</listitem></itemizedlist>
+</para>
+<para>Алгоритмы не рисуют интерфейс. Они получают значения из модели, возвращают структуры результата, а <computeroutput><ref refid="classGeometryCanvas" kindref="compound">GeometryCanvas</ref></computeroutput> переводит их в экранные координаты и рисует слои: сетку, исходные объекты, результат и легенду.</para>
+</sect1>
+<sect1 id="dir_49e56c817e5e54854c35e136979f97ca_1autotoc_md3">
+<title>Основные алгоритмы</title><para><itemizedlist>
+<listitem><para><computeroutput><ref refid="namespacegeometry_1a1d29367c0cb96e7c1a1b871b786ffacd" kindref="member">geometry::turn</ref></computeroutput> и <computeroutput><ref refid="group__geometry__predicates_1gac3352a32baf1dd7d3620a1748dd4b78a" kindref="member">geometry::cross</ref></computeroutput> — знак ориентированной площади треугольника.</para>
+</listitem><listitem><para><computeroutput><ref refid="namespacegeometry_1a88e1232746c80a5b9704832bd536724d" kindref="member">geometry::intersectSegments</ref></computeroutput> — пересечение отрезков, включая точку, общий участок и вырожденные отрезки.</para>
+</listitem><listitem><para><computeroutput><ref refid="namespacegeometry_1a6dfabff82b63c795670a97271b9908d2" kindref="member">geometry::convexHull</ref></computeroutput> — монотонная цепь Эндрю с удалением дублей и коллинеарных внутренних точек.</para>
+</listitem><listitem><para><computeroutput><ref refid="namespacegeometry_1a9610a583f6dfe92c309727c15b9b3933" kindref="member">geometry::delaunayTriangulation</ref></computeroutput> — инкрементальный Bowyer–Watson со структурой описанных окружностей.</para>
+</listitem><listitem><para><computeroutput><ref refid="namespacegeometry_1a9da2f54b6289b88e936abf857d44ea5e" kindref="member">geometry::convexPolygonBoolean</ref></computeroutput> — операции пересечения, объединения и разности выпуклых многоугольников через разбиение границ на фрагменты и сборку контуров.</para>
+</listitem><listitem><para><computeroutput><ref refid="namespacebigint_1a2646acc61d0e940c36f58f118a5095d1" kindref="member">bigint::exactTurn</ref></computeroutput> — точное вычисление <computeroutput>(B − A) × (P − A)</computeroutput> после приведения десятичных мантисс к общей степени десяти.</para>
+</listitem><listitem><para><computeroutput><ref refid="namespacebezier_1aa6f0140841e402a3cfa3ba2aba8044d0" kindref="member">bezier::deCasteljau</ref></computeroutput> — линейная интерполяция уровней до одной точки; <computeroutput>sample</computeroutput> и <computeroutput>composite</computeroutput> строят полилинии для визуализации.</para>
+</listitem></itemizedlist>
+</para>
+</sect1>
+<sect1 id="dir_49e56c817e5e54854c35e136979f97ca_1autotoc_md4">
+<title>Сборка и запуск</title><para><programlisting filename=".bash"><codeline><highlight class="normal">cmake<sp/>-S<sp/>.<sp/>-B<sp/>build</highlight></codeline>
+<codeline><highlight class="normal">cmake<sp/>--build<sp/>build<sp/>-j2</highlight></codeline>
+<codeline><highlight class="normal">./build/src/apps/GeometryWorkbench/GeometryWorkbench</highlight></codeline>
+</programlisting></para>
+</sect1>
+<sect1 id="dir_49e56c817e5e54854c35e136979f97ca_1autotoc_md5">
+<title>Генерация API-документации</title><para>Нужен установленный <computeroutput>doxygen</computeroutput>:</para>
+<para><programlisting filename=".bash"><codeline><highlight class="normal">doxygen<sp/>Doxyfile</highlight></codeline>
+</programlisting></para>
+<para>Главная страница будет создана в <computeroutput>docs/site/html/index.html</computeroutput>. Из CMake можно использовать цель:</para>
+<para><programlisting filename=".bash"><codeline><highlight class="normal">cmake<sp/>--build<sp/>build<sp/>--target<sp/>docs</highlight></codeline>
+</programlisting></para>
+<para><computeroutput>Doxyfile</computeroutput> читает заголовки и исходники из <computeroutput>src</computeroutput>, извлекает публичные и приватные сущности и сохраняет HTML-дерево с исходниками и перекрёстными ссылками. Каталог <computeroutput>docs/site/html</computeroutput> — готовый статический сайт: его следует добавить в Git вместе с изменениями документации.</para>
+</sect1>
+<sect1 id="dir_49e56c817e5e54854c35e136979f97ca_1autotoc_md6">
+<title>Публикация на GitHub Pages</title><para>В проекте есть workflow <ulink url="../.github/workflows/deploy-docs.yml"><computeroutput>.github/workflows/deploy-docs.yml</computeroutput></ulink>. Он не запускает Doxygen на сервере: workflow публикует уже подготовленный каталог <computeroutput>docs/site/html</computeroutput> на GitHub Pages. Поэтому после изменения комментариев, исходников или <computeroutput>Doxyfile</computeroutput> сначала локально выполните <computeroutput>doxygen Doxyfile</computeroutput>, затем добавьте обновлённый <computeroutput>docs/site</computeroutput> в коммит. Запуск происходит при изменении исходного кода, <computeroutput>docs</computeroutput> или <computeroutput>Doxyfile</computeroutput> в ветках <computeroutput><ref refid="main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" kindref="member">main</ref></computeroutput> и <computeroutput>master</computeroutput>; его также можно запустить вручную через вкладку <bold>Actions</bold>.</para>
+<para>Перед первым запуском в репозитории откройте <bold>Settings → Pages</bold> и выберите источник <bold>GitHub Actions</bold>. После успешного job <computeroutput>Deploy to GitHub Pages</computeroutput> ссылка на опубликованную документацию появится в его выводе и в разделе Pages. Для пользовательского домена настройте его там же: файл <computeroutput>CNAME</computeroutput> сам по себе домен не подключает. </para>
+</sect1>
+    </detaileddescription>
+    <location file="docs/"/>
+  </compounddef>
+</doxygen>

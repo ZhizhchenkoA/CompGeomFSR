@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="bezier_8h" kind="file" language="C++">
+    <compoundname>bezier.h</compoundname>
+    <includes local="no">vector</includes>
+    <includes refid="point_8h" local="yes">geometry/point.h</includes>
+    <includedby refid="geometrypage_8cpp" local="yes">src/apps/GeometryWorkbench/geometrypage.cpp</includedby>
+    <includedby refid="bezier_8cpp" local="yes">src/lib/bezier/bezier.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>src/lib/bezier/bezier.h</label>
+        <link refid="bezier_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>geometry/point.h</label>
+        <link refid="point_8h"/>
+      </node>
+      <node id="2">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>src/apps/GeometryWorkbench/geometrypage.cpp</label>
+        <link refid="geometrypage_8cpp"/>
+      </node>
+      <node id="3">
+        <label>src/lib/bezier/bezier.cpp</label>
+        <link refid="bezier_8cpp"/>
+      </node>
+      <node id="1">
+        <label>src/lib/bezier/bezier.h</label>
+        <link refid="bezier_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespacebezier">bezier</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="point_8h" kindref="compound">geometry/point.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacebezier" kindref="compound">bezier</ref><sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><ref refid="namespacegeometry_1aeac4c2c4d76d3f1bbd0d024a3a242444a2a3cd5946cfd317eb99c3d32e35e2d4c" kindref="member">geometry::Point</ref><sp/><ref refid="namespacebezier_1aa6f0140841e402a3cfa3ba2aba8044d0" kindref="member">deCasteljau</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;geometry::Point&gt;&amp;<sp/>control,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>t);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal">std::vector&lt;std::vector&lt;geometry::Point&gt;&gt;<sp/><ref refid="namespacebezier_1a16319ee9d71db52368b5ce95b86794e2" kindref="member">deCasteljauLevels</ref>(</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;geometry::Point&gt;&amp;<sp/>control,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>t);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal">std::vector&lt;geometry::Point&gt;<sp/><ref refid="namespacebezier_1a3e86093165e34203620df7fe7623a57e" kindref="member">sample</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;geometry::Point&gt;&amp;<sp/>control,</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>count<sp/>=<sp/>160);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal">std::vector&lt;geometry::Point&gt;<sp/><ref refid="namespacebezier_1a501e022e378938e5a58777be3b250155" kindref="member">composite</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;geometry::Point&gt;&amp;<sp/>control,</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>degree,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>countPerSegment<sp/>=<sp/>70);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>bezier</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="src/lib/bezier/bezier.h"/>
+  </compounddef>
+</doxygen>

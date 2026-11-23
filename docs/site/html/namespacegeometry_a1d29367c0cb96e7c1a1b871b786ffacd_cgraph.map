@@ -1,0 +1,5 @@
+<map id="geometry::turn" name="geometry::turn">
+<area shape="rect" id="Node000001" title="Предикат поворота." alt="" coords="5,5,123,33"/>
+<area shape="rect" id="Node000002" href="$group__geometry__predicates.html#gac3352a32baf1dd7d3620a1748dd4b78a" title="Векторное произведение (b &#45; a) x (c &#45; a)." alt="" coords="171,5,296,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="123,17,158,19,153,19,123,22"/>
+</map>

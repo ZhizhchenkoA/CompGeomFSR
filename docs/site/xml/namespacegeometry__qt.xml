@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="namespacegeometry__qt" kind="namespace" language="C++">
+    <compoundname>geometry_qt</compoundname>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacegeometry__qt_1a1b00196f7a1e7ff93f722417814f1dbf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structgeometry_1_1Point" kindref="compound">geometry::Point</ref></type>
+        <definition>geometry::Point geometry_qt::toGeometry</definition>
+        <argsstring>(const QPointF &amp;screen)</argsstring>
+        <name>toGeometry</name>
+        <qualifiedname>geometry_qt::toGeometry</qualifiedname>
+        <param>
+          <type>const QPointF &amp;</type>
+          <declname>screen</declname>
+        </param>
+        <briefdescription>
+<para>Адаптер между экранными координатами Qt и математическими координатами. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Переводит экранную точку в математическую. Экранная ось <computeroutput>Y</computeroutput> направлена вниз; при переводе знак <computeroutput>y</computeroutput> инвертируется. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib/geometry_qt/conversion.cpp" line="5" column="17" bodyfile="src/lib/geometry_qt/conversion.cpp" bodystart="5" bodyend="8" declfile="src/lib/geometry_qt/conversion.h" declline="15" declcolumn="17"/>
+        <referencedby refid="classGeometryPage_1ace1f1e79f6cf90be97a1edf406262102" compoundref="geometrypage_8cpp" startline="590" endline="598">GeometryPage::handleBezierClick</referencedby>
+        <referencedby refid="classGeometryPage_1ac64c55de6638a1a39c54f756e85888a9" compoundref="geometrypage_8cpp" startline="600" endline="605">GeometryPage::handleBezierDrag</referencedby>
+        <referencedby refid="classGeometryPage_1a3a81da70a224b6bcd01c7aebc1a2db6f" compoundref="geometrypage_8cpp" startline="478" endline="488">GeometryPage::handleDelaunayClick</referencedby>
+        <referencedby refid="classGeometryPage_1ac2cb0e682262a2691c98bcdfa18bc48a" compoundref="geometrypage_8cpp" startline="490" endline="500">GeometryPage::handleDelaunayDrag</referencedby>
+        <referencedby refid="classGeometryPage_1aae494f5e3a68d411bc5c8b8a39bb84e4" compoundref="geometrypage_8cpp" startline="438" endline="449">GeometryPage::handleHullClick</referencedby>
+        <referencedby refid="classGeometryPage_1ad4fd2514de86d00ae791f83755aad6a8" compoundref="geometrypage_8cpp" startline="451" endline="461">GeometryPage::handleHullDrag</referencedby>
+        <referencedby refid="classGeometryPage_1a11f51d12b3ffe8de348c7fcee8f4bb8a" compoundref="geometrypage_8cpp" startline="366" endline="389">GeometryPage::handleIntersectionClick</referencedby>
+        <referencedby refid="classGeometryPage_1a2741d6f481328433d778097608c0be1d" compoundref="geometrypage_8cpp" startline="391" endline="401">GeometryPage::handleIntersectionDrag</referencedby>
+        <referencedby refid="classGeometryPage_1a1fa4f035f37dbd61e6cf8c5ce9785883" compoundref="geometrypage_8cpp" startline="524" endline="539">GeometryPage::handlePolygonClick</referencedby>
+        <referencedby refid="classGeometryPage_1a077e9cd0bb0fd57f8b368a813152f78c" compoundref="geometrypage_8cpp" startline="541" endline="556">GeometryPage::handlePolygonDrag</referencedby>
+        <referencedby refid="classGeometryPage_1acdcc0b18c0fa30dd324cd16c23517c7a" compoundref="geometrypage_8cpp" startline="278" endline="299">GeometryPage::handleTurnClick</referencedby>
+        <referencedby refid="classGeometryPage_1a758948c03ae61778e10165f174306c3a" compoundref="geometrypage_8cpp" startline="345" endline="362">GeometryPage::handleTurnDrag</referencedby>
+        <referencedby refid="classGeometryPage_1a66d38697b0496bb09cc5c22c375fc596" compoundref="geometrypage_8cpp" startline="270" endline="274">GeometryPage::on_canvas_cursorMoved</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacegeometry__qt_1ab38550851d7c6704f958a3edd7a2dc56" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QPointF</type>
+        <definition>QPointF geometry_qt::toScreen</definition>
+        <argsstring>(const geometry::Point &amp;geometryPoint)</argsstring>
+        <name>toScreen</name>
+        <qualifiedname>geometry_qt::toScreen</qualifiedname>
+        <param>
+          <type>const <ref refid="structgeometry_1_1Point" kindref="compound">geometry::Point</ref> &amp;</type>
+          <declname>geometryPoint</declname>
+        </param>
+        <briefdescription>
+<para>Обратное преобразование: геометрия -&gt; экран. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib/geometry_qt/conversion.cpp" line="10" column="9" bodyfile="src/lib/geometry_qt/conversion.cpp" bodystart="10" bodyend="13" declfile="src/lib/geometry_qt/conversion.h" declline="18" declcolumn="9"/>
+        <references refid="structgeometry_1_1Point_1ad011726194a14d580d46c95bb1b57404" compoundref="point_8h" startline="14">geometry::Point::x</references>
+        <references refid="structgeometry_1_1Point_1a58d50e43eb0617b09d14b2be1b1d054e" compoundref="point_8h" startline="15">geometry::Point::y</references>
+        <referencedby refid="classGeometryPage_1aa0380120b0b9e766b2e6d3c4d4192b27" compoundref="geometrypage_8cpp" startline="607" endline="620">GeometryPage::computeBezier</referencedby>
+        <referencedby refid="classGeometryPage_1a740f2f65e615aad3fa3d3dafb2fd530f" compoundref="geometrypage_8cpp" startline="502" endline="520">GeometryPage::computeDelaunay</referencedby>
+        <referencedby refid="classGeometryPage_1ae4a1816822912d00197e9cfa375717d1" compoundref="geometrypage_8cpp" startline="463" endline="474">GeometryPage::computeHull</referencedby>
+        <referencedby refid="classGeometryPage_1a589fc5e7e93427a3f2c34679279ec875" compoundref="geometrypage_8cpp" startline="403" endline="434">GeometryPage::computeIntersection</referencedby>
+        <referencedby refid="classGeometryPage_1a73b11409c008e8a002cdf0b5b86d363d" compoundref="geometrypage_8cpp" startline="558" endline="588">GeometryPage::computePolygonOperation</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/lib/geometry_qt/conversion.cpp" line="3" column="1"/>
+  </compounddef>
+</doxygen>

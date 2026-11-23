@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="bigint_8h" kind="file" language="C++">
+    <compoundname>bigint.h</compoundname>
+    <includes local="no">cstdint</includes>
+    <includes local="no">string</includes>
+    <includes local="no">vector</includes>
+    <includedby refid="bigint_8cpp" local="yes">src/lib/bigint/bigint.cpp</includedby>
+    <includedby refid="exact__predicate_8cpp" local="yes">src/lib/bigint/exact_predicate.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>src/lib/bigint/bigint.h</label>
+        <link refid="bigint_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>cstdint</label>
+      </node>
+      <node id="3">
+        <label>string</label>
+      </node>
+      <node id="4">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>src/lib/bigint/bigint.cpp</label>
+        <link refid="bigint_8cpp"/>
+      </node>
+      <node id="1">
+        <label>src/lib/bigint/bigint.h</label>
+        <link refid="bigint_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>src/lib/bigint/exact_predicate.cpp</label>
+        <link refid="exact__predicate_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classbigint_1_1BigInteger" prot="public">bigint::BigInteger</innerclass>
+    <innernamespace refid="namespacebigint">bigint</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdint&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacebigint" kindref="compound">bigint</ref><sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="classbigint_1_1BigInteger" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classbigint_1_1BigInteger_1aa5ebb91700ee66941995e9e0a1c5d507" kindref="member">BigInteger</ref><sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="18" refid="classbigint_1_1BigInteger_1aa5ebb91700ee66941995e9e0a1c5d507" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classbigint_1_1BigInteger_1aa5ebb91700ee66941995e9e0a1c5d507" kindref="member">BigInteger</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classbigint_1_1BigInteger_1aa5ebb91700ee66941995e9e0a1c5d507" kindref="member">BigInteger</ref>(</highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classbigint_1_1BigInteger_1a4796ebd40af5f92c92bdea11ca37347f" kindref="member">tryParse</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>text,<sp/><ref refid="classbigint_1_1BigInteger_1aa5ebb91700ee66941995e9e0a1c5d507" kindref="member">BigInteger</ref>*<sp/>result);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classbigint_1_1BigInteger_1abdfe1a89337d9352eea641554a6bb633" kindref="member">toString</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classbigint_1_1BigInteger_1aaa59e76f31e7245bec495b34cb8a9691" kindref="member">sign</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classbigint_1_1BigInteger_1a1cefc099f541a79f4a93198f2de06b55" kindref="member">isZero</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classbigint_1_1BigInteger_1aa5ebb91700ee66941995e9e0a1c5d507" kindref="member">BigInteger</ref><sp/><ref refid="classbigint_1_1BigInteger_1a8302f877ef948f62500969fe3ee94f39" kindref="member">operator-</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classbigint_1_1BigInteger_1aa5ebb91700ee66941995e9e0a1c5d507" kindref="member">BigInteger</ref>&amp;<sp/><ref refid="classbigint_1_1BigInteger_1a1054e51808fad21855bed48eacd7500e" kindref="member">operator+=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classbigint_1_1BigInteger_1aa5ebb91700ee66941995e9e0a1c5d507" kindref="member">BigInteger</ref>&amp;<sp/>other);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classbigint_1_1BigInteger_1aa5ebb91700ee66941995e9e0a1c5d507" kindref="member">BigInteger</ref>&amp;<sp/><ref refid="classbigint_1_1BigInteger_1acc9708f36e9d0b9d5fb8aad320157b0f" kindref="member">operator-=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classbigint_1_1BigInteger_1aa5ebb91700ee66941995e9e0a1c5d507" kindref="member">BigInteger</ref>&amp;<sp/>other);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classbigint_1_1BigInteger_1aa5ebb91700ee66941995e9e0a1c5d507" kindref="member">BigInteger</ref>&amp;<sp/><ref refid="classbigint_1_1BigInteger_1a5b27ffacebc3458950b56d14b2d3a9a1" kindref="member">operator*=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classbigint_1_1BigInteger_1aa5ebb91700ee66941995e9e0a1c5d507" kindref="member">BigInteger</ref>&amp;<sp/>other);</highlight></codeline>
+<codeline lineno="37" refid="classbigint_1_1BigInteger_1aeffe15b5fe982f70ea2f71130a2ea5f6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="classbigint_1_1BigInteger_1aa5ebb91700ee66941995e9e0a1c5d507" kindref="member">BigInteger</ref><sp/><ref refid="classbigint_1_1BigInteger_1aeffe15b5fe982f70ea2f71130a2ea5f6" kindref="member">operator+</ref>(<ref refid="classbigint_1_1BigInteger_1aa5ebb91700ee66941995e9e0a1c5d507" kindref="member">BigInteger</ref><sp/>left,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classbigint_1_1BigInteger_1aa5ebb91700ee66941995e9e0a1c5d507" kindref="member">BigInteger</ref>&amp;<sp/>right)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>left<sp/>+=<sp/>right;<sp/>}</highlight></codeline>
+<codeline lineno="38" refid="classbigint_1_1BigInteger_1a58606545e16b1d3dcff98c13767d3828" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="classbigint_1_1BigInteger_1aa5ebb91700ee66941995e9e0a1c5d507" kindref="member">BigInteger</ref><sp/><ref refid="classbigint_1_1BigInteger_1a58606545e16b1d3dcff98c13767d3828" kindref="member">operator-</ref>(<ref refid="classbigint_1_1BigInteger_1aa5ebb91700ee66941995e9e0a1c5d507" kindref="member">BigInteger</ref><sp/>left,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classbigint_1_1BigInteger_1aa5ebb91700ee66941995e9e0a1c5d507" kindref="member">BigInteger</ref>&amp;<sp/>right)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>left<sp/>-=<sp/>right;<sp/>}</highlight></codeline>
+<codeline lineno="39" refid="classbigint_1_1BigInteger_1a9c322dd173dc036f00721f4cf4491a4b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="classbigint_1_1BigInteger_1aa5ebb91700ee66941995e9e0a1c5d507" kindref="member">BigInteger</ref><sp/><ref refid="classbigint_1_1BigInteger_1a9c322dd173dc036f00721f4cf4491a4b" kindref="member">operator*</ref>(<ref refid="classbigint_1_1BigInteger_1aa5ebb91700ee66941995e9e0a1c5d507" kindref="member">BigInteger</ref><sp/>left,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classbigint_1_1BigInteger_1aa5ebb91700ee66941995e9e0a1c5d507" kindref="member">BigInteger</ref>&amp;<sp/>right)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>left<sp/>*=<sp/>right;<sp/>}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classbigint_1_1BigInteger" kindref="compound">BigInteger</ref><sp/><ref refid="classbigint_1_1BigInteger_1a00e938502751664cf35c3681f338b971" kindref="member">powerOfTen</ref>(std::size_t<sp/>exponent);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="44" refid="classbigint_1_1BigInteger_1af11b03746c1253d2fe519f633b6db3e0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>std::uint32_t<sp/><ref refid="classbigint_1_1BigInteger_1af11b03746c1253d2fe519f633b6db3e0" kindref="member">kBase</ref><sp/>=<sp/>1&apos;000&apos;000&apos;000;</highlight></codeline>
+<codeline lineno="45" refid="classbigint_1_1BigInteger_1a04a232ac4f1182b5947c2e6182fb88a3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classbigint_1_1BigInteger_1a04a232ac4f1182b5947c2e6182fb88a3" kindref="member">m_sign</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="46" refid="classbigint_1_1BigInteger_1aafbd78ed3f7cb2a2c6ddc5d8e32445ea" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::uint32_t&gt;<sp/><ref refid="classbigint_1_1BigInteger_1aafbd78ed3f7cb2a2c6ddc5d8e32445ea" kindref="member">m_digits</ref>;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classbigint_1_1BigInteger_1a1872052751396a6044b6e6bf3d606e0b" kindref="member">normalize</ref>();</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classbigint_1_1BigInteger_1afa2c98c3611da550b4504a2117318fe0" kindref="member">compareAbs</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classbigint_1_1BigInteger_1aa5ebb91700ee66941995e9e0a1c5d507" kindref="member">BigInteger</ref>&amp;<sp/>left,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classbigint_1_1BigInteger_1aa5ebb91700ee66941995e9e0a1c5d507" kindref="member">BigInteger</ref>&amp;<sp/>right);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classbigint_1_1BigInteger_1a14b57cd07047dc67628e7542f2acfbac" kindref="member">addAbs</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classbigint_1_1BigInteger_1aa5ebb91700ee66941995e9e0a1c5d507" kindref="member">BigInteger</ref>&amp;<sp/>other);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classbigint_1_1BigInteger_1aff8518e21f10a4e1645a35dd28595d18" kindref="member">subtractAbs</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classbigint_1_1BigInteger_1aa5ebb91700ee66941995e9e0a1c5d507" kindref="member">BigInteger</ref>&amp;<sp/>other);<sp/></highlight><highlight class="comment">//<sp/>|*this|<sp/>&gt;=<sp/>|other|</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>bigint</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="src/lib/bigint/bigint.h"/>
+  </compounddef>
+</doxygen>

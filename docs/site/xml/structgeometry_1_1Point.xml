@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="structgeometry_1_1Point" kind="struct" language="C++" prot="public">
+    <compoundname>geometry::Point</compoundname>
+    <includes refid="point_8h" local="no">point.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structgeometry_1_1Point_1ad011726194a14d580d46c95bb1b57404" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double geometry::Point::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <qualifiedname>geometry::Point::x</qualifiedname>
+        <initializer>= 0.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib/geometry/point.h" line="14" column="12" bodyfile="src/lib/geometry/point.h" bodystart="14" bodyend="-1"/>
+        <referencedby refid="classGeometryPage_1a589fc5e7e93427a3f2c34679279ec875" compoundref="geometrypage_8cpp" startline="403" endline="434">GeometryPage::computeIntersection</referencedby>
+        <referencedby refid="classGeometryPage_1aa685131d4c04dafba54ab095dc78952e" compoundref="geometrypage_8cpp" startline="301" endline="343">GeometryPage::computeTurn</referencedby>
+        <referencedby refid="group__geometry__predicates_1gac3352a32baf1dd7d3620a1748dd4b78a" compoundref="predicates_8cpp" startline="8" endline="11">geometry::cross</referencedby>
+        <referencedby refid="namespacegeometry_1a9610a583f6dfe92c309727c15b9b3933" compoundref="delaunay_8cpp" startline="76" endline="161">geometry::delaunayTriangulation</referencedby>
+        <referencedby refid="classGeometryPage_1a66d38697b0496bb09cc5c22c375fc596" compoundref="geometrypage_8cpp" startline="270" endline="274">GeometryPage::on_canvas_cursorMoved</referencedby>
+        <referencedby refid="namespacegeometry_1aa0dbefb85d58b0fc5c2ff74ff1d1c94b" compoundref="predicates_8cpp" startline="26" endline="50">geometry::onSegment</referencedby>
+        <referencedby refid="namespacegeometry__qt_1ab38550851d7c6704f958a3edd7a2dc56" compoundref="conversion_8cpp" startline="10" endline="13">geometry_qt::toScreen</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structgeometry_1_1Point_1a58d50e43eb0617b09d14b2be1b1d054e" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double geometry::Point::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <qualifiedname>geometry::Point::y</qualifiedname>
+        <initializer>= 0.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib/geometry/point.h" line="15" column="12" bodyfile="src/lib/geometry/point.h" bodystart="15" bodyend="-1"/>
+        <referencedby refid="classGeometryPage_1a589fc5e7e93427a3f2c34679279ec875" compoundref="geometrypage_8cpp" startline="403" endline="434">GeometryPage::computeIntersection</referencedby>
+        <referencedby refid="classGeometryPage_1aa685131d4c04dafba54ab095dc78952e" compoundref="geometrypage_8cpp" startline="301" endline="343">GeometryPage::computeTurn</referencedby>
+        <referencedby refid="group__geometry__predicates_1gac3352a32baf1dd7d3620a1748dd4b78a" compoundref="predicates_8cpp" startline="8" endline="11">geometry::cross</referencedby>
+        <referencedby refid="namespacegeometry_1a9610a583f6dfe92c309727c15b9b3933" compoundref="delaunay_8cpp" startline="76" endline="161">geometry::delaunayTriangulation</referencedby>
+        <referencedby refid="classGeometryPage_1a66d38697b0496bb09cc5c22c375fc596" compoundref="geometrypage_8cpp" startline="270" endline="274">GeometryPage::on_canvas_cursorMoved</referencedby>
+        <referencedby refid="namespacegeometry_1aa0dbefb85d58b0fc5c2ff74ff1d1c94b" compoundref="predicates_8cpp" startline="26" endline="50">geometry::onSegment</referencedby>
+        <referencedby refid="namespacegeometry__qt_1ab38550851d7c6704f958a3edd7a2dc56" compoundref="conversion_8cpp" startline="10" endline="13">geometry_qt::toScreen</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Пространство математической геометрии проекта. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Точка на плоскости в математической системе координат (ось Y вверх).</para>
+<para>Координаты хранятся как <computeroutput>double</computeroutput>; алгоритмы с произвольной точностью используют отдельный тип <computeroutput><ref refid="classbigint_1_1BigInteger" kindref="compound">bigint::BigInteger</ref></computeroutput>. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>geometry::Point</label>
+        <link refid="structgeometry_1_1Point"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/lib/geometry/point.h" line="13" column="1" bodyfile="src/lib/geometry/point.h" bodystart="13" bodyend="16"/>
+    <listofallmembers>
+      <member refid="structgeometry_1_1Point_1ad011726194a14d580d46c95bb1b57404" prot="public" virt="non-virtual"><scope>geometry::Point</scope><name>x</name></member>
+      <member refid="structgeometry_1_1Point_1a58d50e43eb0617b09d14b2be1b1d054e" prot="public" virt="non-virtual"><scope>geometry::Point</scope><name>y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

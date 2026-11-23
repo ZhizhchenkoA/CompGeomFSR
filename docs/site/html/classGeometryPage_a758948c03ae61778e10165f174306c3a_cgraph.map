@@ -1,0 +1,16 @@
+<map id="GeometryPage::handleTurnDrag" name="GeometryPage::handleTurnDrag">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,84,233,111"/>
+<area shape="rect" id="Node000002" href="$classGeometryPage.html#aa685131d4c04dafba54ab095dc78952e" title=" " alt="" coords="281,57,490,85"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="233,83,267,82,262,83,234,89"/>
+<area shape="rect" id="Node000007" href="$namespacegeometry__qt.html#a1b00196f7a1e7ff93f722417814f1dbf" title="Адаптер между экранными координатами Qt и математическими координатами." alt="" coords="290,109,480,137"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="233,106,277,112,272,112,233,111"/>
+<area shape="rect" id="Node000003" href="$group__geometry__predicates.html#gac3352a32baf1dd7d3620a1748dd4b78a" title="Векторное произведение (b &#45; a) x (c &#45; a)." alt="" coords="789,57,915,85"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="417,54,473,33,537,16,595,7,640,3,685,6,742,16,781,29,818,49,812,48,779,34,741,21,685,11,640,8,595,12,539,21,474,38,419,59"/>
+<area shape="rect" id="Node000004" href="$classGeometryPage.html#a4ac016dceaf16fde96c2aed328b0e50d" title=" " alt="" coords="538,30,741,58"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="490,57,525,56,520,57,491,62"/>
+<area shape="rect" id="Node000005" href="$namespacegeometry.html#aa0dbefb85d58b0fc5c2ff74ff1d1c94b" title="Проверяет принадлежность точки отрезку с допуском." alt="" coords="557,82,722,110"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="490,78,544,86,539,86,491,84"/>
+<area shape="rect" id="Node000006" href="$namespacegeometry.html#a1d29367c0cb96e7c1a1b871b786ffacd" title="Предикат поворота." alt="" coords="581,134,698,162"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="452,82,491,95,539,119,568,131,563,130,537,124,489,100,451,88"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="698,132,740,119,807,93,812,91,742,124,699,137"/>
+</map>

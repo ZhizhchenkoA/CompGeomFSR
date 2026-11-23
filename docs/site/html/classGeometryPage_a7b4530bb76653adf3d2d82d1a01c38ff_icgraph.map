@@ -1,0 +1,9 @@
+<map id="GeometryPage::selectTask" name="GeometryPage::selectTask">
+<area shape="rect" id="Node000001" title=" " alt="" coords="550,29,743,57"/>
+<area shape="rect" id="Node000002" href="$classGeometryPage.html#a4fda5c025fcd295789a6345233568d87" title=" " alt="" coords="5,29,227,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="534,46,227,46,227,41,535,41"/>
+<area shape="rect" id="Node000003" href="$classGeometryPage.html#a5e401c179a58fb115a86b603312be0da" title=" " alt="" coords="275,55,502,82"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="537,54,503,60,502,55,532,54"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="161,14,147,10,116,8,87,10,72,15,68,20,75,29,69,29,62,20,68,11,86,5,116,3,148,5,167,14"/>
+<area shape="poly" id="edge4_Node000003_Node000002" title=" " alt="" coords="256,57,227,56,227,51,262,56"/>
+</map>

@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="group__geometry__predicates" kind="group">
+    <compoundname>geometry_predicates</compoundname>
+    <title>Geometric predicates</title>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group__geometry__predicates_1gac3352a32baf1dd7d3620a1748dd4b78a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double geometry::cross</definition>
+        <argsstring>(const Point &amp;a, const Point &amp;b, const Point &amp;c)</argsstring>
+        <name>cross</name>
+        <qualifiedname>geometry::cross</qualifiedname>
+        <param>
+          <type>const Point &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const Point &amp;</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>const Point &amp;</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Векторное произведение <computeroutput>(b - a) x (c - a)</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Положительно, если обход <computeroutput>a -&gt; b -&gt; c</computeroutput> против часовой стрелки. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib/geometry/predicates.cpp" line="8" column="8" bodyfile="src/lib/geometry/predicates.cpp" bodystart="8" bodyend="11" declfile="src/lib/geometry/predicates.h" declline="16" declcolumn="8"/>
+        <references refid="structgeometry_1_1Point_1ad011726194a14d580d46c95bb1b57404" compoundref="point_8h" startline="14">geometry::Point::x</references>
+        <references refid="structgeometry_1_1Point_1a58d50e43eb0617b09d14b2be1b1d054e" compoundref="point_8h" startline="15">geometry::Point::y</references>
+        <referencedby refid="classGeometryPage_1aa685131d4c04dafba54ab095dc78952e" compoundref="geometrypage_8cpp" startline="301" endline="343">GeometryPage::computeTurn</referencedby>
+        <referencedby refid="namespacegeometry_1a6dfabff82b63c795670a97271b9908d2" compoundref="convex__hull_8cpp" startline="18" endline="52">geometry::convexHull</referencedby>
+        <referencedby refid="namespacegeometry_1a1d29367c0cb96e7c1a1b871b786ffacd" compoundref="predicates_8cpp" startline="13" endline="24">geometry::turn</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Exact-sign and tolerance-aware predicates used by higher algorithms. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

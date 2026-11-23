@@ -1,0 +1,16 @@
+<map id="GeometryPage::computeBezier" name="GeometryPage::computeBezier">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,107,229,134"/>
+<area shape="rect" id="Node000002" href="$namespacebezier.html#a501e022e378938e5a58777be3b250155" title="Строит составную кривую из окон degree + 1 с общей точкой сегментов." alt="" coords="293,5,430,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="148,104,276,49,310,38,305,40,278,54,151,109"/>
+<area shape="rect" id="Node000003" href="$namespacebezier.html#a3e86093165e34203620df7fe7623a57e" title="Дискретизирует кривую в count + 1 точках от t = 0 до t = 1." alt="" coords="494,56,611,84"/>
+<area shape="poly" id="edge7_Node000001_Node000003" title=" " alt="" coords="228,105,276,99,481,77,476,80,277,104,230,110"/>
+<area shape="rect" id="Node000004" href="$namespacebezier.html#aa6f0140841e402a3cfa3ba2aba8044d0" title="Операции с параметрическими кривыми Безье." alt="" coords="659,107,806,134"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="229,118,644,118,643,123,229,123"/>
+<area shape="rect" id="Node000005" href="$namespacebezier.html#a16319ee9d71db52368b5ce95b86794e2" title="Возвращает все промежуточные уровни построения де Кастельжо." alt="" coords="854,132,1042,160"/>
+<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="229,125,429,135,659,143,841,147,836,147,659,148,429,140,229,130"/>
+<area shape="rect" id="Node000006" href="$namespacegeometry__qt.html#ab38550851d7c6704f958a3edd7a2dc56" title="Обратное преобразование: геометрия &#45;&gt; экран." alt="" coords="277,208,446,236"/>
+<area shape="poly" id="edge8_Node000001_Node000006" title=" " alt="" coords="150,132,278,187,310,202,305,202,276,192,149,137"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="416,31,485,51,480,52,416,36"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="604,82,669,102,664,102,604,87"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="806,126,841,133,835,133,806,132"/>
+</map>

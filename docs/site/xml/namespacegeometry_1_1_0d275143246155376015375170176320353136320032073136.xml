@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="namespacegeometry_1_1_0d275143246155376015375170176320353136320032073136" kind="namespace" language="C++">
+    <compoundname>geometry::@275143246155376015375170176320353136320032073136</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/lib/geometry/convex_hull.cpp" line="9" column="1"/>
+  </compounddef>
+</doxygen>

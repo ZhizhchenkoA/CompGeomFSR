@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="dir_da4e387dad6145fce42efe284fbecf2d" kind="dir">
+    <compoundname>src/lib/geometry</compoundname>
+    <innerfile refid="convex__hull_8cpp">convex_hull.cpp</innerfile>
+    <innerfile refid="convex__hull_8h">convex_hull.h</innerfile>
+    <innerfile refid="convex__polygon__boolean_8cpp">convex_polygon_boolean.cpp</innerfile>
+    <innerfile refid="convex__polygon__boolean_8h">convex_polygon_boolean.h</innerfile>
+    <innerfile refid="delaunay_8cpp">delaunay.cpp</innerfile>
+    <innerfile refid="delaunay_8h">delaunay.h</innerfile>
+    <innerfile refid="point_8h">point.h</innerfile>
+    <innerfile refid="predicates_8cpp">predicates.cpp</innerfile>
+    <innerfile refid="predicates_8h">predicates.h</innerfile>
+    <innerfile refid="segment__intersection_8cpp">segment_intersection.cpp</innerfile>
+    <innerfile refid="segment__intersection_8h">segment_intersection.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/lib/geometry/"/>
+  </compounddef>
+</doxygen>

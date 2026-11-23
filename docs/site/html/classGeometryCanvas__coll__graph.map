@@ -1,0 +1,5 @@
+<map id="GeometryCanvas" name="GeometryCanvas">
+<area shape="rect" id="Node000001" title="Холст геометрических сцен." alt="" coords="5,126,218,846"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="78,5,145,78"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="112,90,114,126,109,126,112,95"/>
+</map>

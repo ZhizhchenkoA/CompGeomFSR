@@ -1,0 +1,28 @@
+<map id="bezier::deCasteljauLevels" name="bezier::deCasteljauLevels">
+<area shape="rect" id="Node000001" title="Возвращает все промежуточные уровни построения де Кастельжо." alt="" coords="1353,90,1542,118"/>
+<area shape="rect" id="Node000002" href="$classGeometryPage.html#aa0380120b0b9e766b2e6d3c4d4192b27" title=" " alt="" coords="537,140,760,168"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1335,102,1095,107,951,114,809,128,718,142,717,137,808,122,951,109,1095,102,1340,101"/>
+<area shape="rect" id="Node000010" href="$namespacebezier.html#aa6f0140841e402a3cfa3ba2aba8044d0" title="Операции с параметрическими кривыми Безье." alt="" coords="1159,115,1305,143"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="1335,117,1306,123,1305,118,1341,116"/>
+<area shape="rect" id="Node000003" href="$classGeometryPage.html#ace1f1e79f6cf90be97a1edf406262102" title=" " alt="" coords="263,8,474,53"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="608,132,553,103,488,71,448,56,447,51,490,67,556,98,614,132"/>
+<area shape="rect" id="Node000005" href="$classGeometryPage.html#ac64c55de6638a1a39c54f756e85888a9" title=" " alt="" coords="248,80,489,108"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="564,137,488,122,438,111,438,106,490,117,570,136"/>
+<area shape="rect" id="Node000007" href="$classGeometryPage.html#a987ba5fc021a4c94a694aad27f3efdf6" title=" " alt="" coords="256,132,481,177"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="519,155,482,157,481,152,524,154"/>
+<area shape="rect" id="Node000008" href="$classGeometryPage.html#aa05702756ffe70c1c9295494036d364e" title=" " alt="" coords="265,201,472,246"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="572,173,462,203,461,198,577,172"/>
+<area shape="rect" id="Node000009" href="$classGeometryPage.html#a91d1ac3960a9a2e31af6e79d8d048842" title=" " alt="" coords="254,271,482,315"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="620,177,561,221,490,261,460,273,459,268,488,256,558,216,615,179"/>
+<area shape="rect" id="Node000004" href="$classGeometryPage.html#a3b366ef2453036d455df3e7248d2e127" title=" " alt="" coords="5,5,200,50"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="245,31,201,31,199,26,250,28"/>
+<area shape="rect" id="Node000006" href="$classGeometryPage.html#a2d9f83accc5c03c75ef3c7e706716dfb" title=" " alt="" coords="5,75,200,119"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="230,97,201,99,199,94,235,94"/>
+<area shape="poly" id="edge10_Node000010_Node000002" title=" " alt="" coords="1141,133,761,152,760,147,1146,132"/>
+<area shape="rect" id="Node000011" href="$namespacebezier.html#a3e86093165e34203620df7fe7623a57e" title="Дискретизирует кривую в count + 1 точках от t = 0 до t = 1." alt="" coords="994,166,1111,194"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="1169,147,1105,168,1104,163,1163,148"/>
+<area shape="poly" id="edge14_Node000011_Node000002" title=" " alt="" coords="975,175,761,164,761,159,981,175"/>
+<area shape="rect" id="Node000012" href="$namespacebezier.html#a501e022e378938e5a58777be3b250155" title="Строит составную кривую из окон degree + 1 с общей точкой сегментов." alt="" coords="808,216,946,244"/>
+<area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="990,198,928,219,927,213,985,199"/>
+<area shape="poly" id="edge13_Node000012_Node000002" title=" " alt="" coords="816,211,692,171,693,166,821,211"/>
+</map>

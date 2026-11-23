@@ -1,0 +1,15 @@
+<map id="geometry::turn" name="geometry::turn">
+<area shape="rect" id="Node000001" title="Предикат поворота." alt="" coords="781,80,899,108"/>
+<area shape="rect" id="Node000002" href="$classGeometryPage.html#aa685131d4c04dafba54ab095dc78952e" title=" " alt="" coords="524,80,733,108"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="763,94,734,97,734,92,768,94"/>
+<area shape="rect" id="Node000003" href="$classGeometryPage.html#acdcc0b18c0fa30dd324cd16c23517c7a" title=" " alt="" coords="264,8,460,53"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="551,77,458,56,458,51,556,76"/>
+<area shape="rect" id="Node000005" href="$classGeometryPage.html#a758948c03ae61778e10165f174306c3a" title=" " alt="" coords="248,80,476,108"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="506,95,476,97,476,92,511,94"/>
+<area shape="rect" id="Node000007" href="$classGeometryPage.html#a91d1ac3960a9a2e31af6e79d8d048842" title=" " alt="" coords="248,132,476,177"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="552,112,465,134,464,129,546,113"/>
+<area shape="rect" id="Node000004" href="$classGeometryPage.html#a3b366ef2453036d455df3e7248d2e127" title=" " alt="" coords="5,5,200,50"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="246,30,201,31,200,26,250,28"/>
+<area shape="rect" id="Node000006" href="$classGeometryPage.html#a2d9f83accc5c03c75ef3c7e706716dfb" title=" " alt="" coords="5,75,200,119"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="230,96,200,99,200,93,235,95"/>
+</map>

@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="convex__hull_8cpp" kind="file" language="C++">
+    <compoundname>convex_hull.cpp</compoundname>
+    <includes refid="convex__hull_8h" local="yes">geometry/convex_hull.h</includes>
+    <includes local="no">algorithm</includes>
+    <includes local="no">cmath</includes>
+    <includes refid="predicates_8h" local="yes">geometry/predicates.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>src/lib/geometry/convex_hull.cpp</label>
+        <link refid="convex__hull_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>geometry/convex_hull.h</label>
+        <link refid="convex__hull_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>geometry/point.h</label>
+        <link refid="point_8h"/>
+      </node>
+      <node id="7">
+        <label>geometry/predicates.h</label>
+        <link refid="predicates_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>algorithm</label>
+      </node>
+      <node id="6">
+        <label>cmath</label>
+      </node>
+      <node id="3">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacegeometry">geometry</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="convex__hull_8h" kindref="compound">geometry/convex_hull.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;algorithm&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cmath&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="predicates_8h" kindref="compound">geometry/predicates.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="namespacegeometry" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacegeometry" kindref="compound">geometry</ref><sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>samePoint(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structgeometry_1_1Point" kindref="compound">Point</ref>&amp;<sp/>first,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structgeometry_1_1Point" kindref="compound">Point</ref>&amp;<sp/>second,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>eps)</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::abs(first.<ref refid="structgeometry_1_1Point_1ad011726194a14d580d46c95bb1b57404" kindref="member">x</ref><sp/>-<sp/>second.<ref refid="structgeometry_1_1Point_1ad011726194a14d580d46c95bb1b57404" kindref="member">x</ref>)<sp/>&lt;=<sp/>eps<sp/>&amp;&amp;<sp/>std::abs(first.<ref refid="structgeometry_1_1Point_1a58d50e43eb0617b09d14b2be1b1d054e" kindref="member">y</ref><sp/>-<sp/>second.<ref refid="structgeometry_1_1Point_1a58d50e43eb0617b09d14b2be1b1d054e" kindref="member">y</ref>)<sp/>&lt;=<sp/>eps;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="namespacegeometry_1a6dfabff82b63c795670a97271b9908d2" refkind="member"><highlight class="normal">std::vector&lt;Point&gt;<sp/><ref refid="namespacegeometry_1a6dfabff82b63c795670a97271b9908d2" kindref="member">convexHull</ref>(std::vector&lt;Point&gt;<sp/>points,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>eps)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>tolerance<sp/>=<sp/>std::abs(eps);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>std::sort(points.begin(),<sp/>points.end(),<sp/>[](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structgeometry_1_1Point" kindref="compound">Point</ref>&amp;<sp/>first,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structgeometry_1_1Point" kindref="compound">Point</ref>&amp;<sp/>second)<sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>first.x<sp/>&lt;<sp/>second.x<sp/>||<sp/>(first.x<sp/>==<sp/>second.x<sp/>&amp;&amp;<sp/>first.y<sp/>&lt;<sp/>second.y);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>points.erase(std::unique(points.begin(),<sp/>points.end(),<sp/>[tolerance](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structgeometry_1_1Point" kindref="compound">Point</ref>&amp;<sp/>first,</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structgeometry_1_1Point" kindref="compound">Point</ref>&amp;<sp/>second)<sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>samePoint(first,<sp/>second,<sp/>tolerance);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>}),<sp/>points.end());</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(points.size()<sp/>&lt;=<sp/>2)<sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>points;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Point&gt;<sp/>hull;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>hull.reserve(points.size()<sp/>*<sp/>2);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structgeometry_1_1Point" kindref="compound">Point</ref>&amp;<sp/>point<sp/>:<sp/>points)<sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(hull.size()<sp/>&gt;=<sp/>2<sp/>&amp;&amp;<sp/><ref refid="group__geometry__predicates_1gac3352a32baf1dd7d3620a1748dd4b78a" kindref="member">cross</ref>(hull[hull.size()<sp/>-<sp/>2],<sp/>hull.back(),<sp/>point)<sp/>&lt;=<sp/>tolerance)<sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hull.pop_back();</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hull.push_back(point);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::size_t<sp/>lowerSize<sp/>=<sp/>hull.size();</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>it<sp/>=<sp/>points.rbegin()<sp/>+<sp/>1;<sp/>it<sp/>!=<sp/>points.rend();<sp/>++it)<sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(hull.size()<sp/>&gt;<sp/>lowerSize<sp/>&amp;&amp;<sp/><ref refid="group__geometry__predicates_1gac3352a32baf1dd7d3620a1748dd4b78a" kindref="member">cross</ref>(hull[hull.size()<sp/>-<sp/>2],<sp/>hull.back(),<sp/>*it)<sp/>&lt;=<sp/>tolerance)<sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hull.pop_back();</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hull.push_back(*it);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>hull.pop_back();<sp/></highlight><highlight class="comment">//<sp/>первая<sp/>вершина<sp/>нижней<sp/>цепочки<sp/>повторена<sp/>в<sp/>конце<sp/>верхней</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>hull;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>geometry</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="src/lib/geometry/convex_hull.cpp"/>
+  </compounddef>
+</doxygen>

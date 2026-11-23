@@ -1,0 +1,27 @@
+<map id="geometry::convexHull" name="geometry::convexHull">
+<area shape="rect" id="Node000001" title="Выпуклая оболочка множества точек алгоритмом Эндрю." alt="" coords="830,168,995,196"/>
+<area shape="rect" id="Node000002" href="$classGeometryPage.html#ae4a1816822912d00197e9cfa375717d1" title=" " alt="" coords="561,134,769,162"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="812,169,769,165,768,159,817,168"/>
+<area shape="rect" id="Node000009" href="$classGeometryPage.html#a73b11409c008e8a002cdf0b5b86d363d" title=" " alt="" coords="548,195,782,239"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="812,196,783,203,782,198,817,196"/>
+<area shape="rect" id="Node000003" href="$classGeometryPage.html#aae494f5e3a68d411bc5c8b8a39bb84e4" title=" " alt="" coords="276,5,472,50"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="625,126,567,96,499,65,467,53,466,48,501,60,570,91,630,126"/>
+<area shape="rect" id="Node000005" href="$classGeometryPage.html#ad4fd2514de86d00ae791f83755aad6a8" title=" " alt="" coords="261,74,487,102"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="579,131,499,116,447,105,447,100,501,110,584,130"/>
+<area shape="rect" id="Node000007" href="$classGeometryPage.html#aa05702756ffe70c1c9295494036d364e" title=" " alt="" coords="270,125,478,170"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="543,148,478,150,477,145,548,147"/>
+<area shape="rect" id="Node000008" href="$classGeometryPage.html#a91d1ac3960a9a2e31af6e79d8d048842" title=" " alt="" coords="260,195,488,239"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="587,166,471,197,470,192,592,165"/>
+<area shape="rect" id="Node000004" href="$classGeometryPage.html#a3b366ef2453036d455df3e7248d2e127" title=" " alt="" coords="5,68,200,113"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="259,55,202,70,199,66,263,52"/>
+<area shape="rect" id="Node000006" href="$classGeometryPage.html#a2d9f83accc5c03c75ef3c7e706716dfb" title=" " alt="" coords="5,200,200,245"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="262,108,249,115,214,134,181,157,128,202,125,198,178,153,211,130,247,111,266,105"/>
+<area shape="poly" id="edge13_Node000009_Node000007" title=" " alt="" coords="551,191,471,173,471,168,556,190"/>
+<area shape="poly" id="edge14_Node000009_Node000008" title=" " alt="" coords="530,217,489,220,488,214,535,217"/>
+<area shape="rect" id="Node000010" href="$classGeometryPage.html#a1fa4f035f37dbd61e6cf8c5ce9785883" title=" " alt="" coords="263,264,484,309"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="556,243,471,266,470,261,551,244"/>
+<area shape="rect" id="Node000011" href="$classGeometryPage.html#a077e9cd0bb0fd57f8b368a813152f78c" title=" " alt="" coords="248,332,500,360"/>
+<area shape="poly" id="edge11_Node000009_Node000011" title=" " alt="" coords="626,248,568,289,501,323,467,335,466,329,499,319,565,285,621,250"/>
+<area shape="poly" id="edge10_Node000010_Node000004" title=" " alt="" coords="253,256,246,254,229,239,219,224,198,189,127,116,129,110,202,186,224,221,233,235,249,250,258,257"/>
+<area shape="poly" id="edge12_Node000011_Node000006" title=" " alt="" coords="263,327,247,323,181,287,129,248,131,243,184,282,249,319,268,328"/>
+</map>

@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="architecture" kind="page">
+    <compoundname>architecture</compoundname>
+    <title>Архитектура проекта</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><dot>
+digraph architecture {
+  rankdir=LR;
+  node [shape=box, style=&quot;rounded,filled&quot;, fontname=&quot;DejaVu Sans&quot;];
+  app [label=&quot;Qt GeometryWorkbench&quot;, fillcolor=&quot;#dbeafe&quot;];
+  canvas [label=&quot;GeometryCanvas&quot;, fillcolor=&quot;#e0e7ff&quot;];
+  geometry [label=&quot;geometry\nпредикаты и операции&quot;, fillcolor=&quot;#dcfce7&quot;];
+  bigint [label=&quot;bigint\nточная арифметика&quot;, fillcolor=&quot;#fef3c7&quot;];
+  bezier [label=&quot;bezier\nде Кастельжо&quot;, fillcolor=&quot;#f3e8ff&quot;];
+  qt [label=&quot;geometry_qt\nY-инверсия&quot;, fillcolor=&quot;#f1f5f9&quot;];
+  app -&gt; canvas [label=&quot;события мыши&quot;];
+  app -&gt; geometry [label=&quot;чистые алгоритмы&quot;];
+  app -&gt; bigint [label=&quot;задача 3&quot;];
+  app -&gt; bezier [label=&quot;задача 13&quot;];
+  app -&gt; qt [label=&quot;координаты&quot;];
+  canvas -&gt; qt [label=&quot;screen ↔ geometry&quot;];
+}
+</dot>
+</para>
+<sect1 id="architecture_1flow">
+<title>Поток данных</title><para><orderedlist>
+<listitem><para>Qt-сигнал передаёт клик или перетаскивание в <computeroutput><ref refid="classGeometryPage" kindref="compound">GeometryPage</ref></computeroutput>.</para>
+</listitem><listitem><para>Страница переводит <computeroutput>QPointF</computeroutput> через <computeroutput><ref refid="namespacegeometry__qt_1a1b00196f7a1e7ff93f722417814f1dbf" kindref="member">geometry_qt::toGeometry</ref></computeroutput>.</para>
+</listitem><listitem><para>Чистая библиотека возвращает число, контур, треугольники или кривую.</para>
+</listitem><listitem><para>Результат переводится обратно в экранные координаты и рисуется слоями <computeroutput><ref refid="classGeometryCanvas" kindref="compound">GeometryCanvas</ref></computeroutput>. */ </para>
+</listitem></orderedlist>
+</para>
+</sect1>
+    </detaileddescription>
+    <location file="docs/architecture.md"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,247 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="classMainWindow" kind="class" language="C++" prot="public">
+    <compoundname>MainWindow</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QMainWindow</basecompoundref>
+    <includes refid="mainwindow_8h" local="no">mainwindow.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classMainWindow_1a35466a70ed47252a0191168126a352a5" prot="private" static="no" mutable="no">
+        <type>Ui::MainWindow *</type>
+        <definition>Ui::MainWindow* MainWindow::ui</definition>
+        <argsstring></argsstring>
+        <name>ui</name>
+        <qualifiedname>MainWindow::ui</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/mainwindow.h" line="37" column="20" bodyfile="src/apps/GeometryWorkbench/mainwindow.h" bodystart="37" bodyend="-1"/>
+        <referencedby refid="classMainWindow_1aabd9d1803bc74a578726925f89e9c399" compoundref="mainwindow_8cpp" startline="36" endline="40">log</referencedby>
+        <referencedby refid="classMainWindow_1a996c5a2b6f77944776856f08ec30858d" compoundref="mainwindow_8cpp" startline="12" endline="29">MainWindow</referencedby>
+        <referencedby refid="classMainWindow_1a7add49b8afd676505acef34d5483c576" compoundref="mainwindow_8cpp" startline="42" endline="46">on_actionClear_triggered</referencedby>
+        <referencedby refid="classMainWindow_1a1f7d2c56410fc1bfa135bb907d43313f" compoundref="mainwindow_8cpp" startline="31" endline="34">~MainWindow</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classMainWindow_1a996c5a2b6f77944776856f08ec30858d" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MainWindow::MainWindow</definition>
+        <argsstring>(QWidget *parent=nullptr)</argsstring>
+        <name>MainWindow</name>
+        <qualifiedname>MainWindow::MainWindow</qualifiedname>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/mainwindow.h" line="19" column="14" bodyfile="src/apps/GeometryWorkbench/mainwindow.cpp" bodystart="12" bodyend="29"/>
+        <references refid="classGeometryPage_1aa9f01f9f97ae7cc6d65dcd8254ea8428">GeometryPage::cursorMoved</references>
+        <references refid="classMainWindow_1aabd9d1803bc74a578726925f89e9c399" compoundref="mainwindow_8cpp" startline="36" endline="40">log</references>
+        <references refid="classGeometryPage_1a4ac016dceaf16fde96c2aed328b0e50d">GeometryPage::logMessage</references>
+        <references refid="classMainWindow_1a996c5a2b6f77944776856f08ec30858d" compoundref="mainwindow_8cpp" startline="12" endline="29">MainWindow</references>
+        <references refid="classMainWindow_1a06476208b8466211f3bb0fcae787052b" compoundref="mainwindow_8cpp" startline="73" endline="78">readSettings</references>
+        <references refid="classMainWindow_1a35466a70ed47252a0191168126a352a5" compoundref="mainwindow_8h" startline="37">ui</references>
+        <referencedby refid="classMainWindow_1a996c5a2b6f77944776856f08ec30858d" compoundref="mainwindow_8cpp" startline="12" endline="29">MainWindow</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classMainWindow_1a1f7d2c56410fc1bfa135bb907d43313f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MainWindow::~MainWindow</definition>
+        <argsstring>() override</argsstring>
+        <name>~MainWindow</name>
+        <qualifiedname>MainWindow::~MainWindow</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/mainwindow.h" line="20" column="5" bodyfile="src/apps/GeometryWorkbench/mainwindow.cpp" bodystart="31" bodyend="34"/>
+        <references refid="classMainWindow_1a35466a70ed47252a0191168126a352a5" compoundref="mainwindow_8h" startline="37">ui</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classMainWindow_1a05fb9d72c044aa3bb7d187b994704e2f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::closeEvent</definition>
+        <argsstring>(QCloseEvent *event) override</argsstring>
+        <name>closeEvent</name>
+        <qualifiedname>MainWindow::closeEvent</qualifiedname>
+        <param>
+          <type>QCloseEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/mainwindow.h" line="23" column="10" bodyfile="src/apps/GeometryWorkbench/mainwindow.cpp" bodystart="67" bodyend="71"/>
+        <references refid="classMainWindow_1a49be45fc9b993fdc3afe55d4b6fa0650" compoundref="mainwindow_8cpp" startline="80" endline="85">writeSettings</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-slot">
+      <memberdef kind="slot" id="classMainWindow_1a7add49b8afd676505acef34d5483c576" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::on_actionClear_triggered</definition>
+        <argsstring>()</argsstring>
+        <name>on_actionClear_triggered</name>
+        <qualifiedname>MainWindow::on_actionClear_triggered</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/mainwindow.h" line="26" column="10" bodyfile="src/apps/GeometryWorkbench/mainwindow.cpp" bodystart="42" bodyend="46"/>
+        <references refid="classMainWindow_1aabd9d1803bc74a578726925f89e9c399" compoundref="mainwindow_8cpp" startline="36" endline="40">log</references>
+        <references refid="classMainWindow_1a35466a70ed47252a0191168126a352a5" compoundref="mainwindow_8h" startline="37">ui</references>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1ab4487c4b02224acd4a0193d38b704ddb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::on_actionExit_triggered</definition>
+        <argsstring>()</argsstring>
+        <name>on_actionExit_triggered</name>
+        <qualifiedname>MainWindow::on_actionExit_triggered</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/mainwindow.h" line="27" column="10" bodyfile="src/apps/GeometryWorkbench/mainwindow.cpp" bodystart="48" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1a4f3ebda1ba39e0ef4d678b44893c9c7f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::on_actionAbout_triggered</definition>
+        <argsstring>()</argsstring>
+        <name>on_actionAbout_triggered</name>
+        <qualifiedname>MainWindow::on_actionAbout_triggered</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/mainwindow.h" line="28" column="10" bodyfile="src/apps/GeometryWorkbench/mainwindow.cpp" bodystart="53" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1ab51030db8cae6753c47f228868c6b8e4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::on_actionAboutQt_triggered</definition>
+        <argsstring>()</argsstring>
+        <name>on_actionAboutQt_triggered</name>
+        <qualifiedname>MainWindow::on_actionAboutQt_triggered</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/mainwindow.h" line="29" column="10" bodyfile="src/apps/GeometryWorkbench/mainwindow.cpp" bodystart="62" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1aabd9d1803bc74a578726925f89e9c399" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::log</definition>
+        <argsstring>(const QString &amp;text)</argsstring>
+        <name>log</name>
+        <qualifiedname>MainWindow::log</qualifiedname>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/mainwindow.h" line="31" column="10" bodyfile="src/apps/GeometryWorkbench/mainwindow.cpp" bodystart="36" bodyend="40"/>
+        <references refid="classMainWindow_1a35466a70ed47252a0191168126a352a5" compoundref="mainwindow_8h" startline="37">ui</references>
+        <referencedby refid="classMainWindow_1a996c5a2b6f77944776856f08ec30858d" compoundref="mainwindow_8cpp" startline="12" endline="29">MainWindow</referencedby>
+        <referencedby refid="classMainWindow_1a7add49b8afd676505acef34d5483c576" compoundref="mainwindow_8cpp" startline="42" endline="46">on_actionClear_triggered</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classMainWindow_1a06476208b8466211f3bb0fcae787052b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::readSettings</definition>
+        <argsstring>()</argsstring>
+        <name>readSettings</name>
+        <qualifiedname>MainWindow::readSettings</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/mainwindow.h" line="34" column="10" bodyfile="src/apps/GeometryWorkbench/mainwindow.cpp" bodystart="73" bodyend="78"/>
+        <referencedby refid="classMainWindow_1a996c5a2b6f77944776856f08ec30858d" compoundref="mainwindow_8cpp" startline="12" endline="29">MainWindow</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classMainWindow_1a49be45fc9b993fdc3afe55d4b6fa0650" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::writeSettings</definition>
+        <argsstring>()</argsstring>
+        <name>writeSettings</name>
+        <qualifiedname>MainWindow::writeSettings</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/mainwindow.h" line="35" column="10" bodyfile="src/apps/GeometryWorkbench/mainwindow.cpp" bodystart="80" bodyend="85"/>
+        <referencedby refid="classMainWindow_1a05fb9d72c044aa3bb7d187b994704e2f" compoundref="mainwindow_8cpp" startline="67" endline="71">closeEvent</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Главное окно приложения. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Меню, панель, док журнала и вкладки описаны в <computeroutput>mainwindow.ui</computeroutput>. Слоты вида <computeroutput>on_actionXxx_triggered</computeroutput> подключаются автоматически. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>MainWindow</label>
+        <link refid="classMainWindow"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QMainWindow</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>MainWindow</label>
+        <link refid="classMainWindow"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QMainWindow</label>
+      </node>
+    </collaborationgraph>
+    <location file="src/apps/GeometryWorkbench/mainwindow.h" line="16" column="1" bodyfile="src/apps/GeometryWorkbench/mainwindow.h" bodystart="16" bodyend="38"/>
+    <listofallmembers>
+      <member refid="classMainWindow_1a05fb9d72c044aa3bb7d187b994704e2f" prot="protected" virt="non-virtual"><scope>MainWindow</scope><name>closeEvent</name></member>
+      <member refid="classMainWindow_1aabd9d1803bc74a578726925f89e9c399" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>log</name></member>
+      <member refid="classMainWindow_1a996c5a2b6f77944776856f08ec30858d" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>MainWindow</name></member>
+      <member refid="classMainWindow_1a4f3ebda1ba39e0ef4d678b44893c9c7f" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>on_actionAbout_triggered</name></member>
+      <member refid="classMainWindow_1ab51030db8cae6753c47f228868c6b8e4" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>on_actionAboutQt_triggered</name></member>
+      <member refid="classMainWindow_1a7add49b8afd676505acef34d5483c576" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>on_actionClear_triggered</name></member>
+      <member refid="classMainWindow_1ab4487c4b02224acd4a0193d38b704ddb" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>on_actionExit_triggered</name></member>
+      <member refid="classMainWindow_1a06476208b8466211f3bb0fcae787052b" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>readSettings</name></member>
+      <member refid="classMainWindow_1a35466a70ed47252a0191168126a352a5" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>ui</name></member>
+      <member refid="classMainWindow_1a49be45fc9b993fdc3afe55d4b6fa0650" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>writeSettings</name></member>
+      <member refid="classMainWindow_1a1f7d2c56410fc1bfa135bb907d43313f" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>~MainWindow</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

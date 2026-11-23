@@ -1,0 +1,7 @@
+<map id="bezier::sample" name="bezier::sample">
+<area shape="rect" id="Node000001" title="Дискретизирует кривую в count + 1 точках от t = 0 до t = 1." alt="" coords="5,5,123,33"/>
+<area shape="rect" id="Node000002" href="$namespacebezier.html#aa6f0140841e402a3cfa3ba2aba8044d0" title="Операции с параметрическими кривыми Безье." alt="" coords="171,5,317,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="123,17,158,19,153,19,123,22"/>
+<area shape="rect" id="Node000003" href="$namespacebezier.html#a16319ee9d71db52368b5ce95b86794e2" title="Возвращает все промежуточные уровни построения де Кастельжо." alt="" coords="365,5,553,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="317,17,352,19,346,19,317,22"/>
+</map>

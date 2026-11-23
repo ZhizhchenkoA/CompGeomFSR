@@ -1,0 +1,244 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="classLongArithmeticPage" kind="class" language="C++" prot="public">
+    <compoundname>LongArithmeticPage</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QWidget</basecompoundref>
+    <includes refid="longarithmeticpage_8h" local="no">longarithmeticpage.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classLongArithmeticPage_1a658d7b4d612a138c0fe800b8b18d8c5e" prot="private" static="no" mutable="no">
+        <type>Ui::LongArithmeticPage *</type>
+        <definition>Ui::LongArithmeticPage* LongArithmeticPage::ui</definition>
+        <argsstring></argsstring>
+        <name>ui</name>
+        <qualifiedname>LongArithmeticPage::ui</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/longarithmeticpage.h" line="35" column="28" bodyfile="src/apps/GeometryWorkbench/longarithmeticpage.h" bodystart="35" bodyend="-1"/>
+        <referencedby refid="classLongArithmeticPage_1ab52ecc9e59525ef13ea189064d45b782" compoundref="longarithmeticpage_8cpp" startline="41" endline="76">calculate</referencedby>
+        <referencedby refid="classLongArithmeticPage_1a07ba70df3ad26290e560a666c4edec15" compoundref="longarithmeticpage_8cpp" startline="18" endline="34">LongArithmeticPage</referencedby>
+        <referencedby refid="classLongArithmeticPage_1ae2449c28a8b53a186a8cf785e918b8ef" compoundref="longarithmeticpage_8cpp" startline="84" endline="87">updateIfOnline</referencedby>
+        <referencedby refid="classLongArithmeticPage_1a36a5c50582e24217e05746d7136089cc" compoundref="longarithmeticpage_8cpp" startline="36" endline="39">~LongArithmeticPage</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classLongArithmeticPage_1a11140be3386cb7d09f97fb2f6485bcdc" prot="private" static="no" mutable="no">
+        <type>std::array&lt; QLineEdit *, 6 &gt;</type>
+        <definition>std::array&lt;QLineEdit*, 6&gt; LongArithmeticPage::m_fields</definition>
+        <argsstring></argsstring>
+        <name>m_fields</name>
+        <qualifiedname>LongArithmeticPage::m_fields</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/longarithmeticpage.h" line="36" column="16" bodyfile="src/apps/GeometryWorkbench/longarithmeticpage.h" bodystart="36" bodyend="36"/>
+        <referencedby refid="classLongArithmeticPage_1ab52ecc9e59525ef13ea189064d45b782" compoundref="longarithmeticpage_8cpp" startline="41" endline="76">calculate</referencedby>
+        <referencedby refid="classLongArithmeticPage_1a07ba70df3ad26290e560a666c4edec15" compoundref="longarithmeticpage_8cpp" startline="18" endline="34">LongArithmeticPage</referencedby>
+        <referencedby refid="classLongArithmeticPage_1a82a5d59f0f0f86161a3614c8ff025dbe" compoundref="longarithmeticpage_8cpp" startline="78" endline="82">setCoordinates</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classLongArithmeticPage_1a07ba70df3ad26290e560a666c4edec15" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>LongArithmeticPage::LongArithmeticPage</definition>
+        <argsstring>(QWidget *parent=nullptr)</argsstring>
+        <name>LongArithmeticPage</name>
+        <qualifiedname>LongArithmeticPage::LongArithmeticPage</qualifiedname>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/longarithmeticpage.h" line="22" column="14" bodyfile="src/apps/GeometryWorkbench/longarithmeticpage.cpp" bodystart="18" bodyend="34"/>
+        <references refid="classLongArithmeticPage_1ab52ecc9e59525ef13ea189064d45b782" compoundref="longarithmeticpage_8cpp" startline="41" endline="76">calculate</references>
+        <references refid="classLongArithmeticPage_1a07ba70df3ad26290e560a666c4edec15" compoundref="longarithmeticpage_8cpp" startline="18" endline="34">LongArithmeticPage</references>
+        <references refid="classLongArithmeticPage_1a11140be3386cb7d09f97fb2f6485bcdc" compoundref="longarithmeticpage_8h" startline="36" endline="36">m_fields</references>
+        <references refid="classLongArithmeticPage_1a0cd63a86fb779f62d7c3cf8427765a10" compoundref="longarithmeticpage_8cpp" startline="101" endline="104">setInvalidExample</references>
+        <references refid="classLongArithmeticPage_1a4cb85f2022c38fc5c04014320d877c0a" compoundref="longarithmeticpage_8cpp" startline="94" endline="99">setLargeExample</references>
+        <references refid="classLongArithmeticPage_1a7107e57681d5bdcd8698b2b08c0943fc" compoundref="longarithmeticpage_8cpp" startline="89" endline="92">setNearLineExample</references>
+        <references refid="classLongArithmeticPage_1a658d7b4d612a138c0fe800b8b18d8c5e" compoundref="longarithmeticpage_8h" startline="35">ui</references>
+        <references refid="classLongArithmeticPage_1ae2449c28a8b53a186a8cf785e918b8ef" compoundref="longarithmeticpage_8cpp" startline="84" endline="87">updateIfOnline</references>
+        <referencedby refid="classLongArithmeticPage_1a07ba70df3ad26290e560a666c4edec15" compoundref="longarithmeticpage_8cpp" startline="18" endline="34">LongArithmeticPage</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classLongArithmeticPage_1a36a5c50582e24217e05746d7136089cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>LongArithmeticPage::~LongArithmeticPage</definition>
+        <argsstring>() override</argsstring>
+        <name>~LongArithmeticPage</name>
+        <qualifiedname>LongArithmeticPage::~LongArithmeticPage</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/longarithmeticpage.h" line="23" column="5" bodyfile="src/apps/GeometryWorkbench/longarithmeticpage.cpp" bodystart="36" bodyend="39"/>
+        <references refid="classLongArithmeticPage_1a658d7b4d612a138c0fe800b8b18d8c5e" compoundref="longarithmeticpage_8h" startline="35">ui</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-slot">
+      <memberdef kind="slot" id="classLongArithmeticPage_1ab52ecc9e59525ef13ea189064d45b782" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LongArithmeticPage::calculate</definition>
+        <argsstring>()</argsstring>
+        <name>calculate</name>
+        <qualifiedname>LongArithmeticPage::calculate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/longarithmeticpage.h" line="26" column="10" bodyfile="src/apps/GeometryWorkbench/longarithmeticpage.cpp" bodystart="41" bodyend="76"/>
+        <references refid="namespacebigint_1a2646acc61d0e940c36f58f118a5095d1" compoundref="exact__predicate_8cpp" startline="71" endline="89">bigint::exactTurn</references>
+        <references refid="classLongArithmeticPage_1a11140be3386cb7d09f97fb2f6485bcdc" compoundref="longarithmeticpage_8h" startline="36" endline="36">m_fields</references>
+        <references refid="classLongArithmeticPage_1a658d7b4d612a138c0fe800b8b18d8c5e" compoundref="longarithmeticpage_8h" startline="35">ui</references>
+        <referencedby refid="classLongArithmeticPage_1a07ba70df3ad26290e560a666c4edec15" compoundref="longarithmeticpage_8cpp" startline="18" endline="34">LongArithmeticPage</referencedby>
+        <referencedby refid="classLongArithmeticPage_1a82a5d59f0f0f86161a3614c8ff025dbe" compoundref="longarithmeticpage_8cpp" startline="78" endline="82">setCoordinates</referencedby>
+        <referencedby refid="classLongArithmeticPage_1ae2449c28a8b53a186a8cf785e918b8ef" compoundref="longarithmeticpage_8cpp" startline="84" endline="87">updateIfOnline</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classLongArithmeticPage_1a7107e57681d5bdcd8698b2b08c0943fc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LongArithmeticPage::setNearLineExample</definition>
+        <argsstring>()</argsstring>
+        <name>setNearLineExample</name>
+        <qualifiedname>LongArithmeticPage::setNearLineExample</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/longarithmeticpage.h" line="27" column="10" bodyfile="src/apps/GeometryWorkbench/longarithmeticpage.cpp" bodystart="89" bodyend="92"/>
+        <references refid="classLongArithmeticPage_1a82a5d59f0f0f86161a3614c8ff025dbe" compoundref="longarithmeticpage_8cpp" startline="78" endline="82">setCoordinates</references>
+        <referencedby refid="classLongArithmeticPage_1a07ba70df3ad26290e560a666c4edec15" compoundref="longarithmeticpage_8cpp" startline="18" endline="34">LongArithmeticPage</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classLongArithmeticPage_1a4cb85f2022c38fc5c04014320d877c0a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LongArithmeticPage::setLargeExample</definition>
+        <argsstring>()</argsstring>
+        <name>setLargeExample</name>
+        <qualifiedname>LongArithmeticPage::setLargeExample</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/longarithmeticpage.h" line="28" column="10" bodyfile="src/apps/GeometryWorkbench/longarithmeticpage.cpp" bodystart="94" bodyend="99"/>
+        <references refid="classLongArithmeticPage_1a82a5d59f0f0f86161a3614c8ff025dbe" compoundref="longarithmeticpage_8cpp" startline="78" endline="82">setCoordinates</references>
+        <referencedby refid="classLongArithmeticPage_1a07ba70df3ad26290e560a666c4edec15" compoundref="longarithmeticpage_8cpp" startline="18" endline="34">LongArithmeticPage</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classLongArithmeticPage_1a0cd63a86fb779f62d7c3cf8427765a10" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LongArithmeticPage::setInvalidExample</definition>
+        <argsstring>()</argsstring>
+        <name>setInvalidExample</name>
+        <qualifiedname>LongArithmeticPage::setInvalidExample</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/longarithmeticpage.h" line="29" column="10" bodyfile="src/apps/GeometryWorkbench/longarithmeticpage.cpp" bodystart="101" bodyend="104"/>
+        <references refid="classLongArithmeticPage_1a82a5d59f0f0f86161a3614c8ff025dbe" compoundref="longarithmeticpage_8cpp" startline="78" endline="82">setCoordinates</references>
+        <referencedby refid="classLongArithmeticPage_1a07ba70df3ad26290e560a666c4edec15" compoundref="longarithmeticpage_8cpp" startline="18" endline="34">LongArithmeticPage</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classLongArithmeticPage_1a82a5d59f0f0f86161a3614c8ff025dbe" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LongArithmeticPage::setCoordinates</definition>
+        <argsstring>(const std::array&lt; QString, 6 &gt; &amp;values)</argsstring>
+        <name>setCoordinates</name>
+        <qualifiedname>LongArithmeticPage::setCoordinates</qualifiedname>
+        <param>
+          <type>const std::array&lt; QString, 6 &gt; &amp;</type>
+          <declname>values</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/longarithmeticpage.h" line="32" column="10" bodyfile="src/apps/GeometryWorkbench/longarithmeticpage.cpp" bodystart="78" bodyend="82"/>
+        <references refid="classLongArithmeticPage_1ab52ecc9e59525ef13ea189064d45b782" compoundref="longarithmeticpage_8cpp" startline="41" endline="76">calculate</references>
+        <references refid="classLongArithmeticPage_1a11140be3386cb7d09f97fb2f6485bcdc" compoundref="longarithmeticpage_8h" startline="36" endline="36">m_fields</references>
+        <referencedby refid="classLongArithmeticPage_1a0cd63a86fb779f62d7c3cf8427765a10" compoundref="longarithmeticpage_8cpp" startline="101" endline="104">setInvalidExample</referencedby>
+        <referencedby refid="classLongArithmeticPage_1a4cb85f2022c38fc5c04014320d877c0a" compoundref="longarithmeticpage_8cpp" startline="94" endline="99">setLargeExample</referencedby>
+        <referencedby refid="classLongArithmeticPage_1a7107e57681d5bdcd8698b2b08c0943fc" compoundref="longarithmeticpage_8cpp" startline="89" endline="92">setNearLineExample</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classLongArithmeticPage_1ae2449c28a8b53a186a8cf785e918b8ef" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LongArithmeticPage::updateIfOnline</definition>
+        <argsstring>()</argsstring>
+        <name>updateIfOnline</name>
+        <qualifiedname>LongArithmeticPage::updateIfOnline</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/longarithmeticpage.h" line="33" column="10" bodyfile="src/apps/GeometryWorkbench/longarithmeticpage.cpp" bodystart="84" bodyend="87"/>
+        <references refid="classLongArithmeticPage_1ab52ecc9e59525ef13ea189064d45b782" compoundref="longarithmeticpage_8cpp" startline="41" endline="76">calculate</references>
+        <references refid="classLongArithmeticPage_1a658d7b4d612a138c0fe800b8b18d8c5e" compoundref="longarithmeticpage_8h" startline="35">ui</references>
+        <referencedby refid="classLongArithmeticPage_1a07ba70df3ad26290e560a666c4edec15" compoundref="longarithmeticpage_8cpp" startline="18" endline="34">LongArithmeticPage</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Форма задачи 3: точный предикат без графического холста. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Поля принимают целые, десятичные и экспоненциальные строки. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>LongArithmeticPage</label>
+        <link refid="classLongArithmeticPage"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QWidget</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>LongArithmeticPage</label>
+        <link refid="classLongArithmeticPage"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QWidget</label>
+      </node>
+    </collaborationgraph>
+    <location file="src/apps/GeometryWorkbench/longarithmeticpage.h" line="19" column="1" bodyfile="src/apps/GeometryWorkbench/longarithmeticpage.h" bodystart="19" bodyend="37"/>
+    <listofallmembers>
+      <member refid="classLongArithmeticPage_1ab52ecc9e59525ef13ea189064d45b782" prot="private" virt="non-virtual"><scope>LongArithmeticPage</scope><name>calculate</name></member>
+      <member refid="classLongArithmeticPage_1a07ba70df3ad26290e560a666c4edec15" prot="public" virt="non-virtual"><scope>LongArithmeticPage</scope><name>LongArithmeticPage</name></member>
+      <member refid="classLongArithmeticPage_1a11140be3386cb7d09f97fb2f6485bcdc" prot="private" virt="non-virtual"><scope>LongArithmeticPage</scope><name>m_fields</name></member>
+      <member refid="classLongArithmeticPage_1a82a5d59f0f0f86161a3614c8ff025dbe" prot="private" virt="non-virtual"><scope>LongArithmeticPage</scope><name>setCoordinates</name></member>
+      <member refid="classLongArithmeticPage_1a0cd63a86fb779f62d7c3cf8427765a10" prot="private" virt="non-virtual"><scope>LongArithmeticPage</scope><name>setInvalidExample</name></member>
+      <member refid="classLongArithmeticPage_1a4cb85f2022c38fc5c04014320d877c0a" prot="private" virt="non-virtual"><scope>LongArithmeticPage</scope><name>setLargeExample</name></member>
+      <member refid="classLongArithmeticPage_1a7107e57681d5bdcd8698b2b08c0943fc" prot="private" virt="non-virtual"><scope>LongArithmeticPage</scope><name>setNearLineExample</name></member>
+      <member refid="classLongArithmeticPage_1a658d7b4d612a138c0fe800b8b18d8c5e" prot="private" virt="non-virtual"><scope>LongArithmeticPage</scope><name>ui</name></member>
+      <member refid="classLongArithmeticPage_1ae2449c28a8b53a186a8cf785e918b8ef" prot="private" virt="non-virtual"><scope>LongArithmeticPage</scope><name>updateIfOnline</name></member>
+      <member refid="classLongArithmeticPage_1a36a5c50582e24217e05746d7136089cc" prot="public" virt="non-virtual"><scope>LongArithmeticPage</scope><name>~LongArithmeticPage</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,5 @@
+<map id="geometry::convexHull" name="geometry::convexHull">
+<area shape="rect" id="Node000001" title="Выпуклая оболочка множества точек алгоритмом Эндрю." alt="" coords="5,5,170,33"/>
+<area shape="rect" id="Node000002" href="$group__geometry__predicates.html#gac3352a32baf1dd7d3620a1748dd4b78a" title="Векторное произведение (b &#45; a) x (c &#45; a)." alt="" coords="218,5,343,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="170,17,205,19,199,19,170,22"/>
+</map>

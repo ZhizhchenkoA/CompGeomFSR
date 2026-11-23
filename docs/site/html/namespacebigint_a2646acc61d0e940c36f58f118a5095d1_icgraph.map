@@ -1,0 +1,22 @@
+<map id="bigint::exactTurn" name="bigint::exactTurn">
+<area shape="rect" id="Node000001" title="Поля массива идут в порядке Ax, Ay, Bx, By, Px, Py." alt="" coords="824,114,953,142"/>
+<area shape="rect" id="Node000002" href="$classLongArithmeticPage.html#ab52ecc9e59525ef13ea189064d45b782" title=" " alt="" coords="624,105,776,150"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="805,128,776,130,776,125,811,128"/>
+<area shape="rect" id="Node000003" href="$classLongArithmeticPage.html#a07ba70df3ad26290e560a666c4edec15" title=" " alt="" coords="5,105,165,150"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="643,98,561,61,509,42,452,25,393,13,332,8,272,12,214,26,181,42,152,63,107,107,103,103,149,59,179,37,212,21,271,7,332,3,393,8,453,20,510,37,563,56,649,98"/>
+<area shape="rect" id="Node000004" href="$classLongArithmeticPage.html#a82a5d59f0f0f86161a3614c8ff025dbe" title=" " alt="" coords="425,105,576,150"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="606,128,577,130,576,125,611,128"/>
+<area shape="rect" id="Node000008" href="$classLongArithmeticPage.html#ae2449c28a8b53a186a8cf785e918b8ef" title=" " alt="" coords="425,204,576,249"/>
+<area shape="poly" id="edge11_Node000002_Node000008" title=" " alt="" coords="642,157,549,206,547,201,637,158"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="118,91,106,86,85,84,66,86,54,91,49,97,50,105,45,105,43,95,50,86,64,81,85,79,108,81,123,89"/>
+<area shape="rect" id="Node000005" href="$classLongArithmeticPage.html#a0cd63a86fb779f62d7c3cf8427765a10" title=" " alt="" coords="219,36,370,81"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="415,100,363,84,364,79,421,100"/>
+<area shape="rect" id="Node000006" href="$classLongArithmeticPage.html#a4cb85f2022c38fc5c04014320d877c0a" title=" " alt="" coords="219,105,370,150"/>
+<area shape="poly" id="edge7_Node000004_Node000006" title=" " alt="" coords="407,128,371,130,371,125,412,127"/>
+<area shape="rect" id="Node000007" href="$classLongArithmeticPage.html#a7107e57681d5bdcd8698b2b08c0943fc" title=" " alt="" coords="213,175,377,219"/>
+<area shape="poly" id="edge9_Node000004_Node000007" title=" " alt="" coords="421,155,364,177,363,172,415,156"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="208,88,156,107,154,102,213,85"/>
+<area shape="poly" id="edge8_Node000006_Node000003" title=" " alt="" coords="201,129,166,130,165,125,206,127"/>
+<area shape="poly" id="edge10_Node000007_Node000003" title=" " alt="" coords="208,170,155,153,155,148,213,169"/>
+<area shape="poly" id="edge12_Node000008_Node000003" title=" " alt="" coords="412,244,363,251,313,252,261,247,212,234,179,218,149,197,104,153,106,148,152,193,181,214,214,229,262,242,313,247,363,246,407,244"/>
+</map>

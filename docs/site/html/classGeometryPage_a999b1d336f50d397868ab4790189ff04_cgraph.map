@@ -1,0 +1,7 @@
+<map id="GeometryPage::on_clearButton_clicked" name="GeometryPage::on_clearButton_clicked">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,24,229,68"/>
+<area shape="rect" id="Node000002" href="$classGeometryPage.html#addebfdadcc9b93da1bf550fb3aa57c33" title=" " alt="" coords="280,5,476,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="229,32,268,30,262,31,230,37"/>
+<area shape="rect" id="Node000003" href="$classGeometryPage.html#a4ac016dceaf16fde96c2aed328b0e50d" title=" " alt="" coords="277,57,480,85"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="229,54,264,60,259,60,229,59"/>
+</map>

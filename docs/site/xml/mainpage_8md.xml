@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="mainpage_8md" kind="file" language="Markdown">
+    <compoundname>mainpage.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">/**</highlight></codeline>
+<codeline><highlight class="normal">@mainpage<sp/>Geometry<sp/>Workbench</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">@section<sp/>overview<sp/>Обзор</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Интерактивный<sp/>стенд<sp/>по<sp/>компьютерной<sp/>геометрии<sp/>на<sp/>C++17<sp/>и<sp/>Qt<sp/>6.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">@section<sp/>highlights<sp/>Возможности<sp/>Doxygen<sp/>в<sp/>этом<sp/>проекте</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*<sp/>`@mainpage`<sp/>—<sp/>эта<sp/>страница<sp/>становится<sp/>домашней<sp/>страницей<sp/>HTML-документации.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>`@defgroup`<sp/>и<sp/>`@ingroup`<sp/>—<sp/>API<sp/>разделён<sp/>на<sp/>предметные<sp/>библиотеки.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>Graphviz<sp/>(`HAVE_DOT<sp/>=<sp/>YES`)<sp/>—<sp/>строит<sp/>графы<sp/>классов,<sp/>include-зависимостей<sp/>и<sp/>вызовов.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>`@example`<sp/>—<sp/>исходный<sp/>пример<sp/>появляется<sp/>в<sp/>специальном<sp/>разделе<sp/>Examples.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>пользовательские<sp/>aliases<sp/>`\\complexity`,<sp/>`\\invariant`,<sp/>`\\educational`<sp/>—<sp/>единый<sp/>стиль<sp/>методических<sp/>заметок.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>XML-вывод<sp/>(`GENERATE_XML`)<sp/>можно<sp/>использовать<sp/>во<sp/>внешнем<sp/>генераторе<sp/>или<sp/>IDE.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">@section<sp/>example_section<sp/>Пример<sp/>API</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Ниже<sp/>подключён<sp/>минимальный<sp/>пример<sp/>вычисления<sp/>предиката<sp/>поворота:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">@example<sp/>turn_example.cpp</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">@section<sp/>quickstart<sp/>Быстрый<sp/>старт</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```bash</highlight></codeline>
+<codeline><highlight class="normal">cmake<sp/>-S<sp/>.<sp/>-B<sp/>build</highlight></codeline>
+<codeline><highlight class="normal">cmake<sp/>--build<sp/>build<sp/>--target<sp/>docs</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">HTML<sp/>находится<sp/>в<sp/>`build/docs/html/index.html`,<sp/>XML<sp/>—<sp/>в<sp/>`build/docs/xml/`.</highlight></codeline>
+<codeline><highlight class="normal">*/</highlight></codeline>
+    </programlisting>
+    <location file="docs/mainpage.md"/>
+  </compounddef>
+</doxygen>

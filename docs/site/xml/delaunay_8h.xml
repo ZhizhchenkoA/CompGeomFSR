@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="delaunay_8h" kind="file" language="C++">
+    <compoundname>delaunay.h</compoundname>
+    <includes local="no">array</includes>
+    <includes local="no">vector</includes>
+    <includes refid="point_8h" local="yes">geometry/point.h</includes>
+    <includedby refid="geometrypage_8cpp" local="yes">src/apps/GeometryWorkbench/geometrypage.cpp</includedby>
+    <includedby refid="delaunay_8cpp" local="yes">src/lib/geometry/delaunay.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>src/lib/geometry/delaunay.h</label>
+        <link refid="delaunay_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>geometry/point.h</label>
+        <link refid="point_8h"/>
+      </node>
+      <node id="2">
+        <label>array</label>
+      </node>
+      <node id="3">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>src/apps/GeometryWorkbench/geometrypage.cpp</label>
+        <link refid="geometrypage_8cpp"/>
+      </node>
+      <node id="3">
+        <label>src/lib/geometry/delaunay.cpp</label>
+        <link refid="delaunay_8cpp"/>
+      </node>
+      <node id="1">
+        <label>src/lib/geometry/delaunay.h</label>
+        <link refid="delaunay_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structgeometry_1_1Circumcircle" prot="public">geometry::Circumcircle</innerclass>
+    <innerclass refid="structgeometry_1_1DelaunayTriangle" prot="public">geometry::DelaunayTriangle</innerclass>
+    <innernamespace refid="namespacegeometry">geometry</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;array&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="point_8h" kindref="compound">geometry/point.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacegeometry" kindref="compound">geometry</ref><sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="structgeometry_1_1Circumcircle" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structgeometry_1_1Circumcircle" kindref="compound">Circumcircle</ref><sp/>{</highlight></codeline>
+<codeline lineno="12" refid="structgeometry_1_1Circumcircle_1a60121de2017744bb653f1b3f48add15e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgeometry_1_1Point" kindref="compound">Point</ref><sp/><ref refid="structgeometry_1_1Circumcircle_1a60121de2017744bb653f1b3f48add15e" kindref="member">center</ref>{};</highlight></codeline>
+<codeline lineno="13" refid="structgeometry_1_1Circumcircle_1a32c699d820c2087b08a632f5dfb0d5af" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structgeometry_1_1Circumcircle_1a32c699d820c2087b08a632f5dfb0d5af" kindref="member">radius</ref><sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="structgeometry_1_1DelaunayTriangle" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structgeometry_1_1DelaunayTriangle" kindref="compound">DelaunayTriangle</ref><sp/>{</highlight></codeline>
+<codeline lineno="18" refid="structgeometry_1_1DelaunayTriangle_1acd931dff87085dcdbb22def01e9c632d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::array&lt;Point,<sp/>3&gt;<sp/><ref refid="structgeometry_1_1DelaunayTriangle_1acd931dff87085dcdbb22def01e9c632d" kindref="member">vertices</ref>{};</highlight></codeline>
+<codeline lineno="19" refid="structgeometry_1_1DelaunayTriangle_1a3453dcbd47978a2eff85b3b036a3b57c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgeometry_1_1Circumcircle" kindref="compound">Circumcircle</ref><sp/><ref refid="structgeometry_1_1DelaunayTriangle_1a3453dcbd47978a2eff85b3b036a3b57c" kindref="member">circumcircle</ref>{};</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal">std::vector&lt;DelaunayTriangle&gt;<sp/><ref refid="namespacegeometry_1a9610a583f6dfe92c309727c15b9b3933" kindref="member">delaunayTriangulation</ref>(std::vector&lt;Point&gt;<sp/>points,</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>eps<sp/>=<sp/>1e-9);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>geometry</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="src/lib/geometry/delaunay.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,13 @@
+<map id="GeometryPage::computePolygonOperation" name="GeometryPage::computePolygonOperation">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,76,240,120"/>
+<area shape="rect" id="Node000002" href="$namespacegeometry.html#a6dfabff82b63c795670a97271b9908d2" title="Выпуклая оболочка множества точек алгоритмом Эндрю." alt="" coords="327,5,492,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="191,72,287,43,325,36,320,38,288,48,193,77"/>
+<area shape="rect" id="Node000004" href="$namespacegeometry.html#a9da2f54b6289b88e936abf857d44ea5e" title="Булева операция над двумя выпуклыми многоугольниками (CCW)." alt="" coords="288,57,531,85"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="240,84,275,83,270,85,241,90"/>
+<area shape="rect" id="Node000005" href="$classGeometryPage.html#a4ac016dceaf16fde96c2aed328b0e50d" title=" " alt="" coords="308,109,511,137"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="240,106,295,112,290,113,240,111"/>
+<area shape="rect" id="Node000006" href="$namespacegeometry__qt.html#ab38550851d7c6704f958a3edd7a2dc56" title="Обратное преобразование: геометрия &#45;&gt; экран." alt="" coords="325,161,494,189"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="194,118,288,146,326,157,321,157,287,151,193,123"/>
+<area shape="rect" id="Node000003" href="$group__geometry__predicates.html#gac3352a32baf1dd7d3620a1748dd4b78a" title="Векторное произведение (b &#45; a) x (c &#45; a)." alt="" coords="579,5,704,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="491,17,566,19,561,20,492,22"/>
+</map>

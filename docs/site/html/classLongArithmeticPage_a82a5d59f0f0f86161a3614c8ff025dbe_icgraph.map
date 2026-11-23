@@ -1,0 +1,14 @@
+<map id="LongArithmeticPage::setCoordinates" name="LongArithmeticPage::setCoordinates">
+<area shape="rect" id="Node000001" title=" " alt="" coords="425,75,576,119"/>
+<area shape="rect" id="Node000002" href="$classLongArithmeticPage.html#a0cd63a86fb779f62d7c3cf8427765a10" title=" " alt="" coords="219,5,370,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="415,69,363,53,364,48,421,69"/>
+<area shape="rect" id="Node000004" href="$classLongArithmeticPage.html#a4cb85f2022c38fc5c04014320d877c0a" title=" " alt="" coords="219,75,370,119"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="407,97,371,100,371,94,412,97"/>
+<area shape="rect" id="Node000005" href="$classLongArithmeticPage.html#a7107e57681d5bdcd8698b2b08c0943fc" title=" " alt="" coords="213,144,377,189"/>
+<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="421,124,364,146,363,141,415,125"/>
+<area shape="rect" id="Node000003" href="$classLongArithmeticPage.html#a07ba70df3ad26290e560a666c4edec15" title=" " alt="" coords="5,75,165,119"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="208,57,156,76,154,72,213,54"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="118,60,106,56,85,53,66,55,54,60,49,66,50,74,45,74,43,65,50,56,64,50,85,48,108,51,123,59"/>
+<area shape="poly" id="edge5_Node000004_Node000003" title=" " alt="" coords="201,98,166,100,165,94,206,96"/>
+<area shape="poly" id="edge7_Node000005_Node000003" title=" " alt="" coords="208,139,155,123,155,117,213,138"/>
+</map>

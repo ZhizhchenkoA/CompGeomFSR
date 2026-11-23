@@ -1,0 +1,1358 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="classGeometryCanvas" kind="class" language="C++" prot="public">
+    <compoundname>GeometryCanvas</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QWidget</basecompoundref>
+    <includes refid="geometrycanvas_8h" local="no">geometrycanvas.h</includes>
+    <innerclass refid="structGeometryCanvas_1_1Segment" prot="private">GeometryCanvas::Segment</innerclass>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classGeometryCanvas_1a8bd85330c489ce815753252111ceb2e9" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; QPointF &gt;</type>
+        <definition>std::vector&lt;QPointF&gt; GeometryCanvas::m_points</definition>
+        <argsstring></argsstring>
+        <name>m_points</name>
+        <qualifiedname>GeometryCanvas::m_points</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrycanvas.h" line="78" column="17" bodyfile="src/apps/GeometryWorkbench/geometrycanvas.h" bodystart="78" bodyend="-1"/>
+        <referencedby refid="classGeometryCanvas_1acc1297c665d5758b56e5977aade99f16" compoundref="geometrycanvas_8cpp" startline="34" endline="41">addPoint</referencedby>
+        <referencedby refid="classGeometryCanvas_1ac941423eda256c877a3b5e3acd82629e" compoundref="geometrycanvas_8cpp" startline="169" endline="187">clear</referencedby>
+        <referencedby refid="classGeometryCanvas_1ad2bf2da2a11477f8edbb4e4d7996b7bc" compoundref="geometrycanvas_8cpp" startline="431" endline="448">drawPoint</referencedby>
+        <referencedby refid="classGeometryCanvas_1a63b39ade7072cbab520bc9423134699a" compoundref="geometrycanvas_8cpp" startline="368" endline="429">drawTurnGuide</referencedby>
+        <referencedby refid="classGeometryCanvas_1a619ace231ac17afee377f9afec1e0ba1" compoundref="geometrycanvas_8cpp" startline="194" endline="208">hitTest</referencedby>
+        <referencedby refid="classGeometryCanvas_1a471380964c5f56d5d22ea0600ed49bfb" compoundref="geometrycanvas_8cpp" startline="465" endline="478">mouseMoveEvent</referencedby>
+        <referencedby refid="classGeometryCanvas_1aa3f90b84c153e5c9b531fff6a2f4abff" compoundref="geometrycanvas_8cpp" startline="210" endline="366">paintEvent</referencedby>
+        <referencedby refid="classGeometryCanvas_1a4a6484c40ccbe1be1dc69417f9574c4f" compoundref="geometrycanvas_8cpp" startline="189" endline="192">pointCount</referencedby>
+        <referencedby refid="classGeometryCanvas_1add9dc04295da644ffdf13319d962e010" compoundref="geometrycanvas_8cpp" startline="43" endline="50">setPointPos</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGeometryCanvas_1a24b4143918da4060f9f46b0b35bc1a15" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; QColor &gt;</type>
+        <definition>std::vector&lt;QColor&gt; GeometryCanvas::m_pointColors</definition>
+        <argsstring></argsstring>
+        <name>m_pointColors</name>
+        <qualifiedname>GeometryCanvas::m_pointColors</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrycanvas.h" line="79" column="17" bodyfile="src/apps/GeometryWorkbench/geometrycanvas.h" bodystart="79" bodyend="-1"/>
+        <referencedby refid="classGeometryCanvas_1acc1297c665d5758b56e5977aade99f16" compoundref="geometrycanvas_8cpp" startline="34" endline="41">addPoint</referencedby>
+        <referencedby refid="classGeometryCanvas_1ac941423eda256c877a3b5e3acd82629e" compoundref="geometrycanvas_8cpp" startline="169" endline="187">clear</referencedby>
+        <referencedby refid="classGeometryCanvas_1ad2bf2da2a11477f8edbb4e4d7996b7bc" compoundref="geometrycanvas_8cpp" startline="431" endline="448">drawPoint</referencedby>
+        <referencedby refid="classGeometryCanvas_1a40e13dba45358f4ac742fc194ccebee3" compoundref="geometrycanvas_8cpp" startline="52" endline="59">setPointColor</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGeometryCanvas_1a6a4baf26113096163d580764ae4dbb21" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; QString &gt;</type>
+        <definition>std::vector&lt;QString&gt; GeometryCanvas::m_pointLabels</definition>
+        <argsstring></argsstring>
+        <name>m_pointLabels</name>
+        <qualifiedname>GeometryCanvas::m_pointLabels</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrycanvas.h" line="80" column="17" bodyfile="src/apps/GeometryWorkbench/geometrycanvas.h" bodystart="80" bodyend="-1"/>
+        <referencedby refid="classGeometryCanvas_1acc1297c665d5758b56e5977aade99f16" compoundref="geometrycanvas_8cpp" startline="34" endline="41">addPoint</referencedby>
+        <referencedby refid="classGeometryCanvas_1ac941423eda256c877a3b5e3acd82629e" compoundref="geometrycanvas_8cpp" startline="169" endline="187">clear</referencedby>
+        <referencedby refid="classGeometryCanvas_1ad2bf2da2a11477f8edbb4e4d7996b7bc" compoundref="geometrycanvas_8cpp" startline="431" endline="448">drawPoint</referencedby>
+        <referencedby refid="classGeometryCanvas_1ac9827697b8c3c3529952bea3f934ecfd" compoundref="geometrycanvas_8cpp" startline="61" endline="68">setPointLabel</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGeometryCanvas_1a101595ca8120c5de7a0ba97539cc6b4e" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structGeometryCanvas_1_1Segment" kindref="compound">Segment</ref> &gt;</type>
+        <definition>std::vector&lt;Segment&gt; GeometryCanvas::m_segments</definition>
+        <argsstring></argsstring>
+        <name>m_segments</name>
+        <qualifiedname>GeometryCanvas::m_segments</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrycanvas.h" line="82" column="17" bodyfile="src/apps/GeometryWorkbench/geometrycanvas.h" bodystart="82" bodyend="-1"/>
+        <referencedby refid="classGeometryCanvas_1a761008e3c9ee5803d49ccad703dcd606" compoundref="geometrycanvas_8cpp" startline="70" endline="74">addSegment</referencedby>
+        <referencedby refid="classGeometryCanvas_1ac941423eda256c877a3b5e3acd82629e" compoundref="geometrycanvas_8cpp" startline="169" endline="187">clear</referencedby>
+        <referencedby refid="classGeometryCanvas_1a09c735d868f2122e3d5b9266037d8921" compoundref="geometrycanvas_8cpp" startline="163" endline="167">clearSegments</referencedby>
+        <referencedby refid="classGeometryCanvas_1aa3f90b84c153e5c9b531fff6a2f4abff" compoundref="geometrycanvas_8cpp" startline="210" endline="366">paintEvent</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGeometryCanvas_1af6b1f7d537d3d2fdad98891490178a18" prot="private" static="no" mutable="no">
+        <type>QColor</type>
+        <definition>QColor GeometryCanvas::m_defaultPointColor</definition>
+        <argsstring></argsstring>
+        <name>m_defaultPointColor</name>
+        <qualifiedname>GeometryCanvas::m_defaultPointColor</qualifiedname>
+        <initializer>{37, 99, 235}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrycanvas.h" line="84" column="12" bodyfile="src/apps/GeometryWorkbench/geometrycanvas.h" bodystart="84" bodyend="84"/>
+        <referencedby refid="classGeometryCanvas_1acc1297c665d5758b56e5977aade99f16" compoundref="geometrycanvas_8cpp" startline="34" endline="41">addPoint</referencedby>
+        <referencedby refid="classGeometryCanvas_1ad2bf2da2a11477f8edbb4e4d7996b7bc" compoundref="geometrycanvas_8cpp" startline="431" endline="448">drawPoint</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGeometryCanvas_1afbac48e435dfff31da733109d4230afd" prot="private" static="no" mutable="no">
+        <type>QColor</type>
+        <definition>QColor GeometryCanvas::m_segmentColor</definition>
+        <argsstring></argsstring>
+        <name>m_segmentColor</name>
+        <qualifiedname>GeometryCanvas::m_segmentColor</qualifiedname>
+        <initializer>{100, 116, 139}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrycanvas.h" line="85" column="12" bodyfile="src/apps/GeometryWorkbench/geometrycanvas.h" bodystart="85" bodyend="85"/>
+        <referencedby refid="classGeometryCanvas_1aa3f90b84c153e5c9b531fff6a2f4abff" compoundref="geometrycanvas_8cpp" startline="210" endline="366">paintEvent</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGeometryCanvas_1a28fc67e936d72f34e098a38e5a764e02" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int GeometryCanvas::m_dragIndex</definition>
+        <argsstring></argsstring>
+        <name>m_dragIndex</name>
+        <qualifiedname>GeometryCanvas::m_dragIndex</qualifiedname>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrycanvas.h" line="86" column="9" bodyfile="src/apps/GeometryWorkbench/geometrycanvas.h" bodystart="86" bodyend="-1"/>
+        <referencedby refid="classGeometryCanvas_1ac941423eda256c877a3b5e3acd82629e" compoundref="geometrycanvas_8cpp" startline="169" endline="187">clear</referencedby>
+        <referencedby refid="classGeometryCanvas_1a471380964c5f56d5d22ea0600ed49bfb" compoundref="geometrycanvas_8cpp" startline="465" endline="478">mouseMoveEvent</referencedby>
+        <referencedby refid="classGeometryCanvas_1adaeb2e5472f53cdd856bce1860dfb62a" compoundref="geometrycanvas_8cpp" startline="450" endline="463">mousePressEvent</referencedby>
+        <referencedby refid="classGeometryCanvas_1a581a44984b5141a76668b8b9393473ab" compoundref="geometrycanvas_8cpp" startline="480" endline="488">mouseReleaseEvent</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGeometryCanvas_1acc647582e6dc1d6aa336cfbb06aa047a" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool GeometryCanvas::m_turnGuideVisible</definition>
+        <argsstring></argsstring>
+        <name>m_turnGuideVisible</name>
+        <qualifiedname>GeometryCanvas::m_turnGuideVisible</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrycanvas.h" line="87" column="10" bodyfile="src/apps/GeometryWorkbench/geometrycanvas.h" bodystart="87" bodyend="-1"/>
+        <referencedby refid="classGeometryCanvas_1ac941423eda256c877a3b5e3acd82629e" compoundref="geometrycanvas_8cpp" startline="169" endline="187">clear</referencedby>
+        <referencedby refid="classGeometryCanvas_1aa3f90b84c153e5c9b531fff6a2f4abff" compoundref="geometrycanvas_8cpp" startline="210" endline="366">paintEvent</referencedby>
+        <referencedby refid="classGeometryCanvas_1af562795c91228050ba3917ecb72efb33" compoundref="geometrycanvas_8cpp" startline="157" endline="161">setTurnGuideVisible</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGeometryCanvas_1a8523cd72882fb48273d77dcbebab5e2e" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool GeometryCanvas::m_intersectionMarkerVisible</definition>
+        <argsstring></argsstring>
+        <name>m_intersectionMarkerVisible</name>
+        <qualifiedname>GeometryCanvas::m_intersectionMarkerVisible</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrycanvas.h" line="88" column="10" bodyfile="src/apps/GeometryWorkbench/geometrycanvas.h" bodystart="88" bodyend="-1"/>
+        <referencedby refid="classGeometryCanvas_1ac941423eda256c877a3b5e3acd82629e" compoundref="geometrycanvas_8cpp" startline="169" endline="187">clear</referencedby>
+        <referencedby refid="classGeometryCanvas_1addd8eb26f5588454fcb0ab8668332678" compoundref="geometrycanvas_8cpp" startline="91" endline="96">clearIntersectionVisuals</referencedby>
+        <referencedby refid="classGeometryCanvas_1aa3f90b84c153e5c9b531fff6a2f4abff" compoundref="geometrycanvas_8cpp" startline="210" endline="366">paintEvent</referencedby>
+        <referencedby refid="classGeometryCanvas_1a6ef9b4daee67128687c01954fb70a68b" compoundref="geometrycanvas_8cpp" startline="76" endline="81">setIntersectionMarker</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGeometryCanvas_1aa56c6cf652599a0de15e5c4f1505b6da" prot="private" static="no" mutable="no">
+        <type>QPointF</type>
+        <definition>QPointF GeometryCanvas::m_intersectionMarker</definition>
+        <argsstring></argsstring>
+        <name>m_intersectionMarker</name>
+        <qualifiedname>GeometryCanvas::m_intersectionMarker</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrycanvas.h" line="89" column="13" bodyfile="src/apps/GeometryWorkbench/geometrycanvas.h" bodystart="89" bodyend="-1"/>
+        <referencedby refid="classGeometryCanvas_1aa3f90b84c153e5c9b531fff6a2f4abff" compoundref="geometrycanvas_8cpp" startline="210" endline="366">paintEvent</referencedby>
+        <referencedby refid="classGeometryCanvas_1a6ef9b4daee67128687c01954fb70a68b" compoundref="geometrycanvas_8cpp" startline="76" endline="81">setIntersectionMarker</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGeometryCanvas_1a3330ec099ca1294901bc88c625374ff4" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool GeometryCanvas::m_overlapHighlightVisible</definition>
+        <argsstring></argsstring>
+        <name>m_overlapHighlightVisible</name>
+        <qualifiedname>GeometryCanvas::m_overlapHighlightVisible</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrycanvas.h" line="90" column="10" bodyfile="src/apps/GeometryWorkbench/geometrycanvas.h" bodystart="90" bodyend="-1"/>
+        <referencedby refid="classGeometryCanvas_1ac941423eda256c877a3b5e3acd82629e" compoundref="geometrycanvas_8cpp" startline="169" endline="187">clear</referencedby>
+        <referencedby refid="classGeometryCanvas_1addd8eb26f5588454fcb0ab8668332678" compoundref="geometrycanvas_8cpp" startline="91" endline="96">clearIntersectionVisuals</referencedby>
+        <referencedby refid="classGeometryCanvas_1aa3f90b84c153e5c9b531fff6a2f4abff" compoundref="geometrycanvas_8cpp" startline="210" endline="366">paintEvent</referencedby>
+        <referencedby refid="classGeometryCanvas_1a388228b1d8b6879fb4ffc74307aa6624" compoundref="geometrycanvas_8cpp" startline="83" endline="89">setOverlapHighlight</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGeometryCanvas_1a1901e4743ca573a156171e26730e609b" prot="private" static="no" mutable="no">
+        <type>QPointF</type>
+        <definition>QPointF GeometryCanvas::m_overlapFirst</definition>
+        <argsstring></argsstring>
+        <name>m_overlapFirst</name>
+        <qualifiedname>GeometryCanvas::m_overlapFirst</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrycanvas.h" line="91" column="13" bodyfile="src/apps/GeometryWorkbench/geometrycanvas.h" bodystart="91" bodyend="-1"/>
+        <referencedby refid="classGeometryCanvas_1aa3f90b84c153e5c9b531fff6a2f4abff" compoundref="geometrycanvas_8cpp" startline="210" endline="366">paintEvent</referencedby>
+        <referencedby refid="classGeometryCanvas_1a388228b1d8b6879fb4ffc74307aa6624" compoundref="geometrycanvas_8cpp" startline="83" endline="89">setOverlapHighlight</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGeometryCanvas_1a67efd1024c2e6ef542ef484378230ea2" prot="private" static="no" mutable="no">
+        <type>QPointF</type>
+        <definition>QPointF GeometryCanvas::m_overlapSecond</definition>
+        <argsstring></argsstring>
+        <name>m_overlapSecond</name>
+        <qualifiedname>GeometryCanvas::m_overlapSecond</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrycanvas.h" line="92" column="13" bodyfile="src/apps/GeometryWorkbench/geometrycanvas.h" bodystart="92" bodyend="-1"/>
+        <referencedby refid="classGeometryCanvas_1aa3f90b84c153e5c9b531fff6a2f4abff" compoundref="geometrycanvas_8cpp" startline="210" endline="366">paintEvent</referencedby>
+        <referencedby refid="classGeometryCanvas_1a388228b1d8b6879fb4ffc74307aa6624" compoundref="geometrycanvas_8cpp" startline="83" endline="89">setOverlapHighlight</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGeometryCanvas_1a2cd2560a7a1efaf92f528bb8cf9fbbb3" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; QPointF &gt;</type>
+        <definition>std::vector&lt;QPointF&gt; GeometryCanvas::m_convexHull</definition>
+        <argsstring></argsstring>
+        <name>m_convexHull</name>
+        <qualifiedname>GeometryCanvas::m_convexHull</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrycanvas.h" line="93" column="17" bodyfile="src/apps/GeometryWorkbench/geometrycanvas.h" bodystart="93" bodyend="-1"/>
+        <referencedby refid="classGeometryCanvas_1ac941423eda256c877a3b5e3acd82629e" compoundref="geometrycanvas_8cpp" startline="169" endline="187">clear</referencedby>
+        <referencedby refid="classGeometryCanvas_1ae09174b03358bbac7887be3bd5ce6f41" compoundref="geometrycanvas_8cpp" startline="104" endline="108">clearConvexHull</referencedby>
+        <referencedby refid="classGeometryCanvas_1aa3f90b84c153e5c9b531fff6a2f4abff" compoundref="geometrycanvas_8cpp" startline="210" endline="366">paintEvent</referencedby>
+        <referencedby refid="classGeometryCanvas_1a171199a0ed44634f13cd2fd4353fa683" compoundref="geometrycanvas_8cpp" startline="98" endline="102">setConvexHull</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGeometryCanvas_1aeacc02d958f333368af495249206319c" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::array&lt; QPointF, 3 &gt; &gt;</type>
+        <definition>std::vector&lt;std::array&lt;QPointF, 3&gt; &gt; GeometryCanvas::m_delaunayTriangles</definition>
+        <argsstring></argsstring>
+        <name>m_delaunayTriangles</name>
+        <qualifiedname>GeometryCanvas::m_delaunayTriangles</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrycanvas.h" line="94" column="17" bodyfile="src/apps/GeometryWorkbench/geometrycanvas.h" bodystart="94" bodyend="-1"/>
+        <referencedby refid="classGeometryCanvas_1ac941423eda256c877a3b5e3acd82629e" compoundref="geometrycanvas_8cpp" startline="169" endline="187">clear</referencedby>
+        <referencedby refid="classGeometryCanvas_1afa9081aec42ba01b3d0e9820f7847779" compoundref="geometrycanvas_8cpp" startline="118" endline="123">clearDelaunayTriangles</referencedby>
+        <referencedby refid="classGeometryCanvas_1aa3f90b84c153e5c9b531fff6a2f4abff" compoundref="geometrycanvas_8cpp" startline="210" endline="366">paintEvent</referencedby>
+        <referencedby refid="classGeometryCanvas_1a34db397c52af9a20398393bff20396a6" compoundref="geometrycanvas_8cpp" startline="110" endline="116">setDelaunayTriangles</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGeometryCanvas_1a1ce68eec1abe57e47ff3c059e7ffee93" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::pair&lt; QPointF, double &gt; &gt;</type>
+        <definition>std::vector&lt;std::pair&lt;QPointF, double&gt; &gt; GeometryCanvas::m_circumcircles</definition>
+        <argsstring></argsstring>
+        <name>m_circumcircles</name>
+        <qualifiedname>GeometryCanvas::m_circumcircles</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrycanvas.h" line="95" column="17" bodyfile="src/apps/GeometryWorkbench/geometrycanvas.h" bodystart="95" bodyend="-1"/>
+        <referencedby refid="classGeometryCanvas_1ac941423eda256c877a3b5e3acd82629e" compoundref="geometrycanvas_8cpp" startline="169" endline="187">clear</referencedby>
+        <referencedby refid="classGeometryCanvas_1afa9081aec42ba01b3d0e9820f7847779" compoundref="geometrycanvas_8cpp" startline="118" endline="123">clearDelaunayTriangles</referencedby>
+        <referencedby refid="classGeometryCanvas_1aa3f90b84c153e5c9b531fff6a2f4abff" compoundref="geometrycanvas_8cpp" startline="210" endline="366">paintEvent</referencedby>
+        <referencedby refid="classGeometryCanvas_1a34db397c52af9a20398393bff20396a6" compoundref="geometrycanvas_8cpp" startline="110" endline="116">setDelaunayTriangles</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGeometryCanvas_1a30a2dd2e0961ee859bd5c1991f761dad" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool GeometryCanvas::m_circumcirclesVisible</definition>
+        <argsstring></argsstring>
+        <name>m_circumcirclesVisible</name>
+        <qualifiedname>GeometryCanvas::m_circumcirclesVisible</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrycanvas.h" line="96" column="10" bodyfile="src/apps/GeometryWorkbench/geometrycanvas.h" bodystart="96" bodyend="-1"/>
+        <referencedby refid="classGeometryCanvas_1aa3f90b84c153e5c9b531fff6a2f4abff" compoundref="geometrycanvas_8cpp" startline="210" endline="366">paintEvent</referencedby>
+        <referencedby refid="classGeometryCanvas_1abe5ba572d805be56c8b71ff690496601" compoundref="geometrycanvas_8cpp" startline="125" endline="129">setCircumcirclesVisible</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGeometryCanvas_1ad9b6ca1d420401cacedff075040d48df" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; QPointF &gt;</type>
+        <definition>std::vector&lt;QPointF&gt; GeometryCanvas::m_polygonFirst</definition>
+        <argsstring></argsstring>
+        <name>m_polygonFirst</name>
+        <qualifiedname>GeometryCanvas::m_polygonFirst</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrycanvas.h" line="97" column="17" bodyfile="src/apps/GeometryWorkbench/geometrycanvas.h" bodystart="97" bodyend="-1"/>
+        <referencedby refid="classGeometryCanvas_1ac941423eda256c877a3b5e3acd82629e" compoundref="geometrycanvas_8cpp" startline="169" endline="187">clear</referencedby>
+        <referencedby refid="classGeometryCanvas_1aeb7775a9c2f6b707faea9eaedff723ec" compoundref="geometrycanvas_8cpp" startline="143" endline="149">clearPolygonOperation</referencedby>
+        <referencedby refid="classGeometryCanvas_1aa3f90b84c153e5c9b531fff6a2f4abff" compoundref="geometrycanvas_8cpp" startline="210" endline="366">paintEvent</referencedby>
+        <referencedby refid="classGeometryCanvas_1a56d2e0c85bc3d1b19ce62f3312c0d97d" compoundref="geometrycanvas_8cpp" startline="131" endline="141">setPolygonOperation</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGeometryCanvas_1a4f20036a42f014869173360c24ea7c02" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; QPointF &gt;</type>
+        <definition>std::vector&lt;QPointF&gt; GeometryCanvas::m_polygonSecond</definition>
+        <argsstring></argsstring>
+        <name>m_polygonSecond</name>
+        <qualifiedname>GeometryCanvas::m_polygonSecond</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrycanvas.h" line="98" column="17" bodyfile="src/apps/GeometryWorkbench/geometrycanvas.h" bodystart="98" bodyend="-1"/>
+        <referencedby refid="classGeometryCanvas_1ac941423eda256c877a3b5e3acd82629e" compoundref="geometrycanvas_8cpp" startline="169" endline="187">clear</referencedby>
+        <referencedby refid="classGeometryCanvas_1aeb7775a9c2f6b707faea9eaedff723ec" compoundref="geometrycanvas_8cpp" startline="143" endline="149">clearPolygonOperation</referencedby>
+        <referencedby refid="classGeometryCanvas_1aa3f90b84c153e5c9b531fff6a2f4abff" compoundref="geometrycanvas_8cpp" startline="210" endline="366">paintEvent</referencedby>
+        <referencedby refid="classGeometryCanvas_1a56d2e0c85bc3d1b19ce62f3312c0d97d" compoundref="geometrycanvas_8cpp" startline="131" endline="141">setPolygonOperation</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGeometryCanvas_1ad72afd80a2514046dd731211e20079e1" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; QPointF &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;QPointF&gt; &gt; GeometryCanvas::m_polygonResult</definition>
+        <argsstring></argsstring>
+        <name>m_polygonResult</name>
+        <qualifiedname>GeometryCanvas::m_polygonResult</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrycanvas.h" line="99" column="17" bodyfile="src/apps/GeometryWorkbench/geometrycanvas.h" bodystart="99" bodyend="-1"/>
+        <referencedby refid="classGeometryCanvas_1ac941423eda256c877a3b5e3acd82629e" compoundref="geometrycanvas_8cpp" startline="169" endline="187">clear</referencedby>
+        <referencedby refid="classGeometryCanvas_1aeb7775a9c2f6b707faea9eaedff723ec" compoundref="geometrycanvas_8cpp" startline="143" endline="149">clearPolygonOperation</referencedby>
+        <referencedby refid="classGeometryCanvas_1aa3f90b84c153e5c9b531fff6a2f4abff" compoundref="geometrycanvas_8cpp" startline="210" endline="366">paintEvent</referencedby>
+        <referencedby refid="classGeometryCanvas_1a56d2e0c85bc3d1b19ce62f3312c0d97d" compoundref="geometrycanvas_8cpp" startline="131" endline="141">setPolygonOperation</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGeometryCanvas_1a066a535cae4f121beac8b2f572a65f22" prot="private" static="no" mutable="no">
+        <type>QColor</type>
+        <definition>QColor GeometryCanvas::m_polygonResultColor</definition>
+        <argsstring></argsstring>
+        <name>m_polygonResultColor</name>
+        <qualifiedname>GeometryCanvas::m_polygonResultColor</qualifiedname>
+        <initializer>{220, 38, 38}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrycanvas.h" line="100" column="12" bodyfile="src/apps/GeometryWorkbench/geometrycanvas.h" bodystart="100" bodyend="100"/>
+        <referencedby refid="classGeometryCanvas_1aa3f90b84c153e5c9b531fff6a2f4abff" compoundref="geometrycanvas_8cpp" startline="210" endline="366">paintEvent</referencedby>
+        <referencedby refid="classGeometryCanvas_1a56d2e0c85bc3d1b19ce62f3312c0d97d" compoundref="geometrycanvas_8cpp" startline="131" endline="141">setPolygonOperation</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGeometryCanvas_1ac1ba963c23801a45345a870017f14296" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; QPointF &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;QPointF&gt; &gt; GeometryCanvas::m_bezierCurves</definition>
+        <argsstring></argsstring>
+        <name>m_bezierCurves</name>
+        <qualifiedname>GeometryCanvas::m_bezierCurves</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrycanvas.h" line="101" column="17" bodyfile="src/apps/GeometryWorkbench/geometrycanvas.h" bodystart="101" bodyend="-1"/>
+        <referencedby refid="classGeometryCanvas_1ac941423eda256c877a3b5e3acd82629e" compoundref="geometrycanvas_8cpp" startline="169" endline="187">clear</referencedby>
+        <referencedby refid="classGeometryCanvas_1a61916b6df3df351700b247e6b593a2e6" compoundref="geometrycanvas_8cpp" startline="155" endline="155">clearBezierCurves</referencedby>
+        <referencedby refid="classGeometryCanvas_1aa3f90b84c153e5c9b531fff6a2f4abff" compoundref="geometrycanvas_8cpp" startline="210" endline="366">paintEvent</referencedby>
+        <referencedby refid="classGeometryCanvas_1aaef62a596b6e4478524d128ecf78d636" compoundref="geometrycanvas_8cpp" startline="150" endline="154">setBezierCurves</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGeometryCanvas_1a91518549bc2a7e3bc8c71a247da3037f" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; QPointF &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;QPointF&gt; &gt; GeometryCanvas::m_bezierLevels</definition>
+        <argsstring></argsstring>
+        <name>m_bezierLevels</name>
+        <qualifiedname>GeometryCanvas::m_bezierLevels</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrycanvas.h" line="102" column="17" bodyfile="src/apps/GeometryWorkbench/geometrycanvas.h" bodystart="102" bodyend="-1"/>
+        <referencedby refid="classGeometryCanvas_1ac941423eda256c877a3b5e3acd82629e" compoundref="geometrycanvas_8cpp" startline="169" endline="187">clear</referencedby>
+        <referencedby refid="classGeometryCanvas_1a61916b6df3df351700b247e6b593a2e6" compoundref="geometrycanvas_8cpp" startline="155" endline="155">clearBezierCurves</referencedby>
+        <referencedby refid="classGeometryCanvas_1aa3f90b84c153e5c9b531fff6a2f4abff" compoundref="geometrycanvas_8cpp" startline="210" endline="366">paintEvent</referencedby>
+        <referencedby refid="classGeometryCanvas_1aaef62a596b6e4478524d128ecf78d636" compoundref="geometrycanvas_8cpp" startline="150" endline="154">setBezierCurves</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGeometryCanvas_1a3f609bce0cb8b6b227f42a85048767fd" prot="private" static="no" mutable="no">
+        <type>QPointF</type>
+        <definition>QPointF GeometryCanvas::m_bezierMarker</definition>
+        <argsstring></argsstring>
+        <name>m_bezierMarker</name>
+        <qualifiedname>GeometryCanvas::m_bezierMarker</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrycanvas.h" line="103" column="13" bodyfile="src/apps/GeometryWorkbench/geometrycanvas.h" bodystart="103" bodyend="-1"/>
+        <referencedby refid="classGeometryCanvas_1aa3f90b84c153e5c9b531fff6a2f4abff" compoundref="geometrycanvas_8cpp" startline="210" endline="366">paintEvent</referencedby>
+        <referencedby refid="classGeometryCanvas_1aaef62a596b6e4478524d128ecf78d636" compoundref="geometrycanvas_8cpp" startline="150" endline="154">setBezierCurves</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGeometryCanvas_1acdf097e8f4721504cd92c332a09747e7" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool GeometryCanvas::m_bezierMarkerVisible</definition>
+        <argsstring></argsstring>
+        <name>m_bezierMarkerVisible</name>
+        <qualifiedname>GeometryCanvas::m_bezierMarkerVisible</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrycanvas.h" line="104" column="10" bodyfile="src/apps/GeometryWorkbench/geometrycanvas.h" bodystart="104" bodyend="-1"/>
+        <referencedby refid="classGeometryCanvas_1ac941423eda256c877a3b5e3acd82629e" compoundref="geometrycanvas_8cpp" startline="169" endline="187">clear</referencedby>
+        <referencedby refid="classGeometryCanvas_1a61916b6df3df351700b247e6b593a2e6" compoundref="geometrycanvas_8cpp" startline="155" endline="155">clearBezierCurves</referencedby>
+        <referencedby refid="classGeometryCanvas_1aa3f90b84c153e5c9b531fff6a2f4abff" compoundref="geometrycanvas_8cpp" startline="210" endline="366">paintEvent</referencedby>
+        <referencedby refid="classGeometryCanvas_1aaef62a596b6e4478524d128ecf78d636" compoundref="geometrycanvas_8cpp" startline="150" endline="154">setBezierCurves</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classGeometryCanvas_1ad5a6e77643d96ed3e461289a9e53932e" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>double</type>
+        <definition>double GeometryCanvas::kPointRadius</definition>
+        <argsstring></argsstring>
+        <name>kPointRadius</name>
+        <qualifiedname>GeometryCanvas::kPointRadius</qualifiedname>
+        <initializer>= 6.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrycanvas.h" line="106" column="29" bodyfile="src/apps/GeometryWorkbench/geometrycanvas.h" bodystart="106" bodyend="-1"/>
+        <referencedby refid="classGeometryCanvas_1ad2bf2da2a11477f8edbb4e4d7996b7bc" compoundref="geometrycanvas_8cpp" startline="431" endline="448">drawPoint</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGeometryCanvas_1a60c6df23f611eff66133587402b59a7d" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>double</type>
+        <definition>double GeometryCanvas::kHitRadius</definition>
+        <argsstring></argsstring>
+        <name>kHitRadius</name>
+        <qualifiedname>GeometryCanvas::kHitRadius</qualifiedname>
+        <initializer>= 12.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrycanvas.h" line="107" column="29" bodyfile="src/apps/GeometryWorkbench/geometrycanvas.h" bodystart="107" bodyend="-1"/>
+        <referencedby refid="classGeometryCanvas_1a619ace231ac17afee377f9afec1e0ba1" compoundref="geometrycanvas_8cpp" startline="194" endline="208">hitTest</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classGeometryCanvas_1a2035760a76115eb2ae1360f476df707f" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>GeometryCanvas::GeometryCanvas</definition>
+        <argsstring>(QWidget *parent=nullptr)</argsstring>
+        <name>GeometryCanvas</name>
+        <qualifiedname>GeometryCanvas::GeometryCanvas</qualifiedname>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Создаёт интерактивный холст с координатной сеткой. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrycanvas.h" line="23" column="14" bodyfile="src/apps/GeometryWorkbench/geometrycanvas.cpp" bodystart="23" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classGeometryCanvas_1acc1297c665d5758b56e5977aade99f16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int GeometryCanvas::addPoint</definition>
+        <argsstring>(const QPointF &amp;screenPos)</argsstring>
+        <name>addPoint</name>
+        <qualifiedname>GeometryCanvas::addPoint</qualifiedname>
+        <param>
+          <type>const QPointF &amp;</type>
+          <declname>screenPos</declname>
+        </param>
+        <briefdescription>
+<para>Добавляет перетаскиваемую точку и возвращает её индекс. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrycanvas.h" line="26" column="9" bodyfile="src/apps/GeometryWorkbench/geometrycanvas.cpp" bodystart="34" bodyend="41"/>
+        <references refid="classGeometryCanvas_1af6b1f7d537d3d2fdad98891490178a18" compoundref="geometrycanvas_8h" startline="84" endline="84">m_defaultPointColor</references>
+        <references refid="classGeometryCanvas_1a24b4143918da4060f9f46b0b35bc1a15" compoundref="geometrycanvas_8h" startline="79">m_pointColors</references>
+        <references refid="classGeometryCanvas_1a6a4baf26113096163d580764ae4dbb21" compoundref="geometrycanvas_8h" startline="80">m_pointLabels</references>
+        <references refid="classGeometryCanvas_1a8bd85330c489ce815753252111ceb2e9" compoundref="geometrycanvas_8h" startline="78">m_points</references>
+      </memberdef>
+      <memberdef kind="function" id="classGeometryCanvas_1add9dc04295da644ffdf13319d962e010" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GeometryCanvas::setPointPos</definition>
+        <argsstring>(int index, const QPointF &amp;screenPos)</argsstring>
+        <name>setPointPos</name>
+        <qualifiedname>GeometryCanvas::setPointPos</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>const QPointF &amp;</type>
+          <declname>screenPos</declname>
+        </param>
+        <briefdescription>
+<para>Обновляет позицию точки. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrycanvas.h" line="28" column="10" bodyfile="src/apps/GeometryWorkbench/geometrycanvas.cpp" bodystart="43" bodyend="50"/>
+        <references refid="classGeometryCanvas_1a8bd85330c489ce815753252111ceb2e9" compoundref="geometrycanvas_8h" startline="78">m_points</references>
+      </memberdef>
+      <memberdef kind="function" id="classGeometryCanvas_1a40e13dba45358f4ac742fc194ccebee3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GeometryCanvas::setPointColor</definition>
+        <argsstring>(int index, const QColor &amp;color)</argsstring>
+        <name>setPointColor</name>
+        <qualifiedname>GeometryCanvas::setPointColor</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>const QColor &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+<para>Настраивает цвет точки. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrycanvas.h" line="30" column="10" bodyfile="src/apps/GeometryWorkbench/geometrycanvas.cpp" bodystart="52" bodyend="59"/>
+        <references refid="classGeometryCanvas_1a24b4143918da4060f9f46b0b35bc1a15" compoundref="geometrycanvas_8h" startline="79">m_pointColors</references>
+      </memberdef>
+      <memberdef kind="function" id="classGeometryCanvas_1ac9827697b8c3c3529952bea3f934ecfd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GeometryCanvas::setPointLabel</definition>
+        <argsstring>(int index, const QString &amp;label)</argsstring>
+        <name>setPointLabel</name>
+        <qualifiedname>GeometryCanvas::setPointLabel</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>label</declname>
+        </param>
+        <briefdescription>
+<para>Устанавливает подпись точки. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrycanvas.h" line="32" column="10" bodyfile="src/apps/GeometryWorkbench/geometrycanvas.cpp" bodystart="61" bodyend="68"/>
+        <references refid="classGeometryCanvas_1a6a4baf26113096163d580764ae4dbb21" compoundref="geometrycanvas_8h" startline="80">m_pointLabels</references>
+      </memberdef>
+      <memberdef kind="function" id="classGeometryCanvas_1a761008e3c9ee5803d49ccad703dcd606" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GeometryCanvas::addSegment</definition>
+        <argsstring>(int a, int b, const QColor &amp;color=QColor())</argsstring>
+        <name>addSegment</name>
+        <qualifiedname>GeometryCanvas::addSegment</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>const QColor &amp;</type>
+          <declname>color</declname>
+          <defval>QColor()</defval>
+        </param>
+        <briefdescription>
+<para>Добавляет отрезок между индексами точек. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrycanvas.h" line="34" column="10" bodyfile="src/apps/GeometryWorkbench/geometrycanvas.cpp" bodystart="70" bodyend="74"/>
+        <references refid="classGeometryCanvas_1a101595ca8120c5de7a0ba97539cc6b4e" compoundref="geometrycanvas_8h" startline="82">m_segments</references>
+      </memberdef>
+      <memberdef kind="function" id="classGeometryCanvas_1a6ef9b4daee67128687c01954fb70a68b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GeometryCanvas::setIntersectionMarker</definition>
+        <argsstring>(const QPointF &amp;screenPos, bool visible)</argsstring>
+        <name>setIntersectionMarker</name>
+        <qualifiedname>GeometryCanvas::setIntersectionMarker</qualifiedname>
+        <param>
+          <type>const QPointF &amp;</type>
+          <declname>screenPos</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>visible</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrycanvas.h" line="35" column="10" bodyfile="src/apps/GeometryWorkbench/geometrycanvas.cpp" bodystart="76" bodyend="81"/>
+        <references refid="classGeometryCanvas_1aa56c6cf652599a0de15e5c4f1505b6da" compoundref="geometrycanvas_8h" startline="89">m_intersectionMarker</references>
+        <references refid="classGeometryCanvas_1a8523cd72882fb48273d77dcbebab5e2e" compoundref="geometrycanvas_8h" startline="88">m_intersectionMarkerVisible</references>
+      </memberdef>
+      <memberdef kind="function" id="classGeometryCanvas_1a388228b1d8b6879fb4ffc74307aa6624" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GeometryCanvas::setOverlapHighlight</definition>
+        <argsstring>(const QPointF &amp;first, const QPointF &amp;second, bool visible)</argsstring>
+        <name>setOverlapHighlight</name>
+        <qualifiedname>GeometryCanvas::setOverlapHighlight</qualifiedname>
+        <param>
+          <type>const QPointF &amp;</type>
+          <declname>first</declname>
+        </param>
+        <param>
+          <type>const QPointF &amp;</type>
+          <declname>second</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>visible</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrycanvas.h" line="36" column="10" bodyfile="src/apps/GeometryWorkbench/geometrycanvas.cpp" bodystart="83" bodyend="89"/>
+        <references refid="classGeometryCanvas_1a1901e4743ca573a156171e26730e609b" compoundref="geometrycanvas_8h" startline="91">m_overlapFirst</references>
+        <references refid="classGeometryCanvas_1a3330ec099ca1294901bc88c625374ff4" compoundref="geometrycanvas_8h" startline="90">m_overlapHighlightVisible</references>
+        <references refid="classGeometryCanvas_1a67efd1024c2e6ef542ef484378230ea2" compoundref="geometrycanvas_8h" startline="92">m_overlapSecond</references>
+      </memberdef>
+      <memberdef kind="function" id="classGeometryCanvas_1addd8eb26f5588454fcb0ab8668332678" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GeometryCanvas::clearIntersectionVisuals</definition>
+        <argsstring>()</argsstring>
+        <name>clearIntersectionVisuals</name>
+        <qualifiedname>GeometryCanvas::clearIntersectionVisuals</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrycanvas.h" line="37" column="10" bodyfile="src/apps/GeometryWorkbench/geometrycanvas.cpp" bodystart="91" bodyend="96"/>
+        <references refid="classGeometryCanvas_1a8523cd72882fb48273d77dcbebab5e2e" compoundref="geometrycanvas_8h" startline="88">m_intersectionMarkerVisible</references>
+        <references refid="classGeometryCanvas_1a3330ec099ca1294901bc88c625374ff4" compoundref="geometrycanvas_8h" startline="90">m_overlapHighlightVisible</references>
+      </memberdef>
+      <memberdef kind="function" id="classGeometryCanvas_1a171199a0ed44634f13cd2fd4353fa683" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GeometryCanvas::setConvexHull</definition>
+        <argsstring>(const std::vector&lt; QPointF &gt; &amp;vertices)</argsstring>
+        <name>setConvexHull</name>
+        <qualifiedname>GeometryCanvas::setConvexHull</qualifiedname>
+        <param>
+          <type>const std::vector&lt; QPointF &gt; &amp;</type>
+          <declname>vertices</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrycanvas.h" line="38" column="10" bodyfile="src/apps/GeometryWorkbench/geometrycanvas.cpp" bodystart="98" bodyend="102"/>
+        <references refid="classGeometryCanvas_1a2cd2560a7a1efaf92f528bb8cf9fbbb3" compoundref="geometrycanvas_8h" startline="93">m_convexHull</references>
+      </memberdef>
+      <memberdef kind="function" id="classGeometryCanvas_1ae09174b03358bbac7887be3bd5ce6f41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GeometryCanvas::clearConvexHull</definition>
+        <argsstring>()</argsstring>
+        <name>clearConvexHull</name>
+        <qualifiedname>GeometryCanvas::clearConvexHull</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrycanvas.h" line="39" column="10" bodyfile="src/apps/GeometryWorkbench/geometrycanvas.cpp" bodystart="104" bodyend="108"/>
+        <references refid="classGeometryCanvas_1a2cd2560a7a1efaf92f528bb8cf9fbbb3" compoundref="geometrycanvas_8h" startline="93">m_convexHull</references>
+      </memberdef>
+      <memberdef kind="function" id="classGeometryCanvas_1a34db397c52af9a20398393bff20396a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GeometryCanvas::setDelaunayTriangles</definition>
+        <argsstring>(const std::vector&lt; std::array&lt; QPointF, 3 &gt; &gt; &amp;triangles, const std::vector&lt; std::pair&lt; QPointF, double &gt; &gt; &amp;circles)</argsstring>
+        <name>setDelaunayTriangles</name>
+        <qualifiedname>GeometryCanvas::setDelaunayTriangles</qualifiedname>
+        <param>
+          <type>const std::vector&lt; std::array&lt; QPointF, 3 &gt; &gt; &amp;</type>
+          <declname>triangles</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; std::pair&lt; QPointF, double &gt; &gt; &amp;</type>
+          <declname>circles</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrycanvas.h" line="40" column="10" bodyfile="src/apps/GeometryWorkbench/geometrycanvas.cpp" bodystart="110" bodyend="116"/>
+        <references refid="classGeometryCanvas_1a1ce68eec1abe57e47ff3c059e7ffee93" compoundref="geometrycanvas_8h" startline="95">m_circumcircles</references>
+        <references refid="classGeometryCanvas_1aeacc02d958f333368af495249206319c" compoundref="geometrycanvas_8h" startline="94">m_delaunayTriangles</references>
+      </memberdef>
+      <memberdef kind="function" id="classGeometryCanvas_1afa9081aec42ba01b3d0e9820f7847779" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GeometryCanvas::clearDelaunayTriangles</definition>
+        <argsstring>()</argsstring>
+        <name>clearDelaunayTriangles</name>
+        <qualifiedname>GeometryCanvas::clearDelaunayTriangles</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrycanvas.h" line="42" column="10" bodyfile="src/apps/GeometryWorkbench/geometrycanvas.cpp" bodystart="118" bodyend="123"/>
+        <references refid="classGeometryCanvas_1a1ce68eec1abe57e47ff3c059e7ffee93" compoundref="geometrycanvas_8h" startline="95">m_circumcircles</references>
+        <references refid="classGeometryCanvas_1aeacc02d958f333368af495249206319c" compoundref="geometrycanvas_8h" startline="94">m_delaunayTriangles</references>
+      </memberdef>
+      <memberdef kind="function" id="classGeometryCanvas_1abe5ba572d805be56c8b71ff690496601" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GeometryCanvas::setCircumcirclesVisible</definition>
+        <argsstring>(bool visible)</argsstring>
+        <name>setCircumcirclesVisible</name>
+        <qualifiedname>GeometryCanvas::setCircumcirclesVisible</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>visible</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrycanvas.h" line="43" column="10" bodyfile="src/apps/GeometryWorkbench/geometrycanvas.cpp" bodystart="125" bodyend="129"/>
+        <references refid="classGeometryCanvas_1a30a2dd2e0961ee859bd5c1991f761dad" compoundref="geometrycanvas_8h" startline="96">m_circumcirclesVisible</references>
+      </memberdef>
+      <memberdef kind="function" id="classGeometryCanvas_1a56d2e0c85bc3d1b19ce62f3312c0d97d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GeometryCanvas::setPolygonOperation</definition>
+        <argsstring>(const std::vector&lt; QPointF &gt; &amp;first, const std::vector&lt; QPointF &gt; &amp;second, const std::vector&lt; std::vector&lt; QPointF &gt; &gt; &amp;result, const QColor &amp;resultColor=QColor(220, 38, 38))</argsstring>
+        <name>setPolygonOperation</name>
+        <qualifiedname>GeometryCanvas::setPolygonOperation</qualifiedname>
+        <param>
+          <type>const std::vector&lt; QPointF &gt; &amp;</type>
+          <declname>first</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; QPointF &gt; &amp;</type>
+          <declname>second</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; std::vector&lt; QPointF &gt; &gt; &amp;</type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type>const QColor &amp;</type>
+          <declname>resultColor</declname>
+          <defval>QColor(220, 38, 38)</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrycanvas.h" line="44" column="10" bodyfile="src/apps/GeometryWorkbench/geometrycanvas.cpp" bodystart="131" bodyend="141"/>
+        <references refid="classGeometryCanvas_1ad9b6ca1d420401cacedff075040d48df" compoundref="geometrycanvas_8h" startline="97">m_polygonFirst</references>
+        <references refid="classGeometryCanvas_1ad72afd80a2514046dd731211e20079e1" compoundref="geometrycanvas_8h" startline="99">m_polygonResult</references>
+        <references refid="classGeometryCanvas_1a066a535cae4f121beac8b2f572a65f22" compoundref="geometrycanvas_8h" startline="100" endline="100">m_polygonResultColor</references>
+        <references refid="classGeometryCanvas_1a4f20036a42f014869173360c24ea7c02" compoundref="geometrycanvas_8h" startline="98">m_polygonSecond</references>
+      </memberdef>
+      <memberdef kind="function" id="classGeometryCanvas_1aeb7775a9c2f6b707faea9eaedff723ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GeometryCanvas::clearPolygonOperation</definition>
+        <argsstring>()</argsstring>
+        <name>clearPolygonOperation</name>
+        <qualifiedname>GeometryCanvas::clearPolygonOperation</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrycanvas.h" line="47" column="10" bodyfile="src/apps/GeometryWorkbench/geometrycanvas.cpp" bodystart="143" bodyend="149"/>
+        <references refid="classGeometryCanvas_1ad9b6ca1d420401cacedff075040d48df" compoundref="geometrycanvas_8h" startline="97">m_polygonFirst</references>
+        <references refid="classGeometryCanvas_1ad72afd80a2514046dd731211e20079e1" compoundref="geometrycanvas_8h" startline="99">m_polygonResult</references>
+        <references refid="classGeometryCanvas_1a4f20036a42f014869173360c24ea7c02" compoundref="geometrycanvas_8h" startline="98">m_polygonSecond</references>
+      </memberdef>
+      <memberdef kind="function" id="classGeometryCanvas_1aaef62a596b6e4478524d128ecf78d636" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GeometryCanvas::setBezierCurves</definition>
+        <argsstring>(const std::vector&lt; std::vector&lt; QPointF &gt; &gt; &amp;curves, const std::vector&lt; std::vector&lt; QPointF &gt; &gt; &amp;levels, const QPointF &amp;marker, bool markerVisible)</argsstring>
+        <name>setBezierCurves</name>
+        <qualifiedname>GeometryCanvas::setBezierCurves</qualifiedname>
+        <param>
+          <type>const std::vector&lt; std::vector&lt; QPointF &gt; &gt; &amp;</type>
+          <declname>curves</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; std::vector&lt; QPointF &gt; &gt; &amp;</type>
+          <declname>levels</declname>
+        </param>
+        <param>
+          <type>const QPointF &amp;</type>
+          <declname>marker</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>markerVisible</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrycanvas.h" line="48" column="10" bodyfile="src/apps/GeometryWorkbench/geometrycanvas.cpp" bodystart="150" bodyend="154"/>
+        <references refid="classGeometryCanvas_1ac1ba963c23801a45345a870017f14296" compoundref="geometrycanvas_8h" startline="101">m_bezierCurves</references>
+        <references refid="classGeometryCanvas_1a91518549bc2a7e3bc8c71a247da3037f" compoundref="geometrycanvas_8h" startline="102">m_bezierLevels</references>
+        <references refid="classGeometryCanvas_1a3f609bce0cb8b6b227f42a85048767fd" compoundref="geometrycanvas_8h" startline="103">m_bezierMarker</references>
+        <references refid="classGeometryCanvas_1acdf097e8f4721504cd92c332a09747e7" compoundref="geometrycanvas_8h" startline="104">m_bezierMarkerVisible</references>
+      </memberdef>
+      <memberdef kind="function" id="classGeometryCanvas_1a61916b6df3df351700b247e6b593a2e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GeometryCanvas::clearBezierCurves</definition>
+        <argsstring>()</argsstring>
+        <name>clearBezierCurves</name>
+        <qualifiedname>GeometryCanvas::clearBezierCurves</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrycanvas.h" line="51" column="10" bodyfile="src/apps/GeometryWorkbench/geometrycanvas.cpp" bodystart="155" bodyend="155"/>
+        <references refid="classGeometryCanvas_1ac1ba963c23801a45345a870017f14296" compoundref="geometrycanvas_8h" startline="101">m_bezierCurves</references>
+        <references refid="classGeometryCanvas_1a91518549bc2a7e3bc8c71a247da3037f" compoundref="geometrycanvas_8h" startline="102">m_bezierLevels</references>
+        <references refid="classGeometryCanvas_1acdf097e8f4721504cd92c332a09747e7" compoundref="geometrycanvas_8h" startline="104">m_bezierMarkerVisible</references>
+      </memberdef>
+      <memberdef kind="function" id="classGeometryCanvas_1af562795c91228050ba3917ecb72efb33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GeometryCanvas::setTurnGuideVisible</definition>
+        <argsstring>(bool visible)</argsstring>
+        <name>setTurnGuideVisible</name>
+        <qualifiedname>GeometryCanvas::setTurnGuideVisible</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>visible</declname>
+        </param>
+        <briefdescription>
+<para>Показывает направляющую прямую <computeroutput>AB</computeroutput> и полуплоскости задания 1. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrycanvas.h" line="53" column="10" bodyfile="src/apps/GeometryWorkbench/geometrycanvas.cpp" bodystart="157" bodyend="161"/>
+        <references refid="classGeometryCanvas_1acc647582e6dc1d6aa336cfbb06aa047a" compoundref="geometrycanvas_8h" startline="87">m_turnGuideVisible</references>
+      </memberdef>
+      <memberdef kind="function" id="classGeometryCanvas_1a09c735d868f2122e3d5b9266037d8921" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GeometryCanvas::clearSegments</definition>
+        <argsstring>()</argsstring>
+        <name>clearSegments</name>
+        <qualifiedname>GeometryCanvas::clearSegments</qualifiedname>
+        <briefdescription>
+<para>Удаляет все отрезки. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrycanvas.h" line="55" column="10" bodyfile="src/apps/GeometryWorkbench/geometrycanvas.cpp" bodystart="163" bodyend="167"/>
+        <references refid="classGeometryCanvas_1a101595ca8120c5de7a0ba97539cc6b4e" compoundref="geometrycanvas_8h" startline="82">m_segments</references>
+      </memberdef>
+      <memberdef kind="function" id="classGeometryCanvas_1ac941423eda256c877a3b5e3acd82629e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GeometryCanvas::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <qualifiedname>GeometryCanvas::clear</qualifiedname>
+        <briefdescription>
+<para>Удаляет точки, отрезки и все визуальные результаты. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrycanvas.h" line="57" column="10" bodyfile="src/apps/GeometryWorkbench/geometrycanvas.cpp" bodystart="169" bodyend="187"/>
+        <references refid="classGeometryCanvas_1ac1ba963c23801a45345a870017f14296" compoundref="geometrycanvas_8h" startline="101">m_bezierCurves</references>
+        <references refid="classGeometryCanvas_1a91518549bc2a7e3bc8c71a247da3037f" compoundref="geometrycanvas_8h" startline="102">m_bezierLevels</references>
+        <references refid="classGeometryCanvas_1acdf097e8f4721504cd92c332a09747e7" compoundref="geometrycanvas_8h" startline="104">m_bezierMarkerVisible</references>
+        <references refid="classGeometryCanvas_1a1ce68eec1abe57e47ff3c059e7ffee93" compoundref="geometrycanvas_8h" startline="95">m_circumcircles</references>
+        <references refid="classGeometryCanvas_1a2cd2560a7a1efaf92f528bb8cf9fbbb3" compoundref="geometrycanvas_8h" startline="93">m_convexHull</references>
+        <references refid="classGeometryCanvas_1aeacc02d958f333368af495249206319c" compoundref="geometrycanvas_8h" startline="94">m_delaunayTriangles</references>
+        <references refid="classGeometryCanvas_1a28fc67e936d72f34e098a38e5a764e02" compoundref="geometrycanvas_8h" startline="86">m_dragIndex</references>
+        <references refid="classGeometryCanvas_1a8523cd72882fb48273d77dcbebab5e2e" compoundref="geometrycanvas_8h" startline="88">m_intersectionMarkerVisible</references>
+        <references refid="classGeometryCanvas_1a3330ec099ca1294901bc88c625374ff4" compoundref="geometrycanvas_8h" startline="90">m_overlapHighlightVisible</references>
+        <references refid="classGeometryCanvas_1a24b4143918da4060f9f46b0b35bc1a15" compoundref="geometrycanvas_8h" startline="79">m_pointColors</references>
+        <references refid="classGeometryCanvas_1a6a4baf26113096163d580764ae4dbb21" compoundref="geometrycanvas_8h" startline="80">m_pointLabels</references>
+        <references refid="classGeometryCanvas_1a8bd85330c489ce815753252111ceb2e9" compoundref="geometrycanvas_8h" startline="78">m_points</references>
+        <references refid="classGeometryCanvas_1ad9b6ca1d420401cacedff075040d48df" compoundref="geometrycanvas_8h" startline="97">m_polygonFirst</references>
+        <references refid="classGeometryCanvas_1ad72afd80a2514046dd731211e20079e1" compoundref="geometrycanvas_8h" startline="99">m_polygonResult</references>
+        <references refid="classGeometryCanvas_1a4f20036a42f014869173360c24ea7c02" compoundref="geometrycanvas_8h" startline="98">m_polygonSecond</references>
+        <references refid="classGeometryCanvas_1a101595ca8120c5de7a0ba97539cc6b4e" compoundref="geometrycanvas_8h" startline="82">m_segments</references>
+        <references refid="classGeometryCanvas_1acc647582e6dc1d6aa336cfbb06aa047a" compoundref="geometrycanvas_8h" startline="87">m_turnGuideVisible</references>
+      </memberdef>
+      <memberdef kind="function" id="classGeometryCanvas_1a4a6484c40ccbe1be1dc69417f9574c4f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int GeometryCanvas::pointCount</definition>
+        <argsstring>() const</argsstring>
+        <name>pointCount</name>
+        <qualifiedname>GeometryCanvas::pointCount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrycanvas.h" line="58" column="9" bodyfile="src/apps/GeometryWorkbench/geometrycanvas.cpp" bodystart="189" bodyend="192"/>
+        <references refid="classGeometryCanvas_1a8bd85330c489ce815753252111ceb2e9" compoundref="geometrycanvas_8h" startline="78">m_points</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="signal">
+      <memberdef kind="signal" id="classGeometryCanvas_1acb55f24c6deb98ca3fe500da54f3e2ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GeometryCanvas::clicked</definition>
+        <argsstring>(const QPointF &amp;screenPos)</argsstring>
+        <name>clicked</name>
+        <qualifiedname>GeometryCanvas::clicked</qualifiedname>
+        <param>
+          <type>const QPointF &amp;</type>
+          <declname>screenPos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrycanvas.h" line="61" column="10"/>
+        <referencedby refid="classGeometryCanvas_1adaeb2e5472f53cdd856bce1860dfb62a" compoundref="geometrycanvas_8cpp" startline="450" endline="463">mousePressEvent</referencedby>
+      </memberdef>
+      <memberdef kind="signal" id="classGeometryCanvas_1a6eb27775cb8ebe70b44abed249a413d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GeometryCanvas::pointPressed</definition>
+        <argsstring>(int index)</argsstring>
+        <name>pointPressed</name>
+        <qualifiedname>GeometryCanvas::pointPressed</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrycanvas.h" line="62" column="10"/>
+        <referencedby refid="classGeometryCanvas_1adaeb2e5472f53cdd856bce1860dfb62a" compoundref="geometrycanvas_8cpp" startline="450" endline="463">mousePressEvent</referencedby>
+      </memberdef>
+      <memberdef kind="signal" id="classGeometryCanvas_1abc87340478811876f4cb4be480e1c367" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GeometryCanvas::pointMoved</definition>
+        <argsstring>(int index, const QPointF &amp;screenPos)</argsstring>
+        <name>pointMoved</name>
+        <qualifiedname>GeometryCanvas::pointMoved</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>const QPointF &amp;</type>
+          <declname>screenPos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrycanvas.h" line="63" column="10"/>
+        <referencedby refid="classGeometryCanvas_1a471380964c5f56d5d22ea0600ed49bfb" compoundref="geometrycanvas_8cpp" startline="465" endline="478">mouseMoveEvent</referencedby>
+      </memberdef>
+      <memberdef kind="signal" id="classGeometryCanvas_1a87cf2b6a3edec82e6e35d952ea6a528a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GeometryCanvas::pointReleased</definition>
+        <argsstring>(int index)</argsstring>
+        <name>pointReleased</name>
+        <qualifiedname>GeometryCanvas::pointReleased</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrycanvas.h" line="64" column="10"/>
+        <referencedby refid="classGeometryCanvas_1a581a44984b5141a76668b8b9393473ab" compoundref="geometrycanvas_8cpp" startline="480" endline="488">mouseReleaseEvent</referencedby>
+      </memberdef>
+      <memberdef kind="signal" id="classGeometryCanvas_1ab8d0baa77faffef68b5482431ee75811" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GeometryCanvas::cursorMoved</definition>
+        <argsstring>(const QPointF &amp;screenPos)</argsstring>
+        <name>cursorMoved</name>
+        <qualifiedname>GeometryCanvas::cursorMoved</qualifiedname>
+        <param>
+          <type>const QPointF &amp;</type>
+          <declname>screenPos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrycanvas.h" line="65" column="10"/>
+        <referencedby refid="classGeometryCanvas_1a471380964c5f56d5d22ea0600ed49bfb" compoundref="geometrycanvas_8cpp" startline="465" endline="478">mouseMoveEvent</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classGeometryCanvas_1aa3f90b84c153e5c9b531fff6a2f4abff" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GeometryCanvas::paintEvent</definition>
+        <argsstring>(QPaintEvent *event) override</argsstring>
+        <name>paintEvent</name>
+        <qualifiedname>GeometryCanvas::paintEvent</qualifiedname>
+        <param>
+          <type>QPaintEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrycanvas.h" line="68" column="10" bodyfile="src/apps/GeometryWorkbench/geometrycanvas.cpp" bodystart="210" bodyend="366"/>
+        <references refid="classGeometryCanvas_1ad2bf2da2a11477f8edbb4e4d7996b7bc" compoundref="geometrycanvas_8cpp" startline="431" endline="448">drawPoint</references>
+        <references refid="classGeometryCanvas_1a63b39ade7072cbab520bc9423134699a" compoundref="geometrycanvas_8cpp" startline="368" endline="429">drawTurnGuide</references>
+        <references refid="classGeometryCanvas_1ac1ba963c23801a45345a870017f14296" compoundref="geometrycanvas_8h" startline="101">m_bezierCurves</references>
+        <references refid="classGeometryCanvas_1a91518549bc2a7e3bc8c71a247da3037f" compoundref="geometrycanvas_8h" startline="102">m_bezierLevels</references>
+        <references refid="classGeometryCanvas_1a3f609bce0cb8b6b227f42a85048767fd" compoundref="geometrycanvas_8h" startline="103">m_bezierMarker</references>
+        <references refid="classGeometryCanvas_1acdf097e8f4721504cd92c332a09747e7" compoundref="geometrycanvas_8h" startline="104">m_bezierMarkerVisible</references>
+        <references refid="classGeometryCanvas_1a1ce68eec1abe57e47ff3c059e7ffee93" compoundref="geometrycanvas_8h" startline="95">m_circumcircles</references>
+        <references refid="classGeometryCanvas_1a30a2dd2e0961ee859bd5c1991f761dad" compoundref="geometrycanvas_8h" startline="96">m_circumcirclesVisible</references>
+        <references refid="classGeometryCanvas_1a2cd2560a7a1efaf92f528bb8cf9fbbb3" compoundref="geometrycanvas_8h" startline="93">m_convexHull</references>
+        <references refid="classGeometryCanvas_1aeacc02d958f333368af495249206319c" compoundref="geometrycanvas_8h" startline="94">m_delaunayTriangles</references>
+        <references refid="classGeometryCanvas_1aa56c6cf652599a0de15e5c4f1505b6da" compoundref="geometrycanvas_8h" startline="89">m_intersectionMarker</references>
+        <references refid="classGeometryCanvas_1a8523cd72882fb48273d77dcbebab5e2e" compoundref="geometrycanvas_8h" startline="88">m_intersectionMarkerVisible</references>
+        <references refid="classGeometryCanvas_1a1901e4743ca573a156171e26730e609b" compoundref="geometrycanvas_8h" startline="91">m_overlapFirst</references>
+        <references refid="classGeometryCanvas_1a3330ec099ca1294901bc88c625374ff4" compoundref="geometrycanvas_8h" startline="90">m_overlapHighlightVisible</references>
+        <references refid="classGeometryCanvas_1a67efd1024c2e6ef542ef484378230ea2" compoundref="geometrycanvas_8h" startline="92">m_overlapSecond</references>
+        <references refid="classGeometryCanvas_1a8bd85330c489ce815753252111ceb2e9" compoundref="geometrycanvas_8h" startline="78">m_points</references>
+        <references refid="classGeometryCanvas_1ad9b6ca1d420401cacedff075040d48df" compoundref="geometrycanvas_8h" startline="97">m_polygonFirst</references>
+        <references refid="classGeometryCanvas_1ad72afd80a2514046dd731211e20079e1" compoundref="geometrycanvas_8h" startline="99">m_polygonResult</references>
+        <references refid="classGeometryCanvas_1a066a535cae4f121beac8b2f572a65f22" compoundref="geometrycanvas_8h" startline="100" endline="100">m_polygonResultColor</references>
+        <references refid="classGeometryCanvas_1a4f20036a42f014869173360c24ea7c02" compoundref="geometrycanvas_8h" startline="98">m_polygonSecond</references>
+        <references refid="classGeometryCanvas_1afbac48e435dfff31da733109d4230afd" compoundref="geometrycanvas_8h" startline="85" endline="85">m_segmentColor</references>
+        <references refid="classGeometryCanvas_1a101595ca8120c5de7a0ba97539cc6b4e" compoundref="geometrycanvas_8h" startline="82">m_segments</references>
+        <references refid="classGeometryCanvas_1acc647582e6dc1d6aa336cfbb06aa047a" compoundref="geometrycanvas_8h" startline="87">m_turnGuideVisible</references>
+      </memberdef>
+      <memberdef kind="function" id="classGeometryCanvas_1adaeb2e5472f53cdd856bce1860dfb62a" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GeometryCanvas::mousePressEvent</definition>
+        <argsstring>(QMouseEvent *event) override</argsstring>
+        <name>mousePressEvent</name>
+        <qualifiedname>GeometryCanvas::mousePressEvent</qualifiedname>
+        <param>
+          <type>QMouseEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrycanvas.h" line="69" column="10" bodyfile="src/apps/GeometryWorkbench/geometrycanvas.cpp" bodystart="450" bodyend="463"/>
+        <references refid="classGeometryCanvas_1acb55f24c6deb98ca3fe500da54f3e2ec">clicked</references>
+        <references refid="classGeometryCanvas_1a619ace231ac17afee377f9afec1e0ba1" compoundref="geometrycanvas_8cpp" startline="194" endline="208">hitTest</references>
+        <references refid="classGeometryCanvas_1a28fc67e936d72f34e098a38e5a764e02" compoundref="geometrycanvas_8h" startline="86">m_dragIndex</references>
+        <references refid="classGeometryCanvas_1a6eb27775cb8ebe70b44abed249a413d4">pointPressed</references>
+      </memberdef>
+      <memberdef kind="function" id="classGeometryCanvas_1a471380964c5f56d5d22ea0600ed49bfb" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GeometryCanvas::mouseMoveEvent</definition>
+        <argsstring>(QMouseEvent *event) override</argsstring>
+        <name>mouseMoveEvent</name>
+        <qualifiedname>GeometryCanvas::mouseMoveEvent</qualifiedname>
+        <param>
+          <type>QMouseEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrycanvas.h" line="70" column="10" bodyfile="src/apps/GeometryWorkbench/geometrycanvas.cpp" bodystart="465" bodyend="478"/>
+        <references refid="classGeometryCanvas_1ab8d0baa77faffef68b5482431ee75811">cursorMoved</references>
+        <references refid="classGeometryCanvas_1a619ace231ac17afee377f9afec1e0ba1" compoundref="geometrycanvas_8cpp" startline="194" endline="208">hitTest</references>
+        <references refid="classGeometryCanvas_1a28fc67e936d72f34e098a38e5a764e02" compoundref="geometrycanvas_8h" startline="86">m_dragIndex</references>
+        <references refid="classGeometryCanvas_1a8bd85330c489ce815753252111ceb2e9" compoundref="geometrycanvas_8h" startline="78">m_points</references>
+        <references refid="classGeometryCanvas_1abc87340478811876f4cb4be480e1c367">pointMoved</references>
+      </memberdef>
+      <memberdef kind="function" id="classGeometryCanvas_1a581a44984b5141a76668b8b9393473ab" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GeometryCanvas::mouseReleaseEvent</definition>
+        <argsstring>(QMouseEvent *event) override</argsstring>
+        <name>mouseReleaseEvent</name>
+        <qualifiedname>GeometryCanvas::mouseReleaseEvent</qualifiedname>
+        <param>
+          <type>QMouseEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrycanvas.h" line="71" column="10" bodyfile="src/apps/GeometryWorkbench/geometrycanvas.cpp" bodystart="480" bodyend="488"/>
+        <references refid="classGeometryCanvas_1a28fc67e936d72f34e098a38e5a764e02" compoundref="geometrycanvas_8h" startline="86">m_dragIndex</references>
+        <references refid="classGeometryCanvas_1a87cf2b6a3edec82e6e35d952ea6a528a">pointReleased</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classGeometryCanvas_1a619ace231ac17afee377f9afec1e0ba1" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int GeometryCanvas::hitTest</definition>
+        <argsstring>(const QPointF &amp;screenPos) const</argsstring>
+        <name>hitTest</name>
+        <qualifiedname>GeometryCanvas::hitTest</qualifiedname>
+        <param>
+          <type>const QPointF &amp;</type>
+          <declname>screenPos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrycanvas.h" line="74" column="9" bodyfile="src/apps/GeometryWorkbench/geometrycanvas.cpp" bodystart="194" bodyend="208"/>
+        <references refid="classGeometryCanvas_1a60c6df23f611eff66133587402b59a7d" compoundref="geometrycanvas_8h" startline="107">kHitRadius</references>
+        <references refid="classGeometryCanvas_1a8bd85330c489ce815753252111ceb2e9" compoundref="geometrycanvas_8h" startline="78">m_points</references>
+        <referencedby refid="classGeometryCanvas_1a471380964c5f56d5d22ea0600ed49bfb" compoundref="geometrycanvas_8cpp" startline="465" endline="478">mouseMoveEvent</referencedby>
+        <referencedby refid="classGeometryCanvas_1adaeb2e5472f53cdd856bce1860dfb62a" compoundref="geometrycanvas_8cpp" startline="450" endline="463">mousePressEvent</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classGeometryCanvas_1ad2bf2da2a11477f8edbb4e4d7996b7bc" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GeometryCanvas::drawPoint</definition>
+        <argsstring>(QPainter &amp;painter, int index) const</argsstring>
+        <name>drawPoint</name>
+        <qualifiedname>GeometryCanvas::drawPoint</qualifiedname>
+        <param>
+          <type>QPainter &amp;</type>
+          <declname>painter</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrycanvas.h" line="75" column="10" bodyfile="src/apps/GeometryWorkbench/geometrycanvas.cpp" bodystart="431" bodyend="448"/>
+        <references refid="classGeometryCanvas_1ad5a6e77643d96ed3e461289a9e53932e" compoundref="geometrycanvas_8h" startline="106">kPointRadius</references>
+        <references refid="classGeometryCanvas_1af6b1f7d537d3d2fdad98891490178a18" compoundref="geometrycanvas_8h" startline="84" endline="84">m_defaultPointColor</references>
+        <references refid="classGeometryCanvas_1a24b4143918da4060f9f46b0b35bc1a15" compoundref="geometrycanvas_8h" startline="79">m_pointColors</references>
+        <references refid="classGeometryCanvas_1a6a4baf26113096163d580764ae4dbb21" compoundref="geometrycanvas_8h" startline="80">m_pointLabels</references>
+        <references refid="classGeometryCanvas_1a8bd85330c489ce815753252111ceb2e9" compoundref="geometrycanvas_8h" startline="78">m_points</references>
+        <referencedby refid="classGeometryCanvas_1aa3f90b84c153e5c9b531fff6a2f4abff" compoundref="geometrycanvas_8cpp" startline="210" endline="366">paintEvent</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classGeometryCanvas_1a63b39ade7072cbab520bc9423134699a" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GeometryCanvas::drawTurnGuide</definition>
+        <argsstring>(QPainter &amp;painter) const</argsstring>
+        <name>drawTurnGuide</name>
+        <qualifiedname>GeometryCanvas::drawTurnGuide</qualifiedname>
+        <param>
+          <type>QPainter &amp;</type>
+          <declname>painter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrycanvas.h" line="76" column="10" bodyfile="src/apps/GeometryWorkbench/geometrycanvas.cpp" bodystart="368" bodyend="429"/>
+        <references refid="classGeometryCanvas_1a8bd85330c489ce815753252111ceb2e9" compoundref="geometrycanvas_8h" startline="78">m_points</references>
+        <referencedby refid="classGeometryCanvas_1aa3f90b84c153e5c9b531fff6a2f4abff" compoundref="geometrycanvas_8cpp" startline="210" endline="366">paintEvent</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Холст геометрических сцен. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Точки хранятся в экранных координатах (ось <computeroutput>Y</computeroutput> вниз, как в Qt). Холст рисует точки, отрезки, кривые и результаты операций. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>GeometryCanvas</label>
+        <link refid="classGeometryCanvas"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QWidget</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>GeometryCanvas</label>
+        <link refid="classGeometryCanvas"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QWidget</label>
+      </node>
+    </collaborationgraph>
+    <location file="src/apps/GeometryWorkbench/geometrycanvas.h" line="19" column="1" bodyfile="src/apps/GeometryWorkbench/geometrycanvas.h" bodystart="19" bodyend="108"/>
+    <listofallmembers>
+      <member refid="classGeometryCanvas_1acc1297c665d5758b56e5977aade99f16" prot="public" virt="non-virtual"><scope>GeometryCanvas</scope><name>addPoint</name></member>
+      <member refid="classGeometryCanvas_1a761008e3c9ee5803d49ccad703dcd606" prot="public" virt="non-virtual"><scope>GeometryCanvas</scope><name>addSegment</name></member>
+      <member refid="classGeometryCanvas_1ac941423eda256c877a3b5e3acd82629e" prot="public" virt="non-virtual"><scope>GeometryCanvas</scope><name>clear</name></member>
+      <member refid="classGeometryCanvas_1a61916b6df3df351700b247e6b593a2e6" prot="public" virt="non-virtual"><scope>GeometryCanvas</scope><name>clearBezierCurves</name></member>
+      <member refid="classGeometryCanvas_1ae09174b03358bbac7887be3bd5ce6f41" prot="public" virt="non-virtual"><scope>GeometryCanvas</scope><name>clearConvexHull</name></member>
+      <member refid="classGeometryCanvas_1afa9081aec42ba01b3d0e9820f7847779" prot="public" virt="non-virtual"><scope>GeometryCanvas</scope><name>clearDelaunayTriangles</name></member>
+      <member refid="classGeometryCanvas_1addd8eb26f5588454fcb0ab8668332678" prot="public" virt="non-virtual"><scope>GeometryCanvas</scope><name>clearIntersectionVisuals</name></member>
+      <member refid="classGeometryCanvas_1aeb7775a9c2f6b707faea9eaedff723ec" prot="public" virt="non-virtual"><scope>GeometryCanvas</scope><name>clearPolygonOperation</name></member>
+      <member refid="classGeometryCanvas_1a09c735d868f2122e3d5b9266037d8921" prot="public" virt="non-virtual"><scope>GeometryCanvas</scope><name>clearSegments</name></member>
+      <member refid="classGeometryCanvas_1acb55f24c6deb98ca3fe500da54f3e2ec" prot="public" virt="non-virtual"><scope>GeometryCanvas</scope><name>clicked</name></member>
+      <member refid="classGeometryCanvas_1ab8d0baa77faffef68b5482431ee75811" prot="public" virt="non-virtual"><scope>GeometryCanvas</scope><name>cursorMoved</name></member>
+      <member refid="classGeometryCanvas_1ad2bf2da2a11477f8edbb4e4d7996b7bc" prot="private" virt="non-virtual"><scope>GeometryCanvas</scope><name>drawPoint</name></member>
+      <member refid="classGeometryCanvas_1a63b39ade7072cbab520bc9423134699a" prot="private" virt="non-virtual"><scope>GeometryCanvas</scope><name>drawTurnGuide</name></member>
+      <member refid="classGeometryCanvas_1a2035760a76115eb2ae1360f476df707f" prot="public" virt="non-virtual"><scope>GeometryCanvas</scope><name>GeometryCanvas</name></member>
+      <member refid="classGeometryCanvas_1a619ace231ac17afee377f9afec1e0ba1" prot="private" virt="non-virtual"><scope>GeometryCanvas</scope><name>hitTest</name></member>
+      <member refid="classGeometryCanvas_1a60c6df23f611eff66133587402b59a7d" prot="private" virt="non-virtual"><scope>GeometryCanvas</scope><name>kHitRadius</name></member>
+      <member refid="classGeometryCanvas_1ad5a6e77643d96ed3e461289a9e53932e" prot="private" virt="non-virtual"><scope>GeometryCanvas</scope><name>kPointRadius</name></member>
+      <member refid="classGeometryCanvas_1ac1ba963c23801a45345a870017f14296" prot="private" virt="non-virtual"><scope>GeometryCanvas</scope><name>m_bezierCurves</name></member>
+      <member refid="classGeometryCanvas_1a91518549bc2a7e3bc8c71a247da3037f" prot="private" virt="non-virtual"><scope>GeometryCanvas</scope><name>m_bezierLevels</name></member>
+      <member refid="classGeometryCanvas_1a3f609bce0cb8b6b227f42a85048767fd" prot="private" virt="non-virtual"><scope>GeometryCanvas</scope><name>m_bezierMarker</name></member>
+      <member refid="classGeometryCanvas_1acdf097e8f4721504cd92c332a09747e7" prot="private" virt="non-virtual"><scope>GeometryCanvas</scope><name>m_bezierMarkerVisible</name></member>
+      <member refid="classGeometryCanvas_1a1ce68eec1abe57e47ff3c059e7ffee93" prot="private" virt="non-virtual"><scope>GeometryCanvas</scope><name>m_circumcircles</name></member>
+      <member refid="classGeometryCanvas_1a30a2dd2e0961ee859bd5c1991f761dad" prot="private" virt="non-virtual"><scope>GeometryCanvas</scope><name>m_circumcirclesVisible</name></member>
+      <member refid="classGeometryCanvas_1a2cd2560a7a1efaf92f528bb8cf9fbbb3" prot="private" virt="non-virtual"><scope>GeometryCanvas</scope><name>m_convexHull</name></member>
+      <member refid="classGeometryCanvas_1af6b1f7d537d3d2fdad98891490178a18" prot="private" virt="non-virtual"><scope>GeometryCanvas</scope><name>m_defaultPointColor</name></member>
+      <member refid="classGeometryCanvas_1aeacc02d958f333368af495249206319c" prot="private" virt="non-virtual"><scope>GeometryCanvas</scope><name>m_delaunayTriangles</name></member>
+      <member refid="classGeometryCanvas_1a28fc67e936d72f34e098a38e5a764e02" prot="private" virt="non-virtual"><scope>GeometryCanvas</scope><name>m_dragIndex</name></member>
+      <member refid="classGeometryCanvas_1aa56c6cf652599a0de15e5c4f1505b6da" prot="private" virt="non-virtual"><scope>GeometryCanvas</scope><name>m_intersectionMarker</name></member>
+      <member refid="classGeometryCanvas_1a8523cd72882fb48273d77dcbebab5e2e" prot="private" virt="non-virtual"><scope>GeometryCanvas</scope><name>m_intersectionMarkerVisible</name></member>
+      <member refid="classGeometryCanvas_1a1901e4743ca573a156171e26730e609b" prot="private" virt="non-virtual"><scope>GeometryCanvas</scope><name>m_overlapFirst</name></member>
+      <member refid="classGeometryCanvas_1a3330ec099ca1294901bc88c625374ff4" prot="private" virt="non-virtual"><scope>GeometryCanvas</scope><name>m_overlapHighlightVisible</name></member>
+      <member refid="classGeometryCanvas_1a67efd1024c2e6ef542ef484378230ea2" prot="private" virt="non-virtual"><scope>GeometryCanvas</scope><name>m_overlapSecond</name></member>
+      <member refid="classGeometryCanvas_1a24b4143918da4060f9f46b0b35bc1a15" prot="private" virt="non-virtual"><scope>GeometryCanvas</scope><name>m_pointColors</name></member>
+      <member refid="classGeometryCanvas_1a6a4baf26113096163d580764ae4dbb21" prot="private" virt="non-virtual"><scope>GeometryCanvas</scope><name>m_pointLabels</name></member>
+      <member refid="classGeometryCanvas_1a8bd85330c489ce815753252111ceb2e9" prot="private" virt="non-virtual"><scope>GeometryCanvas</scope><name>m_points</name></member>
+      <member refid="classGeometryCanvas_1ad9b6ca1d420401cacedff075040d48df" prot="private" virt="non-virtual"><scope>GeometryCanvas</scope><name>m_polygonFirst</name></member>
+      <member refid="classGeometryCanvas_1ad72afd80a2514046dd731211e20079e1" prot="private" virt="non-virtual"><scope>GeometryCanvas</scope><name>m_polygonResult</name></member>
+      <member refid="classGeometryCanvas_1a066a535cae4f121beac8b2f572a65f22" prot="private" virt="non-virtual"><scope>GeometryCanvas</scope><name>m_polygonResultColor</name></member>
+      <member refid="classGeometryCanvas_1a4f20036a42f014869173360c24ea7c02" prot="private" virt="non-virtual"><scope>GeometryCanvas</scope><name>m_polygonSecond</name></member>
+      <member refid="classGeometryCanvas_1afbac48e435dfff31da733109d4230afd" prot="private" virt="non-virtual"><scope>GeometryCanvas</scope><name>m_segmentColor</name></member>
+      <member refid="classGeometryCanvas_1a101595ca8120c5de7a0ba97539cc6b4e" prot="private" virt="non-virtual"><scope>GeometryCanvas</scope><name>m_segments</name></member>
+      <member refid="classGeometryCanvas_1acc647582e6dc1d6aa336cfbb06aa047a" prot="private" virt="non-virtual"><scope>GeometryCanvas</scope><name>m_turnGuideVisible</name></member>
+      <member refid="classGeometryCanvas_1a471380964c5f56d5d22ea0600ed49bfb" prot="protected" virt="non-virtual"><scope>GeometryCanvas</scope><name>mouseMoveEvent</name></member>
+      <member refid="classGeometryCanvas_1adaeb2e5472f53cdd856bce1860dfb62a" prot="protected" virt="non-virtual"><scope>GeometryCanvas</scope><name>mousePressEvent</name></member>
+      <member refid="classGeometryCanvas_1a581a44984b5141a76668b8b9393473ab" prot="protected" virt="non-virtual"><scope>GeometryCanvas</scope><name>mouseReleaseEvent</name></member>
+      <member refid="classGeometryCanvas_1aa3f90b84c153e5c9b531fff6a2f4abff" prot="protected" virt="non-virtual"><scope>GeometryCanvas</scope><name>paintEvent</name></member>
+      <member refid="classGeometryCanvas_1a4a6484c40ccbe1be1dc69417f9574c4f" prot="public" virt="non-virtual"><scope>GeometryCanvas</scope><name>pointCount</name></member>
+      <member refid="classGeometryCanvas_1abc87340478811876f4cb4be480e1c367" prot="public" virt="non-virtual"><scope>GeometryCanvas</scope><name>pointMoved</name></member>
+      <member refid="classGeometryCanvas_1a6eb27775cb8ebe70b44abed249a413d4" prot="public" virt="non-virtual"><scope>GeometryCanvas</scope><name>pointPressed</name></member>
+      <member refid="classGeometryCanvas_1a87cf2b6a3edec82e6e35d952ea6a528a" prot="public" virt="non-virtual"><scope>GeometryCanvas</scope><name>pointReleased</name></member>
+      <member refid="classGeometryCanvas_1aaef62a596b6e4478524d128ecf78d636" prot="public" virt="non-virtual"><scope>GeometryCanvas</scope><name>setBezierCurves</name></member>
+      <member refid="classGeometryCanvas_1abe5ba572d805be56c8b71ff690496601" prot="public" virt="non-virtual"><scope>GeometryCanvas</scope><name>setCircumcirclesVisible</name></member>
+      <member refid="classGeometryCanvas_1a171199a0ed44634f13cd2fd4353fa683" prot="public" virt="non-virtual"><scope>GeometryCanvas</scope><name>setConvexHull</name></member>
+      <member refid="classGeometryCanvas_1a34db397c52af9a20398393bff20396a6" prot="public" virt="non-virtual"><scope>GeometryCanvas</scope><name>setDelaunayTriangles</name></member>
+      <member refid="classGeometryCanvas_1a6ef9b4daee67128687c01954fb70a68b" prot="public" virt="non-virtual"><scope>GeometryCanvas</scope><name>setIntersectionMarker</name></member>
+      <member refid="classGeometryCanvas_1a388228b1d8b6879fb4ffc74307aa6624" prot="public" virt="non-virtual"><scope>GeometryCanvas</scope><name>setOverlapHighlight</name></member>
+      <member refid="classGeometryCanvas_1a40e13dba45358f4ac742fc194ccebee3" prot="public" virt="non-virtual"><scope>GeometryCanvas</scope><name>setPointColor</name></member>
+      <member refid="classGeometryCanvas_1ac9827697b8c3c3529952bea3f934ecfd" prot="public" virt="non-virtual"><scope>GeometryCanvas</scope><name>setPointLabel</name></member>
+      <member refid="classGeometryCanvas_1add9dc04295da644ffdf13319d962e010" prot="public" virt="non-virtual"><scope>GeometryCanvas</scope><name>setPointPos</name></member>
+      <member refid="classGeometryCanvas_1a56d2e0c85bc3d1b19ce62f3312c0d97d" prot="public" virt="non-virtual"><scope>GeometryCanvas</scope><name>setPolygonOperation</name></member>
+      <member refid="classGeometryCanvas_1af562795c91228050ba3917ecb72efb33" prot="public" virt="non-virtual"><scope>GeometryCanvas</scope><name>setTurnGuideVisible</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

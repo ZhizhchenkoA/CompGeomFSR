@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="exact__predicate_8h" kind="file" language="C++">
+    <compoundname>exact_predicate.h</compoundname>
+    <includes local="no">array</includes>
+    <includes local="no">string</includes>
+    <includedby refid="longarithmeticpage_8cpp" local="yes">src/apps/GeometryWorkbench/longarithmeticpage.cpp</includedby>
+    <includedby refid="exact__predicate_8cpp" local="yes">src/lib/bigint/exact_predicate.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>src/lib/bigint/exact_predicate.h</label>
+        <link refid="exact__predicate_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>array</label>
+      </node>
+      <node id="3">
+        <label>string</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>src/apps/GeometryWorkbench/longarithmeticpage.cpp</label>
+        <link refid="longarithmeticpage_8cpp"/>
+      </node>
+      <node id="3">
+        <label>src/lib/bigint/exact_predicate.cpp</label>
+        <link refid="exact__predicate_8cpp"/>
+      </node>
+      <node id="1">
+        <label>src/lib/bigint/exact_predicate.h</label>
+        <link refid="exact__predicate_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespacebigint">bigint</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;array&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacebigint" kindref="compound">bigint</ref><sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespacebigint_1a2646acc61d0e940c36f58f118a5095d1" kindref="member">exactTurn</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::array&lt;std::string,<sp/>6&gt;&amp;<sp/>coordinates,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>sign,<sp/>std::string*<sp/>error);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>bigint</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="src/lib/bigint/exact_predicate.h"/>
+  </compounddef>
+</doxygen>

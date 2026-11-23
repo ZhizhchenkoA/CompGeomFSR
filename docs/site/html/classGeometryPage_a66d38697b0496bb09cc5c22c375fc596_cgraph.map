@@ -1,0 +1,7 @@
+<map id="GeometryPage::on_canvas_cursorMoved" name="GeometryPage::on_canvas_cursorMoved">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,24,200,68"/>
+<area shape="rect" id="Node000002" href="$classGeometryPage.html#aa9f01f9f97ae7cc6d65dcd8254ea8428" title=" " alt="" coords="248,5,457,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="200,33,235,31,229,33,201,38"/>
+<area shape="rect" id="Node000003" href="$namespacegeometry__qt.html#a1b00196f7a1e7ff93f722417814f1dbf" title="Адаптер между экранными координатами Qt и математическими координатами." alt="" coords="257,57,448,85"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="200,53,244,60,239,60,200,58"/>
+</map>

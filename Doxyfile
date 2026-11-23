@@ -1,7 +1,7 @@
 PROJECT_NAME           = "Geometry Workbench"
 PROJECT_BRIEF          = "Интерактивный учебный стенд по компьютерной геометрии"
 PROJECT_NUMBER         = 1.0
-OUTPUT_DIRECTORY       = build/docs
+OUTPUT_DIRECTORY       = docs/site
 CREATE_SUBDIRS         = NO
 OUTPUT_LANGUAGE        = Russian
 INPUT                  = src docs/README.md docs/mainpage.md docs/architecture.md

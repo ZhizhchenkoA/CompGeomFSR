@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="namespacebezier" kind="namespace" language="C++">
+    <compoundname>bezier</compoundname>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacebezier_1a16319ee9d71db52368b5ce95b86794e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::vector&lt; <ref refid="structgeometry_1_1Point" kindref="compound">geometry::Point</ref> &gt; &gt;</type>
+        <definition>std::vector&lt; std::vector&lt; geometry::Point &gt; &gt; bezier::deCasteljauLevels</definition>
+        <argsstring>(const std::vector&lt; geometry::Point &gt; &amp;control, double t)</argsstring>
+        <name>deCasteljauLevels</name>
+        <qualifiedname>bezier::deCasteljauLevels</qualifiedname>
+        <param>
+          <type>const std::vector&lt; <ref refid="structgeometry_1_1Point" kindref="compound">geometry::Point</ref> &gt; &amp;</type>
+          <declname>control</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+<para>Возвращает все промежуточные уровни построения де Кастельжо. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib/bezier/bezier.cpp" line="7" column="13" bodyfile="src/lib/bezier/bezier.cpp" bodystart="7" bodyend="32" declfile="src/lib/bezier/bezier.h" declline="18" declcolumn="13"/>
+        <referencedby refid="classGeometryPage_1aa0380120b0b9e766b2e6d3c4d4192b27" compoundref="geometrypage_8cpp" startline="607" endline="620">GeometryPage::computeBezier</referencedby>
+        <referencedby refid="namespacebezier_1aa6f0140841e402a3cfa3ba2aba8044d0" compoundref="bezier_8cpp" startline="34" endline="38">deCasteljau</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacebezier_1aa6f0140841e402a3cfa3ba2aba8044d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structgeometry_1_1Point" kindref="compound">geometry::Point</ref></type>
+        <definition>geometry::Point bezier::deCasteljau</definition>
+        <argsstring>(const std::vector&lt; geometry::Point &gt; &amp;control, double t)</argsstring>
+        <name>deCasteljau</name>
+        <qualifiedname>bezier::deCasteljau</qualifiedname>
+        <param>
+          <type>const std::vector&lt; <ref refid="structgeometry_1_1Point" kindref="compound">geometry::Point</ref> &gt; &amp;</type>
+          <declname>control</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+<para>Операции с параметрическими кривыми Безье. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Вычисляет точку кривой Безье в параметре <computeroutput>t</computeroutput> методом де Кастельжо. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib/bezier/bezier.cpp" line="34" column="17" bodyfile="src/lib/bezier/bezier.cpp" bodystart="34" bodyend="38" declfile="src/lib/bezier/bezier.h" declline="15" declcolumn="17"/>
+        <references refid="namespacebezier_1a16319ee9d71db52368b5ce95b86794e2" compoundref="bezier_8cpp" startline="7" endline="32">deCasteljauLevels</references>
+        <referencedby refid="classGeometryPage_1aa0380120b0b9e766b2e6d3c4d4192b27" compoundref="geometrypage_8cpp" startline="607" endline="620">GeometryPage::computeBezier</referencedby>
+        <referencedby refid="namespacebezier_1a3e86093165e34203620df7fe7623a57e" compoundref="bezier_8cpp" startline="40" endline="52">sample</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacebezier_1a3e86093165e34203620df7fe7623a57e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="structgeometry_1_1Point" kindref="compound">geometry::Point</ref> &gt;</type>
+        <definition>std::vector&lt; geometry::Point &gt; bezier::sample</definition>
+        <argsstring>(const std::vector&lt; geometry::Point &gt; &amp;control, int count=160)</argsstring>
+        <name>sample</name>
+        <qualifiedname>bezier::sample</qualifiedname>
+        <param>
+          <type>const std::vector&lt; <ref refid="structgeometry_1_1Point" kindref="compound">geometry::Point</ref> &gt; &amp;</type>
+          <declname>control</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+<para>Дискретизирует кривую в <computeroutput>count + 1</computeroutput> точках от <computeroutput>t = 0</computeroutput> до <computeroutput>t = 1</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib/bezier/bezier.cpp" line="40" column="13" bodyfile="src/lib/bezier/bezier.cpp" bodystart="40" bodyend="52" declfile="src/lib/bezier/bezier.h" declline="22" declcolumn="13"/>
+        <references refid="namespacebezier_1aa6f0140841e402a3cfa3ba2aba8044d0" compoundref="bezier_8cpp" startline="34" endline="38">deCasteljau</references>
+        <referencedby refid="namespacebezier_1a501e022e378938e5a58777be3b250155" compoundref="bezier_8cpp" startline="54" endline="77">composite</referencedby>
+        <referencedby refid="classGeometryPage_1aa0380120b0b9e766b2e6d3c4d4192b27" compoundref="geometrypage_8cpp" startline="607" endline="620">GeometryPage::computeBezier</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacebezier_1a501e022e378938e5a58777be3b250155" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="structgeometry_1_1Point" kindref="compound">geometry::Point</ref> &gt;</type>
+        <definition>std::vector&lt; geometry::Point &gt; bezier::composite</definition>
+        <argsstring>(const std::vector&lt; geometry::Point &gt; &amp;control, int degree, int countPerSegment=70)</argsstring>
+        <name>composite</name>
+        <qualifiedname>bezier::composite</qualifiedname>
+        <param>
+          <type>const std::vector&lt; <ref refid="structgeometry_1_1Point" kindref="compound">geometry::Point</ref> &gt; &amp;</type>
+          <declname>control</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>degree</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>countPerSegment</declname>
+        </param>
+        <briefdescription>
+<para>Строит составную кривую из окон <computeroutput>degree + 1</computeroutput> с общей точкой сегментов. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib/bezier/bezier.cpp" line="54" column="13" bodyfile="src/lib/bezier/bezier.cpp" bodystart="54" bodyend="77" declfile="src/lib/bezier/bezier.h" declline="26" declcolumn="13"/>
+        <references refid="namespacebezier_1a3e86093165e34203620df7fe7623a57e" compoundref="bezier_8cpp" startline="40" endline="52">sample</references>
+        <referencedby refid="classGeometryPage_1aa0380120b0b9e766b2e6d3c4d4192b27" compoundref="geometrypage_8cpp" startline="607" endline="620">GeometryPage::computeBezier</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/lib/bezier/bezier.cpp" line="5" column="1"/>
+  </compounddef>
+</doxygen>

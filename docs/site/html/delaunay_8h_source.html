@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Geometry Workbench: Исходный файл src/lib/geometry/delaunay.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Geometry Workbench<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Интерактивный учебный стенд по компьютерной геометрии</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('delaunay_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">delaunay.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="delaunay_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;array&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="point_8h.html">geometry/point.h</a>&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacegeometry.html">geometry</a> {</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span></div>
+<div class="foldopen" id="foldopen00011" data-start="{" data-end="};">
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="structgeometry_1_1Circumcircle.html">   11</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structgeometry_1_1Circumcircle.html">Circumcircle</a> {</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="structgeometry_1_1Circumcircle.html#a60121de2017744bb653f1b3f48add15e">   12</a></span>    <a class="code hl_struct" href="structgeometry_1_1Point.html">Point</a> <a class="code hl_variable" href="structgeometry_1_1Circumcircle.html#a60121de2017744bb653f1b3f48add15e">center</a>{};</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="structgeometry_1_1Circumcircle.html#a32c699d820c2087b08a632f5dfb0d5af">   13</a></span>    <span class="keywordtype">double</span> <a class="code hl_variable" href="structgeometry_1_1Circumcircle.html#a32c699d820c2087b08a632f5dfb0d5af">radius</a> = 0.0;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>};</div>
+</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span></div>
+<div class="foldopen" id="foldopen00017" data-start="{" data-end="};">
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="structgeometry_1_1DelaunayTriangle.html">   17</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structgeometry_1_1DelaunayTriangle.html">DelaunayTriangle</a> {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="structgeometry_1_1DelaunayTriangle.html#acd931dff87085dcdbb22def01e9c632d">   18</a></span>    std::array&lt;Point, 3&gt; <a class="code hl_variable" href="structgeometry_1_1DelaunayTriangle.html#acd931dff87085dcdbb22def01e9c632d">vertices</a>{};</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="structgeometry_1_1DelaunayTriangle.html#a3453dcbd47978a2eff85b3b036a3b57c">   19</a></span>    <a class="code hl_struct" href="structgeometry_1_1Circumcircle.html">Circumcircle</a> <a class="code hl_variable" href="structgeometry_1_1DelaunayTriangle.html#a3453dcbd47978a2eff85b3b036a3b57c">circumcircle</a>{};</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>};</div>
+</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>std::vector&lt;DelaunayTriangle&gt; <a class="code hl_function" href="namespacegeometry.html#a9610a583f6dfe92c309727c15b9b3933">delaunayTriangulation</a>(std::vector&lt;Point&gt; points,</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>                                                     <span class="keywordtype">double</span> eps = 1e-9);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>} <span class="comment">// namespace geometry</span></div>
+<div class="ttc" id="anamespacegeometry_html"><div class="ttname"><a href="namespacegeometry.html">geometry</a></div><div class="ttdef"><b>Определения</b> <a href="convex__hull_8cpp_source.html#l00008">convex_hull.cpp:8</a></div></div>
+<div class="ttc" id="anamespacegeometry_html_a9610a583f6dfe92c309727c15b9b3933"><div class="ttname"><a href="namespacegeometry.html#a9610a583f6dfe92c309727c15b9b3933">geometry::delaunayTriangulation</a></div><div class="ttdeci">std::vector&lt; DelaunayTriangle &gt; delaunayTriangulation(std::vector&lt; Point &gt; points, double eps)</div><div class="ttdoc">Триангуляция Делоне алгоритмом Bowyer–Watson.</div><div class="ttdef"><b>Определения</b> <a href="delaunay_8cpp_source.html#l00076">delaunay.cpp:76</a></div></div>
+<div class="ttc" id="apoint_8h_html"><div class="ttname"><a href="point_8h.html">point.h</a></div></div>
+<div class="ttc" id="astructgeometry_1_1Circumcircle_html"><div class="ttname"><a href="structgeometry_1_1Circumcircle.html">geometry::Circumcircle</a></div><div class="ttdoc">Окружность, описанная около треугольника.</div><div class="ttdef"><b>Определения</b> <a href="#l00011">delaunay.h:11</a></div></div>
+<div class="ttc" id="astructgeometry_1_1Circumcircle_html_a32c699d820c2087b08a632f5dfb0d5af"><div class="ttname"><a href="structgeometry_1_1Circumcircle.html#a32c699d820c2087b08a632f5dfb0d5af">geometry::Circumcircle::radius</a></div><div class="ttdeci">double radius</div><div class="ttdef"><b>Определения</b> <a href="#l00013">delaunay.h:13</a></div></div>
+<div class="ttc" id="astructgeometry_1_1Circumcircle_html_a60121de2017744bb653f1b3f48add15e"><div class="ttname"><a href="structgeometry_1_1Circumcircle.html#a60121de2017744bb653f1b3f48add15e">geometry::Circumcircle::center</a></div><div class="ttdeci">Point center</div><div class="ttdef"><b>Определения</b> <a href="#l00012">delaunay.h:12</a></div></div>
+<div class="ttc" id="astructgeometry_1_1DelaunayTriangle_html"><div class="ttname"><a href="structgeometry_1_1DelaunayTriangle.html">geometry::DelaunayTriangle</a></div><div class="ttdoc">Треугольник Делоне и его описанная окружность.</div><div class="ttdef"><b>Определения</b> <a href="#l00017">delaunay.h:17</a></div></div>
+<div class="ttc" id="astructgeometry_1_1DelaunayTriangle_html_a3453dcbd47978a2eff85b3b036a3b57c"><div class="ttname"><a href="structgeometry_1_1DelaunayTriangle.html#a3453dcbd47978a2eff85b3b036a3b57c">geometry::DelaunayTriangle::circumcircle</a></div><div class="ttdeci">Circumcircle circumcircle</div><div class="ttdef"><b>Определения</b> <a href="#l00019">delaunay.h:19</a></div></div>
+<div class="ttc" id="astructgeometry_1_1DelaunayTriangle_html_acd931dff87085dcdbb22def01e9c632d"><div class="ttname"><a href="structgeometry_1_1DelaunayTriangle.html#acd931dff87085dcdbb22def01e9c632d">geometry::DelaunayTriangle::vertices</a></div><div class="ttdeci">std::array&lt; Point, 3 &gt; vertices</div><div class="ttdef"><b>Определения</b> <a href="#l00018">delaunay.h:18</a></div></div>
+<div class="ttc" id="astructgeometry_1_1Point_html"><div class="ttname"><a href="structgeometry_1_1Point.html">geometry::Point</a></div><div class="ttdoc">Пространство математической геометрии проекта.</div><div class="ttdef"><b>Определения</b> <a href="point_8h_source.html#l00013">point.h:13</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a href="dir_c85d3e3c5052e9ad9ce18c6863244a25.html">lib</a></li><li class="navelem"><a href="dir_da4e387dad6145fce42efe284fbecf2d.html">geometry</a></li><li class="navelem"><a href="delaunay_8h.html">delaunay.h</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

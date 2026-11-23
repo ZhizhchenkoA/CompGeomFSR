@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="mainwindow_8h" kind="file" language="C++">
+    <compoundname>mainwindow.h</compoundname>
+    <includes local="no">QMainWindow</includes>
+    <includedby refid="main_8cpp" local="yes">src/apps/GeometryWorkbench/main.cpp</includedby>
+    <includedby refid="mainwindow_8cpp" local="yes">src/apps/GeometryWorkbench/mainwindow.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>src/apps/GeometryWorkbench/mainwindow.h</label>
+        <link refid="mainwindow_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QMainWindow</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>src/apps/GeometryWorkbench/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="3">
+        <label>src/apps/GeometryWorkbench/mainwindow.cpp</label>
+        <link refid="mainwindow_8cpp"/>
+      </node>
+      <node id="1">
+        <label>src/apps/GeometryWorkbench/mainwindow.h</label>
+        <link refid="mainwindow_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classMainWindow" prot="public">MainWindow</innerclass>
+    <innernamespace refid="namespaceUi">Ui</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QMainWindow&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal">QT_BEGIN_NAMESPACE</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceUi" kindref="compound">Ui</ref><sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">MainWindow;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">QT_END_NAMESPACE</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="classMainWindow" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classMainWindow_1a996c5a2b6f77944776856f08ec30858d" kindref="member">MainWindow</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>QMainWindow<sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_OBJECT</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classMainWindow_1a996c5a2b6f77944776856f08ec30858d" kindref="member">MainWindow</ref>(QWidget*<sp/>parent<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMainWindow_1a1f7d2c56410fc1bfa135bb907d43313f" kindref="member">~MainWindow</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMainWindow_1a05fb9d72c044aa3bb7d187b994704e2f" kindref="member">closeEvent</ref>(QCloseEvent*<sp/>event)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>slots:</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMainWindow_1a7add49b8afd676505acef34d5483c576" kindref="member">on_actionClear_triggered</ref>();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMainWindow_1ab4487c4b02224acd4a0193d38b704ddb" kindref="member">on_actionExit_triggered</ref>();</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMainWindow_1a4f3ebda1ba39e0ef4d678b44893c9c7f" kindref="member">on_actionAbout_triggered</ref>();</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMainWindow_1ab51030db8cae6753c47f228868c6b8e4" kindref="member">on_actionAboutQt_triggered</ref>();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMainWindow_1aabd9d1803bc74a578726925f89e9c399" kindref="member">log</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>text);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMainWindow_1a06476208b8466211f3bb0fcae787052b" kindref="member">readSettings</ref>();</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMainWindow_1a49be45fc9b993fdc3afe55d4b6fa0650" kindref="member">writeSettings</ref>();</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="classMainWindow_1a35466a70ed47252a0191168126a352a5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Ui::MainWindow*<sp/><ref refid="classMainWindow_1a35466a70ed47252a0191168126a352a5" kindref="member">ui</ref>;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="src/apps/GeometryWorkbench/mainwindow.h"/>
+  </compounddef>
+</doxygen>

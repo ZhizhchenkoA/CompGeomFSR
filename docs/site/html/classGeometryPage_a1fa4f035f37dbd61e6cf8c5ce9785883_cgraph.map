@@ -1,0 +1,17 @@
+<map id="GeometryPage::handlePolygonClick" name="GeometryPage::handlePolygonClick">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,106,227,151"/>
+<area shape="rect" id="Node000002" href="$classGeometryPage.html#a73b11409c008e8a002cdf0b5b86d363d" title=" " alt="" coords="275,76,509,120"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="227,114,262,112,256,113,228,119"/>
+<area shape="rect" id="Node000008" href="$namespacegeometry__qt.html#a1b00196f7a1e7ff93f722417814f1dbf" title="Адаптер между экранными координатами Qt и математическими координатами." alt="" coords="297,144,487,172"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="227,138,284,146,279,146,227,143"/>
+<area shape="rect" id="Node000003" href="$namespacegeometry.html#a6dfabff82b63c795670a97271b9908d2" title="Выпуклая оболочка множества точек алгоритмом Эндрю." alt="" coords="596,5,761,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="460,72,556,43,595,36,590,38,558,48,462,77"/>
+<area shape="rect" id="Node000005" href="$namespacegeometry.html#a9da2f54b6289b88e936abf857d44ea5e" title="Булева операция над двумя выпуклыми многоугольниками (CCW)." alt="" coords="557,57,800,85"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="509,84,544,84,539,84,510,90"/>
+<area shape="rect" id="Node000006" href="$classGeometryPage.html#a4ac016dceaf16fde96c2aed328b0e50d" title=" " alt="" coords="577,109,780,137"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="510,106,564,113,559,113,510,111"/>
+<area shape="rect" id="Node000007" href="$namespacegeometry__qt.html#ab38550851d7c6704f958a3edd7a2dc56" title="Обратное преобразование: геометрия &#45;&gt; экран." alt="" coords="594,161,763,189"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="471,118,510,130,558,146,594,158,589,157,556,151,508,135,471,123"/>
+<area shape="rect" id="Node000004" href="$group__geometry__predicates.html#gac3352a32baf1dd7d3620a1748dd4b78a" title="Векторное произведение (b &#45; a) x (c &#45; a)." alt="" coords="848,5,974,33"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="761,17,836,19,830,19,761,22"/>
+</map>

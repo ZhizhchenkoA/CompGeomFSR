@@ -1,0 +1,234 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Geometry Workbench: Исходный файл src/apps/GeometryWorkbench/geometrypage.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Geometry Workbench<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Интерактивный учебный стенд по компьютерной геометрии</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('geometrypage_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">geometrypage.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="geometrypage_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;QWidget&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="point_8h.html">geometry/point.h</a>&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>QT_BEGIN_NAMESPACE</div>
+<div class="foldopen" id="foldopen00009" data-start="{" data-end="}">
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="namespaceUi.html">    9</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceUi.html">Ui</a> {</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">class </span><a class="code hl_class" href="classGeometryPage.html">GeometryPage</a>;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>}</div>
+</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>QT_END_NAMESPACE</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span></div>
+<div class="foldopen" id="foldopen00019" data-start="{" data-end="};">
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="classGeometryPage.html">   19</a></span><span class="keyword">class </span><a class="code hl_function" href="classGeometryPage.html#a4fda5c025fcd295789a6345233568d87">GeometryPage</a> : <span class="keyword">public</span> QWidget {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    Q_OBJECT</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keyword">explicit</span> <a class="code hl_function" href="classGeometryPage.html#a4fda5c025fcd295789a6345233568d87">GeometryPage</a>(QWidget* parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <a class="code hl_function" href="classGeometryPage.html#acfc85b110da93aea63d610fbc9b5e359">~GeometryPage</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classGeometryPage.html#addebfdadcc9b93da1bf550fb3aa57c33">clearScene</a>();</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>signals:</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="classGeometryPage.html#a4ac016dceaf16fde96c2aed328b0e50d">   28</a></span>    <span class="keywordtype">void</span> <a class="code hl_signal" href="classGeometryPage.html#a4ac016dceaf16fde96c2aed328b0e50d">logMessage</a>(<span class="keyword">const</span> QString&amp; text);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="classGeometryPage.html#aa9f01f9f97ae7cc6d65dcd8254ea8428">   29</a></span>    <span class="keywordtype">void</span> <a class="code hl_signal" href="classGeometryPage.html#aa9f01f9f97ae7cc6d65dcd8254ea8428">cursorMoved</a>(<span class="keyword">const</span> QPointF&amp; geometryPos);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">private</span> slots:</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="classGeometryPage.html#a91d1ac3960a9a2e31af6e79d8d048842">on_onlineCheckBox_toggled</a>(<span class="keywordtype">bool</span> checked);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="classGeometryPage.html#a999b1d336f50d397868ab4790189ff04">on_clearButton_clicked</a>();</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="classGeometryPage.html#aa05702756ffe70c1c9295494036d364e">on_calculateButton_clicked</a>();</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="classGeometryPage.html#af2d0477ad7f1427fc470859223d24cd0">on_circumcirclesCheckBox_toggled</a>(<span class="keywordtype">bool</span> checked);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="classGeometryPage.html#a987ba5fc021a4c94a694aad27f3efdf6">on_bezierSlider_valueChanged</a>(<span class="keywordtype">int</span> value);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="comment">// Сигналы холста подключаются автоматически (connectSlotsByName):</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="comment">// имя виджета &quot;canvas&quot; + имя сигнала.</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="classGeometryPage.html#a3b366ef2453036d455df3e7248d2e127">on_canvas_clicked</a>(<span class="keyword">const</span> QPointF&amp; screenPos);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="classGeometryPage.html#a2d9f83accc5c03c75ef3c7e706716dfb">on_canvas_pointMoved</a>(<span class="keywordtype">int</span> index, <span class="keyword">const</span> QPointF&amp; screenPos);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="classGeometryPage.html#a66d38697b0496bb09cc5c22c375fc596">on_canvas_cursorMoved</a>(<span class="keyword">const</span> QPointF&amp; screenPos);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classGeometryPage.html#a5e401c179a58fb115a86b603312be0da">onTaskChanged</a>(<span class="keywordtype">int</span> index);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classGeometryPage.html#a7b4530bb76653adf3d2d82d1a01c38ff">selectTask</a>(<span class="keywordtype">int</span> task);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classGeometryPage.html#a057cf08f9c927e9745c4d533a381aaea">showLongArithmeticPage</a>(<span class="keywordtype">bool</span> visible);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="comment">// Задача 1: предикат поворота.</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classGeometryPage.html#acdcc0b18c0fa30dd324cd16c23517c7a">handleTurnClick</a>(<span class="keyword">const</span> QPointF&amp; screenPos);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classGeometryPage.html#a758948c03ae61778e10165f174306c3a">handleTurnDrag</a>(<span class="keywordtype">int</span> index, <span class="keyword">const</span> QPointF&amp; screenPos);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classGeometryPage.html#aa685131d4c04dafba54ab095dc78952e">computeTurn</a>();</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="comment">// Задача 2: пересечение отрезков AB и CD.</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classGeometryPage.html#a11f51d12b3ffe8de348c7fcee8f4bb8a">handleIntersectionClick</a>(<span class="keyword">const</span> QPointF&amp; screenPos);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classGeometryPage.html#a2741d6f481328433d778097608c0be1d">handleIntersectionDrag</a>(<span class="keywordtype">int</span> index, <span class="keyword">const</span> QPointF&amp; screenPos);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classGeometryPage.html#a589fc5e7e93427a3f2c34679279ec875">computeIntersection</a>();</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="comment">// Задача 5: выпуклая оболочка.</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classGeometryPage.html#aae494f5e3a68d411bc5c8b8a39bb84e4">handleHullClick</a>(<span class="keyword">const</span> QPointF&amp; screenPos);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classGeometryPage.html#ad4fd2514de86d00ae791f83755aad6a8">handleHullDrag</a>(<span class="keywordtype">int</span> index, <span class="keyword">const</span> QPointF&amp; screenPos);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classGeometryPage.html#ae4a1816822912d00197e9cfa375717d1">computeHull</a>();</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="comment">// Задача 6: триангуляция Делоне.</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classGeometryPage.html#a3a81da70a224b6bcd01c7aebc1a2db6f">handleDelaunayClick</a>(<span class="keyword">const</span> QPointF&amp; screenPos);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classGeometryPage.html#ac2cb0e682262a2691c98bcdfa18bc48a">handleDelaunayDrag</a>(<span class="keywordtype">int</span> index, <span class="keyword">const</span> QPointF&amp; screenPos);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classGeometryPage.html#a740f2f65e615aad3fa3d3dafb2fd530f">computeDelaunay</a>();</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="comment">// Задачи 7--9: операции над выпуклыми многоугольниками.</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classGeometryPage.html#a1fa4f035f37dbd61e6cf8c5ce9785883">handlePolygonClick</a>(<span class="keyword">const</span> QPointF&amp; screenPos);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classGeometryPage.html#a077e9cd0bb0fd57f8b368a813152f78c">handlePolygonDrag</a>(<span class="keywordtype">int</span> index, <span class="keyword">const</span> QPointF&amp; screenPos);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classGeometryPage.html#a73b11409c008e8a002cdf0b5b86d363d">computePolygonOperation</a>();</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="comment">// Задача 13: кривые Безье.</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classGeometryPage.html#ace1f1e79f6cf90be97a1edf406262102">handleBezierClick</a>(<span class="keyword">const</span> QPointF&amp; screenPos);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classGeometryPage.html#ac64c55de6638a1a39c54f756e85888a9">handleBezierDrag</a>(<span class="keywordtype">int</span> index, <span class="keyword">const</span> QPointF&amp; screenPos);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classGeometryPage.html#aa0380120b0b9e766b2e6d3c4d4192b27">computeBezier</a>();</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="classGeometryPage.html#a68c8501f25ae9682080af27d8cadeb27">   80</a></span>    Ui::GeometryPage* <a class="code hl_variable" href="classGeometryPage.html#a68c8501f25ae9682080af27d8cadeb27">ui</a>;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="classGeometryPage.html#a46b6f387963e57709bbb0827a46c7159">   81</a></span>    std::vector&lt;geometry::Point&gt; <a class="code hl_variable" href="classGeometryPage.html#a46b6f387963e57709bbb0827a46c7159">m_points</a>; <span class="comment">// геометрические координаты (Y вверх)</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="classGeometryPage.html#af160b5db7a54477af72cfb0fb0a51d59">   82</a></span>    std::vector&lt;geometry::Point&gt; <a class="code hl_variable" href="classGeometryPage.html#af160b5db7a54477af72cfb0fb0a51d59">m_polygonA</a>;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="classGeometryPage.html#a2bebd56bce64ae1e0ffa448947fcf97b">   83</a></span>    std::vector&lt;geometry::Point&gt; <a class="code hl_variable" href="classGeometryPage.html#a2bebd56bce64ae1e0ffa448947fcf97b">m_polygonB</a>;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="classGeometryPage.html#aa5b999969872e3bab6cd0ac9181cca8c">   84</a></span>    std::vector&lt;std::pair&lt;int, int&gt;&gt; <a class="code hl_variable" href="classGeometryPage.html#aa5b999969872e3bab6cd0ac9181cca8c">m_polygonPointBindings</a>;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="classGeometryPage.html#aaf0da91936f1ea4f61be077109b349e1">   85</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="classGeometryPage.html#aaf0da91936f1ea4f61be077109b349e1">m_currentTask</a> = 1;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>};</div>
+</div>
+<div class="ttc" id="aclassGeometryPage_html"><div class="ttname"><a href="classGeometryPage.html">GeometryPage</a></div><div class="ttdoc">Главная страница задач 1–13.</div><div class="ttdef"><b>Определения</b> <a href="#l00019">geometrypage.h:19</a></div></div>
+<div class="ttc" id="aclassGeometryPage_html_a057cf08f9c927e9745c4d533a381aaea"><div class="ttname"><a href="classGeometryPage.html#a057cf08f9c927e9745c4d533a381aaea">GeometryPage::showLongArithmeticPage</a></div><div class="ttdeci">void showLongArithmeticPage(bool visible)</div><div class="ttdef"><b>Определения</b> <a href="geometrypage_8cpp_source.html#l00180">geometrypage.cpp:180</a></div></div>
+<div class="ttc" id="aclassGeometryPage_html_a077e9cd0bb0fd57f8b368a813152f78c"><div class="ttname"><a href="classGeometryPage.html#a077e9cd0bb0fd57f8b368a813152f78c">GeometryPage::handlePolygonDrag</a></div><div class="ttdeci">void handlePolygonDrag(int index, const QPointF &amp;screenPos)</div><div class="ttdef"><b>Определения</b> <a href="geometrypage_8cpp_source.html#l00541">geometrypage.cpp:541</a></div></div>
+<div class="ttc" id="aclassGeometryPage_html_a11f51d12b3ffe8de348c7fcee8f4bb8a"><div class="ttname"><a href="classGeometryPage.html#a11f51d12b3ffe8de348c7fcee8f4bb8a">GeometryPage::handleIntersectionClick</a></div><div class="ttdeci">void handleIntersectionClick(const QPointF &amp;screenPos)</div><div class="ttdef"><b>Определения</b> <a href="geometrypage_8cpp_source.html#l00366">geometrypage.cpp:366</a></div></div>
+<div class="ttc" id="aclassGeometryPage_html_a1fa4f035f37dbd61e6cf8c5ce9785883"><div class="ttname"><a href="classGeometryPage.html#a1fa4f035f37dbd61e6cf8c5ce9785883">GeometryPage::handlePolygonClick</a></div><div class="ttdeci">void handlePolygonClick(const QPointF &amp;screenPos)</div><div class="ttdef"><b>Определения</b> <a href="geometrypage_8cpp_source.html#l00524">geometrypage.cpp:524</a></div></div>
+<div class="ttc" id="aclassGeometryPage_html_a2741d6f481328433d778097608c0be1d"><div class="ttname"><a href="classGeometryPage.html#a2741d6f481328433d778097608c0be1d">GeometryPage::handleIntersectionDrag</a></div><div class="ttdeci">void handleIntersectionDrag(int index, const QPointF &amp;screenPos)</div><div class="ttdef"><b>Определения</b> <a href="geometrypage_8cpp_source.html#l00391">geometrypage.cpp:391</a></div></div>
+<div class="ttc" id="aclassGeometryPage_html_a2bebd56bce64ae1e0ffa448947fcf97b"><div class="ttname"><a href="classGeometryPage.html#a2bebd56bce64ae1e0ffa448947fcf97b">GeometryPage::m_polygonB</a></div><div class="ttdeci">std::vector&lt; geometry::Point &gt; m_polygonB</div><div class="ttdef"><b>Определения</b> <a href="#l00083">geometrypage.h:83</a></div></div>
+<div class="ttc" id="aclassGeometryPage_html_a2d9f83accc5c03c75ef3c7e706716dfb"><div class="ttname"><a href="classGeometryPage.html#a2d9f83accc5c03c75ef3c7e706716dfb">GeometryPage::on_canvas_pointMoved</a></div><div class="ttdeci">void on_canvas_pointMoved(int index, const QPointF &amp;screenPos)</div><div class="ttdef"><b>Определения</b> <a href="geometrypage_8cpp_source.html#l00255">geometrypage.cpp:255</a></div></div>
+<div class="ttc" id="aclassGeometryPage_html_a3a81da70a224b6bcd01c7aebc1a2db6f"><div class="ttname"><a href="classGeometryPage.html#a3a81da70a224b6bcd01c7aebc1a2db6f">GeometryPage::handleDelaunayClick</a></div><div class="ttdeci">void handleDelaunayClick(const QPointF &amp;screenPos)</div><div class="ttdef"><b>Определения</b> <a href="geometrypage_8cpp_source.html#l00478">geometrypage.cpp:478</a></div></div>
+<div class="ttc" id="aclassGeometryPage_html_a3b366ef2453036d455df3e7248d2e127"><div class="ttname"><a href="classGeometryPage.html#a3b366ef2453036d455df3e7248d2e127">GeometryPage::on_canvas_clicked</a></div><div class="ttdeci">void on_canvas_clicked(const QPointF &amp;screenPos)</div><div class="ttdef"><b>Определения</b> <a href="geometrypage_8cpp_source.html#l00239">geometrypage.cpp:239</a></div></div>
+<div class="ttc" id="aclassGeometryPage_html_a46b6f387963e57709bbb0827a46c7159"><div class="ttname"><a href="classGeometryPage.html#a46b6f387963e57709bbb0827a46c7159">GeometryPage::m_points</a></div><div class="ttdeci">std::vector&lt; geometry::Point &gt; m_points</div><div class="ttdef"><b>Определения</b> <a href="#l00081">geometrypage.h:81</a></div></div>
+<div class="ttc" id="aclassGeometryPage_html_a4ac016dceaf16fde96c2aed328b0e50d"><div class="ttname"><a href="classGeometryPage.html#a4ac016dceaf16fde96c2aed328b0e50d">GeometryPage::logMessage</a></div><div class="ttdeci">void logMessage(const QString &amp;text)</div></div>
+<div class="ttc" id="aclassGeometryPage_html_a4fda5c025fcd295789a6345233568d87"><div class="ttname"><a href="classGeometryPage.html#a4fda5c025fcd295789a6345233568d87">GeometryPage::GeometryPage</a></div><div class="ttdeci">GeometryPage(QWidget *parent=nullptr)</div><div class="ttdef"><b>Определения</b> <a href="geometrypage_8cpp_source.html#l00030">geometrypage.cpp:30</a></div></div>
+<div class="ttc" id="aclassGeometryPage_html_a589fc5e7e93427a3f2c34679279ec875"><div class="ttname"><a href="classGeometryPage.html#a589fc5e7e93427a3f2c34679279ec875">GeometryPage::computeIntersection</a></div><div class="ttdeci">void computeIntersection()</div><div class="ttdef"><b>Определения</b> <a href="geometrypage_8cpp_source.html#l00403">geometrypage.cpp:403</a></div></div>
+<div class="ttc" id="aclassGeometryPage_html_a5e401c179a58fb115a86b603312be0da"><div class="ttname"><a href="classGeometryPage.html#a5e401c179a58fb115a86b603312be0da">GeometryPage::onTaskChanged</a></div><div class="ttdeci">void onTaskChanged(int index)</div><div class="ttdef"><b>Определения</b> <a href="geometrypage_8cpp_source.html#l00186">geometrypage.cpp:186</a></div></div>
+<div class="ttc" id="aclassGeometryPage_html_a66d38697b0496bb09cc5c22c375fc596"><div class="ttname"><a href="classGeometryPage.html#a66d38697b0496bb09cc5c22c375fc596">GeometryPage::on_canvas_cursorMoved</a></div><div class="ttdeci">void on_canvas_cursorMoved(const QPointF &amp;screenPos)</div><div class="ttdef"><b>Определения</b> <a href="geometrypage_8cpp_source.html#l00270">geometrypage.cpp:270</a></div></div>
+<div class="ttc" id="aclassGeometryPage_html_a68c8501f25ae9682080af27d8cadeb27"><div class="ttname"><a href="classGeometryPage.html#a68c8501f25ae9682080af27d8cadeb27">GeometryPage::ui</a></div><div class="ttdeci">Ui::GeometryPage * ui</div><div class="ttdef"><b>Определения</b> <a href="#l00080">geometrypage.h:80</a></div></div>
+<div class="ttc" id="aclassGeometryPage_html_a73b11409c008e8a002cdf0b5b86d363d"><div class="ttname"><a href="classGeometryPage.html#a73b11409c008e8a002cdf0b5b86d363d">GeometryPage::computePolygonOperation</a></div><div class="ttdeci">void computePolygonOperation()</div><div class="ttdef"><b>Определения</b> <a href="geometrypage_8cpp_source.html#l00558">geometrypage.cpp:558</a></div></div>
+<div class="ttc" id="aclassGeometryPage_html_a740f2f65e615aad3fa3d3dafb2fd530f"><div class="ttname"><a href="classGeometryPage.html#a740f2f65e615aad3fa3d3dafb2fd530f">GeometryPage::computeDelaunay</a></div><div class="ttdeci">void computeDelaunay()</div><div class="ttdef"><b>Определения</b> <a href="geometrypage_8cpp_source.html#l00502">geometrypage.cpp:502</a></div></div>
+<div class="ttc" id="aclassGeometryPage_html_a758948c03ae61778e10165f174306c3a"><div class="ttname"><a href="classGeometryPage.html#a758948c03ae61778e10165f174306c3a">GeometryPage::handleTurnDrag</a></div><div class="ttdeci">void handleTurnDrag(int index, const QPointF &amp;screenPos)</div><div class="ttdef"><b>Определения</b> <a href="geometrypage_8cpp_source.html#l00345">geometrypage.cpp:345</a></div></div>
+<div class="ttc" id="aclassGeometryPage_html_a7b4530bb76653adf3d2d82d1a01c38ff"><div class="ttname"><a href="classGeometryPage.html#a7b4530bb76653adf3d2d82d1a01c38ff">GeometryPage::selectTask</a></div><div class="ttdeci">void selectTask(int task)</div><div class="ttdef"><b>Определения</b> <a href="geometrypage_8cpp_source.html#l00066">geometrypage.cpp:66</a></div></div>
+<div class="ttc" id="aclassGeometryPage_html_a91d1ac3960a9a2e31af6e79d8d048842"><div class="ttname"><a href="classGeometryPage.html#a91d1ac3960a9a2e31af6e79d8d048842">GeometryPage::on_onlineCheckBox_toggled</a></div><div class="ttdeci">void on_onlineCheckBox_toggled(bool checked)</div><div class="ttdef"><b>Определения</b> <a href="geometrypage_8cpp_source.html#l00191">geometrypage.cpp:191</a></div></div>
+<div class="ttc" id="aclassGeometryPage_html_a987ba5fc021a4c94a694aad27f3efdf6"><div class="ttname"><a href="classGeometryPage.html#a987ba5fc021a4c94a694aad27f3efdf6">GeometryPage::on_bezierSlider_valueChanged</a></div><div class="ttdeci">void on_bezierSlider_valueChanged(int value)</div><div class="ttdef"><b>Определения</b> <a href="geometrypage_8cpp_source.html#l00208">geometrypage.cpp:208</a></div></div>
+<div class="ttc" id="aclassGeometryPage_html_a999b1d336f50d397868ab4790189ff04"><div class="ttname"><a href="classGeometryPage.html#a999b1d336f50d397868ab4790189ff04">GeometryPage::on_clearButton_clicked</a></div><div class="ttdeci">void on_clearButton_clicked()</div><div class="ttdef"><b>Определения</b> <a href="geometrypage_8cpp_source.html#l00218">geometrypage.cpp:218</a></div></div>
+<div class="ttc" id="aclassGeometryPage_html_aa0380120b0b9e766b2e6d3c4d4192b27"><div class="ttname"><a href="classGeometryPage.html#aa0380120b0b9e766b2e6d3c4d4192b27">GeometryPage::computeBezier</a></div><div class="ttdeci">void computeBezier()</div><div class="ttdef"><b>Определения</b> <a href="geometrypage_8cpp_source.html#l00607">geometrypage.cpp:607</a></div></div>
+<div class="ttc" id="aclassGeometryPage_html_aa05702756ffe70c1c9295494036d364e"><div class="ttname"><a href="classGeometryPage.html#aa05702756ffe70c1c9295494036d364e">GeometryPage::on_calculateButton_clicked</a></div><div class="ttdeci">void on_calculateButton_clicked()</div><div class="ttdef"><b>Определения</b> <a href="geometrypage_8cpp_source.html#l00224">geometrypage.cpp:224</a></div></div>
+<div class="ttc" id="aclassGeometryPage_html_aa5b999969872e3bab6cd0ac9181cca8c"><div class="ttname"><a href="classGeometryPage.html#aa5b999969872e3bab6cd0ac9181cca8c">GeometryPage::m_polygonPointBindings</a></div><div class="ttdeci">std::vector&lt; std::pair&lt; int, int &gt; &gt; m_polygonPointBindings</div><div class="ttdef"><b>Определения</b> <a href="#l00084">geometrypage.h:84</a></div></div>
+<div class="ttc" id="aclassGeometryPage_html_aa685131d4c04dafba54ab095dc78952e"><div class="ttname"><a href="classGeometryPage.html#aa685131d4c04dafba54ab095dc78952e">GeometryPage::computeTurn</a></div><div class="ttdeci">void computeTurn()</div><div class="ttdef"><b>Определения</b> <a href="geometrypage_8cpp_source.html#l00301">geometrypage.cpp:301</a></div></div>
+<div class="ttc" id="aclassGeometryPage_html_aa9f01f9f97ae7cc6d65dcd8254ea8428"><div class="ttname"><a href="classGeometryPage.html#aa9f01f9f97ae7cc6d65dcd8254ea8428">GeometryPage::cursorMoved</a></div><div class="ttdeci">void cursorMoved(const QPointF &amp;geometryPos)</div></div>
+<div class="ttc" id="aclassGeometryPage_html_aae494f5e3a68d411bc5c8b8a39bb84e4"><div class="ttname"><a href="classGeometryPage.html#aae494f5e3a68d411bc5c8b8a39bb84e4">GeometryPage::handleHullClick</a></div><div class="ttdeci">void handleHullClick(const QPointF &amp;screenPos)</div><div class="ttdef"><b>Определения</b> <a href="geometrypage_8cpp_source.html#l00438">geometrypage.cpp:438</a></div></div>
+<div class="ttc" id="aclassGeometryPage_html_aaf0da91936f1ea4f61be077109b349e1"><div class="ttname"><a href="classGeometryPage.html#aaf0da91936f1ea4f61be077109b349e1">GeometryPage::m_currentTask</a></div><div class="ttdeci">int m_currentTask</div><div class="ttdef"><b>Определения</b> <a href="#l00085">geometrypage.h:85</a></div></div>
+<div class="ttc" id="aclassGeometryPage_html_ac2cb0e682262a2691c98bcdfa18bc48a"><div class="ttname"><a href="classGeometryPage.html#ac2cb0e682262a2691c98bcdfa18bc48a">GeometryPage::handleDelaunayDrag</a></div><div class="ttdeci">void handleDelaunayDrag(int index, const QPointF &amp;screenPos)</div><div class="ttdef"><b>Определения</b> <a href="geometrypage_8cpp_source.html#l00490">geometrypage.cpp:490</a></div></div>
+<div class="ttc" id="aclassGeometryPage_html_ac64c55de6638a1a39c54f756e85888a9"><div class="ttname"><a href="classGeometryPage.html#ac64c55de6638a1a39c54f756e85888a9">GeometryPage::handleBezierDrag</a></div><div class="ttdeci">void handleBezierDrag(int index, const QPointF &amp;screenPos)</div><div class="ttdef"><b>Определения</b> <a href="geometrypage_8cpp_source.html#l00600">geometrypage.cpp:600</a></div></div>
+<div class="ttc" id="aclassGeometryPage_html_acdcc0b18c0fa30dd324cd16c23517c7a"><div class="ttname"><a href="classGeometryPage.html#acdcc0b18c0fa30dd324cd16c23517c7a">GeometryPage::handleTurnClick</a></div><div class="ttdeci">void handleTurnClick(const QPointF &amp;screenPos)</div><div class="ttdef"><b>Определения</b> <a href="geometrypage_8cpp_source.html#l00278">geometrypage.cpp:278</a></div></div>
+<div class="ttc" id="aclassGeometryPage_html_ace1f1e79f6cf90be97a1edf406262102"><div class="ttname"><a href="classGeometryPage.html#ace1f1e79f6cf90be97a1edf406262102">GeometryPage::handleBezierClick</a></div><div class="ttdeci">void handleBezierClick(const QPointF &amp;screenPos)</div><div class="ttdef"><b>Определения</b> <a href="geometrypage_8cpp_source.html#l00590">geometrypage.cpp:590</a></div></div>
+<div class="ttc" id="aclassGeometryPage_html_acfc85b110da93aea63d610fbc9b5e359"><div class="ttname"><a href="classGeometryPage.html#acfc85b110da93aea63d610fbc9b5e359">GeometryPage::~GeometryPage</a></div><div class="ttdeci">~GeometryPage() override</div><div class="ttdef"><b>Определения</b> <a href="geometrypage_8cpp_source.html#l00051">geometrypage.cpp:51</a></div></div>
+<div class="ttc" id="aclassGeometryPage_html_ad4fd2514de86d00ae791f83755aad6a8"><div class="ttname"><a href="classGeometryPage.html#ad4fd2514de86d00ae791f83755aad6a8">GeometryPage::handleHullDrag</a></div><div class="ttdeci">void handleHullDrag(int index, const QPointF &amp;screenPos)</div><div class="ttdef"><b>Определения</b> <a href="geometrypage_8cpp_source.html#l00451">geometrypage.cpp:451</a></div></div>
+<div class="ttc" id="aclassGeometryPage_html_addebfdadcc9b93da1bf550fb3aa57c33"><div class="ttname"><a href="classGeometryPage.html#addebfdadcc9b93da1bf550fb3aa57c33">GeometryPage::clearScene</a></div><div class="ttdeci">void clearScene()</div><div class="ttdef"><b>Определения</b> <a href="geometrypage_8cpp_source.html#l00056">geometrypage.cpp:56</a></div></div>
+<div class="ttc" id="aclassGeometryPage_html_ae4a1816822912d00197e9cfa375717d1"><div class="ttname"><a href="classGeometryPage.html#ae4a1816822912d00197e9cfa375717d1">GeometryPage::computeHull</a></div><div class="ttdeci">void computeHull()</div><div class="ttdef"><b>Определения</b> <a href="geometrypage_8cpp_source.html#l00463">geometrypage.cpp:463</a></div></div>
+<div class="ttc" id="aclassGeometryPage_html_af160b5db7a54477af72cfb0fb0a51d59"><div class="ttname"><a href="classGeometryPage.html#af160b5db7a54477af72cfb0fb0a51d59">GeometryPage::m_polygonA</a></div><div class="ttdeci">std::vector&lt; geometry::Point &gt; m_polygonA</div><div class="ttdef"><b>Определения</b> <a href="#l00082">geometrypage.h:82</a></div></div>
+<div class="ttc" id="aclassGeometryPage_html_af2d0477ad7f1427fc470859223d24cd0"><div class="ttname"><a href="classGeometryPage.html#af2d0477ad7f1427fc470859223d24cd0">GeometryPage::on_circumcirclesCheckBox_toggled</a></div><div class="ttdeci">void on_circumcirclesCheckBox_toggled(bool checked)</div><div class="ttdef"><b>Определения</b> <a href="geometrypage_8cpp_source.html#l00213">geometrypage.cpp:213</a></div></div>
+<div class="ttc" id="anamespaceUi_html"><div class="ttname"><a href="namespaceUi.html">Ui</a></div><div class="ttdef"><b>Определения</b> <a href="#l00009">geometrypage.h:9</a></div></div>
+<div class="ttc" id="apoint_8h_html"><div class="ttname"><a href="point_8h.html">point.h</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a href="dir_53adf0b982dc8545998aae3f283a5a58.html">apps</a></li><li class="navelem"><a href="dir_5e6306009cd186cd16fe5451231d93c7.html">GeometryWorkbench</a></li><li class="navelem"><a href="geometrypage_8h.html">geometrypage.h</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

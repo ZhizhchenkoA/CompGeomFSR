@@ -20,32 +20,24 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  build:
-    name: Build Doxygen HTML
+  publish:
+    name: Publish prebuilt documentation
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
         uses: actions/checkout@v6
 
-      - name: Install Doxygen and Graphviz
-        run: |
-          sudo apt-get update
-          sudo apt-get install --yes doxygen graphviz
-
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
-
-      - name: Generate documentation
-        run: doxygen Doxyfile
 
       - name: Upload documentation artifact
         uses: actions/upload-pages-artifact@v4
         with:
-          path: build/docs/html
+          path: docs/site/html
 
   deploy:
     name: Deploy to GitHub Pages
-    needs: build
+    needs: publish
     runs-on: ubuntu-latest
     environment:
       name: github-pages

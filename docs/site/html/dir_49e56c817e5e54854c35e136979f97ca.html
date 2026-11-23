@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Geometry Workbench: Содержание директории docs</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Geometry Workbench<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Интерактивный учебный стенд по компьютерной геометрии</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('dir_49e56c817e5e54854c35e136979f97ca.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Содержание директории docs</div></div>
+</div><!--header-->
+<div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Подробное описание</h2>
+<div class="textblock"><h1 class="doxsection"><a class="anchor" id="autotoc_md0"></a>
+Geometry Workbench — документация</h1>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md1"></a>
+Назначение</h1>
+<p>Проект — Qt-приложение для интерактивной демонстрации алгоритмов компьютерной геометрии. Пользователь выбирает задачу, задаёт точки кликами или полями ввода, а страница передаёт данные в чистые C++-библиотеки и визуализирует результат.</p>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md2"></a>
+Архитектура</h1>
+<ul>
+<li><span class="tt">src/apps/GeometryWorkbench</span> — приложение Qt: главное окно, выбор задания, холст и формы.</li>
+<li><span class="tt">src/lib/geometry</span> — алгоритмы над точками и многоугольниками без зависимости от Qt: предикаты, пересечения, оболочка, Делоне и булевы операции.</li>
+<li><span class="tt">src/lib/geometry_qt</span> — единственный адаптер координат: экранная ось <span class="tt">Y</span> направлена вниз, математическая — вверх.</li>
+<li><span class="tt">src/lib/bigint</span> — знаковое целое произвольной длины и точный разбор десятичных чисел для задания 3.</li>
+<li><span class="tt">src/lib/bezier</span> — вычисление кривых Безье и уровней де Кастельжо для задания 13.</li>
+</ul>
+<p>Алгоритмы не рисуют интерфейс. Они получают значения из модели, возвращают структуры результата, а <span class="tt"><a class="el" href="classGeometryCanvas.html" title="Холст геометрических сцен.">GeometryCanvas</a></span> переводит их в экранные координаты и рисует слои: сетку, исходные объекты, результат и легенду.</p>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md3"></a>
+Основные алгоритмы</h1>
+<ul>
+<li><span class="tt"><a class="el" href="namespacegeometry.html#a1d29367c0cb96e7c1a1b871b786ffacd" title="Предикат поворота.">geometry::turn</a></span> и <span class="tt"><a class="el" href="group__geometry__predicates.html#gac3352a32baf1dd7d3620a1748dd4b78a" title="Векторное произведение (b - a) x (c - a).">geometry::cross</a></span> — знак ориентированной площади треугольника.</li>
+<li><span class="tt"><a class="el" href="namespacegeometry.html#a88e1232746c80a5b9704832bd536724d" title="Находит пересечение замкнутых отрезков AB и CD.">geometry::intersectSegments</a></span> — пересечение отрезков, включая точку, общий участок и вырожденные отрезки.</li>
+<li><span class="tt"><a class="el" href="namespacegeometry.html#a6dfabff82b63c795670a97271b9908d2" title="Выпуклая оболочка множества точек алгоритмом Эндрю.">geometry::convexHull</a></span> — монотонная цепь Эндрю с удалением дублей и коллинеарных внутренних точек.</li>
+<li><span class="tt"><a class="el" href="namespacegeometry.html#a9610a583f6dfe92c309727c15b9b3933" title="Триангуляция Делоне алгоритмом Bowyer–Watson.">geometry::delaunayTriangulation</a></span> — инкрементальный Bowyer–Watson со структурой описанных окружностей.</li>
+<li><span class="tt"><a class="el" href="namespacegeometry.html#a9da2f54b6289b88e936abf857d44ea5e" title="Булева операция над двумя выпуклыми многоугольниками (CCW).">geometry::convexPolygonBoolean</a></span> — операции пересечения, объединения и разности выпуклых многоугольников через разбиение границ на фрагменты и сборку контуров.</li>
+<li><span class="tt"><a class="el" href="namespacebigint.html#a2646acc61d0e940c36f58f118a5095d1" title="Поля массива идут в порядке Ax, Ay, Bx, By, Px, Py.">bigint::exactTurn</a></span> — точное вычисление <span class="tt">(B − A) × (P − A)</span> после приведения десятичных мантисс к общей степени десяти.</li>
+<li><span class="tt"><a class="el" href="namespacebezier.html#aa6f0140841e402a3cfa3ba2aba8044d0" title="Операции с параметрическими кривыми Безье.">bezier::deCasteljau</a></span> — линейная интерполяция уровней до одной точки; <span class="tt">sample</span> и <span class="tt">composite</span> строят полилинии для визуализации.</li>
+</ul>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md4"></a>
+Сборка и запуск</h1>
+<div class="fragment"><div class="line">cmake -S . -B build</div>
+<div class="line">cmake --build build -j2</div>
+<div class="line">./build/src/apps/GeometryWorkbench/GeometryWorkbench</div>
+</div><!-- fragment --><h1 class="doxsection"><a class="anchor" id="autotoc_md5"></a>
+Генерация API-документации</h1>
+<p>Нужен установленный <span class="tt">doxygen</span>:</p>
+<div class="fragment"><div class="line">doxygen Doxyfile</div>
+</div><!-- fragment --><p>Главная страница будет создана в <span class="tt">docs/site/html/index.html</span>. Из CMake можно использовать цель:</p>
+<div class="fragment"><div class="line">cmake --build build --target docs</div>
+</div><!-- fragment --><p><span class="tt">Doxyfile</span> читает заголовки и исходники из <span class="tt">src</span>, извлекает публичные и приватные сущности и сохраняет HTML-дерево с исходниками и перекрёстными ссылками. Каталог <span class="tt">docs/site/html</span> — готовый статический сайт: его следует добавить в Git вместе с изменениями документации.</p>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md6"></a>
+Публикация на GitHub Pages</h1>
+<p>В проекте есть workflow <a href="../.github/workflows/deploy-docs.yml"><span class="tt">.github/workflows/deploy-docs.yml</span></a>. Он не запускает Doxygen на сервере: workflow публикует уже подготовленный каталог <span class="tt">docs/site/html</span> на GitHub Pages. Поэтому после изменения комментариев, исходников или <span class="tt">Doxyfile</span> сначала локально выполните <span class="tt">doxygen Doxyfile</span>, затем добавьте обновлённый <span class="tt">docs/site</span> в коммит. Запуск происходит при изменении исходного кода, <span class="tt">docs</span> или <span class="tt">Doxyfile</span> в ветках <span class="tt"><a class="el" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main</a></span> и <span class="tt">master</span>; его также можно запустить вручную через вкладку <b>Actions</b>.</p>
+<p>Перед первым запуском в репозитории откройте <b>Settings → Pages</b> и выберите источник <b>GitHub Actions</b>. После успешного job <span class="tt">Deploy to GitHub Pages</span> ссылка на опубликованную документацию появится в его выводе и в разделе Pages. Для пользовательского домена настройте его там же: файл <span class="tt">CNAME</span> сам по себе домен не подключает. </p>
+</div></div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_49e56c817e5e54854c35e136979f97ca.html">docs</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

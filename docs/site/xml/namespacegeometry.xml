@@ -1,0 +1,423 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="namespacegeometry" kind="namespace" language="C++">
+    <compoundname>geometry</compoundname>
+    <innerclass refid="structgeometry_1_1Circumcircle" prot="public">geometry::Circumcircle</innerclass>
+    <innerclass refid="structgeometry_1_1DelaunayTriangle" prot="public">geometry::DelaunayTriangle</innerclass>
+    <innerclass refid="structgeometry_1_1Point" prot="public">geometry::Point</innerclass>
+    <innerclass refid="structgeometry_1_1SegmentIntersection" prot="public">geometry::SegmentIntersection</innerclass>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespacegeometry_1ac019bd61bca22de69c70fc1a9acabefa" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>ConvexPolygonOperation</name>
+        <qualifiedname>geometry::ConvexPolygonOperation</qualifiedname>
+        <enumvalue id="namespacegeometry_1ac019bd61bca22de69c70fc1a9acabefaaa06d31c2ee920b4d53e8c9c06d90ba24" prot="public">
+          <name>Intersection</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegeometry_1ac019bd61bca22de69c70fc1a9acabefaaaef12e903e606a4895a16b393bfdec8c" prot="public">
+          <name>Union</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegeometry_1ac019bd61bca22de69c70fc1a9acabefaa28ed2ac6c29f64a3692c956004b8ff7a" prot="public">
+          <name>Difference</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Операция над двумя выпуклыми многоугольниками. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib/geometry/convex_polygon_boolean.h" line="10" column="1" bodyfile="src/lib/geometry/convex_polygon_boolean.h" bodystart="10" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacegeometry_1aeac4c2c4d76d3f1bbd0d024a3a242444" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>SegmentIntersectionKind</name>
+        <qualifiedname>geometry::SegmentIntersectionKind</qualifiedname>
+        <enumvalue id="namespacegeometry_1aeac4c2c4d76d3f1bbd0d024a3a242444a6adf97f83acf6453d4a6a4b1070f3754" prot="public">
+          <name>None</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegeometry_1aeac4c2c4d76d3f1bbd0d024a3a242444a2a3cd5946cfd317eb99c3d32e35e2d4c" prot="public">
+          <name>Point</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegeometry_1aeac4c2c4d76d3f1bbd0d024a3a242444a2359a16283d7b4bfaaff2f6e90cbd116" prot="public">
+          <name>Overlap</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Тип результата пересечения двух замкнутых отрезков. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib/geometry/segment_intersection.h" line="8" column="1" bodyfile="src/lib/geometry/segment_intersection.h" bodystart="8" bodyend="12"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespacegeometry_1a2f3c921176229b37a127ffcce53cf519" prot="public" static="no">
+        <type>std::vector&lt; std::vector&lt; <ref refid="structgeometry_1_1Point" kindref="compound">Point</ref> &gt; &gt;</type>
+        <definition>using geometry::PolygonSet = std::vector&lt;std::vector&lt;Point&gt;&gt;</definition>
+        <argsstring></argsstring>
+        <name>PolygonSet</name>
+        <qualifiedname>geometry::PolygonSet</qualifiedname>
+        <briefdescription>
+<para>Набор контуров результата булевой операции. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Внешние границы обходятся против часовой стрелки, отверстия — по часовой. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib/geometry/convex_polygon_boolean.h" line="16" column="1" bodyfile="src/lib/geometry/convex_polygon_boolean.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacegeometry_1a6dfabff82b63c795670a97271b9908d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="structgeometry_1_1Point" kindref="compound">Point</ref> &gt;</type>
+        <definition>std::vector&lt; Point &gt; geometry::convexHull</definition>
+        <argsstring>(std::vector&lt; Point &gt; points, double eps=1e-9)</argsstring>
+        <name>convexHull</name>
+        <qualifiedname>geometry::convexHull</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="structgeometry_1_1Point" kindref="compound">Point</ref> &gt;</type>
+          <declname>points</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>eps</declname>
+          <defval>1e-9</defval>
+        </param>
+        <briefdescription>
+<para>Выпуклая оболочка множества точек алгоритмом Эндрю. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Вершины против часовой стрелки без повторения первой точки. Для 0/1/2 различных точек результат содержит 0/1/2 точки. Дубликаты и коллинеарные внутренние точки исключаются. \par Complexity: $O(n \log n)$ по времени, $O(n)$ дополнительной памяти. \par Invariant: Результат ориентирован против часовой стрелки. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib/geometry/convex_hull.cpp" line="18" column="13" bodyfile="src/lib/geometry/convex_hull.cpp" bodystart="18" bodyend="52" declfile="src/lib/geometry/convex_hull.h" declline="20" declcolumn="13"/>
+        <references refid="group__geometry__predicates_1gac3352a32baf1dd7d3620a1748dd4b78a" compoundref="predicates_8cpp" startline="8" endline="11">cross</references>
+        <referencedby refid="classGeometryPage_1ae4a1816822912d00197e9cfa375717d1" compoundref="geometrypage_8cpp" startline="463" endline="474">GeometryPage::computeHull</referencedby>
+        <referencedby refid="classGeometryPage_1a73b11409c008e8a002cdf0b5b86d363d" compoundref="geometrypage_8cpp" startline="558" endline="588">GeometryPage::computePolygonOperation</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacegeometry_1a9da2f54b6289b88e936abf857d44ea5e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacegeometry_1a2f3c921176229b37a127ffcce53cf519" kindref="member">PolygonSet</ref></type>
+        <definition>PolygonSet geometry::convexPolygonBoolean</definition>
+        <argsstring>(const std::vector&lt; Point &gt; &amp;first, const std::vector&lt; Point &gt; &amp;second, ConvexPolygonOperation operation, double eps=1e-9)</argsstring>
+        <name>convexPolygonBoolean</name>
+        <qualifiedname>geometry::convexPolygonBoolean</qualifiedname>
+        <param>
+          <type>const std::vector&lt; <ref refid="structgeometry_1_1Point" kindref="compound">Point</ref> &gt; &amp;</type>
+          <declname>first</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="structgeometry_1_1Point" kindref="compound">Point</ref> &gt; &amp;</type>
+          <declname>second</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacegeometry_1ac019bd61bca22de69c70fc1a9acabefa" kindref="member">ConvexPolygonOperation</ref></type>
+          <declname>operation</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>eps</declname>
+          <defval>1e-9</defval>
+        </param>
+        <briefdescription>
+<para>Булева операция над двумя выпуклыми многоугольниками (CCW). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Поддерживаются непересекающиеся фигуры, касания и несколько компонент. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib/geometry/convex_polygon_boolean.cpp" line="127" column="12" bodyfile="src/lib/geometry/convex_polygon_boolean.cpp" bodystart="127" bodyend="181" declfile="src/lib/geometry/convex_polygon_boolean.h" declline="22" declcolumn="12"/>
+        <references refid="namespacegeometry_1ac019bd61bca22de69c70fc1a9acabefaa28ed2ac6c29f64a3692c956004b8ff7a" compoundref="convex__polygon__boolean_8h" startline="10">Difference</references>
+        <references refid="namespacegeometry_1ac019bd61bca22de69c70fc1a9acabefaaa06d31c2ee920b4d53e8c9c06d90ba24" compoundref="convex__polygon__boolean_8h" startline="10">Intersection</references>
+        <references refid="namespacegeometry_1ac019bd61bca22de69c70fc1a9acabefaaaef12e903e606a4895a16b393bfdec8c" compoundref="convex__polygon__boolean_8h" startline="10">Union</references>
+        <referencedby refid="classGeometryPage_1a73b11409c008e8a002cdf0b5b86d363d" compoundref="geometrypage_8cpp" startline="558" endline="588">GeometryPage::computePolygonOperation</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacegeometry_1a9610a583f6dfe92c309727c15b9b3933" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="structgeometry_1_1DelaunayTriangle" kindref="compound">DelaunayTriangle</ref> &gt;</type>
+        <definition>std::vector&lt; DelaunayTriangle &gt; geometry::delaunayTriangulation</definition>
+        <argsstring>(std::vector&lt; Point &gt; points, double eps=1e-9)</argsstring>
+        <name>delaunayTriangulation</name>
+        <qualifiedname>geometry::delaunayTriangulation</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="structgeometry_1_1Point" kindref="compound">Point</ref> &gt;</type>
+          <declname>points</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>eps</declname>
+          <defval>1e-9</defval>
+        </param>
+        <briefdescription>
+<para>Триангуляция Делоне алгоритмом Bowyer<ndash/>Watson. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Дубликаты исключаются; для менее чем трёх неколлинеарных точек возвращается пустой список. Точки на окружности допускаются. \par Complexity: В среднем O(n log n), в худшем случае зависит от числа треугольников. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib/geometry/delaunay.cpp" line="76" column="13" bodyfile="src/lib/geometry/delaunay.cpp" bodystart="76" bodyend="161" declfile="src/lib/geometry/delaunay.h" declline="28" declcolumn="13"/>
+        <references refid="structgeometry_1_1Point_1ad011726194a14d580d46c95bb1b57404" compoundref="point_8h" startline="14">geometry::Point::x</references>
+        <references refid="structgeometry_1_1Point_1a58d50e43eb0617b09d14b2be1b1d054e" compoundref="point_8h" startline="15">geometry::Point::y</references>
+        <referencedby refid="classGeometryPage_1a740f2f65e615aad3fa3d3dafb2fd530f" compoundref="geometrypage_8cpp" startline="502" endline="520">GeometryPage::computeDelaunay</referencedby>
+      </memberdef>
+      <member refid="group__geometry__predicates_1gac3352a32baf1dd7d3620a1748dd4b78a" kind="function"><name>cross</name></member>
+      <memberdef kind="function" id="namespacegeometry_1a1d29367c0cb96e7c1a1b871b786ffacd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int geometry::turn</definition>
+        <argsstring>(const Point &amp;a, const Point &amp;b, const Point &amp;p, double eps=1e-9)</argsstring>
+        <name>turn</name>
+        <qualifiedname>geometry::turn</qualifiedname>
+        <param>
+          <type>const <ref refid="structgeometry_1_1Point" kindref="compound">Point</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structgeometry_1_1Point" kindref="compound">Point</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structgeometry_1_1Point" kindref="compound">Point</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>eps</declname>
+          <defval>1e-9</defval>
+        </param>
+        <briefdescription>
+<para>Предикат поворота. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><computeroutput>1</computeroutput>, если <computeroutput>p</computeroutput> слева от <computeroutput>ab</computeroutput>; <computeroutput>-1</computeroutput>, если справа; <computeroutput>0</computeroutput>, если на прямой. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Начало направленного отрезка. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Конец направленного отрезка. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Проверяемая точка. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>eps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Допуск, при котором значение считается нулём. \par Complexity: O(1) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib/geometry/predicates.cpp" line="13" column="5" bodyfile="src/lib/geometry/predicates.cpp" bodystart="13" bodyend="24" declfile="src/lib/geometry/predicates.h" declline="27" declcolumn="5"/>
+        <references refid="group__geometry__predicates_1gac3352a32baf1dd7d3620a1748dd4b78a" compoundref="predicates_8cpp" startline="8" endline="11">cross</references>
+        <referencedby refid="classGeometryPage_1aa685131d4c04dafba54ab095dc78952e" compoundref="geometrypage_8cpp" startline="301" endline="343">GeometryPage::computeTurn</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacegeometry_1aa0dbefb85d58b0fc5c2ff74ff1d1c94b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool geometry::onSegment</definition>
+        <argsstring>(const Point &amp;a, const Point &amp;b, const Point &amp;p, double eps=1e-9)</argsstring>
+        <name>onSegment</name>
+        <qualifiedname>geometry::onSegment</qualifiedname>
+        <param>
+          <type>const <ref refid="structgeometry_1_1Point" kindref="compound">Point</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structgeometry_1_1Point" kindref="compound">Point</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structgeometry_1_1Point" kindref="compound">Point</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>eps</declname>
+          <defval>1e-9</defval>
+        </param>
+        <briefdescription>
+<para>Проверяет принадлежность точки отрезку с допуском. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Первый конец отрезка. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Второй конец отрезка. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Проверяемая точка. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>eps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Евклидово расстояние до ближайшей точки отрезка. \par Complexity: O(1) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib/geometry/predicates.cpp" line="26" column="6" bodyfile="src/lib/geometry/predicates.cpp" bodystart="26" bodyend="50" declfile="src/lib/geometry/predicates.h" declline="37" declcolumn="6"/>
+        <references refid="structgeometry_1_1Point_1ad011726194a14d580d46c95bb1b57404" compoundref="point_8h" startline="14">geometry::Point::x</references>
+        <references refid="structgeometry_1_1Point_1a58d50e43eb0617b09d14b2be1b1d054e" compoundref="point_8h" startline="15">geometry::Point::y</references>
+        <referencedby refid="classGeometryPage_1aa685131d4c04dafba54ab095dc78952e" compoundref="geometrypage_8cpp" startline="301" endline="343">GeometryPage::computeTurn</referencedby>
+        <referencedby refid="namespacegeometry_1a88e1232746c80a5b9704832bd536724d" compoundref="segment__intersection_8cpp" startline="38" endline="100">intersectSegments</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacegeometry_1a88e1232746c80a5b9704832bd536724d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structgeometry_1_1SegmentIntersection" kindref="compound">SegmentIntersection</ref></type>
+        <definition>SegmentIntersection geometry::intersectSegments</definition>
+        <argsstring>(const Point &amp;a, const Point &amp;b, const Point &amp;c, const Point &amp;d, double eps=1e-9)</argsstring>
+        <name>intersectSegments</name>
+        <qualifiedname>geometry::intersectSegments</qualifiedname>
+        <param>
+          <type>const <ref refid="structgeometry_1_1Point" kindref="compound">Point</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structgeometry_1_1Point" kindref="compound">Point</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structgeometry_1_1Point" kindref="compound">Point</ref> &amp;</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structgeometry_1_1Point" kindref="compound">Point</ref> &amp;</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>eps</declname>
+          <defval>1e-9</defval>
+        </param>
+        <briefdescription>
+<para>Находит пересечение замкнутых отрезков <computeroutput>AB</computeroutput> и <computeroutput>CD</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Первый конец первого отрезка. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Второй конец первого отрезка. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Первый конец второго отрезка. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Второй конец второго отрезка. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>eps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Допуск в единицах координат; учитывает касание концом. \par Complexity: O(1) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib/geometry/segment_intersection.cpp" line="38" column="21" bodyfile="src/lib/geometry/segment_intersection.cpp" bodystart="38" bodyend="100" declfile="src/lib/geometry/segment_intersection.h" declline="33" declcolumn="21"/>
+        <references refid="namespacegeometry_1aa0dbefb85d58b0fc5c2ff74ff1d1c94b" compoundref="predicates_8cpp" startline="26" endline="50">onSegment</references>
+        <references refid="namespacegeometry_1aeac4c2c4d76d3f1bbd0d024a3a242444a2359a16283d7b4bfaaff2f6e90cbd116" compoundref="segment__intersection_8h" startline="11">Overlap</references>
+        <references refid="namespacegeometry_1aeac4c2c4d76d3f1bbd0d024a3a242444a2a3cd5946cfd317eb99c3d32e35e2d4c" compoundref="segment__intersection_8h" startline="10">Point</references>
+        <referencedby refid="classGeometryPage_1a589fc5e7e93427a3f2c34679279ec875" compoundref="geometrypage_8cpp" startline="403" endline="434">GeometryPage::computeIntersection</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/lib/geometry/convex_hull.cpp" line="8" column="1"/>
+  </compounddef>
+</doxygen>

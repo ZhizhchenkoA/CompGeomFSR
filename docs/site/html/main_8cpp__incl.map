@@ -1,0 +1,11 @@
+<map id="src/apps/GeometryWorkbench/main.cpp" name="src/apps/GeometryWorkbench/main.cpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="81,5,298,50"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,98,110,126"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="153,53,93,92,90,88,156,49"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="134,98,245,126"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="191,48,192,83,187,81,188,53"/>
+<area shape="rect" id="Node000004" href="$mainwindow_8h.html" title=" " alt="" coords="269,98,384,126"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="226,48,294,89,289,90,226,53"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="269,174,384,201"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="329,124,329,160,325,156,325,128"/>
+</map>

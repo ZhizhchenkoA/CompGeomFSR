@@ -1,0 +1,5 @@
+<map id="geometry::SegmentIntersection" name="geometry::SegmentIntersection">
+<area shape="rect" id="Node000001" title="Результат пересечения замкнутых отрезков." alt="" coords="5,195,221,268"/>
+<area shape="rect" id="Node000002" href="$structgeometry_1_1Point.html" title="Пространство математической геометрии проекта." alt="" coords="56,5,170,100"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="115,98,116,179,111,178,111,102"/>
+</map>

@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="longarithmeticpage_8cpp" kind="file" language="C++">
+    <compoundname>longarithmeticpage.cpp</compoundname>
+    <includes refid="longarithmeticpage_8h" local="yes">longarithmeticpage.h</includes>
+    <includes local="yes">ui_longarithmeticpage.h</includes>
+    <includes local="no">array</includes>
+    <includes local="no">cmath</includes>
+    <includes refid="exact__predicate_8h" local="yes">bigint/exact_predicate.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>src/apps/GeometryWorkbench/longarithmeticpage.cpp</label>
+        <link refid="longarithmeticpage_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>longarithmeticpage.h</label>
+        <link refid="longarithmeticpage_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>bigint/exact_predicate.h</label>
+        <link refid="exact__predicate_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>QWidget</label>
+      </node>
+      <node id="3">
+        <label>array</label>
+      </node>
+      <node id="6">
+        <label>cmath</label>
+      </node>
+      <node id="8">
+        <label>string</label>
+      </node>
+      <node id="5">
+        <label>ui_longarithmeticpage.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="longarithmeticpage_8h" kindref="compound">longarithmeticpage.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ui_longarithmeticpage.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;array&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cmath&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="exact__predicate_8h" kindref="compound">bigint/exact_predicate.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal">QString<sp/>signText(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sign)</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sign<sp/>&gt;<sp/>0<sp/>?<sp/></highlight><highlight class="stringliteral">&quot;1<sp/>-<sp/>P<sp/>слева<sp/>от<sp/>AB&quot;</highlight><highlight class="normal"><sp/>:<sp/>sign<sp/>&lt;<sp/>0<sp/>?<sp/></highlight><highlight class="stringliteral">&quot;−1<sp/>-<sp/>P<sp/>справа<sp/>от<sp/>AB&quot;</highlight><highlight class="normal"><sp/>:<sp/></highlight><highlight class="stringliteral">&quot;0<sp/>-<sp/>точки<sp/>на<sp/>одной<sp/>прямой&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="classLongArithmeticPage_1a07ba70df3ad26290e560a666c4edec15" refkind="member"><highlight class="normal"><ref refid="classLongArithmeticPage_1a07ba70df3ad26290e560a666c4edec15" kindref="member">LongArithmeticPage::LongArithmeticPage</ref>(QWidget*<sp/>parent)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>QWidget(parent)</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>,<sp/><ref refid="classLongArithmeticPage_1a658d7b4d612a138c0fe800b8b18d8c5e" kindref="member">ui</ref>(new<sp/><ref refid="namespaceUi" kindref="compound">Ui</ref>::<ref refid="classLongArithmeticPage_1a07ba70df3ad26290e560a666c4edec15" kindref="member">LongArithmeticPage</ref>)</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classLongArithmeticPage_1a658d7b4d612a138c0fe800b8b18d8c5e" kindref="member">ui</ref>-&gt;setupUi(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classLongArithmeticPage_1a11140be3386cb7d09f97fb2f6485bcdc" kindref="member">m_fields</ref><sp/>=<sp/>{<ref refid="classLongArithmeticPage_1a658d7b4d612a138c0fe800b8b18d8c5e" kindref="member">ui</ref>-&gt;axLineEdit,<sp/><ref refid="classLongArithmeticPage_1a658d7b4d612a138c0fe800b8b18d8c5e" kindref="member">ui</ref>-&gt;ayLineEdit,<sp/><ref refid="classLongArithmeticPage_1a658d7b4d612a138c0fe800b8b18d8c5e" kindref="member">ui</ref>-&gt;bxLineEdit,</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classLongArithmeticPage_1a658d7b4d612a138c0fe800b8b18d8c5e" kindref="member">ui</ref>-&gt;byLineEdit,<sp/><ref refid="classLongArithmeticPage_1a658d7b4d612a138c0fe800b8b18d8c5e" kindref="member">ui</ref>-&gt;pxLineEdit,<sp/><ref refid="classLongArithmeticPage_1a658d7b4d612a138c0fe800b8b18d8c5e" kindref="member">ui</ref>-&gt;pyLineEdit};</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(QLineEdit*<sp/>field<sp/>:<sp/><ref refid="classLongArithmeticPage_1a11140be3386cb7d09f97fb2f6485bcdc" kindref="member">m_fields</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>connect(field,<sp/>&amp;QLineEdit::textChanged,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>&amp;<ref refid="classLongArithmeticPage_1ae2449c28a8b53a186a8cf785e918b8ef" kindref="member">LongArithmeticPage::updateIfOnline</ref>);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(<ref refid="classLongArithmeticPage_1a658d7b4d612a138c0fe800b8b18d8c5e" kindref="member">ui</ref>-&gt;calculateButton,<sp/>&amp;QPushButton::clicked,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>&amp;<ref refid="classLongArithmeticPage_1ab52ecc9e59525ef13ea189064d45b782" kindref="member">LongArithmeticPage::calculate</ref>);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(<ref refid="classLongArithmeticPage_1a658d7b4d612a138c0fe800b8b18d8c5e" kindref="member">ui</ref>-&gt;nearLineButton,<sp/>&amp;QPushButton::clicked,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>&amp;<ref refid="classLongArithmeticPage_1a7107e57681d5bdcd8698b2b08c0943fc" kindref="member">LongArithmeticPage::setNearLineExample</ref>);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(<ref refid="classLongArithmeticPage_1a658d7b4d612a138c0fe800b8b18d8c5e" kindref="member">ui</ref>-&gt;largeNumbersButton,<sp/>&amp;QPushButton::clicked,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>&amp;<ref refid="classLongArithmeticPage_1a4cb85f2022c38fc5c04014320d877c0a" kindref="member">LongArithmeticPage::setLargeExample</ref>);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(<ref refid="classLongArithmeticPage_1a658d7b4d612a138c0fe800b8b18d8c5e" kindref="member">ui</ref>-&gt;invalidInputButton,<sp/>&amp;QPushButton::clicked,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>&amp;<ref refid="classLongArithmeticPage_1a0cd63a86fb779f62d7c3cf8427765a10" kindref="member">LongArithmeticPage::setInvalidExample</ref>);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classLongArithmeticPage_1a7107e57681d5bdcd8698b2b08c0943fc" kindref="member">setNearLineExample</ref>();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="classLongArithmeticPage_1a36a5c50582e24217e05746d7136089cc" refkind="member"><highlight class="normal"><ref refid="classLongArithmeticPage_1a36a5c50582e24217e05746d7136089cc" kindref="member">LongArithmeticPage::~LongArithmeticPage</ref>()</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="classLongArithmeticPage_1a658d7b4d612a138c0fe800b8b18d8c5e" kindref="member">ui</ref>;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="classLongArithmeticPage_1ab52ecc9e59525ef13ea189064d45b782" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classLongArithmeticPage_1ab52ecc9e59525ef13ea189064d45b782" kindref="member">LongArithmeticPage::calculate</ref>()</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>std::array&lt;std::string,<sp/>6&gt;<sp/>coordinates;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>std::array&lt;QString,<sp/>6&gt;<sp/>text;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>6;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>text[i]<sp/>=<sp/><ref refid="classLongArithmeticPage_1a11140be3386cb7d09f97fb2f6485bcdc" kindref="member">m_fields</ref>[i]-&gt;text();</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>coordinates[i]<sp/>=<sp/>text[i].toStdString();</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>exactSign<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>error;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="namespacebigint_1a2646acc61d0e940c36f58f118a5095d1" kindref="member">bigint::exactTurn</ref>(coordinates,<sp/>&amp;exactSign,<sp/>&amp;error))<sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classLongArithmeticPage_1a658d7b4d612a138c0fe800b8b18d8c5e" kindref="member">ui</ref>-&gt;resultLabel-&gt;setText(</highlight><highlight class="stringliteral">&quot;Ошибка<sp/>ввода:<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>QString::fromStdString(error));</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classLongArithmeticPage_1a658d7b4d612a138c0fe800b8b18d8c5e" kindref="member">ui</ref>-&gt;resultLabel-&gt;setStyleSheet(</highlight><highlight class="stringliteral">&quot;background:<sp/>#fef2f2;<sp/>border:<sp/>1px<sp/>solid<sp/>#fca5a5;<sp/>border-radius:<sp/>7px;<sp/>padding:<sp/>10px;<sp/>color:<sp/>#991b1b;<sp/>font-size:<sp/>15px;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>doubleOk<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>std::array&lt;double,<sp/>6&gt;<sp/>values{};</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>6;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>values[i]<sp/>=<sp/>text[i].replace(</highlight><highlight class="charliteral">&apos;,&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;.&apos;</highlight><highlight class="normal">).toDouble(&amp;doubleOk);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!doubleOk)<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/>doubleResult<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;не<sp/>удалось<sp/>преобразовать&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(doubleOk)<sp/>{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>determinant<sp/>=<sp/>(values[2]<sp/>-<sp/>values[0])<sp/>*<sp/>(values[5]<sp/>-<sp/>values[1])<sp/>-</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(values[3]<sp/>-<sp/>values[1])<sp/>*<sp/>(values[4]<sp/>-<sp/>values[0]);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>doubleSign<sp/>=<sp/>determinant<sp/>&gt;<sp/>0<sp/>?<sp/>1<sp/>:<sp/>determinant<sp/>&lt;<sp/>0<sp/>?<sp/>-1<sp/>:<sp/>0;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>doubleResult<sp/>=<sp/>signText(doubleSign);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classLongArithmeticPage_1a658d7b4d612a138c0fe800b8b18d8c5e" kindref="member">ui</ref>-&gt;resultLabel-&gt;setText(</highlight><highlight class="stringliteral">&quot;Точный<sp/>результат:<sp/>&lt;b&gt;&quot;</highlight><highlight class="normal"><sp/>+<sp/>signText(exactSign)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;&lt;/b&gt;&lt;br&gt;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Результат<sp/>double:<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>doubleResult);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classLongArithmeticPage_1a658d7b4d612a138c0fe800b8b18d8c5e" kindref="member">ui</ref>-&gt;resultLabel-&gt;setStyleSheet(</highlight><highlight class="stringliteral">&quot;background:<sp/>#f0fdf4;<sp/>border:<sp/>1px<sp/>solid<sp/>#86efac;<sp/>border-radius:<sp/>7px;<sp/>padding:<sp/>10px;<sp/>color:<sp/>#14532d;<sp/>font-size:<sp/>15px;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="classLongArithmeticPage_1a82a5d59f0f0f86161a3614c8ff025dbe" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classLongArithmeticPage_1a82a5d59f0f0f86161a3614c8ff025dbe" kindref="member">LongArithmeticPage::setCoordinates</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::array&lt;QString,<sp/>6&gt;&amp;<sp/>values)</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>6;<sp/>++i)<sp/><ref refid="classLongArithmeticPage_1a11140be3386cb7d09f97fb2f6485bcdc" kindref="member">m_fields</ref>[i]-&gt;setText(values[i]);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classLongArithmeticPage_1ab52ecc9e59525ef13ea189064d45b782" kindref="member">calculate</ref>();</highlight></codeline>
+<codeline lineno="82"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84" refid="classLongArithmeticPage_1ae2449c28a8b53a186a8cf785e918b8ef" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classLongArithmeticPage_1ae2449c28a8b53a186a8cf785e918b8ef" kindref="member">LongArithmeticPage::updateIfOnline</ref>()</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classLongArithmeticPage_1a658d7b4d612a138c0fe800b8b18d8c5e" kindref="member">ui</ref>-&gt;onlineCheckBox-&gt;isChecked())<sp/><ref refid="classLongArithmeticPage_1ab52ecc9e59525ef13ea189064d45b782" kindref="member">calculate</ref>();</highlight></codeline>
+<codeline lineno="87"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="classLongArithmeticPage_1a7107e57681d5bdcd8698b2b08c0943fc" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classLongArithmeticPage_1a7107e57681d5bdcd8698b2b08c0943fc" kindref="member">LongArithmeticPage::setNearLineExample</ref>()</highlight></codeline>
+<codeline lineno="90"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classLongArithmeticPage_1a82a5d59f0f0f86161a3614c8ff025dbe" kindref="member">setCoordinates</ref>({</highlight><highlight class="stringliteral">&quot;1&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;1&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;2&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;2&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;1&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;1.000000000000000000000000000000000000000000000000000000000000000001&quot;</highlight><highlight class="normal">});</highlight></codeline>
+<codeline lineno="92"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="classLongArithmeticPage_1a4cb85f2022c38fc5c04014320d877c0a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classLongArithmeticPage_1a4cb85f2022c38fc5c04014320d877c0a" kindref="member">LongArithmeticPage::setLargeExample</ref>()</highlight></codeline>
+<codeline lineno="95"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString<sp/>huge<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;1000000000000000000000000000000000000000000000000000000000000&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classLongArithmeticPage_1a82a5d59f0f0f86161a3614c8ff025dbe" kindref="member">setCoordinates</ref>({</highlight><highlight class="stringliteral">&quot;0&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;0&quot;</highlight><highlight class="normal">,<sp/>huge,<sp/>huge,<sp/>huge,</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>huge<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;.0000000000000000000000000000000000000000000000000000000000001&quot;</highlight><highlight class="normal">});</highlight></codeline>
+<codeline lineno="99"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101" refid="classLongArithmeticPage_1a0cd63a86fb779f62d7c3cf8427765a10" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classLongArithmeticPage_1a0cd63a86fb779f62d7c3cf8427765a10" kindref="member">LongArithmeticPage::setInvalidExample</ref>()</highlight></codeline>
+<codeline lineno="102"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classLongArithmeticPage_1a82a5d59f0f0f86161a3614c8ff025dbe" kindref="member">setCoordinates</ref>({</highlight><highlight class="stringliteral">&quot;1&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;1&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;два&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;2&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;1&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;3&quot;</highlight><highlight class="normal">});</highlight></codeline>
+<codeline lineno="104"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/apps/GeometryWorkbench/longarithmeticpage.cpp"/>
+  </compounddef>
+</doxygen>

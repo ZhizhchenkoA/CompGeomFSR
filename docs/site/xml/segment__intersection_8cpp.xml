@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="segment__intersection_8cpp" kind="file" language="C++">
+    <compoundname>segment_intersection.cpp</compoundname>
+    <includes refid="segment__intersection_8h" local="yes">geometry/segment_intersection.h</includes>
+    <includes refid="predicates_8h" local="yes">geometry/predicates.h</includes>
+    <includes local="no">algorithm</includes>
+    <includes local="no">cmath</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>geometry/point.h</label>
+        <link refid="point_8h"/>
+      </node>
+      <node id="4">
+        <label>geometry/predicates.h</label>
+        <link refid="predicates_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>src/lib/geometry/segment_intersection.cpp</label>
+        <link refid="segment__intersection_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>geometry/segment_intersection.h</label>
+        <link refid="segment__intersection_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>algorithm</label>
+      </node>
+      <node id="6">
+        <label>cmath</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacegeometry">geometry</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="segment__intersection_8h" kindref="compound">geometry/segment_intersection.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="predicates_8h" kindref="compound">geometry/predicates.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;algorithm&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cmath&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacegeometry" kindref="compound">geometry</ref><sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><ref refid="structgeometry_1_1Point" kindref="compound">Point</ref><sp/>subtract(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structgeometry_1_1Point" kindref="compound">Point</ref>&amp;<sp/>lhs,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structgeometry_1_1Point" kindref="compound">Point</ref>&amp;<sp/>rhs)</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{lhs.x<sp/>-<sp/>rhs.x,<sp/>lhs.y<sp/>-<sp/>rhs.y};</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><ref refid="structgeometry_1_1Point" kindref="compound">Point</ref><sp/>addScaled(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structgeometry_1_1Point" kindref="compound">Point</ref>&amp;<sp/>origin,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structgeometry_1_1Point" kindref="compound">Point</ref>&amp;<sp/>direction,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>t)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{origin.x<sp/>+<sp/>direction.x<sp/>*<sp/>t,<sp/>origin.y<sp/>+<sp/>direction.y<sp/>*<sp/>t};</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>crossVectors(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structgeometry_1_1Point" kindref="compound">Point</ref>&amp;<sp/>lhs,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structgeometry_1_1Point" kindref="compound">Point</ref>&amp;<sp/>rhs)</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>lhs.<ref refid="structgeometry_1_1Point_1ad011726194a14d580d46c95bb1b57404" kindref="member">x</ref><sp/>*<sp/>rhs.y<sp/>-<sp/>lhs.y<sp/>*<sp/>rhs.x;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dot(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structgeometry_1_1Point" kindref="compound">Point</ref>&amp;<sp/>lhs,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structgeometry_1_1Point" kindref="compound">Point</ref>&amp;<sp/>rhs)</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>lhs.x<sp/>*<sp/>rhs.x<sp/>+<sp/>lhs.y<sp/>*<sp/>rhs.y;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>length(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structgeometry_1_1Point" kindref="compound">Point</ref>&amp;<sp/>vector)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::hypot(vector.x,<sp/>vector.y);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="namespacegeometry_1a88e1232746c80a5b9704832bd536724d" refkind="member"><highlight class="normal"><ref refid="structgeometry_1_1SegmentIntersection" kindref="compound">SegmentIntersection</ref><sp/><ref refid="namespacegeometry_1a88e1232746c80a5b9704832bd536724d" kindref="member">intersectSegments</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structgeometry_1_1Point" kindref="compound">Point</ref>&amp;<sp/>a,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structgeometry_1_1Point" kindref="compound">Point</ref>&amp;<sp/>b,</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structgeometry_1_1Point" kindref="compound">Point</ref>&amp;<sp/>c,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structgeometry_1_1Point" kindref="compound">Point</ref>&amp;<sp/>d,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>eps)</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>tolerance<sp/>=<sp/>std::abs(eps);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structgeometry_1_1Point" kindref="compound">Point</ref><sp/>r<sp/>=<sp/>subtract(b,<sp/>a);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structgeometry_1_1Point" kindref="compound">Point</ref><sp/>s<sp/>=<sp/>subtract(d,<sp/>c);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>rLength<sp/>=<sp/>length(r);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sLength<sp/>=<sp/>length(s);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Вырожденные<sp/>отрезки:<sp/>точка-точка<sp/>и<sp/>точка-отрезок.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(rLength<sp/>&lt;=<sp/>tolerance<sp/>&amp;&amp;<sp/>sLength<sp/>&lt;=<sp/>tolerance)<sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacegeometry_1aa0dbefb85d58b0fc5c2ff74ff1d1c94b" kindref="member">onSegment</ref>(a,<sp/>a,<sp/>c,<sp/>tolerance)</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>?<sp/><ref refid="structgeometry_1_1SegmentIntersection" kindref="compound">SegmentIntersection</ref>{<ref refid="namespacegeometry_1aeac4c2c4d76d3f1bbd0d024a3a242444a2a3cd5946cfd317eb99c3d32e35e2d4c" kindref="member">SegmentIntersectionKind::Point</ref>,<sp/>a,<sp/>{}}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="structgeometry_1_1SegmentIntersection" kindref="compound">SegmentIntersection</ref>{};</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(rLength<sp/>&lt;=<sp/>tolerance)<sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacegeometry_1aa0dbefb85d58b0fc5c2ff74ff1d1c94b" kindref="member">onSegment</ref>(c,<sp/>d,<sp/>a,<sp/>tolerance)</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>?<sp/><ref refid="structgeometry_1_1SegmentIntersection" kindref="compound">SegmentIntersection</ref>{<ref refid="namespacegeometry_1aeac4c2c4d76d3f1bbd0d024a3a242444a2a3cd5946cfd317eb99c3d32e35e2d4c" kindref="member">SegmentIntersectionKind::Point</ref>,<sp/>a,<sp/>{}}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="structgeometry_1_1SegmentIntersection" kindref="compound">SegmentIntersection</ref>{};</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(sLength<sp/>&lt;=<sp/>tolerance)<sp/>{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacegeometry_1aa0dbefb85d58b0fc5c2ff74ff1d1c94b" kindref="member">onSegment</ref>(a,<sp/>b,<sp/>c,<sp/>tolerance)</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>?<sp/><ref refid="structgeometry_1_1SegmentIntersection" kindref="compound">SegmentIntersection</ref>{<ref refid="namespacegeometry_1aeac4c2c4d76d3f1bbd0d024a3a242444a2a3cd5946cfd317eb99c3d32e35e2d4c" kindref="member">SegmentIntersectionKind::Point</ref>,<sp/>c,<sp/>{}}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="structgeometry_1_1SegmentIntersection" kindref="compound">SegmentIntersection</ref>{};</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structgeometry_1_1Point" kindref="compound">Point</ref><sp/>cMinusA<sp/>=<sp/>subtract(c,<sp/>a);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>rCrossS<sp/>=<sp/>crossVectors(r,<sp/>s);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>cross(r,<sp/>s)<sp/>имеет<sp/>размерность<sp/>площади;<sp/>допускаем<sp/>отклонение,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>соответствующее<sp/>полосе<sp/>шириной<sp/>tolerance<sp/>около<sp/>более<sp/>длинного<sp/>отрезка.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>parallelTolerance<sp/>=<sp/>tolerance<sp/>*<sp/>std::max(rLength,<sp/>sLength);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(std::abs(rCrossS)<sp/>&lt;=<sp/>parallelTolerance)<sp/>{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Параллельные<sp/>отрезки<sp/>пересекаются<sp/>только<sp/>при<sp/>коллинеарности.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(std::abs(crossVectors(cMinusA,<sp/>r))<sp/>&gt;<sp/>tolerance<sp/>*<sp/>rLength)<sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{};</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>rLengthSquared<sp/>=<sp/>dot(r,<sp/>r);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>tC<sp/>=<sp/>dot(cMinusA,<sp/>r)<sp/>/<sp/>rLengthSquared;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>tD<sp/>=<sp/>dot(subtract(d,<sp/>a),<sp/>r)<sp/>/<sp/>rLengthSquared;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>from<sp/>=<sp/>std::max(0.0,<sp/>std::min(tC,<sp/>tD));</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>to<sp/>=<sp/>std::min(1.0,<sp/>std::max(tC,<sp/>tD));</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>parameterTolerance<sp/>=<sp/>tolerance<sp/>/<sp/>rLength;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(from<sp/>&gt;<sp/>to<sp/>+<sp/>parameterTolerance)<sp/>{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{};</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(std::abs(to<sp/>-<sp/>from)<sp/>&lt;=<sp/>parameterTolerance)<sp/>{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{<ref refid="namespacegeometry_1aeac4c2c4d76d3f1bbd0d024a3a242444a2a3cd5946cfd317eb99c3d32e35e2d4c" kindref="member">SegmentIntersectionKind::Point</ref>,<sp/>addScaled(a,<sp/>r,<sp/>(from<sp/>+<sp/>to)<sp/>/<sp/>2.0),<sp/>{}};</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{<ref refid="namespacegeometry_1aeac4c2c4d76d3f1bbd0d024a3a242444a2359a16283d7b4bfaaff2f6e90cbd116" kindref="member">SegmentIntersectionKind::Overlap</ref>,<sp/>addScaled(a,<sp/>r,<sp/>from),<sp/>addScaled(a,<sp/>r,<sp/>to)};</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>t<sp/>=<sp/>crossVectors(cMinusA,<sp/>s)<sp/>/<sp/>rCrossS;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>u<sp/>=<sp/>crossVectors(cMinusA,<sp/>r)<sp/>/<sp/>rCrossS;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>tTolerance<sp/>=<sp/>tolerance<sp/>/<sp/>rLength;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>uTolerance<sp/>=<sp/>tolerance<sp/>/<sp/>sLength;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(t<sp/>&lt;<sp/>-tTolerance<sp/>||<sp/>t<sp/>&gt;<sp/>1.0<sp/>+<sp/>tTolerance<sp/>||</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u<sp/>&lt;<sp/>-uTolerance<sp/>||<sp/>u<sp/>&gt;<sp/>1.0<sp/>+<sp/>uTolerance)<sp/>{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{};</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{<ref refid="namespacegeometry_1aeac4c2c4d76d3f1bbd0d024a3a242444a2a3cd5946cfd317eb99c3d32e35e2d4c" kindref="member">SegmentIntersectionKind::Point</ref>,<sp/>addScaled(a,<sp/>r,<sp/>std::clamp(t,<sp/>0.0,<sp/>1.0)),<sp/>{}};</highlight></codeline>
+<codeline lineno="100"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>geometry</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="src/lib/geometry/segment_intersection.cpp"/>
+  </compounddef>
+</doxygen>

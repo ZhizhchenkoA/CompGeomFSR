@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="structgeometry_1_1DelaunayTriangle" kind="struct" language="C++" prot="public">
+    <compoundname>geometry::DelaunayTriangle</compoundname>
+    <includes refid="delaunay_8h" local="no">delaunay.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structgeometry_1_1DelaunayTriangle_1acd931dff87085dcdbb22def01e9c632d" prot="public" static="no" mutable="no">
+        <type>std::array&lt; <ref refid="structgeometry_1_1Point" kindref="compound">Point</ref>, 3 &gt;</type>
+        <definition>std::array&lt;Point, 3&gt; geometry::DelaunayTriangle::vertices</definition>
+        <argsstring></argsstring>
+        <name>vertices</name>
+        <qualifiedname>geometry::DelaunayTriangle::vertices</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib/geometry/delaunay.h" line="18" column="16" bodyfile="src/lib/geometry/delaunay.h" bodystart="18" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgeometry_1_1DelaunayTriangle_1a3453dcbd47978a2eff85b3b036a3b57c" prot="public" static="no" mutable="no">
+        <type><ref refid="structgeometry_1_1Circumcircle" kindref="compound">Circumcircle</ref></type>
+        <definition>Circumcircle geometry::DelaunayTriangle::circumcircle</definition>
+        <argsstring></argsstring>
+        <name>circumcircle</name>
+        <qualifiedname>geometry::DelaunayTriangle::circumcircle</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib/geometry/delaunay.h" line="19" column="18" bodyfile="src/lib/geometry/delaunay.h" bodystart="19" bodyend="19"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Треугольник Делоне и его описанная окружность. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>geometry::Circumcircle</label>
+        <link refid="structgeometry_1_1Circumcircle"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+center</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>geometry::DelaunayTriangle</label>
+        <link refid="structgeometry_1_1DelaunayTriangle"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>+circumcircle</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>geometry::Point</label>
+        <link refid="structgeometry_1_1Point"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/lib/geometry/delaunay.h" line="17" column="1" bodyfile="src/lib/geometry/delaunay.h" bodystart="17" bodyend="20"/>
+    <listofallmembers>
+      <member refid="structgeometry_1_1DelaunayTriangle_1a3453dcbd47978a2eff85b3b036a3b57c" prot="public" virt="non-virtual"><scope>geometry::DelaunayTriangle</scope><name>circumcircle</name></member>
+      <member refid="structgeometry_1_1DelaunayTriangle_1acd931dff87085dcdbb22def01e9c632d" prot="public" virt="non-virtual"><scope>geometry::DelaunayTriangle</scope><name>vertices</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

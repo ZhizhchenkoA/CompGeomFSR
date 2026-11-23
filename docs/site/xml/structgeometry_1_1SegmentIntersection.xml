@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="structgeometry_1_1SegmentIntersection" kind="struct" language="C++" prot="public">
+    <compoundname>geometry::SegmentIntersection</compoundname>
+    <includes refid="segment__intersection_8h" local="no">segment_intersection.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structgeometry_1_1SegmentIntersection_1a06b8b07f0c38ceffcb0bfd9b88815577" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacegeometry_1aeac4c2c4d76d3f1bbd0d024a3a242444" kindref="member">SegmentIntersectionKind</ref></type>
+        <definition>SegmentIntersectionKind geometry::SegmentIntersection::kind</definition>
+        <argsstring></argsstring>
+        <name>kind</name>
+        <qualifiedname>geometry::SegmentIntersection::kind</qualifiedname>
+        <initializer>= <ref refid="namespacegeometry_1aeac4c2c4d76d3f1bbd0d024a3a242444a6adf97f83acf6453d4a6a4b1070f3754" kindref="member">SegmentIntersectionKind::None</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib/geometry/segment_intersection.h" line="19" column="29" bodyfile="src/lib/geometry/segment_intersection.h" bodystart="19" bodyend="-1"/>
+        <referencedby refid="classGeometryPage_1a589fc5e7e93427a3f2c34679279ec875" compoundref="geometrypage_8cpp" startline="403" endline="434">GeometryPage::computeIntersection</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structgeometry_1_1SegmentIntersection_1a9299f186ad462f4fb9211efd29b8d1db" prot="public" static="no" mutable="no">
+        <type><ref refid="structgeometry_1_1Point" kindref="compound">Point</ref></type>
+        <definition>Point geometry::SegmentIntersection::first</definition>
+        <argsstring></argsstring>
+        <name>first</name>
+        <qualifiedname>geometry::SegmentIntersection::first</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib/geometry/segment_intersection.h" line="20" column="11" bodyfile="src/lib/geometry/segment_intersection.h" bodystart="20" bodyend="20"/>
+        <referencedby refid="classGeometryPage_1a589fc5e7e93427a3f2c34679279ec875" compoundref="geometrypage_8cpp" startline="403" endline="434">GeometryPage::computeIntersection</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structgeometry_1_1SegmentIntersection_1afb2c84e3af15dba195071895da00c452" prot="public" static="no" mutable="no">
+        <type><ref refid="structgeometry_1_1Point" kindref="compound">Point</ref></type>
+        <definition>Point geometry::SegmentIntersection::second</definition>
+        <argsstring></argsstring>
+        <name>second</name>
+        <qualifiedname>geometry::SegmentIntersection::second</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib/geometry/segment_intersection.h" line="21" column="11" bodyfile="src/lib/geometry/segment_intersection.h" bodystart="21" bodyend="21"/>
+        <referencedby refid="classGeometryPage_1a589fc5e7e93427a3f2c34679279ec875" compoundref="geometrypage_8cpp" startline="403" endline="434">GeometryPage::computeIntersection</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Результат пересечения замкнутых отрезков. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Для <computeroutput><ref refid="structgeometry_1_1Point" kindref="compound">Point</ref></computeroutput> используется <computeroutput><ref refid="structgeometry_1_1SegmentIntersection_1a9299f186ad462f4fb9211efd29b8d1db" kindref="member">first</ref></computeroutput>, для <computeroutput>Overlap</computeroutput> — границы <computeroutput>first--second</computeroutput>. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>geometry::Point</label>
+        <link refid="structgeometry_1_1Point"/>
+      </node>
+      <node id="1">
+        <label>geometry::SegmentIntersection</label>
+        <link refid="structgeometry_1_1SegmentIntersection"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>+first</edgelabel>
+          <edgelabel>+second</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/lib/geometry/segment_intersection.h" line="18" column="1" bodyfile="src/lib/geometry/segment_intersection.h" bodystart="18" bodyend="22"/>
+    <listofallmembers>
+      <member refid="structgeometry_1_1SegmentIntersection_1a9299f186ad462f4fb9211efd29b8d1db" prot="public" virt="non-virtual"><scope>geometry::SegmentIntersection</scope><name>first</name></member>
+      <member refid="structgeometry_1_1SegmentIntersection_1a06b8b07f0c38ceffcb0bfd9b88815577" prot="public" virt="non-virtual"><scope>geometry::SegmentIntersection</scope><name>kind</name></member>
+      <member refid="structgeometry_1_1SegmentIntersection_1afb2c84e3af15dba195071895da00c452" prot="public" virt="non-virtual"><scope>geometry::SegmentIntersection</scope><name>second</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

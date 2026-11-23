@@ -1,0 +1,15 @@
+<map id="GeometryPage::handleIntersectionClick" name="GeometryPage::handleIntersectionClick">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,76,252,120"/>
+<area shape="rect" id="Node000002" href="$classGeometryPage.html#a589fc5e7e93427a3f2c34679279ec875" title=" " alt="" coords="300,57,559,85"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="252,84,287,84,281,84,252,90"/>
+<area shape="rect" id="Node000007" href="$namespacegeometry__qt.html#a1b00196f7a1e7ff93f722417814f1dbf" title="Адаптер между экранными координатами Qt и математическими координатами." alt="" coords="334,109,524,137"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="252,106,322,114,316,114,252,111"/>
+<area shape="rect" id="Node000003" href="$namespacegeometry.html#a88e1232746c80a5b9704832bd536724d" title="Находит пересечение замкнутых отрезков AB и CD." alt="" coords="607,5,820,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="509,54,616,37,622,36,510,59"/>
+<area shape="rect" id="Node000005" href="$classGeometryPage.html#a4ac016dceaf16fde96c2aed328b0e50d" title=" " alt="" coords="612,57,815,85"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="559,69,599,71,594,71,560,74"/>
+<area shape="rect" id="Node000006" href="$namespacegeometry__qt.html#ab38550851d7c6704f958a3edd7a2dc56" title="Обратное преобразование: геометрия &#45;&gt; экран." alt="" coords="629,109,798,137"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="509,83,622,106,616,106,509,88"/>
+<area shape="rect" id="Node000004" href="$namespacegeometry.html#aa0dbefb85d58b0fc5c2ff74ff1d1c94b" title="Проверяет принадлежность точки отрезку с допуском." alt="" coords="868,5,1034,33"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="820,17,855,19,850,19,821,22"/>
+</map>

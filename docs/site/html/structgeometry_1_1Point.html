@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Geometry Workbench: Структура geometry::Point</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Geometry Workbench<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Интерактивный учебный стенд по компьютерной геометрии</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('structgeometry_1_1Point.html','','structgeometry_1_1Point-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Структура geometry::Point</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Пространство математической геометрии проекта.  
+ <a href="#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="point_8h_source.html">point.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф связей класса geometry::Point:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="structgeometry_1_1Point__coll__graph.svg" width="124" height="106"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Открытые атрибуты</h2></td></tr>
+<tr class="memitem:ad011726194a14d580d46c95bb1b57404" id="r_ad011726194a14d580d46c95bb1b57404"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#ad011726194a14d580d46c95bb1b57404">x</a> = 0.0</td></tr>
+<tr class="memitem:a58d50e43eb0617b09d14b2be1b1d054e" id="r_a58d50e43eb0617b09d14b2be1b1d054e"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a58d50e43eb0617b09d14b2be1b1d054e">y</a> = 0.0</td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Пространство математической геометрии проекта. </p>
+<p>Точка на плоскости в математической системе координат (ось Y вверх).</p>
+<p>Координаты хранятся как <span class="tt">double</span>; алгоритмы с произвольной точностью используют отдельный тип <span class="tt"><a class="el" href="classbigint_1_1BigInteger.html" title="Библиотека точной арифметики для задачи с длинными координатами.">bigint::BigInteger</a></span>. </p>
+<dl class="section examples"><dt>Примеры</dt><dd><a class="el" href="turn_example_8cpp-example.html#_a1">turn_example.cpp</a>.</dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="point_8h_source.html">point.h</a> строка <a class="el" href="point_8h_source.html#l00013">13</a></p>
+</div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Данные класса</h2>
+<a id="ad011726194a14d580d46c95bb1b57404" name="ad011726194a14d580d46c95bb1b57404"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad011726194a14d580d46c95bb1b57404">&#9670;&#160;</a></span>x</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double geometry::Point::x = 0.0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="point_8h_source.html">point.h</a> строка <a class="el" href="point_8h_source.html#l00014">14</a></p>
+
+<p class="reference">Используется в <a class="el" href="geometrypage_8cpp_source.html#l00403">GeometryPage::computeIntersection()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00301">GeometryPage::computeTurn()</a>, <a class="el" href="predicates_8cpp_source.html#l00008">geometry::cross()</a>, <a class="el" href="delaunay_8cpp_source.html#l00076">geometry::delaunayTriangulation()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00270">GeometryPage::on_canvas_cursorMoved()</a>, <a class="el" href="predicates_8cpp_source.html#l00026">geometry::onSegment()</a> и <a class="el" href="conversion_8cpp_source.html#l00010">geometry_qt::toScreen()</a>.</p>
+
+</div>
+</div>
+<a id="a58d50e43eb0617b09d14b2be1b1d054e" name="a58d50e43eb0617b09d14b2be1b1d054e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58d50e43eb0617b09d14b2be1b1d054e">&#9670;&#160;</a></span>y</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double geometry::Point::y = 0.0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="point_8h_source.html">point.h</a> строка <a class="el" href="point_8h_source.html#l00015">15</a></p>
+
+<p class="reference">Используется в <a class="el" href="geometrypage_8cpp_source.html#l00403">GeometryPage::computeIntersection()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00301">GeometryPage::computeTurn()</a>, <a class="el" href="predicates_8cpp_source.html#l00008">geometry::cross()</a>, <a class="el" href="delaunay_8cpp_source.html#l00076">geometry::delaunayTriangulation()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00270">GeometryPage::on_canvas_cursorMoved()</a>, <a class="el" href="predicates_8cpp_source.html#l00026">geometry::onSegment()</a> и <a class="el" href="conversion_8cpp_source.html#l00010">geometry_qt::toScreen()</a>.</p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов структуры находятся в файле:<ul>
+<li>src/lib/geometry/<a class="el" href="point_8h_source.html">point.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespacegeometry.html">geometry</a></li><li class="navelem"><a href="structgeometry_1_1Point.html">Point</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

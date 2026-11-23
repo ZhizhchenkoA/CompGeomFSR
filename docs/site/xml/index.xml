@@ -1,0 +1,327 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.16.1" xml:lang="ru">
+  <compound refid="classbigint_1_1BigInteger" kind="class"><name>bigint::BigInteger</name>
+    <member refid="classbigint_1_1BigInteger_1af11b03746c1253d2fe519f633b6db3e0" kind="variable"><name>kBase</name></member>
+    <member refid="classbigint_1_1BigInteger_1a04a232ac4f1182b5947c2e6182fb88a3" kind="variable"><name>m_sign</name></member>
+    <member refid="classbigint_1_1BigInteger_1aafbd78ed3f7cb2a2c6ddc5d8e32445ea" kind="variable"><name>m_digits</name></member>
+    <member refid="classbigint_1_1BigInteger_1aa5ebb91700ee66941995e9e0a1c5d507" kind="function"><name>BigInteger</name></member>
+    <member refid="classbigint_1_1BigInteger_1a242094a88c817b115cafaf1806ad2d92" kind="function"><name>BigInteger</name></member>
+    <member refid="classbigint_1_1BigInteger_1abdfe1a89337d9352eea641554a6bb633" kind="function"><name>toString</name></member>
+    <member refid="classbigint_1_1BigInteger_1aaa59e76f31e7245bec495b34cb8a9691" kind="function"><name>sign</name></member>
+    <member refid="classbigint_1_1BigInteger_1a1cefc099f541a79f4a93198f2de06b55" kind="function"><name>isZero</name></member>
+    <member refid="classbigint_1_1BigInteger_1a8302f877ef948f62500969fe3ee94f39" kind="function"><name>operator-</name></member>
+    <member refid="classbigint_1_1BigInteger_1a1054e51808fad21855bed48eacd7500e" kind="function"><name>operator+=</name></member>
+    <member refid="classbigint_1_1BigInteger_1acc9708f36e9d0b9d5fb8aad320157b0f" kind="function"><name>operator-=</name></member>
+    <member refid="classbigint_1_1BigInteger_1a5b27ffacebc3458950b56d14b2d3a9a1" kind="function"><name>operator*=</name></member>
+    <member refid="classbigint_1_1BigInteger_1a4796ebd40af5f92c92bdea11ca37347f" kind="function"><name>tryParse</name></member>
+    <member refid="classbigint_1_1BigInteger_1a00e938502751664cf35c3681f338b971" kind="function"><name>powerOfTen</name></member>
+    <member refid="classbigint_1_1BigInteger_1aeffe15b5fe982f70ea2f71130a2ea5f6" kind="friend"><name>operator+</name></member>
+    <member refid="classbigint_1_1BigInteger_1a58606545e16b1d3dcff98c13767d3828" kind="friend"><name>operator-</name></member>
+    <member refid="classbigint_1_1BigInteger_1a9c322dd173dc036f00721f4cf4491a4b" kind="friend"><name>operator*</name></member>
+    <member refid="classbigint_1_1BigInteger_1a1872052751396a6044b6e6bf3d606e0b" kind="function"><name>normalize</name></member>
+    <member refid="classbigint_1_1BigInteger_1a14b57cd07047dc67628e7542f2acfbac" kind="function"><name>addAbs</name></member>
+    <member refid="classbigint_1_1BigInteger_1aff8518e21f10a4e1645a35dd28595d18" kind="function"><name>subtractAbs</name></member>
+    <member refid="classbigint_1_1BigInteger_1afa2c98c3611da550b4504a2117318fe0" kind="function"><name>compareAbs</name></member>
+  </compound>
+  <compound refid="structgeometry_1_1Circumcircle" kind="struct"><name>geometry::Circumcircle</name>
+    <member refid="structgeometry_1_1Circumcircle_1a60121de2017744bb653f1b3f48add15e" kind="variable"><name>center</name></member>
+    <member refid="structgeometry_1_1Circumcircle_1a32c699d820c2087b08a632f5dfb0d5af" kind="variable"><name>radius</name></member>
+  </compound>
+  <compound refid="structgeometry_1_1DelaunayTriangle" kind="struct"><name>geometry::DelaunayTriangle</name>
+    <member refid="structgeometry_1_1DelaunayTriangle_1acd931dff87085dcdbb22def01e9c632d" kind="variable"><name>vertices</name></member>
+    <member refid="structgeometry_1_1DelaunayTriangle_1a3453dcbd47978a2eff85b3b036a3b57c" kind="variable"><name>circumcircle</name></member>
+  </compound>
+  <compound refid="classGeometryCanvas" kind="class"><name>GeometryCanvas</name>
+    <member refid="classGeometryCanvas_1a8bd85330c489ce815753252111ceb2e9" kind="variable"><name>m_points</name></member>
+    <member refid="classGeometryCanvas_1a24b4143918da4060f9f46b0b35bc1a15" kind="variable"><name>m_pointColors</name></member>
+    <member refid="classGeometryCanvas_1a6a4baf26113096163d580764ae4dbb21" kind="variable"><name>m_pointLabels</name></member>
+    <member refid="classGeometryCanvas_1a101595ca8120c5de7a0ba97539cc6b4e" kind="variable"><name>m_segments</name></member>
+    <member refid="classGeometryCanvas_1af6b1f7d537d3d2fdad98891490178a18" kind="variable"><name>m_defaultPointColor</name></member>
+    <member refid="classGeometryCanvas_1afbac48e435dfff31da733109d4230afd" kind="variable"><name>m_segmentColor</name></member>
+    <member refid="classGeometryCanvas_1a28fc67e936d72f34e098a38e5a764e02" kind="variable"><name>m_dragIndex</name></member>
+    <member refid="classGeometryCanvas_1acc647582e6dc1d6aa336cfbb06aa047a" kind="variable"><name>m_turnGuideVisible</name></member>
+    <member refid="classGeometryCanvas_1a8523cd72882fb48273d77dcbebab5e2e" kind="variable"><name>m_intersectionMarkerVisible</name></member>
+    <member refid="classGeometryCanvas_1aa56c6cf652599a0de15e5c4f1505b6da" kind="variable"><name>m_intersectionMarker</name></member>
+    <member refid="classGeometryCanvas_1a3330ec099ca1294901bc88c625374ff4" kind="variable"><name>m_overlapHighlightVisible</name></member>
+    <member refid="classGeometryCanvas_1a1901e4743ca573a156171e26730e609b" kind="variable"><name>m_overlapFirst</name></member>
+    <member refid="classGeometryCanvas_1a67efd1024c2e6ef542ef484378230ea2" kind="variable"><name>m_overlapSecond</name></member>
+    <member refid="classGeometryCanvas_1a2cd2560a7a1efaf92f528bb8cf9fbbb3" kind="variable"><name>m_convexHull</name></member>
+    <member refid="classGeometryCanvas_1aeacc02d958f333368af495249206319c" kind="variable"><name>m_delaunayTriangles</name></member>
+    <member refid="classGeometryCanvas_1a1ce68eec1abe57e47ff3c059e7ffee93" kind="variable"><name>m_circumcircles</name></member>
+    <member refid="classGeometryCanvas_1a30a2dd2e0961ee859bd5c1991f761dad" kind="variable"><name>m_circumcirclesVisible</name></member>
+    <member refid="classGeometryCanvas_1ad9b6ca1d420401cacedff075040d48df" kind="variable"><name>m_polygonFirst</name></member>
+    <member refid="classGeometryCanvas_1a4f20036a42f014869173360c24ea7c02" kind="variable"><name>m_polygonSecond</name></member>
+    <member refid="classGeometryCanvas_1ad72afd80a2514046dd731211e20079e1" kind="variable"><name>m_polygonResult</name></member>
+    <member refid="classGeometryCanvas_1a066a535cae4f121beac8b2f572a65f22" kind="variable"><name>m_polygonResultColor</name></member>
+    <member refid="classGeometryCanvas_1ac1ba963c23801a45345a870017f14296" kind="variable"><name>m_bezierCurves</name></member>
+    <member refid="classGeometryCanvas_1a91518549bc2a7e3bc8c71a247da3037f" kind="variable"><name>m_bezierLevels</name></member>
+    <member refid="classGeometryCanvas_1a3f609bce0cb8b6b227f42a85048767fd" kind="variable"><name>m_bezierMarker</name></member>
+    <member refid="classGeometryCanvas_1acdf097e8f4721504cd92c332a09747e7" kind="variable"><name>m_bezierMarkerVisible</name></member>
+    <member refid="classGeometryCanvas_1ad5a6e77643d96ed3e461289a9e53932e" kind="variable"><name>kPointRadius</name></member>
+    <member refid="classGeometryCanvas_1a60c6df23f611eff66133587402b59a7d" kind="variable"><name>kHitRadius</name></member>
+    <member refid="classGeometryCanvas_1a2035760a76115eb2ae1360f476df707f" kind="function"><name>GeometryCanvas</name></member>
+    <member refid="classGeometryCanvas_1acc1297c665d5758b56e5977aade99f16" kind="function"><name>addPoint</name></member>
+    <member refid="classGeometryCanvas_1add9dc04295da644ffdf13319d962e010" kind="function"><name>setPointPos</name></member>
+    <member refid="classGeometryCanvas_1a40e13dba45358f4ac742fc194ccebee3" kind="function"><name>setPointColor</name></member>
+    <member refid="classGeometryCanvas_1ac9827697b8c3c3529952bea3f934ecfd" kind="function"><name>setPointLabel</name></member>
+    <member refid="classGeometryCanvas_1a761008e3c9ee5803d49ccad703dcd606" kind="function"><name>addSegment</name></member>
+    <member refid="classGeometryCanvas_1a6ef9b4daee67128687c01954fb70a68b" kind="function"><name>setIntersectionMarker</name></member>
+    <member refid="classGeometryCanvas_1a388228b1d8b6879fb4ffc74307aa6624" kind="function"><name>setOverlapHighlight</name></member>
+    <member refid="classGeometryCanvas_1addd8eb26f5588454fcb0ab8668332678" kind="function"><name>clearIntersectionVisuals</name></member>
+    <member refid="classGeometryCanvas_1a171199a0ed44634f13cd2fd4353fa683" kind="function"><name>setConvexHull</name></member>
+    <member refid="classGeometryCanvas_1ae09174b03358bbac7887be3bd5ce6f41" kind="function"><name>clearConvexHull</name></member>
+    <member refid="classGeometryCanvas_1a34db397c52af9a20398393bff20396a6" kind="function"><name>setDelaunayTriangles</name></member>
+    <member refid="classGeometryCanvas_1afa9081aec42ba01b3d0e9820f7847779" kind="function"><name>clearDelaunayTriangles</name></member>
+    <member refid="classGeometryCanvas_1abe5ba572d805be56c8b71ff690496601" kind="function"><name>setCircumcirclesVisible</name></member>
+    <member refid="classGeometryCanvas_1a56d2e0c85bc3d1b19ce62f3312c0d97d" kind="function"><name>setPolygonOperation</name></member>
+    <member refid="classGeometryCanvas_1aeb7775a9c2f6b707faea9eaedff723ec" kind="function"><name>clearPolygonOperation</name></member>
+    <member refid="classGeometryCanvas_1aaef62a596b6e4478524d128ecf78d636" kind="function"><name>setBezierCurves</name></member>
+    <member refid="classGeometryCanvas_1a61916b6df3df351700b247e6b593a2e6" kind="function"><name>clearBezierCurves</name></member>
+    <member refid="classGeometryCanvas_1af562795c91228050ba3917ecb72efb33" kind="function"><name>setTurnGuideVisible</name></member>
+    <member refid="classGeometryCanvas_1a09c735d868f2122e3d5b9266037d8921" kind="function"><name>clearSegments</name></member>
+    <member refid="classGeometryCanvas_1ac941423eda256c877a3b5e3acd82629e" kind="function"><name>clear</name></member>
+    <member refid="classGeometryCanvas_1a4a6484c40ccbe1be1dc69417f9574c4f" kind="function"><name>pointCount</name></member>
+    <member refid="classGeometryCanvas_1acb55f24c6deb98ca3fe500da54f3e2ec" kind="signal"><name>clicked</name></member>
+    <member refid="classGeometryCanvas_1a6eb27775cb8ebe70b44abed249a413d4" kind="signal"><name>pointPressed</name></member>
+    <member refid="classGeometryCanvas_1abc87340478811876f4cb4be480e1c367" kind="signal"><name>pointMoved</name></member>
+    <member refid="classGeometryCanvas_1a87cf2b6a3edec82e6e35d952ea6a528a" kind="signal"><name>pointReleased</name></member>
+    <member refid="classGeometryCanvas_1ab8d0baa77faffef68b5482431ee75811" kind="signal"><name>cursorMoved</name></member>
+    <member refid="classGeometryCanvas_1aa3f90b84c153e5c9b531fff6a2f4abff" kind="function"><name>paintEvent</name></member>
+    <member refid="classGeometryCanvas_1adaeb2e5472f53cdd856bce1860dfb62a" kind="function"><name>mousePressEvent</name></member>
+    <member refid="classGeometryCanvas_1a471380964c5f56d5d22ea0600ed49bfb" kind="function"><name>mouseMoveEvent</name></member>
+    <member refid="classGeometryCanvas_1a581a44984b5141a76668b8b9393473ab" kind="function"><name>mouseReleaseEvent</name></member>
+    <member refid="classGeometryCanvas_1a619ace231ac17afee377f9afec1e0ba1" kind="function"><name>hitTest</name></member>
+    <member refid="classGeometryCanvas_1ad2bf2da2a11477f8edbb4e4d7996b7bc" kind="function"><name>drawPoint</name></member>
+    <member refid="classGeometryCanvas_1a63b39ade7072cbab520bc9423134699a" kind="function"><name>drawTurnGuide</name></member>
+  </compound>
+  <compound refid="classGeometryPage" kind="class"><name>GeometryPage</name>
+    <member refid="classGeometryPage_1a68c8501f25ae9682080af27d8cadeb27" kind="variable"><name>ui</name></member>
+    <member refid="classGeometryPage_1a46b6f387963e57709bbb0827a46c7159" kind="variable"><name>m_points</name></member>
+    <member refid="classGeometryPage_1af160b5db7a54477af72cfb0fb0a51d59" kind="variable"><name>m_polygonA</name></member>
+    <member refid="classGeometryPage_1a2bebd56bce64ae1e0ffa448947fcf97b" kind="variable"><name>m_polygonB</name></member>
+    <member refid="classGeometryPage_1aa5b999969872e3bab6cd0ac9181cca8c" kind="variable"><name>m_polygonPointBindings</name></member>
+    <member refid="classGeometryPage_1aaf0da91936f1ea4f61be077109b349e1" kind="variable"><name>m_currentTask</name></member>
+    <member refid="classGeometryPage_1a4fda5c025fcd295789a6345233568d87" kind="function"><name>GeometryPage</name></member>
+    <member refid="classGeometryPage_1acfc85b110da93aea63d610fbc9b5e359" kind="function"><name>~GeometryPage</name></member>
+    <member refid="classGeometryPage_1addebfdadcc9b93da1bf550fb3aa57c33" kind="function"><name>clearScene</name></member>
+    <member refid="classGeometryPage_1a4ac016dceaf16fde96c2aed328b0e50d" kind="signal"><name>logMessage</name></member>
+    <member refid="classGeometryPage_1aa9f01f9f97ae7cc6d65dcd8254ea8428" kind="signal"><name>cursorMoved</name></member>
+    <member refid="classGeometryPage_1a91d1ac3960a9a2e31af6e79d8d048842" kind="slot"><name>on_onlineCheckBox_toggled</name></member>
+    <member refid="classGeometryPage_1a999b1d336f50d397868ab4790189ff04" kind="slot"><name>on_clearButton_clicked</name></member>
+    <member refid="classGeometryPage_1aa05702756ffe70c1c9295494036d364e" kind="slot"><name>on_calculateButton_clicked</name></member>
+    <member refid="classGeometryPage_1af2d0477ad7f1427fc470859223d24cd0" kind="slot"><name>on_circumcirclesCheckBox_toggled</name></member>
+    <member refid="classGeometryPage_1a987ba5fc021a4c94a694aad27f3efdf6" kind="slot"><name>on_bezierSlider_valueChanged</name></member>
+    <member refid="classGeometryPage_1a3b366ef2453036d455df3e7248d2e127" kind="slot"><name>on_canvas_clicked</name></member>
+    <member refid="classGeometryPage_1a2d9f83accc5c03c75ef3c7e706716dfb" kind="slot"><name>on_canvas_pointMoved</name></member>
+    <member refid="classGeometryPage_1a66d38697b0496bb09cc5c22c375fc596" kind="slot"><name>on_canvas_cursorMoved</name></member>
+    <member refid="classGeometryPage_1a5e401c179a58fb115a86b603312be0da" kind="function"><name>onTaskChanged</name></member>
+    <member refid="classGeometryPage_1a7b4530bb76653adf3d2d82d1a01c38ff" kind="function"><name>selectTask</name></member>
+    <member refid="classGeometryPage_1a057cf08f9c927e9745c4d533a381aaea" kind="function"><name>showLongArithmeticPage</name></member>
+    <member refid="classGeometryPage_1acdcc0b18c0fa30dd324cd16c23517c7a" kind="function"><name>handleTurnClick</name></member>
+    <member refid="classGeometryPage_1a758948c03ae61778e10165f174306c3a" kind="function"><name>handleTurnDrag</name></member>
+    <member refid="classGeometryPage_1aa685131d4c04dafba54ab095dc78952e" kind="function"><name>computeTurn</name></member>
+    <member refid="classGeometryPage_1a11f51d12b3ffe8de348c7fcee8f4bb8a" kind="function"><name>handleIntersectionClick</name></member>
+    <member refid="classGeometryPage_1a2741d6f481328433d778097608c0be1d" kind="function"><name>handleIntersectionDrag</name></member>
+    <member refid="classGeometryPage_1a589fc5e7e93427a3f2c34679279ec875" kind="function"><name>computeIntersection</name></member>
+    <member refid="classGeometryPage_1aae494f5e3a68d411bc5c8b8a39bb84e4" kind="function"><name>handleHullClick</name></member>
+    <member refid="classGeometryPage_1ad4fd2514de86d00ae791f83755aad6a8" kind="function"><name>handleHullDrag</name></member>
+    <member refid="classGeometryPage_1ae4a1816822912d00197e9cfa375717d1" kind="function"><name>computeHull</name></member>
+    <member refid="classGeometryPage_1a3a81da70a224b6bcd01c7aebc1a2db6f" kind="function"><name>handleDelaunayClick</name></member>
+    <member refid="classGeometryPage_1ac2cb0e682262a2691c98bcdfa18bc48a" kind="function"><name>handleDelaunayDrag</name></member>
+    <member refid="classGeometryPage_1a740f2f65e615aad3fa3d3dafb2fd530f" kind="function"><name>computeDelaunay</name></member>
+    <member refid="classGeometryPage_1a1fa4f035f37dbd61e6cf8c5ce9785883" kind="function"><name>handlePolygonClick</name></member>
+    <member refid="classGeometryPage_1a077e9cd0bb0fd57f8b368a813152f78c" kind="function"><name>handlePolygonDrag</name></member>
+    <member refid="classGeometryPage_1a73b11409c008e8a002cdf0b5b86d363d" kind="function"><name>computePolygonOperation</name></member>
+    <member refid="classGeometryPage_1ace1f1e79f6cf90be97a1edf406262102" kind="function"><name>handleBezierClick</name></member>
+    <member refid="classGeometryPage_1ac64c55de6638a1a39c54f756e85888a9" kind="function"><name>handleBezierDrag</name></member>
+    <member refid="classGeometryPage_1aa0380120b0b9e766b2e6d3c4d4192b27" kind="function"><name>computeBezier</name></member>
+  </compound>
+  <compound refid="classLongArithmeticPage" kind="class"><name>LongArithmeticPage</name>
+    <member refid="classLongArithmeticPage_1a658d7b4d612a138c0fe800b8b18d8c5e" kind="variable"><name>ui</name></member>
+    <member refid="classLongArithmeticPage_1a11140be3386cb7d09f97fb2f6485bcdc" kind="variable"><name>m_fields</name></member>
+    <member refid="classLongArithmeticPage_1a07ba70df3ad26290e560a666c4edec15" kind="function"><name>LongArithmeticPage</name></member>
+    <member refid="classLongArithmeticPage_1a36a5c50582e24217e05746d7136089cc" kind="function"><name>~LongArithmeticPage</name></member>
+    <member refid="classLongArithmeticPage_1ab52ecc9e59525ef13ea189064d45b782" kind="slot"><name>calculate</name></member>
+    <member refid="classLongArithmeticPage_1a7107e57681d5bdcd8698b2b08c0943fc" kind="slot"><name>setNearLineExample</name></member>
+    <member refid="classLongArithmeticPage_1a4cb85f2022c38fc5c04014320d877c0a" kind="slot"><name>setLargeExample</name></member>
+    <member refid="classLongArithmeticPage_1a0cd63a86fb779f62d7c3cf8427765a10" kind="slot"><name>setInvalidExample</name></member>
+    <member refid="classLongArithmeticPage_1a82a5d59f0f0f86161a3614c8ff025dbe" kind="function"><name>setCoordinates</name></member>
+    <member refid="classLongArithmeticPage_1ae2449c28a8b53a186a8cf785e918b8ef" kind="function"><name>updateIfOnline</name></member>
+  </compound>
+  <compound refid="classMainWindow" kind="class"><name>MainWindow</name>
+    <member refid="classMainWindow_1a35466a70ed47252a0191168126a352a5" kind="variable"><name>ui</name></member>
+    <member refid="classMainWindow_1a996c5a2b6f77944776856f08ec30858d" kind="function"><name>MainWindow</name></member>
+    <member refid="classMainWindow_1a1f7d2c56410fc1bfa135bb907d43313f" kind="function"><name>~MainWindow</name></member>
+    <member refid="classMainWindow_1a05fb9d72c044aa3bb7d187b994704e2f" kind="function"><name>closeEvent</name></member>
+    <member refid="classMainWindow_1a7add49b8afd676505acef34d5483c576" kind="slot"><name>on_actionClear_triggered</name></member>
+    <member refid="classMainWindow_1ab4487c4b02224acd4a0193d38b704ddb" kind="slot"><name>on_actionExit_triggered</name></member>
+    <member refid="classMainWindow_1a4f3ebda1ba39e0ef4d678b44893c9c7f" kind="slot"><name>on_actionAbout_triggered</name></member>
+    <member refid="classMainWindow_1ab51030db8cae6753c47f228868c6b8e4" kind="slot"><name>on_actionAboutQt_triggered</name></member>
+    <member refid="classMainWindow_1aabd9d1803bc74a578726925f89e9c399" kind="slot"><name>log</name></member>
+    <member refid="classMainWindow_1a06476208b8466211f3bb0fcae787052b" kind="function"><name>readSettings</name></member>
+    <member refid="classMainWindow_1a49be45fc9b993fdc3afe55d4b6fa0650" kind="function"><name>writeSettings</name></member>
+  </compound>
+  <compound refid="structgeometry_1_1Point" kind="struct"><name>geometry::Point</name>
+    <member refid="structgeometry_1_1Point_1ad011726194a14d580d46c95bb1b57404" kind="variable"><name>x</name></member>
+    <member refid="structgeometry_1_1Point_1a58d50e43eb0617b09d14b2be1b1d054e" kind="variable"><name>y</name></member>
+  </compound>
+  <compound refid="structGeometryCanvas_1_1Segment" kind="struct"><name>GeometryCanvas::Segment</name>
+    <member refid="structGeometryCanvas_1_1Segment_1a020719f710a74eec8c5f38385eb234b0" kind="variable"><name>a</name></member>
+    <member refid="structGeometryCanvas_1_1Segment_1a8d4cc19b53649345b660e5c2e26b8999" kind="variable"><name>b</name></member>
+    <member refid="structGeometryCanvas_1_1Segment_1a65c767fadf0b763377f40c696b54ce49" kind="variable"><name>color</name></member>
+  </compound>
+  <compound refid="structgeometry_1_1SegmentIntersection" kind="struct"><name>geometry::SegmentIntersection</name>
+    <member refid="structgeometry_1_1SegmentIntersection_1a06b8b07f0c38ceffcb0bfd9b88815577" kind="variable"><name>kind</name></member>
+    <member refid="structgeometry_1_1SegmentIntersection_1a9299f186ad462f4fb9211efd29b8d1db" kind="variable"><name>first</name></member>
+    <member refid="structgeometry_1_1SegmentIntersection_1afb2c84e3af15dba195071895da00c452" kind="variable"><name>second</name></member>
+  </compound>
+  <compound refid="namespace_0d163173031124240333116236327341244257117252245045" kind="namespace"><name>@163173031124240333116236327341244257117252245045</name>
+  </compound>
+  <compound refid="namespace_0d165073230122354277332066143023217301004015333307" kind="namespace"><name>@165073230122354277332066143023217301004015333307</name>
+  </compound>
+  <compound refid="namespace_0d335010343105307346155231005177163206166037055064" kind="namespace"><name>@335010343105307346155231005177163206166037055064</name>
+  </compound>
+  <compound refid="namespacebezier" kind="namespace"><name>bezier</name>
+    <member refid="namespacebezier_1a16319ee9d71db52368b5ce95b86794e2" kind="function"><name>deCasteljauLevels</name></member>
+    <member refid="namespacebezier_1aa6f0140841e402a3cfa3ba2aba8044d0" kind="function"><name>deCasteljau</name></member>
+    <member refid="namespacebezier_1a3e86093165e34203620df7fe7623a57e" kind="function"><name>sample</name></member>
+    <member refid="namespacebezier_1a501e022e378938e5a58777be3b250155" kind="function"><name>composite</name></member>
+  </compound>
+  <compound refid="namespacebigint" kind="namespace"><name>bigint</name>
+    <member refid="namespacebigint_1a2646acc61d0e940c36f58f118a5095d1" kind="function"><name>exactTurn</name></member>
+  </compound>
+  <compound refid="namespacebigint_1_1_0d257370062021305056307115201232215134213123305161" kind="namespace"><name>bigint::@257370062021305056307115201232215134213123305161</name>
+  </compound>
+  <compound refid="namespacegeometry" kind="namespace"><name>geometry</name>
+    <member refid="namespacegeometry_1ac019bd61bca22de69c70fc1a9acabefa" kind="enum"><name>ConvexPolygonOperation</name></member>
+    <member refid="namespacegeometry_1ac019bd61bca22de69c70fc1a9acabefaaa06d31c2ee920b4d53e8c9c06d90ba24" kind="enumvalue"><name>Intersection</name></member>
+    <member refid="namespacegeometry_1ac019bd61bca22de69c70fc1a9acabefaaaef12e903e606a4895a16b393bfdec8c" kind="enumvalue"><name>Union</name></member>
+    <member refid="namespacegeometry_1ac019bd61bca22de69c70fc1a9acabefaa28ed2ac6c29f64a3692c956004b8ff7a" kind="enumvalue"><name>Difference</name></member>
+    <member refid="namespacegeometry_1aeac4c2c4d76d3f1bbd0d024a3a242444" kind="enum"><name>SegmentIntersectionKind</name></member>
+    <member refid="namespacegeometry_1aeac4c2c4d76d3f1bbd0d024a3a242444a6adf97f83acf6453d4a6a4b1070f3754" kind="enumvalue"><name>None</name></member>
+    <member refid="namespacegeometry_1aeac4c2c4d76d3f1bbd0d024a3a242444a2a3cd5946cfd317eb99c3d32e35e2d4c" kind="enumvalue"><name>Point</name></member>
+    <member refid="namespacegeometry_1aeac4c2c4d76d3f1bbd0d024a3a242444a2359a16283d7b4bfaaff2f6e90cbd116" kind="enumvalue"><name>Overlap</name></member>
+    <member refid="namespacegeometry_1a2f3c921176229b37a127ffcce53cf519" kind="typedef"><name>PolygonSet</name></member>
+    <member refid="namespacegeometry_1a6dfabff82b63c795670a97271b9908d2" kind="function"><name>convexHull</name></member>
+    <member refid="namespacegeometry_1a9da2f54b6289b88e936abf857d44ea5e" kind="function"><name>convexPolygonBoolean</name></member>
+    <member refid="namespacegeometry_1a9610a583f6dfe92c309727c15b9b3933" kind="function"><name>delaunayTriangulation</name></member>
+    <member refid="group__geometry__predicates_1gac3352a32baf1dd7d3620a1748dd4b78a" kind="function"><name>cross</name></member>
+    <member refid="namespacegeometry_1a1d29367c0cb96e7c1a1b871b786ffacd" kind="function"><name>turn</name></member>
+    <member refid="namespacegeometry_1aa0dbefb85d58b0fc5c2ff74ff1d1c94b" kind="function"><name>onSegment</name></member>
+    <member refid="namespacegeometry_1a88e1232746c80a5b9704832bd536724d" kind="function"><name>intersectSegments</name></member>
+  </compound>
+  <compound refid="namespacegeometry_1_1_0d225105010023341331314253170004132065331251305370" kind="namespace"><name>geometry::@225105010023341331314253170004132065331251305370</name>
+  </compound>
+  <compound refid="namespacegeometry_1_1_0d233170165101176326201172353043261310365000054301" kind="namespace"><name>geometry::@233170165101176326201172353043261310365000054301</name>
+  </compound>
+  <compound refid="namespacegeometry_1_1_0d235353047110142221070103056313326115141212367000" kind="namespace"><name>geometry::@235353047110142221070103056313326115141212367000</name>
+  </compound>
+  <compound refid="namespacegeometry_1_1_0d275143246155376015375170176320353136320032073136" kind="namespace"><name>geometry::@275143246155376015375170176320353136320032073136</name>
+  </compound>
+  <compound refid="namespacegeometry__qt" kind="namespace"><name>geometry_qt</name>
+    <member refid="namespacegeometry__qt_1a1b00196f7a1e7ff93f722417814f1dbf" kind="function"><name>toGeometry</name></member>
+    <member refid="namespacegeometry__qt_1ab38550851d7c6704f958a3edd7a2dc56" kind="function"><name>toScreen</name></member>
+  </compound>
+  <compound refid="namespaceUi" kind="namespace"><name>Ui</name>
+  </compound>
+  <compound refid="architecture_8md" kind="file"><name>architecture.md</name>
+  </compound>
+  <compound refid="mainpage_8md" kind="file"><name>mainpage.md</name>
+  </compound>
+  <compound refid="README_8md" kind="file"><name>README.md</name>
+  </compound>
+  <compound refid="geometrycanvas_8cpp" kind="file"><name>geometrycanvas.cpp</name>
+  </compound>
+  <compound refid="geometrycanvas_8h" kind="file"><name>geometrycanvas.h</name>
+  </compound>
+  <compound refid="geometrypage_8cpp" kind="file"><name>geometrypage.cpp</name>
+  </compound>
+  <compound refid="geometrypage_8h" kind="file"><name>geometrypage.h</name>
+  </compound>
+  <compound refid="longarithmeticpage_8cpp" kind="file"><name>longarithmeticpage.cpp</name>
+  </compound>
+  <compound refid="longarithmeticpage_8h" kind="file"><name>longarithmeticpage.h</name>
+  </compound>
+  <compound refid="main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="mainwindow_8cpp" kind="file"><name>mainwindow.cpp</name>
+  </compound>
+  <compound refid="mainwindow_8h" kind="file"><name>mainwindow.h</name>
+  </compound>
+  <compound refid="bezier_8cpp" kind="file"><name>bezier.cpp</name>
+  </compound>
+  <compound refid="bezier_8h" kind="file"><name>bezier.h</name>
+  </compound>
+  <compound refid="bigint_8cpp" kind="file"><name>bigint.cpp</name>
+  </compound>
+  <compound refid="bigint_8h" kind="file"><name>bigint.h</name>
+  </compound>
+  <compound refid="exact__predicate_8cpp" kind="file"><name>exact_predicate.cpp</name>
+  </compound>
+  <compound refid="exact__predicate_8h" kind="file"><name>exact_predicate.h</name>
+  </compound>
+  <compound refid="convex__hull_8cpp" kind="file"><name>convex_hull.cpp</name>
+  </compound>
+  <compound refid="convex__hull_8h" kind="file"><name>convex_hull.h</name>
+  </compound>
+  <compound refid="convex__polygon__boolean_8cpp" kind="file"><name>convex_polygon_boolean.cpp</name>
+  </compound>
+  <compound refid="convex__polygon__boolean_8h" kind="file"><name>convex_polygon_boolean.h</name>
+  </compound>
+  <compound refid="delaunay_8cpp" kind="file"><name>delaunay.cpp</name>
+  </compound>
+  <compound refid="delaunay_8h" kind="file"><name>delaunay.h</name>
+  </compound>
+  <compound refid="point_8h" kind="file"><name>point.h</name>
+  </compound>
+  <compound refid="predicates_8cpp" kind="file"><name>predicates.cpp</name>
+  </compound>
+  <compound refid="predicates_8h" kind="file"><name>predicates.h</name>
+  </compound>
+  <compound refid="segment__intersection_8cpp" kind="file"><name>segment_intersection.cpp</name>
+  </compound>
+  <compound refid="segment__intersection_8h" kind="file"><name>segment_intersection.h</name>
+  </compound>
+  <compound refid="conversion_8cpp" kind="file"><name>conversion.cpp</name>
+  </compound>
+  <compound refid="conversion_8h" kind="file"><name>conversion.h</name>
+  </compound>
+  <compound refid="group__bezier__api" kind="group"><name>bezier_api</name>
+  </compound>
+  <compound refid="group__bigint__api" kind="group"><name>bigint_api</name>
+  </compound>
+  <compound refid="group__geometry__algorithms" kind="group"><name>geometry_algorithms</name>
+  </compound>
+  <compound refid="group__geometry__predicates" kind="group"><name>geometry_predicates</name>
+    <member refid="group__geometry__predicates_1gac3352a32baf1dd7d3620a1748dd4b78a" kind="function"><name>cross</name></member>
+  </compound>
+  <compound refid="md_docs_2mainpage" kind="page"><name>md_docs_2mainpage</name>
+  </compound>
+  <compound refid="md_docs_2architecture" kind="page"><name>md_docs_2architecture</name>
+  </compound>
+  <compound refid="architecture" kind="page"><name>architecture</name>
+  </compound>
+  <compound refid="dir_53adf0b982dc8545998aae3f283a5a58" kind="dir"><name>src/apps</name>
+  </compound>
+  <compound refid="dir_9f4cc46cfa7e3d83e9373f8aee5dd2db" kind="dir"><name>src/lib/bezier</name>
+  </compound>
+  <compound refid="dir_4742883fc880ea7a5edfb4d504ddf976" kind="dir"><name>src/lib/bigint</name>
+  </compound>
+  <compound refid="dir_49e56c817e5e54854c35e136979f97ca" kind="dir"><name>docs</name>
+  </compound>
+  <compound refid="dir_da4e387dad6145fce42efe284fbecf2d" kind="dir"><name>src/lib/geometry</name>
+  </compound>
+  <compound refid="dir_6a7c92b0021fec4eddd929a8741c2c20" kind="dir"><name>src/lib/geometry_qt</name>
+  </compound>
+  <compound refid="dir_5e6306009cd186cd16fe5451231d93c7" kind="dir"><name>src/apps/GeometryWorkbench</name>
+  </compound>
+  <compound refid="dir_c85d3e3c5052e9ad9ce18c6863244a25" kind="dir"><name>src/lib</name>
+  </compound>
+  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>src</name>
+  </compound>
+  <compound refid="turn_example_8cpp-example" kind="example"><name>turn_example.cpp</name>
+  </compound>
+  <compound refid="indexpage" kind="page"><name>index</name>
+  </compound>
+</doxygenindex>

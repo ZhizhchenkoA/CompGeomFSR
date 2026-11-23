@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="namespace_0d165073230122354277332066143023217301004015333307" kind="namespace" language="C++">
+    <compoundname>@165073230122354277332066143023217301004015333307</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/apps/GeometryWorkbench/geometrypage.cpp" line="23" column="1"/>
+  </compounddef>
+</doxygen>

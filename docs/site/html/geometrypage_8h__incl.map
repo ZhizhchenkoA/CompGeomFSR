@@ -1,0 +1,9 @@
+<map id="src/apps/GeometryWorkbench/geometrypage.h" name="src/apps/GeometryWorkbench/geometrypage.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="29,5,246,50"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,98,83,126"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="115,49,72,90,69,85,110,51"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="106,98,168,126"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="139,48,140,84,135,81,136,52"/>
+<area shape="rect" id="Node000004" href="$point_8h.html" title=" " alt="" coords="192,98,325,126"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="170,48,229,89,224,89,168,53"/>
+</map>

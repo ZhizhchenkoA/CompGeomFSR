@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Geometry Workbench: Исходный файл src/lib/geometry/segment_intersection.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Geometry Workbench<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Интерактивный учебный стенд по компьютерной геометрии</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('segment__intersection_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">segment_intersection.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="segment__intersection_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;<a class="code" href="point_8h.html">geometry/point.h</a>&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacegeometry.html">geometry</a> {</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span></div>
+<div class="foldopen" id="foldopen00008" data-start="{" data-end="};">
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="namespacegeometry.html#aeac4c2c4d76d3f1bbd0d024a3a242444">    8</a></span><span class="keyword">enum class</span> <a class="code hl_enumeration" href="namespacegeometry.html#aeac4c2c4d76d3f1bbd0d024a3a242444">SegmentIntersectionKind</a> {</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="namespacegeometry.html#aeac4c2c4d76d3f1bbd0d024a3a242444a6adf97f83acf6453d4a6a4b1070f3754">    9</a></span>    <a class="code hl_enumvalue" href="namespacegeometry.html#aeac4c2c4d76d3f1bbd0d024a3a242444a6adf97f83acf6453d4a6a4b1070f3754">None</a>,</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="namespacegeometry.html#aeac4c2c4d76d3f1bbd0d024a3a242444a2a3cd5946cfd317eb99c3d32e35e2d4c">   10</a></span>    <a class="code hl_struct" href="structgeometry_1_1Point.html">Point</a>,</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="namespacegeometry.html#aeac4c2c4d76d3f1bbd0d024a3a242444a2359a16283d7b4bfaaff2f6e90cbd116">   11</a></span>    <a class="code hl_enumvalue" href="namespacegeometry.html#aeac4c2c4d76d3f1bbd0d024a3a242444a2359a16283d7b4bfaaff2f6e90cbd116">Overlap</a>,</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>};</div>
+</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span></div>
+<div class="foldopen" id="foldopen00018" data-start="{" data-end="};">
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="structgeometry_1_1SegmentIntersection.html">   18</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structgeometry_1_1SegmentIntersection.html">SegmentIntersection</a> {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="structgeometry_1_1SegmentIntersection.html#a06b8b07f0c38ceffcb0bfd9b88815577">   19</a></span>    <a class="code hl_enumeration" href="namespacegeometry.html#aeac4c2c4d76d3f1bbd0d024a3a242444">SegmentIntersectionKind</a> <a class="code hl_variable" href="structgeometry_1_1SegmentIntersection.html#a06b8b07f0c38ceffcb0bfd9b88815577">kind</a> = <a class="code hl_enumvalue" href="namespacegeometry.html#aeac4c2c4d76d3f1bbd0d024a3a242444a6adf97f83acf6453d4a6a4b1070f3754">SegmentIntersectionKind::None</a>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="structgeometry_1_1SegmentIntersection.html#a9299f186ad462f4fb9211efd29b8d1db">   20</a></span>    <a class="code hl_struct" href="structgeometry_1_1Point.html">Point</a> <a class="code hl_variable" href="structgeometry_1_1SegmentIntersection.html#a9299f186ad462f4fb9211efd29b8d1db">first</a>{};</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="structgeometry_1_1SegmentIntersection.html#afb2c84e3af15dba195071895da00c452">   21</a></span>    <a class="code hl_struct" href="structgeometry_1_1Point.html">Point</a> <a class="code hl_variable" href="structgeometry_1_1SegmentIntersection.html#afb2c84e3af15dba195071895da00c452">second</a>{};</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>};</div>
+</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>SegmentIntersection <a class="code hl_function" href="namespacegeometry.html#a88e1232746c80a5b9704832bd536724d">intersectSegments</a>(<span class="keyword">const</span> <a class="code hl_enumvalue" href="namespacegeometry.html#aeac4c2c4d76d3f1bbd0d024a3a242444a2a3cd5946cfd317eb99c3d32e35e2d4c">Point</a>&amp; a, <span class="keyword">const</span> <a class="code hl_enumvalue" href="namespacegeometry.html#aeac4c2c4d76d3f1bbd0d024a3a242444a2a3cd5946cfd317eb99c3d32e35e2d4c">Point</a>&amp; b,</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>                                      <span class="keyword">const</span> <a class="code hl_enumvalue" href="namespacegeometry.html#aeac4c2c4d76d3f1bbd0d024a3a242444a2a3cd5946cfd317eb99c3d32e35e2d4c">Point</a>&amp; c, <span class="keyword">const</span> <a class="code hl_enumvalue" href="namespacegeometry.html#aeac4c2c4d76d3f1bbd0d024a3a242444a2a3cd5946cfd317eb99c3d32e35e2d4c">Point</a>&amp; d,</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>                                      <span class="keywordtype">double</span> eps = 1e-9);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>} <span class="comment">// namespace geometry</span></div>
+<div class="ttc" id="anamespacegeometry_html"><div class="ttname"><a href="namespacegeometry.html">geometry</a></div><div class="ttdef"><b>Определения</b> <a href="convex__hull_8cpp_source.html#l00008">convex_hull.cpp:8</a></div></div>
+<div class="ttc" id="anamespacegeometry_html_a88e1232746c80a5b9704832bd536724d"><div class="ttname"><a href="namespacegeometry.html#a88e1232746c80a5b9704832bd536724d">geometry::intersectSegments</a></div><div class="ttdeci">SegmentIntersection intersectSegments(const Point &amp;a, const Point &amp;b, const Point &amp;c, const Point &amp;d, double eps)</div><div class="ttdoc">Находит пересечение замкнутых отрезков AB и CD.</div><div class="ttdef"><b>Определения</b> <a href="segment__intersection_8cpp_source.html#l00038">segment_intersection.cpp:38</a></div></div>
+<div class="ttc" id="anamespacegeometry_html_aeac4c2c4d76d3f1bbd0d024a3a242444"><div class="ttname"><a href="namespacegeometry.html#aeac4c2c4d76d3f1bbd0d024a3a242444">geometry::SegmentIntersectionKind</a></div><div class="ttdeci">SegmentIntersectionKind</div><div class="ttdoc">Тип результата пересечения двух замкнутых отрезков.</div><div class="ttdef"><b>Определения</b> <a href="#l00008">segment_intersection.h:8</a></div></div>
+<div class="ttc" id="anamespacegeometry_html_aeac4c2c4d76d3f1bbd0d024a3a242444a2359a16283d7b4bfaaff2f6e90cbd116"><div class="ttname"><a href="namespacegeometry.html#aeac4c2c4d76d3f1bbd0d024a3a242444a2359a16283d7b4bfaaff2f6e90cbd116">geometry::SegmentIntersectionKind::Overlap</a></div><div class="ttdeci">@ Overlap</div><div class="ttdef"><b>Определения</b> <a href="#l00011">segment_intersection.h:11</a></div></div>
+<div class="ttc" id="anamespacegeometry_html_aeac4c2c4d76d3f1bbd0d024a3a242444a2a3cd5946cfd317eb99c3d32e35e2d4c"><div class="ttname"><a href="namespacegeometry.html#aeac4c2c4d76d3f1bbd0d024a3a242444a2a3cd5946cfd317eb99c3d32e35e2d4c">geometry::SegmentIntersectionKind::Point</a></div><div class="ttdeci">@ Point</div><div class="ttdef"><b>Определения</b> <a href="#l00010">segment_intersection.h:10</a></div></div>
+<div class="ttc" id="anamespacegeometry_html_aeac4c2c4d76d3f1bbd0d024a3a242444a6adf97f83acf6453d4a6a4b1070f3754"><div class="ttname"><a href="namespacegeometry.html#aeac4c2c4d76d3f1bbd0d024a3a242444a6adf97f83acf6453d4a6a4b1070f3754">geometry::SegmentIntersectionKind::None</a></div><div class="ttdeci">@ None</div><div class="ttdef"><b>Определения</b> <a href="#l00009">segment_intersection.h:9</a></div></div>
+<div class="ttc" id="apoint_8h_html"><div class="ttname"><a href="point_8h.html">point.h</a></div></div>
+<div class="ttc" id="astructgeometry_1_1Point_html"><div class="ttname"><a href="structgeometry_1_1Point.html">geometry::Point</a></div><div class="ttdoc">Пространство математической геометрии проекта.</div><div class="ttdef"><b>Определения</b> <a href="point_8h_source.html#l00013">point.h:13</a></div></div>
+<div class="ttc" id="astructgeometry_1_1SegmentIntersection_html"><div class="ttname"><a href="structgeometry_1_1SegmentIntersection.html">geometry::SegmentIntersection</a></div><div class="ttdoc">Результат пересечения замкнутых отрезков.</div><div class="ttdef"><b>Определения</b> <a href="#l00018">segment_intersection.h:18</a></div></div>
+<div class="ttc" id="astructgeometry_1_1SegmentIntersection_html_a06b8b07f0c38ceffcb0bfd9b88815577"><div class="ttname"><a href="structgeometry_1_1SegmentIntersection.html#a06b8b07f0c38ceffcb0bfd9b88815577">geometry::SegmentIntersection::kind</a></div><div class="ttdeci">SegmentIntersectionKind kind</div><div class="ttdef"><b>Определения</b> <a href="#l00019">segment_intersection.h:19</a></div></div>
+<div class="ttc" id="astructgeometry_1_1SegmentIntersection_html_a9299f186ad462f4fb9211efd29b8d1db"><div class="ttname"><a href="structgeometry_1_1SegmentIntersection.html#a9299f186ad462f4fb9211efd29b8d1db">geometry::SegmentIntersection::first</a></div><div class="ttdeci">Point first</div><div class="ttdef"><b>Определения</b> <a href="#l00020">segment_intersection.h:20</a></div></div>
+<div class="ttc" id="astructgeometry_1_1SegmentIntersection_html_afb2c84e3af15dba195071895da00c452"><div class="ttname"><a href="structgeometry_1_1SegmentIntersection.html#afb2c84e3af15dba195071895da00c452">geometry::SegmentIntersection::second</a></div><div class="ttdeci">Point second</div><div class="ttdef"><b>Определения</b> <a href="#l00021">segment_intersection.h:21</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a href="dir_c85d3e3c5052e9ad9ce18c6863244a25.html">lib</a></li><li class="navelem"><a href="dir_da4e387dad6145fce42efe284fbecf2d.html">geometry</a></li><li class="navelem"><a href="segment__intersection_8h.html">segment_intersection.h</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

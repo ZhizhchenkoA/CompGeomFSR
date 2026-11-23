@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="indexpage" kind="page">
+    <compoundname>index</compoundname>
+    <title>Geometry Workbench</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<sect1 id="index_1overview">
+<title>Обзор</title><para>Интерактивный стенд по компьютерной геометрии на C++17 и Qt 6.</para>
+</sect1>
+<sect1 id="index_1highlights">
+<title>Возможности Doxygen в этом проекте</title><para><itemizedlist>
+<listitem><para><computeroutput>@mainpage</computeroutput> — эта страница становится домашней страницей HTML-документации.</para>
+</listitem><listitem><para><computeroutput>@defgroup</computeroutput> и <computeroutput>@ingroup</computeroutput> — API разделён на предметные библиотеки.</para>
+</listitem><listitem><para>Graphviz (<computeroutput>HAVE_DOT = YES</computeroutput>) — строит графы классов, include-зависимостей и вызовов.</para>
+</listitem><listitem><para><computeroutput>@example</computeroutput> — исходный пример появляется в специальном разделе Examples.</para>
+</listitem><listitem><para>пользовательские aliases <computeroutput>\\complexity</computeroutput>, <computeroutput>\\invariant</computeroutput>, <computeroutput>\\educational</computeroutput> — единый стиль методических заметок.</para>
+</listitem><listitem><para>XML-вывод (<computeroutput>GENERATE_XML</computeroutput>) можно использовать во внешнем генераторе или IDE.</para>
+</listitem></itemizedlist>
+</para>
+</sect1>
+<sect1 id="index_1example_section">
+<title>Пример API</title><para>Ниже подключён минимальный пример вычисления предиката поворота: </para>
+</sect1>
+    </detaileddescription>
+    <location file="docs/mainpage.md"/>
+  </compounddef>
+</doxygen>

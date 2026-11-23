@@ -1,0 +1,13 @@
+<map id="GeometryPage::handleDelaunayDrag" name="GeometryPage::handleDelaunayDrag">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,84,268,112"/>
+<area shape="rect" id="Node000002" href="$classGeometryPage.html#a740f2f65e615aad3fa3d3dafb2fd530f" title=" " alt="" coords="316,57,560,85"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="268,84,303,83,298,84,268,89"/>
+<area shape="rect" id="Node000006" href="$namespacegeometry__qt.html#a1b00196f7a1e7ff93f722417814f1dbf" title="Адаптер между экранными координатами Qt и математическими координатами." alt="" coords="343,109,533,137"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="268,106,330,114,324,114,268,112"/>
+<area shape="rect" id="Node000003" href="$namespacegeometry.html#a9610a583f6dfe92c309727c15b9b3933" title="Триангуляция Делоне алгоритмом Bowyer–Watson." alt="" coords="608,5,843,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="518,54,628,37,633,36,519,59"/>
+<area shape="rect" id="Node000004" href="$classGeometryPage.html#a4ac016dceaf16fde96c2aed328b0e50d" title=" " alt="" coords="624,57,827,85"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="560,69,611,71,606,71,561,74"/>
+<area shape="rect" id="Node000005" href="$namespacegeometry__qt.html#ab38550851d7c6704f958a3edd7a2dc56" title="Обратное преобразование: геометрия &#45;&gt; экран." alt="" coords="641,109,810,137"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="519,83,633,106,628,106,518,88"/>
+</map>

@@ -1,0 +1,17 @@
+<map id="geometry::convexPolygonBoolean" name="geometry::convexPolygonBoolean">
+<area shape="rect" id="Node000001" title="Булева операция над двумя выпуклыми многоугольниками (CCW)." alt="" coords="830,111,1074,139"/>
+<area shape="rect" id="Node000002" href="$classGeometryPage.html#a73b11409c008e8a002cdf0b5b86d363d" title=" " alt="" coords="548,103,782,147"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="812,125,783,128,783,122,817,125"/>
+<area shape="rect" id="Node000003" href="$classGeometryPage.html#a1fa4f035f37dbd61e6cf8c5ce9785883" title=" " alt="" coords="263,8,484,53"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="581,97,499,72,451,56,451,51,501,66,586,97"/>
+<area shape="rect" id="Node000005" href="$classGeometryPage.html#a077e9cd0bb0fd57f8b368a813152f78c" title=" " alt="" coords="248,80,500,108"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="530,111,501,110,500,105,535,111"/>
+<area shape="rect" id="Node000007" href="$classGeometryPage.html#aa05702756ffe70c1c9295494036d364e" title=" " alt="" coords="270,132,478,177"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="530,139,478,147,478,141,535,138"/>
+<area shape="rect" id="Node000008" href="$classGeometryPage.html#a91d1ac3960a9a2e31af6e79d8d048842" title=" " alt="" coords="260,201,488,246"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="598,153,501,192,463,203,462,198,499,186,593,154"/>
+<area shape="rect" id="Node000004" href="$classGeometryPage.html#a3b366ef2453036d455df3e7248d2e127" title=" " alt="" coords="5,5,200,50"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="245,30,201,31,199,26,250,28"/>
+<area shape="rect" id="Node000006" href="$classGeometryPage.html#a2d9f83accc5c03c75ef3c7e706716dfb" title=" " alt="" coords="5,75,200,119"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="229,97,201,99,199,93,234,95"/>
+</map>

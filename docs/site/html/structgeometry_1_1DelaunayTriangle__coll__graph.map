@@ -1,0 +1,7 @@
+<map id="geometry::DelaunayTriangle" name="geometry::DelaunayTriangle">
+<area shape="rect" id="Node000001" title="Треугольник Делоне и его описанная окружность." alt="" coords="5,318,199,391"/>
+<area shape="rect" id="Node000002" href="$structgeometry_1_1Circumcircle.html" title="Окружность, описанная около треугольника." alt="" coords="21,173,183,245"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="104,243,105,302,100,301,101,247"/>
+<area shape="rect" id="Node000003" href="$structgeometry_1_1Point.html" title="Пространство математической геометрии проекта." alt="" coords="45,5,159,100"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="103,97,105,156,100,156,102,102"/>
+</map>

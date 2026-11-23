@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="dir_9f4cc46cfa7e3d83e9373f8aee5dd2db" kind="dir">
+    <compoundname>src/lib/bezier</compoundname>
+    <innerfile refid="bezier_8cpp">bezier.cpp</innerfile>
+    <innerfile refid="bezier_8h">bezier.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/lib/bezier/"/>
+  </compounddef>
+</doxygen>

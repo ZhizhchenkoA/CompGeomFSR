@@ -1,0 +1,15 @@
+<map id="GeometryPage::handleHullDrag" name="GeometryPage::handleHullDrag">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,84,232,112"/>
+<area shape="rect" id="Node000002" href="$classGeometryPage.html#ae4a1816822912d00197e9cfa375717d1" title=" " alt="" coords="280,57,488,85"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="232,84,267,83,261,84,232,89"/>
+<area shape="rect" id="Node000007" href="$namespacegeometry__qt.html#a1b00196f7a1e7ff93f722417814f1dbf" title="Адаптер между экранными координатами Qt и математическими координатами." alt="" coords="289,109,479,137"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="232,106,276,113,270,113,232,111"/>
+<area shape="rect" id="Node000003" href="$namespacegeometry.html#a6dfabff82b63c795670a97271b9908d2" title="Выпуклая оболочка множества точек алгоритмом Эндрю." alt="" coords="556,5,720,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="455,54,549,37,554,36,456,59"/>
+<area shape="rect" id="Node000005" href="$classGeometryPage.html#a4ac016dceaf16fde96c2aed328b0e50d" title=" " alt="" coords="536,57,739,85"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="488,69,523,71,518,71,489,74"/>
+<area shape="rect" id="Node000006" href="$namespacegeometry__qt.html#ab38550851d7c6704f958a3edd7a2dc56" title="Обратное преобразование: геометрия &#45;&gt; экран." alt="" coords="553,109,722,137"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="455,83,554,106,549,106,455,88"/>
+<area shape="rect" id="Node000004" href="$group__geometry__predicates.html#gac3352a32baf1dd7d3620a1748dd4b78a" title="Векторное произведение (b &#45; a) x (c &#45; a)." alt="" coords="787,5,913,33"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="720,17,774,19,769,19,720,22"/>
+</map>

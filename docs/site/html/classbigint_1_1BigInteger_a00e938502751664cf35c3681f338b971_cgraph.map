@@ -1,0 +1,13 @@
+<map id="bigint::BigInteger::powerOfTen" name="bigint::BigInteger::powerOfTen">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,65,139,110"/>
+<area shape="rect" id="Node000002" href="$classbigint_1_1BigInteger.html#aa5ebb91700ee66941995e9e0a1c5d507" title="Создаёт нулевое число." alt="" coords="368,29,501,74"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="138,78,354,57,351,62,139,84"/>
+<area shape="rect" id="Node000003" href="$classbigint_1_1BigInteger.html#a4796ebd40af5f92c92bdea11ca37347f" title="Разбирает десятичную строку со знаком; при ошибке возвращает false." alt="" coords="187,95,320,139"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="138,96,174,103,169,105,139,101"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="400,28,398,19,404,10,417,5,435,3,454,5,467,14,462,14,453,10,435,8,418,10,408,14,404,21,404,30"/>
+<area shape="poly" id="edge4_Node000003_Node000002" title=" " alt="" coords="316,92,359,79,354,81,318,97"/>
+<area shape="rect" id="Node000004" href="$classbigint_1_1BigInteger.html#a1872052751396a6044b6e6bf3d606e0b" title=" " alt="" coords="368,99,501,143"/>
+<area shape="poly" id="edge5_Node000003_Node000004" title=" " alt="" coords="320,116,355,119,350,120,320,121"/>
+<area shape="rect" id="Node000005" href="$classbigint_1_1BigInteger.html#aaa59e76f31e7245bec495b34cb8a9691" title="Возвращает знак: &#45;1, 0 или 1." alt="" coords="368,168,501,213"/>
+<area shape="poly" id="edge6_Node000003_Node000005" title=" " alt="" coords="311,137,367,162,361,162,310,142"/>
+</map>

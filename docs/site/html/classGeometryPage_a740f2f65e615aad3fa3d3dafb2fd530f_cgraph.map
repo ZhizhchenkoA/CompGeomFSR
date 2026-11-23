@@ -1,0 +1,9 @@
+<map id="GeometryPage::computeDelaunay" name="GeometryPage::computeDelaunay">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,57,250,85"/>
+<area shape="rect" id="Node000002" href="$namespacegeometry.html#a9610a583f6dfe92c309727c15b9b3933" title="Триангуляция Делоне алгоритмом Bowyer–Watson." alt="" coords="298,5,533,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="208,54,322,35,317,37,209,59"/>
+<area shape="rect" id="Node000003" href="$classGeometryPage.html#a4ac016dceaf16fde96c2aed328b0e50d" title=" " alt="" coords="314,57,517,85"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="250,69,301,71,296,72,250,74"/>
+<area shape="rect" id="Node000004" href="$namespacegeometry__qt.html#ab38550851d7c6704f958a3edd7a2dc56" title="Обратное преобразование: геометрия &#45;&gt; экран." alt="" coords="331,109,500,137"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="208,83,322,105,317,107,208,88"/>
+</map>

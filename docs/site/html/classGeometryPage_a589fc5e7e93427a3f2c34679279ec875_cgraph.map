@@ -1,0 +1,11 @@
+<map id="GeometryPage::computeIntersection" name="GeometryPage::computeIntersection">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,57,265,85"/>
+<area shape="rect" id="Node000002" href="$namespacegeometry.html#a88e1232746c80a5b9704832bd536724d" title="Находит пересечение замкнутых отрезков AB и CD." alt="" coords="313,5,526,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="214,54,327,35,322,37,215,59"/>
+<area shape="rect" id="Node000004" href="$classGeometryPage.html#a4ac016dceaf16fde96c2aed328b0e50d" title=" " alt="" coords="318,57,521,85"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="265,69,305,71,299,72,265,74"/>
+<area shape="rect" id="Node000005" href="$namespacegeometry__qt.html#ab38550851d7c6704f958a3edd7a2dc56" title="Обратное преобразование: геометрия &#45;&gt; экран." alt="" coords="335,109,504,137"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="215,83,327,105,322,106,215,88"/>
+<area shape="rect" id="Node000003" href="$namespacegeometry.html#aa0dbefb85d58b0fc5c2ff74ff1d1c94b" title="Проверяет принадлежность точки отрезку с допуском." alt="" coords="574,5,739,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="526,17,561,19,556,19,527,22"/>
+</map>

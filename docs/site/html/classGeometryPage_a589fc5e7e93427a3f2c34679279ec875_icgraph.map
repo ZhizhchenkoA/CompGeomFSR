@@ -1,0 +1,15 @@
+<map id="GeometryPage::computeIntersection" name="GeometryPage::computeIntersection">
+<area shape="rect" id="Node000001" title=" " alt="" coords="573,111,832,139"/>
+<area shape="rect" id="Node000002" href="$classGeometryPage.html#a11f51d12b3ffe8de348c7fcee8f4bb8a" title=" " alt="" coords="263,8,510,53"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="640,106,524,72,471,56,471,51,526,66,645,106"/>
+<area shape="rect" id="Node000004" href="$classGeometryPage.html#a2741d6f481328433d778097608c0be1d" title=" " alt="" coords="248,80,525,108"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="555,111,525,110,525,105,560,111"/>
+<area shape="rect" id="Node000006" href="$classGeometryPage.html#aa05702756ffe70c1c9295494036d364e" title=" " alt="" coords="283,132,490,177"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="555,139,491,147,490,142,560,138"/>
+<area shape="rect" id="Node000007" href="$classGeometryPage.html#a91d1ac3960a9a2e31af6e79d8d048842" title=" " alt="" coords="272,201,500,246"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="653,144,526,192,484,203,483,198,524,186,648,145"/>
+<area shape="rect" id="Node000003" href="$classGeometryPage.html#a3b366ef2453036d455df3e7248d2e127" title=" " alt="" coords="5,5,200,50"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="246,30,201,31,199,26,250,28"/>
+<area shape="rect" id="Node000005" href="$classGeometryPage.html#a2d9f83accc5c03c75ef3c7e706716dfb" title=" " alt="" coords="5,75,200,119"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="230,97,201,99,199,94,235,95"/>
+</map>

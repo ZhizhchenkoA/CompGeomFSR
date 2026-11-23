@@ -1,0 +1,9 @@
+<map id="bezier::composite" name="bezier::composite">
+<area shape="rect" id="Node000001" title="Строит составную кривую из окон degree + 1 с общей точкой сегментов." alt="" coords="5,5,143,33"/>
+<area shape="rect" id="Node000002" href="$namespacebezier.html#a3e86093165e34203620df7fe7623a57e" title="Дискретизирует кривую в count + 1 точках от t = 0 до t = 1." alt="" coords="191,5,308,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,17,178,19,173,19,143,22"/>
+<area shape="rect" id="Node000003" href="$namespacebezier.html#aa6f0140841e402a3cfa3ba2aba8044d0" title="Операции с параметрическими кривыми Безье." alt="" coords="356,5,502,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="308,17,343,19,338,19,308,22"/>
+<area shape="rect" id="Node000004" href="$namespacebezier.html#a16319ee9d71db52368b5ce95b86794e2" title="Возвращает все промежуточные уровни построения де Кастельжо." alt="" coords="550,5,739,33"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="502,17,537,19,532,19,503,22"/>
+</map>

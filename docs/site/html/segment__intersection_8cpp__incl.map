@@ -1,0 +1,14 @@
+<map id="src/lib/geometry/segment_intersection.cpp" name="src/lib/geometry/segment_intersection.cpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="336,5,524,50"/>
+<area shape="rect" id="Node000002" href="$segment__intersection_8h.html" title=" " alt="" coords="5,98,247,126"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="347,52,190,96,188,91,351,49"/>
+<area shape="rect" id="Node000004" href="$predicates_8h.html" title=" " alt="" coords="271,98,440,126"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="413,49,379,88,376,84,408,52"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="464,98,548,126"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="451,48,486,87,481,86,449,53"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="572,98,634,126"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="476,48,564,91,559,91,476,53"/>
+<area shape="rect" id="Node000003" href="$point_8h.html" title=" " alt="" coords="174,174,307,201"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="147,124,210,165,205,166,146,129"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="337,125,275,168,273,163,332,127"/>
+</map>

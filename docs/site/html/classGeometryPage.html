@@ -1,0 +1,1665 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Geometry Workbench: Класс GeometryPage</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Geometry Workbench<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Интерактивный учебный стенд по компьютерной геометрии</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('classGeometryPage.html','','classGeometryPage-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Класс GeometryPage</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Главная страница задач 1–13.  
+ <a href="#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="geometrypage_8h_source.html">geometrypage.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:GeometryPage:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classGeometryPage__inherit__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Граф связей класса GeometryPage:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classGeometryPage__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-signals" class="groupheader"><a id="signals" name="signals"></a>
+Сигналы</h2></td></tr>
+<tr class="memitem:a4ac016dceaf16fde96c2aed328b0e50d" id="r_a4ac016dceaf16fde96c2aed328b0e50d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a4ac016dceaf16fde96c2aed328b0e50d">logMessage</a> (const QString &amp;text)</td></tr>
+<tr class="memitem:aa9f01f9f97ae7cc6d65dcd8254ea8428" id="r_aa9f01f9f97ae7cc6d65dcd8254ea8428"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aa9f01f9f97ae7cc6d65dcd8254ea8428">cursorMoved</a> (const QPointF &amp;geometryPos)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a4fda5c025fcd295789a6345233568d87" id="r_a4fda5c025fcd295789a6345233568d87"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a4fda5c025fcd295789a6345233568d87">GeometryPage</a> (QWidget *parent=nullptr)</td></tr>
+<tr class="memitem:acfc85b110da93aea63d610fbc9b5e359" id="r_acfc85b110da93aea63d610fbc9b5e359"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#acfc85b110da93aea63d610fbc9b5e359">~GeometryPage</a> () override</td></tr>
+<tr class="memitem:addebfdadcc9b93da1bf550fb3aa57c33" id="r_addebfdadcc9b93da1bf550fb3aa57c33"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#addebfdadcc9b93da1bf550fb3aa57c33">clearScene</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-slots" class="groupheader"><a id="pri-slots" name="pri-slots"></a>
+Закрытые слоты</h2></td></tr>
+<tr class="memitem:a91d1ac3960a9a2e31af6e79d8d048842" id="r_a91d1ac3960a9a2e31af6e79d8d048842"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a91d1ac3960a9a2e31af6e79d8d048842">on_onlineCheckBox_toggled</a> (bool checked)</td></tr>
+<tr class="memitem:a999b1d336f50d397868ab4790189ff04" id="r_a999b1d336f50d397868ab4790189ff04"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a999b1d336f50d397868ab4790189ff04">on_clearButton_clicked</a> ()</td></tr>
+<tr class="memitem:aa05702756ffe70c1c9295494036d364e" id="r_aa05702756ffe70c1c9295494036d364e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aa05702756ffe70c1c9295494036d364e">on_calculateButton_clicked</a> ()</td></tr>
+<tr class="memitem:af2d0477ad7f1427fc470859223d24cd0" id="r_af2d0477ad7f1427fc470859223d24cd0"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#af2d0477ad7f1427fc470859223d24cd0">on_circumcirclesCheckBox_toggled</a> (bool checked)</td></tr>
+<tr class="memitem:a987ba5fc021a4c94a694aad27f3efdf6" id="r_a987ba5fc021a4c94a694aad27f3efdf6"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a987ba5fc021a4c94a694aad27f3efdf6">on_bezierSlider_valueChanged</a> (int value)</td></tr>
+<tr class="memitem:a3b366ef2453036d455df3e7248d2e127" id="r_a3b366ef2453036d455df3e7248d2e127"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a3b366ef2453036d455df3e7248d2e127">on_canvas_clicked</a> (const QPointF &amp;screenPos)</td></tr>
+<tr class="memitem:a2d9f83accc5c03c75ef3c7e706716dfb" id="r_a2d9f83accc5c03c75ef3c7e706716dfb"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a2d9f83accc5c03c75ef3c7e706716dfb">on_canvas_pointMoved</a> (int index, const QPointF &amp;screenPos)</td></tr>
+<tr class="memitem:a66d38697b0496bb09cc5c22c375fc596" id="r_a66d38697b0496bb09cc5c22c375fc596"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a66d38697b0496bb09cc5c22c375fc596">on_canvas_cursorMoved</a> (const QPointF &amp;screenPos)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Закрытые члены</h2></td></tr>
+<tr class="memitem:a5e401c179a58fb115a86b603312be0da" id="r_a5e401c179a58fb115a86b603312be0da"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a5e401c179a58fb115a86b603312be0da">onTaskChanged</a> (int index)</td></tr>
+<tr class="memitem:a7b4530bb76653adf3d2d82d1a01c38ff" id="r_a7b4530bb76653adf3d2d82d1a01c38ff"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a7b4530bb76653adf3d2d82d1a01c38ff">selectTask</a> (int task)</td></tr>
+<tr class="memitem:a057cf08f9c927e9745c4d533a381aaea" id="r_a057cf08f9c927e9745c4d533a381aaea"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a057cf08f9c927e9745c4d533a381aaea">showLongArithmeticPage</a> (bool visible)</td></tr>
+<tr class="memitem:acdcc0b18c0fa30dd324cd16c23517c7a" id="r_acdcc0b18c0fa30dd324cd16c23517c7a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#acdcc0b18c0fa30dd324cd16c23517c7a">handleTurnClick</a> (const QPointF &amp;screenPos)</td></tr>
+<tr class="memitem:a758948c03ae61778e10165f174306c3a" id="r_a758948c03ae61778e10165f174306c3a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a758948c03ae61778e10165f174306c3a">handleTurnDrag</a> (int index, const QPointF &amp;screenPos)</td></tr>
+<tr class="memitem:aa685131d4c04dafba54ab095dc78952e" id="r_aa685131d4c04dafba54ab095dc78952e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aa685131d4c04dafba54ab095dc78952e">computeTurn</a> ()</td></tr>
+<tr class="memitem:a11f51d12b3ffe8de348c7fcee8f4bb8a" id="r_a11f51d12b3ffe8de348c7fcee8f4bb8a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a11f51d12b3ffe8de348c7fcee8f4bb8a">handleIntersectionClick</a> (const QPointF &amp;screenPos)</td></tr>
+<tr class="memitem:a2741d6f481328433d778097608c0be1d" id="r_a2741d6f481328433d778097608c0be1d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a2741d6f481328433d778097608c0be1d">handleIntersectionDrag</a> (int index, const QPointF &amp;screenPos)</td></tr>
+<tr class="memitem:a589fc5e7e93427a3f2c34679279ec875" id="r_a589fc5e7e93427a3f2c34679279ec875"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a589fc5e7e93427a3f2c34679279ec875">computeIntersection</a> ()</td></tr>
+<tr class="memitem:aae494f5e3a68d411bc5c8b8a39bb84e4" id="r_aae494f5e3a68d411bc5c8b8a39bb84e4"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aae494f5e3a68d411bc5c8b8a39bb84e4">handleHullClick</a> (const QPointF &amp;screenPos)</td></tr>
+<tr class="memitem:ad4fd2514de86d00ae791f83755aad6a8" id="r_ad4fd2514de86d00ae791f83755aad6a8"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ad4fd2514de86d00ae791f83755aad6a8">handleHullDrag</a> (int index, const QPointF &amp;screenPos)</td></tr>
+<tr class="memitem:ae4a1816822912d00197e9cfa375717d1" id="r_ae4a1816822912d00197e9cfa375717d1"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae4a1816822912d00197e9cfa375717d1">computeHull</a> ()</td></tr>
+<tr class="memitem:a3a81da70a224b6bcd01c7aebc1a2db6f" id="r_a3a81da70a224b6bcd01c7aebc1a2db6f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a3a81da70a224b6bcd01c7aebc1a2db6f">handleDelaunayClick</a> (const QPointF &amp;screenPos)</td></tr>
+<tr class="memitem:ac2cb0e682262a2691c98bcdfa18bc48a" id="r_ac2cb0e682262a2691c98bcdfa18bc48a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ac2cb0e682262a2691c98bcdfa18bc48a">handleDelaunayDrag</a> (int index, const QPointF &amp;screenPos)</td></tr>
+<tr class="memitem:a740f2f65e615aad3fa3d3dafb2fd530f" id="r_a740f2f65e615aad3fa3d3dafb2fd530f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a740f2f65e615aad3fa3d3dafb2fd530f">computeDelaunay</a> ()</td></tr>
+<tr class="memitem:a1fa4f035f37dbd61e6cf8c5ce9785883" id="r_a1fa4f035f37dbd61e6cf8c5ce9785883"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a1fa4f035f37dbd61e6cf8c5ce9785883">handlePolygonClick</a> (const QPointF &amp;screenPos)</td></tr>
+<tr class="memitem:a077e9cd0bb0fd57f8b368a813152f78c" id="r_a077e9cd0bb0fd57f8b368a813152f78c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a077e9cd0bb0fd57f8b368a813152f78c">handlePolygonDrag</a> (int index, const QPointF &amp;screenPos)</td></tr>
+<tr class="memitem:a73b11409c008e8a002cdf0b5b86d363d" id="r_a73b11409c008e8a002cdf0b5b86d363d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a73b11409c008e8a002cdf0b5b86d363d">computePolygonOperation</a> ()</td></tr>
+<tr class="memitem:ace1f1e79f6cf90be97a1edf406262102" id="r_ace1f1e79f6cf90be97a1edf406262102"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ace1f1e79f6cf90be97a1edf406262102">handleBezierClick</a> (const QPointF &amp;screenPos)</td></tr>
+<tr class="memitem:ac64c55de6638a1a39c54f756e85888a9" id="r_ac64c55de6638a1a39c54f756e85888a9"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ac64c55de6638a1a39c54f756e85888a9">handleBezierDrag</a> (int index, const QPointF &amp;screenPos)</td></tr>
+<tr class="memitem:aa0380120b0b9e766b2e6d3c4d4192b27" id="r_aa0380120b0b9e766b2e6d3c4d4192b27"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aa0380120b0b9e766b2e6d3c4d4192b27">computeBezier</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:a68c8501f25ae9682080af27d8cadeb27" id="r_a68c8501f25ae9682080af27d8cadeb27"><td class="memItemLeft">Ui::GeometryPage *&#160;</td><td class="memItemRight"><a class="el" href="#a68c8501f25ae9682080af27d8cadeb27">ui</a></td></tr>
+<tr class="memitem:a46b6f387963e57709bbb0827a46c7159" id="r_a46b6f387963e57709bbb0827a46c7159"><td class="memItemLeft">std::vector&lt; <a class="el" href="structgeometry_1_1Point.html">geometry::Point</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a46b6f387963e57709bbb0827a46c7159">m_points</a></td></tr>
+<tr class="memitem:af160b5db7a54477af72cfb0fb0a51d59" id="r_af160b5db7a54477af72cfb0fb0a51d59"><td class="memItemLeft">std::vector&lt; <a class="el" href="structgeometry_1_1Point.html">geometry::Point</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#af160b5db7a54477af72cfb0fb0a51d59">m_polygonA</a></td></tr>
+<tr class="memitem:a2bebd56bce64ae1e0ffa448947fcf97b" id="r_a2bebd56bce64ae1e0ffa448947fcf97b"><td class="memItemLeft">std::vector&lt; <a class="el" href="structgeometry_1_1Point.html">geometry::Point</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a2bebd56bce64ae1e0ffa448947fcf97b">m_polygonB</a></td></tr>
+<tr class="memitem:aa5b999969872e3bab6cd0ac9181cca8c" id="r_aa5b999969872e3bab6cd0ac9181cca8c"><td class="memItemLeft">std::vector&lt; std::pair&lt; int, int &gt; &gt;&#160;</td><td class="memItemRight"><a class="el" href="#aa5b999969872e3bab6cd0ac9181cca8c">m_polygonPointBindings</a></td></tr>
+<tr class="memitem:aaf0da91936f1ea4f61be077109b349e1" id="r_aaf0da91936f1ea4f61be077109b349e1"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#aaf0da91936f1ea4f61be077109b349e1">m_currentTask</a> = 1</td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Главная страница задач 1–13. </p>
+<p>Холст хранит точки в экранных координатах; страница переводит их в геометрию через <span class="tt"><a class="el" href="namespacegeometry__qt.html">geometry_qt</a></span> и вызывает чистые алгоритмы библиотек. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="geometrypage_8h_source.html">geometrypage.h</a> строка <a class="el" href="geometrypage_8h_source.html#l00019">19</a></p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Конструктор(ы)</h2>
+<a id="a4fda5c025fcd295789a6345233568d87" name="a4fda5c025fcd295789a6345233568d87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fda5c025fcd295789a6345233568d87">&#9670;&#160;</a></span>GeometryPage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GeometryPage::GeometryPage </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *</td>          <td class="paramname"><span class="paramname"><em>parent</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel explicit">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="geometrypage_8cpp_source.html">geometrypage.cpp</a> строка <a class="el" href="geometrypage_8cpp_source.html#l00030">30</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="geometrypage_8cpp_source.html#l00030">GeometryPage()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00186">onTaskChanged()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00066">selectTask()</a> и <a class="el" href="geometrypage_8h_source.html#l00080">ui</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="geometrypage_8cpp_source.html#l00030">GeometryPage()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classGeometryPage_a4fda5c025fcd295789a6345233568d87_cgraph.svg" width="100%" height="368"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classGeometryPage_a4fda5c025fcd295789a6345233568d87_icgraph.svg" width="232" height="63"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="acfc85b110da93aea63d610fbc9b5e359" name="acfc85b110da93aea63d610fbc9b5e359"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfc85b110da93aea63d610fbc9b5e359">&#9670;&#160;</a></span>~GeometryPage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GeometryPage::~GeometryPage </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="geometrypage_8cpp_source.html">geometrypage.cpp</a> строка <a class="el" href="geometrypage_8cpp_source.html#l00051">51</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="geometrypage_8h_source.html#l00080">ui</a>.</p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Методы</h2>
+<a id="addebfdadcc9b93da1bf550fb3aa57c33" name="addebfdadcc9b93da1bf550fb3aa57c33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addebfdadcc9b93da1bf550fb3aa57c33">&#9670;&#160;</a></span>clearScene()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GeometryPage::clearScene </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="geometrypage_8cpp_source.html">geometrypage.cpp</a> строка <a class="el" href="geometrypage_8cpp_source.html#l00056">56</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="geometrypage_8h_source.html#l00081">m_points</a>, <a class="el" href="geometrypage_8h_source.html#l00082">m_polygonA</a>, <a class="el" href="geometrypage_8h_source.html#l00083">m_polygonB</a>, <a class="el" href="geometrypage_8h_source.html#l00084">m_polygonPointBindings</a> и <a class="el" href="geometrypage_8h_source.html#l00080">ui</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="geometrypage_8cpp_source.html#l00218">on_clearButton_clicked()</a> и <a class="el" href="geometrypage_8cpp_source.html#l00066">selectTask()</a>.</p>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classGeometryPage_addebfdadcc9b93da1bf550fb3aa57c33_icgraph.svg" width="100%" height="399"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="aa0380120b0b9e766b2e6d3c4d4192b27" name="aa0380120b0b9e766b2e6d3c4d4192b27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0380120b0b9e766b2e6d3c4d4192b27">&#9670;&#160;</a></span>computeBezier()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GeometryPage::computeBezier </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="geometrypage_8cpp_source.html">geometrypage.cpp</a> строка <a class="el" href="geometrypage_8cpp_source.html#l00607">607</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="bezier_8cpp_source.html#l00054">bezier::composite()</a>, <a class="el" href="bezier_8cpp_source.html#l00034">bezier::deCasteljau()</a>, <a class="el" href="bezier_8cpp_source.html#l00007">bezier::deCasteljauLevels()</a>, <a class="el" href="geometrypage_8h_source.html#l00081">m_points</a>, <a class="el" href="bezier_8cpp_source.html#l00040">bezier::sample()</a>, <a class="el" href="conversion_8cpp_source.html#l00010">geometry_qt::toScreen()</a> и <a class="el" href="geometrypage_8h_source.html#l00080">ui</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="geometrypage_8cpp_source.html#l00590">handleBezierClick()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00600">handleBezierDrag()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00208">on_bezierSlider_valueChanged()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00224">on_calculateButton_clicked()</a> и <a class="el" href="geometrypage_8cpp_source.html#l00191">on_onlineCheckBox_toggled()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classGeometryPage_aa0380120b0b9e766b2e6d3c4d4192b27_cgraph.svg" width="100%" height="481"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classGeometryPage_aa0380120b0b9e766b2e6d3c4d4192b27_icgraph.svg" width="100%" height="541"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a740f2f65e615aad3fa3d3dafb2fd530f" name="a740f2f65e615aad3fa3d3dafb2fd530f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a740f2f65e615aad3fa3d3dafb2fd530f">&#9670;&#160;</a></span>computeDelaunay()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GeometryPage::computeDelaunay </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="geometrypage_8cpp_source.html">geometrypage.cpp</a> строка <a class="el" href="geometrypage_8cpp_source.html#l00502">502</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="delaunay_8cpp_source.html#l00076">geometry::delaunayTriangulation()</a>, <a class="el" href="#a4ac016dceaf16fde96c2aed328b0e50d">logMessage()</a>, <a class="el" href="geometrypage_8h_source.html#l00081">m_points</a>, <a class="el" href="conversion_8cpp_source.html#l00010">geometry_qt::toScreen()</a> и <a class="el" href="geometrypage_8h_source.html#l00080">ui</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="geometrypage_8cpp_source.html#l00478">handleDelaunayClick()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00490">handleDelaunayDrag()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00224">on_calculateButton_clicked()</a> и <a class="el" href="geometrypage_8cpp_source.html#l00191">on_onlineCheckBox_toggled()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classGeometryPage_a740f2f65e615aad3fa3d3dafb2fd530f_cgraph.svg" width="539" height="143"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classGeometryPage_a740f2f65e615aad3fa3d3dafb2fd530f_icgraph.svg" width="100%" height="489"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="ae4a1816822912d00197e9cfa375717d1" name="ae4a1816822912d00197e9cfa375717d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4a1816822912d00197e9cfa375717d1">&#9670;&#160;</a></span>computeHull()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GeometryPage::computeHull </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="geometrypage_8cpp_source.html">geometrypage.cpp</a> строка <a class="el" href="geometrypage_8cpp_source.html#l00463">463</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="convex__hull_8cpp_source.html#l00018">geometry::convexHull()</a>, <a class="el" href="#a4ac016dceaf16fde96c2aed328b0e50d">logMessage()</a>, <a class="el" href="geometrypage_8h_source.html#l00081">m_points</a>, <a class="el" href="conversion_8cpp_source.html#l00010">geometry_qt::toScreen()</a> и <a class="el" href="geometrypage_8h_source.html#l00080">ui</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="geometrypage_8cpp_source.html#l00438">handleHullClick()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00451">handleHullDrag()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00224">on_calculateButton_clicked()</a> и <a class="el" href="geometrypage_8cpp_source.html#l00191">on_onlineCheckBox_toggled()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classGeometryPage_ae4a1816822912d00197e9cfa375717d1_cgraph.svg" width="644" height="143"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classGeometryPage_ae4a1816822912d00197e9cfa375717d1_icgraph.svg" width="100%" height="489"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a589fc5e7e93427a3f2c34679279ec875" name="a589fc5e7e93427a3f2c34679279ec875"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a589fc5e7e93427a3f2c34679279ec875">&#9670;&#160;</a></span>computeIntersection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GeometryPage::computeIntersection </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="geometrypage_8cpp_source.html">geometrypage.cpp</a> строка <a class="el" href="geometrypage_8cpp_source.html#l00403">403</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="segment__intersection_8h_source.html#l00020">geometry::SegmentIntersection::first</a>, <a class="el" href="segment__intersection_8cpp_source.html#l00038">geometry::intersectSegments()</a>, <a class="el" href="segment__intersection_8h_source.html#l00019">geometry::SegmentIntersection::kind</a>, <a class="el" href="#a4ac016dceaf16fde96c2aed328b0e50d">logMessage()</a>, <a class="el" href="geometrypage_8h_source.html#l00081">m_points</a>, <a class="el" href="segment__intersection_8h_source.html#l00009">geometry::None</a>, <a class="el" href="segment__intersection_8h_source.html#l00011">geometry::Overlap</a>, <a class="el" href="segment__intersection_8h_source.html#l00010">geometry::Point</a>, <a class="el" href="segment__intersection_8h_source.html#l00021">geometry::SegmentIntersection::second</a>, <a class="el" href="conversion_8cpp_source.html#l00010">geometry_qt::toScreen()</a>, <a class="el" href="geometrypage_8h_source.html#l00080">ui</a>, <a class="el" href="point_8h_source.html#l00014">geometry::Point::x</a> и <a class="el" href="point_8h_source.html#l00015">geometry::Point::y</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="geometrypage_8cpp_source.html#l00366">handleIntersectionClick()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00391">handleIntersectionDrag()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00224">on_calculateButton_clicked()</a> и <a class="el" href="geometrypage_8cpp_source.html#l00191">on_onlineCheckBox_toggled()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classGeometryPage_a589fc5e7e93427a3f2c34679279ec875_cgraph.svg" width="100%" height="407"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classGeometryPage_a589fc5e7e93427a3f2c34679279ec875_icgraph.svg" width="100%" height="489"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a73b11409c008e8a002cdf0b5b86d363d" name="a73b11409c008e8a002cdf0b5b86d363d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73b11409c008e8a002cdf0b5b86d363d">&#9670;&#160;</a></span>computePolygonOperation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GeometryPage::computePolygonOperation </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="geometrypage_8cpp_source.html">geometrypage.cpp</a> строка <a class="el" href="geometrypage_8cpp_source.html#l00558">558</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="convex__hull_8cpp_source.html#l00018">geometry::convexHull()</a>, <a class="el" href="convex__polygon__boolean_8cpp_source.html#l00127">geometry::convexPolygonBoolean()</a>, <a class="el" href="convex__polygon__boolean_8h_source.html#l00010">geometry::Difference</a>, <a class="el" href="convex__polygon__boolean_8h_source.html#l00010">geometry::Intersection</a>, <a class="el" href="#a4ac016dceaf16fde96c2aed328b0e50d">logMessage()</a>, <a class="el" href="geometrypage_8h_source.html#l00085">m_currentTask</a>, <a class="el" href="geometrypage_8h_source.html#l00082">m_polygonA</a>, <a class="el" href="geometrypage_8h_source.html#l00083">m_polygonB</a>, <a class="el" href="conversion_8cpp_source.html#l00010">geometry_qt::toScreen()</a>, <a class="el" href="geometrypage_8h_source.html#l00080">ui</a> и <a class="el" href="convex__polygon__boolean_8h_source.html#l00010">geometry::Union</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="geometrypage_8cpp_source.html#l00524">handlePolygonClick()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00541">handlePolygonDrag()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00224">on_calculateButton_clicked()</a> и <a class="el" href="geometrypage_8cpp_source.html#l00191">on_onlineCheckBox_toggled()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classGeometryPage_a73b11409c008e8a002cdf0b5b86d363d_cgraph.svg" width="100%" height="446"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classGeometryPage_a73b11409c008e8a002cdf0b5b86d363d_icgraph.svg" width="100%" height="489"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="aa685131d4c04dafba54ab095dc78952e" name="aa685131d4c04dafba54ab095dc78952e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa685131d4c04dafba54ab095dc78952e">&#9670;&#160;</a></span>computeTurn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GeometryPage::computeTurn </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="geometrypage_8cpp_source.html">geometrypage.cpp</a> строка <a class="el" href="geometrypage_8cpp_source.html#l00301">301</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="predicates_8cpp_source.html#l00008">geometry::cross()</a>, <a class="el" href="#a4ac016dceaf16fde96c2aed328b0e50d">logMessage()</a>, <a class="el" href="geometrypage_8h_source.html#l00081">m_points</a>, <a class="el" href="predicates_8cpp_source.html#l00026">geometry::onSegment()</a>, <a class="el" href="predicates_8cpp_source.html#l00013">geometry::turn()</a>, <a class="el" href="geometrypage_8h_source.html#l00080">ui</a>, <a class="el" href="point_8h_source.html#l00014">geometry::Point::x</a> и <a class="el" href="point_8h_source.html#l00015">geometry::Point::y</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="geometrypage_8cpp_source.html#l00278">handleTurnClick()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00345">handleTurnDrag()</a> и <a class="el" href="geometrypage_8cpp_source.html#l00191">on_onlineCheckBox_toggled()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classGeometryPage_aa685131d4c04dafba54ab095dc78952e_cgraph.svg" width="646" height="167"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classGeometryPage_aa685131d4c04dafba54ab095dc78952e_icgraph.svg" width="100%" height="437"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="aa9f01f9f97ae7cc6d65dcd8254ea8428" name="aa9f01f9f97ae7cc6d65dcd8254ea8428"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9f01f9f97ae7cc6d65dcd8254ea8428">&#9670;&#160;</a></span>cursorMoved</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GeometryPage::cursorMoved </td>
+          <td>(</td>
+          <td class="paramtype">const QPointF &amp;</td>          <td class="paramname"><span class="paramname"><em>geometryPos</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel signal">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Используется в <a class="el" href="mainwindow_8cpp_source.html#l00012">MainWindow::MainWindow()</a> и <a class="el" href="geometrypage_8cpp_source.html#l00270">on_canvas_cursorMoved()</a>.</p>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classGeometryPage_aa9f01f9f97ae7cc6d65dcd8254ea8428_icgraph.svg" width="464" height="131"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ace1f1e79f6cf90be97a1edf406262102" name="ace1f1e79f6cf90be97a1edf406262102"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace1f1e79f6cf90be97a1edf406262102">&#9670;&#160;</a></span>handleBezierClick()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GeometryPage::handleBezierClick </td>
+          <td>(</td>
+          <td class="paramtype">const QPointF &amp;</td>          <td class="paramname"><span class="paramname"><em>screenPos</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="geometrypage_8cpp_source.html">geometrypage.cpp</a> строка <a class="el" href="geometrypage_8cpp_source.html#l00590">590</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="geometrypage_8cpp_source.html#l00607">computeBezier()</a>, <a class="el" href="geometrypage_8h_source.html#l00081">m_points</a>, <a class="el" href="conversion_8cpp_source.html#l00005">geometry_qt::toGeometry()</a> и <a class="el" href="geometrypage_8h_source.html#l00080">ui</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="geometrypage_8cpp_source.html#l00239">on_canvas_clicked()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classGeometryPage_ace1f1e79f6cf90be97a1edf406262102_cgraph.svg" width="100%" height="481"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classGeometryPage_ace1f1e79f6cf90be97a1edf406262102_icgraph.svg" width="464" height="56"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ac64c55de6638a1a39c54f756e85888a9" name="ac64c55de6638a1a39c54f756e85888a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac64c55de6638a1a39c54f756e85888a9">&#9670;&#160;</a></span>handleBezierDrag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GeometryPage::handleBezierDrag </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>index</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QPointF &amp;</td>          <td class="paramname"><span class="paramname"><em>screenPos</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="geometrypage_8cpp_source.html">geometrypage.cpp</a> строка <a class="el" href="geometrypage_8cpp_source.html#l00600">600</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="geometrypage_8cpp_source.html#l00607">computeBezier()</a>, <a class="el" href="geometrypage_8h_source.html#l00081">m_points</a>, <a class="el" href="conversion_8cpp_source.html#l00005">geometry_qt::toGeometry()</a> и <a class="el" href="geometrypage_8h_source.html#l00080">ui</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="geometrypage_8cpp_source.html#l00255">on_canvas_pointMoved()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classGeometryPage_ac64c55de6638a1a39c54f756e85888a9_cgraph.svg" width="100%" height="481"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classGeometryPage_ac64c55de6638a1a39c54f756e85888a9_icgraph.svg" width="495" height="56"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a3a81da70a224b6bcd01c7aebc1a2db6f" name="a3a81da70a224b6bcd01c7aebc1a2db6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a81da70a224b6bcd01c7aebc1a2db6f">&#9670;&#160;</a></span>handleDelaunayClick()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GeometryPage::handleDelaunayClick </td>
+          <td>(</td>
+          <td class="paramtype">const QPointF &amp;</td>          <td class="paramname"><span class="paramname"><em>screenPos</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="geometrypage_8cpp_source.html">geometrypage.cpp</a> строка <a class="el" href="geometrypage_8cpp_source.html#l00478">478</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="geometrypage_8cpp_source.html#l00502">computeDelaunay()</a>, <a class="el" href="geometrypage_8h_source.html#l00081">m_points</a>, <a class="el" href="conversion_8cpp_source.html#l00005">geometry_qt::toGeometry()</a> и <a class="el" href="geometrypage_8h_source.html#l00080">ui</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="geometrypage_8cpp_source.html#l00239">on_canvas_clicked()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classGeometryPage_a3a81da70a224b6bcd01c7aebc1a2db6f_cgraph.svg" width="100%" height="407"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classGeometryPage_a3a81da70a224b6bcd01c7aebc1a2db6f_icgraph.svg" width="484" height="56"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ac2cb0e682262a2691c98bcdfa18bc48a" name="ac2cb0e682262a2691c98bcdfa18bc48a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2cb0e682262a2691c98bcdfa18bc48a">&#9670;&#160;</a></span>handleDelaunayDrag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GeometryPage::handleDelaunayDrag </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>index</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QPointF &amp;</td>          <td class="paramname"><span class="paramname"><em>screenPos</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="geometrypage_8cpp_source.html">geometrypage.cpp</a> строка <a class="el" href="geometrypage_8cpp_source.html#l00490">490</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="geometrypage_8cpp_source.html#l00502">computeDelaunay()</a>, <a class="el" href="geometrypage_8h_source.html#l00081">m_points</a>, <a class="el" href="conversion_8cpp_source.html#l00005">geometry_qt::toGeometry()</a> и <a class="el" href="geometrypage_8h_source.html#l00080">ui</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="geometrypage_8cpp_source.html#l00255">on_canvas_pointMoved()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classGeometryPage_ac2cb0e682262a2691c98bcdfa18bc48a_cgraph.svg" width="100%" height="407"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classGeometryPage_ac2cb0e682262a2691c98bcdfa18bc48a_icgraph.svg" width="516" height="56"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="aae494f5e3a68d411bc5c8b8a39bb84e4" name="aae494f5e3a68d411bc5c8b8a39bb84e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae494f5e3a68d411bc5c8b8a39bb84e4">&#9670;&#160;</a></span>handleHullClick()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GeometryPage::handleHullClick </td>
+          <td>(</td>
+          <td class="paramtype">const QPointF &amp;</td>          <td class="paramname"><span class="paramname"><em>screenPos</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="geometrypage_8cpp_source.html">geometrypage.cpp</a> строка <a class="el" href="geometrypage_8cpp_source.html#l00438">438</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="geometrypage_8cpp_source.html#l00463">computeHull()</a>, <a class="el" href="geometrypage_8h_source.html#l00081">m_points</a>, <a class="el" href="conversion_8cpp_source.html#l00005">geometry_qt::toGeometry()</a> и <a class="el" href="geometrypage_8h_source.html#l00080">ui</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="geometrypage_8cpp_source.html#l00239">on_canvas_clicked()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classGeometryPage_aae494f5e3a68d411bc5c8b8a39bb84e4_cgraph.svg" width="100%" height="407"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classGeometryPage_aae494f5e3a68d411bc5c8b8a39bb84e4_icgraph.svg" width="448" height="56"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ad4fd2514de86d00ae791f83755aad6a8" name="ad4fd2514de86d00ae791f83755aad6a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4fd2514de86d00ae791f83755aad6a8">&#9670;&#160;</a></span>handleHullDrag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GeometryPage::handleHullDrag </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>index</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QPointF &amp;</td>          <td class="paramname"><span class="paramname"><em>screenPos</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="geometrypage_8cpp_source.html">geometrypage.cpp</a> строка <a class="el" href="geometrypage_8cpp_source.html#l00451">451</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="geometrypage_8cpp_source.html#l00463">computeHull()</a>, <a class="el" href="geometrypage_8h_source.html#l00081">m_points</a>, <a class="el" href="conversion_8cpp_source.html#l00005">geometry_qt::toGeometry()</a> и <a class="el" href="geometrypage_8h_source.html#l00080">ui</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="geometrypage_8cpp_source.html#l00255">on_canvas_pointMoved()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classGeometryPage_ad4fd2514de86d00ae791f83755aad6a8_cgraph.svg" width="100%" height="407"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classGeometryPage_ad4fd2514de86d00ae791f83755aad6a8_icgraph.svg" width="480" height="56"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a11f51d12b3ffe8de348c7fcee8f4bb8a" name="a11f51d12b3ffe8de348c7fcee8f4bb8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11f51d12b3ffe8de348c7fcee8f4bb8a">&#9670;&#160;</a></span>handleIntersectionClick()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GeometryPage::handleIntersectionClick </td>
+          <td>(</td>
+          <td class="paramtype">const QPointF &amp;</td>          <td class="paramname"><span class="paramname"><em>screenPos</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="geometrypage_8cpp_source.html">geometrypage.cpp</a> строка <a class="el" href="geometrypage_8cpp_source.html#l00366">366</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="geometrypage_8cpp_source.html#l00403">computeIntersection()</a>, <a class="el" href="geometrypage_8h_source.html#l00081">m_points</a>, <a class="el" href="conversion_8cpp_source.html#l00005">geometry_qt::toGeometry()</a> и <a class="el" href="geometrypage_8h_source.html#l00080">ui</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="geometrypage_8cpp_source.html#l00239">on_canvas_clicked()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classGeometryPage_a11f51d12b3ffe8de348c7fcee8f4bb8a_cgraph.svg" width="100%" height="407"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classGeometryPage_a11f51d12b3ffe8de348c7fcee8f4bb8a_icgraph.svg" width="500" height="56"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a2741d6f481328433d778097608c0be1d" name="a2741d6f481328433d778097608c0be1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2741d6f481328433d778097608c0be1d">&#9670;&#160;</a></span>handleIntersectionDrag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GeometryPage::handleIntersectionDrag </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>index</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QPointF &amp;</td>          <td class="paramname"><span class="paramname"><em>screenPos</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="geometrypage_8cpp_source.html">geometrypage.cpp</a> строка <a class="el" href="geometrypage_8cpp_source.html#l00391">391</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="geometrypage_8cpp_source.html#l00403">computeIntersection()</a>, <a class="el" href="geometrypage_8h_source.html#l00081">m_points</a>, <a class="el" href="conversion_8cpp_source.html#l00005">geometry_qt::toGeometry()</a> и <a class="el" href="geometrypage_8h_source.html#l00080">ui</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="geometrypage_8cpp_source.html#l00255">on_canvas_pointMoved()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classGeometryPage_a2741d6f481328433d778097608c0be1d_cgraph.svg" width="100%" height="407"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classGeometryPage_a2741d6f481328433d778097608c0be1d_icgraph.svg" width="531" height="56"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a1fa4f035f37dbd61e6cf8c5ce9785883" name="a1fa4f035f37dbd61e6cf8c5ce9785883"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fa4f035f37dbd61e6cf8c5ce9785883">&#9670;&#160;</a></span>handlePolygonClick()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GeometryPage::handlePolygonClick </td>
+          <td>(</td>
+          <td class="paramtype">const QPointF &amp;</td>          <td class="paramname"><span class="paramname"><em>screenPos</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="geometrypage_8cpp_source.html">geometrypage.cpp</a> строка <a class="el" href="geometrypage_8cpp_source.html#l00524">524</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="geometrypage_8cpp_source.html#l00558">computePolygonOperation()</a>, <a class="el" href="geometrypage_8h_source.html#l00082">m_polygonA</a>, <a class="el" href="geometrypage_8h_source.html#l00083">m_polygonB</a>, <a class="el" href="geometrypage_8h_source.html#l00084">m_polygonPointBindings</a>, <a class="el" href="conversion_8cpp_source.html#l00005">geometry_qt::toGeometry()</a> и <a class="el" href="geometrypage_8h_source.html#l00080">ui</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="geometrypage_8cpp_source.html#l00239">on_canvas_clicked()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classGeometryPage_a1fa4f035f37dbd61e6cf8c5ce9785883_cgraph.svg" width="100%" height="446"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classGeometryPage_a1fa4f035f37dbd61e6cf8c5ce9785883_icgraph.svg" width="475" height="56"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a077e9cd0bb0fd57f8b368a813152f78c" name="a077e9cd0bb0fd57f8b368a813152f78c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a077e9cd0bb0fd57f8b368a813152f78c">&#9670;&#160;</a></span>handlePolygonDrag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GeometryPage::handlePolygonDrag </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>index</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QPointF &amp;</td>          <td class="paramname"><span class="paramname"><em>screenPos</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="geometrypage_8cpp_source.html">geometrypage.cpp</a> строка <a class="el" href="geometrypage_8cpp_source.html#l00541">541</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="geometrypage_8cpp_source.html#l00558">computePolygonOperation()</a>, <a class="el" href="geometrypage_8h_source.html#l00082">m_polygonA</a>, <a class="el" href="geometrypage_8h_source.html#l00083">m_polygonB</a>, <a class="el" href="geometrypage_8h_source.html#l00084">m_polygonPointBindings</a>, <a class="el" href="conversion_8cpp_source.html#l00005">geometry_qt::toGeometry()</a> и <a class="el" href="geometrypage_8h_source.html#l00080">ui</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="geometrypage_8cpp_source.html#l00255">on_canvas_pointMoved()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classGeometryPage_a077e9cd0bb0fd57f8b368a813152f78c_cgraph.svg" width="100%" height="446"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classGeometryPage_a077e9cd0bb0fd57f8b368a813152f78c_icgraph.svg" width="506" height="56"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="acdcc0b18c0fa30dd324cd16c23517c7a" name="acdcc0b18c0fa30dd324cd16c23517c7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdcc0b18c0fa30dd324cd16c23517c7a">&#9670;&#160;</a></span>handleTurnClick()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GeometryPage::handleTurnClick </td>
+          <td>(</td>
+          <td class="paramtype">const QPointF &amp;</td>          <td class="paramname"><span class="paramname"><em>screenPos</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="geometrypage_8cpp_source.html">geometrypage.cpp</a> строка <a class="el" href="geometrypage_8cpp_source.html#l00278">278</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="geometrypage_8cpp_source.html#l00301">computeTurn()</a>, <a class="el" href="geometrypage_8h_source.html#l00081">m_points</a>, <a class="el" href="conversion_8cpp_source.html#l00005">geometry_qt::toGeometry()</a> и <a class="el" href="geometrypage_8h_source.html#l00080">ui</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="geometrypage_8cpp_source.html#l00239">on_canvas_clicked()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classGeometryPage_acdcc0b18c0fa30dd324cd16c23517c7a_cgraph.svg" width="100%" height="425"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classGeometryPage_acdcc0b18c0fa30dd324cd16c23517c7a_icgraph.svg" width="450" height="56"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a758948c03ae61778e10165f174306c3a" name="a758948c03ae61778e10165f174306c3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a758948c03ae61778e10165f174306c3a">&#9670;&#160;</a></span>handleTurnDrag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GeometryPage::handleTurnDrag </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>index</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QPointF &amp;</td>          <td class="paramname"><span class="paramname"><em>screenPos</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="geometrypage_8cpp_source.html">geometrypage.cpp</a> строка <a class="el" href="geometrypage_8cpp_source.html#l00345">345</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="geometrypage_8cpp_source.html#l00301">computeTurn()</a>, <a class="el" href="geometrypage_8h_source.html#l00081">m_points</a>, <a class="el" href="conversion_8cpp_source.html#l00005">geometry_qt::toGeometry()</a> и <a class="el" href="geometrypage_8h_source.html#l00080">ui</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="geometrypage_8cpp_source.html#l00255">on_canvas_pointMoved()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classGeometryPage_a758948c03ae61778e10165f174306c3a_cgraph.svg" width="100%" height="425"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classGeometryPage_a758948c03ae61778e10165f174306c3a_icgraph.svg" width="480" height="56"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a4ac016dceaf16fde96c2aed328b0e50d" name="a4ac016dceaf16fde96c2aed328b0e50d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ac016dceaf16fde96c2aed328b0e50d">&#9670;&#160;</a></span>logMessage</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GeometryPage::logMessage </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>text</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel signal">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Используется в <a class="el" href="geometrypage_8cpp_source.html#l00502">computeDelaunay()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00463">computeHull()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00403">computeIntersection()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00558">computePolygonOperation()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00301">computeTurn()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00012">MainWindow::MainWindow()</a> и <a class="el" href="geometrypage_8cpp_source.html#l00218">on_clearButton_clicked()</a>.</p>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classGeometryPage_a4ac016dceaf16fde96c2aed328b0e50d_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a987ba5fc021a4c94a694aad27f3efdf6" name="a987ba5fc021a4c94a694aad27f3efdf6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a987ba5fc021a4c94a694aad27f3efdf6">&#9670;&#160;</a></span>on_bezierSlider_valueChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GeometryPage::on_bezierSlider_valueChanged </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span><span class="mlabel slot">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="geometrypage_8cpp_source.html">geometrypage.cpp</a> строка <a class="el" href="geometrypage_8cpp_source.html#l00208">208</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="geometrypage_8cpp_source.html#l00607">computeBezier()</a>, <a class="el" href="geometrypage_8h_source.html#l00085">m_currentTask</a> и <a class="el" href="geometrypage_8h_source.html#l00081">m_points</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classGeometryPage_a987ba5fc021a4c94a694aad27f3efdf6_cgraph.svg" width="100%" height="481"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="aa05702756ffe70c1c9295494036d364e" name="aa05702756ffe70c1c9295494036d364e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa05702756ffe70c1c9295494036d364e">&#9670;&#160;</a></span>on_calculateButton_clicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GeometryPage::on_calculateButton_clicked </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span><span class="mlabel slot">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="geometrypage_8cpp_source.html">geometrypage.cpp</a> строка <a class="el" href="geometrypage_8cpp_source.html#l00224">224</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="geometrypage_8cpp_source.html#l00607">computeBezier()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00502">computeDelaunay()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00463">computeHull()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00403">computeIntersection()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00558">computePolygonOperation()</a>, <a class="el" href="geometrypage_8h_source.html#l00085">m_currentTask</a> и <a class="el" href="geometrypage_8h_source.html#l00081">m_points</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classGeometryPage_aa05702756ffe70c1c9295494036d364e_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a3b366ef2453036d455df3e7248d2e127" name="a3b366ef2453036d455df3e7248d2e127"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b366ef2453036d455df3e7248d2e127">&#9670;&#160;</a></span>on_canvas_clicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GeometryPage::on_canvas_clicked </td>
+          <td>(</td>
+          <td class="paramtype">const QPointF &amp;</td>          <td class="paramname"><span class="paramname"><em>screenPos</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span><span class="mlabel slot">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="geometrypage_8cpp_source.html">geometrypage.cpp</a> строка <a class="el" href="geometrypage_8cpp_source.html#l00239">239</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="geometrypage_8cpp_source.html#l00590">handleBezierClick()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00478">handleDelaunayClick()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00438">handleHullClick()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00366">handleIntersectionClick()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00524">handlePolygonClick()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00278">handleTurnClick()</a> и <a class="el" href="geometrypage_8h_source.html#l00085">m_currentTask</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classGeometryPage_a3b366ef2453036d455df3e7248d2e127_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a66d38697b0496bb09cc5c22c375fc596" name="a66d38697b0496bb09cc5c22c375fc596"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66d38697b0496bb09cc5c22c375fc596">&#9670;&#160;</a></span>on_canvas_cursorMoved</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GeometryPage::on_canvas_cursorMoved </td>
+          <td>(</td>
+          <td class="paramtype">const QPointF &amp;</td>          <td class="paramname"><span class="paramname"><em>screenPos</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span><span class="mlabel slot">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="geometrypage_8cpp_source.html">geometrypage.cpp</a> строка <a class="el" href="geometrypage_8cpp_source.html#l00270">270</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="#aa9f01f9f97ae7cc6d65dcd8254ea8428">cursorMoved()</a>, <a class="el" href="conversion_8cpp_source.html#l00005">geometry_qt::toGeometry()</a>, <a class="el" href="point_8h_source.html#l00014">geometry::Point::x</a> и <a class="el" href="point_8h_source.html#l00015">geometry::Point::y</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classGeometryPage_a66d38697b0496bb09cc5c22c375fc596_cgraph.svg" width="463" height="91"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a2d9f83accc5c03c75ef3c7e706716dfb" name="a2d9f83accc5c03c75ef3c7e706716dfb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d9f83accc5c03c75ef3c7e706716dfb">&#9670;&#160;</a></span>on_canvas_pointMoved</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GeometryPage::on_canvas_pointMoved </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>index</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QPointF &amp;</td>          <td class="paramname"><span class="paramname"><em>screenPos</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span><span class="mlabel slot">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="geometrypage_8cpp_source.html">geometrypage.cpp</a> строка <a class="el" href="geometrypage_8cpp_source.html#l00255">255</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="geometrypage_8cpp_source.html#l00600">handleBezierDrag()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00490">handleDelaunayDrag()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00451">handleHullDrag()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00391">handleIntersectionDrag()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00541">handlePolygonDrag()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00345">handleTurnDrag()</a> и <a class="el" href="geometrypage_8h_source.html#l00085">m_currentTask</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classGeometryPage_a2d9f83accc5c03c75ef3c7e706716dfb_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="af2d0477ad7f1427fc470859223d24cd0" name="af2d0477ad7f1427fc470859223d24cd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2d0477ad7f1427fc470859223d24cd0">&#9670;&#160;</a></span>on_circumcirclesCheckBox_toggled</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GeometryPage::on_circumcirclesCheckBox_toggled </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>checked</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span><span class="mlabel slot">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="geometrypage_8cpp_source.html">geometrypage.cpp</a> строка <a class="el" href="geometrypage_8cpp_source.html#l00213">213</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="geometrypage_8h_source.html#l00080">ui</a>.</p>
+
+</div>
+</div>
+<a id="a999b1d336f50d397868ab4790189ff04" name="a999b1d336f50d397868ab4790189ff04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a999b1d336f50d397868ab4790189ff04">&#9670;&#160;</a></span>on_clearButton_clicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GeometryPage::on_clearButton_clicked </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span><span class="mlabel slot">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="geometrypage_8cpp_source.html">geometrypage.cpp</a> строка <a class="el" href="geometrypage_8cpp_source.html#l00218">218</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="geometrypage_8cpp_source.html#l00056">clearScene()</a> и <a class="el" href="#a4ac016dceaf16fde96c2aed328b0e50d">logMessage()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classGeometryPage_a999b1d336f50d397868ab4790189ff04_cgraph.svg" width="486" height="91"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a91d1ac3960a9a2e31af6e79d8d048842" name="a91d1ac3960a9a2e31af6e79d8d048842"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91d1ac3960a9a2e31af6e79d8d048842">&#9670;&#160;</a></span>on_onlineCheckBox_toggled</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GeometryPage::on_onlineCheckBox_toggled </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>checked</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span><span class="mlabel slot">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="geometrypage_8cpp_source.html">geometrypage.cpp</a> строка <a class="el" href="geometrypage_8cpp_source.html#l00191">191</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="geometrypage_8cpp_source.html#l00607">computeBezier()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00502">computeDelaunay()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00463">computeHull()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00403">computeIntersection()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00558">computePolygonOperation()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00301">computeTurn()</a>, <a class="el" href="geometrypage_8h_source.html#l00085">m_currentTask</a> и <a class="el" href="geometrypage_8h_source.html#l00081">m_points</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classGeometryPage_a91d1ac3960a9a2e31af6e79d8d048842_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a5e401c179a58fb115a86b603312be0da" name="a5e401c179a58fb115a86b603312be0da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e401c179a58fb115a86b603312be0da">&#9670;&#160;</a></span>onTaskChanged()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GeometryPage::onTaskChanged </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>index</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="geometrypage_8cpp_source.html">geometrypage.cpp</a> строка <a class="el" href="geometrypage_8cpp_source.html#l00186">186</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="geometrypage_8cpp_source.html#l00066">selectTask()</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="geometrypage_8cpp_source.html#l00030">GeometryPage()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classGeometryPage_a5e401c179a58fb115a86b603312be0da_cgraph.svg" width="100%" height="368"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classGeometryPage_a5e401c179a58fb115a86b603312be0da_icgraph.svg" width="508" height="63"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a7b4530bb76653adf3d2d82d1a01c38ff" name="a7b4530bb76653adf3d2d82d1a01c38ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b4530bb76653adf3d2d82d1a01c38ff">&#9670;&#160;</a></span>selectTask()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GeometryPage::selectTask </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>task</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="geometrypage_8cpp_source.html">geometrypage.cpp</a> строка <a class="el" href="geometrypage_8cpp_source.html#l00066">66</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="geometrypage_8cpp_source.html#l00056">clearScene()</a>, <a class="el" href="geometrypage_8h_source.html#l00085">m_currentTask</a>, <a class="el" href="geometrypage_8cpp_source.html#l00180">showLongArithmeticPage()</a> и <a class="el" href="geometrypage_8h_source.html#l00080">ui</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="geometrypage_8cpp_source.html#l00030">GeometryPage()</a> и <a class="el" href="geometrypage_8cpp_source.html#l00186">onTaskChanged()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classGeometryPage_a7b4530bb76653adf3d2d82d1a01c38ff_cgraph.svg" width="542" height="91"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classGeometryPage_a7b4530bb76653adf3d2d82d1a01c38ff_icgraph.svg" width="100%" height="366"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a057cf08f9c927e9745c4d533a381aaea" name="a057cf08f9c927e9745c4d533a381aaea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a057cf08f9c927e9745c4d533a381aaea">&#9670;&#160;</a></span>showLongArithmeticPage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GeometryPage::showLongArithmeticPage </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>visible</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="geometrypage_8cpp_source.html">geometrypage.cpp</a> строка <a class="el" href="geometrypage_8cpp_source.html#l00180">180</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="geometrypage_8h_source.html#l00080">ui</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="geometrypage_8cpp_source.html#l00066">selectTask()</a>.</p>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classGeometryPage_a057cf08f9c927e9745c4d533a381aaea_icgraph.svg" width="100%" height="366"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Данные класса</h2>
+<a id="aaf0da91936f1ea4f61be077109b349e1" name="aaf0da91936f1ea4f61be077109b349e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf0da91936f1ea4f61be077109b349e1">&#9670;&#160;</a></span>m_currentTask</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int GeometryPage::m_currentTask = 1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="geometrypage_8h_source.html">geometrypage.h</a> строка <a class="el" href="geometrypage_8h_source.html#l00085">85</a></p>
+
+<p class="reference">Используется в <a class="el" href="geometrypage_8cpp_source.html#l00558">computePolygonOperation()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00208">on_bezierSlider_valueChanged()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00224">on_calculateButton_clicked()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00239">on_canvas_clicked()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00255">on_canvas_pointMoved()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00191">on_onlineCheckBox_toggled()</a> и <a class="el" href="geometrypage_8cpp_source.html#l00066">selectTask()</a>.</p>
+
+</div>
+</div>
+<a id="a46b6f387963e57709bbb0827a46c7159" name="a46b6f387963e57709bbb0827a46c7159"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46b6f387963e57709bbb0827a46c7159">&#9670;&#160;</a></span>m_points</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="structgeometry_1_1Point.html">geometry::Point</a>&gt; GeometryPage::m_points</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="geometrypage_8h_source.html">geometrypage.h</a> строка <a class="el" href="geometrypage_8h_source.html#l00081">81</a></p>
+
+<p class="reference">Используется в <a class="el" href="geometrypage_8cpp_source.html#l00056">clearScene()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00607">computeBezier()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00502">computeDelaunay()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00463">computeHull()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00403">computeIntersection()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00301">computeTurn()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00590">handleBezierClick()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00600">handleBezierDrag()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00478">handleDelaunayClick()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00490">handleDelaunayDrag()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00438">handleHullClick()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00451">handleHullDrag()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00366">handleIntersectionClick()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00391">handleIntersectionDrag()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00278">handleTurnClick()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00345">handleTurnDrag()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00208">on_bezierSlider_valueChanged()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00224">on_calculateButton_clicked()</a> и <a class="el" href="geometrypage_8cpp_source.html#l00191">on_onlineCheckBox_toggled()</a>.</p>
+
+</div>
+</div>
+<a id="af160b5db7a54477af72cfb0fb0a51d59" name="af160b5db7a54477af72cfb0fb0a51d59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af160b5db7a54477af72cfb0fb0a51d59">&#9670;&#160;</a></span>m_polygonA</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="structgeometry_1_1Point.html">geometry::Point</a>&gt; GeometryPage::m_polygonA</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="geometrypage_8h_source.html">geometrypage.h</a> строка <a class="el" href="geometrypage_8h_source.html#l00082">82</a></p>
+
+<p class="reference">Используется в <a class="el" href="geometrypage_8cpp_source.html#l00056">clearScene()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00558">computePolygonOperation()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00524">handlePolygonClick()</a> и <a class="el" href="geometrypage_8cpp_source.html#l00541">handlePolygonDrag()</a>.</p>
+
+</div>
+</div>
+<a id="a2bebd56bce64ae1e0ffa448947fcf97b" name="a2bebd56bce64ae1e0ffa448947fcf97b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bebd56bce64ae1e0ffa448947fcf97b">&#9670;&#160;</a></span>m_polygonB</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="structgeometry_1_1Point.html">geometry::Point</a>&gt; GeometryPage::m_polygonB</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="geometrypage_8h_source.html">geometrypage.h</a> строка <a class="el" href="geometrypage_8h_source.html#l00083">83</a></p>
+
+<p class="reference">Используется в <a class="el" href="geometrypage_8cpp_source.html#l00056">clearScene()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00558">computePolygonOperation()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00524">handlePolygonClick()</a> и <a class="el" href="geometrypage_8cpp_source.html#l00541">handlePolygonDrag()</a>.</p>
+
+</div>
+</div>
+<a id="aa5b999969872e3bab6cd0ac9181cca8c" name="aa5b999969872e3bab6cd0ac9181cca8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5b999969872e3bab6cd0ac9181cca8c">&#9670;&#160;</a></span>m_polygonPointBindings</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::pair&lt;int, int&gt; &gt; GeometryPage::m_polygonPointBindings</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="geometrypage_8h_source.html">geometrypage.h</a> строка <a class="el" href="geometrypage_8h_source.html#l00084">84</a></p>
+
+<p class="reference">Используется в <a class="el" href="geometrypage_8cpp_source.html#l00056">clearScene()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00524">handlePolygonClick()</a> и <a class="el" href="geometrypage_8cpp_source.html#l00541">handlePolygonDrag()</a>.</p>
+
+</div>
+</div>
+<a id="a68c8501f25ae9682080af27d8cadeb27" name="a68c8501f25ae9682080af27d8cadeb27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68c8501f25ae9682080af27d8cadeb27">&#9670;&#160;</a></span>ui</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Ui::GeometryPage* GeometryPage::ui</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="geometrypage_8h_source.html">geometrypage.h</a> строка <a class="el" href="geometrypage_8h_source.html#l00080">80</a></p>
+
+<p class="reference">Используется в <a class="el" href="geometrypage_8cpp_source.html#l00056">clearScene()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00607">computeBezier()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00502">computeDelaunay()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00463">computeHull()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00403">computeIntersection()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00558">computePolygonOperation()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00301">computeTurn()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00030">GeometryPage()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00590">handleBezierClick()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00600">handleBezierDrag()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00478">handleDelaunayClick()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00490">handleDelaunayDrag()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00438">handleHullClick()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00451">handleHullDrag()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00366">handleIntersectionClick()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00391">handleIntersectionDrag()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00524">handlePolygonClick()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00541">handlePolygonDrag()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00278">handleTurnClick()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00345">handleTurnDrag()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00213">on_circumcirclesCheckBox_toggled()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00066">selectTask()</a>, <a class="el" href="geometrypage_8cpp_source.html#l00180">showLongArithmeticPage()</a> и <a class="el" href="geometrypage_8cpp_source.html#l00051">~GeometryPage()</a>.</p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>src/apps/GeometryWorkbench/<a class="el" href="geometrypage_8h_source.html">geometrypage.h</a></li>
+<li>src/apps/GeometryWorkbench/<a class="el" href="geometrypage_8cpp_source.html">geometrypage.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="classGeometryPage.html">GeometryPage</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

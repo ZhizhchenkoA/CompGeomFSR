@@ -1,0 +1,13 @@
+<map id="bigint::BigInteger::normalize" name="bigint::BigInteger::normalize">
+<area shape="rect" id="Node000001" title=" " alt="" coords="368,75,501,119"/>
+<area shape="rect" id="Node000002" href="$classbigint_1_1BigInteger.html#a5b27ffacebc3458950b56d14b2d3a9a1" title=" " alt="" coords="187,5,320,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="358,69,313,53,314,48,363,68"/>
+<area shape="rect" id="Node000003" href="$classbigint_1_1BigInteger.html#aff8518e21f10a4e1645a35dd28595d18" title=" " alt="" coords="187,75,320,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="350,97,320,100,320,94,355,97"/>
+<area shape="rect" id="Node000005" href="$classbigint_1_1BigInteger.html#a4796ebd40af5f92c92bdea11ca37347f" title="Разбирает десятичную строку со знаком; при ошибке возвращает false." alt="" coords="187,144,320,189"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="363,125,314,146,313,141,358,126"/>
+<area shape="rect" id="Node000004" href="$classbigint_1_1BigInteger.html#a1054e51808fad21855bed48eacd7500e" title="Сложение, вычитание и умножение произвольных целых." alt="" coords="5,75,139,119"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="169,98,139,100,138,94,174,96"/>
+<area shape="rect" id="Node000006" href="$classbigint_1_1BigInteger.html#a00e938502751664cf35c3681f338b971" title=" " alt="" coords="5,144,139,189"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="169,167,139,169,139,164,174,166"/>
+</map>

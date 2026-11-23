@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="exact__predicate_8cpp" kind="file" language="C++">
+    <compoundname>exact_predicate.cpp</compoundname>
+    <includes refid="exact__predicate_8h" local="yes">bigint/exact_predicate.h</includes>
+    <includes local="no">algorithm</includes>
+    <includes local="no">cctype</includes>
+    <includes local="no">limits</includes>
+    <includes local="no">stdexcept</includes>
+    <includes refid="bigint_8h" local="yes">bigint/bigint.h</includes>
+    <incdepgraph>
+      <node id="9">
+        <label>bigint/bigint.h</label>
+        <link refid="bigint_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>src/lib/bigint/exact_predicate.cpp</label>
+        <link refid="exact__predicate_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>bigint/exact_predicate.h</label>
+        <link refid="exact__predicate_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>algorithm</label>
+      </node>
+      <node id="3">
+        <label>array</label>
+      </node>
+      <node id="6">
+        <label>cctype</label>
+      </node>
+      <node id="10">
+        <label>cstdint</label>
+      </node>
+      <node id="7">
+        <label>limits</label>
+      </node>
+      <node id="8">
+        <label>stdexcept</label>
+      </node>
+      <node id="4">
+        <label>string</label>
+      </node>
+      <node id="11">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacebigint">bigint</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="exact__predicate_8h" kindref="compound">bigint/exact_predicate.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;algorithm&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cctype&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;limits&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdexcept&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="bigint_8h" kindref="compound">bigint/bigint.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacebigint" kindref="compound">bigint</ref><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">Decimal<sp/>{<sp/>BigInteger<sp/>mantissa;<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>exponent<sp/>=<sp/>0;<sp/>};</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>parseDecimal(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>input,<sp/>Decimal*<sp/>value,<sp/>std::string*<sp/>error)</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>text;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>ch<sp/>:<sp/>input)<sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!std::isspace(</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(ch)))<sp/>text<sp/>+=<sp/>ch;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::size_t<sp/>exponentPosition<sp/>=<sp/>text.find_first_of(</highlight><highlight class="stringliteral">&quot;eE&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(exponentPosition<sp/>!=<sp/>std::string::npos<sp/>&amp;&amp;<sp/>text.find_first_of(</highlight><highlight class="stringliteral">&quot;eE&quot;</highlight><highlight class="normal">,<sp/>exponentPosition<sp/>+<sp/>1)<sp/>!=<sp/>std::string::npos)<sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*error<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;несколько<sp/>символов<sp/>экспоненты&quot;</highlight><highlight class="normal">;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>number<sp/>=<sp/>text.substr(0,<sp/>exponentPosition);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>exponent<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(exponentPosition<sp/>!=<sp/>std::string::npos)<sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::size_t<sp/>read<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exponent<sp/>=<sp/>std::stoi(text.substr(exponentPosition<sp/>+<sp/>1),<sp/>&amp;read);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(read<sp/>!=<sp/>text.size()<sp/>-<sp/>exponentPosition<sp/>-<sp/>1)<sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>std::invalid_argument(</highlight><highlight class="stringliteral">&quot;tail&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>(...)<sp/>{<sp/>*error<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;некорректная<sp/>экспонента&quot;</highlight><highlight class="normal">;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(number.empty())<sp/>{<sp/>*error<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;пустое<sp/>число&quot;</highlight><highlight class="normal">;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sign<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(number.front()<sp/>==<sp/></highlight><highlight class="charliteral">&apos;+&apos;</highlight><highlight class="normal"><sp/>||<sp/>number.front()<sp/>==<sp/></highlight><highlight class="charliteral">&apos;-&apos;</highlight><highlight class="normal">)<sp/>{<sp/>sign<sp/>=<sp/>number.front()<sp/>==<sp/></highlight><highlight class="charliteral">&apos;-&apos;</highlight><highlight class="normal"><sp/>?<sp/>-1<sp/>:<sp/>1;<sp/>number.erase(0,<sp/>1);<sp/>}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::size_t<sp/>separator<sp/>=<sp/>number.find_first_of(</highlight><highlight class="stringliteral">&quot;.,&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(separator<sp/>!=<sp/>std::string::npos<sp/>&amp;&amp;<sp/>number.find_first_of(</highlight><highlight class="stringliteral">&quot;.,&quot;</highlight><highlight class="normal">,<sp/>separator<sp/>+<sp/>1)<sp/>!=<sp/>std::string::npos)<sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*error<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;несколько<sp/>десятичных<sp/>разделителей&quot;</highlight><highlight class="normal">;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>digits<sp/>=<sp/>separator<sp/>==<sp/>std::string::npos<sp/>?<sp/>number<sp/>:<sp/>number.substr(0,<sp/>separator)<sp/>+<sp/>number.substr(separator<sp/>+<sp/>1);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(digits.empty()<sp/>||<sp/>!std::all_of(digits.begin(),<sp/>digits.end(),<sp/>[](</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>ch)<sp/>{<sp/>return<sp/>ch<sp/>&gt;=<sp/></highlight><highlight class="stringliteral">&apos;0&apos;</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/>ch<sp/>&lt;=<sp/></highlight><highlight class="stringliteral">&apos;9&apos;</highlight><highlight class="normal">;<sp/>}))<sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*error<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;ожидались<sp/>цифры&quot;</highlight><highlight class="normal">;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>fractional<sp/>=<sp/>separator<sp/>==<sp/>std::string::npos<sp/>?<sp/>0<sp/>:<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(number.size()<sp/>-<sp/>separator<sp/>-<sp/>1);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(digits.size()<sp/>&gt;<sp/>1<sp/>&amp;&amp;<sp/>digits.front()<sp/>==<sp/></highlight><highlight class="charliteral">&apos;0&apos;</highlight><highlight class="normal">)<sp/>digits.erase(0,<sp/>1);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classbigint_1_1BigInteger" kindref="compound">BigInteger</ref><sp/>mantissa;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="classbigint_1_1BigInteger_1a4796ebd40af5f92c92bdea11ca37347f" kindref="member">BigInteger::tryParse</ref>((sign<sp/>&lt;<sp/>0<sp/>?<sp/></highlight><highlight class="stringliteral">&quot;-&quot;</highlight><highlight class="normal"><sp/>:<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)<sp/>+<sp/>digits,<sp/>&amp;mantissa))<sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*error<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;некорректное<sp/>число&quot;</highlight><highlight class="normal">;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(std::abs(exponent)<sp/>&gt;<sp/>100000<sp/>||<sp/>std::abs(exponent<sp/>-<sp/>fractional)<sp/>&gt;<sp/>100000)<sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*error<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;слишком<sp/>большая<sp/>экспонента&quot;</highlight><highlight class="normal">;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>*value<sp/>=<sp/>{mantissa,<sp/>exponent<sp/>-<sp/>fractional};</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal">Decimal<sp/>subtract(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Decimal&amp;<sp/>left,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Decimal&amp;<sp/>right)</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>exponent<sp/>=<sp/>std::min(left.exponent,<sp/>right.exponent);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classbigint_1_1BigInteger" kindref="compound">BigInteger</ref><sp/>leftValue<sp/>=<sp/>left.mantissa<sp/>*<sp/><ref refid="classbigint_1_1BigInteger_1a00e938502751664cf35c3681f338b971" kindref="member">BigInteger::powerOfTen</ref>(left.exponent<sp/>-<sp/>exponent);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classbigint_1_1BigInteger" kindref="compound">BigInteger</ref><sp/>rightValue<sp/>=<sp/>right.mantissa<sp/>*<sp/><ref refid="classbigint_1_1BigInteger_1a00e938502751664cf35c3681f338b971" kindref="member">BigInteger::powerOfTen</ref>(right.exponent<sp/>-<sp/>exponent);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{leftValue<sp/>-<sp/>rightValue,<sp/>exponent};</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal">Decimal<sp/>multiply(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Decimal&amp;<sp/>left,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Decimal&amp;<sp/>right)</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{left.mantissa<sp/>*<sp/>right.mantissa,<sp/>left.exponent<sp/>+<sp/>right.exponent};</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="namespacebigint_1a2646acc61d0e940c36f58f118a5095d1" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespacebigint_1a2646acc61d0e940c36f58f118a5095d1" kindref="member">exactTurn</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::array&lt;std::string,<sp/>6&gt;&amp;<sp/>coordinates,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>sign,<sp/>std::string*<sp/>error)</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(sign<sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal"><sp/>||<sp/>error<sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>std::array&lt;Decimal,<sp/>6&gt;<sp/>values;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(std::size_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>values.size();<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!parseDecimal(coordinates[i],<sp/>&amp;values[i],<sp/>error))<sp/></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Decimal<sp/>dxAB<sp/>=<sp/>subtract(values[2],<sp/>values[0]);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Decimal<sp/>dyAB<sp/>=<sp/>subtract(values[3],<sp/>values[1]);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Decimal<sp/>dxAP<sp/>=<sp/>subtract(values[4],<sp/>values[0]);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Decimal<sp/>dyAP<sp/>=<sp/>subtract(values[5],<sp/>values[1]);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Decimal<sp/>first<sp/>=<sp/>multiply(dxAB,<sp/>dyAP);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Decimal<sp/>second<sp/>=<sp/>multiply(dyAB,<sp/>dxAP);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>*sign<sp/>=<sp/>subtract(first,<sp/>second).mantissa.sign();</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>bigint</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="src/lib/bigint/exact_predicate.cpp"/>
+  </compounddef>
+</doxygen>

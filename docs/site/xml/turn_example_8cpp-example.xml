@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="turn_example_8cpp-example" kind="example">
+    <compoundname>turn_example.cpp</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<sect1 id="/home/user/Документы/CompGeom/docs/mainpage.md_1quickstart">
+<title>Быстрый старт</title><para><programlisting filename=".bash"><codeline><highlight class="normal">cmake<sp/>-S<sp/>.<sp/>-B<sp/>build</highlight></codeline>
+<codeline><highlight class="normal">cmake<sp/>--build<sp/>build<sp/>--target<sp/>docs</highlight></codeline>
+</programlisting></para>
+<para>HTML находится в <computeroutput>build/docs/html/index.html</computeroutput>, XML — в <computeroutput>build/docs/xml/</computeroutput>. */ <programlisting filename="turn_example.cpp"><codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="predicates_8h" kindref="compound">geometry/predicates.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" kindref="member">main</ref>()</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structgeometry_1_1Point" kindref="compound">geometry::Point</ref><sp/>a{0.0,<sp/>0.0};</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structgeometry_1_1Point" kindref="compound">geometry::Point</ref><sp/>b{10.0,<sp/>0.0};</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structgeometry_1_1Point" kindref="compound">geometry::Point</ref><sp/>p{5.0,<sp/>3.0};</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacegeometry_1a1d29367c0cb96e7c1a1b871b786ffacd" kindref="member">geometry::turn</ref>(a,<sp/>b,<sp/>p)<sp/>==<sp/>1<sp/>?<sp/>0<sp/>:<sp/>1;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>
+</sect1>
+    </detaileddescription>
+    <location file="docs/mainpage.md"/>
+  </compounddef>
+</doxygen>

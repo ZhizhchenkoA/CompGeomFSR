@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="README_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>Geometry<sp/>Workbench<sp/>—<sp/>документация</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Назначение</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Проект<sp/>—<sp/>Qt-приложение<sp/>для<sp/>интерактивной<sp/>демонстрации<sp/>алгоритмов<sp/>компьютерной<sp/>геометрии.<sp/>Пользователь<sp/>выбирает<sp/>задачу,<sp/>задаёт<sp/>точки<sp/>кликами<sp/>или<sp/>полями<sp/>ввода,<sp/>а<sp/>страница<sp/>передаёт<sp/>данные<sp/>в<sp/>чистые<sp/>C++-библиотеки<sp/>и<sp/>визуализирует<sp/>результат.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Архитектура</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*<sp/>`src/apps/GeometryWorkbench`<sp/>—<sp/>приложение<sp/>Qt:<sp/>главное<sp/>окно,<sp/>выбор<sp/>задания,<sp/>холст<sp/>и<sp/>формы.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>`src/lib/geometry`<sp/>—<sp/>алгоритмы<sp/>над<sp/>точками<sp/>и<sp/>многоугольниками<sp/>без<sp/>зависимости<sp/>от<sp/>Qt:<sp/>предикаты,<sp/>пересечения,<sp/>оболочка,<sp/>Делоне<sp/>и<sp/>булевы<sp/>операции.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>`src/lib/geometry_qt`<sp/>—<sp/>единственный<sp/>адаптер<sp/>координат:<sp/>экранная<sp/>ось<sp/>`Y`<sp/>направлена<sp/>вниз,<sp/>математическая<sp/>—<sp/>вверх.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>`src/lib/bigint`<sp/>—<sp/>знаковое<sp/>целое<sp/>произвольной<sp/>длины<sp/>и<sp/>точный<sp/>разбор<sp/>десятичных<sp/>чисел<sp/>для<sp/>задания<sp/>3.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>`src/lib/bezier`<sp/>—<sp/>вычисление<sp/>кривых<sp/>Безье<sp/>и<sp/>уровней<sp/>де<sp/>Кастельжо<sp/>для<sp/>задания<sp/>13.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Алгоритмы<sp/>не<sp/>рисуют<sp/>интерфейс.<sp/>Они<sp/>получают<sp/>значения<sp/>из<sp/>модели,<sp/>возвращают<sp/>структуры<sp/>результата,<sp/>а<sp/>`GeometryCanvas`<sp/>переводит<sp/>их<sp/>в<sp/>экранные<sp/>координаты<sp/>и<sp/>рисует<sp/>слои:<sp/>сетку,<sp/>исходные<sp/>объекты,<sp/>результат<sp/>и<sp/>легенду.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Основные<sp/>алгоритмы</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*<sp/>`geometry::turn`<sp/>и<sp/>`geometry::cross`<sp/>—<sp/>знак<sp/>ориентированной<sp/>площади<sp/>треугольника.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>`geometry::intersectSegments`<sp/>—<sp/>пересечение<sp/>отрезков,<sp/>включая<sp/>точку,<sp/>общий<sp/>участок<sp/>и<sp/>вырожденные<sp/>отрезки.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>`geometry::convexHull`<sp/>—<sp/>монотонная<sp/>цепь<sp/>Эндрю<sp/>с<sp/>удалением<sp/>дублей<sp/>и<sp/>коллинеарных<sp/>внутренних<sp/>точек.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>`geometry::delaunayTriangulation`<sp/>—<sp/>инкрементальный<sp/>Bowyer–Watson<sp/>со<sp/>структурой<sp/>описанных<sp/>окружностей.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>`geometry::convexPolygonBoolean`<sp/>—<sp/>операции<sp/>пересечения,<sp/>объединения<sp/>и<sp/>разности<sp/>выпуклых<sp/>многоугольников<sp/>через<sp/>разбиение<sp/>границ<sp/>на<sp/>фрагменты<sp/>и<sp/>сборку<sp/>контуров.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>`bigint::exactTurn`<sp/>—<sp/>точное<sp/>вычисление<sp/>`(B<sp/>−<sp/>A)<sp/>×<sp/>(P<sp/>−<sp/>A)`<sp/>после<sp/>приведения<sp/>десятичных<sp/>мантисс<sp/>к<sp/>общей<sp/>степени<sp/>десяти.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>`bezier::deCasteljau`<sp/>—<sp/>линейная<sp/>интерполяция<sp/>уровней<sp/>до<sp/>одной<sp/>точки;<sp/>`sample`<sp/>и<sp/>`composite`<sp/>строят<sp/>полилинии<sp/>для<sp/>визуализации.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Сборка<sp/>и<sp/>запуск</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```bash</highlight></codeline>
+<codeline><highlight class="normal">cmake<sp/>-S<sp/>.<sp/>-B<sp/>build</highlight></codeline>
+<codeline><highlight class="normal">cmake<sp/>--build<sp/>build<sp/>-j2</highlight></codeline>
+<codeline><highlight class="normal">./build/src/apps/GeometryWorkbench/GeometryWorkbench</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Генерация<sp/>API-документации</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Нужен<sp/>установленный<sp/>`doxygen`:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```bash</highlight></codeline>
+<codeline><highlight class="normal">doxygen<sp/>Doxyfile</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Главная<sp/>страница<sp/>будет<sp/>создана<sp/>в<sp/>`docs/site/html/index.html`.<sp/>Из<sp/>CMake<sp/>можно<sp/>использовать<sp/>цель:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```bash</highlight></codeline>
+<codeline><highlight class="normal">cmake<sp/>--build<sp/>build<sp/>--target<sp/>docs</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">`Doxyfile`<sp/>читает<sp/>заголовки<sp/>и<sp/>исходники<sp/>из<sp/>`src`,<sp/>извлекает<sp/>публичные<sp/>и<sp/>приватные<sp/>сущности<sp/>и<sp/>сохраняет<sp/>HTML-дерево<sp/>с<sp/>исходниками<sp/>и<sp/>перекрёстными<sp/>ссылками.<sp/>Каталог<sp/>`docs/site/html`<sp/>—<sp/>готовый<sp/>статический<sp/>сайт:<sp/>его<sp/>следует<sp/>добавить<sp/>в<sp/>Git<sp/>вместе<sp/>с<sp/>изменениями<sp/>документации.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Публикация<sp/>на<sp/>GitHub<sp/>Pages</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">В<sp/>проекте<sp/>есть<sp/>workflow<sp/>[`.github/workflows/deploy-docs.yml`](../.github/workflows/deploy-docs.yml).</highlight></codeline>
+<codeline><highlight class="normal">Он<sp/>не<sp/>запускает<sp/>Doxygen<sp/>на<sp/>сервере:<sp/>workflow<sp/>публикует<sp/>уже<sp/>подготовленный<sp/>каталог<sp/>`docs/site/html`<sp/>на<sp/>GitHub<sp/>Pages.<sp/>Поэтому<sp/>после<sp/>изменения<sp/>комментариев,<sp/>исходников<sp/>или<sp/>`Doxyfile`<sp/>сначала<sp/>локально<sp/>выполните<sp/>`doxygen<sp/>Doxyfile`,<sp/>затем<sp/>добавьте<sp/>обновлённый<sp/>`docs/site`<sp/>в<sp/>коммит.<sp/>Запуск<sp/>происходит<sp/>при<sp/>изменении<sp/>исходного<sp/>кода,<sp/>`docs`<sp/>или<sp/>`Doxyfile`<sp/>в<sp/>ветках<sp/>`main`<sp/>и<sp/>`master`;<sp/>его<sp/>также<sp/>можно<sp/>запустить<sp/>вручную<sp/>через<sp/>вкладку<sp/>**Actions**.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Перед<sp/>первым<sp/>запуском<sp/>в<sp/>репозитории<sp/>откройте<sp/>**Settings<sp/>→<sp/>Pages**<sp/>и<sp/>выберите<sp/>источник<sp/>**GitHub<sp/>Actions**.<sp/>После<sp/>успешного<sp/>job<sp/>`Deploy<sp/>to<sp/>GitHub<sp/>Pages`<sp/>ссылка<sp/>на<sp/>опубликованную<sp/>документацию<sp/>появится<sp/>в<sp/>его<sp/>выводе<sp/>и<sp/>в<sp/>разделе<sp/>Pages.<sp/>Для<sp/>пользовательского<sp/>домена<sp/>настройте<sp/>его<sp/>там<sp/>же:<sp/>файл<sp/>`CNAME`<sp/>сам<sp/>по<sp/>себе<sp/>домен<sp/>не<sp/>подключает.</highlight></codeline>
+    </programlisting>
+    <location file="docs/README.md"/>
+  </compounddef>
+</doxygen>

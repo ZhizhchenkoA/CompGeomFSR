@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Geometry Workbench: Файл src/lib/bezier/bezier.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Geometry Workbench<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Интерактивный учебный стенд по компьютерной геометрии</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('bezier_8cpp.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Файл bezier.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="bezier_8h_source.html">bezier/bezier.h</a>&quot;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для bezier.cpp:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="bezier_8cpp__incl.svg" width="268" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+<p><a href="bezier_8cpp_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
+Пространства имен</h2></td></tr>
+<tr class="memitem:bezier" id="r_bezier"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespacebezier.html">bezier</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:a16319ee9d71db52368b5ce95b86794e2" id="r_a16319ee9d71db52368b5ce95b86794e2"><td class="memItemLeft">std::vector&lt; std::vector&lt; <a class="el" href="structgeometry_1_1Point.html">geometry::Point</a> &gt; &gt;&#160;</td><td class="memItemRight"><a class="el" href="namespacebezier.html#a16319ee9d71db52368b5ce95b86794e2">bezier::deCasteljauLevels</a> (const std::vector&lt; <a class="el" href="structgeometry_1_1Point.html">geometry::Point</a> &gt; &amp;control, double t)</td></tr>
+<tr class="memdesc:a16319ee9d71db52368b5ce95b86794e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает все промежуточные уровни построения де Кастельжо.  <br /></td></tr>
+<tr class="memitem:aa6f0140841e402a3cfa3ba2aba8044d0" id="r_aa6f0140841e402a3cfa3ba2aba8044d0"><td class="memItemLeft"><a class="el" href="structgeometry_1_1Point.html">geometry::Point</a>&#160;</td><td class="memItemRight"><a class="el" href="namespacebezier.html#aa6f0140841e402a3cfa3ba2aba8044d0">bezier::deCasteljau</a> (const std::vector&lt; <a class="el" href="structgeometry_1_1Point.html">geometry::Point</a> &gt; &amp;control, double t)</td></tr>
+<tr class="memdesc:aa6f0140841e402a3cfa3ba2aba8044d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Операции с параметрическими кривыми Безье.  <br /></td></tr>
+<tr class="memitem:a3e86093165e34203620df7fe7623a57e" id="r_a3e86093165e34203620df7fe7623a57e"><td class="memItemLeft">std::vector&lt; <a class="el" href="structgeometry_1_1Point.html">geometry::Point</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="namespacebezier.html#a3e86093165e34203620df7fe7623a57e">bezier::sample</a> (const std::vector&lt; <a class="el" href="structgeometry_1_1Point.html">geometry::Point</a> &gt; &amp;control, int count=160)</td></tr>
+<tr class="memdesc:a3e86093165e34203620df7fe7623a57e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Дискретизирует кривую в <span class="tt">count + 1</span> точках от <span class="tt">t = 0</span> до <span class="tt">t = 1</span>.  <br /></td></tr>
+<tr class="memitem:a501e022e378938e5a58777be3b250155" id="r_a501e022e378938e5a58777be3b250155"><td class="memItemLeft">std::vector&lt; <a class="el" href="structgeometry_1_1Point.html">geometry::Point</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="namespacebezier.html#a501e022e378938e5a58777be3b250155">bezier::composite</a> (const std::vector&lt; <a class="el" href="structgeometry_1_1Point.html">geometry::Point</a> &gt; &amp;control, int degree, int countPerSegment=70)</td></tr>
+<tr class="memdesc:a501e022e378938e5a58777be3b250155"><td class="mdescLeft">&#160;</td><td class="mdescRight">Строит составную кривую из окон <span class="tt">degree + 1</span> с общей точкой сегментов.  <br /></td></tr>
+</table>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a href="dir_c85d3e3c5052e9ad9ce18c6863244a25.html">lib</a></li><li class="navelem"><a href="dir_9f4cc46cfa7e3d83e9373f8aee5dd2db.html">bezier</a></li><li class="navelem"><a href="bezier_8cpp.html">bezier.cpp</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

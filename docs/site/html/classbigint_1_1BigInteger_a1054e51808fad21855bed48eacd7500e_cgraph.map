@@ -1,0 +1,17 @@
+<map id="bigint::BigInteger::operator+=" name="bigint::BigInteger::operator+=">
+<area shape="rect" id="Node000001" title="Сложение, вычитание и умножение произвольных целых." alt="" coords="5,96,139,141"/>
+<area shape="rect" id="Node000002" href="$classbigint_1_1BigInteger.html#a14b57cd07047dc67628e7542f2acfbac" title=" " alt="" coords="187,5,320,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="117,93,195,55,192,59,120,98"/>
+<area shape="rect" id="Node000003" href="$classbigint_1_1BigInteger.html#aa5ebb91700ee66941995e9e0a1c5d507" title="Создаёт нулевое число." alt="" coords="368,96,501,141"/>
+<area shape="poly" id="edge4_Node000001_Node000003" title=" " alt="" coords="139,112,187,110,320,110,355,114,350,115,320,116,187,116,140,117"/>
+<area shape="rect" id="Node000004" href="$classbigint_1_1BigInteger.html#afa2c98c3611da550b4504a2117318fe0" title=" " alt="" coords="187,125,320,170"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="138,126,174,134,169,135,139,132"/>
+<area shape="rect" id="Node000005" href="$classbigint_1_1BigInteger.html#aff8518e21f10a4e1645a35dd28595d18" title=" " alt="" coords="187,195,320,239"/>
+<area shape="poly" id="edge7_Node000001_Node000005" title=" " alt="" coords="114,138,188,180,198,187,192,187,185,185,112,144"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="300,48,377,88,372,89,299,53"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="400,94,398,86,404,77,417,71,435,69,454,72,467,81,462,80,453,77,435,75,418,77,408,81,404,87,404,97"/>
+<area shape="poly" id="edge6_Node000004_Node000003" title=" " alt="" coords="320,134,356,131,350,132,321,140"/>
+<area shape="poly" id="edge8_Node000005_Node000003" title=" " alt="" coords="297,192,319,180,378,149,383,148,321,185,299,197"/>
+<area shape="rect" id="Node000006" href="$classbigint_1_1BigInteger.html#a1872052751396a6044b6e6bf3d606e0b" title=" " alt="" coords="368,195,501,239"/>
+<area shape="poly" id="edge9_Node000005_Node000006" title=" " alt="" coords="320,214,355,217,350,217,320,220"/>
+</map>

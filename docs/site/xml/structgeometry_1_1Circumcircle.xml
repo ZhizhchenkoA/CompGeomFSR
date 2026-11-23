@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="structgeometry_1_1Circumcircle" kind="struct" language="C++" prot="public">
+    <compoundname>geometry::Circumcircle</compoundname>
+    <includes refid="delaunay_8h" local="no">delaunay.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structgeometry_1_1Circumcircle_1a60121de2017744bb653f1b3f48add15e" prot="public" static="no" mutable="no">
+        <type><ref refid="structgeometry_1_1Point" kindref="compound">Point</ref></type>
+        <definition>Point geometry::Circumcircle::center</definition>
+        <argsstring></argsstring>
+        <name>center</name>
+        <qualifiedname>geometry::Circumcircle::center</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib/geometry/delaunay.h" line="12" column="11" bodyfile="src/lib/geometry/delaunay.h" bodystart="12" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgeometry_1_1Circumcircle_1a32c699d820c2087b08a632f5dfb0d5af" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double geometry::Circumcircle::radius</definition>
+        <argsstring></argsstring>
+        <name>radius</name>
+        <qualifiedname>geometry::Circumcircle::radius</qualifiedname>
+        <initializer>= 0.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib/geometry/delaunay.h" line="13" column="12" bodyfile="src/lib/geometry/delaunay.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Окружность, описанная около треугольника. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>geometry::Circumcircle</label>
+        <link refid="structgeometry_1_1Circumcircle"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>+center</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>geometry::Point</label>
+        <link refid="structgeometry_1_1Point"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/lib/geometry/delaunay.h" line="11" column="1" bodyfile="src/lib/geometry/delaunay.h" bodystart="11" bodyend="14"/>
+    <listofallmembers>
+      <member refid="structgeometry_1_1Circumcircle_1a60121de2017744bb653f1b3f48add15e" prot="public" virt="non-virtual"><scope>geometry::Circumcircle</scope><name>center</name></member>
+      <member refid="structgeometry_1_1Circumcircle_1a32c699d820c2087b08a632f5dfb0d5af" prot="public" virt="non-virtual"><scope>geometry::Circumcircle</scope><name>radius</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

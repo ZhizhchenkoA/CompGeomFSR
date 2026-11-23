@@ -1,0 +1,5 @@
+<map id="bezier::deCasteljau" name="bezier::deCasteljau">
+<area shape="rect" id="Node000001" title="Операции с параметрическими кривыми Безье." alt="" coords="5,5,152,33"/>
+<area shape="rect" id="Node000002" href="$namespacebezier.html#a16319ee9d71db52368b5ce95b86794e2" title="Возвращает все промежуточные уровни построения де Кастельжо." alt="" coords="200,5,388,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,17,186,19,181,19,152,22"/>
+</map>

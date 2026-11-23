@@ -1,0 +1,56 @@
+<map id="GeometryPage::on_onlineCheckBox_toggled" name="GeometryPage::on_onlineCheckBox_toggled">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,315,234,360"/>
+<area shape="rect" id="Node000002" href="$classGeometryPage.html#aa0380120b0b9e766b2e6d3c4d4192b27" title=" " alt="" coords="300,117,523,145"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="151,313,378,152,377,157,155,317"/>
+<area shape="rect" id="Node000008" href="$classGeometryPage.html#a740f2f65e615aad3fa3d3dafb2fd530f" title=" " alt="" coords="289,245,534,273"/>
+<area shape="poly" id="edge10_Node000001_Node000008" title=" " alt="" coords="185,312,281,283,321,275,317,278,282,288,188,317"/>
+<area shape="rect" id="Node000011" href="$classGeometryPage.html#ae4a1816822912d00197e9cfa375717d1" title=" " alt="" coords="307,349,516,377"/>
+<area shape="poly" id="edge14_Node000001_Node000011" title=" " alt="" coords="234,345,294,351,289,354,235,350"/>
+<area shape="rect" id="Node000014" href="$classGeometryPage.html#a589fc5e7e93427a3f2c34679279ec875" title=" " alt="" coords="282,297,541,325"/>
+<area shape="poly" id="edge19_Node000001_Node000014" title=" " alt="" coords="233,325,268,323,264,326,235,330"/>
+<area shape="rect" id="Node000017" href="$classGeometryPage.html#a73b11409c008e8a002cdf0b5b86d363d" title=" " alt="" coords="294,401,528,445"/>
+<area shape="poly" id="edge24_Node000001_Node000017" title=" " alt="" coords="191,358,282,386,311,395,306,397,281,391,192,363"/>
+<area shape="rect" id="Node000019" href="$classGeometryPage.html#aa685131d4c04dafba54ab095dc78952e" title=" " alt="" coords="307,504,516,532"/>
+<area shape="poly" id="edge29_Node000001_Node000019" title=" " alt="" coords="148,358,209,405,283,455,363,497,358,498,280,460,206,410,147,363"/>
+<area shape="rect" id="Node000003" href="$namespacebezier.html#a501e022e378938e5a58777be3b250155" title="Строит составную кривую из окон degree + 1 с общей точкой сегментов." alt="" coords="642,92,779,120"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="523,119,629,112,624,114,524,124"/>
+<area shape="rect" id="Node000004" href="$namespacebezier.html#a3e86093165e34203620df7fe7623a57e" title="Дискретизирует кривую в count + 1 точках от t = 0 до t = 1." alt="" coords="904,92,1022,120"/>
+<area shape="poly" id="edge8_Node000002_Node000004" title=" " alt="" coords="523,134,670,136,832,128,892,121,887,123,833,134,671,142,524,139"/>
+<area shape="rect" id="Node000005" href="$namespacebezier.html#aa6f0140841e402a3cfa3ba2aba8044d0" title="Операции с параметрическими кривыми Безье." alt="" coords="1094,41,1240,69"/>
+<area shape="poly" id="edge6_Node000002_Node000005" title=" " alt="" coords="451,114,515,94,589,78,722,61,855,53,1080,52,1075,54,855,58,722,67,589,83,517,100,454,119"/>
+<area shape="rect" id="Node000006" href="$namespacebezier.html#a16319ee9d71db52368b5ce95b86794e2" title="Возвращает все промежуточные уровни построения де Кастельжо." alt="" coords="1288,16,1476,44"/>
+<area shape="poly" id="edge7_Node000002_Node000006" title=" " alt="" coords="435,115,502,79,544,61,588,47,680,28,774,15,869,7,962,4,1134,6,1275,17,1270,19,1134,11,962,9,870,13,775,21,681,33,590,52,546,66,504,84,438,119"/>
+<area shape="rect" id="Node000007" href="$namespacegeometry__qt.html#ab38550851d7c6704f958a3edd7a2dc56" title="Обратное преобразование: геометрия &#45;&gt; экран." alt="" coords="626,245,795,273"/>
+<area shape="poly" id="edge9_Node000002_Node000007" title=" " alt="" coords="433,143,502,186,545,210,590,230,616,240,611,241,588,235,542,214,499,191,433,148"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="779,103,891,105,886,107,780,108"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="1021,89,1096,72,1091,74,1022,94"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1239,44,1275,42,1270,43,1241,49"/>
+<area shape="poly" id="edge13_Node000008_Node000007" title=" " alt="" coords="533,256,613,258,608,260,534,262"/>
+<area shape="rect" id="Node000009" href="$namespacegeometry.html#a9610a583f6dfe92c309727c15b9b3933" title="Триангуляция Делоне алгоритмом Bowyer–Watson." alt="" coords="593,193,828,221"/>
+<area shape="poly" id="edge11_Node000008_Node000009" title=" " alt="" coords="494,242,614,223,610,225,496,247"/>
+<area shape="rect" id="Node000010" href="$classGeometryPage.html#a4ac016dceaf16fde96c2aed328b0e50d" title=" " alt="" coords="609,349,812,377"/>
+<area shape="poly" id="edge12_Node000008_Node000010" title=" " alt="" coords="512,271,542,283,558,296,567,310,576,322,590,334,606,343,600,343,588,339,572,326,563,312,554,300,540,288,513,276"/>
+<area shape="poly" id="edge18_Node000011_Node000007" title=" " alt="" coords="511,346,540,334,554,322,563,310,572,296,588,283,614,274,609,277,590,288,576,300,567,313,558,326,542,339,514,351"/>
+<area shape="poly" id="edge17_Node000011_Node000010" title=" " alt="" coords="515,360,596,362,591,364,517,366"/>
+<area shape="rect" id="Node000012" href="$namespacegeometry.html#a6dfabff82b63c795670a97271b9908d2" title="Выпуклая оболочка множества точек алгоритмом Эндрю." alt="" coords="628,401,793,429"/>
+<area shape="poly" id="edge15_Node000011_Node000012" title=" " alt="" coords="495,375,616,398,611,399,495,380"/>
+<area shape="rect" id="Node000013" href="$group__geometry__predicates.html#gac3352a32baf1dd7d3620a1748dd4b78a" title="Векторное произведение (b &#45; a) x (c &#45; a)." alt="" coords="900,555,1026,582"/>
+<area shape="poly" id="edge16_Node000012_Node000013" title=" " alt="" coords="793,424,834,439,867,462,898,488,945,543,940,541,894,492,864,466,831,444,793,429"/>
+<area shape="poly" id="edge23_Node000014_Node000007" title=" " alt="" coords="494,294,614,275,609,277,496,299"/>
+<area shape="poly" id="edge22_Node000014_Node000010" title=" " alt="" coords="495,323,614,345,609,347,496,328"/>
+<area shape="rect" id="Node000015" href="$namespacegeometry.html#a88e1232746c80a5b9704832bd536724d" title="Находит пересечение замкнутых отрезков AB и CD." alt="" coords="604,297,817,325"/>
+<area shape="poly" id="edge20_Node000014_Node000015" title=" " alt="" coords="541,308,591,310,586,312,542,314"/>
+<area shape="rect" id="Node000016" href="$namespacegeometry.html#aa0dbefb85d58b0fc5c2ff74ff1d1c94b" title="Проверяет принадлежность точки отрезку с допуском." alt="" coords="880,400,1046,428"/>
+<area shape="poly" id="edge21_Node000015_Node000016" title=" " alt="" coords="793,323,833,335,886,361,932,391,927,390,883,365,831,340,793,328"/>
+<area shape="poly" id="edge28_Node000017_Node000007" title=" " alt="" coords="522,398,539,386,550,374,557,362,562,336,568,310,575,296,587,284,614,271,609,274,591,288,579,299,573,311,567,337,562,364,555,378,543,390,525,402"/>
+<area shape="poly" id="edge27_Node000017_Node000010" title=" " alt="" coords="525,398,626,380,621,381,527,403"/>
+<area shape="poly" id="edge25_Node000017_Node000012" title=" " alt="" coords="529,417,616,417,610,418,530,423"/>
+<area shape="rect" id="Node000018" href="$namespacegeometry.html#a9da2f54b6289b88e936abf857d44ea5e" title="Булева операция над двумя выпуклыми многоугольниками (CCW)." alt="" coords="589,453,832,481"/>
+<area shape="poly" id="edge26_Node000017_Node000018" title=" " alt="" coords="529,438,599,450,594,451,529,443"/>
+<area shape="poly" id="edge31_Node000019_Node000010" title=" " alt="" coords="457,501,499,482,539,456,554,439,562,421,570,404,587,388,597,385,602,382,591,392,575,407,566,424,558,441,543,460,501,487,458,506"/>
+<area shape="poly" id="edge30_Node000019_Node000013" title=" " alt="" coords="517,526,589,534,888,562,883,563,589,539,517,532"/>
+<area shape="poly" id="edge32_Node000019_Node000016" title=" " alt="" coords="516,523,588,523,668,519,751,509,831,490,886,465,930,438,935,436,888,470,833,495,752,514,668,525,588,529,517,528"/>
+<area shape="rect" id="Node000020" href="$namespacegeometry.html#a1d29367c0cb96e7c1a1b871b786ffacd" title="Предикат поворота." alt="" coords="652,605,769,633"/>
+<area shape="poly" id="edge33_Node000019_Node000020" title=" " alt="" coords="447,530,590,585,640,602,634,601,588,590,446,535"/>
+<area shape="poly" id="edge34_Node000020_Node000013" title=" " alt="" coords="770,605,882,584,887,584,770,610"/>
+</map>

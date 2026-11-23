@@ -1,0 +1,9 @@
+<map id="Иерархия классов. Графический вид." name="Иерархия классов. Графический вид.">
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,57,83,85"/>
+<area shape="rect" id="Node000001" href="$classGeometryCanvas.html" title="Холст геометрических сцен." alt="" coords="139,5,274,33"/>
+<area shape="poly" id="edge2_Node000000_Node000001" title=" " alt="" coords="96,52,163,32,159,35,99,57"/>
+<area shape="rect" id="Node000002" href="$classGeometryPage.html" title="Главная страница задач 1–13." alt="" coords="148,57,265,85"/>
+<area shape="poly" id="edge3_Node000000_Node000002" title=" " alt="" coords="98,69,150,70,145,72,99,74"/>
+<area shape="rect" id="Node000003" href="$classLongArithmeticPage.html" title="Форма задачи 3: точный предикат без графического холста." alt="" coords="131,109,282,137"/>
+<area shape="poly" id="edge4_Node000000_Node000003" title=" " alt="" coords="98,86,163,108,158,110,97,91"/>
+</map>

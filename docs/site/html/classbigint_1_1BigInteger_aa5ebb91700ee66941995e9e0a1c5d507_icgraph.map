@@ -1,0 +1,32 @@
+<map id="bigint::BigInteger::BigInteger" name="bigint::BigInteger::BigInteger">
+<area shape="rect" id="Node000001" title="Создаёт нулевое число." alt="" coords="368,368,501,413"/>
+<area shape="poly" id="edge3_Node000001_Node000001" title=" " alt="" coords="462,353,453,349,435,347,418,349,408,353,404,359,405,368,400,367,398,358,404,349,417,343,435,341,454,344,467,352"/>
+<area shape="rect" id="Node000002" href="$classbigint_1_1BigInteger.html#a14b57cd07047dc67628e7542f2acfbac" title=" " alt="" coords="187,5,320,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="426,352,414,294,394,220,362,142,342,105,318,71,300,53,299,48,322,67,346,102,367,140,399,219,419,293,431,353"/>
+<area shape="rect" id="Node000003" href="$classbigint_1_1BigInteger.html#a1054e51808fad21855bed48eacd7500e" title="Сложение, вычитание и умножение произвольных целых." alt="" coords="5,96,139,141"/>
+<area shape="poly" id="edge9_Node000001_Node000003" title=" " alt="" coords="428,352,419,297,401,230,386,197,368,166,346,138,318,115,298,104,276,96,229,90,182,92,141,100,137,96,182,87,230,85,277,91,300,99,322,111,350,134,373,163,391,195,406,229,424,296,433,353"/>
+<area shape="rect" id="Node000004" href="$classbigint_1_1BigInteger.html#afa2c98c3611da550b4504a2117318fe0" title=" " alt="" coords="187,125,320,170"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="418,353,381,271,352,225,318,184,306,173,305,168,322,180,357,222,385,268,424,354"/>
+<area shape="rect" id="Node000005" href="$classbigint_1_1BigInteger.html#a9c322dd173dc036f00721f4cf4491a4b" title=" " alt="" coords="187,195,320,239"/>
+<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="408,355,369,305,318,254,304,243,303,237,322,250,373,302,413,355"/>
+<area shape="rect" id="Node000006" href="$classbigint_1_1BigInteger.html#a5b27ffacebc3458950b56d14b2d3a9a1" title=" " alt="" coords="187,264,320,309"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="382,361,319,323,299,312,298,307,321,319,387,359"/>
+<area shape="rect" id="Node000007" href="$classbigint_1_1BigInteger.html#aeffe15b5fe982f70ea2f71130a2ea5f6" title=" " alt="" coords="187,333,320,378"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="351,376,321,371,319,366,355,374"/>
+<area shape="rect" id="Node000008" href="$classbigint_1_1BigInteger.html#a8302f877ef948f62500969fe3ee94f39" title="Унарное изменение знака." alt="" coords="187,403,320,447"/>
+<area shape="poly" id="edge10_Node000001_Node000008" title=" " alt="" coords="351,407,321,415,319,410,355,405"/>
+<area shape="rect" id="Node000009" href="$classbigint_1_1BigInteger.html#a58606545e16b1d3dcff98c13767d3828" title=" " alt="" coords="187,472,320,517"/>
+<area shape="poly" id="edge11_Node000001_Node000009" title=" " alt="" coords="383,423,321,462,300,474,297,469,319,457,387,419"/>
+<area shape="rect" id="Node000010" href="$classbigint_1_1BigInteger.html#acc9708f36e9d0b9d5fb8aad320157b0f" title=" " alt="" coords="187,541,320,586"/>
+<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="413,423,373,479,322,531,305,543,302,539,318,527,369,475,409,427"/>
+<area shape="rect" id="Node000011" href="$classbigint_1_1BigInteger.html#a00e938502751664cf35c3681f338b971" title=" " alt="" coords="5,700,139,745"/>
+<area shape="poly" id="edge13_Node000001_Node000011" title=" " alt="" coords="431,426,421,483,401,548,369,614,347,644,322,670,290,686,244,699,139,717,138,712,243,694,288,681,318,666,343,640,365,611,396,546,416,482,427,430"/>
+<area shape="rect" id="Node000012" href="$classbigint_1_1BigInteger.html#aff8518e21f10a4e1645a35dd28595d18" title=" " alt="" coords="187,611,320,655"/>
+<area shape="poly" id="edge14_Node000001_Node000012" title=" " alt="" coords="423,425,385,512,357,559,322,600,307,612,304,608,318,596,352,555,381,510,419,429"/>
+<area shape="rect" id="Node000013" href="$classbigint_1_1BigInteger.html#a4796ebd40af5f92c92bdea11ca37347f" title="Разбирает десятичную строку со знаком; при ошибке возвращает false." alt="" coords="187,731,320,775"/>
+<area shape="poly" id="edge16_Node000001_Node000013" title=" " alt="" coords="430,426,419,488,399,562,367,641,346,679,322,713,301,733,298,728,318,710,342,676,362,639,394,560,414,486,427,430"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="192,60,120,97,116,94,195,55"/>
+<area shape="poly" id="edge5_Node000004_Node000003" title=" " alt="" coords="170,136,140,131,137,127,174,133"/>
+<area shape="poly" id="edge15_Node000012_Node000003" title=" " alt="" coords="185,600,184,600,147,541,119,477,98,410,84,344,71,224,72,144,73,138,76,223,90,343,103,409,124,475,152,539,189,597,191,600"/>
+<area shape="poly" id="edge17_Node000013_Node000011" title=" " alt="" coords="169,740,139,736,139,731,174,739"/>
+</map>

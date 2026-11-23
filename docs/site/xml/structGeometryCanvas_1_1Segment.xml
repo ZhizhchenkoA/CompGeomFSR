@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="structGeometryCanvas_1_1Segment" kind="struct" language="C++" prot="private">
+    <compoundname>GeometryCanvas::Segment</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structGeometryCanvas_1_1Segment_1a020719f710a74eec8c5f38385eb234b0" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int GeometryCanvas::Segment::a</definition>
+        <argsstring></argsstring>
+        <name>a</name>
+        <qualifiedname>GeometryCanvas::Segment::a</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrycanvas.h" line="81" column="22" bodyfile="src/apps/GeometryWorkbench/geometrycanvas.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structGeometryCanvas_1_1Segment_1a8d4cc19b53649345b660e5c2e26b8999" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int GeometryCanvas::Segment::b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <qualifiedname>GeometryCanvas::Segment::b</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrycanvas.h" line="81" column="28" bodyfile="src/apps/GeometryWorkbench/geometrycanvas.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structGeometryCanvas_1_1Segment_1a65c767fadf0b763377f40c696b54ce49" prot="public" static="no" mutable="no">
+        <type>QColor</type>
+        <definition>QColor GeometryCanvas::Segment::color</definition>
+        <argsstring></argsstring>
+        <name>color</name>
+        <qualifiedname>GeometryCanvas::Segment::color</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrycanvas.h" line="81" column="37" bodyfile="src/apps/GeometryWorkbench/geometrycanvas.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>GeometryCanvas::Segment</label>
+        <link refid="structGeometryCanvas_1_1Segment"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/apps/GeometryWorkbench/geometrycanvas.h" line="81" column="5" bodyfile="src/apps/GeometryWorkbench/geometrycanvas.h" bodystart="81" bodyend="81"/>
+    <listofallmembers>
+      <member refid="structGeometryCanvas_1_1Segment_1a020719f710a74eec8c5f38385eb234b0" prot="public" virt="non-virtual"><scope>GeometryCanvas::Segment</scope><name>a</name></member>
+      <member refid="structGeometryCanvas_1_1Segment_1a8d4cc19b53649345b660e5c2e26b8999" prot="public" virt="non-virtual"><scope>GeometryCanvas::Segment</scope><name>b</name></member>
+      <member refid="structGeometryCanvas_1_1Segment_1a65c767fadf0b763377f40c696b54ce49" prot="public" virt="non-virtual"><scope>GeometryCanvas::Segment</scope><name>color</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

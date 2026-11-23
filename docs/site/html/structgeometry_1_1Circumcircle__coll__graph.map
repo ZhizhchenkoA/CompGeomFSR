@@ -1,0 +1,5 @@
+<map id="geometry::Circumcircle" name="geometry::Circumcircle">
+<area shape="rect" id="Node000001" title="Окружность, описанная около треугольника." alt="" coords="5,173,167,245"/>
+<area shape="rect" id="Node000002" href="$structgeometry_1_1Point.html" title="Пространство математической геометрии проекта." alt="" coords="29,5,143,100"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="88,98,89,156,84,155,85,102"/>
+</map>

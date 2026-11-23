@@ -1,0 +1,9 @@
+<map id="GeometryCanvas::mouseMoveEvent" name="GeometryCanvas::mouseMoveEvent">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,49,228,94"/>
+<area shape="rect" id="Node000002" href="$classGeometryCanvas.html#ab8d0baa77faffef68b5482431ee75811" title=" " alt="" coords="276,5,502,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="228,47,300,36,295,37,229,52"/>
+<area shape="rect" id="Node000003" href="$classGeometryCanvas.html#a619ace231ac17afee377f9afec1e0ba1" title=" " alt="" coords="296,57,482,85"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="228,69,283,71,278,72,229,74"/>
+<area shape="rect" id="Node000004" href="$classGeometryCanvas.html#abc87340478811876f4cb4be480e1c367" title=" " alt="" coords="279,109,498,137"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="228,90,300,106,295,106,228,95"/>
+</map>

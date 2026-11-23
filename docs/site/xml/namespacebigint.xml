@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="namespacebigint" kind="namespace" language="C++">
+    <compoundname>bigint</compoundname>
+    <innerclass refid="classbigint_1_1BigInteger" prot="public">bigint::BigInteger</innerclass>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacebigint_1a2646acc61d0e940c36f58f118a5095d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool bigint::exactTurn</definition>
+        <argsstring>(const std::array&lt; std::string, 6 &gt; &amp;coordinates, int *sign, std::string *error)</argsstring>
+        <name>exactTurn</name>
+        <qualifiedname>bigint::exactTurn</qualifiedname>
+        <param>
+          <type>const std::array&lt; std::string, 6 &gt; &amp;</type>
+          <declname>coordinates</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>sign</declname>
+        </param>
+        <param>
+          <type>std::string *</type>
+          <declname>error</declname>
+        </param>
+        <briefdescription>
+<para>Поля массива идут в порядке <computeroutput>Ax, Ay, Bx, By, Px, Py</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Точно вычисляет знак <computeroutput>(B - A) x (P - A)</computeroutput> для строковых чисел. <simplesect kind="return"><para><computeroutput>true</computeroutput> при успешном разборе входа. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>coordinates</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Координаты в порядке <computeroutput>Ax, Ay, Bx, By, Px, Py</computeroutput>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sign</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Результат <computeroutput>-1</computeroutput>, <computeroutput>0</computeroutput> или <computeroutput>1</computeroutput>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Описание ошибки разбора. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib/bigint/exact_predicate.cpp" line="71" column="6" bodyfile="src/lib/bigint/exact_predicate.cpp" bodystart="71" bodyend="89" declfile="src/lib/bigint/exact_predicate.h" declline="17" declcolumn="6"/>
+        <referencedby refid="classLongArithmeticPage_1ab52ecc9e59525ef13ea189064d45b782" compoundref="longarithmeticpage_8cpp" startline="41" endline="76">LongArithmeticPage::calculate</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/lib/bigint/bigint.cpp" line="7" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="conversion_8h" kind="file" language="C++">
+    <compoundname>conversion.h</compoundname>
+    <includes local="no">QPointF</includes>
+    <includes refid="point_8h" local="yes">geometry/point.h</includes>
+    <includedby refid="geometrypage_8cpp" local="yes">src/apps/GeometryWorkbench/geometrypage.cpp</includedby>
+    <includedby refid="conversion_8cpp" local="yes">src/lib/geometry_qt/conversion.cpp</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>geometry/point.h</label>
+        <link refid="point_8h"/>
+      </node>
+      <node id="1">
+        <label>src/lib/geometry_qt/conversion.h</label>
+        <link refid="conversion_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QPointF</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>src/apps/GeometryWorkbench/geometrypage.cpp</label>
+        <link refid="geometrypage_8cpp"/>
+      </node>
+      <node id="3">
+        <label>src/lib/geometry_qt/conversion.cpp</label>
+        <link refid="conversion_8cpp"/>
+      </node>
+      <node id="1">
+        <label>src/lib/geometry_qt/conversion.h</label>
+        <link refid="conversion_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespacegeometry__qt">geometry_qt</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QPointF&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="point_8h" kindref="compound">geometry/point.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacegeometry__qt" kindref="compound">geometry_qt</ref><sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><ref refid="namespacegeometry_1aeac4c2c4d76d3f1bbd0d024a3a242444a2a3cd5946cfd317eb99c3d32e35e2d4c" kindref="member">geometry::Point</ref><sp/><ref refid="namespacegeometry__qt_1a1b00196f7a1e7ff93f722417814f1dbf" kindref="member">toGeometry</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QPointF&amp;<sp/>screen);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal">QPointF<sp/><ref refid="namespacegeometry__qt_1ab38550851d7c6704f958a3edd7a2dc56" kindref="member">toScreen</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacegeometry_1aeac4c2c4d76d3f1bbd0d024a3a242444a2a3cd5946cfd317eb99c3d32e35e2d4c" kindref="member">geometry::Point</ref>&amp;<sp/>geometryPoint);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>geometry_qt</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="src/lib/geometry_qt/conversion.h"/>
+  </compounddef>
+</doxygen>

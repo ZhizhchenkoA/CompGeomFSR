@@ -1,0 +1,1044 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="classGeometryPage" kind="class" language="C++" prot="public">
+    <compoundname>GeometryPage</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QWidget</basecompoundref>
+    <includes refid="geometrypage_8h" local="no">geometrypage.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classGeometryPage_1a68c8501f25ae9682080af27d8cadeb27" prot="private" static="no" mutable="no">
+        <type>Ui::GeometryPage *</type>
+        <definition>Ui::GeometryPage* GeometryPage::ui</definition>
+        <argsstring></argsstring>
+        <name>ui</name>
+        <qualifiedname>GeometryPage::ui</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrypage.h" line="80" column="22" bodyfile="src/apps/GeometryWorkbench/geometrypage.h" bodystart="80" bodyend="-1"/>
+        <referencedby refid="classGeometryPage_1addebfdadcc9b93da1bf550fb3aa57c33" compoundref="geometrypage_8cpp" startline="56" endline="64">clearScene</referencedby>
+        <referencedby refid="classGeometryPage_1aa0380120b0b9e766b2e6d3c4d4192b27" compoundref="geometrypage_8cpp" startline="607" endline="620">computeBezier</referencedby>
+        <referencedby refid="classGeometryPage_1a740f2f65e615aad3fa3d3dafb2fd530f" compoundref="geometrypage_8cpp" startline="502" endline="520">computeDelaunay</referencedby>
+        <referencedby refid="classGeometryPage_1ae4a1816822912d00197e9cfa375717d1" compoundref="geometrypage_8cpp" startline="463" endline="474">computeHull</referencedby>
+        <referencedby refid="classGeometryPage_1a589fc5e7e93427a3f2c34679279ec875" compoundref="geometrypage_8cpp" startline="403" endline="434">computeIntersection</referencedby>
+        <referencedby refid="classGeometryPage_1a73b11409c008e8a002cdf0b5b86d363d" compoundref="geometrypage_8cpp" startline="558" endline="588">computePolygonOperation</referencedby>
+        <referencedby refid="classGeometryPage_1aa685131d4c04dafba54ab095dc78952e" compoundref="geometrypage_8cpp" startline="301" endline="343">computeTurn</referencedby>
+        <referencedby refid="classGeometryPage_1a4fda5c025fcd295789a6345233568d87" compoundref="geometrypage_8cpp" startline="30" endline="49">GeometryPage</referencedby>
+        <referencedby refid="classGeometryPage_1ace1f1e79f6cf90be97a1edf406262102" compoundref="geometrypage_8cpp" startline="590" endline="598">handleBezierClick</referencedby>
+        <referencedby refid="classGeometryPage_1ac64c55de6638a1a39c54f756e85888a9" compoundref="geometrypage_8cpp" startline="600" endline="605">handleBezierDrag</referencedby>
+        <referencedby refid="classGeometryPage_1a3a81da70a224b6bcd01c7aebc1a2db6f" compoundref="geometrypage_8cpp" startline="478" endline="488">handleDelaunayClick</referencedby>
+        <referencedby refid="classGeometryPage_1ac2cb0e682262a2691c98bcdfa18bc48a" compoundref="geometrypage_8cpp" startline="490" endline="500">handleDelaunayDrag</referencedby>
+        <referencedby refid="classGeometryPage_1aae494f5e3a68d411bc5c8b8a39bb84e4" compoundref="geometrypage_8cpp" startline="438" endline="449">handleHullClick</referencedby>
+        <referencedby refid="classGeometryPage_1ad4fd2514de86d00ae791f83755aad6a8" compoundref="geometrypage_8cpp" startline="451" endline="461">handleHullDrag</referencedby>
+        <referencedby refid="classGeometryPage_1a11f51d12b3ffe8de348c7fcee8f4bb8a" compoundref="geometrypage_8cpp" startline="366" endline="389">handleIntersectionClick</referencedby>
+        <referencedby refid="classGeometryPage_1a2741d6f481328433d778097608c0be1d" compoundref="geometrypage_8cpp" startline="391" endline="401">handleIntersectionDrag</referencedby>
+        <referencedby refid="classGeometryPage_1a1fa4f035f37dbd61e6cf8c5ce9785883" compoundref="geometrypage_8cpp" startline="524" endline="539">handlePolygonClick</referencedby>
+        <referencedby refid="classGeometryPage_1a077e9cd0bb0fd57f8b368a813152f78c" compoundref="geometrypage_8cpp" startline="541" endline="556">handlePolygonDrag</referencedby>
+        <referencedby refid="classGeometryPage_1acdcc0b18c0fa30dd324cd16c23517c7a" compoundref="geometrypage_8cpp" startline="278" endline="299">handleTurnClick</referencedby>
+        <referencedby refid="classGeometryPage_1a758948c03ae61778e10165f174306c3a" compoundref="geometrypage_8cpp" startline="345" endline="362">handleTurnDrag</referencedby>
+        <referencedby refid="classGeometryPage_1af2d0477ad7f1427fc470859223d24cd0" compoundref="geometrypage_8cpp" startline="213" endline="216">on_circumcirclesCheckBox_toggled</referencedby>
+        <referencedby refid="classGeometryPage_1a7b4530bb76653adf3d2d82d1a01c38ff" compoundref="geometrypage_8cpp" startline="66" endline="178">selectTask</referencedby>
+        <referencedby refid="classGeometryPage_1a057cf08f9c927e9745c4d533a381aaea" compoundref="geometrypage_8cpp" startline="180" endline="184">showLongArithmeticPage</referencedby>
+        <referencedby refid="classGeometryPage_1acfc85b110da93aea63d610fbc9b5e359" compoundref="geometrypage_8cpp" startline="51" endline="54">~GeometryPage</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGeometryPage_1a46b6f387963e57709bbb0827a46c7159" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structgeometry_1_1Point" kindref="compound">geometry::Point</ref> &gt;</type>
+        <definition>std::vector&lt;geometry::Point&gt; GeometryPage::m_points</definition>
+        <argsstring></argsstring>
+        <name>m_points</name>
+        <qualifiedname>GeometryPage::m_points</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrypage.h" line="81" column="17" bodyfile="src/apps/GeometryWorkbench/geometrypage.h" bodystart="81" bodyend="-1"/>
+        <referencedby refid="classGeometryPage_1addebfdadcc9b93da1bf550fb3aa57c33" compoundref="geometrypage_8cpp" startline="56" endline="64">clearScene</referencedby>
+        <referencedby refid="classGeometryPage_1aa0380120b0b9e766b2e6d3c4d4192b27" compoundref="geometrypage_8cpp" startline="607" endline="620">computeBezier</referencedby>
+        <referencedby refid="classGeometryPage_1a740f2f65e615aad3fa3d3dafb2fd530f" compoundref="geometrypage_8cpp" startline="502" endline="520">computeDelaunay</referencedby>
+        <referencedby refid="classGeometryPage_1ae4a1816822912d00197e9cfa375717d1" compoundref="geometrypage_8cpp" startline="463" endline="474">computeHull</referencedby>
+        <referencedby refid="classGeometryPage_1a589fc5e7e93427a3f2c34679279ec875" compoundref="geometrypage_8cpp" startline="403" endline="434">computeIntersection</referencedby>
+        <referencedby refid="classGeometryPage_1aa685131d4c04dafba54ab095dc78952e" compoundref="geometrypage_8cpp" startline="301" endline="343">computeTurn</referencedby>
+        <referencedby refid="classGeometryPage_1ace1f1e79f6cf90be97a1edf406262102" compoundref="geometrypage_8cpp" startline="590" endline="598">handleBezierClick</referencedby>
+        <referencedby refid="classGeometryPage_1ac64c55de6638a1a39c54f756e85888a9" compoundref="geometrypage_8cpp" startline="600" endline="605">handleBezierDrag</referencedby>
+        <referencedby refid="classGeometryPage_1a3a81da70a224b6bcd01c7aebc1a2db6f" compoundref="geometrypage_8cpp" startline="478" endline="488">handleDelaunayClick</referencedby>
+        <referencedby refid="classGeometryPage_1ac2cb0e682262a2691c98bcdfa18bc48a" compoundref="geometrypage_8cpp" startline="490" endline="500">handleDelaunayDrag</referencedby>
+        <referencedby refid="classGeometryPage_1aae494f5e3a68d411bc5c8b8a39bb84e4" compoundref="geometrypage_8cpp" startline="438" endline="449">handleHullClick</referencedby>
+        <referencedby refid="classGeometryPage_1ad4fd2514de86d00ae791f83755aad6a8" compoundref="geometrypage_8cpp" startline="451" endline="461">handleHullDrag</referencedby>
+        <referencedby refid="classGeometryPage_1a11f51d12b3ffe8de348c7fcee8f4bb8a" compoundref="geometrypage_8cpp" startline="366" endline="389">handleIntersectionClick</referencedby>
+        <referencedby refid="classGeometryPage_1a2741d6f481328433d778097608c0be1d" compoundref="geometrypage_8cpp" startline="391" endline="401">handleIntersectionDrag</referencedby>
+        <referencedby refid="classGeometryPage_1acdcc0b18c0fa30dd324cd16c23517c7a" compoundref="geometrypage_8cpp" startline="278" endline="299">handleTurnClick</referencedby>
+        <referencedby refid="classGeometryPage_1a758948c03ae61778e10165f174306c3a" compoundref="geometrypage_8cpp" startline="345" endline="362">handleTurnDrag</referencedby>
+        <referencedby refid="classGeometryPage_1a987ba5fc021a4c94a694aad27f3efdf6" compoundref="geometrypage_8cpp" startline="208" endline="211">on_bezierSlider_valueChanged</referencedby>
+        <referencedby refid="classGeometryPage_1aa05702756ffe70c1c9295494036d364e" compoundref="geometrypage_8cpp" startline="224" endline="235">on_calculateButton_clicked</referencedby>
+        <referencedby refid="classGeometryPage_1a91d1ac3960a9a2e31af6e79d8d048842" compoundref="geometrypage_8cpp" startline="191" endline="206">on_onlineCheckBox_toggled</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGeometryPage_1af160b5db7a54477af72cfb0fb0a51d59" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structgeometry_1_1Point" kindref="compound">geometry::Point</ref> &gt;</type>
+        <definition>std::vector&lt;geometry::Point&gt; GeometryPage::m_polygonA</definition>
+        <argsstring></argsstring>
+        <name>m_polygonA</name>
+        <qualifiedname>GeometryPage::m_polygonA</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrypage.h" line="82" column="17" bodyfile="src/apps/GeometryWorkbench/geometrypage.h" bodystart="82" bodyend="-1"/>
+        <referencedby refid="classGeometryPage_1addebfdadcc9b93da1bf550fb3aa57c33" compoundref="geometrypage_8cpp" startline="56" endline="64">clearScene</referencedby>
+        <referencedby refid="classGeometryPage_1a73b11409c008e8a002cdf0b5b86d363d" compoundref="geometrypage_8cpp" startline="558" endline="588">computePolygonOperation</referencedby>
+        <referencedby refid="classGeometryPage_1a1fa4f035f37dbd61e6cf8c5ce9785883" compoundref="geometrypage_8cpp" startline="524" endline="539">handlePolygonClick</referencedby>
+        <referencedby refid="classGeometryPage_1a077e9cd0bb0fd57f8b368a813152f78c" compoundref="geometrypage_8cpp" startline="541" endline="556">handlePolygonDrag</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGeometryPage_1a2bebd56bce64ae1e0ffa448947fcf97b" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structgeometry_1_1Point" kindref="compound">geometry::Point</ref> &gt;</type>
+        <definition>std::vector&lt;geometry::Point&gt; GeometryPage::m_polygonB</definition>
+        <argsstring></argsstring>
+        <name>m_polygonB</name>
+        <qualifiedname>GeometryPage::m_polygonB</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrypage.h" line="83" column="17" bodyfile="src/apps/GeometryWorkbench/geometrypage.h" bodystart="83" bodyend="-1"/>
+        <referencedby refid="classGeometryPage_1addebfdadcc9b93da1bf550fb3aa57c33" compoundref="geometrypage_8cpp" startline="56" endline="64">clearScene</referencedby>
+        <referencedby refid="classGeometryPage_1a73b11409c008e8a002cdf0b5b86d363d" compoundref="geometrypage_8cpp" startline="558" endline="588">computePolygonOperation</referencedby>
+        <referencedby refid="classGeometryPage_1a1fa4f035f37dbd61e6cf8c5ce9785883" compoundref="geometrypage_8cpp" startline="524" endline="539">handlePolygonClick</referencedby>
+        <referencedby refid="classGeometryPage_1a077e9cd0bb0fd57f8b368a813152f78c" compoundref="geometrypage_8cpp" startline="541" endline="556">handlePolygonDrag</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGeometryPage_1aa5b999969872e3bab6cd0ac9181cca8c" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::pair&lt; int, int &gt; &gt;</type>
+        <definition>std::vector&lt;std::pair&lt;int, int&gt; &gt; GeometryPage::m_polygonPointBindings</definition>
+        <argsstring></argsstring>
+        <name>m_polygonPointBindings</name>
+        <qualifiedname>GeometryPage::m_polygonPointBindings</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrypage.h" line="84" column="17" bodyfile="src/apps/GeometryWorkbench/geometrypage.h" bodystart="84" bodyend="-1"/>
+        <referencedby refid="classGeometryPage_1addebfdadcc9b93da1bf550fb3aa57c33" compoundref="geometrypage_8cpp" startline="56" endline="64">clearScene</referencedby>
+        <referencedby refid="classGeometryPage_1a1fa4f035f37dbd61e6cf8c5ce9785883" compoundref="geometrypage_8cpp" startline="524" endline="539">handlePolygonClick</referencedby>
+        <referencedby refid="classGeometryPage_1a077e9cd0bb0fd57f8b368a813152f78c" compoundref="geometrypage_8cpp" startline="541" endline="556">handlePolygonDrag</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGeometryPage_1aaf0da91936f1ea4f61be077109b349e1" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int GeometryPage::m_currentTask</definition>
+        <argsstring></argsstring>
+        <name>m_currentTask</name>
+        <qualifiedname>GeometryPage::m_currentTask</qualifiedname>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrypage.h" line="85" column="9" bodyfile="src/apps/GeometryWorkbench/geometrypage.h" bodystart="85" bodyend="-1"/>
+        <referencedby refid="classGeometryPage_1a73b11409c008e8a002cdf0b5b86d363d" compoundref="geometrypage_8cpp" startline="558" endline="588">computePolygonOperation</referencedby>
+        <referencedby refid="classGeometryPage_1a987ba5fc021a4c94a694aad27f3efdf6" compoundref="geometrypage_8cpp" startline="208" endline="211">on_bezierSlider_valueChanged</referencedby>
+        <referencedby refid="classGeometryPage_1aa05702756ffe70c1c9295494036d364e" compoundref="geometrypage_8cpp" startline="224" endline="235">on_calculateButton_clicked</referencedby>
+        <referencedby refid="classGeometryPage_1a3b366ef2453036d455df3e7248d2e127" compoundref="geometrypage_8cpp" startline="239" endline="253">on_canvas_clicked</referencedby>
+        <referencedby refid="classGeometryPage_1a2d9f83accc5c03c75ef3c7e706716dfb" compoundref="geometrypage_8cpp" startline="255" endline="268">on_canvas_pointMoved</referencedby>
+        <referencedby refid="classGeometryPage_1a91d1ac3960a9a2e31af6e79d8d048842" compoundref="geometrypage_8cpp" startline="191" endline="206">on_onlineCheckBox_toggled</referencedby>
+        <referencedby refid="classGeometryPage_1a7b4530bb76653adf3d2d82d1a01c38ff" compoundref="geometrypage_8cpp" startline="66" endline="178">selectTask</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classGeometryPage_1a4fda5c025fcd295789a6345233568d87" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>GeometryPage::GeometryPage</definition>
+        <argsstring>(QWidget *parent=nullptr)</argsstring>
+        <name>GeometryPage</name>
+        <qualifiedname>GeometryPage::GeometryPage</qualifiedname>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrypage.h" line="22" column="14" bodyfile="src/apps/GeometryWorkbench/geometrypage.cpp" bodystart="30" bodyend="49"/>
+        <references refid="classGeometryPage_1a4fda5c025fcd295789a6345233568d87" compoundref="geometrypage_8cpp" startline="30" endline="49">GeometryPage</references>
+        <references refid="classGeometryPage_1a5e401c179a58fb115a86b603312be0da" compoundref="geometrypage_8cpp" startline="186" endline="189">onTaskChanged</references>
+        <references refid="classGeometryPage_1a7b4530bb76653adf3d2d82d1a01c38ff" compoundref="geometrypage_8cpp" startline="66" endline="178">selectTask</references>
+        <references refid="classGeometryPage_1a68c8501f25ae9682080af27d8cadeb27" compoundref="geometrypage_8h" startline="80">ui</references>
+        <referencedby refid="classGeometryPage_1a4fda5c025fcd295789a6345233568d87" compoundref="geometrypage_8cpp" startline="30" endline="49">GeometryPage</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classGeometryPage_1acfc85b110da93aea63d610fbc9b5e359" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>GeometryPage::~GeometryPage</definition>
+        <argsstring>() override</argsstring>
+        <name>~GeometryPage</name>
+        <qualifiedname>GeometryPage::~GeometryPage</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrypage.h" line="23" column="5" bodyfile="src/apps/GeometryWorkbench/geometrypage.cpp" bodystart="51" bodyend="54"/>
+        <references refid="classGeometryPage_1a68c8501f25ae9682080af27d8cadeb27" compoundref="geometrypage_8h" startline="80">ui</references>
+      </memberdef>
+      <memberdef kind="function" id="classGeometryPage_1addebfdadcc9b93da1bf550fb3aa57c33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GeometryPage::clearScene</definition>
+        <argsstring>()</argsstring>
+        <name>clearScene</name>
+        <qualifiedname>GeometryPage::clearScene</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrypage.h" line="25" column="10" bodyfile="src/apps/GeometryWorkbench/geometrypage.cpp" bodystart="56" bodyend="64"/>
+        <references refid="classGeometryPage_1a46b6f387963e57709bbb0827a46c7159" compoundref="geometrypage_8h" startline="81">m_points</references>
+        <references refid="classGeometryPage_1af160b5db7a54477af72cfb0fb0a51d59" compoundref="geometrypage_8h" startline="82">m_polygonA</references>
+        <references refid="classGeometryPage_1a2bebd56bce64ae1e0ffa448947fcf97b" compoundref="geometrypage_8h" startline="83">m_polygonB</references>
+        <references refid="classGeometryPage_1aa5b999969872e3bab6cd0ac9181cca8c" compoundref="geometrypage_8h" startline="84">m_polygonPointBindings</references>
+        <references refid="classGeometryPage_1a68c8501f25ae9682080af27d8cadeb27" compoundref="geometrypage_8h" startline="80">ui</references>
+        <referencedby refid="classGeometryPage_1a999b1d336f50d397868ab4790189ff04" compoundref="geometrypage_8cpp" startline="218" endline="222">on_clearButton_clicked</referencedby>
+        <referencedby refid="classGeometryPage_1a7b4530bb76653adf3d2d82d1a01c38ff" compoundref="geometrypage_8cpp" startline="66" endline="178">selectTask</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="signal">
+      <memberdef kind="signal" id="classGeometryPage_1a4ac016dceaf16fde96c2aed328b0e50d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GeometryPage::logMessage</definition>
+        <argsstring>(const QString &amp;text)</argsstring>
+        <name>logMessage</name>
+        <qualifiedname>GeometryPage::logMessage</qualifiedname>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrypage.h" line="28" column="10"/>
+        <referencedby refid="classGeometryPage_1a740f2f65e615aad3fa3d3dafb2fd530f" compoundref="geometrypage_8cpp" startline="502" endline="520">computeDelaunay</referencedby>
+        <referencedby refid="classGeometryPage_1ae4a1816822912d00197e9cfa375717d1" compoundref="geometrypage_8cpp" startline="463" endline="474">computeHull</referencedby>
+        <referencedby refid="classGeometryPage_1a589fc5e7e93427a3f2c34679279ec875" compoundref="geometrypage_8cpp" startline="403" endline="434">computeIntersection</referencedby>
+        <referencedby refid="classGeometryPage_1a73b11409c008e8a002cdf0b5b86d363d" compoundref="geometrypage_8cpp" startline="558" endline="588">computePolygonOperation</referencedby>
+        <referencedby refid="classGeometryPage_1aa685131d4c04dafba54ab095dc78952e" compoundref="geometrypage_8cpp" startline="301" endline="343">computeTurn</referencedby>
+        <referencedby refid="classMainWindow_1a996c5a2b6f77944776856f08ec30858d" compoundref="mainwindow_8cpp" startline="12" endline="29">MainWindow::MainWindow</referencedby>
+        <referencedby refid="classGeometryPage_1a999b1d336f50d397868ab4790189ff04" compoundref="geometrypage_8cpp" startline="218" endline="222">on_clearButton_clicked</referencedby>
+      </memberdef>
+      <memberdef kind="signal" id="classGeometryPage_1aa9f01f9f97ae7cc6d65dcd8254ea8428" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GeometryPage::cursorMoved</definition>
+        <argsstring>(const QPointF &amp;geometryPos)</argsstring>
+        <name>cursorMoved</name>
+        <qualifiedname>GeometryPage::cursorMoved</qualifiedname>
+        <param>
+          <type>const QPointF &amp;</type>
+          <declname>geometryPos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrypage.h" line="29" column="10"/>
+        <referencedby refid="classMainWindow_1a996c5a2b6f77944776856f08ec30858d" compoundref="mainwindow_8cpp" startline="12" endline="29">MainWindow::MainWindow</referencedby>
+        <referencedby refid="classGeometryPage_1a66d38697b0496bb09cc5c22c375fc596" compoundref="geometrypage_8cpp" startline="270" endline="274">on_canvas_cursorMoved</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-slot">
+      <memberdef kind="slot" id="classGeometryPage_1a91d1ac3960a9a2e31af6e79d8d048842" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GeometryPage::on_onlineCheckBox_toggled</definition>
+        <argsstring>(bool checked)</argsstring>
+        <name>on_onlineCheckBox_toggled</name>
+        <qualifiedname>GeometryPage::on_onlineCheckBox_toggled</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>checked</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrypage.h" line="32" column="10" bodyfile="src/apps/GeometryWorkbench/geometrypage.cpp" bodystart="191" bodyend="206"/>
+        <references refid="classGeometryPage_1aa0380120b0b9e766b2e6d3c4d4192b27" compoundref="geometrypage_8cpp" startline="607" endline="620">computeBezier</references>
+        <references refid="classGeometryPage_1a740f2f65e615aad3fa3d3dafb2fd530f" compoundref="geometrypage_8cpp" startline="502" endline="520">computeDelaunay</references>
+        <references refid="classGeometryPage_1ae4a1816822912d00197e9cfa375717d1" compoundref="geometrypage_8cpp" startline="463" endline="474">computeHull</references>
+        <references refid="classGeometryPage_1a589fc5e7e93427a3f2c34679279ec875" compoundref="geometrypage_8cpp" startline="403" endline="434">computeIntersection</references>
+        <references refid="classGeometryPage_1a73b11409c008e8a002cdf0b5b86d363d" compoundref="geometrypage_8cpp" startline="558" endline="588">computePolygonOperation</references>
+        <references refid="classGeometryPage_1aa685131d4c04dafba54ab095dc78952e" compoundref="geometrypage_8cpp" startline="301" endline="343">computeTurn</references>
+        <references refid="classGeometryPage_1aaf0da91936f1ea4f61be077109b349e1" compoundref="geometrypage_8h" startline="85">m_currentTask</references>
+        <references refid="classGeometryPage_1a46b6f387963e57709bbb0827a46c7159" compoundref="geometrypage_8h" startline="81">m_points</references>
+      </memberdef>
+      <memberdef kind="slot" id="classGeometryPage_1a999b1d336f50d397868ab4790189ff04" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GeometryPage::on_clearButton_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_clearButton_clicked</name>
+        <qualifiedname>GeometryPage::on_clearButton_clicked</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrypage.h" line="33" column="10" bodyfile="src/apps/GeometryWorkbench/geometrypage.cpp" bodystart="218" bodyend="222"/>
+        <references refid="classGeometryPage_1addebfdadcc9b93da1bf550fb3aa57c33" compoundref="geometrypage_8cpp" startline="56" endline="64">clearScene</references>
+        <references refid="classGeometryPage_1a4ac016dceaf16fde96c2aed328b0e50d">logMessage</references>
+      </memberdef>
+      <memberdef kind="slot" id="classGeometryPage_1aa05702756ffe70c1c9295494036d364e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GeometryPage::on_calculateButton_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_calculateButton_clicked</name>
+        <qualifiedname>GeometryPage::on_calculateButton_clicked</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrypage.h" line="34" column="10" bodyfile="src/apps/GeometryWorkbench/geometrypage.cpp" bodystart="224" bodyend="235"/>
+        <references refid="classGeometryPage_1aa0380120b0b9e766b2e6d3c4d4192b27" compoundref="geometrypage_8cpp" startline="607" endline="620">computeBezier</references>
+        <references refid="classGeometryPage_1a740f2f65e615aad3fa3d3dafb2fd530f" compoundref="geometrypage_8cpp" startline="502" endline="520">computeDelaunay</references>
+        <references refid="classGeometryPage_1ae4a1816822912d00197e9cfa375717d1" compoundref="geometrypage_8cpp" startline="463" endline="474">computeHull</references>
+        <references refid="classGeometryPage_1a589fc5e7e93427a3f2c34679279ec875" compoundref="geometrypage_8cpp" startline="403" endline="434">computeIntersection</references>
+        <references refid="classGeometryPage_1a73b11409c008e8a002cdf0b5b86d363d" compoundref="geometrypage_8cpp" startline="558" endline="588">computePolygonOperation</references>
+        <references refid="classGeometryPage_1aaf0da91936f1ea4f61be077109b349e1" compoundref="geometrypage_8h" startline="85">m_currentTask</references>
+        <references refid="classGeometryPage_1a46b6f387963e57709bbb0827a46c7159" compoundref="geometrypage_8h" startline="81">m_points</references>
+      </memberdef>
+      <memberdef kind="slot" id="classGeometryPage_1af2d0477ad7f1427fc470859223d24cd0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GeometryPage::on_circumcirclesCheckBox_toggled</definition>
+        <argsstring>(bool checked)</argsstring>
+        <name>on_circumcirclesCheckBox_toggled</name>
+        <qualifiedname>GeometryPage::on_circumcirclesCheckBox_toggled</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>checked</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrypage.h" line="35" column="10" bodyfile="src/apps/GeometryWorkbench/geometrypage.cpp" bodystart="213" bodyend="216"/>
+        <references refid="classGeometryPage_1a68c8501f25ae9682080af27d8cadeb27" compoundref="geometrypage_8h" startline="80">ui</references>
+      </memberdef>
+      <memberdef kind="slot" id="classGeometryPage_1a987ba5fc021a4c94a694aad27f3efdf6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GeometryPage::on_bezierSlider_valueChanged</definition>
+        <argsstring>(int value)</argsstring>
+        <name>on_bezierSlider_valueChanged</name>
+        <qualifiedname>GeometryPage::on_bezierSlider_valueChanged</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrypage.h" line="36" column="10" bodyfile="src/apps/GeometryWorkbench/geometrypage.cpp" bodystart="208" bodyend="211"/>
+        <references refid="classGeometryPage_1aa0380120b0b9e766b2e6d3c4d4192b27" compoundref="geometrypage_8cpp" startline="607" endline="620">computeBezier</references>
+        <references refid="classGeometryPage_1aaf0da91936f1ea4f61be077109b349e1" compoundref="geometrypage_8h" startline="85">m_currentTask</references>
+        <references refid="classGeometryPage_1a46b6f387963e57709bbb0827a46c7159" compoundref="geometrypage_8h" startline="81">m_points</references>
+      </memberdef>
+      <memberdef kind="slot" id="classGeometryPage_1a3b366ef2453036d455df3e7248d2e127" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GeometryPage::on_canvas_clicked</definition>
+        <argsstring>(const QPointF &amp;screenPos)</argsstring>
+        <name>on_canvas_clicked</name>
+        <qualifiedname>GeometryPage::on_canvas_clicked</qualifiedname>
+        <param>
+          <type>const QPointF &amp;</type>
+          <declname>screenPos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrypage.h" line="40" column="10" bodyfile="src/apps/GeometryWorkbench/geometrypage.cpp" bodystart="239" bodyend="253"/>
+        <references refid="classGeometryPage_1ace1f1e79f6cf90be97a1edf406262102" compoundref="geometrypage_8cpp" startline="590" endline="598">handleBezierClick</references>
+        <references refid="classGeometryPage_1a3a81da70a224b6bcd01c7aebc1a2db6f" compoundref="geometrypage_8cpp" startline="478" endline="488">handleDelaunayClick</references>
+        <references refid="classGeometryPage_1aae494f5e3a68d411bc5c8b8a39bb84e4" compoundref="geometrypage_8cpp" startline="438" endline="449">handleHullClick</references>
+        <references refid="classGeometryPage_1a11f51d12b3ffe8de348c7fcee8f4bb8a" compoundref="geometrypage_8cpp" startline="366" endline="389">handleIntersectionClick</references>
+        <references refid="classGeometryPage_1a1fa4f035f37dbd61e6cf8c5ce9785883" compoundref="geometrypage_8cpp" startline="524" endline="539">handlePolygonClick</references>
+        <references refid="classGeometryPage_1acdcc0b18c0fa30dd324cd16c23517c7a" compoundref="geometrypage_8cpp" startline="278" endline="299">handleTurnClick</references>
+        <references refid="classGeometryPage_1aaf0da91936f1ea4f61be077109b349e1" compoundref="geometrypage_8h" startline="85">m_currentTask</references>
+      </memberdef>
+      <memberdef kind="slot" id="classGeometryPage_1a2d9f83accc5c03c75ef3c7e706716dfb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GeometryPage::on_canvas_pointMoved</definition>
+        <argsstring>(int index, const QPointF &amp;screenPos)</argsstring>
+        <name>on_canvas_pointMoved</name>
+        <qualifiedname>GeometryPage::on_canvas_pointMoved</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>const QPointF &amp;</type>
+          <declname>screenPos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrypage.h" line="41" column="10" bodyfile="src/apps/GeometryWorkbench/geometrypage.cpp" bodystart="255" bodyend="268"/>
+        <references refid="classGeometryPage_1ac64c55de6638a1a39c54f756e85888a9" compoundref="geometrypage_8cpp" startline="600" endline="605">handleBezierDrag</references>
+        <references refid="classGeometryPage_1ac2cb0e682262a2691c98bcdfa18bc48a" compoundref="geometrypage_8cpp" startline="490" endline="500">handleDelaunayDrag</references>
+        <references refid="classGeometryPage_1ad4fd2514de86d00ae791f83755aad6a8" compoundref="geometrypage_8cpp" startline="451" endline="461">handleHullDrag</references>
+        <references refid="classGeometryPage_1a2741d6f481328433d778097608c0be1d" compoundref="geometrypage_8cpp" startline="391" endline="401">handleIntersectionDrag</references>
+        <references refid="classGeometryPage_1a077e9cd0bb0fd57f8b368a813152f78c" compoundref="geometrypage_8cpp" startline="541" endline="556">handlePolygonDrag</references>
+        <references refid="classGeometryPage_1a758948c03ae61778e10165f174306c3a" compoundref="geometrypage_8cpp" startline="345" endline="362">handleTurnDrag</references>
+        <references refid="classGeometryPage_1aaf0da91936f1ea4f61be077109b349e1" compoundref="geometrypage_8h" startline="85">m_currentTask</references>
+      </memberdef>
+      <memberdef kind="slot" id="classGeometryPage_1a66d38697b0496bb09cc5c22c375fc596" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GeometryPage::on_canvas_cursorMoved</definition>
+        <argsstring>(const QPointF &amp;screenPos)</argsstring>
+        <name>on_canvas_cursorMoved</name>
+        <qualifiedname>GeometryPage::on_canvas_cursorMoved</qualifiedname>
+        <param>
+          <type>const QPointF &amp;</type>
+          <declname>screenPos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrypage.h" line="42" column="10" bodyfile="src/apps/GeometryWorkbench/geometrypage.cpp" bodystart="270" bodyend="274"/>
+        <references refid="classGeometryPage_1aa9f01f9f97ae7cc6d65dcd8254ea8428">cursorMoved</references>
+        <references refid="namespacegeometry__qt_1a1b00196f7a1e7ff93f722417814f1dbf" compoundref="conversion_8cpp" startline="5" endline="8">geometry_qt::toGeometry</references>
+        <references refid="structgeometry_1_1Point_1ad011726194a14d580d46c95bb1b57404" compoundref="point_8h" startline="14">geometry::Point::x</references>
+        <references refid="structgeometry_1_1Point_1a58d50e43eb0617b09d14b2be1b1d054e" compoundref="point_8h" startline="15">geometry::Point::y</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classGeometryPage_1a5e401c179a58fb115a86b603312be0da" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GeometryPage::onTaskChanged</definition>
+        <argsstring>(int index)</argsstring>
+        <name>onTaskChanged</name>
+        <qualifiedname>GeometryPage::onTaskChanged</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrypage.h" line="45" column="10" bodyfile="src/apps/GeometryWorkbench/geometrypage.cpp" bodystart="186" bodyend="189"/>
+        <references refid="classGeometryPage_1a7b4530bb76653adf3d2d82d1a01c38ff" compoundref="geometrypage_8cpp" startline="66" endline="178">selectTask</references>
+        <referencedby refid="classGeometryPage_1a4fda5c025fcd295789a6345233568d87" compoundref="geometrypage_8cpp" startline="30" endline="49">GeometryPage</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classGeometryPage_1a7b4530bb76653adf3d2d82d1a01c38ff" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GeometryPage::selectTask</definition>
+        <argsstring>(int task)</argsstring>
+        <name>selectTask</name>
+        <qualifiedname>GeometryPage::selectTask</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>task</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrypage.h" line="46" column="10" bodyfile="src/apps/GeometryWorkbench/geometrypage.cpp" bodystart="66" bodyend="178"/>
+        <references refid="classGeometryPage_1addebfdadcc9b93da1bf550fb3aa57c33" compoundref="geometrypage_8cpp" startline="56" endline="64">clearScene</references>
+        <references refid="classGeometryPage_1aaf0da91936f1ea4f61be077109b349e1" compoundref="geometrypage_8h" startline="85">m_currentTask</references>
+        <references refid="classGeometryPage_1a057cf08f9c927e9745c4d533a381aaea" compoundref="geometrypage_8cpp" startline="180" endline="184">showLongArithmeticPage</references>
+        <references refid="classGeometryPage_1a68c8501f25ae9682080af27d8cadeb27" compoundref="geometrypage_8h" startline="80">ui</references>
+        <referencedby refid="classGeometryPage_1a4fda5c025fcd295789a6345233568d87" compoundref="geometrypage_8cpp" startline="30" endline="49">GeometryPage</referencedby>
+        <referencedby refid="classGeometryPage_1a5e401c179a58fb115a86b603312be0da" compoundref="geometrypage_8cpp" startline="186" endline="189">onTaskChanged</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classGeometryPage_1a057cf08f9c927e9745c4d533a381aaea" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GeometryPage::showLongArithmeticPage</definition>
+        <argsstring>(bool visible)</argsstring>
+        <name>showLongArithmeticPage</name>
+        <qualifiedname>GeometryPage::showLongArithmeticPage</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>visible</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrypage.h" line="47" column="10" bodyfile="src/apps/GeometryWorkbench/geometrypage.cpp" bodystart="180" bodyend="184"/>
+        <references refid="classGeometryPage_1a68c8501f25ae9682080af27d8cadeb27" compoundref="geometrypage_8h" startline="80">ui</references>
+        <referencedby refid="classGeometryPage_1a7b4530bb76653adf3d2d82d1a01c38ff" compoundref="geometrypage_8cpp" startline="66" endline="178">selectTask</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classGeometryPage_1acdcc0b18c0fa30dd324cd16c23517c7a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GeometryPage::handleTurnClick</definition>
+        <argsstring>(const QPointF &amp;screenPos)</argsstring>
+        <name>handleTurnClick</name>
+        <qualifiedname>GeometryPage::handleTurnClick</qualifiedname>
+        <param>
+          <type>const QPointF &amp;</type>
+          <declname>screenPos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrypage.h" line="51" column="10" bodyfile="src/apps/GeometryWorkbench/geometrypage.cpp" bodystart="278" bodyend="299"/>
+        <references refid="classGeometryPage_1aa685131d4c04dafba54ab095dc78952e" compoundref="geometrypage_8cpp" startline="301" endline="343">computeTurn</references>
+        <references refid="classGeometryPage_1a46b6f387963e57709bbb0827a46c7159" compoundref="geometrypage_8h" startline="81">m_points</references>
+        <references refid="namespacegeometry__qt_1a1b00196f7a1e7ff93f722417814f1dbf" compoundref="conversion_8cpp" startline="5" endline="8">geometry_qt::toGeometry</references>
+        <references refid="classGeometryPage_1a68c8501f25ae9682080af27d8cadeb27" compoundref="geometrypage_8h" startline="80">ui</references>
+        <referencedby refid="classGeometryPage_1a3b366ef2453036d455df3e7248d2e127" compoundref="geometrypage_8cpp" startline="239" endline="253">on_canvas_clicked</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classGeometryPage_1a758948c03ae61778e10165f174306c3a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GeometryPage::handleTurnDrag</definition>
+        <argsstring>(int index, const QPointF &amp;screenPos)</argsstring>
+        <name>handleTurnDrag</name>
+        <qualifiedname>GeometryPage::handleTurnDrag</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>const QPointF &amp;</type>
+          <declname>screenPos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrypage.h" line="52" column="10" bodyfile="src/apps/GeometryWorkbench/geometrypage.cpp" bodystart="345" bodyend="362"/>
+        <references refid="classGeometryPage_1aa685131d4c04dafba54ab095dc78952e" compoundref="geometrypage_8cpp" startline="301" endline="343">computeTurn</references>
+        <references refid="classGeometryPage_1a46b6f387963e57709bbb0827a46c7159" compoundref="geometrypage_8h" startline="81">m_points</references>
+        <references refid="namespacegeometry__qt_1a1b00196f7a1e7ff93f722417814f1dbf" compoundref="conversion_8cpp" startline="5" endline="8">geometry_qt::toGeometry</references>
+        <references refid="classGeometryPage_1a68c8501f25ae9682080af27d8cadeb27" compoundref="geometrypage_8h" startline="80">ui</references>
+        <referencedby refid="classGeometryPage_1a2d9f83accc5c03c75ef3c7e706716dfb" compoundref="geometrypage_8cpp" startline="255" endline="268">on_canvas_pointMoved</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classGeometryPage_1aa685131d4c04dafba54ab095dc78952e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GeometryPage::computeTurn</definition>
+        <argsstring>()</argsstring>
+        <name>computeTurn</name>
+        <qualifiedname>GeometryPage::computeTurn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrypage.h" line="53" column="10" bodyfile="src/apps/GeometryWorkbench/geometrypage.cpp" bodystart="301" bodyend="343"/>
+        <references refid="group__geometry__predicates_1gac3352a32baf1dd7d3620a1748dd4b78a" compoundref="predicates_8cpp" startline="8" endline="11">geometry::cross</references>
+        <references refid="classGeometryPage_1a4ac016dceaf16fde96c2aed328b0e50d">logMessage</references>
+        <references refid="classGeometryPage_1a46b6f387963e57709bbb0827a46c7159" compoundref="geometrypage_8h" startline="81">m_points</references>
+        <references refid="namespacegeometry_1aa0dbefb85d58b0fc5c2ff74ff1d1c94b" compoundref="predicates_8cpp" startline="26" endline="50">geometry::onSegment</references>
+        <references refid="namespacegeometry_1a1d29367c0cb96e7c1a1b871b786ffacd" compoundref="predicates_8cpp" startline="13" endline="24">geometry::turn</references>
+        <references refid="classGeometryPage_1a68c8501f25ae9682080af27d8cadeb27" compoundref="geometrypage_8h" startline="80">ui</references>
+        <references refid="structgeometry_1_1Point_1ad011726194a14d580d46c95bb1b57404" compoundref="point_8h" startline="14">geometry::Point::x</references>
+        <references refid="structgeometry_1_1Point_1a58d50e43eb0617b09d14b2be1b1d054e" compoundref="point_8h" startline="15">geometry::Point::y</references>
+        <referencedby refid="classGeometryPage_1acdcc0b18c0fa30dd324cd16c23517c7a" compoundref="geometrypage_8cpp" startline="278" endline="299">handleTurnClick</referencedby>
+        <referencedby refid="classGeometryPage_1a758948c03ae61778e10165f174306c3a" compoundref="geometrypage_8cpp" startline="345" endline="362">handleTurnDrag</referencedby>
+        <referencedby refid="classGeometryPage_1a91d1ac3960a9a2e31af6e79d8d048842" compoundref="geometrypage_8cpp" startline="191" endline="206">on_onlineCheckBox_toggled</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classGeometryPage_1a11f51d12b3ffe8de348c7fcee8f4bb8a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GeometryPage::handleIntersectionClick</definition>
+        <argsstring>(const QPointF &amp;screenPos)</argsstring>
+        <name>handleIntersectionClick</name>
+        <qualifiedname>GeometryPage::handleIntersectionClick</qualifiedname>
+        <param>
+          <type>const QPointF &amp;</type>
+          <declname>screenPos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrypage.h" line="56" column="10" bodyfile="src/apps/GeometryWorkbench/geometrypage.cpp" bodystart="366" bodyend="389"/>
+        <references refid="classGeometryPage_1a589fc5e7e93427a3f2c34679279ec875" compoundref="geometrypage_8cpp" startline="403" endline="434">computeIntersection</references>
+        <references refid="classGeometryPage_1a46b6f387963e57709bbb0827a46c7159" compoundref="geometrypage_8h" startline="81">m_points</references>
+        <references refid="namespacegeometry__qt_1a1b00196f7a1e7ff93f722417814f1dbf" compoundref="conversion_8cpp" startline="5" endline="8">geometry_qt::toGeometry</references>
+        <references refid="classGeometryPage_1a68c8501f25ae9682080af27d8cadeb27" compoundref="geometrypage_8h" startline="80">ui</references>
+        <referencedby refid="classGeometryPage_1a3b366ef2453036d455df3e7248d2e127" compoundref="geometrypage_8cpp" startline="239" endline="253">on_canvas_clicked</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classGeometryPage_1a2741d6f481328433d778097608c0be1d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GeometryPage::handleIntersectionDrag</definition>
+        <argsstring>(int index, const QPointF &amp;screenPos)</argsstring>
+        <name>handleIntersectionDrag</name>
+        <qualifiedname>GeometryPage::handleIntersectionDrag</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>const QPointF &amp;</type>
+          <declname>screenPos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrypage.h" line="57" column="10" bodyfile="src/apps/GeometryWorkbench/geometrypage.cpp" bodystart="391" bodyend="401"/>
+        <references refid="classGeometryPage_1a589fc5e7e93427a3f2c34679279ec875" compoundref="geometrypage_8cpp" startline="403" endline="434">computeIntersection</references>
+        <references refid="classGeometryPage_1a46b6f387963e57709bbb0827a46c7159" compoundref="geometrypage_8h" startline="81">m_points</references>
+        <references refid="namespacegeometry__qt_1a1b00196f7a1e7ff93f722417814f1dbf" compoundref="conversion_8cpp" startline="5" endline="8">geometry_qt::toGeometry</references>
+        <references refid="classGeometryPage_1a68c8501f25ae9682080af27d8cadeb27" compoundref="geometrypage_8h" startline="80">ui</references>
+        <referencedby refid="classGeometryPage_1a2d9f83accc5c03c75ef3c7e706716dfb" compoundref="geometrypage_8cpp" startline="255" endline="268">on_canvas_pointMoved</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classGeometryPage_1a589fc5e7e93427a3f2c34679279ec875" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GeometryPage::computeIntersection</definition>
+        <argsstring>()</argsstring>
+        <name>computeIntersection</name>
+        <qualifiedname>GeometryPage::computeIntersection</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrypage.h" line="58" column="10" bodyfile="src/apps/GeometryWorkbench/geometrypage.cpp" bodystart="403" bodyend="434"/>
+        <references refid="structgeometry_1_1SegmentIntersection_1a9299f186ad462f4fb9211efd29b8d1db" compoundref="segment__intersection_8h" startline="20" endline="20">geometry::SegmentIntersection::first</references>
+        <references refid="namespacegeometry_1a88e1232746c80a5b9704832bd536724d" compoundref="segment__intersection_8cpp" startline="38" endline="100">geometry::intersectSegments</references>
+        <references refid="structgeometry_1_1SegmentIntersection_1a06b8b07f0c38ceffcb0bfd9b88815577" compoundref="segment__intersection_8h" startline="19">geometry::SegmentIntersection::kind</references>
+        <references refid="classGeometryPage_1a4ac016dceaf16fde96c2aed328b0e50d">logMessage</references>
+        <references refid="classGeometryPage_1a46b6f387963e57709bbb0827a46c7159" compoundref="geometrypage_8h" startline="81">m_points</references>
+        <references refid="namespacegeometry_1aeac4c2c4d76d3f1bbd0d024a3a242444a6adf97f83acf6453d4a6a4b1070f3754" compoundref="segment__intersection_8h" startline="9">geometry::None</references>
+        <references refid="namespacegeometry_1aeac4c2c4d76d3f1bbd0d024a3a242444a2359a16283d7b4bfaaff2f6e90cbd116" compoundref="segment__intersection_8h" startline="11">geometry::Overlap</references>
+        <references refid="namespacegeometry_1aeac4c2c4d76d3f1bbd0d024a3a242444a2a3cd5946cfd317eb99c3d32e35e2d4c" compoundref="segment__intersection_8h" startline="10">geometry::Point</references>
+        <references refid="structgeometry_1_1SegmentIntersection_1afb2c84e3af15dba195071895da00c452" compoundref="segment__intersection_8h" startline="21" endline="21">geometry::SegmentIntersection::second</references>
+        <references refid="namespacegeometry__qt_1ab38550851d7c6704f958a3edd7a2dc56" compoundref="conversion_8cpp" startline="10" endline="13">geometry_qt::toScreen</references>
+        <references refid="classGeometryPage_1a68c8501f25ae9682080af27d8cadeb27" compoundref="geometrypage_8h" startline="80">ui</references>
+        <references refid="structgeometry_1_1Point_1ad011726194a14d580d46c95bb1b57404" compoundref="point_8h" startline="14">geometry::Point::x</references>
+        <references refid="structgeometry_1_1Point_1a58d50e43eb0617b09d14b2be1b1d054e" compoundref="point_8h" startline="15">geometry::Point::y</references>
+        <referencedby refid="classGeometryPage_1a11f51d12b3ffe8de348c7fcee8f4bb8a" compoundref="geometrypage_8cpp" startline="366" endline="389">handleIntersectionClick</referencedby>
+        <referencedby refid="classGeometryPage_1a2741d6f481328433d778097608c0be1d" compoundref="geometrypage_8cpp" startline="391" endline="401">handleIntersectionDrag</referencedby>
+        <referencedby refid="classGeometryPage_1aa05702756ffe70c1c9295494036d364e" compoundref="geometrypage_8cpp" startline="224" endline="235">on_calculateButton_clicked</referencedby>
+        <referencedby refid="classGeometryPage_1a91d1ac3960a9a2e31af6e79d8d048842" compoundref="geometrypage_8cpp" startline="191" endline="206">on_onlineCheckBox_toggled</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classGeometryPage_1aae494f5e3a68d411bc5c8b8a39bb84e4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GeometryPage::handleHullClick</definition>
+        <argsstring>(const QPointF &amp;screenPos)</argsstring>
+        <name>handleHullClick</name>
+        <qualifiedname>GeometryPage::handleHullClick</qualifiedname>
+        <param>
+          <type>const QPointF &amp;</type>
+          <declname>screenPos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrypage.h" line="61" column="10" bodyfile="src/apps/GeometryWorkbench/geometrypage.cpp" bodystart="438" bodyend="449"/>
+        <references refid="classGeometryPage_1ae4a1816822912d00197e9cfa375717d1" compoundref="geometrypage_8cpp" startline="463" endline="474">computeHull</references>
+        <references refid="classGeometryPage_1a46b6f387963e57709bbb0827a46c7159" compoundref="geometrypage_8h" startline="81">m_points</references>
+        <references refid="namespacegeometry__qt_1a1b00196f7a1e7ff93f722417814f1dbf" compoundref="conversion_8cpp" startline="5" endline="8">geometry_qt::toGeometry</references>
+        <references refid="classGeometryPage_1a68c8501f25ae9682080af27d8cadeb27" compoundref="geometrypage_8h" startline="80">ui</references>
+        <referencedby refid="classGeometryPage_1a3b366ef2453036d455df3e7248d2e127" compoundref="geometrypage_8cpp" startline="239" endline="253">on_canvas_clicked</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classGeometryPage_1ad4fd2514de86d00ae791f83755aad6a8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GeometryPage::handleHullDrag</definition>
+        <argsstring>(int index, const QPointF &amp;screenPos)</argsstring>
+        <name>handleHullDrag</name>
+        <qualifiedname>GeometryPage::handleHullDrag</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>const QPointF &amp;</type>
+          <declname>screenPos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrypage.h" line="62" column="10" bodyfile="src/apps/GeometryWorkbench/geometrypage.cpp" bodystart="451" bodyend="461"/>
+        <references refid="classGeometryPage_1ae4a1816822912d00197e9cfa375717d1" compoundref="geometrypage_8cpp" startline="463" endline="474">computeHull</references>
+        <references refid="classGeometryPage_1a46b6f387963e57709bbb0827a46c7159" compoundref="geometrypage_8h" startline="81">m_points</references>
+        <references refid="namespacegeometry__qt_1a1b00196f7a1e7ff93f722417814f1dbf" compoundref="conversion_8cpp" startline="5" endline="8">geometry_qt::toGeometry</references>
+        <references refid="classGeometryPage_1a68c8501f25ae9682080af27d8cadeb27" compoundref="geometrypage_8h" startline="80">ui</references>
+        <referencedby refid="classGeometryPage_1a2d9f83accc5c03c75ef3c7e706716dfb" compoundref="geometrypage_8cpp" startline="255" endline="268">on_canvas_pointMoved</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classGeometryPage_1ae4a1816822912d00197e9cfa375717d1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GeometryPage::computeHull</definition>
+        <argsstring>()</argsstring>
+        <name>computeHull</name>
+        <qualifiedname>GeometryPage::computeHull</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrypage.h" line="63" column="10" bodyfile="src/apps/GeometryWorkbench/geometrypage.cpp" bodystart="463" bodyend="474"/>
+        <references refid="namespacegeometry_1a6dfabff82b63c795670a97271b9908d2" compoundref="convex__hull_8cpp" startline="18" endline="52">geometry::convexHull</references>
+        <references refid="classGeometryPage_1a4ac016dceaf16fde96c2aed328b0e50d">logMessage</references>
+        <references refid="classGeometryPage_1a46b6f387963e57709bbb0827a46c7159" compoundref="geometrypage_8h" startline="81">m_points</references>
+        <references refid="namespacegeometry__qt_1ab38550851d7c6704f958a3edd7a2dc56" compoundref="conversion_8cpp" startline="10" endline="13">geometry_qt::toScreen</references>
+        <references refid="classGeometryPage_1a68c8501f25ae9682080af27d8cadeb27" compoundref="geometrypage_8h" startline="80">ui</references>
+        <referencedby refid="classGeometryPage_1aae494f5e3a68d411bc5c8b8a39bb84e4" compoundref="geometrypage_8cpp" startline="438" endline="449">handleHullClick</referencedby>
+        <referencedby refid="classGeometryPage_1ad4fd2514de86d00ae791f83755aad6a8" compoundref="geometrypage_8cpp" startline="451" endline="461">handleHullDrag</referencedby>
+        <referencedby refid="classGeometryPage_1aa05702756ffe70c1c9295494036d364e" compoundref="geometrypage_8cpp" startline="224" endline="235">on_calculateButton_clicked</referencedby>
+        <referencedby refid="classGeometryPage_1a91d1ac3960a9a2e31af6e79d8d048842" compoundref="geometrypage_8cpp" startline="191" endline="206">on_onlineCheckBox_toggled</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classGeometryPage_1a3a81da70a224b6bcd01c7aebc1a2db6f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GeometryPage::handleDelaunayClick</definition>
+        <argsstring>(const QPointF &amp;screenPos)</argsstring>
+        <name>handleDelaunayClick</name>
+        <qualifiedname>GeometryPage::handleDelaunayClick</qualifiedname>
+        <param>
+          <type>const QPointF &amp;</type>
+          <declname>screenPos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrypage.h" line="66" column="10" bodyfile="src/apps/GeometryWorkbench/geometrypage.cpp" bodystart="478" bodyend="488"/>
+        <references refid="classGeometryPage_1a740f2f65e615aad3fa3d3dafb2fd530f" compoundref="geometrypage_8cpp" startline="502" endline="520">computeDelaunay</references>
+        <references refid="classGeometryPage_1a46b6f387963e57709bbb0827a46c7159" compoundref="geometrypage_8h" startline="81">m_points</references>
+        <references refid="namespacegeometry__qt_1a1b00196f7a1e7ff93f722417814f1dbf" compoundref="conversion_8cpp" startline="5" endline="8">geometry_qt::toGeometry</references>
+        <references refid="classGeometryPage_1a68c8501f25ae9682080af27d8cadeb27" compoundref="geometrypage_8h" startline="80">ui</references>
+        <referencedby refid="classGeometryPage_1a3b366ef2453036d455df3e7248d2e127" compoundref="geometrypage_8cpp" startline="239" endline="253">on_canvas_clicked</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classGeometryPage_1ac2cb0e682262a2691c98bcdfa18bc48a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GeometryPage::handleDelaunayDrag</definition>
+        <argsstring>(int index, const QPointF &amp;screenPos)</argsstring>
+        <name>handleDelaunayDrag</name>
+        <qualifiedname>GeometryPage::handleDelaunayDrag</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>const QPointF &amp;</type>
+          <declname>screenPos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrypage.h" line="67" column="10" bodyfile="src/apps/GeometryWorkbench/geometrypage.cpp" bodystart="490" bodyend="500"/>
+        <references refid="classGeometryPage_1a740f2f65e615aad3fa3d3dafb2fd530f" compoundref="geometrypage_8cpp" startline="502" endline="520">computeDelaunay</references>
+        <references refid="classGeometryPage_1a46b6f387963e57709bbb0827a46c7159" compoundref="geometrypage_8h" startline="81">m_points</references>
+        <references refid="namespacegeometry__qt_1a1b00196f7a1e7ff93f722417814f1dbf" compoundref="conversion_8cpp" startline="5" endline="8">geometry_qt::toGeometry</references>
+        <references refid="classGeometryPage_1a68c8501f25ae9682080af27d8cadeb27" compoundref="geometrypage_8h" startline="80">ui</references>
+        <referencedby refid="classGeometryPage_1a2d9f83accc5c03c75ef3c7e706716dfb" compoundref="geometrypage_8cpp" startline="255" endline="268">on_canvas_pointMoved</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classGeometryPage_1a740f2f65e615aad3fa3d3dafb2fd530f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GeometryPage::computeDelaunay</definition>
+        <argsstring>()</argsstring>
+        <name>computeDelaunay</name>
+        <qualifiedname>GeometryPage::computeDelaunay</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrypage.h" line="68" column="10" bodyfile="src/apps/GeometryWorkbench/geometrypage.cpp" bodystart="502" bodyend="520"/>
+        <references refid="namespacegeometry_1a9610a583f6dfe92c309727c15b9b3933" compoundref="delaunay_8cpp" startline="76" endline="161">geometry::delaunayTriangulation</references>
+        <references refid="classGeometryPage_1a4ac016dceaf16fde96c2aed328b0e50d">logMessage</references>
+        <references refid="classGeometryPage_1a46b6f387963e57709bbb0827a46c7159" compoundref="geometrypage_8h" startline="81">m_points</references>
+        <references refid="namespacegeometry__qt_1ab38550851d7c6704f958a3edd7a2dc56" compoundref="conversion_8cpp" startline="10" endline="13">geometry_qt::toScreen</references>
+        <references refid="classGeometryPage_1a68c8501f25ae9682080af27d8cadeb27" compoundref="geometrypage_8h" startline="80">ui</references>
+        <referencedby refid="classGeometryPage_1a3a81da70a224b6bcd01c7aebc1a2db6f" compoundref="geometrypage_8cpp" startline="478" endline="488">handleDelaunayClick</referencedby>
+        <referencedby refid="classGeometryPage_1ac2cb0e682262a2691c98bcdfa18bc48a" compoundref="geometrypage_8cpp" startline="490" endline="500">handleDelaunayDrag</referencedby>
+        <referencedby refid="classGeometryPage_1aa05702756ffe70c1c9295494036d364e" compoundref="geometrypage_8cpp" startline="224" endline="235">on_calculateButton_clicked</referencedby>
+        <referencedby refid="classGeometryPage_1a91d1ac3960a9a2e31af6e79d8d048842" compoundref="geometrypage_8cpp" startline="191" endline="206">on_onlineCheckBox_toggled</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classGeometryPage_1a1fa4f035f37dbd61e6cf8c5ce9785883" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GeometryPage::handlePolygonClick</definition>
+        <argsstring>(const QPointF &amp;screenPos)</argsstring>
+        <name>handlePolygonClick</name>
+        <qualifiedname>GeometryPage::handlePolygonClick</qualifiedname>
+        <param>
+          <type>const QPointF &amp;</type>
+          <declname>screenPos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrypage.h" line="71" column="10" bodyfile="src/apps/GeometryWorkbench/geometrypage.cpp" bodystart="524" bodyend="539"/>
+        <references refid="classGeometryPage_1a73b11409c008e8a002cdf0b5b86d363d" compoundref="geometrypage_8cpp" startline="558" endline="588">computePolygonOperation</references>
+        <references refid="classGeometryPage_1af160b5db7a54477af72cfb0fb0a51d59" compoundref="geometrypage_8h" startline="82">m_polygonA</references>
+        <references refid="classGeometryPage_1a2bebd56bce64ae1e0ffa448947fcf97b" compoundref="geometrypage_8h" startline="83">m_polygonB</references>
+        <references refid="classGeometryPage_1aa5b999969872e3bab6cd0ac9181cca8c" compoundref="geometrypage_8h" startline="84">m_polygonPointBindings</references>
+        <references refid="namespacegeometry__qt_1a1b00196f7a1e7ff93f722417814f1dbf" compoundref="conversion_8cpp" startline="5" endline="8">geometry_qt::toGeometry</references>
+        <references refid="classGeometryPage_1a68c8501f25ae9682080af27d8cadeb27" compoundref="geometrypage_8h" startline="80">ui</references>
+        <referencedby refid="classGeometryPage_1a3b366ef2453036d455df3e7248d2e127" compoundref="geometrypage_8cpp" startline="239" endline="253">on_canvas_clicked</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classGeometryPage_1a077e9cd0bb0fd57f8b368a813152f78c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GeometryPage::handlePolygonDrag</definition>
+        <argsstring>(int index, const QPointF &amp;screenPos)</argsstring>
+        <name>handlePolygonDrag</name>
+        <qualifiedname>GeometryPage::handlePolygonDrag</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>const QPointF &amp;</type>
+          <declname>screenPos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrypage.h" line="72" column="10" bodyfile="src/apps/GeometryWorkbench/geometrypage.cpp" bodystart="541" bodyend="556"/>
+        <references refid="classGeometryPage_1a73b11409c008e8a002cdf0b5b86d363d" compoundref="geometrypage_8cpp" startline="558" endline="588">computePolygonOperation</references>
+        <references refid="classGeometryPage_1af160b5db7a54477af72cfb0fb0a51d59" compoundref="geometrypage_8h" startline="82">m_polygonA</references>
+        <references refid="classGeometryPage_1a2bebd56bce64ae1e0ffa448947fcf97b" compoundref="geometrypage_8h" startline="83">m_polygonB</references>
+        <references refid="classGeometryPage_1aa5b999969872e3bab6cd0ac9181cca8c" compoundref="geometrypage_8h" startline="84">m_polygonPointBindings</references>
+        <references refid="namespacegeometry__qt_1a1b00196f7a1e7ff93f722417814f1dbf" compoundref="conversion_8cpp" startline="5" endline="8">geometry_qt::toGeometry</references>
+        <references refid="classGeometryPage_1a68c8501f25ae9682080af27d8cadeb27" compoundref="geometrypage_8h" startline="80">ui</references>
+        <referencedby refid="classGeometryPage_1a2d9f83accc5c03c75ef3c7e706716dfb" compoundref="geometrypage_8cpp" startline="255" endline="268">on_canvas_pointMoved</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classGeometryPage_1a73b11409c008e8a002cdf0b5b86d363d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GeometryPage::computePolygonOperation</definition>
+        <argsstring>()</argsstring>
+        <name>computePolygonOperation</name>
+        <qualifiedname>GeometryPage::computePolygonOperation</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrypage.h" line="73" column="10" bodyfile="src/apps/GeometryWorkbench/geometrypage.cpp" bodystart="558" bodyend="588"/>
+        <references refid="namespacegeometry_1a6dfabff82b63c795670a97271b9908d2" compoundref="convex__hull_8cpp" startline="18" endline="52">geometry::convexHull</references>
+        <references refid="namespacegeometry_1a9da2f54b6289b88e936abf857d44ea5e" compoundref="convex__polygon__boolean_8cpp" startline="127" endline="181">geometry::convexPolygonBoolean</references>
+        <references refid="namespacegeometry_1ac019bd61bca22de69c70fc1a9acabefaa28ed2ac6c29f64a3692c956004b8ff7a" compoundref="convex__polygon__boolean_8h" startline="10">geometry::Difference</references>
+        <references refid="namespacegeometry_1ac019bd61bca22de69c70fc1a9acabefaaa06d31c2ee920b4d53e8c9c06d90ba24" compoundref="convex__polygon__boolean_8h" startline="10">geometry::Intersection</references>
+        <references refid="classGeometryPage_1a4ac016dceaf16fde96c2aed328b0e50d">logMessage</references>
+        <references refid="classGeometryPage_1aaf0da91936f1ea4f61be077109b349e1" compoundref="geometrypage_8h" startline="85">m_currentTask</references>
+        <references refid="classGeometryPage_1af160b5db7a54477af72cfb0fb0a51d59" compoundref="geometrypage_8h" startline="82">m_polygonA</references>
+        <references refid="classGeometryPage_1a2bebd56bce64ae1e0ffa448947fcf97b" compoundref="geometrypage_8h" startline="83">m_polygonB</references>
+        <references refid="namespacegeometry__qt_1ab38550851d7c6704f958a3edd7a2dc56" compoundref="conversion_8cpp" startline="10" endline="13">geometry_qt::toScreen</references>
+        <references refid="classGeometryPage_1a68c8501f25ae9682080af27d8cadeb27" compoundref="geometrypage_8h" startline="80">ui</references>
+        <references refid="namespacegeometry_1ac019bd61bca22de69c70fc1a9acabefaaaef12e903e606a4895a16b393bfdec8c" compoundref="convex__polygon__boolean_8h" startline="10">geometry::Union</references>
+        <referencedby refid="classGeometryPage_1a1fa4f035f37dbd61e6cf8c5ce9785883" compoundref="geometrypage_8cpp" startline="524" endline="539">handlePolygonClick</referencedby>
+        <referencedby refid="classGeometryPage_1a077e9cd0bb0fd57f8b368a813152f78c" compoundref="geometrypage_8cpp" startline="541" endline="556">handlePolygonDrag</referencedby>
+        <referencedby refid="classGeometryPage_1aa05702756ffe70c1c9295494036d364e" compoundref="geometrypage_8cpp" startline="224" endline="235">on_calculateButton_clicked</referencedby>
+        <referencedby refid="classGeometryPage_1a91d1ac3960a9a2e31af6e79d8d048842" compoundref="geometrypage_8cpp" startline="191" endline="206">on_onlineCheckBox_toggled</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classGeometryPage_1ace1f1e79f6cf90be97a1edf406262102" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GeometryPage::handleBezierClick</definition>
+        <argsstring>(const QPointF &amp;screenPos)</argsstring>
+        <name>handleBezierClick</name>
+        <qualifiedname>GeometryPage::handleBezierClick</qualifiedname>
+        <param>
+          <type>const QPointF &amp;</type>
+          <declname>screenPos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrypage.h" line="76" column="10" bodyfile="src/apps/GeometryWorkbench/geometrypage.cpp" bodystart="590" bodyend="598"/>
+        <references refid="classGeometryPage_1aa0380120b0b9e766b2e6d3c4d4192b27" compoundref="geometrypage_8cpp" startline="607" endline="620">computeBezier</references>
+        <references refid="classGeometryPage_1a46b6f387963e57709bbb0827a46c7159" compoundref="geometrypage_8h" startline="81">m_points</references>
+        <references refid="namespacegeometry__qt_1a1b00196f7a1e7ff93f722417814f1dbf" compoundref="conversion_8cpp" startline="5" endline="8">geometry_qt::toGeometry</references>
+        <references refid="classGeometryPage_1a68c8501f25ae9682080af27d8cadeb27" compoundref="geometrypage_8h" startline="80">ui</references>
+        <referencedby refid="classGeometryPage_1a3b366ef2453036d455df3e7248d2e127" compoundref="geometrypage_8cpp" startline="239" endline="253">on_canvas_clicked</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classGeometryPage_1ac64c55de6638a1a39c54f756e85888a9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GeometryPage::handleBezierDrag</definition>
+        <argsstring>(int index, const QPointF &amp;screenPos)</argsstring>
+        <name>handleBezierDrag</name>
+        <qualifiedname>GeometryPage::handleBezierDrag</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>const QPointF &amp;</type>
+          <declname>screenPos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrypage.h" line="77" column="10" bodyfile="src/apps/GeometryWorkbench/geometrypage.cpp" bodystart="600" bodyend="605"/>
+        <references refid="classGeometryPage_1aa0380120b0b9e766b2e6d3c4d4192b27" compoundref="geometrypage_8cpp" startline="607" endline="620">computeBezier</references>
+        <references refid="classGeometryPage_1a46b6f387963e57709bbb0827a46c7159" compoundref="geometrypage_8h" startline="81">m_points</references>
+        <references refid="namespacegeometry__qt_1a1b00196f7a1e7ff93f722417814f1dbf" compoundref="conversion_8cpp" startline="5" endline="8">geometry_qt::toGeometry</references>
+        <references refid="classGeometryPage_1a68c8501f25ae9682080af27d8cadeb27" compoundref="geometrypage_8h" startline="80">ui</references>
+        <referencedby refid="classGeometryPage_1a2d9f83accc5c03c75ef3c7e706716dfb" compoundref="geometrypage_8cpp" startline="255" endline="268">on_canvas_pointMoved</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classGeometryPage_1aa0380120b0b9e766b2e6d3c4d4192b27" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GeometryPage::computeBezier</definition>
+        <argsstring>()</argsstring>
+        <name>computeBezier</name>
+        <qualifiedname>GeometryPage::computeBezier</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/GeometryWorkbench/geometrypage.h" line="78" column="10" bodyfile="src/apps/GeometryWorkbench/geometrypage.cpp" bodystart="607" bodyend="620"/>
+        <references refid="namespacebezier_1a501e022e378938e5a58777be3b250155" compoundref="bezier_8cpp" startline="54" endline="77">bezier::composite</references>
+        <references refid="namespacebezier_1aa6f0140841e402a3cfa3ba2aba8044d0" compoundref="bezier_8cpp" startline="34" endline="38">bezier::deCasteljau</references>
+        <references refid="namespacebezier_1a16319ee9d71db52368b5ce95b86794e2" compoundref="bezier_8cpp" startline="7" endline="32">bezier::deCasteljauLevels</references>
+        <references refid="classGeometryPage_1a46b6f387963e57709bbb0827a46c7159" compoundref="geometrypage_8h" startline="81">m_points</references>
+        <references refid="namespacebezier_1a3e86093165e34203620df7fe7623a57e" compoundref="bezier_8cpp" startline="40" endline="52">bezier::sample</references>
+        <references refid="namespacegeometry__qt_1ab38550851d7c6704f958a3edd7a2dc56" compoundref="conversion_8cpp" startline="10" endline="13">geometry_qt::toScreen</references>
+        <references refid="classGeometryPage_1a68c8501f25ae9682080af27d8cadeb27" compoundref="geometrypage_8h" startline="80">ui</references>
+        <referencedby refid="classGeometryPage_1ace1f1e79f6cf90be97a1edf406262102" compoundref="geometrypage_8cpp" startline="590" endline="598">handleBezierClick</referencedby>
+        <referencedby refid="classGeometryPage_1ac64c55de6638a1a39c54f756e85888a9" compoundref="geometrypage_8cpp" startline="600" endline="605">handleBezierDrag</referencedby>
+        <referencedby refid="classGeometryPage_1a987ba5fc021a4c94a694aad27f3efdf6" compoundref="geometrypage_8cpp" startline="208" endline="211">on_bezierSlider_valueChanged</referencedby>
+        <referencedby refid="classGeometryPage_1aa05702756ffe70c1c9295494036d364e" compoundref="geometrypage_8cpp" startline="224" endline="235">on_calculateButton_clicked</referencedby>
+        <referencedby refid="classGeometryPage_1a91d1ac3960a9a2e31af6e79d8d048842" compoundref="geometrypage_8cpp" startline="191" endline="206">on_onlineCheckBox_toggled</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Главная страница задач 1–13. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Холст хранит точки в экранных координатах; страница переводит их в геометрию через <computeroutput><ref refid="namespacegeometry__qt" kindref="compound">geometry_qt</ref></computeroutput> и вызывает чистые алгоритмы библиотек. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>GeometryPage</label>
+        <link refid="classGeometryPage"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QWidget</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>GeometryPage</label>
+        <link refid="classGeometryPage"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QWidget</label>
+      </node>
+    </collaborationgraph>
+    <location file="src/apps/GeometryWorkbench/geometrypage.h" line="19" column="1" bodyfile="src/apps/GeometryWorkbench/geometrypage.h" bodystart="19" bodyend="86"/>
+    <listofallmembers>
+      <member refid="classGeometryPage_1addebfdadcc9b93da1bf550fb3aa57c33" prot="public" virt="non-virtual"><scope>GeometryPage</scope><name>clearScene</name></member>
+      <member refid="classGeometryPage_1aa0380120b0b9e766b2e6d3c4d4192b27" prot="private" virt="non-virtual"><scope>GeometryPage</scope><name>computeBezier</name></member>
+      <member refid="classGeometryPage_1a740f2f65e615aad3fa3d3dafb2fd530f" prot="private" virt="non-virtual"><scope>GeometryPage</scope><name>computeDelaunay</name></member>
+      <member refid="classGeometryPage_1ae4a1816822912d00197e9cfa375717d1" prot="private" virt="non-virtual"><scope>GeometryPage</scope><name>computeHull</name></member>
+      <member refid="classGeometryPage_1a589fc5e7e93427a3f2c34679279ec875" prot="private" virt="non-virtual"><scope>GeometryPage</scope><name>computeIntersection</name></member>
+      <member refid="classGeometryPage_1a73b11409c008e8a002cdf0b5b86d363d" prot="private" virt="non-virtual"><scope>GeometryPage</scope><name>computePolygonOperation</name></member>
+      <member refid="classGeometryPage_1aa685131d4c04dafba54ab095dc78952e" prot="private" virt="non-virtual"><scope>GeometryPage</scope><name>computeTurn</name></member>
+      <member refid="classGeometryPage_1aa9f01f9f97ae7cc6d65dcd8254ea8428" prot="public" virt="non-virtual"><scope>GeometryPage</scope><name>cursorMoved</name></member>
+      <member refid="classGeometryPage_1a4fda5c025fcd295789a6345233568d87" prot="public" virt="non-virtual"><scope>GeometryPage</scope><name>GeometryPage</name></member>
+      <member refid="classGeometryPage_1ace1f1e79f6cf90be97a1edf406262102" prot="private" virt="non-virtual"><scope>GeometryPage</scope><name>handleBezierClick</name></member>
+      <member refid="classGeometryPage_1ac64c55de6638a1a39c54f756e85888a9" prot="private" virt="non-virtual"><scope>GeometryPage</scope><name>handleBezierDrag</name></member>
+      <member refid="classGeometryPage_1a3a81da70a224b6bcd01c7aebc1a2db6f" prot="private" virt="non-virtual"><scope>GeometryPage</scope><name>handleDelaunayClick</name></member>
+      <member refid="classGeometryPage_1ac2cb0e682262a2691c98bcdfa18bc48a" prot="private" virt="non-virtual"><scope>GeometryPage</scope><name>handleDelaunayDrag</name></member>
+      <member refid="classGeometryPage_1aae494f5e3a68d411bc5c8b8a39bb84e4" prot="private" virt="non-virtual"><scope>GeometryPage</scope><name>handleHullClick</name></member>
+      <member refid="classGeometryPage_1ad4fd2514de86d00ae791f83755aad6a8" prot="private" virt="non-virtual"><scope>GeometryPage</scope><name>handleHullDrag</name></member>
+      <member refid="classGeometryPage_1a11f51d12b3ffe8de348c7fcee8f4bb8a" prot="private" virt="non-virtual"><scope>GeometryPage</scope><name>handleIntersectionClick</name></member>
+      <member refid="classGeometryPage_1a2741d6f481328433d778097608c0be1d" prot="private" virt="non-virtual"><scope>GeometryPage</scope><name>handleIntersectionDrag</name></member>
+      <member refid="classGeometryPage_1a1fa4f035f37dbd61e6cf8c5ce9785883" prot="private" virt="non-virtual"><scope>GeometryPage</scope><name>handlePolygonClick</name></member>
+      <member refid="classGeometryPage_1a077e9cd0bb0fd57f8b368a813152f78c" prot="private" virt="non-virtual"><scope>GeometryPage</scope><name>handlePolygonDrag</name></member>
+      <member refid="classGeometryPage_1acdcc0b18c0fa30dd324cd16c23517c7a" prot="private" virt="non-virtual"><scope>GeometryPage</scope><name>handleTurnClick</name></member>
+      <member refid="classGeometryPage_1a758948c03ae61778e10165f174306c3a" prot="private" virt="non-virtual"><scope>GeometryPage</scope><name>handleTurnDrag</name></member>
+      <member refid="classGeometryPage_1a4ac016dceaf16fde96c2aed328b0e50d" prot="public" virt="non-virtual"><scope>GeometryPage</scope><name>logMessage</name></member>
+      <member refid="classGeometryPage_1aaf0da91936f1ea4f61be077109b349e1" prot="private" virt="non-virtual"><scope>GeometryPage</scope><name>m_currentTask</name></member>
+      <member refid="classGeometryPage_1a46b6f387963e57709bbb0827a46c7159" prot="private" virt="non-virtual"><scope>GeometryPage</scope><name>m_points</name></member>
+      <member refid="classGeometryPage_1af160b5db7a54477af72cfb0fb0a51d59" prot="private" virt="non-virtual"><scope>GeometryPage</scope><name>m_polygonA</name></member>
+      <member refid="classGeometryPage_1a2bebd56bce64ae1e0ffa448947fcf97b" prot="private" virt="non-virtual"><scope>GeometryPage</scope><name>m_polygonB</name></member>
+      <member refid="classGeometryPage_1aa5b999969872e3bab6cd0ac9181cca8c" prot="private" virt="non-virtual"><scope>GeometryPage</scope><name>m_polygonPointBindings</name></member>
+      <member refid="classGeometryPage_1a987ba5fc021a4c94a694aad27f3efdf6" prot="private" virt="non-virtual"><scope>GeometryPage</scope><name>on_bezierSlider_valueChanged</name></member>
+      <member refid="classGeometryPage_1aa05702756ffe70c1c9295494036d364e" prot="private" virt="non-virtual"><scope>GeometryPage</scope><name>on_calculateButton_clicked</name></member>
+      <member refid="classGeometryPage_1a3b366ef2453036d455df3e7248d2e127" prot="private" virt="non-virtual"><scope>GeometryPage</scope><name>on_canvas_clicked</name></member>
+      <member refid="classGeometryPage_1a66d38697b0496bb09cc5c22c375fc596" prot="private" virt="non-virtual"><scope>GeometryPage</scope><name>on_canvas_cursorMoved</name></member>
+      <member refid="classGeometryPage_1a2d9f83accc5c03c75ef3c7e706716dfb" prot="private" virt="non-virtual"><scope>GeometryPage</scope><name>on_canvas_pointMoved</name></member>
+      <member refid="classGeometryPage_1af2d0477ad7f1427fc470859223d24cd0" prot="private" virt="non-virtual"><scope>GeometryPage</scope><name>on_circumcirclesCheckBox_toggled</name></member>
+      <member refid="classGeometryPage_1a999b1d336f50d397868ab4790189ff04" prot="private" virt="non-virtual"><scope>GeometryPage</scope><name>on_clearButton_clicked</name></member>
+      <member refid="classGeometryPage_1a91d1ac3960a9a2e31af6e79d8d048842" prot="private" virt="non-virtual"><scope>GeometryPage</scope><name>on_onlineCheckBox_toggled</name></member>
+      <member refid="classGeometryPage_1a5e401c179a58fb115a86b603312be0da" prot="private" virt="non-virtual"><scope>GeometryPage</scope><name>onTaskChanged</name></member>
+      <member refid="classGeometryPage_1a7b4530bb76653adf3d2d82d1a01c38ff" prot="private" virt="non-virtual"><scope>GeometryPage</scope><name>selectTask</name></member>
+      <member refid="classGeometryPage_1a057cf08f9c927e9745c4d533a381aaea" prot="private" virt="non-virtual"><scope>GeometryPage</scope><name>showLongArithmeticPage</name></member>
+      <member refid="classGeometryPage_1a68c8501f25ae9682080af27d8cadeb27" prot="private" virt="non-virtual"><scope>GeometryPage</scope><name>ui</name></member>
+      <member refid="classGeometryPage_1acfc85b110da93aea63d610fbc9b5e359" prot="public" virt="non-virtual"><scope>GeometryPage</scope><name>~GeometryPage</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

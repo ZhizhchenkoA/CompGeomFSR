@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="geometrypage_8h" kind="file" language="C++">
+    <compoundname>geometrypage.h</compoundname>
+    <includes local="no">QWidget</includes>
+    <includes local="no">vector</includes>
+    <includes refid="point_8h" local="yes">geometry/point.h</includes>
+    <includedby refid="geometrypage_8cpp" local="yes">src/apps/GeometryWorkbench/geometrypage.cpp</includedby>
+    <includedby refid="mainwindow_8cpp" local="yes">src/apps/GeometryWorkbench/mainwindow.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>src/apps/GeometryWorkbench/geometrypage.h</label>
+        <link refid="geometrypage_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>geometry/point.h</label>
+        <link refid="point_8h"/>
+      </node>
+      <node id="2">
+        <label>QWidget</label>
+      </node>
+      <node id="3">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>src/apps/GeometryWorkbench/geometrypage.cpp</label>
+        <link refid="geometrypage_8cpp"/>
+      </node>
+      <node id="1">
+        <label>src/apps/GeometryWorkbench/geometrypage.h</label>
+        <link refid="geometrypage_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>src/apps/GeometryWorkbench/mainwindow.cpp</label>
+        <link refid="mainwindow_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classGeometryPage" prot="public">GeometryPage</innerclass>
+    <innernamespace refid="namespaceUi">Ui</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QWidget&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="point_8h" kindref="compound">geometry/point.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">QT_BEGIN_NAMESPACE</highlight></codeline>
+<codeline lineno="9" refid="namespaceUi" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceUi" kindref="compound">Ui</ref><sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classGeometryPage" kindref="compound">GeometryPage</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">QT_END_NAMESPACE</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="classGeometryPage" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classGeometryPage_1a4fda5c025fcd295789a6345233568d87" kindref="member">GeometryPage</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>QWidget<sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_OBJECT</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classGeometryPage_1a4fda5c025fcd295789a6345233568d87" kindref="member">GeometryPage</ref>(QWidget*<sp/>parent<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometryPage_1acfc85b110da93aea63d610fbc9b5e359" kindref="member">~GeometryPage</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGeometryPage_1addebfdadcc9b93da1bf550fb3aa57c33" kindref="member">clearScene</ref>();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal">signals:</highlight></codeline>
+<codeline lineno="28" refid="classGeometryPage_1a4ac016dceaf16fde96c2aed328b0e50d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGeometryPage_1a4ac016dceaf16fde96c2aed328b0e50d" kindref="member">logMessage</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>text);</highlight></codeline>
+<codeline lineno="29" refid="classGeometryPage_1aa9f01f9f97ae7cc6d65dcd8254ea8428" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGeometryPage_1aa9f01f9f97ae7cc6d65dcd8254ea8428" kindref="member">cursorMoved</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QPointF&amp;<sp/>geometryPos);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>slots:</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGeometryPage_1a91d1ac3960a9a2e31af6e79d8d048842" kindref="member">on_onlineCheckBox_toggled</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>checked);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGeometryPage_1a999b1d336f50d397868ab4790189ff04" kindref="member">on_clearButton_clicked</ref>();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGeometryPage_1aa05702756ffe70c1c9295494036d364e" kindref="member">on_calculateButton_clicked</ref>();</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGeometryPage_1af2d0477ad7f1427fc470859223d24cd0" kindref="member">on_circumcirclesCheckBox_toggled</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>checked);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGeometryPage_1a987ba5fc021a4c94a694aad27f3efdf6" kindref="member">on_bezierSlider_valueChanged</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Сигналы<sp/>холста<sp/>подключаются<sp/>автоматически<sp/>(connectSlotsByName):</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>имя<sp/>виджета<sp/>&quot;canvas&quot;<sp/>+<sp/>имя<sp/>сигнала.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGeometryPage_1a3b366ef2453036d455df3e7248d2e127" kindref="member">on_canvas_clicked</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QPointF&amp;<sp/>screenPos);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGeometryPage_1a2d9f83accc5c03c75ef3c7e706716dfb" kindref="member">on_canvas_pointMoved</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QPointF&amp;<sp/>screenPos);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGeometryPage_1a66d38697b0496bb09cc5c22c375fc596" kindref="member">on_canvas_cursorMoved</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QPointF&amp;<sp/>screenPos);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGeometryPage_1a5e401c179a58fb115a86b603312be0da" kindref="member">onTaskChanged</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGeometryPage_1a7b4530bb76653adf3d2d82d1a01c38ff" kindref="member">selectTask</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>task);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGeometryPage_1a057cf08f9c927e9745c4d533a381aaea" kindref="member">showLongArithmeticPage</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>visible);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Задача<sp/>1:<sp/>предикат<sp/>поворота.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGeometryPage_1acdcc0b18c0fa30dd324cd16c23517c7a" kindref="member">handleTurnClick</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QPointF&amp;<sp/>screenPos);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGeometryPage_1a758948c03ae61778e10165f174306c3a" kindref="member">handleTurnDrag</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QPointF&amp;<sp/>screenPos);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGeometryPage_1aa685131d4c04dafba54ab095dc78952e" kindref="member">computeTurn</ref>();</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Задача<sp/>2:<sp/>пересечение<sp/>отрезков<sp/>AB<sp/>и<sp/>CD.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGeometryPage_1a11f51d12b3ffe8de348c7fcee8f4bb8a" kindref="member">handleIntersectionClick</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QPointF&amp;<sp/>screenPos);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGeometryPage_1a2741d6f481328433d778097608c0be1d" kindref="member">handleIntersectionDrag</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QPointF&amp;<sp/>screenPos);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGeometryPage_1a589fc5e7e93427a3f2c34679279ec875" kindref="member">computeIntersection</ref>();</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Задача<sp/>5:<sp/>выпуклая<sp/>оболочка.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGeometryPage_1aae494f5e3a68d411bc5c8b8a39bb84e4" kindref="member">handleHullClick</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QPointF&amp;<sp/>screenPos);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGeometryPage_1ad4fd2514de86d00ae791f83755aad6a8" kindref="member">handleHullDrag</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QPointF&amp;<sp/>screenPos);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGeometryPage_1ae4a1816822912d00197e9cfa375717d1" kindref="member">computeHull</ref>();</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Задача<sp/>6:<sp/>триангуляция<sp/>Делоне.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGeometryPage_1a3a81da70a224b6bcd01c7aebc1a2db6f" kindref="member">handleDelaunayClick</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QPointF&amp;<sp/>screenPos);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGeometryPage_1ac2cb0e682262a2691c98bcdfa18bc48a" kindref="member">handleDelaunayDrag</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QPointF&amp;<sp/>screenPos);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGeometryPage_1a740f2f65e615aad3fa3d3dafb2fd530f" kindref="member">computeDelaunay</ref>();</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Задачи<sp/>7--9:<sp/>операции<sp/>над<sp/>выпуклыми<sp/>многоугольниками.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGeometryPage_1a1fa4f035f37dbd61e6cf8c5ce9785883" kindref="member">handlePolygonClick</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QPointF&amp;<sp/>screenPos);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGeometryPage_1a077e9cd0bb0fd57f8b368a813152f78c" kindref="member">handlePolygonDrag</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QPointF&amp;<sp/>screenPos);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGeometryPage_1a73b11409c008e8a002cdf0b5b86d363d" kindref="member">computePolygonOperation</ref>();</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Задача<sp/>13:<sp/>кривые<sp/>Безье.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGeometryPage_1ace1f1e79f6cf90be97a1edf406262102" kindref="member">handleBezierClick</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QPointF&amp;<sp/>screenPos);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGeometryPage_1ac64c55de6638a1a39c54f756e85888a9" kindref="member">handleBezierDrag</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QPointF&amp;<sp/>screenPos);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGeometryPage_1aa0380120b0b9e766b2e6d3c4d4192b27" kindref="member">computeBezier</ref>();</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="classGeometryPage_1a68c8501f25ae9682080af27d8cadeb27" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Ui::GeometryPage*<sp/><ref refid="classGeometryPage_1a68c8501f25ae9682080af27d8cadeb27" kindref="member">ui</ref>;</highlight></codeline>
+<codeline lineno="81" refid="classGeometryPage_1a46b6f387963e57709bbb0827a46c7159" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;geometry::Point&gt;<sp/><ref refid="classGeometryPage_1a46b6f387963e57709bbb0827a46c7159" kindref="member">m_points</ref>;<sp/></highlight><highlight class="comment">//<sp/>геометрические<sp/>координаты<sp/>(Y<sp/>вверх)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="classGeometryPage_1af160b5db7a54477af72cfb0fb0a51d59" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;geometry::Point&gt;<sp/><ref refid="classGeometryPage_1af160b5db7a54477af72cfb0fb0a51d59" kindref="member">m_polygonA</ref>;</highlight></codeline>
+<codeline lineno="83" refid="classGeometryPage_1a2bebd56bce64ae1e0ffa448947fcf97b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;geometry::Point&gt;<sp/><ref refid="classGeometryPage_1a2bebd56bce64ae1e0ffa448947fcf97b" kindref="member">m_polygonB</ref>;</highlight></codeline>
+<codeline lineno="84" refid="classGeometryPage_1aa5b999969872e3bab6cd0ac9181cca8c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::pair&lt;int,<sp/>int&gt;&gt;<sp/><ref refid="classGeometryPage_1aa5b999969872e3bab6cd0ac9181cca8c" kindref="member">m_polygonPointBindings</ref>;</highlight></codeline>
+<codeline lineno="85" refid="classGeometryPage_1aaf0da91936f1ea4f61be077109b349e1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classGeometryPage_1aaf0da91936f1ea4f61be077109b349e1" kindref="member">m_currentTask</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="src/apps/GeometryWorkbench/geometrypage.h"/>
+  </compounddef>
+</doxygen>

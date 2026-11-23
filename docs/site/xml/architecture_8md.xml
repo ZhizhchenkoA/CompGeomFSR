@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="architecture_8md" kind="file" language="Markdown">
+    <compoundname>architecture.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">/**</highlight></codeline>
+<codeline><highlight class="normal">@page<sp/>architecture<sp/>Архитектура<sp/>проекта</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">@dot</highlight></codeline>
+<codeline><highlight class="normal">digraph<sp/>architecture<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>rankdir=LR;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>node<sp/>[shape=box,<sp/>style=&quot;rounded,filled&quot;,<sp/>fontname=&quot;DejaVu<sp/>Sans&quot;];</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>app<sp/>[label=&quot;Qt<sp/>GeometryWorkbench&quot;,<sp/>fillcolor=&quot;#dbeafe&quot;];</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>canvas<sp/>[label=&quot;GeometryCanvas&quot;,<sp/>fillcolor=&quot;#e0e7ff&quot;];</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>geometry<sp/>[label=&quot;geometry\nпредикаты<sp/>и<sp/>операции&quot;,<sp/>fillcolor=&quot;#dcfce7&quot;];</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>bigint<sp/>[label=&quot;bigint\nточная<sp/>арифметика&quot;,<sp/>fillcolor=&quot;#fef3c7&quot;];</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>bezier<sp/>[label=&quot;bezier\nде<sp/>Кастельжо&quot;,<sp/>fillcolor=&quot;#f3e8ff&quot;];</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>qt<sp/>[label=&quot;geometry_qt\nY-инверсия&quot;,<sp/>fillcolor=&quot;#f1f5f9&quot;];</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>app<sp/>-&gt;<sp/>canvas<sp/>[label=&quot;события<sp/>мыши&quot;];</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>app<sp/>-&gt;<sp/>geometry<sp/>[label=&quot;чистые<sp/>алгоритмы&quot;];</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>app<sp/>-&gt;<sp/>bigint<sp/>[label=&quot;задача<sp/>3&quot;];</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>app<sp/>-&gt;<sp/>bezier<sp/>[label=&quot;задача<sp/>13&quot;];</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>app<sp/>-&gt;<sp/>qt<sp/>[label=&quot;координаты&quot;];</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>canvas<sp/>-&gt;<sp/>qt<sp/>[label=&quot;screen<sp/>↔<sp/>geometry&quot;];</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal">@enddot</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">@section<sp/>flow<sp/>Поток<sp/>данных</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">1.<sp/>Qt-сигнал<sp/>передаёт<sp/>клик<sp/>или<sp/>перетаскивание<sp/>в<sp/>`GeometryPage`.</highlight></codeline>
+<codeline><highlight class="normal">2.<sp/>Страница<sp/>переводит<sp/>`QPointF`<sp/>через<sp/>`geometry_qt::toGeometry`.</highlight></codeline>
+<codeline><highlight class="normal">3.<sp/>Чистая<sp/>библиотека<sp/>возвращает<sp/>число,<sp/>контур,<sp/>треугольники<sp/>или<sp/>кривую.</highlight></codeline>
+<codeline><highlight class="normal">4.<sp/>Результат<sp/>переводится<sp/>обратно<sp/>в<sp/>экранные<sp/>координаты<sp/>и<sp/>рисуется<sp/>слоями<sp/>`GeometryCanvas`.</highlight></codeline>
+<codeline><highlight class="normal">*/</highlight></codeline>
+    </programlisting>
+    <location file="docs/architecture.md"/>
+  </compounddef>
+</doxygen>

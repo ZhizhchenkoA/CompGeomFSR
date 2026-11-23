@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="convex__polygon__boolean_8h" kind="file" language="C++">
+    <compoundname>convex_polygon_boolean.h</compoundname>
+    <includes local="no">vector</includes>
+    <includes refid="point_8h" local="yes">geometry/point.h</includes>
+    <includedby refid="geometrypage_8cpp" local="yes">src/apps/GeometryWorkbench/geometrypage.cpp</includedby>
+    <includedby refid="convex__polygon__boolean_8cpp" local="yes">src/lib/geometry/convex_polygon_boolean.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>src/lib/geometry/convex_polygon_boolean.h</label>
+        <link refid="convex__polygon__boolean_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>geometry/point.h</label>
+        <link refid="point_8h"/>
+      </node>
+      <node id="2">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>src/apps/GeometryWorkbench/geometrypage.cpp</label>
+        <link refid="geometrypage_8cpp"/>
+      </node>
+      <node id="3">
+        <label>src/lib/geometry/convex_polygon_boolean.cpp</label>
+        <link refid="convex__polygon__boolean_8cpp"/>
+      </node>
+      <node id="1">
+        <label>src/lib/geometry/convex_polygon_boolean.h</label>
+        <link refid="convex__polygon__boolean_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespacegeometry">geometry</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="point_8h" kindref="compound">geometry/point.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacegeometry" kindref="compound">geometry</ref><sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="namespacegeometry_1ac019bd61bca22de69c70fc1a9acabefa" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="namespacegeometry_1ac019bd61bca22de69c70fc1a9acabefa" kindref="member">ConvexPolygonOperation</ref><sp/>{<sp/><ref refid="namespacegeometry_1ac019bd61bca22de69c70fc1a9acabefaaa06d31c2ee920b4d53e8c9c06d90ba24" kindref="member">Intersection</ref>,<sp/><ref refid="namespacegeometry_1ac019bd61bca22de69c70fc1a9acabefaaaef12e903e606a4895a16b393bfdec8c" kindref="member">Union</ref>,<sp/><ref refid="namespacegeometry_1ac019bd61bca22de69c70fc1a9acabefaa28ed2ac6c29f64a3692c956004b8ff7a" kindref="member">Difference</ref><sp/>};</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="namespacegeometry_1a2f3c921176229b37a127ffcce53cf519" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespacegeometry_1a2f3c921176229b37a127ffcce53cf519" kindref="member">PolygonSet</ref><sp/>=<sp/>std::vector&lt;std::vector&lt;Point&gt;&gt;;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><ref refid="namespacegeometry_1a2f3c921176229b37a127ffcce53cf519" kindref="member">PolygonSet</ref><sp/><ref refid="namespacegeometry_1a9da2f54b6289b88e936abf857d44ea5e" kindref="member">convexPolygonBoolean</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;Point&gt;&amp;<sp/>first,</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;Point&gt;&amp;<sp/>second,</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacegeometry_1ac019bd61bca22de69c70fc1a9acabefa" kindref="member">ConvexPolygonOperation</ref><sp/>operation,</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>eps<sp/>=<sp/>1e-9);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>geometry</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="src/lib/geometry/convex_polygon_boolean.h"/>
+  </compounddef>
+</doxygen>

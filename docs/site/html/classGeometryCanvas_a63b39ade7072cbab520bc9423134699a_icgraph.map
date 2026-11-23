@@ -1,0 +1,5 @@
+<map id="GeometryCanvas::drawTurnGuide" name="GeometryCanvas::drawTurnGuide">
+<area shape="rect" id="Node000001" title=" " alt="" coords="266,5,467,50"/>
+<area shape="rect" id="Node000002" href="$classGeometryCanvas.html#aa3f90b84c153e5c9b531fff6a2f4abff" title=" " alt="" coords="5,14,218,42"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="248,28,218,30,218,25,253,28"/>
+</map>

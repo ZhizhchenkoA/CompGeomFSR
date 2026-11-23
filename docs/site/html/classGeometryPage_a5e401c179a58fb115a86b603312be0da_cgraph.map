@@ -1,0 +1,9 @@
+<map id="GeometryPage::onTaskChanged" name="GeometryPage::onTaskChanged">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,32,233,60"/>
+<area shape="rect" id="Node000002" href="$classGeometryPage.html#a7b4530bb76653adf3d2d82d1a01c38ff" title=" " alt="" coords="281,32,474,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="233,43,268,46,262,46,233,48"/>
+<area shape="rect" id="Node000003" href="$classGeometryPage.html#addebfdadcc9b93da1bf550fb3aa57c33" title=" " alt="" coords="568,5,765,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="474,34,556,29,550,30,475,40"/>
+<area shape="rect" id="Node000004" href="$classGeometryPage.html#a057cf08f9c927e9745c4d533a381aaea" title=" " alt="" coords="522,57,811,85"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="475,52,509,57,504,57,474,57"/>
+</map>

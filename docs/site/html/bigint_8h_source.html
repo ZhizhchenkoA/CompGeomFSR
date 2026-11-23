@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Geometry Workbench: Исходный файл src/lib/bigint/bigint.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Geometry Workbench<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Интерактивный учебный стенд по компьютерной геометрии</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('bigint_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">bigint.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="bigint_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;cstdint&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacebigint.html">bigint</a> {</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span></div>
+<div class="foldopen" id="foldopen00015" data-start="{" data-end="};">
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="classbigint_1_1BigInteger.html">   15</a></span><span class="keyword">class </span><a class="code hl_function" href="classbigint_1_1BigInteger.html#aa5ebb91700ee66941995e9e0a1c5d507">BigInteger</a> {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="classbigint_1_1BigInteger.html#aa5ebb91700ee66941995e9e0a1c5d507">   18</a></span>    <a class="code hl_function" href="classbigint_1_1BigInteger.html#aa5ebb91700ee66941995e9e0a1c5d507">BigInteger</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <a class="code hl_function" href="classbigint_1_1BigInteger.html#aa5ebb91700ee66941995e9e0a1c5d507">BigInteger</a>(<span class="keywordtype">long</span> <span class="keywordtype">long</span> value);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classbigint_1_1BigInteger.html#a4796ebd40af5f92c92bdea11ca37347f">tryParse</a>(<span class="keyword">const</span> std::string&amp; text, <a class="code hl_function" href="classbigint_1_1BigInteger.html#aa5ebb91700ee66941995e9e0a1c5d507">BigInteger</a>* result);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    std::string <a class="code hl_function" href="classbigint_1_1BigInteger.html#abdfe1a89337d9352eea641554a6bb633">toString</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="classbigint_1_1BigInteger.html#aaa59e76f31e7245bec495b34cb8a9691">sign</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classbigint_1_1BigInteger.html#a1cefc099f541a79f4a93198f2de06b55">isZero</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <a class="code hl_function" href="classbigint_1_1BigInteger.html#aa5ebb91700ee66941995e9e0a1c5d507">BigInteger</a> <a class="code hl_function" href="classbigint_1_1BigInteger.html#a8302f877ef948f62500969fe3ee94f39">operator-</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <a class="code hl_function" href="classbigint_1_1BigInteger.html#aa5ebb91700ee66941995e9e0a1c5d507">BigInteger</a>&amp; <a class="code hl_function" href="classbigint_1_1BigInteger.html#a1054e51808fad21855bed48eacd7500e">operator+=</a>(<span class="keyword">const</span> <a class="code hl_function" href="classbigint_1_1BigInteger.html#aa5ebb91700ee66941995e9e0a1c5d507">BigInteger</a>&amp; other);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <a class="code hl_function" href="classbigint_1_1BigInteger.html#aa5ebb91700ee66941995e9e0a1c5d507">BigInteger</a>&amp; <a class="code hl_function" href="classbigint_1_1BigInteger.html#acc9708f36e9d0b9d5fb8aad320157b0f">operator-=</a>(<span class="keyword">const</span> <a class="code hl_function" href="classbigint_1_1BigInteger.html#aa5ebb91700ee66941995e9e0a1c5d507">BigInteger</a>&amp; other);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <a class="code hl_function" href="classbigint_1_1BigInteger.html#aa5ebb91700ee66941995e9e0a1c5d507">BigInteger</a>&amp; <a class="code hl_function" href="classbigint_1_1BigInteger.html#a5b27ffacebc3458950b56d14b2d3a9a1">operator*=</a>(<span class="keyword">const</span> <a class="code hl_function" href="classbigint_1_1BigInteger.html#aa5ebb91700ee66941995e9e0a1c5d507">BigInteger</a>&amp; other);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="classbigint_1_1BigInteger.html#aeffe15b5fe982f70ea2f71130a2ea5f6">   37</a></span>    <span class="keyword">friend</span> <a class="code hl_function" href="classbigint_1_1BigInteger.html#aa5ebb91700ee66941995e9e0a1c5d507">BigInteger</a> <a class="code hl_friend" href="classbigint_1_1BigInteger.html#aeffe15b5fe982f70ea2f71130a2ea5f6">operator+</a>(<a class="code hl_function" href="classbigint_1_1BigInteger.html#aa5ebb91700ee66941995e9e0a1c5d507">BigInteger</a> left, <span class="keyword">const</span> <a class="code hl_function" href="classbigint_1_1BigInteger.html#aa5ebb91700ee66941995e9e0a1c5d507">BigInteger</a>&amp; right) { <span class="keywordflow">return</span> left += right; }</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="classbigint_1_1BigInteger.html#a58606545e16b1d3dcff98c13767d3828">   38</a></span>    <span class="keyword">friend</span> <a class="code hl_function" href="classbigint_1_1BigInteger.html#aa5ebb91700ee66941995e9e0a1c5d507">BigInteger</a> <a class="code hl_friend" href="classbigint_1_1BigInteger.html#a58606545e16b1d3dcff98c13767d3828">operator-</a>(<a class="code hl_function" href="classbigint_1_1BigInteger.html#aa5ebb91700ee66941995e9e0a1c5d507">BigInteger</a> left, <span class="keyword">const</span> <a class="code hl_function" href="classbigint_1_1BigInteger.html#aa5ebb91700ee66941995e9e0a1c5d507">BigInteger</a>&amp; right) { <span class="keywordflow">return</span> left -= right; }</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="classbigint_1_1BigInteger.html#a9c322dd173dc036f00721f4cf4491a4b">   39</a></span>    <span class="keyword">friend</span> <a class="code hl_function" href="classbigint_1_1BigInteger.html#aa5ebb91700ee66941995e9e0a1c5d507">BigInteger</a> <a class="code hl_friend" href="classbigint_1_1BigInteger.html#a9c322dd173dc036f00721f4cf4491a4b">operator*</a>(<a class="code hl_function" href="classbigint_1_1BigInteger.html#aa5ebb91700ee66941995e9e0a1c5d507">BigInteger</a> left, <span class="keyword">const</span> <a class="code hl_function" href="classbigint_1_1BigInteger.html#aa5ebb91700ee66941995e9e0a1c5d507">BigInteger</a>&amp; right) { <span class="keywordflow">return</span> left *= right; }</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keyword">static</span> <a class="code hl_class" href="classbigint_1_1BigInteger.html">BigInteger</a> <a class="code hl_function" href="classbigint_1_1BigInteger.html#a00e938502751664cf35c3681f338b971">powerOfTen</a>(std::size_t exponent);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="classbigint_1_1BigInteger.html#af11b03746c1253d2fe519f633b6db3e0">   44</a></span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> std::uint32_t <a class="code hl_variable" href="classbigint_1_1BigInteger.html#af11b03746c1253d2fe519f633b6db3e0">kBase</a> = 1&#39;000&#39;000&#39;000;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="classbigint_1_1BigInteger.html#a04a232ac4f1182b5947c2e6182fb88a3">   45</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="classbigint_1_1BigInteger.html#a04a232ac4f1182b5947c2e6182fb88a3">m_sign</a> = 0;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="classbigint_1_1BigInteger.html#aafbd78ed3f7cb2a2c6ddc5d8e32445ea">   46</a></span>    std::vector&lt;std::uint32_t&gt; <a class="code hl_variable" href="classbigint_1_1BigInteger.html#aafbd78ed3f7cb2a2c6ddc5d8e32445ea">m_digits</a>;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classbigint_1_1BigInteger.html#a1872052751396a6044b6e6bf3d606e0b">normalize</a>();</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code hl_function" href="classbigint_1_1BigInteger.html#afa2c98c3611da550b4504a2117318fe0">compareAbs</a>(<span class="keyword">const</span> <a class="code hl_function" href="classbigint_1_1BigInteger.html#aa5ebb91700ee66941995e9e0a1c5d507">BigInteger</a>&amp; left, <span class="keyword">const</span> <a class="code hl_function" href="classbigint_1_1BigInteger.html#aa5ebb91700ee66941995e9e0a1c5d507">BigInteger</a>&amp; right);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classbigint_1_1BigInteger.html#a14b57cd07047dc67628e7542f2acfbac">addAbs</a>(<span class="keyword">const</span> <a class="code hl_function" href="classbigint_1_1BigInteger.html#aa5ebb91700ee66941995e9e0a1c5d507">BigInteger</a>&amp; other);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classbigint_1_1BigInteger.html#aff8518e21f10a4e1645a35dd28595d18">subtractAbs</a>(<span class="keyword">const</span> <a class="code hl_function" href="classbigint_1_1BigInteger.html#aa5ebb91700ee66941995e9e0a1c5d507">BigInteger</a>&amp; other); <span class="comment">// |*this| &gt;= |other|</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>};</div>
+</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>} <span class="comment">// namespace bigint</span></div>
+<div class="ttc" id="aclassbigint_1_1BigInteger_html"><div class="ttname"><a href="classbigint_1_1BigInteger.html">bigint::BigInteger</a></div><div class="ttdoc">Библиотека точной арифметики для задачи с длинными координатами.</div><div class="ttdef"><b>Определения</b> <a href="#l00015">bigint.h:15</a></div></div>
+<div class="ttc" id="aclassbigint_1_1BigInteger_html_a00e938502751664cf35c3681f338b971"><div class="ttname"><a href="classbigint_1_1BigInteger.html#a00e938502751664cf35c3681f338b971">bigint::BigInteger::powerOfTen</a></div><div class="ttdeci">static BigInteger powerOfTen(std::size_t exponent)</div><div class="ttdef"><b>Определения</b> <a href="bigint_8cpp_source.html#l00112">bigint.cpp:112</a></div></div>
+<div class="ttc" id="aclassbigint_1_1BigInteger_html_a04a232ac4f1182b5947c2e6182fb88a3"><div class="ttname"><a href="classbigint_1_1BigInteger.html#a04a232ac4f1182b5947c2e6182fb88a3">bigint::BigInteger::m_sign</a></div><div class="ttdeci">int m_sign</div><div class="ttdef"><b>Определения</b> <a href="#l00045">bigint.h:45</a></div></div>
+<div class="ttc" id="aclassbigint_1_1BigInteger_html_a1054e51808fad21855bed48eacd7500e"><div class="ttname"><a href="classbigint_1_1BigInteger.html#a1054e51808fad21855bed48eacd7500e">bigint::BigInteger::operator+=</a></div><div class="ttdeci">BigInteger &amp; operator+=(const BigInteger &amp;other)</div><div class="ttdoc">Сложение, вычитание и умножение произвольных целых.</div><div class="ttdef"><b>Определения</b> <a href="bigint_8cpp_source.html#l00069">bigint.cpp:69</a></div></div>
+<div class="ttc" id="aclassbigint_1_1BigInteger_html_a14b57cd07047dc67628e7542f2acfbac"><div class="ttname"><a href="classbigint_1_1BigInteger.html#a14b57cd07047dc67628e7542f2acfbac">bigint::BigInteger::addAbs</a></div><div class="ttdeci">void addAbs(const BigInteger &amp;other)</div><div class="ttdef"><b>Определения</b> <a href="bigint_8cpp_source.html#l00138">bigint.cpp:138</a></div></div>
+<div class="ttc" id="aclassbigint_1_1BigInteger_html_a1872052751396a6044b6e6bf3d606e0b"><div class="ttname"><a href="classbigint_1_1BigInteger.html#a1872052751396a6044b6e6bf3d606e0b">bigint::BigInteger::normalize</a></div><div class="ttdeci">void normalize()</div><div class="ttdef"><b>Определения</b> <a href="bigint_8cpp_source.html#l00121">bigint.cpp:121</a></div></div>
+<div class="ttc" id="aclassbigint_1_1BigInteger_html_a1cefc099f541a79f4a93198f2de06b55"><div class="ttname"><a href="classbigint_1_1BigInteger.html#a1cefc099f541a79f4a93198f2de06b55">bigint::BigInteger::isZero</a></div><div class="ttdeci">bool isZero() const</div><div class="ttdoc">Проверяет, равно ли число нулю.</div><div class="ttdef"><b>Определения</b> <a href="bigint_8cpp_source.html#l00060">bigint.cpp:60</a></div></div>
+<div class="ttc" id="aclassbigint_1_1BigInteger_html_a4796ebd40af5f92c92bdea11ca37347f"><div class="ttname"><a href="classbigint_1_1BigInteger.html#a4796ebd40af5f92c92bdea11ca37347f">bigint::BigInteger::tryParse</a></div><div class="ttdeci">static bool tryParse(const std::string &amp;text, BigInteger *result)</div><div class="ttdoc">Разбирает десятичную строку со знаком; при ошибке возвращает false.</div><div class="ttdef"><b>Определения</b> <a href="bigint_8cpp_source.html#l00023">bigint.cpp:23</a></div></div>
+<div class="ttc" id="aclassbigint_1_1BigInteger_html_a58606545e16b1d3dcff98c13767d3828"><div class="ttname"><a href="classbigint_1_1BigInteger.html#a58606545e16b1d3dcff98c13767d3828">bigint::BigInteger::operator-</a></div><div class="ttdeci">friend BigInteger operator-(BigInteger left, const BigInteger &amp;right)</div><div class="ttdef"><b>Определения</b> <a href="#l00038">bigint.h:38</a></div></div>
+<div class="ttc" id="aclassbigint_1_1BigInteger_html_a5b27ffacebc3458950b56d14b2d3a9a1"><div class="ttname"><a href="classbigint_1_1BigInteger.html#a5b27ffacebc3458950b56d14b2d3a9a1">bigint::BigInteger::operator*=</a></div><div class="ttdeci">BigInteger &amp; operator*=(const BigInteger &amp;other)</div><div class="ttdef"><b>Определения</b> <a href="bigint_8cpp_source.html#l00085">bigint.cpp:85</a></div></div>
+<div class="ttc" id="aclassbigint_1_1BigInteger_html_a8302f877ef948f62500969fe3ee94f39"><div class="ttname"><a href="classbigint_1_1BigInteger.html#a8302f877ef948f62500969fe3ee94f39">bigint::BigInteger::operator-</a></div><div class="ttdeci">BigInteger operator-() const</div><div class="ttdoc">Унарное изменение знака.</div><div class="ttdef"><b>Определения</b> <a href="bigint_8cpp_source.html#l00062">bigint.cpp:62</a></div></div>
+<div class="ttc" id="aclassbigint_1_1BigInteger_html_a9c322dd173dc036f00721f4cf4491a4b"><div class="ttname"><a href="classbigint_1_1BigInteger.html#a9c322dd173dc036f00721f4cf4491a4b">bigint::BigInteger::operator*</a></div><div class="ttdeci">friend BigInteger operator*(BigInteger left, const BigInteger &amp;right)</div><div class="ttdef"><b>Определения</b> <a href="#l00039">bigint.h:39</a></div></div>
+<div class="ttc" id="aclassbigint_1_1BigInteger_html_aa5ebb91700ee66941995e9e0a1c5d507"><div class="ttname"><a href="classbigint_1_1BigInteger.html#aa5ebb91700ee66941995e9e0a1c5d507">bigint::BigInteger::BigInteger</a></div><div class="ttdeci">BigInteger()=default</div><div class="ttdoc">Создаёт нулевое число.</div></div>
+<div class="ttc" id="aclassbigint_1_1BigInteger_html_aaa59e76f31e7245bec495b34cb8a9691"><div class="ttname"><a href="classbigint_1_1BigInteger.html#aaa59e76f31e7245bec495b34cb8a9691">bigint::BigInteger::sign</a></div><div class="ttdeci">int sign() const</div><div class="ttdoc">Возвращает знак: -1, 0 или 1.</div><div class="ttdef"><b>Определения</b> <a href="bigint_8cpp_source.html#l00059">bigint.cpp:59</a></div></div>
+<div class="ttc" id="aclassbigint_1_1BigInteger_html_aafbd78ed3f7cb2a2c6ddc5d8e32445ea"><div class="ttname"><a href="classbigint_1_1BigInteger.html#aafbd78ed3f7cb2a2c6ddc5d8e32445ea">bigint::BigInteger::m_digits</a></div><div class="ttdeci">std::vector&lt; std::uint32_t &gt; m_digits</div><div class="ttdef"><b>Определения</b> <a href="#l00046">bigint.h:46</a></div></div>
+<div class="ttc" id="aclassbigint_1_1BigInteger_html_abdfe1a89337d9352eea641554a6bb633"><div class="ttname"><a href="classbigint_1_1BigInteger.html#abdfe1a89337d9352eea641554a6bb633">bigint::BigInteger::toString</a></div><div class="ttdeci">std::string toString() const</div><div class="ttdoc">Возвращает десятичное представление без ведущих нулей.</div><div class="ttdef"><b>Определения</b> <a href="bigint_8cpp_source.html#l00047">bigint.cpp:47</a></div></div>
+<div class="ttc" id="aclassbigint_1_1BigInteger_html_acc9708f36e9d0b9d5fb8aad320157b0f"><div class="ttname"><a href="classbigint_1_1BigInteger.html#acc9708f36e9d0b9d5fb8aad320157b0f">bigint::BigInteger::operator-=</a></div><div class="ttdeci">BigInteger &amp; operator-=(const BigInteger &amp;other)</div><div class="ttdef"><b>Определения</b> <a href="bigint_8cpp_source.html#l00083">bigint.cpp:83</a></div></div>
+<div class="ttc" id="aclassbigint_1_1BigInteger_html_aeffe15b5fe982f70ea2f71130a2ea5f6"><div class="ttname"><a href="classbigint_1_1BigInteger.html#aeffe15b5fe982f70ea2f71130a2ea5f6">bigint::BigInteger::operator+</a></div><div class="ttdeci">friend BigInteger operator+(BigInteger left, const BigInteger &amp;right)</div><div class="ttdef"><b>Определения</b> <a href="#l00037">bigint.h:37</a></div></div>
+<div class="ttc" id="aclassbigint_1_1BigInteger_html_af11b03746c1253d2fe519f633b6db3e0"><div class="ttname"><a href="classbigint_1_1BigInteger.html#af11b03746c1253d2fe519f633b6db3e0">bigint::BigInteger::kBase</a></div><div class="ttdeci">static constexpr std::uint32_t kBase</div><div class="ttdef"><b>Определения</b> <a href="#l00044">bigint.h:44</a></div></div>
+<div class="ttc" id="aclassbigint_1_1BigInteger_html_afa2c98c3611da550b4504a2117318fe0"><div class="ttname"><a href="classbigint_1_1BigInteger.html#afa2c98c3611da550b4504a2117318fe0">bigint::BigInteger::compareAbs</a></div><div class="ttdeci">static int compareAbs(const BigInteger &amp;left, const BigInteger &amp;right)</div><div class="ttdef"><b>Определения</b> <a href="bigint_8cpp_source.html#l00127">bigint.cpp:127</a></div></div>
+<div class="ttc" id="aclassbigint_1_1BigInteger_html_aff8518e21f10a4e1645a35dd28595d18"><div class="ttname"><a href="classbigint_1_1BigInteger.html#aff8518e21f10a4e1645a35dd28595d18">bigint::BigInteger::subtractAbs</a></div><div class="ttdeci">void subtractAbs(const BigInteger &amp;other)</div><div class="ttdef"><b>Определения</b> <a href="bigint_8cpp_source.html#l00151">bigint.cpp:151</a></div></div>
+<div class="ttc" id="anamespacebigint_html"><div class="ttname"><a href="namespacebigint.html">bigint</a></div><div class="ttdef"><b>Определения</b> <a href="bigint_8cpp_source.html#l00007">bigint.cpp:7</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a href="dir_c85d3e3c5052e9ad9ce18c6863244a25.html">lib</a></li><li class="navelem"><a href="dir_4742883fc880ea7a5edfb4d504ddf976.html">bigint</a></li><li class="navelem"><a href="bigint_8h.html">bigint.h</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

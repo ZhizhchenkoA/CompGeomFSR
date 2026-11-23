@@ -1,0 +1,7 @@
+<map id="GeometryCanvas::paintEvent" name="GeometryCanvas::paintEvent">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,36,218,64"/>
+<area shape="rect" id="Node000002" href="$classGeometryCanvas.html#ad2bf2da2a11477f8edbb4e4d7996b7bc" title=" " alt="" coords="266,5,473,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="218,35,253,33,247,34,219,40"/>
+<area shape="rect" id="Node000003" href="$classGeometryCanvas.html#a63b39ade7072cbab520bc9423134699a" title=" " alt="" coords="269,57,470,102"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="218,59,256,66,250,66,218,65"/>
+</map>
