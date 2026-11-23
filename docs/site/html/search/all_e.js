@@ -10,8 +10,6 @@ var searchData=
   ['pointreleased_7',['pointReleased',['../classGeometryCanvas.html#a87cf2b6a3edec82e6e35d952ea6a528a',1,'GeometryCanvas']]],
   ['polygonset_8',['PolygonSet',['../namespacegeometry.html#a2f3c921176229b37a127ffcce53cf519',1,'geometry']]],
   ['poweroften_9',['powerOfTen',['../classbigint_1_1BigInteger.html#a00e938502751664cf35c3681f338b971',1,'bigint::BigInteger']]],
-  ['precision_20arithmetic_10',['Arbitrary-precision arithmetic',['../group__bigint__api.html',1,'']]],
-  ['predicates_11',['Geometric predicates',['../group__geometry__predicates.html',1,'']]],
-  ['predicates_2ecpp_12',['predicates.cpp',['../predicates_8cpp.html',1,'']]],
-  ['predicates_2eh_13',['predicates.h',['../predicates_8h.html',1,'']]]
+  ['predicates_2ecpp_10',['predicates.cpp',['../predicates_8cpp.html',1,'']]],
+  ['predicates_2eh_11',['predicates.h',['../predicates_8h.html',1,'']]]
 ];

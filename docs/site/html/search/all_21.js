@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['поток_20данных_0',['Поток данных',['../architecture.html#flow',1,'']]],
-  ['пример_20api_1',['Пример API',['../index.html#example_section',1,'']]],
-  ['публикация_20на_20github_20pages_2',['Публикация на GitHub Pages',['../dir_49e56c817e5e54854c35e136979f97ca.html#autotoc_md6',1,'']]],
-  ['проекта_3',['Архитектура проекта',['../architecture.html',1,'']]],
-  ['проекте_4',['Возможности Doxygen в этом проекте',['../index.html#highlights',1,'']]]
+  ['назначение_0',['Назначение',['../dir_49e56c817e5e54854c35e136979f97ca.html#autotoc_md1',1,'']]],
+  ['навигация_1',['Структура API и навигация',['../doxy_features.html#doxy_structure',1,'']]],
+  ['на_20будущее_2',['Задачи на будущее',['../doxy_features.html#doxy_tasks',1,'']]],
+  ['на_20github_20pages_3',['Публикация на GitHub Pages',['../dir_49e56c817e5e54854c35e136979f97ca.html#autotoc_md6',1,'']]]
 ];

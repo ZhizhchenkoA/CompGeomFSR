@@ -1,0 +1,263 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Geometry Workbench: Конспект возможностей Doxygen в проекте</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Geometry Workbench<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Интерактивный учебный стенд по компьютерной геометрии</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('doxy_features.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div><div class="header">
+  <div class="headertitle"><div class="title">Конспект возможностей Doxygen в проекте </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><h1 class="doxsection"><a class="anchor" id="doxy_intro"></a>
+Введение</h1>
+<p>В Geometry Workbench Doxygen — не отдельный текстовый отчёт, а часть исходного кода и сборочного процесса. Комментарии в заголовочных файлах описывают API, <span class="tt">Doxyfile</span> определяет представление результата, а готовый HTML хранится в репозитории и публикуется на GitHub Pages.</p>
+<p>Ниже перечислены <b>все возможности Doxygen, которые задействованы в проекте</b>, и указано, где именно их искать. Пути даны относительно корня репозитория.</p>
+<h1 class="doxsection"><a class="anchor" id="doxy_comments"></a>
+Комментарии и контракт API</h1>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Возможность  </th><th class="markdownTableHeadNone">Что делает  </th><th class="markdownTableHeadNone">Где найти  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Блочный комментарий <span class="tt">/** ... */</span>  </td><td class="markdownTableBodyNone">Делает комментарий документацией Doxygen.  </td><td class="markdownTableBodyNone"><span class="tt"><a class="el" href="predicates_8h.html">src/lib/geometry/predicates.h</a></span>, <span class="tt"><a class="el" href="exact__predicate_8h.html">src/lib/bigint/exact_predicate.h</a></span>  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">@brief</span>  </td><td class="markdownTableBodyNone">Кратко описывает сущность; попадает в списки классов и функций.  </td><td class="markdownTableBodyNone">Все публичные заголовки, например <span class="tt"><a class="el" href="geometrycanvas_8h.html">src/apps/GeometryWorkbench/geometrycanvas.h</a></span>  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">@param</span>, <span class="tt">@return</span>  </td><td class="markdownTableBodyNone">Описывают входные параметры и результат.  </td><td class="markdownTableBodyNone"><span class="tt"><a class="el" href="segment__intersection_8h.html">src/lib/geometry/segment_intersection.h</a></span>, <span class="tt"><a class="el" href="exact__predicate_8h.html">src/lib/bigint/exact_predicate.h</a></span>  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">@pre</span>, <span class="tt">@post</span>  </td><td class="markdownTableBodyNone">Фиксируют предусловия и гарантии после успешного вызова.  </td><td class="markdownTableBodyNone"><span class="tt"><a class="el" href="exact__predicate_8h.html">src/lib/bigint/exact_predicate.h</a></span>  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">@note</span>  </td><td class="markdownTableBodyNone">Добавляет важное пояснение без статуса ошибки.  </td><td class="markdownTableBodyNone"><span class="tt"><a class="el" href="bezier_8h.html">src/lib/bezier/bezier.h</a></span>, <span class="tt"><a class="el" href="predicates_8h.html">src/lib/geometry/predicates.h</a></span>  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">@warning</span>  </td><td class="markdownTableBodyNone">Выделяет численное или ресурсное ограничение.  </td><td class="markdownTableBodyNone"><span class="tt"><a class="el" href="exact__predicate_8h.html">src/lib/bigint/exact_predicate.h</a></span>, <span class="tt"><a class="el" href="predicates_8h.html">src/lib/geometry/predicates.h</a></span>  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">@see</span>  </td><td class="markdownTableBodyNone">Создаёт перекрёстную ссылку на связанную функцию.  </td><td class="markdownTableBodyNone"><span class="tt"><a class="el" href="bezier_8h.html">src/lib/bezier/bezier.h</a></span>, <span class="tt"><a class="el" href="predicates_8h.html">src/lib/geometry/predicates.h</a></span>  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">@since</span>  </td><td class="markdownTableBodyNone">Показывает версию появления интерфейса.  </td><td class="markdownTableBodyNone"><span class="tt"><a class="el" href="exact__predicate_8h.html">src/lib/bigint/exact_predicate.h</a></span>  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">@par</span>  </td><td class="markdownTableBodyNone">Создаёт именованный смысловой блок в описании.  </td><td class="markdownTableBodyNone"><span class="tt"><a class="el" href="predicates_8h.html">src/lib/geometry/predicates.h</a></span>, <span class="tt"><a class="el" href="bezier_8h.html">src/lib/bezier/bezier.h</a></span>  </td></tr>
+</table>
+<h1 class="doxsection"><a class="anchor" id="doxy_structure"></a>
+Структура API и навигация</h1>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Возможность  </th><th class="markdownTableHeadNone">Что делает  </th><th class="markdownTableHeadNone">Где найти  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">@mainpage</span>  </td><td class="markdownTableBodyNone">Создаёт домашнюю страницу HTML-документации.  </td><td class="markdownTableBodyNone"><span class="tt"><a class="el" href="mainpage_8md.html">docs/mainpage.md</a></span>  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">@page</span> и <span class="tt">@section</span>  </td><td class="markdownTableBodyNone">Создают отдельные страницы и разделы документации.  </td><td class="markdownTableBodyNone"><span class="tt"><a class="el" href="architecture_8md.html">docs/architecture.md</a></span>, этот файл  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">@defgroup</span>, <span class="tt">@ingroup</span>  </td><td class="markdownTableBodyNone">Собирают API в предметные группы.  </td><td class="markdownTableBodyNone"><span class="tt"><a class="el" href="convex__hull_8h.html">src/lib/geometry/convex_hull.h</a></span>, <span class="tt"><a class="el" href="predicates_8h.html">src/lib/geometry/predicates.h</a></span>, <span class="tt"><a class="el" href="bigint_8h.html">src/lib/bigint/bigint.h</a></span>, <span class="tt"><a class="el" href="bezier_8h.html">src/lib/bezier/bezier.h</a></span>  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">@anchor</span>  </td><td class="markdownTableBodyNone">Создаёт устойчивую точку перехода на странице.  </td><td class="markdownTableBodyNone"><span class="tt"><a class="el" href="exact__predicate_8h.html">src/lib/bigint/exact_predicate.h</a></span>: <span class="tt">exact_turn_pipeline</span>  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">@example</span> и <span class="tt">EXAMPLE_PATH</span>  </td><td class="markdownTableBodyNone">Добавляют исходник в специальный раздел с примерами.  </td><td class="markdownTableBodyNone"><span class="tt">docs/examples/turn_example.cpp</span>, <span class="tt">Doxyfile</span>  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">SEARCHENGINE</span>, <span class="tt">GENERATE_TREEVIEW</span>, <span class="tt">SOURCE_BROWSER</span>  </td><td class="markdownTableBodyNone">Включают поиск, дерево разделов и просмотр исходников в HTML.  </td><td class="markdownTableBodyNone"><span class="tt">Doxyfile</span>  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">EXTRACT_ALL</span>, <span class="tt">EXTRACT_PRIVATE</span>, <span class="tt">EXTRACT_STATIC</span>  </td><td class="markdownTableBodyNone">Не скрывают недокументированные, приватные и статические сущности.  </td><td class="markdownTableBodyNone"><span class="tt">Doxyfile</span>  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">JAVADOC_AUTOBRIEF</span>, <span class="tt">MULTILINE_CPP_IS_BRIEF</span>  </td><td class="markdownTableBodyNone">Помогают автоматически выделять краткое описание из комментария.  </td><td class="markdownTableBodyNone"><span class="tt">Doxyfile</span>  </td></tr>
+</table>
+<h1 class="doxsection"><a class="anchor" id="doxy_custom"></a>
+Пользовательские метки проекта</h1>
+<p>В <span class="tt">Doxyfile</span> определены три псевдонима. Они превращают повторяющиеся методические пометки в единый стиль документации.</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Псевдоним  </th><th class="markdownTableHeadNone">Заголовок в HTML  </th><th class="markdownTableHeadNone">Пример использования  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">@complexity</span>  </td><td class="markdownTableBodyNone">«Сложность»  </td><td class="markdownTableBodyNone"><span class="tt"><a class="el" href="convex__hull_8h.html">src/lib/geometry/convex_hull.h</a></span>, <span class="tt"><a class="el" href="delaunay_8h.html">src/lib/geometry/delaunay.h</a></span>  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">@invariant</span>  </td><td class="markdownTableBodyNone">«Инвариант»  </td><td class="markdownTableBodyNone"><span class="tt"><a class="el" href="convex__hull_8h.html">src/lib/geometry/convex_hull.h</a></span>, <span class="tt"><a class="el" href="bigint_8h.html">src/lib/bigint/bigint.h</a></span>  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">@educational</span>  </td><td class="markdownTableBodyNone">«Учебная заметка»  </td><td class="markdownTableBodyNone"><span class="tt"><a class="el" href="predicates_8h.html">src/lib/geometry/predicates.h</a></span>  </td></tr>
+</table>
+<h1 class="doxsection"><a class="anchor" id="doxy_math"></a>
+Формулы: LaTeX и MathJax</h1>
+<p>Формулы записываются командой <span class="tt">@f[ ... @f]</span>, а параметр <span class="tt">USE_MATHJAX = YES</span> подключает MathJax к HTML-страницам. Благодаря этому математические выражения масштабируются и остаются читаемыми в браузере.</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Что документируется  </th><th class="markdownTableHeadNone">Где найти  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Формула векторного произведения  </td><td class="markdownTableBodyNone"><span class="tt"><a class="el" href="predicates_8h.html">src/lib/geometry/predicates.h</a></span>  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Формула точного предиката поворота  </td><td class="markdownTableBodyNone"><span class="tt"><a class="el" href="exact__predicate_8h.html">src/lib/bigint/exact_predicate.h</a></span>  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Рекуррентная формула де Кастельжо  </td><td class="markdownTableBodyNone"><span class="tt"><a class="el" href="bezier_8h.html">src/lib/bezier/bezier.h</a></span>  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Включение MathJax  </td><td class="markdownTableBodyNone"><span class="tt">Doxyfile</span>: <span class="tt">USE_MATHJAX</span>, <span class="tt">MATHJAX_VERSION</span>  </td></tr>
+</table>
+<h1 class="doxsection"><a class="anchor" id="doxy_graphs"></a>
+Graphviz: схемы и связи</h1>
+<p>Команды <span class="tt">@dot ... @enddot</span> позволяют записать Graphviz-схему прямо в документирующем комментарии. В проекте есть две вручную созданные схемы:</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Схема  </th><th class="markdownTableHeadNone">Что показывает  </th><th class="markdownTableHeadNone">Где найти  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Архитектура  </td><td class="markdownTableBodyNone">Связи Qt-приложения, холста и библиотек.  </td><td class="markdownTableBodyNone"><span class="tt"><a class="el" href="architecture_8md.html">docs/architecture.md</a></span>  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Конвейер точного поворота  </td><td class="markdownTableBodyNone">Разбор координат, вычисление и получение знака.  </td><td class="markdownTableBodyNone"><span class="tt"><a class="el" href="exact__predicate_8h.html">src/lib/bigint/exact_predicate.h</a></span>  </td></tr>
+</table>
+<p>Кроме ручных схем, <span class="tt">Doxyfile</span> включает автоматические графы Graphviz:</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Настройка  </th><th class="markdownTableHeadNone">Результат  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">CLASS_GRAPH</span>, <span class="tt">COLLABORATION_GRAPH</span>, <span class="tt">GRAPHICAL_HIERARCHY</span>  </td><td class="markdownTableBodyNone">Наследование, отношения классов и иерархия.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">INCLUDE_GRAPH</span>, <span class="tt">INCLUDED_BY_GRAPH</span>  </td><td class="markdownTableBodyNone">Зависимости подключаемых файлов.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">CALL_GRAPH</span>, <span class="tt">CALLER_GRAPH</span>  </td><td class="markdownTableBodyNone">Кого вызывает функция и кем она вызывается.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">GROUP_GRAPHS</span>, <span class="tt">TEMPLATE_RELATIONS</span>, <span class="tt">UML_LOOK</span>  </td><td class="markdownTableBodyNone">Связи групп, шаблонов и UML-представление.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">DOT_IMAGE_FORMAT = svg</span>, <span class="tt">INTERACTIVE_SVG = YES</span>  </td><td class="markdownTableBodyNone">Масштабируемые интерактивные SVG-графы.  </td></tr>
+</table>
+<h1 class="doxsection"><a class="anchor" id="doxy_tasks"></a>
+Задачи на будущее</h1>
+<p><span class="tt">@todo</span> и <span class="tt">GENERATE_TODOLIST = YES</span> создают страницу со списком дальнейших улучшений. Здесь попадают только реальные пункты развития кода:</p>
+<ul>
+<li>деление с остатком для <span class="tt">BigInteger</span> — <span class="tt"><a class="el" href="bigint_8h.html">src/lib/bigint/bigint.h</a></span>;</li>
+<li>сглаживание стыков составной кривой Безье — <span class="tt"><a class="el" href="bezier_8h.html">src/lib/bezier/bezier.h</a></span>.</li>
+</ul>
+<p>Параметр <span class="tt">GENERATE_BUGLIST = YES</span> также включён в <span class="tt">Doxyfile</span>, но тег <span class="tt">@bug</span> в проекте пока не используется: известных подтверждённых ошибок нет.</p>
+<h1 class="doxsection"><a class="anchor" id="doxy_formats"></a>
+Форматы и публикация</h1>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Возможность  </th><th class="markdownTableHeadNone">Назначение  </th><th class="markdownTableHeadNone">Где найти  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">GENERATE_HTML</span>  </td><td class="markdownTableBodyNone">Основной сайт документации.  </td><td class="markdownTableBodyNone"><span class="tt">docs/site/html/index.html</span>  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">GENERATE_XML</span>  </td><td class="markdownTableBodyNone">Машиночитаемое представление для IDE и внешних инструментов.  </td><td class="markdownTableBodyNone"><span class="tt">docs/site/xml/</span>  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">GENERATE_TAGFILE</span>  </td><td class="markdownTableBodyNone">Файл перекрёстных ссылок для другой документации Doxygen.  </td><td class="markdownTableBodyNone"><span class="tt">Doxyfile</span>  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">INPUT_ENCODING = UTF-8</span>, <span class="tt">OUTPUT_LANGUAGE = Russian</span>  </td><td class="markdownTableBodyNone">Корректная русскоязычная документация.  </td><td class="markdownTableBodyNone"><span class="tt">Doxyfile</span>  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">GitHub Pages workflow  </td><td class="markdownTableBodyNone">Публикует готовый статический HTML без запуска Doxygen на GitHub.  </td><td class="markdownTableBodyNone"><span class="tt">.github/workflows/deploy-docs.yml</span>  </td></tr>
+</table>
+<p>LaTeX-вывод сейчас намеренно выключен (<span class="tt">GENERATE_LATEX = NO</span>), но Doxygen может включить его для печатного PDF без изменения комментариев. Это полезно для отчёта или курсовой работы; HTML и XML при этом продолжают генерироваться как обычно.</p>
+<h1 class="doxsection"><a class="anchor" id="doxy_workflow"></a>
+Рабочая последовательность</h1>
+<ol type="1">
+<li>Изменить комментарии или Markdown-страницы.</li>
+<li>Выполнить <span class="tt">cmake --build build --target docs</span>.</li>
+<li>Открыть <span class="tt">docs/site/html/index.html</span> и проверить ссылки, формулы и графы.</li>
+<li>Добавить обновлённый каталог <span class="tt">docs/site</span> в коммит.</li>
+<li>После push GitHub Actions опубликует готовую страницу на GitHub Pages.</li>
+</ol>
+<h1 class="doxsection"><a class="anchor" id="doxy_conclusion"></a>
+Заключение</h1>
+<p>В проекте Doxygen соединяет код, объяснение алгоритма и навигацию по архитектуре. Краткие теги поддерживают контракт API, формулы сохраняют математическую точность, Graphviz делает связи наглядными, а HTML-сайт позволяет показать результат без локальной среды разработки. Благодаря этому документация остаётся проверяемой, воспроизводимой и полезной как для защиты проекта, так и для его дальнейшей разработки. </p>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

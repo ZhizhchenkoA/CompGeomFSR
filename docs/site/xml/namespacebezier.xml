@@ -24,7 +24,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/lib/bezier/bezier.cpp" line="7" column="13" bodyfile="src/lib/bezier/bezier.cpp" bodystart="7" bodyend="32" declfile="src/lib/bezier/bezier.h" declline="18" declcolumn="13"/>
+        <location file="src/lib/bezier/bezier.cpp" line="7" column="13" bodyfile="src/lib/bezier/bezier.cpp" bodystart="7" bodyend="32" declfile="src/lib/bezier/bezier.h" declline="26" declcolumn="13"/>
         <referencedby refid="classGeometryPage_1aa0380120b0b9e766b2e6d3c4d4192b27" compoundref="geometrypage_8cpp" startline="607" endline="620">GeometryPage::computeBezier</referencedby>
         <referencedby refid="namespacebezier_1aa6f0140841e402a3cfa3ba2aba8044d0" compoundref="bezier_8cpp" startline="34" endline="38">deCasteljau</referencedby>
       </memberdef>
@@ -46,11 +46,18 @@
 <para>Операции с параметрическими кривыми Безье. </para>
         </briefdescription>
         <detaileddescription>
-<para>Вычисляет точку кривой Безье в параметре <computeroutput>t</computeroutput> методом де Кастельжо. </para>
+<para>Вычисляет точку кривой Безье в параметре <computeroutput>t</computeroutput> методом де Кастельжо.</para>
+<para><formula id="0">\[Q_i^{(r)}=(1-t)Q_i^{(r-1)}+tQ_{i+1}^{(r-1)}.\]</formula> <simplesect kind="note"><para>Значение <computeroutput>t</computeroutput> ограничивается интервалом <computeroutput>[0, 1]</computeroutput>. </para>
+</simplesect>
+<simplesect kind="par"><title>Визуализация</title><para>Промежуточные уровни построения доступны через <ref refid="namespacebezier_1a16319ee9d71db52368b5ce95b86794e2" kindref="member">deCasteljauLevels()</ref>. </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="namespacebezier_1a16319ee9d71db52368b5ce95b86794e2" kindref="member">deCasteljauLevels()</ref> </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/lib/bezier/bezier.cpp" line="34" column="17" bodyfile="src/lib/bezier/bezier.cpp" bodystart="34" bodyend="38" declfile="src/lib/bezier/bezier.h" declline="15" declcolumn="17"/>
+        <location file="src/lib/bezier/bezier.cpp" line="34" column="17" bodyfile="src/lib/bezier/bezier.cpp" bodystart="34" bodyend="38" declfile="src/lib/bezier/bezier.h" declline="23" declcolumn="17"/>
         <references refid="namespacebezier_1a16319ee9d71db52368b5ce95b86794e2" compoundref="bezier_8cpp" startline="7" endline="32">deCasteljauLevels</references>
         <referencedby refid="classGeometryPage_1aa0380120b0b9e766b2e6d3c4d4192b27" compoundref="geometrypage_8cpp" startline="607" endline="620">GeometryPage::computeBezier</referencedby>
         <referencedby refid="namespacebezier_1a3e86093165e34203620df7fe7623a57e" compoundref="bezier_8cpp" startline="40" endline="52">sample</referencedby>
@@ -76,7 +83,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/lib/bezier/bezier.cpp" line="40" column="13" bodyfile="src/lib/bezier/bezier.cpp" bodystart="40" bodyend="52" declfile="src/lib/bezier/bezier.h" declline="22" declcolumn="13"/>
+        <location file="src/lib/bezier/bezier.cpp" line="40" column="13" bodyfile="src/lib/bezier/bezier.cpp" bodystart="40" bodyend="52" declfile="src/lib/bezier/bezier.h" declline="30" declcolumn="13"/>
         <references refid="namespacebezier_1aa6f0140841e402a3cfa3ba2aba8044d0" compoundref="bezier_8cpp" startline="34" endline="38">deCasteljau</references>
         <referencedby refid="namespacebezier_1a501e022e378938e5a58777be3b250155" compoundref="bezier_8cpp" startline="54" endline="77">composite</referencedby>
         <referencedby refid="classGeometryPage_1aa0380120b0b9e766b2e6d3c4d4192b27" compoundref="geometrypage_8cpp" startline="607" endline="620">GeometryPage::computeBezier</referencedby>
@@ -98,15 +105,20 @@
         <param>
           <type>int</type>
           <declname>countPerSegment</declname>
+          <defval>70</defval>
         </param>
         <briefdescription>
 <para>Строит составную кривую из окон <computeroutput>degree + 1</computeroutput> с общей точкой сегментов. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="pre"><para><computeroutput>degree &gt;= 1</computeroutput> и <computeroutput>countPerSegment &gt;= 1</computeroutput>; при нарушении возвращается пустой набор. </para>
+</simplesect>
+<xrefsect id="todo_1_todo000001"><xreftitle>Необходимо сделать</xreftitle><xrefdescription><para>Добавить режим сглаживания стыков составной кривой <computeroutput>C¹</computeroutput>. </para>
+</xrefdescription></xrefsect></para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/lib/bezier/bezier.cpp" line="54" column="13" bodyfile="src/lib/bezier/bezier.cpp" bodystart="54" bodyend="77" declfile="src/lib/bezier/bezier.h" declline="26" declcolumn="13"/>
+        <location file="src/lib/bezier/bezier.cpp" line="54" column="13" bodyfile="src/lib/bezier/bezier.cpp" bodystart="54" bodyend="77" declfile="src/lib/bezier/bezier.h" declline="38" declcolumn="13"/>
         <references refid="namespacebezier_1a3e86093165e34203620df7fe7623a57e" compoundref="bezier_8cpp" startline="40" endline="52">sample</references>
         <referencedby refid="classGeometryPage_1aa0380120b0b9e766b2e6d3c4d4192b27" compoundref="geometrypage_8cpp" startline="607" endline="620">GeometryPage::computeBezier</referencedby>
       </memberdef>

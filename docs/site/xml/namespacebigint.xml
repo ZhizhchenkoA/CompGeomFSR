@@ -26,7 +26,31 @@
 <para>Поля массива идут в порядке <computeroutput>Ax, Ay, Bx, By, Px, Py</computeroutput>. </para>
         </briefdescription>
         <detaileddescription>
-<para>Точно вычисляет знак <computeroutput>(B - A) x (P - A)</computeroutput> для строковых чисел. <simplesect kind="return"><para><computeroutput>true</computeroutput> при успешном разборе входа. </para>
+<para>Точно вычисляет знак <computeroutput>(B - A) x (P - A)</computeroutput> для строковых чисел.</para>
+<para><anchor id="namespacebigint_1exact_turn_pipeline"/><simplesect kind="par"><title>Конвейер точного вычисления</title><para><dot>
+digraph exact_turn {
+  rankdir=LR;
+  node [shape=box, style=rounded];
+  input [label=&quot;Строковые координаты&quot;];
+  parse [label=&quot;Мантисса + степень 10&quot;];
+  product [label=&quot;(Bx-Ax)(Py-Ay) - (By-Ay)(Px-Ax)&quot;];
+  sign [label=&quot;Знак BigInteger&quot;];
+  input -&gt; parse -&gt; product -&gt; sign;
+}
+</dot>
+</para>
+</simplesect>
+<formula id="1">\[\operatorname{sign}\big((B-A) \times (P-A)\big) \in \{-1,0,1\}.\]</formula> <simplesect kind="pre"><para>Указатели <computeroutput>sign</computeroutput> и <computeroutput>error</computeroutput> не равны <computeroutput>nullptr</computeroutput>. </para>
+</simplesect>
+<simplesect kind="post"><para>При успехе <computeroutput>*sign</computeroutput> имеет значение <computeroutput>-1</computeroutput>, <computeroutput>0</computeroutput> или <computeroutput>1</computeroutput>. </para>
+</simplesect>
+<simplesect kind="warning"><para>Экспоненты с модулем больше <computeroutput>100000</computeroutput> отклоняются, чтобы ограничить объём памяти, требуемый для выравнивания десятичных степеней. </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="namespacegeometry_1a1d29367c0cb96e7c1a1b871b786ffacd" kindref="member">geometry::turn()</ref> </para>
+</simplesect>
+<simplesect kind="since"><para>1.0 </para>
+</simplesect>
+<simplesect kind="return"><para><computeroutput>true</computeroutput> при успешном разборе входа. </para>
 </simplesect>
 <parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -57,7 +81,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/lib/bigint/exact_predicate.cpp" line="71" column="6" bodyfile="src/lib/bigint/exact_predicate.cpp" bodystart="71" bodyend="89" declfile="src/lib/bigint/exact_predicate.h" declline="17" declcolumn="6"/>
+        <location file="src/lib/bigint/exact_predicate.cpp" line="71" column="6" bodyfile="src/lib/bigint/exact_predicate.cpp" bodystart="71" bodyend="89" declfile="src/lib/bigint/exact_predicate.h" declline="39" declcolumn="6"/>
         <referencedby refid="classLongArithmeticPage_1ab52ecc9e59525ef13ea189064d45b782" compoundref="longarithmeticpage_8cpp" startline="41" endline="76">LongArithmeticPage::calculate</referencedby>
       </memberdef>
     </sectiondef>

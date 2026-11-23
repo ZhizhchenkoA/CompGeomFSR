@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['mainpage_0',['mainpage',['../md_docs_2mainpage.html',1,'']]]
+  ['latex_20и_20mathjax_0',['Формулы: LaTeX и MathJax',['../doxy_features.html#doxy_math',1,'']]]
 ];

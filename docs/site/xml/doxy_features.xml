@@ -1,0 +1,273 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="doxy_features" kind="page">
+    <compoundname>doxy_features</compoundname>
+    <title>Конспект возможностей Doxygen в проекте</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<sect1 id="doxy_features_1doxy_intro">
+<title>Введение</title><para>В Geometry Workbench Doxygen — не отдельный текстовый отчёт, а часть исходного кода и сборочного процесса. Комментарии в заголовочных файлах описывают API, <computeroutput>Doxyfile</computeroutput> определяет представление результата, а готовый HTML хранится в репозитории и публикуется на GitHub Pages.</para>
+<para>Ниже перечислены <bold>все возможности Doxygen, которые задействованы в проекте</bold>, и указано, где именно их искать. Пути даны относительно корня репозитория.</para>
+</sect1>
+<sect1 id="doxy_features_1doxy_comments">
+<title>Комментарии и контракт API</title><para><table rows="10" cols="3"><row>
+<entry thead="yes"><para>Возможность  </para>
+</entry><entry thead="yes"><para>Что делает  </para>
+</entry><entry thead="yes"><para>Где найти  </para>
+</entry></row>
+<row>
+<entry thead="no"><para>Блочный комментарий <computeroutput>/** ... */</computeroutput>  </para>
+</entry><entry thead="no"><para>Делает комментарий документацией Doxygen.  </para>
+</entry><entry thead="no"><para><computeroutput><ref refid="predicates_8h" kindref="compound">src/lib/geometry/predicates.h</ref></computeroutput>, <computeroutput><ref refid="exact__predicate_8h" kindref="compound">src/lib/bigint/exact_predicate.h</ref></computeroutput>  </para>
+</entry></row>
+<row>
+<entry thead="no"><para><computeroutput>@brief</computeroutput>  </para>
+</entry><entry thead="no"><para>Кратко описывает сущность; попадает в списки классов и функций.  </para>
+</entry><entry thead="no"><para>Все публичные заголовки, например <computeroutput><ref refid="geometrycanvas_8h" kindref="compound">src/apps/GeometryWorkbench/geometrycanvas.h</ref></computeroutput>  </para>
+</entry></row>
+<row>
+<entry thead="no"><para><computeroutput>@param</computeroutput>, <computeroutput>@return</computeroutput>  </para>
+</entry><entry thead="no"><para>Описывают входные параметры и результат.  </para>
+</entry><entry thead="no"><para><computeroutput><ref refid="segment__intersection_8h" kindref="compound">src/lib/geometry/segment_intersection.h</ref></computeroutput>, <computeroutput><ref refid="exact__predicate_8h" kindref="compound">src/lib/bigint/exact_predicate.h</ref></computeroutput>  </para>
+</entry></row>
+<row>
+<entry thead="no"><para><computeroutput>@pre</computeroutput>, <computeroutput>@post</computeroutput>  </para>
+</entry><entry thead="no"><para>Фиксируют предусловия и гарантии после успешного вызова.  </para>
+</entry><entry thead="no"><para><computeroutput><ref refid="exact__predicate_8h" kindref="compound">src/lib/bigint/exact_predicate.h</ref></computeroutput>  </para>
+</entry></row>
+<row>
+<entry thead="no"><para><computeroutput>@note</computeroutput>  </para>
+</entry><entry thead="no"><para>Добавляет важное пояснение без статуса ошибки.  </para>
+</entry><entry thead="no"><para><computeroutput><ref refid="bezier_8h" kindref="compound">src/lib/bezier/bezier.h</ref></computeroutput>, <computeroutput><ref refid="predicates_8h" kindref="compound">src/lib/geometry/predicates.h</ref></computeroutput>  </para>
+</entry></row>
+<row>
+<entry thead="no"><para><computeroutput>@warning</computeroutput>  </para>
+</entry><entry thead="no"><para>Выделяет численное или ресурсное ограничение.  </para>
+</entry><entry thead="no"><para><computeroutput><ref refid="exact__predicate_8h" kindref="compound">src/lib/bigint/exact_predicate.h</ref></computeroutput>, <computeroutput><ref refid="predicates_8h" kindref="compound">src/lib/geometry/predicates.h</ref></computeroutput>  </para>
+</entry></row>
+<row>
+<entry thead="no"><para><computeroutput>@see</computeroutput>  </para>
+</entry><entry thead="no"><para>Создаёт перекрёстную ссылку на связанную функцию.  </para>
+</entry><entry thead="no"><para><computeroutput><ref refid="bezier_8h" kindref="compound">src/lib/bezier/bezier.h</ref></computeroutput>, <computeroutput><ref refid="predicates_8h" kindref="compound">src/lib/geometry/predicates.h</ref></computeroutput>  </para>
+</entry></row>
+<row>
+<entry thead="no"><para><computeroutput>@since</computeroutput>  </para>
+</entry><entry thead="no"><para>Показывает версию появления интерфейса.  </para>
+</entry><entry thead="no"><para><computeroutput><ref refid="exact__predicate_8h" kindref="compound">src/lib/bigint/exact_predicate.h</ref></computeroutput>  </para>
+</entry></row>
+<row>
+<entry thead="no"><para><computeroutput>@par</computeroutput>  </para>
+</entry><entry thead="no"><para>Создаёт именованный смысловой блок в описании.  </para>
+</entry><entry thead="no"><para><computeroutput><ref refid="predicates_8h" kindref="compound">src/lib/geometry/predicates.h</ref></computeroutput>, <computeroutput><ref refid="bezier_8h" kindref="compound">src/lib/bezier/bezier.h</ref></computeroutput>  </para>
+</entry></row>
+</table>
+</para>
+</sect1>
+<sect1 id="doxy_features_1doxy_structure">
+<title>Структура API и навигация</title><para><table rows="9" cols="3"><row>
+<entry thead="yes"><para>Возможность  </para>
+</entry><entry thead="yes"><para>Что делает  </para>
+</entry><entry thead="yes"><para>Где найти  </para>
+</entry></row>
+<row>
+<entry thead="no"><para><computeroutput>@mainpage</computeroutput>  </para>
+</entry><entry thead="no"><para>Создаёт домашнюю страницу HTML-документации.  </para>
+</entry><entry thead="no"><para><computeroutput><ref refid="mainpage_8md" kindref="compound">docs/mainpage.md</ref></computeroutput>  </para>
+</entry></row>
+<row>
+<entry thead="no"><para><computeroutput>@page</computeroutput> и <computeroutput>@section</computeroutput>  </para>
+</entry><entry thead="no"><para>Создают отдельные страницы и разделы документации.  </para>
+</entry><entry thead="no"><para><computeroutput><ref refid="architecture_8md" kindref="compound">docs/architecture.md</ref></computeroutput>, этот файл  </para>
+</entry></row>
+<row>
+<entry thead="no"><para><computeroutput>@defgroup</computeroutput>, <computeroutput>@ingroup</computeroutput>  </para>
+</entry><entry thead="no"><para>Собирают API в предметные группы.  </para>
+</entry><entry thead="no"><para><computeroutput><ref refid="convex__hull_8h" kindref="compound">src/lib/geometry/convex_hull.h</ref></computeroutput>, <computeroutput><ref refid="predicates_8h" kindref="compound">src/lib/geometry/predicates.h</ref></computeroutput>, <computeroutput><ref refid="bigint_8h" kindref="compound">src/lib/bigint/bigint.h</ref></computeroutput>, <computeroutput><ref refid="bezier_8h" kindref="compound">src/lib/bezier/bezier.h</ref></computeroutput>  </para>
+</entry></row>
+<row>
+<entry thead="no"><para><computeroutput>@anchor</computeroutput>  </para>
+</entry><entry thead="no"><para>Создаёт устойчивую точку перехода на странице.  </para>
+</entry><entry thead="no"><para><computeroutput><ref refid="exact__predicate_8h" kindref="compound">src/lib/bigint/exact_predicate.h</ref></computeroutput>: <computeroutput>exact_turn_pipeline</computeroutput>  </para>
+</entry></row>
+<row>
+<entry thead="no"><para><computeroutput>@example</computeroutput> и <computeroutput>EXAMPLE_PATH</computeroutput>  </para>
+</entry><entry thead="no"><para>Добавляют исходник в специальный раздел с примерами.  </para>
+</entry><entry thead="no"><para><computeroutput>docs/examples/turn_example.cpp</computeroutput>, <computeroutput>Doxyfile</computeroutput>  </para>
+</entry></row>
+<row>
+<entry thead="no"><para><computeroutput>SEARCHENGINE</computeroutput>, <computeroutput>GENERATE_TREEVIEW</computeroutput>, <computeroutput>SOURCE_BROWSER</computeroutput>  </para>
+</entry><entry thead="no"><para>Включают поиск, дерево разделов и просмотр исходников в HTML.  </para>
+</entry><entry thead="no"><para><computeroutput>Doxyfile</computeroutput>  </para>
+</entry></row>
+<row>
+<entry thead="no"><para><computeroutput>EXTRACT_ALL</computeroutput>, <computeroutput>EXTRACT_PRIVATE</computeroutput>, <computeroutput>EXTRACT_STATIC</computeroutput>  </para>
+</entry><entry thead="no"><para>Не скрывают недокументированные, приватные и статические сущности.  </para>
+</entry><entry thead="no"><para><computeroutput>Doxyfile</computeroutput>  </para>
+</entry></row>
+<row>
+<entry thead="no"><para><computeroutput>JAVADOC_AUTOBRIEF</computeroutput>, <computeroutput>MULTILINE_CPP_IS_BRIEF</computeroutput>  </para>
+</entry><entry thead="no"><para>Помогают автоматически выделять краткое описание из комментария.  </para>
+</entry><entry thead="no"><para><computeroutput>Doxyfile</computeroutput>  </para>
+</entry></row>
+</table>
+</para>
+</sect1>
+<sect1 id="doxy_features_1doxy_custom">
+<title>Пользовательские метки проекта</title><para>В <computeroutput>Doxyfile</computeroutput> определены три псевдонима. Они превращают повторяющиеся методические пометки в единый стиль документации.</para>
+<para><table rows="4" cols="3"><row>
+<entry thead="yes"><para>Псевдоним  </para>
+</entry><entry thead="yes"><para>Заголовок в HTML  </para>
+</entry><entry thead="yes"><para>Пример использования  </para>
+</entry></row>
+<row>
+<entry thead="no"><para><computeroutput>@complexity</computeroutput>  </para>
+</entry><entry thead="no"><para>«Сложность»  </para>
+</entry><entry thead="no"><para><computeroutput><ref refid="convex__hull_8h" kindref="compound">src/lib/geometry/convex_hull.h</ref></computeroutput>, <computeroutput><ref refid="delaunay_8h" kindref="compound">src/lib/geometry/delaunay.h</ref></computeroutput>  </para>
+</entry></row>
+<row>
+<entry thead="no"><para><computeroutput>@invariant</computeroutput>  </para>
+</entry><entry thead="no"><para>«Инвариант»  </para>
+</entry><entry thead="no"><para><computeroutput><ref refid="convex__hull_8h" kindref="compound">src/lib/geometry/convex_hull.h</ref></computeroutput>, <computeroutput><ref refid="bigint_8h" kindref="compound">src/lib/bigint/bigint.h</ref></computeroutput>  </para>
+</entry></row>
+<row>
+<entry thead="no"><para><computeroutput>@educational</computeroutput>  </para>
+</entry><entry thead="no"><para>«Учебная заметка»  </para>
+</entry><entry thead="no"><para><computeroutput><ref refid="predicates_8h" kindref="compound">src/lib/geometry/predicates.h</ref></computeroutput>  </para>
+</entry></row>
+</table>
+</para>
+</sect1>
+<sect1 id="doxy_features_1doxy_math">
+<title>Формулы: LaTeX и MathJax</title><para>Формулы записываются командой <computeroutput>@f[ ... @f]</computeroutput>, а параметр <computeroutput>USE_MATHJAX = YES</computeroutput> подключает MathJax к HTML-страницам. Благодаря этому математические выражения масштабируются и остаются читаемыми в браузере.</para>
+<para><table rows="5" cols="2"><row>
+<entry thead="yes"><para>Что документируется  </para>
+</entry><entry thead="yes"><para>Где найти  </para>
+</entry></row>
+<row>
+<entry thead="no"><para>Формула векторного произведения  </para>
+</entry><entry thead="no"><para><computeroutput><ref refid="predicates_8h" kindref="compound">src/lib/geometry/predicates.h</ref></computeroutput>  </para>
+</entry></row>
+<row>
+<entry thead="no"><para>Формула точного предиката поворота  </para>
+</entry><entry thead="no"><para><computeroutput><ref refid="exact__predicate_8h" kindref="compound">src/lib/bigint/exact_predicate.h</ref></computeroutput>  </para>
+</entry></row>
+<row>
+<entry thead="no"><para>Рекуррентная формула де Кастельжо  </para>
+</entry><entry thead="no"><para><computeroutput><ref refid="bezier_8h" kindref="compound">src/lib/bezier/bezier.h</ref></computeroutput>  </para>
+</entry></row>
+<row>
+<entry thead="no"><para>Включение MathJax  </para>
+</entry><entry thead="no"><para><computeroutput>Doxyfile</computeroutput>: <computeroutput>USE_MATHJAX</computeroutput>, <computeroutput>MATHJAX_VERSION</computeroutput>  </para>
+</entry></row>
+</table>
+</para>
+</sect1>
+<sect1 id="doxy_features_1doxy_graphs">
+<title>Graphviz: схемы и связи</title><para>Команды <computeroutput>@dot ... @enddot</computeroutput> позволяют записать Graphviz-схему прямо в документирующем комментарии. В проекте есть две вручную созданные схемы:</para>
+<para><table rows="3" cols="3"><row>
+<entry thead="yes"><para>Схема  </para>
+</entry><entry thead="yes"><para>Что показывает  </para>
+</entry><entry thead="yes"><para>Где найти  </para>
+</entry></row>
+<row>
+<entry thead="no"><para>Архитектура  </para>
+</entry><entry thead="no"><para>Связи Qt-приложения, холста и библиотек.  </para>
+</entry><entry thead="no"><para><computeroutput><ref refid="architecture_8md" kindref="compound">docs/architecture.md</ref></computeroutput>  </para>
+</entry></row>
+<row>
+<entry thead="no"><para>Конвейер точного поворота  </para>
+</entry><entry thead="no"><para>Разбор координат, вычисление и получение знака.  </para>
+</entry><entry thead="no"><para><computeroutput><ref refid="exact__predicate_8h" kindref="compound">src/lib/bigint/exact_predicate.h</ref></computeroutput>  </para>
+</entry></row>
+</table>
+</para>
+<para>Кроме ручных схем, <computeroutput>Doxyfile</computeroutput> включает автоматические графы Graphviz:</para>
+<para><table rows="6" cols="2"><row>
+<entry thead="yes"><para>Настройка  </para>
+</entry><entry thead="yes"><para>Результат  </para>
+</entry></row>
+<row>
+<entry thead="no"><para><computeroutput>CLASS_GRAPH</computeroutput>, <computeroutput>COLLABORATION_GRAPH</computeroutput>, <computeroutput>GRAPHICAL_HIERARCHY</computeroutput>  </para>
+</entry><entry thead="no"><para>Наследование, отношения классов и иерархия.  </para>
+</entry></row>
+<row>
+<entry thead="no"><para><computeroutput>INCLUDE_GRAPH</computeroutput>, <computeroutput>INCLUDED_BY_GRAPH</computeroutput>  </para>
+</entry><entry thead="no"><para>Зависимости подключаемых файлов.  </para>
+</entry></row>
+<row>
+<entry thead="no"><para><computeroutput>CALL_GRAPH</computeroutput>, <computeroutput>CALLER_GRAPH</computeroutput>  </para>
+</entry><entry thead="no"><para>Кого вызывает функция и кем она вызывается.  </para>
+</entry></row>
+<row>
+<entry thead="no"><para><computeroutput>GROUP_GRAPHS</computeroutput>, <computeroutput>TEMPLATE_RELATIONS</computeroutput>, <computeroutput>UML_LOOK</computeroutput>  </para>
+</entry><entry thead="no"><para>Связи групп, шаблонов и UML-представление.  </para>
+</entry></row>
+<row>
+<entry thead="no"><para><computeroutput>DOT_IMAGE_FORMAT = svg</computeroutput>, <computeroutput>INTERACTIVE_SVG = YES</computeroutput>  </para>
+</entry><entry thead="no"><para>Масштабируемые интерактивные SVG-графы.  </para>
+</entry></row>
+</table>
+</para>
+</sect1>
+<sect1 id="doxy_features_1doxy_tasks">
+<title>Задачи на будущее</title><para><computeroutput>@todo</computeroutput> и <computeroutput>GENERATE_TODOLIST = YES</computeroutput> создают страницу со списком дальнейших улучшений. Здесь попадают только реальные пункты развития кода:</para>
+<para><itemizedlist>
+<listitem><para>деление с остатком для <computeroutput>BigInteger</computeroutput> — <computeroutput><ref refid="bigint_8h" kindref="compound">src/lib/bigint/bigint.h</ref></computeroutput>;</para>
+</listitem><listitem><para>сглаживание стыков составной кривой Безье — <computeroutput><ref refid="bezier_8h" kindref="compound">src/lib/bezier/bezier.h</ref></computeroutput>.</para>
+</listitem></itemizedlist>
+</para>
+<para>Параметр <computeroutput>GENERATE_BUGLIST = YES</computeroutput> также включён в <computeroutput>Doxyfile</computeroutput>, но тег <computeroutput>@bug</computeroutput> в проекте пока не используется: известных подтверждённых ошибок нет.</para>
+</sect1>
+<sect1 id="doxy_features_1doxy_formats">
+<title>Форматы и публикация</title><para><table rows="6" cols="3"><row>
+<entry thead="yes"><para>Возможность  </para>
+</entry><entry thead="yes"><para>Назначение  </para>
+</entry><entry thead="yes"><para>Где найти  </para>
+</entry></row>
+<row>
+<entry thead="no"><para><computeroutput>GENERATE_HTML</computeroutput>  </para>
+</entry><entry thead="no"><para>Основной сайт документации.  </para>
+</entry><entry thead="no"><para><computeroutput>docs/site/html/index.html</computeroutput>  </para>
+</entry></row>
+<row>
+<entry thead="no"><para><computeroutput>GENERATE_XML</computeroutput>  </para>
+</entry><entry thead="no"><para>Машиночитаемое представление для IDE и внешних инструментов.  </para>
+</entry><entry thead="no"><para><computeroutput>docs/site/xml/</computeroutput>  </para>
+</entry></row>
+<row>
+<entry thead="no"><para><computeroutput>GENERATE_TAGFILE</computeroutput>  </para>
+</entry><entry thead="no"><para>Файл перекрёстных ссылок для другой документации Doxygen.  </para>
+</entry><entry thead="no"><para><computeroutput>Doxyfile</computeroutput>  </para>
+</entry></row>
+<row>
+<entry thead="no"><para><computeroutput>INPUT_ENCODING = UTF-8</computeroutput>, <computeroutput>OUTPUT_LANGUAGE = Russian</computeroutput>  </para>
+</entry><entry thead="no"><para>Корректная русскоязычная документация.  </para>
+</entry><entry thead="no"><para><computeroutput>Doxyfile</computeroutput>  </para>
+</entry></row>
+<row>
+<entry thead="no"><para>GitHub Pages workflow  </para>
+</entry><entry thead="no"><para>Публикует готовый статический HTML без запуска Doxygen на GitHub.  </para>
+</entry><entry thead="no"><para><computeroutput>.github/workflows/deploy-docs.yml</computeroutput>  </para>
+</entry></row>
+</table>
+</para>
+<para>LaTeX-вывод сейчас намеренно выключен (<computeroutput>GENERATE_LATEX = NO</computeroutput>), но Doxygen может включить его для печатного PDF без изменения комментариев. Это полезно для отчёта или курсовой работы; HTML и XML при этом продолжают генерироваться как обычно.</para>
+</sect1>
+<sect1 id="doxy_features_1doxy_workflow">
+<title>Рабочая последовательность</title><para><orderedlist>
+<listitem><para>Изменить комментарии или Markdown-страницы.</para>
+</listitem><listitem><para>Выполнить <computeroutput>cmake --build build --target docs</computeroutput>.</para>
+</listitem><listitem><para>Открыть <computeroutput>docs/site/html/index.html</computeroutput> и проверить ссылки, формулы и графы.</para>
+</listitem><listitem><para>Добавить обновлённый каталог <computeroutput>docs/site</computeroutput> в коммит.</para>
+</listitem><listitem><para>После push GitHub Actions опубликует готовую страницу на GitHub Pages.</para>
+</listitem></orderedlist>
+</para>
+</sect1>
+<sect1 id="doxy_features_1doxy_conclusion">
+<title>Заключение</title><para>В проекте Doxygen соединяет код, объяснение алгоритма и навигацию по архитектуре. Краткие теги поддерживают контракт API, формулы сохраняют математическую точность, Graphviz делает связи наглядными, а HTML-сайт позволяет показать результат без локальной среды разработки. Благодаря этому документация остаётся проверяемой, воспроизводимой и полезной как для защиты проекта, так и для его дальнейшей разработки. </para>
+</sect1>
+    </detaileddescription>
+    <location file="docs/doxygen_features.md"/>
+  </compounddef>
+</doxygen>

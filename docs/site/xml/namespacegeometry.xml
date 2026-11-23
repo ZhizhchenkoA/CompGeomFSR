@@ -114,7 +114,7 @@
 <para>Выпуклая оболочка множества точек алгоритмом Эндрю. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para>Вершины против часовой стрелки без повторения первой точки. Для 0/1/2 различных точек результат содержит 0/1/2 точки. Дубликаты и коллинеарные внутренние точки исключаются. \par Complexity: $O(n \log n)$ по времени, $O(n)$ дополнительной памяти. \par Invariant: Результат ориентирован против часовой стрелки. </para>
+<para><simplesect kind="return"><para>Вершины против часовой стрелки без повторения первой точки. Для 0/1/2 различных точек результат содержит 0/1/2 точки. Дубликаты и коллинеарные внутренние точки исключаются. \par Сложность: <computeroutput>O(n log n)</computeroutput> по времени, <computeroutput>O(n)</computeroutput> дополнительной памяти. \par Инвариант: Результат ориентирован против часовой стрелки. </para>
 </simplesect>
 </para>
         </detaileddescription>
@@ -181,7 +181,7 @@
 <para>Триангуляция Делоне алгоритмом Bowyer<ndash/>Watson. </para>
         </briefdescription>
         <detaileddescription>
-<para>Дубликаты исключаются; для менее чем трёх неколлинеарных точек возвращается пустой список. Точки на окружности допускаются. \par Complexity: В среднем O(n log n), в худшем случае зависит от числа треугольников. </para>
+<para>Дубликаты исключаются; для менее чем трёх неколлинеарных точек возвращается пустой список. Точки на окружности допускаются. \par Сложность: В среднем O(n log n), в худшем случае зависит от числа треугольников. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
@@ -249,15 +249,23 @@
 <parametername>eps</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Допуск, при котором значение считается нулём. \par Complexity: O(1) </para>
+<para>Допуск, при котором значение считается нулём. \par Сложность: O(1) </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
+<simplesect kind="post"><para>Возвращаемое значение всегда принадлежит множеству <computeroutput>{-1, 0, 1}</computeroutput>. </para>
+</simplesect>
+<simplesect kind="note"><para>Отрицательный <computeroutput>eps</computeroutput> обрабатывается как его абсолютное значение. </para>
+</simplesect>
+<simplesect kind="warning"><para>Для координат, заданных очень длинными десятичными строками, используйте <ref refid="namespacebigint_1a2646acc61d0e940c36f58f118a5095d1" kindref="member">bigint::exactTurn</ref>: арифметика <computeroutput>double</computeroutput> может потерять знак. </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group__geometry__predicates_1gac3352a32baf1dd7d3620a1748dd4b78a" kindref="member">cross()</ref>, <ref refid="namespacebigint_1a2646acc61d0e940c36f58f118a5095d1" kindref="member">bigint::exactTurn()</ref> \par Учебная заметка: Знак векторного произведения — основа теста «слева/справа». </para>
+</simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/lib/geometry/predicates.cpp" line="13" column="5" bodyfile="src/lib/geometry/predicates.cpp" bodystart="13" bodyend="24" declfile="src/lib/geometry/predicates.h" declline="27" declcolumn="5"/>
+        <location file="src/lib/geometry/predicates.cpp" line="13" column="5" bodyfile="src/lib/geometry/predicates.cpp" bodystart="13" bodyend="24" declfile="src/lib/geometry/predicates.h" declline="38" declcolumn="5"/>
         <references refid="group__geometry__predicates_1gac3352a32baf1dd7d3620a1748dd4b78a" compoundref="predicates_8cpp" startline="8" endline="11">cross</references>
         <referencedby refid="classGeometryPage_1aa685131d4c04dafba54ab095dc78952e" compoundref="geometrypage_8cpp" startline="301" endline="343">GeometryPage::computeTurn</referencedby>
       </memberdef>
@@ -317,15 +325,17 @@
 <parametername>eps</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Евклидово расстояние до ближайшей точки отрезка. \par Complexity: O(1) </para>
+<para>Евклидово расстояние до ближайшей точки отрезка. \par Сложность: O(1) </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
+<simplesect kind="par"><title>Особый случай</title><para>Если <computeroutput>a</computeroutput> и <computeroutput>b</computeroutput> совпадают в пределах <computeroutput>eps</computeroutput>, отрезок трактуется как точка. </para>
+</simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/lib/geometry/predicates.cpp" line="26" column="6" bodyfile="src/lib/geometry/predicates.cpp" bodystart="26" bodyend="50" declfile="src/lib/geometry/predicates.h" declline="37" declcolumn="6"/>
+        <location file="src/lib/geometry/predicates.cpp" line="26" column="6" bodyfile="src/lib/geometry/predicates.cpp" bodystart="26" bodyend="50" declfile="src/lib/geometry/predicates.h" declline="50" declcolumn="6"/>
         <references refid="structgeometry_1_1Point_1ad011726194a14d580d46c95bb1b57404" compoundref="point_8h" startline="14">geometry::Point::x</references>
         <references refid="structgeometry_1_1Point_1a58d50e43eb0617b09d14b2be1b1d054e" compoundref="point_8h" startline="15">geometry::Point::y</references>
         <referencedby refid="classGeometryPage_1aa685131d4c04dafba54ab095dc78952e" compoundref="geometrypage_8cpp" startline="301" endline="343">GeometryPage::computeTurn</referencedby>
@@ -399,7 +409,7 @@
 <parametername>eps</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Допуск в единицах координат; учитывает касание концом. \par Complexity: O(1) </para>
+<para>Допуск в единицах координат; учитывает касание концом. \par Сложность: O(1) </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>

@@ -2,9 +2,9 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
   <compounddef id="group__bigint__api" kind="group">
     <compoundname>bigint_api</compoundname>
-    <title>Arbitrary-precision arithmetic</title>
+    <title>Арифметика произвольной точности</title>
     <briefdescription>
-<para>Signed integers and exact decimal predicates. </para>
+<para>Знаковые целые числа и точные предикаты для десятичных координат. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>

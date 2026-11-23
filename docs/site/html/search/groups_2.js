@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['curves_0',['Bezier curves',['../group__bezier__api.html',1,'']]]
+  ['геометрические_20предикаты_0',['Геометрические предикаты',['../group__geometry__predicates.html',1,'']]],
+  ['геометрии_1',['Алгоритмы геометрии',['../group__geometry__algorithms.html',1,'']]]
 ];

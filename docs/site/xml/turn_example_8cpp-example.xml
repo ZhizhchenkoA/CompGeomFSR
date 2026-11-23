@@ -9,7 +9,7 @@
 <title>Быстрый старт</title><para><programlisting filename=".bash"><codeline><highlight class="normal">cmake<sp/>-S<sp/>.<sp/>-B<sp/>build</highlight></codeline>
 <codeline><highlight class="normal">cmake<sp/>--build<sp/>build<sp/>--target<sp/>docs</highlight></codeline>
 </programlisting></para>
-<para>HTML находится в <computeroutput>build/docs/html/index.html</computeroutput>, XML — в <computeroutput>build/docs/xml/</computeroutput>. */ <programlisting filename="turn_example.cpp"><codeline><highlight class="normal"></highlight></codeline>
+<para>HTML находится в <computeroutput>docs/site/html/index.html</computeroutput>, XML — в <computeroutput>docs/site/xml/</computeroutput>. <programlisting filename="turn_example.cpp"><codeline><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="predicates_8h" kindref="compound">geometry/predicates.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" kindref="member">main</ref>()</highlight></codeline>

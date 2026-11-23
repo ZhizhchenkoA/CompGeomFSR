@@ -28,11 +28,22 @@ var NAVTREE =
     [ "Обзор", "index.html#overview", null ],
     [ "Возможности Doxygen в этом проекте", "index.html#highlights", null ],
     [ "Пример API", "index.html#example_section", null ],
-    [ "mainpage", "md_docs_2mainpage.html", null ],
-    [ "architecture", "md_docs_2architecture.html", null ],
     [ "Архитектура проекта", "architecture.html", [
       [ "Поток данных", "architecture.html#flow", null ]
     ] ],
+    [ "Конспект возможностей Doxygen в проекте", "doxy_features.html", [
+      [ "Введение", "doxy_features.html#doxy_intro", null ],
+      [ "Комментарии и контракт API", "doxy_features.html#doxy_comments", null ],
+      [ "Структура API и навигация", "doxy_features.html#doxy_structure", null ],
+      [ "Пользовательские метки проекта", "doxy_features.html#doxy_custom", null ],
+      [ "Формулы: LaTeX и MathJax", "doxy_features.html#doxy_math", null ],
+      [ "Graphviz: схемы и связи", "doxy_features.html#doxy_graphs", null ],
+      [ "Задачи на будущее", "doxy_features.html#doxy_tasks", null ],
+      [ "Форматы и публикация", "doxy_features.html#doxy_formats", null ],
+      [ "Рабочая последовательность", "doxy_features.html#doxy_workflow", null ],
+      [ "Заключение", "doxy_features.html#doxy_conclusion", null ]
+    ] ],
+    [ "Список задач", "todo.html", null ],
     [ "Разделы", "topics.html", "topics" ],
     [ "Пространства имен", "namespaces.html", [
       [ "Пространства имен", "namespaces.html", "namespaces_dup" ],
@@ -68,7 +79,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"namespaceUi.html"
+"longarithmeticpage_8h.html"
 ];
 
 var SYNCONMSG = 'нажмите на выключить для синхронизации панелей';

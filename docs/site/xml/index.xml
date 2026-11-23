@@ -226,6 +226,8 @@
   </compound>
   <compound refid="architecture_8md" kind="file"><name>architecture.md</name>
   </compound>
+  <compound refid="doxygen__features_8md" kind="file"><name>doxygen_features.md</name>
+  </compound>
   <compound refid="mainpage_8md" kind="file"><name>mainpage.md</name>
   </compound>
   <compound refid="README_8md" kind="file"><name>README.md</name>
@@ -296,11 +298,11 @@
   <compound refid="group__geometry__predicates" kind="group"><name>geometry_predicates</name>
     <member refid="group__geometry__predicates_1gac3352a32baf1dd7d3620a1748dd4b78a" kind="function"><name>cross</name></member>
   </compound>
-  <compound refid="md_docs_2mainpage" kind="page"><name>md_docs_2mainpage</name>
-  </compound>
-  <compound refid="md_docs_2architecture" kind="page"><name>md_docs_2architecture</name>
-  </compound>
   <compound refid="architecture" kind="page"><name>architecture</name>
+  </compound>
+  <compound refid="doxy_features" kind="page"><name>doxy_features</name>
+  </compound>
+  <compound refid="todo" kind="page"><name>todo</name>
   </compound>
   <compound refid="dir_53adf0b982dc8545998aae3f283a5a58" kind="dir"><name>src/apps</name>
   </compound>

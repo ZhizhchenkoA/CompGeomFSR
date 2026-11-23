@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="todo" kind="page">
+    <compoundname>todo</compoundname>
+    <title>Список задач</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><variablelist>
+<varlistentry><term>Член <ref refid="namespacebezier_1a501e022e378938e5a58777be3b250155" kindref="member">bezier::composite</ref>  (const std::vector&lt; geometry::Point &gt; &amp;control, int degree, int countPerSegment=70)</term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000001"/>Добавить режим сглаживания стыков составной кривой <computeroutput>C¹</computeroutput>.  </para>
+</listitem>
+<varlistentry><term>Класс <ref refid="classbigint_1_1BigInteger" kindref="compound">bigint::BigInteger</ref>  </term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000002"/>Реализовать деление с остатком, если библиотека выйдет за рамки задачи 3. </para>
+</listitem>
+</variablelist>
+</para>
+    </detaileddescription>
+    <location file="todo"/>
+  </compounddef>
+</doxygen>

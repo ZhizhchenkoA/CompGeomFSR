@@ -33,6 +33,5 @@ var searchData=
   ['convexpolygonboolean_30',['convexPolygonBoolean',['../namespacegeometry.html#a9da2f54b6289b88e936abf857d44ea5e',1,'geometry']]],
   ['convexpolygonoperation_31',['ConvexPolygonOperation',['../namespacegeometry.html#ac019bd61bca22de69c70fc1a9acabefa',1,'geometry']]],
   ['cross_32',['cross',['../group__geometry__predicates.html#gac3352a32baf1dd7d3620a1748dd4b78a',1,'geometry']]],
-  ['cursormoved_33',['cursorMoved',['../classGeometryCanvas.html#ab8d0baa77faffef68b5482431ee75811',1,'GeometryCanvas::cursorMoved()'],['../classGeometryPage.html#aa9f01f9f97ae7cc6d65dcd8254ea8428',1,'GeometryPage::cursorMoved()']]],
-  ['curves_34',['Bezier curves',['../group__bezier__api.html',1,'']]]
+  ['cursormoved_33',['cursorMoved',['../classGeometryCanvas.html#ab8d0baa77faffef68b5482431ee75811',1,'GeometryCanvas::cursorMoved()'],['../classGeometryPage.html#aa9f01f9f97ae7cc6d65dcd8254ea8428',1,'GeometryPage::cursorMoved()']]]
 ];

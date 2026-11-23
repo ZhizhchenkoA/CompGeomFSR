@@ -2,9 +2,9 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
   <compounddef id="group__bezier__api" kind="group">
     <compoundname>bezier_api</compoundname>
-    <title>Bezier curves</title>
+    <title>Кривые Безье</title>
     <briefdescription>
-<para>Parametric curves and de Casteljau construction. </para>
+<para>Параметрические кривые и построение де Кастельжо. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>

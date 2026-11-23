@@ -2,7 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
   <compounddef id="group__geometry__predicates" kind="group">
     <compoundname>geometry_predicates</compoundname>
-    <title>Geometric predicates</title>
+    <title>Геометрические предикаты</title>
     <sectiondef kind="func">
       <memberdef kind="function" id="group__geometry__predicates_1gac3352a32baf1dd7d3620a1748dd4b78a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -26,11 +26,11 @@
 <para>Векторное произведение <computeroutput>(b - a) x (c - a)</computeroutput>. </para>
         </briefdescription>
         <detaileddescription>
-<para>Положительно, если обход <computeroutput>a -&gt; b -&gt; c</computeroutput> против часовой стрелки. </para>
+<para><formula id="2">\[\operatorname{cross}(a,b,c) = (b_x-a_x)(c_y-a_y) - (b_y-a_y)(c_x-a_x).\]</formula> Положительно, если обход <computeroutput>a -&gt; b -&gt; c</computeroutput> против часовой стрелки. \par Сложность: O(1) </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/lib/geometry/predicates.cpp" line="8" column="8" bodyfile="src/lib/geometry/predicates.cpp" bodystart="8" bodyend="11" declfile="src/lib/geometry/predicates.h" declline="16" declcolumn="8"/>
+        <location file="src/lib/geometry/predicates.cpp" line="8" column="8" bodyfile="src/lib/geometry/predicates.cpp" bodystart="8" bodyend="11" declfile="src/lib/geometry/predicates.h" declline="21" declcolumn="8"/>
         <references refid="structgeometry_1_1Point_1ad011726194a14d580d46c95bb1b57404" compoundref="point_8h" startline="14">geometry::Point::x</references>
         <references refid="structgeometry_1_1Point_1a58d50e43eb0617b09d14b2be1b1d054e" compoundref="point_8h" startline="15">geometry::Point::y</references>
         <referencedby refid="classGeometryPage_1aa685131d4c04dafba54ab095dc78952e" compoundref="geometrypage_8cpp" startline="301" endline="343">GeometryPage::computeTurn</referencedby>
@@ -39,7 +39,7 @@
       </memberdef>
     </sectiondef>
     <briefdescription>
-<para>Exact-sign and tolerance-aware predicates used by higher algorithms. </para>
+<para>Предикаты знака и принадлежности с учётом допуска. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>

@@ -17,6 +17,15 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -133,8 +142,8 @@ Geometry Workbench — документация</h1>
 </div><!-- fragment --><p><span class="tt">Doxyfile</span> читает заголовки и исходники из <span class="tt">src</span>, извлекает публичные и приватные сущности и сохраняет HTML-дерево с исходниками и перекрёстными ссылками. Каталог <span class="tt">docs/site/html</span> — готовый статический сайт: его следует добавить в Git вместе с изменениями документации.</p>
 <h1 class="doxsection"><a class="anchor" id="autotoc_md6"></a>
 Публикация на GitHub Pages</h1>
-<p>В проекте есть workflow <a href="../.github/workflows/deploy-docs.yml"><span class="tt">.github/workflows/deploy-docs.yml</span></a>. Он не запускает Doxygen на сервере: workflow публикует уже подготовленный каталог <span class="tt">docs/site/html</span> на GitHub Pages. Поэтому после изменения комментариев, исходников или <span class="tt">Doxyfile</span> сначала локально выполните <span class="tt">doxygen Doxyfile</span>, затем добавьте обновлённый <span class="tt">docs/site</span> в коммит. Запуск происходит при изменении исходного кода, <span class="tt">docs</span> или <span class="tt">Doxyfile</span> в ветках <span class="tt"><a class="el" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main</a></span> и <span class="tt">master</span>; его также можно запустить вручную через вкладку <b>Actions</b>.</p>
-<p>Перед первым запуском в репозитории откройте <b>Settings → Pages</b> и выберите источник <b>GitHub Actions</b>. После успешного job <span class="tt">Deploy to GitHub Pages</span> ссылка на опубликованную документацию появится в его выводе и в разделе Pages. Для пользовательского домена настройте его там же: файл <span class="tt">CNAME</span> сам по себе домен не подключает. </p>
+<p>В проекте есть сценарий GitHub Actions <a href="../.github/workflows/deploy-docs.yml"><span class="tt">.github/workflows/deploy-docs.yml</span></a>. Он не запускает Doxygen на сервере: сценарий публикует уже подготовленный каталог <span class="tt">docs/site/html</span> на GitHub Pages. Поэтому после изменения комментариев, исходников или <span class="tt">Doxyfile</span> сначала локально выполните <span class="tt">doxygen Doxyfile</span>, затем добавьте обновлённый <span class="tt">docs/site</span> в коммит. Запуск происходит при изменении исходного кода, <span class="tt">docs</span> или <span class="tt">Doxyfile</span> в ветках <span class="tt"><a class="el" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main</a></span> и <span class="tt">master</span>; его также можно запустить вручную через вкладку <b>Actions</b>.</p>
+<p>Перед первым запуском в репозитории откройте <b>Settings → Pages</b> и выберите источник <b>GitHub Actions</b>. После успешной задачи <span class="tt">Deploy to GitHub Pages</span> ссылка на опубликованную документацию появится в её выводе и в разделе Pages. Для пользовательского домена настройте его там же: файл <span class="tt">CNAME</span> сам по себе домен не подключает. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <div id="page-nav" class="page-nav-panel">

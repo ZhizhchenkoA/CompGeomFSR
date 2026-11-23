@@ -17,6 +17,15 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -92,15 +101,16 @@ $(function(){initNavTree('architecture.html','',''); });
   <div class="headertitle"><div class="title">Архитектура проекта </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><div class="dotgraph">
-<iframe scrolling="no" loading="lazy" frameborder="0" src="dot_inline_dotgraph_1ac12c059c2e69e626088b2d05c135ea.svg" width="1027" height="355"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="textblock"><p>Приложение отделяет алгоритмы компьютерной геометрии от Qt-интерфейса. Это позволяет тестировать библиотечный код без запуска графического окна.</p>
+<div class="dotgraph">
+<iframe scrolling="no" loading="lazy" frameborder="0" src="dot_inline_dotgraph_ff26388b6d689778c89af93c6d950f01.svg" width="1166" height="355"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <h1 class="doxsection"><a class="anchor" id="flow"></a>
 Поток данных</h1>
 <ol type="1">
 <li>Qt-сигнал передаёт клик или перетаскивание в <span class="tt"><a class="el" href="classGeometryPage.html" title="Главная страница задач 1–13.">GeometryPage</a></span>.</li>
 <li>Страница переводит <span class="tt">QPointF</span> через <span class="tt"><a class="el" href="namespacegeometry__qt.html#a1b00196f7a1e7ff93f722417814f1dbf" title="Адаптер между экранными координатами Qt и математическими координатами.">geometry_qt::toGeometry</a></span>.</li>
 <li>Чистая библиотека возвращает число, контур, треугольники или кривую.</li>
-<li>Результат переводится обратно в экранные координаты и рисуется слоями <span class="tt"><a class="el" href="classGeometryCanvas.html" title="Холст геометрических сцен.">GeometryCanvas</a></span>. */ </li>
+<li>Результат переводится обратно в экранные координаты и рисуется слоями <span class="tt"><a class="el" href="classGeometryCanvas.html" title="Холст геометрических сцен.">GeometryCanvas</a></span>. </li>
 </ol>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->

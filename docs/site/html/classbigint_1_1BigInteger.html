@@ -17,6 +17,15 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -155,9 +164,9 @@ $(function(){initNavTree('classbigint_1_1BigInteger.html','','classbigint_1_1Big
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Подробное описание</h2>
 <div class="textblock"><p>Библиотека точной арифметики для задачи с длинными координатами. </p>
-<p>Знаковое целое произвольной длины в базе <span class="tt">10^9</span>. </p>
+<p>Знаковое целое произвольной длины в базе <span class="tt">10^9</span>. \par Инвариант: Ноль хранится только со знаком <span class="tt">0</span> и без старших нулевых блоков. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Необходимо сделать</a></b></dt><dd>Реализовать деление с остатком, если библиотека выйдет за рамки задачи 3. </dd></dl>
 
-<p class="definition">См. определение в файле <a class="el" href="bigint_8h_source.html">bigint.h</a> строка <a class="el" href="bigint_8h_source.html#l00015">15</a></p>
+<p class="definition">См. определение в файле <a class="el" href="bigint_8h_source.html">bigint.h</a> строка <a class="el" href="bigint_8h_source.html#l00019">19</a></p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Конструктор(ы)</h2>
 <a id="aa5ebb91700ee66941995e9e0a1c5d507" name="aa5ebb91700ee66941995e9e0a1c5d507"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa5ebb91700ee66941995e9e0a1c5d507">&#9670;&#160;</a></span>BigInteger() <span class="overload">[1/2]</span></h2>
@@ -186,7 +195,7 @@ $(function(){initNavTree('classbigint_1_1BigInteger.html','','classbigint_1_1Big
 
 <p class="reference">Перекрестные ссылки <a class="el" href="#aa5ebb91700ee66941995e9e0a1c5d507">BigInteger()</a>.</p>
 
-<p class="reference">Используется в <a class="el" href="bigint_8cpp_source.html#l00138">addAbs()</a>, <a class="el" href="#aa5ebb91700ee66941995e9e0a1c5d507">BigInteger()</a>, <a class="el" href="bigint_8cpp_source.html#l00127">compareAbs()</a>, <a class="el" href="bigint_8h_source.html#l00039">operator*</a>, <a class="el" href="bigint_8cpp_source.html#l00085">operator*=()</a>, <a class="el" href="bigint_8h_source.html#l00037">operator+</a>, <a class="el" href="bigint_8cpp_source.html#l00069">operator+=()</a>, <a class="el" href="bigint_8cpp_source.html#l00062">operator-()</a>, <a class="el" href="bigint_8h_source.html#l00038">operator-</a>, <a class="el" href="bigint_8cpp_source.html#l00083">operator-=()</a>, <a class="el" href="bigint_8cpp_source.html#l00112">powerOfTen()</a>, <a class="el" href="bigint_8cpp_source.html#l00151">subtractAbs()</a> и <a class="el" href="bigint_8cpp_source.html#l00023">tryParse()</a>.</p>
+<p class="reference">Используется в <a class="el" href="bigint_8cpp_source.html#l00138">addAbs()</a>, <a class="el" href="#aa5ebb91700ee66941995e9e0a1c5d507">BigInteger()</a>, <a class="el" href="bigint_8cpp_source.html#l00127">compareAbs()</a>, <a class="el" href="bigint_8h_source.html#l00043">operator*</a>, <a class="el" href="bigint_8cpp_source.html#l00085">operator*=()</a>, <a class="el" href="bigint_8h_source.html#l00041">operator+</a>, <a class="el" href="bigint_8cpp_source.html#l00069">operator+=()</a>, <a class="el" href="bigint_8cpp_source.html#l00062">operator-()</a>, <a class="el" href="bigint_8h_source.html#l00042">operator-</a>, <a class="el" href="bigint_8cpp_source.html#l00083">operator-=()</a>, <a class="el" href="bigint_8cpp_source.html#l00112">powerOfTen()</a>, <a class="el" href="bigint_8cpp_source.html#l00151">subtractAbs()</a> и <a class="el" href="bigint_8cpp_source.html#l00023">tryParse()</a>.</p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -219,7 +228,7 @@ $(function(){initNavTree('classbigint_1_1BigInteger.html','','classbigint_1_1Big
 
 <p class="definition">См. определение в файле <a class="el" href="bigint_8cpp_source.html">bigint.cpp</a> строка <a class="el" href="bigint_8cpp_source.html#l00009">9</a></p>
 
-<p class="reference">Перекрестные ссылки <a class="el" href="bigint_8h_source.html#l00044">kBase</a>, <a class="el" href="bigint_8h_source.html#l00046">m_digits</a> и <a class="el" href="bigint_8h_source.html#l00045">m_sign</a>.</p>
+<p class="reference">Перекрестные ссылки <a class="el" href="bigint_8h_source.html#l00048">kBase</a>, <a class="el" href="bigint_8h_source.html#l00050">m_digits</a> и <a class="el" href="bigint_8h_source.html#l00049">m_sign</a>.</p>
 
 </div>
 </div>
@@ -249,7 +258,7 @@ $(function(){initNavTree('classbigint_1_1BigInteger.html','','classbigint_1_1Big
 
 <p class="definition">См. определение в файле <a class="el" href="bigint_8cpp_source.html">bigint.cpp</a> строка <a class="el" href="bigint_8cpp_source.html#l00138">138</a></p>
 
-<p class="reference">Перекрестные ссылки <a class="el" href="#aa5ebb91700ee66941995e9e0a1c5d507">BigInteger()</a>, <a class="el" href="bigint_8h_source.html#l00044">kBase</a> и <a class="el" href="bigint_8h_source.html#l00046">m_digits</a>.</p>
+<p class="reference">Перекрестные ссылки <a class="el" href="#aa5ebb91700ee66941995e9e0a1c5d507">BigInteger()</a>, <a class="el" href="bigint_8h_source.html#l00048">kBase</a> и <a class="el" href="bigint_8h_source.html#l00050">m_digits</a>.</p>
 
 <p class="reference">Используется в <a class="el" href="bigint_8cpp_source.html#l00069">operator+=()</a>.</p>
 <div class="dynheader">
@@ -294,7 +303,7 @@ $(function(){initNavTree('classbigint_1_1BigInteger.html','','classbigint_1_1Big
 
 <p class="definition">См. определение в файле <a class="el" href="bigint_8cpp_source.html">bigint.cpp</a> строка <a class="el" href="bigint_8cpp_source.html#l00127">127</a></p>
 
-<p class="reference">Перекрестные ссылки <a class="el" href="#aa5ebb91700ee66941995e9e0a1c5d507">BigInteger()</a> и <a class="el" href="bigint_8h_source.html#l00046">m_digits</a>.</p>
+<p class="reference">Перекрестные ссылки <a class="el" href="#aa5ebb91700ee66941995e9e0a1c5d507">BigInteger()</a> и <a class="el" href="bigint_8h_source.html#l00050">m_digits</a>.</p>
 
 <p class="reference">Используется в <a class="el" href="bigint_8cpp_source.html#l00069">operator+=()</a>.</p>
 <div class="dynheader">
@@ -329,7 +338,7 @@ $(function(){initNavTree('classbigint_1_1BigInteger.html','','classbigint_1_1Big
 
 <p class="definition">См. определение в файле <a class="el" href="bigint_8cpp_source.html">bigint.cpp</a> строка <a class="el" href="bigint_8cpp_source.html#l00060">60</a></p>
 
-<p class="reference">Перекрестные ссылки <a class="el" href="bigint_8h_source.html#l00045">m_sign</a>.</p>
+<p class="reference">Перекрестные ссылки <a class="el" href="bigint_8h_source.html#l00049">m_sign</a>.</p>
 
 </div>
 </div>
@@ -358,7 +367,7 @@ $(function(){initNavTree('classbigint_1_1BigInteger.html','','classbigint_1_1Big
 
 <p class="definition">См. определение в файле <a class="el" href="bigint_8cpp_source.html">bigint.cpp</a> строка <a class="el" href="bigint_8cpp_source.html#l00121">121</a></p>
 
-<p class="reference">Перекрестные ссылки <a class="el" href="bigint_8h_source.html#l00046">m_digits</a> и <a class="el" href="bigint_8h_source.html#l00045">m_sign</a>.</p>
+<p class="reference">Перекрестные ссылки <a class="el" href="bigint_8h_source.html#l00050">m_digits</a> и <a class="el" href="bigint_8h_source.html#l00049">m_sign</a>.</p>
 
 <p class="reference">Используется в <a class="el" href="bigint_8cpp_source.html#l00085">operator*=()</a>, <a class="el" href="bigint_8cpp_source.html#l00151">subtractAbs()</a> и <a class="el" href="bigint_8cpp_source.html#l00023">tryParse()</a>.</p>
 <div class="dynheader">
@@ -386,7 +395,7 @@ $(function(){initNavTree('classbigint_1_1BigInteger.html','','classbigint_1_1Big
 
 <p class="definition">См. определение в файле <a class="el" href="bigint_8cpp_source.html">bigint.cpp</a> строка <a class="el" href="bigint_8cpp_source.html#l00085">85</a></p>
 
-<p class="reference">Перекрестные ссылки <a class="el" href="#aa5ebb91700ee66941995e9e0a1c5d507">BigInteger()</a>, <a class="el" href="bigint_8h_source.html#l00044">kBase</a>, <a class="el" href="bigint_8h_source.html#l00046">m_digits</a>, <a class="el" href="bigint_8h_source.html#l00045">m_sign</a> и <a class="el" href="bigint_8cpp_source.html#l00121">normalize()</a>.</p>
+<p class="reference">Перекрестные ссылки <a class="el" href="#aa5ebb91700ee66941995e9e0a1c5d507">BigInteger()</a>, <a class="el" href="bigint_8h_source.html#l00048">kBase</a>, <a class="el" href="bigint_8h_source.html#l00050">m_digits</a>, <a class="el" href="bigint_8h_source.html#l00049">m_sign</a> и <a class="el" href="bigint_8cpp_source.html#l00121">normalize()</a>.</p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -414,7 +423,7 @@ $(function(){initNavTree('classbigint_1_1BigInteger.html','','classbigint_1_1Big
 
 <p class="definition">См. определение в файле <a class="el" href="bigint_8cpp_source.html">bigint.cpp</a> строка <a class="el" href="bigint_8cpp_source.html#l00069">69</a></p>
 
-<p class="reference">Перекрестные ссылки <a class="el" href="bigint_8cpp_source.html#l00138">addAbs()</a>, <a class="el" href="#aa5ebb91700ee66941995e9e0a1c5d507">BigInteger()</a>, <a class="el" href="bigint_8cpp_source.html#l00127">compareAbs()</a>, <a class="el" href="bigint_8h_source.html#l00046">m_digits</a>, <a class="el" href="bigint_8h_source.html#l00045">m_sign</a> и <a class="el" href="bigint_8cpp_source.html#l00151">subtractAbs()</a>.</p>
+<p class="reference">Перекрестные ссылки <a class="el" href="bigint_8cpp_source.html#l00138">addAbs()</a>, <a class="el" href="#aa5ebb91700ee66941995e9e0a1c5d507">BigInteger()</a>, <a class="el" href="bigint_8cpp_source.html#l00127">compareAbs()</a>, <a class="el" href="bigint_8h_source.html#l00050">m_digits</a>, <a class="el" href="bigint_8h_source.html#l00049">m_sign</a> и <a class="el" href="bigint_8cpp_source.html#l00151">subtractAbs()</a>.</p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -442,7 +451,7 @@ $(function(){initNavTree('classbigint_1_1BigInteger.html','','classbigint_1_1Big
 
 <p class="definition">См. определение в файле <a class="el" href="bigint_8cpp_source.html">bigint.cpp</a> строка <a class="el" href="bigint_8cpp_source.html#l00062">62</a></p>
 
-<p class="reference">Перекрестные ссылки <a class="el" href="#aa5ebb91700ee66941995e9e0a1c5d507">BigInteger()</a> и <a class="el" href="bigint_8h_source.html#l00045">m_sign</a>.</p>
+<p class="reference">Перекрестные ссылки <a class="el" href="#aa5ebb91700ee66941995e9e0a1c5d507">BigInteger()</a> и <a class="el" href="bigint_8h_source.html#l00049">m_sign</a>.</p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -530,7 +539,7 @@ $(function(){initNavTree('classbigint_1_1BigInteger.html','','classbigint_1_1Big
 
 <p class="definition">См. определение в файле <a class="el" href="bigint_8cpp_source.html">bigint.cpp</a> строка <a class="el" href="bigint_8cpp_source.html#l00059">59</a></p>
 
-<p class="reference">Перекрестные ссылки <a class="el" href="bigint_8h_source.html#l00045">m_sign</a>.</p>
+<p class="reference">Перекрестные ссылки <a class="el" href="bigint_8h_source.html#l00049">m_sign</a>.</p>
 
 <p class="reference">Используется в <a class="el" href="bigint_8cpp_source.html#l00023">tryParse()</a>.</p>
 <div class="dynheader">
@@ -566,7 +575,7 @@ $(function(){initNavTree('classbigint_1_1BigInteger.html','','classbigint_1_1Big
 
 <p class="definition">См. определение в файле <a class="el" href="bigint_8cpp_source.html">bigint.cpp</a> строка <a class="el" href="bigint_8cpp_source.html#l00151">151</a></p>
 
-<p class="reference">Перекрестные ссылки <a class="el" href="#aa5ebb91700ee66941995e9e0a1c5d507">BigInteger()</a>, <a class="el" href="bigint_8h_source.html#l00044">kBase</a>, <a class="el" href="bigint_8h_source.html#l00046">m_digits</a> и <a class="el" href="bigint_8cpp_source.html#l00121">normalize()</a>.</p>
+<p class="reference">Перекрестные ссылки <a class="el" href="#aa5ebb91700ee66941995e9e0a1c5d507">BigInteger()</a>, <a class="el" href="bigint_8h_source.html#l00048">kBase</a>, <a class="el" href="bigint_8h_source.html#l00050">m_digits</a> и <a class="el" href="bigint_8cpp_source.html#l00121">normalize()</a>.</p>
 
 <p class="reference">Используется в <a class="el" href="bigint_8cpp_source.html#l00069">operator+=()</a>.</p>
 <div class="dynheader">
@@ -601,7 +610,7 @@ $(function(){initNavTree('classbigint_1_1BigInteger.html','','classbigint_1_1Big
 
 <p class="definition">См. определение в файле <a class="el" href="bigint_8cpp_source.html">bigint.cpp</a> строка <a class="el" href="bigint_8cpp_source.html#l00047">47</a></p>
 
-<p class="reference">Перекрестные ссылки <a class="el" href="bigint_8h_source.html#l00046">m_digits</a> и <a class="el" href="bigint_8h_source.html#l00045">m_sign</a>.</p>
+<p class="reference">Перекрестные ссылки <a class="el" href="bigint_8h_source.html#l00050">m_digits</a> и <a class="el" href="bigint_8h_source.html#l00049">m_sign</a>.</p>
 
 </div>
 </div>
@@ -636,7 +645,7 @@ $(function(){initNavTree('classbigint_1_1BigInteger.html','','classbigint_1_1Big
 
 <p class="definition">См. определение в файле <a class="el" href="bigint_8cpp_source.html">bigint.cpp</a> строка <a class="el" href="bigint_8cpp_source.html#l00023">23</a></p>
 
-<p class="reference">Перекрестные ссылки <a class="el" href="#aa5ebb91700ee66941995e9e0a1c5d507">BigInteger()</a>, <a class="el" href="bigint_8h_source.html#l00046">m_digits</a>, <a class="el" href="bigint_8h_source.html#l00045">m_sign</a>, <a class="el" href="bigint_8cpp_source.html#l00121">normalize()</a> и <a class="el" href="bigint_8cpp_source.html#l00059">sign()</a>.</p>
+<p class="reference">Перекрестные ссылки <a class="el" href="#aa5ebb91700ee66941995e9e0a1c5d507">BigInteger()</a>, <a class="el" href="bigint_8h_source.html#l00050">m_digits</a>, <a class="el" href="bigint_8h_source.html#l00049">m_sign</a>, <a class="el" href="bigint_8cpp_source.html#l00121">normalize()</a> и <a class="el" href="bigint_8cpp_source.html#l00059">sign()</a>.</p>
 
 <p class="reference">Используется в <a class="el" href="bigint_8cpp_source.html#l00112">powerOfTen()</a>.</p>
 <div class="dynheader">
@@ -680,7 +689,7 @@ $(function(){initNavTree('classbigint_1_1BigInteger.html','','classbigint_1_1Big
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="bigint_8h_source.html">bigint.h</a> строка <a class="el" href="bigint_8h_source.html#l00039">39</a></p>
+<p class="definition">См. определение в файле <a class="el" href="bigint_8h_source.html">bigint.h</a> строка <a class="el" href="bigint_8h_source.html#l00043">43</a></p>
 
 <p class="reference">Перекрестные ссылки <a class="el" href="#aa5ebb91700ee66941995e9e0a1c5d507">BigInteger()</a>.</p>
 
@@ -713,7 +722,7 @@ $(function(){initNavTree('classbigint_1_1BigInteger.html','','classbigint_1_1Big
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="bigint_8h_source.html">bigint.h</a> строка <a class="el" href="bigint_8h_source.html#l00037">37</a></p>
+<p class="definition">См. определение в файле <a class="el" href="bigint_8h_source.html">bigint.h</a> строка <a class="el" href="bigint_8h_source.html#l00041">41</a></p>
 
 <p class="reference">Перекрестные ссылки <a class="el" href="#aa5ebb91700ee66941995e9e0a1c5d507">BigInteger()</a>.</p>
 
@@ -746,7 +755,7 @@ $(function(){initNavTree('classbigint_1_1BigInteger.html','','classbigint_1_1Big
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="bigint_8h_source.html">bigint.h</a> строка <a class="el" href="bigint_8h_source.html#l00038">38</a></p>
+<p class="definition">См. определение в файле <a class="el" href="bigint_8h_source.html">bigint.h</a> строка <a class="el" href="bigint_8h_source.html#l00042">42</a></p>
 
 <p class="reference">Перекрестные ссылки <a class="el" href="#aa5ebb91700ee66941995e9e0a1c5d507">BigInteger()</a>.</p>
 
@@ -773,7 +782,7 @@ $(function(){initNavTree('classbigint_1_1BigInteger.html','','classbigint_1_1Big
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="bigint_8h_source.html">bigint.h</a> строка <a class="el" href="bigint_8h_source.html#l00044">44</a></p>
+<p class="definition">См. определение в файле <a class="el" href="bigint_8h_source.html">bigint.h</a> строка <a class="el" href="bigint_8h_source.html#l00048">48</a></p>
 
 <p class="reference">Используется в <a class="el" href="bigint_8cpp_source.html#l00138">addAbs()</a>, <a class="el" href="bigint_8cpp_source.html#l00009">BigInteger()</a>, <a class="el" href="bigint_8cpp_source.html#l00085">operator*=()</a> и <a class="el" href="bigint_8cpp_source.html#l00151">subtractAbs()</a>.</p>
 
@@ -799,7 +808,7 @@ $(function(){initNavTree('classbigint_1_1BigInteger.html','','classbigint_1_1Big
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="bigint_8h_source.html">bigint.h</a> строка <a class="el" href="bigint_8h_source.html#l00046">46</a></p>
+<p class="definition">См. определение в файле <a class="el" href="bigint_8h_source.html">bigint.h</a> строка <a class="el" href="bigint_8h_source.html#l00050">50</a></p>
 
 <p class="reference">Используется в <a class="el" href="bigint_8cpp_source.html#l00138">addAbs()</a>, <a class="el" href="bigint_8cpp_source.html#l00009">BigInteger()</a>, <a class="el" href="bigint_8cpp_source.html#l00127">compareAbs()</a>, <a class="el" href="bigint_8cpp_source.html#l00121">normalize()</a>, <a class="el" href="bigint_8cpp_source.html#l00085">operator*=()</a>, <a class="el" href="bigint_8cpp_source.html#l00069">operator+=()</a>, <a class="el" href="bigint_8cpp_source.html#l00151">subtractAbs()</a>, <a class="el" href="bigint_8cpp_source.html#l00047">toString()</a> и <a class="el" href="bigint_8cpp_source.html#l00023">tryParse()</a>.</p>
 
@@ -825,7 +834,7 @@ $(function(){initNavTree('classbigint_1_1BigInteger.html','','classbigint_1_1Big
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="bigint_8h_source.html">bigint.h</a> строка <a class="el" href="bigint_8h_source.html#l00045">45</a></p>
+<p class="definition">См. определение в файле <a class="el" href="bigint_8h_source.html">bigint.h</a> строка <a class="el" href="bigint_8h_source.html#l00049">49</a></p>
 
 <p class="reference">Используется в <a class="el" href="bigint_8cpp_source.html#l00009">BigInteger()</a>, <a class="el" href="bigint_8cpp_source.html#l00060">isZero()</a>, <a class="el" href="bigint_8cpp_source.html#l00121">normalize()</a>, <a class="el" href="bigint_8cpp_source.html#l00085">operator*=()</a>, <a class="el" href="bigint_8cpp_source.html#l00069">operator+=()</a>, <a class="el" href="bigint_8cpp_source.html#l00062">operator-()</a>, <a class="el" href="bigint_8cpp_source.html#l00059">sign()</a>, <a class="el" href="bigint_8cpp_source.html#l00047">toString()</a> и <a class="el" href="bigint_8cpp_source.html#l00023">tryParse()</a>.</p>
 

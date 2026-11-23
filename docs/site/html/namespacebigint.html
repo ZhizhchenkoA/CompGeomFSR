@@ -17,6 +17,15 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -129,7 +138,19 @@ $(function(){initNavTree('namespacebigint.html','',''); });
 </div><div class="memdoc">
 
 <p>Поля массива идут в порядке <span class="tt">Ax, Ay, Bx, By, Px, Py</span>. </p>
-<p>Точно вычисляет знак <span class="tt">(B - A) x (P - A)</span> для строковых чисел. </p><dl class="section return"><dt>Возвращает</dt><dd><span class="tt">true</span> при успешном разборе входа. </dd></dl>
+<p>Точно вычисляет знак <span class="tt">(B - A) x (P - A)</span> для строковых чисел.</p>
+<p><a class="anchor" id="exact_turn_pipeline"></a></p><dl class="section user"><dt>Конвейер точного вычисления</dt><dd><div class="dotgraph">
+<iframe scrolling="no" loading="lazy" frameborder="0" src="dot_inline_dotgraph_73c59afeb9123e72ce3f79aad84495a4.svg" width="979" height="59"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</dd></dl>
+<p class="formulaDsp">
+\[\operatorname{sign}\big((B-A) \times (P-A)\big) \in \{-1,0,1\}.\]
+</p>
+ <dl class="section pre"><dt>Предусловие</dt><dd>Указатели <span class="tt">sign</span> и <span class="tt">error</span> не равны <span class="tt">nullptr</span>. </dd></dl>
+<dl class="section post"><dt>Постусловие</dt><dd>При успехе <span class="tt">*sign</span> имеет значение <span class="tt">-1</span>, <span class="tt">0</span> или <span class="tt">1</span>. </dd></dl>
+<dl class="section warning"><dt>Предупреждения</dt><dd>Экспоненты с модулем больше <span class="tt">100000</span> отклоняются, чтобы ограничить объём памяти, требуемый для выравнивания десятичных степеней. </dd></dl>
+<dl class="section see"><dt>См. также</dt><dd><a class="el" href="namespacegeometry.html#a1d29367c0cb96e7c1a1b871b786ffacd" title="Предикат поворота.">geometry::turn()</a> </dd></dl>
+<dl class="section since"><dt>Начиная с</dt><dd>1.0 </dd></dl>
+<dl class="section return"><dt>Возвращает</dt><dd><span class="tt">true</span> при успешном разборе входа. </dd></dl>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
     <tr><td class="paramname">coordinates</td><td>Координаты в порядке <span class="tt">Ax, Ay, Bx, By, Px, Py</span>. </td></tr>

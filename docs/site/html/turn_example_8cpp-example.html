@@ -17,6 +17,15 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -96,7 +105,7 @@ $(function(){initNavTree('turn_example_8cpp-example.html','',''); });
 Быстрый старт</h1>
 <div class="fragment"><div class="line">cmake -S . -B build</div>
 <div class="line">cmake --build build --target docs</div>
-</div><!-- fragment --><p>HTML находится в <span class="tt">build/docs/html/index.html</span>, XML — в <span class="tt">build/docs/xml/</span>. */</p>
+</div><!-- fragment --><p>HTML находится в <span class="tt">docs/site/html/index.html</span>, XML — в <span class="tt">docs/site/xml/</span>.</p>
 <div class="fragment"><div class="line"></div>
 <div class="line"><span class="preprocessor">#include &quot;<a class="code" href="predicates_8h.html">geometry/predicates.h</a>&quot;</span></div>
 <div class="line"> </div>

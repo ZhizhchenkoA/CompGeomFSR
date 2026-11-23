@@ -17,6 +17,15 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -94,10 +103,10 @@ $(function(){initNavTree('topics.html','',''); });
 <div class="contents">
 <div class="textblock">Список всех разделов c краткими описаниями:</div><div class="directory">
 <div class="levels">[уровень детализации <span onclick="javascript:dynsection.toggleLevel(1);">1</span><span onclick="javascript:dynsection.toggleLevel(2);">2</span>]</div><table class="directory">
-<tr id="row_0_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="group__bezier__api.html" target="_self">Bezier curves</a></td><td class="desc">Parametric curves and de Casteljau construction </td></tr>
-<tr id="row_1_" class="odd"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="group__bigint__api.html" target="_self">Arbitrary-precision arithmetic</a></td><td class="desc">Signed integers and exact decimal predicates </td></tr>
-<tr id="row_2_" class="even"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_2_" class="arrow" onclick="dynsection.toggleFolder('2_')"><span class="arrowhead opened"></span></span><a class="el" href="group__geometry__algorithms.html" target="_self">Geometry algorithms</a></td><td class="desc">Platform-independent algorithms used by the workbench </td></tr>
-<tr id="row_2_0_" class="odd"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><a class="el" href="group__geometry__predicates.html" target="_self">Geometric predicates</a></td><td class="desc">Exact-sign and tolerance-aware predicates used by higher algorithms </td></tr>
+<tr id="row_0_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="group__bezier__api.html" target="_self">Кривые Безье</a></td><td class="desc">Параметрические кривые и построение де Кастельжо </td></tr>
+<tr id="row_1_" class="odd"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="group__bigint__api.html" target="_self">Арифметика произвольной точности</a></td><td class="desc">Знаковые целые числа и точные предикаты для десятичных координат </td></tr>
+<tr id="row_2_" class="even"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_2_" class="arrow" onclick="dynsection.toggleFolder('2_')"><span class="arrowhead opened"></span></span><a class="el" href="group__geometry__algorithms.html" target="_self">Алгоритмы геометрии</a></td><td class="desc">Алгоритмы без зависимости от Qt, используемые в приложении </td></tr>
+<tr id="row_2_0_" class="odd"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><a class="el" href="group__geometry__predicates.html" target="_self">Геометрические предикаты</a></td><td class="desc">Предикаты знака и принадлежности с учётом допуска </td></tr>
 </table>
 </div><!-- directory -->
 </div><!-- contents -->

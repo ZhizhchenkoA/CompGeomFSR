@@ -17,6 +17,15 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -100,11 +109,15 @@ $(function(){initNavTree('index.html','',''); });
 <ul>
 <li><span class="tt">@mainpage</span> — эта страница становится домашней страницей HTML-документации.</li>
 <li><span class="tt">@defgroup</span> и <span class="tt">@ingroup</span> — API разделён на предметные библиотеки.</li>
-<li>Graphviz (<span class="tt">HAVE_DOT = YES</span>) — строит графы классов, include-зависимостей и вызовов.</li>
-<li><span class="tt">@example</span> — исходный пример появляется в специальном разделе Examples.</li>
-<li>пользовательские aliases <span class="tt">\\complexity</span>, <span class="tt">\\invariant</span>, <span class="tt">\\educational</span> — единый стиль методических заметок.</li>
-<li>XML-вывод (<span class="tt">GENERATE_XML</span>) можно использовать во внешнем генераторе или IDE.</li>
+<li>Graphviz (<span class="tt">HAVE_DOT = YES</span>) — строит графы классов, зависимостей подключаемых файлов и вызовов.</li>
+<li><span class="tt">@example</span> — исходный пример появляется в специальном разделе «Примеры».</li>
+<li>пользовательские псевдонимы <span class="tt">\\complexity</span>, <span class="tt">\\invariant</span>, <span class="tt">\\educational</span> — единый стиль методических заметок.</li>
+<li><span class="tt">@pre</span>, <span class="tt">@post</span>, <span class="tt">@note</span>, <span class="tt">@warning</span>, <span class="tt">@see</span> и <span class="tt">@since</span> описывают контракт API прямо рядом с функцией.</li>
+<li><span class="tt">@f$ ... @f$</span> и MathJax отображают формулы, а <span class="tt">@dot ... @enddot</span> строит схему конвейера точного предиката.</li>
+<li><span class="tt">@todo</span> формирует отдельный список дальнейших улучшений из реальных комментариев к коду.</li>
+<li>XML-вывод (<span class="tt">GENERATE_XML</span>) можно использовать во внешнем генераторе или среде разработки.</li>
 </ul>
+<p>Полный перечень возможностей и точек их использования: <a class="el" href="doxy_features.html" title="Конспект возможностей Doxygen в проекте">Конспект возможностей Doxygen в проекте</a>.</p>
 <h1 class="doxsection"><a class="anchor" id="example_section"></a>
 Пример API</h1>
 <p>Ниже подключён минимальный пример вычисления предиката поворота: </p>

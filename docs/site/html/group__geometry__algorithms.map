@@ -1,4 +1,4 @@
-<map id="Geometry algorithms" name="Geometry algorithms">
-<area shape="rect" id="Node000001" title="Platform&#45;independent algorithms used by the workbench." alt="" coords="5,5,166,33"/>
-<area shape="rect" id="Node000002" href="$group__geometry__predicates.html" title="Exact&#45;sign and tolerance&#45;aware predicates used by higher algorithms." alt="" coords="214,5,375,33"/>
+<map id="Алгоритмы геометрии" name="Алгоритмы геометрии">
+<area shape="rect" id="Node000001" title="Алгоритмы без зависимости от Qt, используемые в приложении." alt="" coords="5,5,106,50"/>
+<area shape="rect" id="Node000002" href="$group__geometry__predicates.html" title="Предикаты знака и принадлежности с учётом допуска." alt="" coords="154,5,290,50"/>
 </map>

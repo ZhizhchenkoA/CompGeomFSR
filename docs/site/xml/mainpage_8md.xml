@@ -7,7 +7,6 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline><highlight class="normal">/**</highlight></codeline>
 <codeline><highlight class="normal">@mainpage<sp/>Geometry<sp/>Workbench</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">@section<sp/>overview<sp/>Обзор</highlight></codeline>
@@ -18,10 +17,15 @@
 <codeline></codeline>
 <codeline><highlight class="normal">*<sp/>`@mainpage`<sp/>—<sp/>эта<sp/>страница<sp/>становится<sp/>домашней<sp/>страницей<sp/>HTML-документации.</highlight></codeline>
 <codeline><highlight class="normal">*<sp/>`@defgroup`<sp/>и<sp/>`@ingroup`<sp/>—<sp/>API<sp/>разделён<sp/>на<sp/>предметные<sp/>библиотеки.</highlight></codeline>
-<codeline><highlight class="normal">*<sp/>Graphviz<sp/>(`HAVE_DOT<sp/>=<sp/>YES`)<sp/>—<sp/>строит<sp/>графы<sp/>классов,<sp/>include-зависимостей<sp/>и<sp/>вызовов.</highlight></codeline>
-<codeline><highlight class="normal">*<sp/>`@example`<sp/>—<sp/>исходный<sp/>пример<sp/>появляется<sp/>в<sp/>специальном<sp/>разделе<sp/>Examples.</highlight></codeline>
-<codeline><highlight class="normal">*<sp/>пользовательские<sp/>aliases<sp/>`\\complexity`,<sp/>`\\invariant`,<sp/>`\\educational`<sp/>—<sp/>единый<sp/>стиль<sp/>методических<sp/>заметок.</highlight></codeline>
-<codeline><highlight class="normal">*<sp/>XML-вывод<sp/>(`GENERATE_XML`)<sp/>можно<sp/>использовать<sp/>во<sp/>внешнем<sp/>генераторе<sp/>или<sp/>IDE.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>Graphviz<sp/>(`HAVE_DOT<sp/>=<sp/>YES`)<sp/>—<sp/>строит<sp/>графы<sp/>классов,<sp/>зависимостей<sp/>подключаемых<sp/>файлов<sp/>и<sp/>вызовов.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>`@example`<sp/>—<sp/>исходный<sp/>пример<sp/>появляется<sp/>в<sp/>специальном<sp/>разделе<sp/>«Примеры».</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>пользовательские<sp/>псевдонимы<sp/>`\\complexity`,<sp/>`\\invariant`,<sp/>`\\educational`<sp/>—<sp/>единый<sp/>стиль<sp/>методических<sp/>заметок.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>`@pre`,<sp/>`@post`,<sp/>`@note`,<sp/>`@warning`,<sp/>`@see`<sp/>и<sp/>`@since`<sp/>описывают<sp/>контракт<sp/>API<sp/>прямо<sp/>рядом<sp/>с<sp/>функцией.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>`@f$<sp/>...<sp/>@f$`<sp/>и<sp/>MathJax<sp/>отображают<sp/>формулы,<sp/>а<sp/>`@dot<sp/>...<sp/>@enddot`<sp/>строит<sp/>схему<sp/>конвейера<sp/>точного<sp/>предиката.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>`@todo`<sp/>формирует<sp/>отдельный<sp/>список<sp/>дальнейших<sp/>улучшений<sp/>из<sp/>реальных<sp/>комментариев<sp/>к<sp/>коду.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>XML-вывод<sp/>(`GENERATE_XML`)<sp/>можно<sp/>использовать<sp/>во<sp/>внешнем<sp/>генераторе<sp/>или<sp/>среде<sp/>разработки.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Полный<sp/>перечень<sp/>возможностей<sp/>и<sp/>точек<sp/>их<sp/>использования:<sp/>@ref<sp/>doxy_features.</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">@section<sp/>example_section<sp/>Пример<sp/>API</highlight></codeline>
 <codeline></codeline>
@@ -36,8 +40,7 @@
 <codeline><highlight class="normal">cmake<sp/>--build<sp/>build<sp/>--target<sp/>docs</highlight></codeline>
 <codeline><highlight class="normal">```</highlight></codeline>
 <codeline></codeline>
-<codeline><highlight class="normal">HTML<sp/>находится<sp/>в<sp/>`build/docs/html/index.html`,<sp/>XML<sp/>—<sp/>в<sp/>`build/docs/xml/`.</highlight></codeline>
-<codeline><highlight class="normal">*/</highlight></codeline>
+<codeline><highlight class="normal">HTML<sp/>находится<sp/>в<sp/>`docs/site/html/index.html`,<sp/>XML<sp/>—<sp/>в<sp/>`docs/site/xml/`.</highlight></codeline>
     </programlisting>
     <location file="docs/mainpage.md"/>
   </compounddef>

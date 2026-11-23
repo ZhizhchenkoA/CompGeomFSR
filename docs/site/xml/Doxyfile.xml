@@ -43,9 +43,9 @@
   <option  id='SEPARATE_MEMBER_PAGES' default='yes' type='bool'><value>NO</value></option>
   <option  id='TAB_SIZE' default='yes' type='int'><value>4</value></option>
   <option  id='ALIASES' default='no' type='stringlist'>
-    <value><![CDATA["complexity=\\par Complexity:"]]></value>
-    <value><![CDATA["invariant=\\par Invariant:"]]></value>
-    <value><![CDATA["educational=\\par Educational note:"]]></value>
+    <value><![CDATA["complexity=\\par Сложность:"]]></value>
+    <value><![CDATA["invariant=\\par Инвариант:"]]></value>
+    <value><![CDATA["educational=\\par Учебная заметка:"]]></value>
   </option>
   <option  id='OPTIMIZE_OUTPUT_FOR_C' default='yes' type='bool'><value>NO</value></option>
   <option  id='OPTIMIZE_OUTPUT_JAVA' default='yes' type='bool'><value>NO</value></option>
@@ -138,6 +138,7 @@
     <value><![CDATA[docs/README.md]]></value>
     <value><![CDATA[docs/mainpage.md]]></value>
     <value><![CDATA[docs/architecture.md]]></value>
+    <value><![CDATA[docs/doxygen_features.md]]></value>
   </option>
   <option  id='INPUT_ENCODING' default='yes' type='string'><value><![CDATA[UTF-8]]></value></option>
   <option  id='INPUT_FILE_ENCODING' default='yes' type='stringlist'>
@@ -248,8 +249,8 @@
   <option  id='HTML_FORMULA_FORMAT' default='yes' type='string'><value>png</value></option>
   <option  id='FORMULA_FONTSIZE' default='yes' type='int'><value>10</value></option>
   <option  id='FORMULA_MACROFILE' default='yes' type='string'><value><![CDATA[]]></value></option>
-  <option  id='USE_MATHJAX' default='yes' type='bool'><value>NO</value></option>
-  <option  id='MATHJAX_VERSION' default='yes' type='string'><value>MathJax_2</value></option>
+  <option  id='USE_MATHJAX' default='no' type='bool'><value>YES</value></option>
+  <option  id='MATHJAX_VERSION' default='no' type='string'><value>MathJax_3</value></option>
   <option  id='MATHJAX_FORMAT' default='yes' type='string'><value>HTML-CSS</value></option>
   <option  id='MATHJAX_RELPATH' default='yes' type='string'><value><![CDATA[]]></value></option>
   <option  id='MATHJAX_EXTENSIONS' default='yes' type='stringlist'>

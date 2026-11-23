@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="doxygen__features_8md" kind="file" language="Markdown">
+    <compoundname>doxygen_features.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">@page<sp/>doxy_features<sp/>Конспект<sp/>возможностей<sp/>Doxygen<sp/>в<sp/>проекте</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">@section<sp/>doxy_intro<sp/>Введение</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">В<sp/>Geometry<sp/>Workbench<sp/>Doxygen<sp/>—<sp/>не<sp/>отдельный<sp/>текстовый<sp/>отчёт,<sp/>а<sp/>часть<sp/>исходного</highlight></codeline>
+<codeline><highlight class="normal">кода<sp/>и<sp/>сборочного<sp/>процесса.<sp/>Комментарии<sp/>в<sp/>заголовочных<sp/>файлах<sp/>описывают<sp/>API,</highlight></codeline>
+<codeline><highlight class="normal">`Doxyfile`<sp/>определяет<sp/>представление<sp/>результата,<sp/>а<sp/>готовый<sp/>HTML<sp/>хранится<sp/>в</highlight></codeline>
+<codeline><highlight class="normal">репозитории<sp/>и<sp/>публикуется<sp/>на<sp/>GitHub<sp/>Pages.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Ниже<sp/>перечислены<sp/>**все<sp/>возможности<sp/>Doxygen,<sp/>которые<sp/>задействованы<sp/>в<sp/>проекте**,</highlight></codeline>
+<codeline><highlight class="normal">и<sp/>указано,<sp/>где<sp/>именно<sp/>их<sp/>искать.<sp/>Пути<sp/>даны<sp/>относительно<sp/>корня<sp/>репозитория.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">@section<sp/>doxy_comments<sp/>Комментарии<sp/>и<sp/>контракт<sp/>API</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">|<sp/>Возможность<sp/>|<sp/>Что<sp/>делает<sp/>|<sp/>Где<sp/>найти<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|---|---|---|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Блочный<sp/>комментарий<sp/>`/**<sp/>...<sp/>*/`<sp/>|<sp/>Делает<sp/>комментарий<sp/>документацией<sp/>Doxygen.<sp/>|<sp/>`src/lib/geometry/predicates.h`,<sp/>`src/lib/bigint/exact_predicate.h`<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`@brief`<sp/>|<sp/>Кратко<sp/>описывает<sp/>сущность;<sp/>попадает<sp/>в<sp/>списки<sp/>классов<sp/>и<sp/>функций.<sp/>|<sp/>Все<sp/>публичные<sp/>заголовки,<sp/>например<sp/>`src/apps/GeometryWorkbench/geometrycanvas.h`<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`@param`,<sp/>`@return`<sp/>|<sp/>Описывают<sp/>входные<sp/>параметры<sp/>и<sp/>результат.<sp/>|<sp/>`src/lib/geometry/segment_intersection.h`,<sp/>`src/lib/bigint/exact_predicate.h`<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`@pre`,<sp/>`@post`<sp/>|<sp/>Фиксируют<sp/>предусловия<sp/>и<sp/>гарантии<sp/>после<sp/>успешного<sp/>вызова.<sp/>|<sp/>`src/lib/bigint/exact_predicate.h`<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`@note`<sp/>|<sp/>Добавляет<sp/>важное<sp/>пояснение<sp/>без<sp/>статуса<sp/>ошибки.<sp/>|<sp/>`src/lib/bezier/bezier.h`,<sp/>`src/lib/geometry/predicates.h`<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`@warning`<sp/>|<sp/>Выделяет<sp/>численное<sp/>или<sp/>ресурсное<sp/>ограничение.<sp/>|<sp/>`src/lib/bigint/exact_predicate.h`,<sp/>`src/lib/geometry/predicates.h`<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`@see`<sp/>|<sp/>Создаёт<sp/>перекрёстную<sp/>ссылку<sp/>на<sp/>связанную<sp/>функцию.<sp/>|<sp/>`src/lib/bezier/bezier.h`,<sp/>`src/lib/geometry/predicates.h`<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`@since`<sp/>|<sp/>Показывает<sp/>версию<sp/>появления<sp/>интерфейса.<sp/>|<sp/>`src/lib/bigint/exact_predicate.h`<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`@par`<sp/>|<sp/>Создаёт<sp/>именованный<sp/>смысловой<sp/>блок<sp/>в<sp/>описании.<sp/>|<sp/>`src/lib/geometry/predicates.h`,<sp/>`src/lib/bezier/bezier.h`<sp/>|</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">@section<sp/>doxy_structure<sp/>Структура<sp/>API<sp/>и<sp/>навигация</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">|<sp/>Возможность<sp/>|<sp/>Что<sp/>делает<sp/>|<sp/>Где<sp/>найти<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|---|---|---|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`@mainpage`<sp/>|<sp/>Создаёт<sp/>домашнюю<sp/>страницу<sp/>HTML-документации.<sp/>|<sp/>`docs/mainpage.md`<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`@page`<sp/>и<sp/>`@section`<sp/>|<sp/>Создают<sp/>отдельные<sp/>страницы<sp/>и<sp/>разделы<sp/>документации.<sp/>|<sp/>`docs/architecture.md`,<sp/>этот<sp/>файл<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`@defgroup`,<sp/>`@ingroup`<sp/>|<sp/>Собирают<sp/>API<sp/>в<sp/>предметные<sp/>группы.<sp/>|<sp/>`src/lib/geometry/convex_hull.h`,<sp/>`src/lib/geometry/predicates.h`,<sp/>`src/lib/bigint/bigint.h`,<sp/>`src/lib/bezier/bezier.h`<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`@anchor`<sp/>|<sp/>Создаёт<sp/>устойчивую<sp/>точку<sp/>перехода<sp/>на<sp/>странице.<sp/>|<sp/>`src/lib/bigint/exact_predicate.h`:<sp/>`exact_turn_pipeline`<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`@example`<sp/>и<sp/>`EXAMPLE_PATH`<sp/>|<sp/>Добавляют<sp/>исходник<sp/>в<sp/>специальный<sp/>раздел<sp/>с<sp/>примерами.<sp/>|<sp/>`docs/examples/turn_example.cpp`,<sp/>`Doxyfile`<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`SEARCHENGINE`,<sp/>`GENERATE_TREEVIEW`,<sp/>`SOURCE_BROWSER`<sp/>|<sp/>Включают<sp/>поиск,<sp/>дерево<sp/>разделов<sp/>и<sp/>просмотр<sp/>исходников<sp/>в<sp/>HTML.<sp/>|<sp/>`Doxyfile`<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`EXTRACT_ALL`,<sp/>`EXTRACT_PRIVATE`,<sp/>`EXTRACT_STATIC`<sp/>|<sp/>Не<sp/>скрывают<sp/>недокументированные,<sp/>приватные<sp/>и<sp/>статические<sp/>сущности.<sp/>|<sp/>`Doxyfile`<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`JAVADOC_AUTOBRIEF`,<sp/>`MULTILINE_CPP_IS_BRIEF`<sp/>|<sp/>Помогают<sp/>автоматически<sp/>выделять<sp/>краткое<sp/>описание<sp/>из<sp/>комментария.<sp/>|<sp/>`Doxyfile`<sp/>|</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">@section<sp/>doxy_custom<sp/>Пользовательские<sp/>метки<sp/>проекта</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">В<sp/>`Doxyfile`<sp/>определены<sp/>три<sp/>псевдонима.<sp/>Они<sp/>превращают<sp/>повторяющиеся</highlight></codeline>
+<codeline><highlight class="normal">методические<sp/>пометки<sp/>в<sp/>единый<sp/>стиль<sp/>документации.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">|<sp/>Псевдоним<sp/>|<sp/>Заголовок<sp/>в<sp/>HTML<sp/>|<sp/>Пример<sp/>использования<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|---|---|---|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`@complexity`<sp/>|<sp/>«Сложность»<sp/>|<sp/>`src/lib/geometry/convex_hull.h`,<sp/>`src/lib/geometry/delaunay.h`<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`@invariant`<sp/>|<sp/>«Инвариант»<sp/>|<sp/>`src/lib/geometry/convex_hull.h`,<sp/>`src/lib/bigint/bigint.h`<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`@educational`<sp/>|<sp/>«Учебная<sp/>заметка»<sp/>|<sp/>`src/lib/geometry/predicates.h`<sp/>|</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">@section<sp/>doxy_math<sp/>Формулы:<sp/>LaTeX<sp/>и<sp/>MathJax</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Формулы<sp/>записываются<sp/>командой<sp/>`@f[<sp/>...<sp/>@f]`,<sp/>а<sp/>параметр<sp/>`USE_MATHJAX<sp/>=<sp/>YES`</highlight></codeline>
+<codeline><highlight class="normal">подключает<sp/>MathJax<sp/>к<sp/>HTML-страницам.<sp/>Благодаря<sp/>этому<sp/>математические<sp/>выражения</highlight></codeline>
+<codeline><highlight class="normal">масштабируются<sp/>и<sp/>остаются<sp/>читаемыми<sp/>в<sp/>браузере.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">|<sp/>Что<sp/>документируется<sp/>|<sp/>Где<sp/>найти<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|---|---|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Формула<sp/>векторного<sp/>произведения<sp/>|<sp/>`src/lib/geometry/predicates.h`<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Формула<sp/>точного<sp/>предиката<sp/>поворота<sp/>|<sp/>`src/lib/bigint/exact_predicate.h`<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Рекуррентная<sp/>формула<sp/>де<sp/>Кастельжо<sp/>|<sp/>`src/lib/bezier/bezier.h`<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Включение<sp/>MathJax<sp/>|<sp/>`Doxyfile`:<sp/>`USE_MATHJAX`,<sp/>`MATHJAX_VERSION`<sp/>|</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">@section<sp/>doxy_graphs<sp/>Graphviz:<sp/>схемы<sp/>и<sp/>связи</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Команды<sp/>`@dot<sp/>...<sp/>@enddot`<sp/>позволяют<sp/>записать<sp/>Graphviz-схему<sp/>прямо<sp/>в</highlight></codeline>
+<codeline><highlight class="normal">документирующем<sp/>комментарии.<sp/>В<sp/>проекте<sp/>есть<sp/>две<sp/>вручную<sp/>созданные<sp/>схемы:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">|<sp/>Схема<sp/>|<sp/>Что<sp/>показывает<sp/>|<sp/>Где<sp/>найти<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|---|---|---|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Архитектура<sp/>|<sp/>Связи<sp/>Qt-приложения,<sp/>холста<sp/>и<sp/>библиотек.<sp/>|<sp/>`docs/architecture.md`<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Конвейер<sp/>точного<sp/>поворота<sp/>|<sp/>Разбор<sp/>координат,<sp/>вычисление<sp/>и<sp/>получение<sp/>знака.<sp/>|<sp/>`src/lib/bigint/exact_predicate.h`<sp/>|</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Кроме<sp/>ручных<sp/>схем,<sp/>`Doxyfile`<sp/>включает<sp/>автоматические<sp/>графы<sp/>Graphviz:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">|<sp/>Настройка<sp/>|<sp/>Результат<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|---|---|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`CLASS_GRAPH`,<sp/>`COLLABORATION_GRAPH`,<sp/>`GRAPHICAL_HIERARCHY`<sp/>|<sp/>Наследование,<sp/>отношения<sp/>классов<sp/>и<sp/>иерархия.<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`INCLUDE_GRAPH`,<sp/>`INCLUDED_BY_GRAPH`<sp/>|<sp/>Зависимости<sp/>подключаемых<sp/>файлов.<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`CALL_GRAPH`,<sp/>`CALLER_GRAPH`<sp/>|<sp/>Кого<sp/>вызывает<sp/>функция<sp/>и<sp/>кем<sp/>она<sp/>вызывается.<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`GROUP_GRAPHS`,<sp/>`TEMPLATE_RELATIONS`,<sp/>`UML_LOOK`<sp/>|<sp/>Связи<sp/>групп,<sp/>шаблонов<sp/>и<sp/>UML-представление.<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`DOT_IMAGE_FORMAT<sp/>=<sp/>svg`,<sp/>`INTERACTIVE_SVG<sp/>=<sp/>YES`<sp/>|<sp/>Масштабируемые<sp/>интерактивные<sp/>SVG-графы.<sp/>|</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">@section<sp/>doxy_tasks<sp/>Задачи<sp/>на<sp/>будущее</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">`@todo`<sp/>и<sp/>`GENERATE_TODOLIST<sp/>=<sp/>YES`<sp/>создают<sp/>страницу<sp/>со<sp/>списком<sp/>дальнейших</highlight></codeline>
+<codeline><highlight class="normal">улучшений.<sp/>Здесь<sp/>попадают<sp/>только<sp/>реальные<sp/>пункты<sp/>развития<sp/>кода:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*<sp/>деление<sp/>с<sp/>остатком<sp/>для<sp/>`BigInteger`<sp/>—<sp/>`src/lib/bigint/bigint.h`;</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>сглаживание<sp/>стыков<sp/>составной<sp/>кривой<sp/>Безье<sp/>—<sp/>`src/lib/bezier/bezier.h`.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Параметр<sp/>`GENERATE_BUGLIST<sp/>=<sp/>YES`<sp/>также<sp/>включён<sp/>в<sp/>`Doxyfile`,<sp/>но<sp/>тег<sp/>`@bug`</highlight></codeline>
+<codeline><highlight class="normal">в<sp/>проекте<sp/>пока<sp/>не<sp/>используется:<sp/>известных<sp/>подтверждённых<sp/>ошибок<sp/>нет.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">@section<sp/>doxy_formats<sp/>Форматы<sp/>и<sp/>публикация</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">|<sp/>Возможность<sp/>|<sp/>Назначение<sp/>|<sp/>Где<sp/>найти<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|---|---|---|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`GENERATE_HTML`<sp/>|<sp/>Основной<sp/>сайт<sp/>документации.<sp/>|<sp/>`docs/site/html/index.html`<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`GENERATE_XML`<sp/>|<sp/>Машиночитаемое<sp/>представление<sp/>для<sp/>IDE<sp/>и<sp/>внешних<sp/>инструментов.<sp/>|<sp/>`docs/site/xml/`<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`GENERATE_TAGFILE`<sp/>|<sp/>Файл<sp/>перекрёстных<sp/>ссылок<sp/>для<sp/>другой<sp/>документации<sp/>Doxygen.<sp/>|<sp/>`Doxyfile`<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`INPUT_ENCODING<sp/>=<sp/>UTF-8`,<sp/>`OUTPUT_LANGUAGE<sp/>=<sp/>Russian`<sp/>|<sp/>Корректная<sp/>русскоязычная<sp/>документация.<sp/>|<sp/>`Doxyfile`<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>GitHub<sp/>Pages<sp/>workflow<sp/>|<sp/>Публикует<sp/>готовый<sp/>статический<sp/>HTML<sp/>без<sp/>запуска<sp/>Doxygen<sp/>на<sp/>GitHub.<sp/>|<sp/>`.github/workflows/deploy-docs.yml`<sp/>|</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">LaTeX-вывод<sp/>сейчас<sp/>намеренно<sp/>выключен<sp/>(`GENERATE_LATEX<sp/>=<sp/>NO`),<sp/>но<sp/>Doxygen<sp/>может</highlight></codeline>
+<codeline><highlight class="normal">включить<sp/>его<sp/>для<sp/>печатного<sp/>PDF<sp/>без<sp/>изменения<sp/>комментариев.<sp/>Это<sp/>полезно<sp/>для</highlight></codeline>
+<codeline><highlight class="normal">отчёта<sp/>или<sp/>курсовой<sp/>работы;<sp/>HTML<sp/>и<sp/>XML<sp/>при<sp/>этом<sp/>продолжают<sp/>генерироваться<sp/>как</highlight></codeline>
+<codeline><highlight class="normal">обычно.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">@section<sp/>doxy_workflow<sp/>Рабочая<sp/>последовательность</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">1.<sp/>Изменить<sp/>комментарии<sp/>или<sp/>Markdown-страницы.</highlight></codeline>
+<codeline><highlight class="normal">2.<sp/>Выполнить<sp/>`cmake<sp/>--build<sp/>build<sp/>--target<sp/>docs`.</highlight></codeline>
+<codeline><highlight class="normal">3.<sp/>Открыть<sp/>`docs/site/html/index.html`<sp/>и<sp/>проверить<sp/>ссылки,<sp/>формулы<sp/>и<sp/>графы.</highlight></codeline>
+<codeline><highlight class="normal">4.<sp/>Добавить<sp/>обновлённый<sp/>каталог<sp/>`docs/site`<sp/>в<sp/>коммит.</highlight></codeline>
+<codeline><highlight class="normal">5.<sp/>После<sp/>push<sp/>GitHub<sp/>Actions<sp/>опубликует<sp/>готовую<sp/>страницу<sp/>на<sp/>GitHub<sp/>Pages.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">@section<sp/>doxy_conclusion<sp/>Заключение</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">В<sp/>проекте<sp/>Doxygen<sp/>соединяет<sp/>код,<sp/>объяснение<sp/>алгоритма<sp/>и<sp/>навигацию<sp/>по</highlight></codeline>
+<codeline><highlight class="normal">архитектуре.<sp/>Краткие<sp/>теги<sp/>поддерживают<sp/>контракт<sp/>API,<sp/>формулы<sp/>сохраняют</highlight></codeline>
+<codeline><highlight class="normal">математическую<sp/>точность,<sp/>Graphviz<sp/>делает<sp/>связи<sp/>наглядными,<sp/>а<sp/>HTML-сайт</highlight></codeline>
+<codeline><highlight class="normal">позволяет<sp/>показать<sp/>результат<sp/>без<sp/>локальной<sp/>среды<sp/>разработки.<sp/>Благодаря<sp/>этому</highlight></codeline>
+<codeline><highlight class="normal">документация<sp/>остаётся<sp/>проверяемой,<sp/>воспроизводимой<sp/>и<sp/>полезной<sp/>как<sp/>для<sp/>защиты</highlight></codeline>
+<codeline><highlight class="normal">проекта,<sp/>так<sp/>и<sp/>для<sp/>его<sp/>дальнейшей<sp/>разработки.</highlight></codeline>
+    </programlisting>
+    <location file="docs/doxygen_features.md"/>
+  </compounddef>
+</doxygen>

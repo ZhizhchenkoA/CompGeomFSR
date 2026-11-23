@@ -17,6 +17,15 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -124,12 +133,14 @@ $(function(){initNavTree('namespacebezier.html','',''); });
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>countPerSegment</em></span>&#160;)</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>countPerSegment</em></span><span class="paramdefsep"> = </span><span class="paramdefval">70</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Строит составную кривую из окон <span class="tt">degree + 1</span> с общей точкой сегментов. </p>
+<dl class="section pre"><dt>Предусловие</dt><dd><span class="tt">degree &gt;= 1</span> и <span class="tt">countPerSegment &gt;= 1</span>; при нарушении возвращается пустой набор. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Необходимо сделать</a></b></dt><dd>Добавить режим сглаживания стыков составной кривой <span class="tt">C¹</span>. </dd></dl>
 
 <p class="definition">См. определение в файле <a class="el" href="bezier_8cpp_source.html">bezier.cpp</a> строка <a class="el" href="bezier_8cpp_source.html#l00054">54</a></p>
 
@@ -169,7 +180,13 @@ $(function(){initNavTree('namespacebezier.html','',''); });
 </div><div class="memdoc">
 
 <p>Операции с параметрическими кривыми Безье. </p>
-<p>Вычисляет точку кривой Безье в параметре <span class="tt">t</span> методом де Кастельжо. </p>
+<p>Вычисляет точку кривой Безье в параметре <span class="tt">t</span> методом де Кастельжо.</p>
+<p class="formulaDsp">
+\[Q_i^{(r)}=(1-t)Q_i^{(r-1)}+tQ_{i+1}^{(r-1)}.\]
+</p>
+ <dl class="section note"><dt>Заметки</dt><dd>Значение <span class="tt">t</span> ограничивается интервалом <span class="tt">[0, 1]</span>. </dd></dl>
+<dl class="section user"><dt>Визуализация</dt><dd>Промежуточные уровни построения доступны через <a class="el" href="#a16319ee9d71db52368b5ce95b86794e2" title="Возвращает все промежуточные уровни построения де Кастельжо.">deCasteljauLevels()</a>. </dd></dl>
+<dl class="section see"><dt>См. также</dt><dd><a class="el" href="#a16319ee9d71db52368b5ce95b86794e2" title="Возвращает все промежуточные уровни построения де Кастельжо.">deCasteljauLevels()</a> </dd></dl>
 
 <p class="definition">См. определение в файле <a class="el" href="bezier_8cpp_source.html">bezier.cpp</a> строка <a class="el" href="bezier_8cpp_source.html#l00034">34</a></p>
 

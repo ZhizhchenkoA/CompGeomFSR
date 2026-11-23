@@ -13,12 +13,16 @@
 <title>Возможности Doxygen в этом проекте</title><para><itemizedlist>
 <listitem><para><computeroutput>@mainpage</computeroutput> — эта страница становится домашней страницей HTML-документации.</para>
 </listitem><listitem><para><computeroutput>@defgroup</computeroutput> и <computeroutput>@ingroup</computeroutput> — API разделён на предметные библиотеки.</para>
-</listitem><listitem><para>Graphviz (<computeroutput>HAVE_DOT = YES</computeroutput>) — строит графы классов, include-зависимостей и вызовов.</para>
-</listitem><listitem><para><computeroutput>@example</computeroutput> — исходный пример появляется в специальном разделе Examples.</para>
-</listitem><listitem><para>пользовательские aliases <computeroutput>\\complexity</computeroutput>, <computeroutput>\\invariant</computeroutput>, <computeroutput>\\educational</computeroutput> — единый стиль методических заметок.</para>
-</listitem><listitem><para>XML-вывод (<computeroutput>GENERATE_XML</computeroutput>) можно использовать во внешнем генераторе или IDE.</para>
+</listitem><listitem><para>Graphviz (<computeroutput>HAVE_DOT = YES</computeroutput>) — строит графы классов, зависимостей подключаемых файлов и вызовов.</para>
+</listitem><listitem><para><computeroutput>@example</computeroutput> — исходный пример появляется в специальном разделе «Примеры».</para>
+</listitem><listitem><para>пользовательские псевдонимы <computeroutput>\\complexity</computeroutput>, <computeroutput>\\invariant</computeroutput>, <computeroutput>\\educational</computeroutput> — единый стиль методических заметок.</para>
+</listitem><listitem><para><computeroutput>@pre</computeroutput>, <computeroutput>@post</computeroutput>, <computeroutput>@note</computeroutput>, <computeroutput>@warning</computeroutput>, <computeroutput>@see</computeroutput> и <computeroutput>@since</computeroutput> описывают контракт API прямо рядом с функцией.</para>
+</listitem><listitem><para><computeroutput>@f$ ... @f$</computeroutput> и MathJax отображают формулы, а <computeroutput>@dot ... @enddot</computeroutput> строит схему конвейера точного предиката.</para>
+</listitem><listitem><para><computeroutput>@todo</computeroutput> формирует отдельный список дальнейших улучшений из реальных комментариев к коду.</para>
+</listitem><listitem><para>XML-вывод (<computeroutput>GENERATE_XML</computeroutput>) можно использовать во внешнем генераторе или среде разработки.</para>
 </listitem></itemizedlist>
 </para>
+<para>Полный перечень возможностей и точек их использования: <ref refid="doxy_features" kindref="compound">Конспект возможностей Doxygen в проекте</ref>.</para>
 </sect1>
 <sect1 id="index_1example_section">
 <title>Пример API</title><para>Ниже подключён минимальный пример вычисления предиката поворота: </para>

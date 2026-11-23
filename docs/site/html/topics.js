@@ -1,6 +1,6 @@
 var topics =
 [
-    [ "Bezier curves", "group__bezier__api.html", null ],
-    [ "Arbitrary-precision arithmetic", "group__bigint__api.html", null ],
-    [ "Geometry algorithms", "group__geometry__algorithms.html", "group__geometry__algorithms" ]
+    [ "Кривые Безье", "group__bezier__api.html", null ],
+    [ "Арифметика произвольной точности", "group__bigint__api.html", null ],
+    [ "Алгоритмы геометрии", "group__geometry__algorithms.html", "group__geometry__algorithms" ]
 ];

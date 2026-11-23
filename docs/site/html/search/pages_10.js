@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['сборка_20и_20запуск_0',['Сборка и запуск',['../dir_49e56c817e5e54854c35e136979f97ca.html#autotoc_md4',1,'']]],
-  ['старт_1',['Быстрый старт',['..//home/user/Документы/CompGeom/docs/mainpage.md#quickstart',1,'']]]
+  ['назначение_0',['Назначение',['../dir_49e56c817e5e54854c35e136979f97ca.html#autotoc_md1',1,'']]],
+  ['навигация_1',['Структура API и навигация',['../doxy_features.html#doxy_structure',1,'']]],
+  ['на_20будущее_2',['Задачи на будущее',['../doxy_features.html#doxy_tasks',1,'']]],
+  ['на_20github_20pages_3',['Публикация на GitHub Pages',['../dir_49e56c817e5e54854c35e136979f97ca.html#autotoc_md6',1,'']]]
 ];

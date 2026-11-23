@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['precision_20arithmetic_0',['Arbitrary-precision arithmetic',['../group__bigint__api.html',1,'']]],
-  ['predicates_1',['Geometric predicates',['../group__geometry__predicates.html',1,'']]]
+  ['предикаты_0',['Геометрические предикаты',['../group__geometry__predicates.html',1,'']]],
+  ['произвольной_20точности_1',['Арифметика произвольной точности',['../group__bigint__api.html',1,'']]]
 ];

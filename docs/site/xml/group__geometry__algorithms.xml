@@ -2,10 +2,10 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
   <compounddef id="group__geometry__algorithms" kind="group">
     <compoundname>geometry_algorithms</compoundname>
-    <title>Geometry algorithms</title>
-    <innergroup refid="group__geometry__predicates">Geometric predicates</innergroup>
+    <title>Алгоритмы геометрии</title>
+    <innergroup refid="group__geometry__predicates">Геометрические предикаты</innergroup>
     <briefdescription>
-<para>Platform-independent algorithms used by the workbench. </para>
+<para>Алгоритмы без зависимости от Qt, используемые в приложении. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
