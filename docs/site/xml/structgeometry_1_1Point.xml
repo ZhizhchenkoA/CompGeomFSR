@@ -18,12 +18,13 @@
         <inbodydescription>
         </inbodydescription>
         <location file="src/lib/geometry/point.h" line="14" column="12" bodyfile="src/lib/geometry/point.h" bodystart="14" bodyend="-1"/>
-        <referencedby refid="classGeometryPage_1a589fc5e7e93427a3f2c34679279ec875" compoundref="geometrypage_8cpp" startline="403" endline="434">GeometryPage::computeIntersection</referencedby>
-        <referencedby refid="classGeometryPage_1aa685131d4c04dafba54ab095dc78952e" compoundref="geometrypage_8cpp" startline="301" endline="343">GeometryPage::computeTurn</referencedby>
+        <referencedby refid="classGeometryPage_1a589fc5e7e93427a3f2c34679279ec875" compoundref="geometrypage_8cpp" startline="490" endline="524">GeometryPage::computeIntersection</referencedby>
+        <referencedby refid="classGeometryPage_1aa685131d4c04dafba54ab095dc78952e" compoundref="geometrypage_8cpp" startline="364" endline="416">GeometryPage::computeTurn</referencedby>
         <referencedby refid="group__geometry__predicates_1gac3352a32baf1dd7d3620a1748dd4b78a" compoundref="predicates_8cpp" startline="8" endline="11">geometry::cross</referencedby>
         <referencedby refid="namespacegeometry_1a9610a583f6dfe92c309727c15b9b3933" compoundref="delaunay_8cpp" startline="76" endline="161">geometry::delaunayTriangulation</referencedby>
-        <referencedby refid="classGeometryPage_1a66d38697b0496bb09cc5c22c375fc596" compoundref="geometrypage_8cpp" startline="270" endline="274">GeometryPage::on_canvas_cursorMoved</referencedby>
+        <referencedby refid="classGeometryPage_1a66d38697b0496bb09cc5c22c375fc596" compoundref="geometrypage_8cpp" startline="328" endline="332">GeometryPage::on_canvas_cursorMoved</referencedby>
         <referencedby refid="namespacegeometry_1aa0dbefb85d58b0fc5c2ff74ff1d1c94b" compoundref="predicates_8cpp" startline="26" endline="50">geometry::onSegment</referencedby>
+        <referencedby refid="namespacegeometry_1afce65baff68f7af2b6856661cf51a7f0" compoundref="convex__hull_8cpp" startline="11" endline="14">geometry::samePoint</referencedby>
         <referencedby refid="namespacegeometry__qt_1ab38550851d7c6704f958a3edd7a2dc56" compoundref="conversion_8cpp" startline="10" endline="13">geometry_qt::toScreen</referencedby>
       </memberdef>
       <memberdef kind="variable" id="structgeometry_1_1Point_1a58d50e43eb0617b09d14b2be1b1d054e" prot="public" static="no" mutable="no">
@@ -40,12 +41,13 @@
         <inbodydescription>
         </inbodydescription>
         <location file="src/lib/geometry/point.h" line="15" column="12" bodyfile="src/lib/geometry/point.h" bodystart="15" bodyend="-1"/>
-        <referencedby refid="classGeometryPage_1a589fc5e7e93427a3f2c34679279ec875" compoundref="geometrypage_8cpp" startline="403" endline="434">GeometryPage::computeIntersection</referencedby>
-        <referencedby refid="classGeometryPage_1aa685131d4c04dafba54ab095dc78952e" compoundref="geometrypage_8cpp" startline="301" endline="343">GeometryPage::computeTurn</referencedby>
+        <referencedby refid="classGeometryPage_1a589fc5e7e93427a3f2c34679279ec875" compoundref="geometrypage_8cpp" startline="490" endline="524">GeometryPage::computeIntersection</referencedby>
+        <referencedby refid="classGeometryPage_1aa685131d4c04dafba54ab095dc78952e" compoundref="geometrypage_8cpp" startline="364" endline="416">GeometryPage::computeTurn</referencedby>
         <referencedby refid="group__geometry__predicates_1gac3352a32baf1dd7d3620a1748dd4b78a" compoundref="predicates_8cpp" startline="8" endline="11">geometry::cross</referencedby>
         <referencedby refid="namespacegeometry_1a9610a583f6dfe92c309727c15b9b3933" compoundref="delaunay_8cpp" startline="76" endline="161">geometry::delaunayTriangulation</referencedby>
-        <referencedby refid="classGeometryPage_1a66d38697b0496bb09cc5c22c375fc596" compoundref="geometrypage_8cpp" startline="270" endline="274">GeometryPage::on_canvas_cursorMoved</referencedby>
+        <referencedby refid="classGeometryPage_1a66d38697b0496bb09cc5c22c375fc596" compoundref="geometrypage_8cpp" startline="328" endline="332">GeometryPage::on_canvas_cursorMoved</referencedby>
         <referencedby refid="namespacegeometry_1aa0dbefb85d58b0fc5c2ff74ff1d1c94b" compoundref="predicates_8cpp" startline="26" endline="50">geometry::onSegment</referencedby>
+        <referencedby refid="namespacegeometry_1afce65baff68f7af2b6856661cf51a7f0" compoundref="convex__hull_8cpp" startline="11" endline="14">geometry::samePoint</referencedby>
         <referencedby refid="namespacegeometry__qt_1ab38550851d7c6704f958a3edd7a2dc56" compoundref="conversion_8cpp" startline="10" endline="13">geometry_qt::toScreen</referencedby>
       </memberdef>
     </sectiondef>

@@ -58,7 +58,7 @@ public:
     int pointCount() const;
 
 signals:
-    void clicked(const QPointF& screenPos);              // клик по пустому месту
+    void clicked(const QPointF& screenPos);  
     void pointPressed(int index);
     void pointMoved(int index, const QPointF& screenPos);
     void pointReleased(int index);

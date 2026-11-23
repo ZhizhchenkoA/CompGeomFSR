@@ -138,7 +138,7 @@
   </compound>
   <compound refid="classLongArithmeticPage" kind="class"><name>LongArithmeticPage</name>
     <member refid="classLongArithmeticPage_1a658d7b4d612a138c0fe800b8b18d8c5e" kind="variable"><name>ui</name></member>
-    <member refid="classLongArithmeticPage_1a11140be3386cb7d09f97fb2f6485bcdc" kind="variable"><name>m_fields</name></member>
+    <member refid="classLongArithmeticPage_1aeecc2762447e60a65f9d49019adafbab" kind="variable"><name>m_fields</name></member>
     <member refid="classLongArithmeticPage_1a07ba70df3ad26290e560a666c4edec15" kind="function"><name>LongArithmeticPage</name></member>
     <member refid="classLongArithmeticPage_1a36a5c50582e24217e05746d7136089cc" kind="function"><name>~LongArithmeticPage</name></member>
     <member refid="classLongArithmeticPage_1ab52ecc9e59525ef13ea189064d45b782" kind="slot"><name>calculate</name></member>
@@ -202,6 +202,7 @@
     <member refid="namespacegeometry_1aeac4c2c4d76d3f1bbd0d024a3a242444a2a3cd5946cfd317eb99c3d32e35e2d4c" kind="enumvalue"><name>Point</name></member>
     <member refid="namespacegeometry_1aeac4c2c4d76d3f1bbd0d024a3a242444a2359a16283d7b4bfaaff2f6e90cbd116" kind="enumvalue"><name>Overlap</name></member>
     <member refid="namespacegeometry_1a2f3c921176229b37a127ffcce53cf519" kind="typedef"><name>PolygonSet</name></member>
+    <member refid="namespacegeometry_1afce65baff68f7af2b6856661cf51a7f0" kind="function"><name>samePoint</name></member>
     <member refid="namespacegeometry_1a6dfabff82b63c795670a97271b9908d2" kind="function"><name>convexHull</name></member>
     <member refid="namespacegeometry_1a9da2f54b6289b88e936abf857d44ea5e" kind="function"><name>convexPolygonBoolean</name></member>
     <member refid="namespacegeometry_1a9610a583f6dfe92c309727c15b9b3933" kind="function"><name>delaunayTriangulation</name></member>
@@ -215,8 +216,6 @@
   <compound refid="namespacegeometry_1_1_0d233170165101176326201172353043261310365000054301" kind="namespace"><name>geometry::@233170165101176326201172353043261310365000054301</name>
   </compound>
   <compound refid="namespacegeometry_1_1_0d235353047110142221070103056313326115141212367000" kind="namespace"><name>geometry::@235353047110142221070103056313326115141212367000</name>
-  </compound>
-  <compound refid="namespacegeometry_1_1_0d275143246155376015375170176320353136320032073136" kind="namespace"><name>geometry::@275143246155376015375170176320353136320032073136</name>
   </compound>
   <compound refid="namespacegeometry__qt" kind="namespace"><name>geometry_qt</name>
     <member refid="namespacegeometry__qt_1a1b00196f7a1e7ff93f722417814f1dbf" kind="function"><name>toGeometry</name></member>

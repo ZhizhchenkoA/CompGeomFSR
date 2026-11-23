@@ -6,14 +6,14 @@
 #include "geometry/predicates.h"
 
 namespace geometry {
-namespace {
+
 
 bool samePoint(const Point& first, const Point& second, double eps)
 {
     return std::abs(first.x - second.x) <= eps && std::abs(first.y - second.y) <= eps;
 }
 
-} // namespace
+
 
 std::vector<Point> convexHull(std::vector<Point> points, double eps)
 {

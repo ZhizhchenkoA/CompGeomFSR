@@ -62,6 +62,6 @@ EXAMPLE_PATH           = docs/examples
 EXAMPLE_RECURSIVE      = YES
 
 # Пользовательские команды, которые видны в HTML как отдельные смысловые блоки.
-ALIASES                = "complexity=\\par Сложность:" \
-                         "invariant=\\par Инвариант:" \
-                         "educational=\\par Учебная заметка:"
+ALIASES                = "complexity{1}=\par Сложность: \1" \
+                         "invariant{1}=\par Инвариант: \1" \
+                         "educational{1}=\par Учебная заметка: \1"

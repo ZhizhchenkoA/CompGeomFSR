@@ -23,7 +23,7 @@ struct DelaunayTriangle {
  * @brief Триангуляция Делоне алгоритмом Bowyer--Watson.
  * Дубликаты исключаются; для менее чем трёх неколлинеарных точек
  * возвращается пустой список. Точки на окружности допускаются.
- * @complexity В среднем O(n log n), в худшем случае зависит от числа треугольников.
+ * @complexity{В среднем O(n log n), в худшем случае зависит от числа треугольников.}
  */
 std::vector<DelaunayTriangle> delaunayTriangulation(std::vector<Point> points,
                                                      double eps = 1e-9);

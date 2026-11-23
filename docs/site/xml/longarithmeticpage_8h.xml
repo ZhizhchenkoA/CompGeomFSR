@@ -49,30 +49,32 @@
 <codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">QLineEdit;</highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight></codeline>
 <codeline lineno="9"><highlight class="normal">QT_BEGIN_NAMESPACE</highlight></codeline>
-<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceUi" kindref="compound">Ui</ref><sp/>{</highlight></codeline>
-<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">LongArithmeticPage;</highlight></codeline>
-<codeline lineno="12"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="13"><highlight class="normal">QT_END_NAMESPACE</highlight></codeline>
-<codeline lineno="14"><highlight class="normal"></highlight></codeline>
-<codeline lineno="19" refid="classLongArithmeticPage" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classLongArithmeticPage_1a07ba70df3ad26290e560a666c4edec15" kindref="member">LongArithmeticPage</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>QWidget<sp/>{</highlight></codeline>
-<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_OBJECT</highlight></codeline>
-<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classLongArithmeticPage_1a07ba70df3ad26290e560a666c4edec15" kindref="member">LongArithmeticPage</ref>(QWidget*<sp/>parent<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classLongArithmeticPage_1a36a5c50582e24217e05746d7136089cc" kindref="member">~LongArithmeticPage</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="24"><highlight class="normal"></highlight></codeline>
-<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>slots:</highlight></codeline>
-<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classLongArithmeticPage_1ab52ecc9e59525ef13ea189064d45b782" kindref="member">calculate</ref>();</highlight></codeline>
-<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classLongArithmeticPage_1a7107e57681d5bdcd8698b2b08c0943fc" kindref="member">setNearLineExample</ref>();</highlight></codeline>
-<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classLongArithmeticPage_1a4cb85f2022c38fc5c04014320d877c0a" kindref="member">setLargeExample</ref>();</highlight></codeline>
-<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classLongArithmeticPage_1a0cd63a86fb779f62d7c3cf8427765a10" kindref="member">setInvalidExample</ref>();</highlight></codeline>
-<codeline lineno="30"><highlight class="normal"></highlight></codeline>
-<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classLongArithmeticPage_1a82a5d59f0f0f86161a3614c8ff025dbe" kindref="member">setCoordinates</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::array&lt;QString,<sp/>6&gt;&amp;<sp/>values);</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classLongArithmeticPage_1ae2449c28a8b53a186a8cf785e918b8ef" kindref="member">updateIfOnline</ref>();</highlight></codeline>
-<codeline lineno="34"><highlight class="normal"></highlight></codeline>
-<codeline lineno="35" refid="classLongArithmeticPage_1a658d7b4d612a138c0fe800b8b18d8c5e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Ui::LongArithmeticPage*<sp/><ref refid="classLongArithmeticPage_1a658d7b4d612a138c0fe800b8b18d8c5e" kindref="member">ui</ref>;</highlight></codeline>
-<codeline lineno="36" refid="classLongArithmeticPage_1a11140be3386cb7d09f97fb2f6485bcdc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::array&lt;QLineEdit*,<sp/>6&gt;<sp/><ref refid="classLongArithmeticPage_1a11140be3386cb7d09f97fb2f6485bcdc" kindref="member">m_fields</ref>{};</highlight></codeline>
-<codeline lineno="37"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceUi" kindref="compound">Ui</ref></highlight></codeline>
+<codeline lineno="11"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">LongArithmeticPage;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">QT_END_NAMESPACE</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="classLongArithmeticPage" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classLongArithmeticPage_1a07ba70df3ad26290e560a666c4edec15" kindref="member">LongArithmeticPage</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>QWidget</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_OBJECT</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classLongArithmeticPage_1a07ba70df3ad26290e560a666c4edec15" kindref="member">LongArithmeticPage</ref>(QWidget<sp/>*parent<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classLongArithmeticPage_1a36a5c50582e24217e05746d7136089cc" kindref="member">~LongArithmeticPage</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>slots:</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classLongArithmeticPage_1ab52ecc9e59525ef13ea189064d45b782" kindref="member">calculate</ref>();</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classLongArithmeticPage_1a7107e57681d5bdcd8698b2b08c0943fc" kindref="member">setNearLineExample</ref>();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classLongArithmeticPage_1a4cb85f2022c38fc5c04014320d877c0a" kindref="member">setLargeExample</ref>();</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classLongArithmeticPage_1a0cd63a86fb779f62d7c3cf8427765a10" kindref="member">setInvalidExample</ref>();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classLongArithmeticPage_1a82a5d59f0f0f86161a3614c8ff025dbe" kindref="member">setCoordinates</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::array&lt;QString,<sp/>6&gt;<sp/>&amp;values);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classLongArithmeticPage_1ae2449c28a8b53a186a8cf785e918b8ef" kindref="member">updateIfOnline</ref>();</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="classLongArithmeticPage_1a658d7b4d612a138c0fe800b8b18d8c5e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Ui::LongArithmeticPage<sp/>*<ref refid="classLongArithmeticPage_1a658d7b4d612a138c0fe800b8b18d8c5e" kindref="member">ui</ref>;</highlight></codeline>
+<codeline lineno="38" refid="classLongArithmeticPage_1aeecc2762447e60a65f9d49019adafbab" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::array&lt;QLineEdit<sp/>*,<sp/>6&gt;<sp/><ref refid="classLongArithmeticPage_1aeecc2762447e60a65f9d49019adafbab" kindref="member">m_fields</ref>{};</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">};</highlight></codeline>
     </programlisting>
     <location file="src/apps/GeometryWorkbench/longarithmeticpage.h"/>
   </compounddef>

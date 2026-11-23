@@ -12,7 +12,7 @@ var searchData=
   ['m_5fdelaunaytriangles_9',['m_delaunayTriangles',['../classGeometryCanvas.html#aeacc02d958f333368af495249206319c',1,'GeometryCanvas']]],
   ['m_5fdigits_10',['m_digits',['../classbigint_1_1BigInteger.html#aafbd78ed3f7cb2a2c6ddc5d8e32445ea',1,'bigint::BigInteger']]],
   ['m_5fdragindex_11',['m_dragIndex',['../classGeometryCanvas.html#a28fc67e936d72f34e098a38e5a764e02',1,'GeometryCanvas']]],
-  ['m_5ffields_12',['m_fields',['../classLongArithmeticPage.html#a11140be3386cb7d09f97fb2f6485bcdc',1,'LongArithmeticPage']]],
+  ['m_5ffields_12',['m_fields',['../classLongArithmeticPage.html#aeecc2762447e60a65f9d49019adafbab',1,'LongArithmeticPage']]],
   ['m_5fintersectionmarker_13',['m_intersectionMarker',['../classGeometryCanvas.html#aa56c6cf652599a0de15e5c4f1505b6da',1,'GeometryCanvas']]],
   ['m_5fintersectionmarkervisible_14',['m_intersectionMarkerVisible',['../classGeometryCanvas.html#a8523cd72882fb48273d77dcbebab5e2e',1,'GeometryCanvas']]],
   ['m_5foverlapfirst_15',['m_overlapFirst',['../classGeometryCanvas.html#a1901e4743ca573a156171e26730e609b',1,'GeometryCanvas']]],

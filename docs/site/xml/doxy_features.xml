@@ -121,17 +121,17 @@
 </entry><entry thead="yes"><para>Пример использования  </para>
 </entry></row>
 <row>
-<entry thead="no"><para><computeroutput>@complexity</computeroutput>  </para>
+<entry thead="no"><para><computeroutput>@complexity{...}</computeroutput>  </para>
 </entry><entry thead="no"><para>«Сложность»  </para>
 </entry><entry thead="no"><para><computeroutput><ref refid="convex__hull_8h" kindref="compound">src/lib/geometry/convex_hull.h</ref></computeroutput>, <computeroutput><ref refid="delaunay_8h" kindref="compound">src/lib/geometry/delaunay.h</ref></computeroutput>  </para>
 </entry></row>
 <row>
-<entry thead="no"><para><computeroutput>@invariant</computeroutput>  </para>
+<entry thead="no"><para><computeroutput>@invariant{...}</computeroutput>  </para>
 </entry><entry thead="no"><para>«Инвариант»  </para>
 </entry><entry thead="no"><para><computeroutput><ref refid="convex__hull_8h" kindref="compound">src/lib/geometry/convex_hull.h</ref></computeroutput>, <computeroutput><ref refid="bigint_8h" kindref="compound">src/lib/bigint/bigint.h</ref></computeroutput>  </para>
 </entry></row>
 <row>
-<entry thead="no"><para><computeroutput>@educational</computeroutput>  </para>
+<entry thead="no"><para><computeroutput>@educational{...}</computeroutput>  </para>
 </entry><entry thead="no"><para>«Учебная заметка»  </para>
 </entry><entry thead="no"><para><computeroutput><ref refid="predicates_8h" kindref="compound">src/lib/geometry/predicates.h</ref></computeroutput>  </para>
 </entry></row>

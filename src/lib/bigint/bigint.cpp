@@ -10,7 +10,6 @@ BigInteger::BigInteger(long long value)
 {
     if (value == 0) return;
     m_sign = value < 0 ? -1 : 1;
-    // Не берём -value: LLONG_MIN нельзя представить положительным long long.
     std::uint64_t magnitude = value < 0
         ? static_cast<std::uint64_t>(-(value + 1)) + 1
         : static_cast<std::uint64_t>(value);

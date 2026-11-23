@@ -19,7 +19,7 @@
 <codeline><highlight class="normal">*<sp/>`@defgroup`<sp/>и<sp/>`@ingroup`<sp/>—<sp/>API<sp/>разделён<sp/>на<sp/>предметные<sp/>библиотеки.</highlight></codeline>
 <codeline><highlight class="normal">*<sp/>Graphviz<sp/>(`HAVE_DOT<sp/>=<sp/>YES`)<sp/>—<sp/>строит<sp/>графы<sp/>классов,<sp/>зависимостей<sp/>подключаемых<sp/>файлов<sp/>и<sp/>вызовов.</highlight></codeline>
 <codeline><highlight class="normal">*<sp/>`@example`<sp/>—<sp/>исходный<sp/>пример<sp/>появляется<sp/>в<sp/>специальном<sp/>разделе<sp/>«Примеры».</highlight></codeline>
-<codeline><highlight class="normal">*<sp/>пользовательские<sp/>псевдонимы<sp/>`\\complexity`,<sp/>`\\invariant`,<sp/>`\\educational`<sp/>—<sp/>единый<sp/>стиль<sp/>методических<sp/>заметок.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>пользовательские<sp/>псевдонимы<sp/>`\\complexity{...}`,<sp/>`\\invariant{...}`,<sp/>`\\educational{...}`<sp/>—<sp/>единый<sp/>стиль<sp/>методических<sp/>заметок.</highlight></codeline>
 <codeline><highlight class="normal">*<sp/>`@pre`,<sp/>`@post`,<sp/>`@note`,<sp/>`@warning`,<sp/>`@see`<sp/>и<sp/>`@since`<sp/>описывают<sp/>контракт<sp/>API<sp/>прямо<sp/>рядом<sp/>с<sp/>функцией.</highlight></codeline>
 <codeline><highlight class="normal">*<sp/>`@f$<sp/>...<sp/>@f$`<sp/>и<sp/>MathJax<sp/>отображают<sp/>формулы,<sp/>а<sp/>`@dot<sp/>...<sp/>@enddot`<sp/>строит<sp/>схему<sp/>конвейера<sp/>точного<sp/>предиката.</highlight></codeline>
 <codeline><highlight class="normal">*<sp/>`@todo`<sp/>формирует<sp/>отдельный<sp/>список<sp/>дальнейших<sp/>улучшений<sp/>из<sp/>реальных<sp/>комментариев<sp/>к<sp/>коду.</highlight></codeline>

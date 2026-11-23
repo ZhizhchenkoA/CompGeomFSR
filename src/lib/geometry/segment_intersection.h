@@ -28,7 +28,7 @@ struct SegmentIntersection {
  * @param c Первый конец второго отрезка.
  * @param d Второй конец второго отрезка.
  * @param eps Допуск в единицах координат; учитывает касание концом.
- * @complexity O(1)
+ * @complexity{O(1)}
  */
 SegmentIntersection intersectSegments(const Point& a, const Point& b,
                                       const Point& c, const Point& d,

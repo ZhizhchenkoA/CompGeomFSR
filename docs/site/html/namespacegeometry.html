@@ -133,6 +133,7 @@ $(function(){initNavTree('namespacegeometry.html','',''); });
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Функции</h2></td></tr>
+<tr class="memitem:afce65baff68f7af2b6856661cf51a7f0" id="r_afce65baff68f7af2b6856661cf51a7f0"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#afce65baff68f7af2b6856661cf51a7f0">samePoint</a> (const <a class="el" href="structgeometry_1_1Point.html">Point</a> &amp;first, const <a class="el" href="structgeometry_1_1Point.html">Point</a> &amp;second, double eps)</td></tr>
 <tr class="memitem:a6dfabff82b63c795670a97271b9908d2" id="r_a6dfabff82b63c795670a97271b9908d2"><td class="memItemLeft">std::vector&lt; <a class="el" href="structgeometry_1_1Point.html">Point</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a6dfabff82b63c795670a97271b9908d2">convexHull</a> (std::vector&lt; <a class="el" href="structgeometry_1_1Point.html">Point</a> &gt; points, double eps=1e-9)</td></tr>
 <tr class="memdesc:a6dfabff82b63c795670a97271b9908d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выпуклая оболочка множества точек алгоритмом Эндрю.  <br /></td></tr>
 <tr class="memitem:a9da2f54b6289b88e936abf857d44ea5e" id="r_a9da2f54b6289b88e936abf857d44ea5e"><td class="memItemLeft"><a class="el" href="#a2f3c921176229b37a127ffcce53cf519">PolygonSet</a>&#160;</td><td class="memItemRight"><a class="el" href="#a9da2f54b6289b88e936abf857d44ea5e">convexPolygonBoolean</a> (const std::vector&lt; <a class="el" href="structgeometry_1_1Point.html">Point</a> &gt; &amp;first, const std::vector&lt; <a class="el" href="structgeometry_1_1Point.html">Point</a> &gt; &amp;second, <a class="el" href="#ac019bd61bca22de69c70fc1a9acabefa">ConvexPolygonOperation</a> operation, double eps=1e-9)</td></tr>
@@ -252,13 +253,15 @@ $(function(){initNavTree('namespacegeometry.html','',''); });
 </div><div class="memdoc">
 
 <p>Выпуклая оболочка множества точек алгоритмом Эндрю. </p>
-<dl class="section return"><dt>Возвращает</dt><dd>Вершины против часовой стрелки без повторения первой точки. Для 0/1/2 различных точек результат содержит 0/1/2 точки. Дубликаты и коллинеарные внутренние точки исключаются. \par Сложность: <span class="tt">O(n log n)</span> по времени, <span class="tt">O(n)</span> дополнительной памяти. \par Инвариант: Результат ориентирован против часовой стрелки. </dd></dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Вершины против часовой стрелки без повторения первой точки. Для 0/1/2 различных точек результат содержит 0/1/2 точки. Дубликаты и коллинеарные внутренние точки исключаются. </dd></dl>
+<dl class="section user"><dt>Сложность: <span class="tt">O(n log n)</span> по времени, <span class="tt">O(n)</span> дополнительной памяти.</dt><dd></dd></dl>
+<dl class="section user"><dt>Инвариант: Результат ориентирован против часовой стрелки.</dt><dd></dd></dl>
 
 <p class="definition">См. определение в файле <a class="el" href="convex__hull_8cpp_source.html">convex_hull.cpp</a> строка <a class="el" href="convex__hull_8cpp_source.html#l00018">18</a></p>
 
 <p class="reference">Перекрестные ссылки <a class="el" href="predicates_8cpp_source.html#l00008">cross()</a>.</p>
 
-<p class="reference">Используется в <a class="el" href="geometrypage_8cpp_source.html#l00463">GeometryPage::computeHull()</a> и <a class="el" href="geometrypage_8cpp_source.html#l00558">GeometryPage::computePolygonOperation()</a>.</p>
+<p class="reference">Используется в <a class="el" href="geometrypage_8cpp_source.html#l00558">GeometryPage::computeHull()</a> и <a class="el" href="geometrypage_8cpp_source.html#l00666">GeometryPage::computePolygonOperation()</a>.</p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -308,7 +311,7 @@ $(function(){initNavTree('namespacegeometry.html','',''); });
 
 <p class="reference">Перекрестные ссылки <a class="el" href="convex__polygon__boolean_8h_source.html#l00010">Difference</a>, <a class="el" href="convex__polygon__boolean_8h_source.html#l00010">Intersection</a> и <a class="el" href="convex__polygon__boolean_8h_source.html#l00010">Union</a>.</p>
 
-<p class="reference">Используется в <a class="el" href="geometrypage_8cpp_source.html#l00558">GeometryPage::computePolygonOperation()</a>.</p>
+<p class="reference">Используется в <a class="el" href="geometrypage_8cpp_source.html#l00666">GeometryPage::computePolygonOperation()</a>.</p>
 <div class="dynheader">
 Граф вызова функции:</div>
 <div class="dyncontent">
@@ -337,13 +340,13 @@ $(function(){initNavTree('namespacegeometry.html','',''); });
 </div><div class="memdoc">
 
 <p>Триангуляция Делоне алгоритмом Bowyer&ndash;Watson. </p>
-<p>Дубликаты исключаются; для менее чем трёх неколлинеарных точек возвращается пустой список. Точки на окружности допускаются. \par Сложность: В среднем O(n log n), в худшем случае зависит от числа треугольников. </p>
+<p>Дубликаты исключаются; для менее чем трёх неколлинеарных точек возвращается пустой список. Точки на окружности допускаются. </p><dl class="section user"><dt>Сложность: В среднем O(n log n), в худшем случае зависит от числа треугольников.</dt><dd></dd></dl>
 
 <p class="definition">См. определение в файле <a class="el" href="delaunay_8cpp_source.html">delaunay.cpp</a> строка <a class="el" href="delaunay_8cpp_source.html#l00076">76</a></p>
 
 <p class="reference">Перекрестные ссылки <a class="el" href="point_8h_source.html#l00014">geometry::Point::x</a> и <a class="el" href="point_8h_source.html#l00015">geometry::Point::y</a>.</p>
 
-<p class="reference">Используется в <a class="el" href="geometrypage_8cpp_source.html#l00502">GeometryPage::computeDelaunay()</a>.</p>
+<p class="reference">Используется в <a class="el" href="geometrypage_8cpp_source.html#l00603">GeometryPage::computeDelaunay()</a>.</p>
 <div class="dynheader">
 Граф вызова функции:</div>
 <div class="dyncontent">
@@ -393,16 +396,17 @@ $(function(){initNavTree('namespacegeometry.html','',''); });
     <tr><td class="paramname">b</td><td>Второй конец первого отрезка. </td></tr>
     <tr><td class="paramname">c</td><td>Первый конец второго отрезка. </td></tr>
     <tr><td class="paramname">d</td><td>Второй конец второго отрезка. </td></tr>
-    <tr><td class="paramname">eps</td><td>Допуск в единицах координат; учитывает касание концом. \par Сложность: O(1) </td></tr>
+    <tr><td class="paramname">eps</td><td>Допуск в единицах координат; учитывает касание концом. </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section user"><dt>Сложность: O(1)</dt><dd></dd></dl>
 
 <p class="definition">См. определение в файле <a class="el" href="segment__intersection_8cpp_source.html">segment_intersection.cpp</a> строка <a class="el" href="segment__intersection_8cpp_source.html#l00038">38</a></p>
 
 <p class="reference">Перекрестные ссылки <a class="el" href="predicates_8cpp_source.html#l00026">onSegment()</a>, <a class="el" href="segment__intersection_8h_source.html#l00011">Overlap</a> и <a class="el" href="segment__intersection_8h_source.html#l00010">Point</a>.</p>
 
-<p class="reference">Используется в <a class="el" href="geometrypage_8cpp_source.html#l00403">GeometryPage::computeIntersection()</a>.</p>
+<p class="reference">Используется в <a class="el" href="geometrypage_8cpp_source.html#l00490">GeometryPage::computeIntersection()</a>.</p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -451,22 +455,53 @@ $(function(){initNavTree('namespacegeometry.html','',''); });
     <tr><td class="paramname">a</td><td>Первый конец отрезка. </td></tr>
     <tr><td class="paramname">b</td><td>Второй конец отрезка. </td></tr>
     <tr><td class="paramname">p</td><td>Проверяемая точка. </td></tr>
-    <tr><td class="paramname">eps</td><td>Евклидово расстояние до ближайшей точки отрезка. \par Сложность: O(1) </td></tr>
+    <tr><td class="paramname">eps</td><td>Евклидово расстояние до ближайшей точки отрезка. </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section user"><dt>Сложность: O(1)</dt><dd></dd></dl>
 <dl class="section user"><dt>Особый случай</dt><dd>Если <span class="tt">a</span> и <span class="tt">b</span> совпадают в пределах <span class="tt">eps</span>, отрезок трактуется как точка. </dd></dl>
 
 <p class="definition">См. определение в файле <a class="el" href="predicates_8cpp_source.html">predicates.cpp</a> строка <a class="el" href="predicates_8cpp_source.html#l00026">26</a></p>
 
 <p class="reference">Перекрестные ссылки <a class="el" href="point_8h_source.html#l00014">geometry::Point::x</a> и <a class="el" href="point_8h_source.html#l00015">geometry::Point::y</a>.</p>
 
-<p class="reference">Используется в <a class="el" href="geometrypage_8cpp_source.html#l00301">GeometryPage::computeTurn()</a> и <a class="el" href="segment__intersection_8cpp_source.html#l00038">intersectSegments()</a>.</p>
+<p class="reference">Используется в <a class="el" href="geometrypage_8cpp_source.html#l00364">GeometryPage::computeTurn()</a> и <a class="el" href="segment__intersection_8cpp_source.html#l00038">intersectSegments()</a>.</p>
 <div class="dynheader">
 Граф вызова функции:</div>
 <div class="dyncontent">
 <div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="namespacegeometry_aa0dbefb85d58b0fc5c2ff74ff1d1c94b_icgraph.svg" width="100%" height="574"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
+
+</div>
+</div>
+<a id="afce65baff68f7af2b6856661cf51a7f0" name="afce65baff68f7af2b6856661cf51a7f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afce65baff68f7af2b6856661cf51a7f0">&#9670;&#160;</a></span>samePoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool geometry::samePoint </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structgeometry_1_1Point.html">Point</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>first</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structgeometry_1_1Point.html">Point</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>second</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>eps</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="convex__hull_8cpp_source.html">convex_hull.cpp</a> строка <a class="el" href="convex__hull_8cpp_source.html#l00011">11</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="point_8h_source.html#l00014">geometry::Point::x</a> и <a class="el" href="point_8h_source.html#l00015">geometry::Point::y</a>.</p>
 
 </div>
 </div>
@@ -506,14 +541,16 @@ $(function(){initNavTree('namespacegeometry.html','',''); });
     <tr><td class="paramname">a</td><td>Начало направленного отрезка. </td></tr>
     <tr><td class="paramname">b</td><td>Конец направленного отрезка. </td></tr>
     <tr><td class="paramname">p</td><td>Проверяемая точка. </td></tr>
-    <tr><td class="paramname">eps</td><td>Допуск, при котором значение считается нулём. \par Сложность: O(1) </td></tr>
+    <tr><td class="paramname">eps</td><td>Допуск, при котором значение считается нулём. </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section user"><dt>Сложность: O(1)</dt><dd></dd></dl>
 <dl class="section post"><dt>Постусловие</dt><dd>Возвращаемое значение всегда принадлежит множеству <span class="tt">{-1, 0, 1}</span>. </dd></dl>
 <dl class="section note"><dt>Заметки</dt><dd>Отрицательный <span class="tt">eps</span> обрабатывается как его абсолютное значение. </dd></dl>
 <dl class="section warning"><dt>Предупреждения</dt><dd>Для координат, заданных очень длинными десятичными строками, используйте <a class="el" href="namespacebigint.html#a2646acc61d0e940c36f58f118a5095d1" title="Поля массива идут в порядке Ax, Ay, Bx, By, Px, Py.">bigint::exactTurn</a>: арифметика <span class="tt">double</span> может потерять знак. </dd></dl>
-<dl class="section see"><dt>См. также</dt><dd><a class="el" href="group__geometry__predicates.html#gac3352a32baf1dd7d3620a1748dd4b78a" title="Векторное произведение (b - a) x (c - a).">cross()</a>, <a class="el" href="namespacebigint.html#a2646acc61d0e940c36f58f118a5095d1" title="Поля массива идут в порядке Ax, Ay, Bx, By, Px, Py.">bigint::exactTurn()</a> \par Учебная заметка: Знак векторного произведения — основа теста «слева/справа». </dd></dl>
+<dl class="section see"><dt>См. также</dt><dd><a class="el" href="group__geometry__predicates.html#gac3352a32baf1dd7d3620a1748dd4b78a" title="Векторное произведение (b - a) x (c - a).">cross()</a>, <a class="el" href="namespacebigint.html#a2646acc61d0e940c36f58f118a5095d1" title="Поля массива идут в порядке Ax, Ay, Bx, By, Px, Py.">bigint::exactTurn()</a> </dd></dl>
+<dl class="section user"><dt>Учебная заметка: Знак векторного произведения — основа теста «слева/справа».</dt><dd></dd></dl>
 <dl class="section examples"><dt>Примеры</dt><dd><a class="el" href="turn_example_8cpp-example.html#a2">turn_example.cpp</a>.</dd>
 </dl>
 
@@ -521,7 +558,7 @@ $(function(){initNavTree('namespacegeometry.html','',''); });
 
 <p class="reference">Перекрестные ссылки <a class="el" href="predicates_8cpp_source.html#l00008">cross()</a>.</p>
 
-<p class="reference">Используется в <a class="el" href="geometrypage_8cpp_source.html#l00301">GeometryPage::computeTurn()</a>.</p>
+<p class="reference">Используется в <a class="el" href="geometrypage_8cpp_source.html#l00364">GeometryPage::computeTurn()</a>.</p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">

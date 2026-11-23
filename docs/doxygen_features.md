@@ -44,9 +44,9 @@
 
 | Псевдоним | Заголовок в HTML | Пример использования |
 |---|---|---|
-| `@complexity` | «Сложность» | `src/lib/geometry/convex_hull.h`, `src/lib/geometry/delaunay.h` |
-| `@invariant` | «Инвариант» | `src/lib/geometry/convex_hull.h`, `src/lib/bigint/bigint.h` |
-| `@educational` | «Учебная заметка» | `src/lib/geometry/predicates.h` |
+| `@complexity{...}` | «Сложность» | `src/lib/geometry/convex_hull.h`, `src/lib/geometry/delaunay.h` |
+| `@invariant{...}` | «Инвариант» | `src/lib/geometry/convex_hull.h`, `src/lib/bigint/bigint.h` |
+| `@educational{...}` | «Учебная заметка» | `src/lib/geometry/predicates.h` |
 
 @section doxy_math Формулы: LaTeX и MathJax
 

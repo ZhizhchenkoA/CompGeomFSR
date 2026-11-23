@@ -18,10 +18,10 @@
         <inbodydescription>
         </inbodydescription>
         <location file="src/lib/bigint/bigint.h" line="48" column="36" bodyfile="src/lib/bigint/bigint.h" bodystart="48" bodyend="-1"/>
-        <referencedby refid="classbigint_1_1BigInteger_1a14b57cd07047dc67628e7542f2acfbac" compoundref="bigint_8cpp" startline="138" endline="149">addAbs</referencedby>
-        <referencedby refid="classbigint_1_1BigInteger_1a242094a88c817b115cafaf1806ad2d92" compoundref="bigint_8cpp" startline="9" endline="21">BigInteger</referencedby>
-        <referencedby refid="classbigint_1_1BigInteger_1a5b27ffacebc3458950b56d14b2d3a9a1" compoundref="bigint_8cpp" startline="85" endline="110">operator*=</referencedby>
-        <referencedby refid="classbigint_1_1BigInteger_1aff8518e21f10a4e1645a35dd28595d18" compoundref="bigint_8cpp" startline="151" endline="161">subtractAbs</referencedby>
+        <referencedby refid="classbigint_1_1BigInteger_1a14b57cd07047dc67628e7542f2acfbac" compoundref="bigint_8cpp" startline="137" endline="148">addAbs</referencedby>
+        <referencedby refid="classbigint_1_1BigInteger_1a242094a88c817b115cafaf1806ad2d92" compoundref="bigint_8cpp" startline="9" endline="20">BigInteger</referencedby>
+        <referencedby refid="classbigint_1_1BigInteger_1a5b27ffacebc3458950b56d14b2d3a9a1" compoundref="bigint_8cpp" startline="84" endline="109">operator*=</referencedby>
+        <referencedby refid="classbigint_1_1BigInteger_1aff8518e21f10a4e1645a35dd28595d18" compoundref="bigint_8cpp" startline="150" endline="160">subtractAbs</referencedby>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-attrib">
@@ -39,15 +39,15 @@
         <inbodydescription>
         </inbodydescription>
         <location file="src/lib/bigint/bigint.h" line="49" column="9" bodyfile="src/lib/bigint/bigint.h" bodystart="49" bodyend="-1"/>
-        <referencedby refid="classbigint_1_1BigInteger_1a242094a88c817b115cafaf1806ad2d92" compoundref="bigint_8cpp" startline="9" endline="21">BigInteger</referencedby>
-        <referencedby refid="classbigint_1_1BigInteger_1a1cefc099f541a79f4a93198f2de06b55" compoundref="bigint_8cpp" startline="60" endline="60">isZero</referencedby>
-        <referencedby refid="classbigint_1_1BigInteger_1a1872052751396a6044b6e6bf3d606e0b" compoundref="bigint_8cpp" startline="121" endline="125">normalize</referencedby>
-        <referencedby refid="classbigint_1_1BigInteger_1a5b27ffacebc3458950b56d14b2d3a9a1" compoundref="bigint_8cpp" startline="85" endline="110">operator*=</referencedby>
-        <referencedby refid="classbigint_1_1BigInteger_1a1054e51808fad21855bed48eacd7500e" compoundref="bigint_8cpp" startline="69" endline="81">operator+=</referencedby>
-        <referencedby refid="classbigint_1_1BigInteger_1a8302f877ef948f62500969fe3ee94f39" compoundref="bigint_8cpp" startline="62" endline="67">operator-</referencedby>
-        <referencedby refid="classbigint_1_1BigInteger_1aaa59e76f31e7245bec495b34cb8a9691" compoundref="bigint_8cpp" startline="59" endline="59">sign</referencedby>
-        <referencedby refid="classbigint_1_1BigInteger_1abdfe1a89337d9352eea641554a6bb633" compoundref="bigint_8cpp" startline="47" endline="57">toString</referencedby>
-        <referencedby refid="classbigint_1_1BigInteger_1a4796ebd40af5f92c92bdea11ca37347f" compoundref="bigint_8cpp" startline="23" endline="45">tryParse</referencedby>
+        <referencedby refid="classbigint_1_1BigInteger_1a242094a88c817b115cafaf1806ad2d92" compoundref="bigint_8cpp" startline="9" endline="20">BigInteger</referencedby>
+        <referencedby refid="classbigint_1_1BigInteger_1a1cefc099f541a79f4a93198f2de06b55" compoundref="bigint_8cpp" startline="59" endline="59">isZero</referencedby>
+        <referencedby refid="classbigint_1_1BigInteger_1a1872052751396a6044b6e6bf3d606e0b" compoundref="bigint_8cpp" startline="120" endline="124">normalize</referencedby>
+        <referencedby refid="classbigint_1_1BigInteger_1a5b27ffacebc3458950b56d14b2d3a9a1" compoundref="bigint_8cpp" startline="84" endline="109">operator*=</referencedby>
+        <referencedby refid="classbigint_1_1BigInteger_1a1054e51808fad21855bed48eacd7500e" compoundref="bigint_8cpp" startline="68" endline="80">operator+=</referencedby>
+        <referencedby refid="classbigint_1_1BigInteger_1a8302f877ef948f62500969fe3ee94f39" compoundref="bigint_8cpp" startline="61" endline="66">operator-</referencedby>
+        <referencedby refid="classbigint_1_1BigInteger_1aaa59e76f31e7245bec495b34cb8a9691" compoundref="bigint_8cpp" startline="58" endline="58">sign</referencedby>
+        <referencedby refid="classbigint_1_1BigInteger_1abdfe1a89337d9352eea641554a6bb633" compoundref="bigint_8cpp" startline="46" endline="56">toString</referencedby>
+        <referencedby refid="classbigint_1_1BigInteger_1a4796ebd40af5f92c92bdea11ca37347f" compoundref="bigint_8cpp" startline="22" endline="44">tryParse</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classbigint_1_1BigInteger_1aafbd78ed3f7cb2a2c6ddc5d8e32445ea" prot="private" static="no" mutable="no">
         <type>std::vector&lt; std::uint32_t &gt;</type>
@@ -62,15 +62,15 @@
         <inbodydescription>
         </inbodydescription>
         <location file="src/lib/bigint/bigint.h" line="50" column="17" bodyfile="src/lib/bigint/bigint.h" bodystart="50" bodyend="-1"/>
-        <referencedby refid="classbigint_1_1BigInteger_1a14b57cd07047dc67628e7542f2acfbac" compoundref="bigint_8cpp" startline="138" endline="149">addAbs</referencedby>
-        <referencedby refid="classbigint_1_1BigInteger_1a242094a88c817b115cafaf1806ad2d92" compoundref="bigint_8cpp" startline="9" endline="21">BigInteger</referencedby>
-        <referencedby refid="classbigint_1_1BigInteger_1afa2c98c3611da550b4504a2117318fe0" compoundref="bigint_8cpp" startline="127" endline="136">compareAbs</referencedby>
-        <referencedby refid="classbigint_1_1BigInteger_1a1872052751396a6044b6e6bf3d606e0b" compoundref="bigint_8cpp" startline="121" endline="125">normalize</referencedby>
-        <referencedby refid="classbigint_1_1BigInteger_1a5b27ffacebc3458950b56d14b2d3a9a1" compoundref="bigint_8cpp" startline="85" endline="110">operator*=</referencedby>
-        <referencedby refid="classbigint_1_1BigInteger_1a1054e51808fad21855bed48eacd7500e" compoundref="bigint_8cpp" startline="69" endline="81">operator+=</referencedby>
-        <referencedby refid="classbigint_1_1BigInteger_1aff8518e21f10a4e1645a35dd28595d18" compoundref="bigint_8cpp" startline="151" endline="161">subtractAbs</referencedby>
-        <referencedby refid="classbigint_1_1BigInteger_1abdfe1a89337d9352eea641554a6bb633" compoundref="bigint_8cpp" startline="47" endline="57">toString</referencedby>
-        <referencedby refid="classbigint_1_1BigInteger_1a4796ebd40af5f92c92bdea11ca37347f" compoundref="bigint_8cpp" startline="23" endline="45">tryParse</referencedby>
+        <referencedby refid="classbigint_1_1BigInteger_1a14b57cd07047dc67628e7542f2acfbac" compoundref="bigint_8cpp" startline="137" endline="148">addAbs</referencedby>
+        <referencedby refid="classbigint_1_1BigInteger_1a242094a88c817b115cafaf1806ad2d92" compoundref="bigint_8cpp" startline="9" endline="20">BigInteger</referencedby>
+        <referencedby refid="classbigint_1_1BigInteger_1afa2c98c3611da550b4504a2117318fe0" compoundref="bigint_8cpp" startline="126" endline="135">compareAbs</referencedby>
+        <referencedby refid="classbigint_1_1BigInteger_1a1872052751396a6044b6e6bf3d606e0b" compoundref="bigint_8cpp" startline="120" endline="124">normalize</referencedby>
+        <referencedby refid="classbigint_1_1BigInteger_1a5b27ffacebc3458950b56d14b2d3a9a1" compoundref="bigint_8cpp" startline="84" endline="109">operator*=</referencedby>
+        <referencedby refid="classbigint_1_1BigInteger_1a1054e51808fad21855bed48eacd7500e" compoundref="bigint_8cpp" startline="68" endline="80">operator+=</referencedby>
+        <referencedby refid="classbigint_1_1BigInteger_1aff8518e21f10a4e1645a35dd28595d18" compoundref="bigint_8cpp" startline="150" endline="160">subtractAbs</referencedby>
+        <referencedby refid="classbigint_1_1BigInteger_1abdfe1a89337d9352eea641554a6bb633" compoundref="bigint_8cpp" startline="46" endline="56">toString</referencedby>
+        <referencedby refid="classbigint_1_1BigInteger_1a4796ebd40af5f92c92bdea11ca37347f" compoundref="bigint_8cpp" startline="22" endline="44">tryParse</referencedby>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -89,19 +89,19 @@
         </inbodydescription>
         <location file="src/lib/bigint/bigint.h" line="22" column="5"/>
         <references refid="classbigint_1_1BigInteger_1aa5ebb91700ee66941995e9e0a1c5d507">BigInteger</references>
-        <referencedby refid="classbigint_1_1BigInteger_1a14b57cd07047dc67628e7542f2acfbac" compoundref="bigint_8cpp" startline="138" endline="149">addAbs</referencedby>
+        <referencedby refid="classbigint_1_1BigInteger_1a14b57cd07047dc67628e7542f2acfbac" compoundref="bigint_8cpp" startline="137" endline="148">addAbs</referencedby>
         <referencedby refid="classbigint_1_1BigInteger_1aa5ebb91700ee66941995e9e0a1c5d507">BigInteger</referencedby>
-        <referencedby refid="classbigint_1_1BigInteger_1afa2c98c3611da550b4504a2117318fe0" compoundref="bigint_8cpp" startline="127" endline="136">compareAbs</referencedby>
+        <referencedby refid="classbigint_1_1BigInteger_1afa2c98c3611da550b4504a2117318fe0" compoundref="bigint_8cpp" startline="126" endline="135">compareAbs</referencedby>
         <referencedby refid="classbigint_1_1BigInteger_1a9c322dd173dc036f00721f4cf4491a4b" compoundref="bigint_8h" startline="43" endline="43">operator*</referencedby>
-        <referencedby refid="classbigint_1_1BigInteger_1a5b27ffacebc3458950b56d14b2d3a9a1" compoundref="bigint_8cpp" startline="85" endline="110">operator*=</referencedby>
+        <referencedby refid="classbigint_1_1BigInteger_1a5b27ffacebc3458950b56d14b2d3a9a1" compoundref="bigint_8cpp" startline="84" endline="109">operator*=</referencedby>
         <referencedby refid="classbigint_1_1BigInteger_1aeffe15b5fe982f70ea2f71130a2ea5f6" compoundref="bigint_8h" startline="41" endline="41">operator+</referencedby>
-        <referencedby refid="classbigint_1_1BigInteger_1a1054e51808fad21855bed48eacd7500e" compoundref="bigint_8cpp" startline="69" endline="81">operator+=</referencedby>
-        <referencedby refid="classbigint_1_1BigInteger_1a8302f877ef948f62500969fe3ee94f39" compoundref="bigint_8cpp" startline="62" endline="67">operator-</referencedby>
+        <referencedby refid="classbigint_1_1BigInteger_1a1054e51808fad21855bed48eacd7500e" compoundref="bigint_8cpp" startline="68" endline="80">operator+=</referencedby>
+        <referencedby refid="classbigint_1_1BigInteger_1a8302f877ef948f62500969fe3ee94f39" compoundref="bigint_8cpp" startline="61" endline="66">operator-</referencedby>
         <referencedby refid="classbigint_1_1BigInteger_1a58606545e16b1d3dcff98c13767d3828" compoundref="bigint_8h" startline="42" endline="42">operator-</referencedby>
-        <referencedby refid="classbigint_1_1BigInteger_1acc9708f36e9d0b9d5fb8aad320157b0f" compoundref="bigint_8cpp" startline="83" endline="83">operator-=</referencedby>
-        <referencedby refid="classbigint_1_1BigInteger_1a00e938502751664cf35c3681f338b971" compoundref="bigint_8cpp" startline="112" endline="119">powerOfTen</referencedby>
-        <referencedby refid="classbigint_1_1BigInteger_1aff8518e21f10a4e1645a35dd28595d18" compoundref="bigint_8cpp" startline="151" endline="161">subtractAbs</referencedby>
-        <referencedby refid="classbigint_1_1BigInteger_1a4796ebd40af5f92c92bdea11ca37347f" compoundref="bigint_8cpp" startline="23" endline="45">tryParse</referencedby>
+        <referencedby refid="classbigint_1_1BigInteger_1acc9708f36e9d0b9d5fb8aad320157b0f" compoundref="bigint_8cpp" startline="82" endline="82">operator-=</referencedby>
+        <referencedby refid="classbigint_1_1BigInteger_1a00e938502751664cf35c3681f338b971" compoundref="bigint_8cpp" startline="111" endline="118">powerOfTen</referencedby>
+        <referencedby refid="classbigint_1_1BigInteger_1aff8518e21f10a4e1645a35dd28595d18" compoundref="bigint_8cpp" startline="150" endline="160">subtractAbs</referencedby>
+        <referencedby refid="classbigint_1_1BigInteger_1a4796ebd40af5f92c92bdea11ca37347f" compoundref="bigint_8cpp" startline="22" endline="44">tryParse</referencedby>
       </memberdef>
       <memberdef kind="function" id="classbigint_1_1BigInteger_1a242094a88c817b115cafaf1806ad2d92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -120,7 +120,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/lib/bigint/bigint.h" line="24" column="5" bodyfile="src/lib/bigint/bigint.cpp" bodystart="9" bodyend="21"/>
+        <location file="src/lib/bigint/bigint.h" line="24" column="5" bodyfile="src/lib/bigint/bigint.cpp" bodystart="9" bodyend="20"/>
         <references refid="classbigint_1_1BigInteger_1af11b03746c1253d2fe519f633b6db3e0" compoundref="bigint_8h" startline="48">kBase</references>
         <references refid="classbigint_1_1BigInteger_1aafbd78ed3f7cb2a2c6ddc5d8e32445ea" compoundref="bigint_8h" startline="50">m_digits</references>
         <references refid="classbigint_1_1BigInteger_1a04a232ac4f1182b5947c2e6182fb88a3" compoundref="bigint_8h" startline="49">m_sign</references>
@@ -138,7 +138,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/lib/bigint/bigint.h" line="29" column="17" bodyfile="src/lib/bigint/bigint.cpp" bodystart="47" bodyend="57"/>
+        <location file="src/lib/bigint/bigint.h" line="29" column="17" bodyfile="src/lib/bigint/bigint.cpp" bodystart="46" bodyend="56"/>
         <references refid="classbigint_1_1BigInteger_1aafbd78ed3f7cb2a2c6ddc5d8e32445ea" compoundref="bigint_8h" startline="50">m_digits</references>
         <references refid="classbigint_1_1BigInteger_1a04a232ac4f1182b5947c2e6182fb88a3" compoundref="bigint_8h" startline="49">m_sign</references>
       </memberdef>
@@ -155,9 +155,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/lib/bigint/bigint.h" line="31" column="9" bodyfile="src/lib/bigint/bigint.cpp" bodystart="59" bodyend="59"/>
+        <location file="src/lib/bigint/bigint.h" line="31" column="9" bodyfile="src/lib/bigint/bigint.cpp" bodystart="58" bodyend="58"/>
         <references refid="classbigint_1_1BigInteger_1a04a232ac4f1182b5947c2e6182fb88a3" compoundref="bigint_8h" startline="49">m_sign</references>
-        <referencedby refid="classbigint_1_1BigInteger_1a4796ebd40af5f92c92bdea11ca37347f" compoundref="bigint_8cpp" startline="23" endline="45">tryParse</referencedby>
+        <referencedby refid="classbigint_1_1BigInteger_1a4796ebd40af5f92c92bdea11ca37347f" compoundref="bigint_8cpp" startline="22" endline="44">tryParse</referencedby>
       </memberdef>
       <memberdef kind="function" id="classbigint_1_1BigInteger_1a1cefc099f541a79f4a93198f2de06b55" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -172,7 +172,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/lib/bigint/bigint.h" line="33" column="10" bodyfile="src/lib/bigint/bigint.cpp" bodystart="60" bodyend="60"/>
+        <location file="src/lib/bigint/bigint.h" line="33" column="10" bodyfile="src/lib/bigint/bigint.cpp" bodystart="59" bodyend="59"/>
         <references refid="classbigint_1_1BigInteger_1a04a232ac4f1182b5947c2e6182fb88a3" compoundref="bigint_8h" startline="49">m_sign</references>
       </memberdef>
       <memberdef kind="function" id="classbigint_1_1BigInteger_1a8302f877ef948f62500969fe3ee94f39" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
@@ -188,7 +188,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/lib/bigint/bigint.h" line="36" column="16" bodyfile="src/lib/bigint/bigint.cpp" bodystart="62" bodyend="67"/>
+        <location file="src/lib/bigint/bigint.h" line="36" column="16" bodyfile="src/lib/bigint/bigint.cpp" bodystart="61" bodyend="66"/>
         <references refid="classbigint_1_1BigInteger_1aa5ebb91700ee66941995e9e0a1c5d507">BigInteger</references>
         <references refid="classbigint_1_1BigInteger_1a04a232ac4f1182b5947c2e6182fb88a3" compoundref="bigint_8h" startline="49">m_sign</references>
       </memberdef>
@@ -209,13 +209,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/lib/bigint/bigint.h" line="38" column="16" bodyfile="src/lib/bigint/bigint.cpp" bodystart="69" bodyend="81"/>
-        <references refid="classbigint_1_1BigInteger_1a14b57cd07047dc67628e7542f2acfbac" compoundref="bigint_8cpp" startline="138" endline="149">addAbs</references>
+        <location file="src/lib/bigint/bigint.h" line="38" column="16" bodyfile="src/lib/bigint/bigint.cpp" bodystart="68" bodyend="80"/>
+        <references refid="classbigint_1_1BigInteger_1a14b57cd07047dc67628e7542f2acfbac" compoundref="bigint_8cpp" startline="137" endline="148">addAbs</references>
         <references refid="classbigint_1_1BigInteger_1aa5ebb91700ee66941995e9e0a1c5d507">BigInteger</references>
-        <references refid="classbigint_1_1BigInteger_1afa2c98c3611da550b4504a2117318fe0" compoundref="bigint_8cpp" startline="127" endline="136">compareAbs</references>
+        <references refid="classbigint_1_1BigInteger_1afa2c98c3611da550b4504a2117318fe0" compoundref="bigint_8cpp" startline="126" endline="135">compareAbs</references>
         <references refid="classbigint_1_1BigInteger_1aafbd78ed3f7cb2a2c6ddc5d8e32445ea" compoundref="bigint_8h" startline="50">m_digits</references>
         <references refid="classbigint_1_1BigInteger_1a04a232ac4f1182b5947c2e6182fb88a3" compoundref="bigint_8h" startline="49">m_sign</references>
-        <references refid="classbigint_1_1BigInteger_1aff8518e21f10a4e1645a35dd28595d18" compoundref="bigint_8cpp" startline="151" endline="161">subtractAbs</references>
+        <references refid="classbigint_1_1BigInteger_1aff8518e21f10a4e1645a35dd28595d18" compoundref="bigint_8cpp" startline="150" endline="160">subtractAbs</references>
       </memberdef>
       <memberdef kind="function" id="classbigint_1_1BigInteger_1acc9708f36e9d0b9d5fb8aad320157b0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classbigint_1_1BigInteger_1aa5ebb91700ee66941995e9e0a1c5d507" kindref="member">BigInteger</ref> &amp;</type>
@@ -233,7 +233,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/lib/bigint/bigint.h" line="39" column="16" bodyfile="src/lib/bigint/bigint.cpp" bodystart="83" bodyend="83"/>
+        <location file="src/lib/bigint/bigint.h" line="39" column="16" bodyfile="src/lib/bigint/bigint.cpp" bodystart="82" bodyend="82"/>
         <references refid="classbigint_1_1BigInteger_1aa5ebb91700ee66941995e9e0a1c5d507">BigInteger</references>
       </memberdef>
       <memberdef kind="function" id="classbigint_1_1BigInteger_1a5b27ffacebc3458950b56d14b2d3a9a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -252,12 +252,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/lib/bigint/bigint.h" line="40" column="16" bodyfile="src/lib/bigint/bigint.cpp" bodystart="85" bodyend="110"/>
+        <location file="src/lib/bigint/bigint.h" line="40" column="16" bodyfile="src/lib/bigint/bigint.cpp" bodystart="84" bodyend="109"/>
         <references refid="classbigint_1_1BigInteger_1aa5ebb91700ee66941995e9e0a1c5d507">BigInteger</references>
         <references refid="classbigint_1_1BigInteger_1af11b03746c1253d2fe519f633b6db3e0" compoundref="bigint_8h" startline="48">kBase</references>
         <references refid="classbigint_1_1BigInteger_1aafbd78ed3f7cb2a2c6ddc5d8e32445ea" compoundref="bigint_8h" startline="50">m_digits</references>
         <references refid="classbigint_1_1BigInteger_1a04a232ac4f1182b5947c2e6182fb88a3" compoundref="bigint_8h" startline="49">m_sign</references>
-        <references refid="classbigint_1_1BigInteger_1a1872052751396a6044b6e6bf3d606e0b" compoundref="bigint_8cpp" startline="121" endline="125">normalize</references>
+        <references refid="classbigint_1_1BigInteger_1a1872052751396a6044b6e6bf3d606e0b" compoundref="bigint_8cpp" startline="120" endline="124">normalize</references>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-static-func">
@@ -282,13 +282,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/lib/bigint/bigint.h" line="27" column="17" bodyfile="src/lib/bigint/bigint.cpp" bodystart="23" bodyend="45"/>
+        <location file="src/lib/bigint/bigint.h" line="27" column="17" bodyfile="src/lib/bigint/bigint.cpp" bodystart="22" bodyend="44"/>
         <references refid="classbigint_1_1BigInteger_1aa5ebb91700ee66941995e9e0a1c5d507">BigInteger</references>
         <references refid="classbigint_1_1BigInteger_1aafbd78ed3f7cb2a2c6ddc5d8e32445ea" compoundref="bigint_8h" startline="50">m_digits</references>
         <references refid="classbigint_1_1BigInteger_1a04a232ac4f1182b5947c2e6182fb88a3" compoundref="bigint_8h" startline="49">m_sign</references>
-        <references refid="classbigint_1_1BigInteger_1a1872052751396a6044b6e6bf3d606e0b" compoundref="bigint_8cpp" startline="121" endline="125">normalize</references>
-        <references refid="classbigint_1_1BigInteger_1aaa59e76f31e7245bec495b34cb8a9691" compoundref="bigint_8cpp" startline="59" endline="59">sign</references>
-        <referencedby refid="classbigint_1_1BigInteger_1a00e938502751664cf35c3681f338b971" compoundref="bigint_8cpp" startline="112" endline="119">powerOfTen</referencedby>
+        <references refid="classbigint_1_1BigInteger_1a1872052751396a6044b6e6bf3d606e0b" compoundref="bigint_8cpp" startline="120" endline="124">normalize</references>
+        <references refid="classbigint_1_1BigInteger_1aaa59e76f31e7245bec495b34cb8a9691" compoundref="bigint_8cpp" startline="58" endline="58">sign</references>
+        <referencedby refid="classbigint_1_1BigInteger_1a00e938502751664cf35c3681f338b971" compoundref="bigint_8cpp" startline="111" endline="118">powerOfTen</referencedby>
       </memberdef>
       <memberdef kind="function" id="classbigint_1_1BigInteger_1a00e938502751664cf35c3681f338b971" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classbigint_1_1BigInteger_1aa5ebb91700ee66941995e9e0a1c5d507" kindref="member">BigInteger</ref></type>
@@ -306,9 +306,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/lib/bigint/bigint.h" line="45" column="23" bodyfile="src/lib/bigint/bigint.cpp" bodystart="112" bodyend="119"/>
+        <location file="src/lib/bigint/bigint.h" line="45" column="23" bodyfile="src/lib/bigint/bigint.cpp" bodystart="111" bodyend="118"/>
         <references refid="classbigint_1_1BigInteger_1aa5ebb91700ee66941995e9e0a1c5d507">BigInteger</references>
-        <references refid="classbigint_1_1BigInteger_1a4796ebd40af5f92c92bdea11ca37347f" compoundref="bigint_8cpp" startline="23" endline="45">tryParse</references>
+        <references refid="classbigint_1_1BigInteger_1a4796ebd40af5f92c92bdea11ca37347f" compoundref="bigint_8cpp" startline="22" endline="44">tryParse</references>
       </memberdef>
     </sectiondef>
     <sectiondef kind="friend">
@@ -395,12 +395,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/lib/bigint/bigint.h" line="52" column="10" bodyfile="src/lib/bigint/bigint.cpp" bodystart="121" bodyend="125"/>
+        <location file="src/lib/bigint/bigint.h" line="52" column="10" bodyfile="src/lib/bigint/bigint.cpp" bodystart="120" bodyend="124"/>
         <references refid="classbigint_1_1BigInteger_1aafbd78ed3f7cb2a2c6ddc5d8e32445ea" compoundref="bigint_8h" startline="50">m_digits</references>
         <references refid="classbigint_1_1BigInteger_1a04a232ac4f1182b5947c2e6182fb88a3" compoundref="bigint_8h" startline="49">m_sign</references>
-        <referencedby refid="classbigint_1_1BigInteger_1a5b27ffacebc3458950b56d14b2d3a9a1" compoundref="bigint_8cpp" startline="85" endline="110">operator*=</referencedby>
-        <referencedby refid="classbigint_1_1BigInteger_1aff8518e21f10a4e1645a35dd28595d18" compoundref="bigint_8cpp" startline="151" endline="161">subtractAbs</referencedby>
-        <referencedby refid="classbigint_1_1BigInteger_1a4796ebd40af5f92c92bdea11ca37347f" compoundref="bigint_8cpp" startline="23" endline="45">tryParse</referencedby>
+        <referencedby refid="classbigint_1_1BigInteger_1a5b27ffacebc3458950b56d14b2d3a9a1" compoundref="bigint_8cpp" startline="84" endline="109">operator*=</referencedby>
+        <referencedby refid="classbigint_1_1BigInteger_1aff8518e21f10a4e1645a35dd28595d18" compoundref="bigint_8cpp" startline="150" endline="160">subtractAbs</referencedby>
+        <referencedby refid="classbigint_1_1BigInteger_1a4796ebd40af5f92c92bdea11ca37347f" compoundref="bigint_8cpp" startline="22" endline="44">tryParse</referencedby>
       </memberdef>
       <memberdef kind="function" id="classbigint_1_1BigInteger_1a14b57cd07047dc67628e7542f2acfbac" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -418,11 +418,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/lib/bigint/bigint.h" line="54" column="10" bodyfile="src/lib/bigint/bigint.cpp" bodystart="138" bodyend="149"/>
+        <location file="src/lib/bigint/bigint.h" line="54" column="10" bodyfile="src/lib/bigint/bigint.cpp" bodystart="137" bodyend="148"/>
         <references refid="classbigint_1_1BigInteger_1aa5ebb91700ee66941995e9e0a1c5d507">BigInteger</references>
         <references refid="classbigint_1_1BigInteger_1af11b03746c1253d2fe519f633b6db3e0" compoundref="bigint_8h" startline="48">kBase</references>
         <references refid="classbigint_1_1BigInteger_1aafbd78ed3f7cb2a2c6ddc5d8e32445ea" compoundref="bigint_8h" startline="50">m_digits</references>
-        <referencedby refid="classbigint_1_1BigInteger_1a1054e51808fad21855bed48eacd7500e" compoundref="bigint_8cpp" startline="69" endline="81">operator+=</referencedby>
+        <referencedby refid="classbigint_1_1BigInteger_1a1054e51808fad21855bed48eacd7500e" compoundref="bigint_8cpp" startline="68" endline="80">operator+=</referencedby>
       </memberdef>
       <memberdef kind="function" id="classbigint_1_1BigInteger_1aff8518e21f10a4e1645a35dd28595d18" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -440,12 +440,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/lib/bigint/bigint.h" line="55" column="10" bodyfile="src/lib/bigint/bigint.cpp" bodystart="151" bodyend="161"/>
+        <location file="src/lib/bigint/bigint.h" line="55" column="10" bodyfile="src/lib/bigint/bigint.cpp" bodystart="150" bodyend="160"/>
         <references refid="classbigint_1_1BigInteger_1aa5ebb91700ee66941995e9e0a1c5d507">BigInteger</references>
         <references refid="classbigint_1_1BigInteger_1af11b03746c1253d2fe519f633b6db3e0" compoundref="bigint_8h" startline="48">kBase</references>
         <references refid="classbigint_1_1BigInteger_1aafbd78ed3f7cb2a2c6ddc5d8e32445ea" compoundref="bigint_8h" startline="50">m_digits</references>
-        <references refid="classbigint_1_1BigInteger_1a1872052751396a6044b6e6bf3d606e0b" compoundref="bigint_8cpp" startline="121" endline="125">normalize</references>
-        <referencedby refid="classbigint_1_1BigInteger_1a1054e51808fad21855bed48eacd7500e" compoundref="bigint_8cpp" startline="69" endline="81">operator+=</referencedby>
+        <references refid="classbigint_1_1BigInteger_1a1872052751396a6044b6e6bf3d606e0b" compoundref="bigint_8cpp" startline="120" endline="124">normalize</references>
+        <referencedby refid="classbigint_1_1BigInteger_1a1054e51808fad21855bed48eacd7500e" compoundref="bigint_8cpp" startline="68" endline="80">operator+=</referencedby>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-static-func">
@@ -469,17 +469,19 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/lib/bigint/bigint.h" line="53" column="16" bodyfile="src/lib/bigint/bigint.cpp" bodystart="127" bodyend="136"/>
+        <location file="src/lib/bigint/bigint.h" line="53" column="16" bodyfile="src/lib/bigint/bigint.cpp" bodystart="126" bodyend="135"/>
         <references refid="classbigint_1_1BigInteger_1aa5ebb91700ee66941995e9e0a1c5d507">BigInteger</references>
         <references refid="classbigint_1_1BigInteger_1aafbd78ed3f7cb2a2c6ddc5d8e32445ea" compoundref="bigint_8h" startline="50">m_digits</references>
-        <referencedby refid="classbigint_1_1BigInteger_1a1054e51808fad21855bed48eacd7500e" compoundref="bigint_8cpp" startline="69" endline="81">operator+=</referencedby>
+        <referencedby refid="classbigint_1_1BigInteger_1a1054e51808fad21855bed48eacd7500e" compoundref="bigint_8cpp" startline="68" endline="80">operator+=</referencedby>
       </memberdef>
     </sectiondef>
     <briefdescription>
 <para>Библиотека точной арифметики для задачи с длинными координатами. </para>
     </briefdescription>
     <detaileddescription>
-<para>Знаковое целое произвольной длины в базе <computeroutput>10^9</computeroutput>. \par Инвариант: Ноль хранится только со знаком <computeroutput>0</computeroutput> и без старших нулевых блоков. <xrefsect id="todo_1_todo000002"><xreftitle>Необходимо сделать</xreftitle><xrefdescription><para>Реализовать деление с остатком, если библиотека выйдет за рамки задачи 3. </para>
+<para>Знаковое целое произвольной длины в базе <computeroutput>10^9</computeroutput>. <simplesect kind="par"><title>Инвариант: Ноль хранится только со знаком <computeroutput>0</computeroutput> и без старших нулевых блоков.</title><para></para>
+</simplesect>
+<xrefsect id="todo_1_todo000002"><xreftitle>Необходимо сделать</xreftitle><xrefdescription><para>Реализовать деление с остатком, если библиотека выйдет за рамки задачи 3. </para>
 </xrefdescription></xrefsect></para>
     </detaileddescription>
     <collaborationgraph>

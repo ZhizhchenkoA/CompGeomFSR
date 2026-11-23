@@ -26,14 +26,16 @@
 <para>Векторное произведение <computeroutput>(b - a) x (c - a)</computeroutput>. </para>
         </briefdescription>
         <detaileddescription>
-<para><formula id="2">\[\operatorname{cross}(a,b,c) = (b_x-a_x)(c_y-a_y) - (b_y-a_y)(c_x-a_x).\]</formula> Положительно, если обход <computeroutput>a -&gt; b -&gt; c</computeroutput> против часовой стрелки. \par Сложность: O(1) </para>
+<para><formula id="2">\[\operatorname{cross}(a,b,c) = (b_x-a_x)(c_y-a_y) - (b_y-a_y)(c_x-a_x).\]</formula> Положительно, если обход <computeroutput>a -&gt; b -&gt; c</computeroutput> против часовой стрелки. <simplesect kind="par"><title>Сложность: O(1)</title><para></para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="src/lib/geometry/predicates.cpp" line="8" column="8" bodyfile="src/lib/geometry/predicates.cpp" bodystart="8" bodyend="11" declfile="src/lib/geometry/predicates.h" declline="21" declcolumn="8"/>
         <references refid="structgeometry_1_1Point_1ad011726194a14d580d46c95bb1b57404" compoundref="point_8h" startline="14">geometry::Point::x</references>
         <references refid="structgeometry_1_1Point_1a58d50e43eb0617b09d14b2be1b1d054e" compoundref="point_8h" startline="15">geometry::Point::y</references>
-        <referencedby refid="classGeometryPage_1aa685131d4c04dafba54ab095dc78952e" compoundref="geometrypage_8cpp" startline="301" endline="343">GeometryPage::computeTurn</referencedby>
+        <referencedby refid="classGeometryPage_1aa685131d4c04dafba54ab095dc78952e" compoundref="geometrypage_8cpp" startline="364" endline="416">GeometryPage::computeTurn</referencedby>
         <referencedby refid="namespacegeometry_1a6dfabff82b63c795670a97271b9908d2" compoundref="convex__hull_8cpp" startline="18" endline="52">geometry::convexHull</referencedby>
         <referencedby refid="namespacegeometry_1a1d29367c0cb96e7c1a1b871b786ffacd" compoundref="predicates_8cpp" startline="13" endline="24">geometry::turn</referencedby>
       </memberdef>

@@ -8,6 +8,6 @@ var classLongArithmeticPage =
     [ "setLargeExample", "classLongArithmeticPage.html#a4cb85f2022c38fc5c04014320d877c0a", null ],
     [ "setNearLineExample", "classLongArithmeticPage.html#a7107e57681d5bdcd8698b2b08c0943fc", null ],
     [ "updateIfOnline", "classLongArithmeticPage.html#ae2449c28a8b53a186a8cf785e918b8ef", null ],
-    [ "m_fields", "classLongArithmeticPage.html#a11140be3386cb7d09f97fb2f6485bcdc", null ],
+    [ "m_fields", "classLongArithmeticPage.html#aeecc2762447e60a65f9d49019adafbab", null ],
     [ "ui", "classLongArithmeticPage.html#a658d7b4d612a138c0fe800b8b18d8c5e", null ]
 ];

@@ -7,8 +7,9 @@
 class QLineEdit;
 
 QT_BEGIN_NAMESPACE
-namespace Ui {
-class LongArithmeticPage;
+namespace Ui
+{
+    class LongArithmeticPage;
 }
 QT_END_NAMESPACE
 
@@ -16,10 +17,11 @@ QT_END_NAMESPACE
  * @brief Форма задачи 3: точный предикат без графического холста.
  * Поля принимают целые, десятичные и экспоненциальные строки.
  */
-class LongArithmeticPage : public QWidget {
+class LongArithmeticPage : public QWidget
+{
     Q_OBJECT
 public:
-    explicit LongArithmeticPage(QWidget* parent = nullptr);
+    explicit LongArithmeticPage(QWidget *parent = nullptr);
     ~LongArithmeticPage() override;
 
 private slots:
@@ -29,9 +31,9 @@ private slots:
     void setInvalidExample();
 
 private:
-    void setCoordinates(const std::array<QString, 6>& values);
+    void setCoordinates(const std::array<QString, 6> &values);
     void updateIfOnline();
 
-    Ui::LongArithmeticPage* ui;
-    std::array<QLineEdit*, 6> m_fields{};
+    Ui::LongArithmeticPage *ui;
+    std::array<QLineEdit *, 6> m_fields{};
 };

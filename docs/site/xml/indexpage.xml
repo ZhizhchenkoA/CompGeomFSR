@@ -15,7 +15,7 @@
 </listitem><listitem><para><computeroutput>@defgroup</computeroutput> и <computeroutput>@ingroup</computeroutput> — API разделён на предметные библиотеки.</para>
 </listitem><listitem><para>Graphviz (<computeroutput>HAVE_DOT = YES</computeroutput>) — строит графы классов, зависимостей подключаемых файлов и вызовов.</para>
 </listitem><listitem><para><computeroutput>@example</computeroutput> — исходный пример появляется в специальном разделе «Примеры».</para>
-</listitem><listitem><para>пользовательские псевдонимы <computeroutput>\\complexity</computeroutput>, <computeroutput>\\invariant</computeroutput>, <computeroutput>\\educational</computeroutput> — единый стиль методических заметок.</para>
+</listitem><listitem><para>пользовательские псевдонимы <computeroutput>\\complexity{...}</computeroutput>, <computeroutput>\\invariant{...}</computeroutput>, <computeroutput>\\educational{...}</computeroutput> — единый стиль методических заметок.</para>
 </listitem><listitem><para><computeroutput>@pre</computeroutput>, <computeroutput>@post</computeroutput>, <computeroutput>@note</computeroutput>, <computeroutput>@warning</computeroutput>, <computeroutput>@see</computeroutput> и <computeroutput>@since</computeroutput> описывают контракт API прямо рядом с функцией.</para>
 </listitem><listitem><para><computeroutput>@f$ ... @f$</computeroutput> и MathJax отображают формулы, а <computeroutput>@dot ... @enddot</computeroutput> строит схему конвейера точного предиката.</para>
 </listitem><listitem><para><computeroutput>@todo</computeroutput> формирует отдельный список дальнейших улучшений из реальных комментариев к коду.</para>

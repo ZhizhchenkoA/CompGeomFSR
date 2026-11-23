@@ -21,5 +21,6 @@ var namespacegeometry =
     [ "delaunayTriangulation", "namespacegeometry.html#a9610a583f6dfe92c309727c15b9b3933", null ],
     [ "intersectSegments", "namespacegeometry.html#a88e1232746c80a5b9704832bd536724d", null ],
     [ "onSegment", "namespacegeometry.html#aa0dbefb85d58b0fc5c2ff74ff1d1c94b", null ],
+    [ "samePoint", "namespacegeometry.html#afce65baff68f7af2b6856661cf51a7f0", null ],
     [ "turn", "namespacegeometry.html#a1d29367c0cb96e7c1a1b871b786ffacd", null ]
 ];

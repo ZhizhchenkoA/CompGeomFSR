@@ -214,7 +214,6 @@ void GeometryCanvas::paintEvent(QPaintEvent* event)
     painter.setRenderHint(QPainter::Antialiasing);
     painter.fillRect(rect(), QColor(250, 252, 255));
 
-    // Ненавязчивая координатная сетка, как на карточке задания.
     painter.setPen(QPen(QColor(224, 231, 240), 1.0));
     constexpr int gridStep = 40;
     for (int x = 0; x <= width(); x += gridStep) {
@@ -283,9 +282,8 @@ void GeometryCanvas::paintEvent(QPaintEvent* event)
             for (const QPointF& vertex : contour) polygon << vertex;
             path.addPolygon(polygon);
         }
-        // Сначала заливаем все контуры единым путём с правилом odd-even:
-        // так внутренние контуры остаются отверстиями. Границы рисуем
-        // отдельно для каждого контура — это гарантирует замыкание каждого ребра.
+        
+
         painter.setPen(Qt::NoPen);
         painter.setBrush(QColor(m_polygonResultColor.red(), m_polygonResultColor.green(),
                                 m_polygonResultColor.blue(), 145));
@@ -375,8 +373,6 @@ void GeometryCanvas::drawTurnGuide(QPainter& painter) const
         return; // у A = B нет направленной прямой и полуплоскостей
     }
 
-    // В экранной системе Y направлен вниз. Нормаль (dy, -dx) указывает
-    // в математическую левую полуплоскость, для которой turn(A,B,P) == 1.
     const QPointF direction = d / length;
     const QPointF leftNormal(direction.y(), -direction.x());
     const double reach = std::hypot(static_cast<double>(width()), static_cast<double>(height())) * 2.0;

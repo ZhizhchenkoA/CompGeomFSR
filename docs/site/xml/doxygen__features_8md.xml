@@ -53,9 +53,9 @@
 <codeline></codeline>
 <codeline><highlight class="normal">|<sp/>Псевдоним<sp/>|<sp/>Заголовок<sp/>в<sp/>HTML<sp/>|<sp/>Пример<sp/>использования<sp/>|</highlight></codeline>
 <codeline><highlight class="normal">|---|---|---|</highlight></codeline>
-<codeline><highlight class="normal">|<sp/>`@complexity`<sp/>|<sp/>«Сложность»<sp/>|<sp/>`src/lib/geometry/convex_hull.h`,<sp/>`src/lib/geometry/delaunay.h`<sp/>|</highlight></codeline>
-<codeline><highlight class="normal">|<sp/>`@invariant`<sp/>|<sp/>«Инвариант»<sp/>|<sp/>`src/lib/geometry/convex_hull.h`,<sp/>`src/lib/bigint/bigint.h`<sp/>|</highlight></codeline>
-<codeline><highlight class="normal">|<sp/>`@educational`<sp/>|<sp/>«Учебная<sp/>заметка»<sp/>|<sp/>`src/lib/geometry/predicates.h`<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`@complexity{...}`<sp/>|<sp/>«Сложность»<sp/>|<sp/>`src/lib/geometry/convex_hull.h`,<sp/>`src/lib/geometry/delaunay.h`<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`@invariant{...}`<sp/>|<sp/>«Инвариант»<sp/>|<sp/>`src/lib/geometry/convex_hull.h`,<sp/>`src/lib/bigint/bigint.h`<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`@educational{...}`<sp/>|<sp/>«Учебная<sp/>заметка»<sp/>|<sp/>`src/lib/geometry/predicates.h`<sp/>|</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">@section<sp/>doxy_math<sp/>Формулы:<sp/>LaTeX<sp/>и<sp/>MathJax</highlight></codeline>
 <codeline></codeline>

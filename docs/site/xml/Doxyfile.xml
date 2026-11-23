@@ -43,9 +43,9 @@
   <option  id='SEPARATE_MEMBER_PAGES' default='yes' type='bool'><value>NO</value></option>
   <option  id='TAB_SIZE' default='yes' type='int'><value>4</value></option>
   <option  id='ALIASES' default='no' type='stringlist'>
-    <value><![CDATA["complexity=\\par Сложность:"]]></value>
-    <value><![CDATA["invariant=\\par Инвариант:"]]></value>
-    <value><![CDATA["educational=\\par Учебная заметка:"]]></value>
+    <value><![CDATA["complexity{1}=\par Сложность: \1"]]></value>
+    <value><![CDATA["invariant{1}=\par Инвариант: \1"]]></value>
+    <value><![CDATA["educational{1}=\par Учебная заметка: \1"]]></value>
   </option>
   <option  id='OPTIMIZE_OUTPUT_FOR_C' default='yes' type='bool'><value>NO</value></option>
   <option  id='OPTIMIZE_OUTPUT_JAVA' default='yes' type='bool'><value>NO</value></option>
