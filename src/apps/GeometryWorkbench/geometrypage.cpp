@@ -6,6 +6,7 @@
 #include <QComboBox>
 #include <QLabel>
 #include <QSizePolicy>
+#include <QStackedWidget>
 #include <QString>
 #include <array>
 #include <cmath>
@@ -37,8 +38,7 @@ GeometryPage::GeometryPage(QWidget *parent)
     ui->mainSplitter->setStretchFactor(1, 1);
     ui->mainSplitter->setSizes({430, 800});
     ui->controlPanel->setMinimumWidth(390);
-    ui->canvas->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
-    ui->longArithmeticPage->hide();
+    ui->contentStack->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
 
     // QComboBox::currentIndexChanged перегружен (int / QString),
     // поэтому подключаем вручную, чтобы не было двойного срабатывания.
@@ -185,8 +185,7 @@ void GeometryPage::selectTask(int task)
 
 void GeometryPage::showLongArithmeticPage(bool visible)
 {
-    ui->canvas->setVisible(!visible);
-    ui->longArithmeticPage->setVisible(visible);
+    ui->contentStack->setCurrentIndex(visible ? 1 : 0);
 }
 
 void GeometryPage::onTaskChanged(int index)

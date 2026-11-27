@@ -4,6 +4,8 @@
 #include <array>
 #include <cmath>
 
+#include <QSignalBlocker>
+
 #include "bigint/exact_predicate.h"
 
 namespace {
@@ -77,7 +79,10 @@ void LongArithmeticPage::calculate()
 
 void LongArithmeticPage::setCoordinates(const std::array<QString, 6>& values)
 {
-    for (int i = 0; i < 6; ++i) m_fields[i]->setText(values[i]);
+    for (int i = 0; i < 6; ++i) {
+        const QSignalBlocker blocker(m_fields[i]);
+        m_fields[i]->setText(values[i]);
+    }
     calculate();
 }
 

@@ -142,8 +142,13 @@
        </item>
       </layout>
      </widget>
-     <widget class="GeometryCanvas" name="canvas" native="true"/>
-     <widget class="LongArithmeticPage" name="longArithmeticPage" native="true"/>
+     <widget class="QStackedWidget" name="contentStack">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="GeometryCanvas" name="canvas" native="true"/>
+      <widget class="LongArithmeticPage" name="longArithmeticPage" native="true"/>
+     </widget>
     </widget>
    </item>
   </layout>
