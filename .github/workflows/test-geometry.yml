@@ -1,13 +1,7 @@
-name: Test geometry
+name: CI — build and test
 
 on:
   push:
-    paths:
-      - 'src/lib/geometry/**'
-      - 'tests/**'
-      - 'CMakeLists.txt'
-      - 'src/**/CMakeLists.txt'
-      - '.github/workflows/test-geometry.yml'
   pull_request:
   workflow_dispatch:
 
@@ -15,38 +9,97 @@ permissions:
   contents: read
 
 jobs:
-  test:
-    runs-on: ubuntu-latest
+  build-and-test:
+    name: Qt 6 · ${{ matrix.compiler.name }} · ${{ matrix.build_type }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
     strategy:
       fail-fast: false
       matrix:
-        include:
-          - qt: '5'
-            package: qtbase5-dev
-          - qt: '6'
-            package: qt6-base-dev
+        compiler:
+          - name: GCC
+            package: g++
+            executable: g++
+          - name: Clang
+            package: clang
+            executable: clang++
+        build_type: [Debug, Release]
+
+    env:
+      CCACHE_DIR: ${{ github.workspace }}/.ccache
+      CCACHE_MAXSIZE: 200M
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Check out sources
+        uses: actions/checkout@v4
 
-      - name: Install Qt ${{ matrix.qt }}
+      - name: Install build dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install --yes ${{ matrix.package }}
+          sudo apt-get install --yes --no-install-recommends \
+            cmake ninja-build ccache qt6-base-dev ${{ matrix.compiler.package }}
+
+      - name: Restore compiler cache
+        uses: actions/cache@v4
+        with:
+          path: .ccache
+          key: ccache-${{ runner.os }}-qt6-${{ matrix.compiler.name }}-${{ matrix.build_type }}-${{ github.sha }}
+          restore-keys: |
+            ccache-${{ runner.os }}-qt6-${{ matrix.compiler.name }}-${{ matrix.build_type }}-
 
       - name: Configure
-        run: cmake -S . -B build -DCMAKE_BUILD_TYPE=Debug -DBUILD_TESTING=ON -DGEOMETRY_QT_VERSION=${{ matrix.qt }}
+        shell: bash
+        run: |
+          set -o pipefail
+          cmake -S . -B build -G Ninja \
+            -DCMAKE_BUILD_TYPE=${{ matrix.build_type }} \
+            -DCMAKE_CXX_COMPILER=${{ matrix.compiler.executable }} \
+            -DCMAKE_CXX_COMPILER_LAUNCHER=ccache \
+            -DBUILD_TESTING=ON \
+            -DGEOMETRY_QT_VERSION=6 \
+            2>&1 | tee configure.log
 
       - name: Build
-        run: cmake --build build --parallel 2
+        shell: bash
+        run: |
+          set -o pipefail
+          cmake --build build --parallel 2 2>&1 | tee build.log
+          ccache --show-stats | tee ccache.log
 
-      - name: Run tests
-        run: ctest --test-dir build --output-on-failure --output-junit test-results.xml
+      - name: Test
+        shell: bash
+        run: |
+          set -o pipefail
+          ctest --test-dir build --parallel 2 --output-on-failure \
+            --output-junit test-results.xml 2>&1 | tee test.log
 
-      - name: Upload test report
+      - name: Package Linux application
+        if: ${{ matrix.compiler.name == 'GCC' && matrix.build_type == 'Release' }}
+        run: |
+          mkdir -p dist
+          tar -C build/src/apps/GeometryWorkbench -czf \
+            dist/GeometryWorkbench-linux-qt6-release.tar.gz GeometryWorkbench
+
+      - name: Upload diagnostic logs and test report
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: qt${{ matrix.qt }}-test-results
-          path: build/test-results.xml
-          if-no-files-found: ignore
+          name: diagnostics-qt6-${{ matrix.compiler.name }}-${{ matrix.build_type }}
+          path: |
+            configure.log
+            build.log
+            ccache.log
+            test.log
+            build/test-results.xml
+            build/Testing/Temporary/LastTest.log
+          if-no-files-found: warn
+          retention-days: 14
+
+      - name: Upload Linux application
+        if: ${{ matrix.compiler.name == 'GCC' && matrix.build_type == 'Release' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: GeometryWorkbench-linux-qt6-release
+          path: dist/GeometryWorkbench-linux-qt6-release.tar.gz
+          if-no-files-found: error
+          retention-days: 14

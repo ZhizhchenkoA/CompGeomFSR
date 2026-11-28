@@ -1,20 +1,28 @@
 # Проект 3. Автоматическое тестирование библиотеки `geometry`
 
+[![CI: сборка и тесты](https://github.com/ZhizhchenkoA/CompGeomFSR/actions/workflows/test-geometry.yml/badge.svg)](https://github.com/ZhizhchenkoA/CompGeomFSR/actions/workflows/test-geometry.yml)
+
 Этот репозиторий содержит учебное Qt-приложение Geometry Workbench и независимую от Qt библиотеку геометрических алгоритмов. В проекте 3 для неё создана система автоматического тестирования по заданию «Система автоматического тестирования geometry»: отдельные исполняемые тесты, интеграция с CTest и проверка в GitHub Actions.
 
 Тесты используют **Qt Test**, поскольку Qt уже требуется приложению. Сама библиотека `geometry` остаётся обычным C++: тестовый фреймворк подключён только к тестовым целям.
 
+## Автоматическая проверка (проект 2)
+
+Workflow [`.github/workflows/test-geometry.yml`](.github/workflows/test-geometry.yml) автоматически запускается на каждый push и pull request. Он получает исходники, устанавливает зависимости, конфигурирует CMake, собирает приложение и запускает все тесты CTest. Проверяются четыре сочетания GCC/Clang и Debug/Release на Qt 6. Ошибка сборки или теста делает соответствующее задание и весь workflow неуспешными. Логи и JUnit-отчёт сохраняются как артефакты; сборка GCC + Release дополнительно публикует архив с исполняемым файлом приложения.
+
+Подробное устройство CI, локальный запуск и сценарий показа на защите описаны в [README_CI.md](README_CI.md).
+
 ## Быстрый старт
 
-Требуются CMake, компилятор с поддержкой C++17, Qt 5 или Qt 6 с компонентами Widgets и Test. На Debian/Ubuntu подходят `qtbase5-dev` либо `qt6-base-dev`.
+Для тестов требуются CMake, компилятор с поддержкой C++17 и Qt 6 с компонентами Widgets и Test. На Debian/Ubuntu подходит `qt6-base-dev`.
 
 ```bash
-cmake -S . -B build -DBUILD_TESTING=ON
+cmake -S . -B build -DBUILD_TESTING=ON -DGEOMETRY_QT_VERSION=6
 cmake --build build -j2
 ctest --test-dir build --output-on-failure
 ```
 
-Если установлены обе версии Qt, для проверки конкретной версии добавьте при настройке `-DGEOMETRY_QT_VERSION=5` или `-DGEOMETRY_QT_VERSION=6`. CI задаёт этот параметр для каждой строки матрицы.
+Тестовая конфигурация CMake требует Qt 6. Сборка одного приложения с Qt 5 по-прежнему возможна при `-DBUILD_TESTING=OFF`.
 
 Запуск GUI-приложения: `./build/src/apps/GeometryWorkbench/GeometryWorkbench`. Для сборки приложения без тестов: `cmake -S . -B build -DBUILD_TESTING=OFF`.
 
@@ -39,7 +47,7 @@ ctest --test-dir build --output-on-failure
 5. **Быстрый выбор нужной области.** `ctest -R geometry.hull --test-dir build --output-on-failure` запускает одну область; `ctest -L geometry --test-dir build` использует метки CTest; `ctest --test-dir build -N` показывает зарегистрированные цели без запуска.
 6. **Повторение и подробный вывод.** `ctest --test-dir build --repeat until-fail:20 --output-on-failure` помогает заметить нестабильный тест; `build/tests/test_segments -v2` показывает отдельные сценарии Qt Test.
 7. **Машиночитаемые отчёты.** `ctest --test-dir build --output-junit test-results.xml` создаёт JUnit XML; `build/tests/test_predicates -o result.xml,xml` создаёт подробный Qt Test XML. CI сохраняет отчёты как артефакты.
-8. **Матрица Qt 5/6 в CI.** [Workflow](.github/workflows/test-geometry.yml) собирает проект и запускает тесты для обеих версий Qt при push и pull request. `fail-fast: false` показывает результат каждой версии независимо.
+8. **Матрица компиляторов и режимов в CI.** [Workflow](.github/workflows/test-geometry.yml) собирает проект с Qt 6 в четырёх сочетаниях GCC/Clang и Debug/Release при push и pull request. `fail-fast: false` показывает результат каждого сочетания независимо.
 9. **Исчерпывающий перебор на маленькой сетке.** Тест `allSmallGridPairsAreSymmetric` проверяет все 6561 пары отрезков, составленных из девяти узлов сетки 3×3, включая нулевые отрезки. Для каждого случая сравниваются результаты при перестановке отрезков; порядок концов общей части не влияет на сравнение.
 10. **Алгебра множеств через площади.** Для многоугольников проверяются равенства `S(A ∪ B) + S(A ∩ B) = S(A) + S(B)` и `S(A \ B) + S(A ∩ B) = S(A)`. Такой оракул проверяет целую операцию, не привязываясь к первой вершине контура.
 11. **Регрессионный случай для общей границы.** Два прямоугольника, касающиеся всей стороной, обнаружили ошибку: объединение теряло контур. Исправление различает общие рёбра с одинаковым и противоположным направлением; тесты также охватывают частично общую и диагональную границы.
