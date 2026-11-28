@@ -49,6 +49,23 @@ bool strictlyInside(const std::vector<Point>& polygon, const Point& point, doubl
     return true;
 }
 
+int sharedEdgeDirection(const Fragment& fragment, const std::vector<Point>& polygon, double eps)
+{
+    const Point middle{(fragment.from.x + fragment.to.x) / 2.0,
+                       (fragment.from.y + fragment.to.y) / 2.0};
+    const double dx = fragment.to.x - fragment.from.x;
+    const double dy = fragment.to.y - fragment.from.y;
+    for (std::size_t i = 0; i < polygon.size(); ++i) {
+        const Point& a = polygon[i];
+        const Point& b = polygon[(i + 1) % polygon.size()];
+        if (!onSegment(a, b, middle, eps)) continue;
+        const double dot = dx * (b.x - a.x) + dy * (b.y - a.y);
+        if (dot > 0) return 1;
+        if (dot < 0) return -1;
+    }
+    return 0;
+}
+
 double parameterOnEdge(const Point& first, const Point& second, const Point& point)
 {
     const double dx = second.x - first.x;
@@ -152,9 +169,14 @@ PolygonSet convexPolygonBoolean(const std::vector<Point>& first, const std::vect
             const bool strict = strictlyInside(other, middle, tolerance);
             const bool onOrInside = insideOrOn(other, middle, tolerance);
             // 0: строго внутри, 1: внутри или на границе,
-            // 2: снаружи или на границе, 3: строго снаружи.
+            // 2: снаружи или общая граница того же направления,
+            // 3: строго снаружи, 4: снаружи или общая граница противоположного направления.
+            const int boundaryDirection = onOrInside && !strict
+                ? sharedEdgeDirection(fragment, other, tolerance) : 0;
             const bool keep = selection == 0 ? strict : selection == 1 ? onOrInside :
-                              selection == 2 ? !strict : !onOrInside;
+                              selection == 2 ? !onOrInside || boundaryDirection > 0 :
+                              selection == 3 ? !onOrInside :
+                              !onOrInside || boundaryDirection < 0;
             if (!keep) {
                 continue;
             }
@@ -173,7 +195,7 @@ PolygonSet convexPolygonBoolean(const std::vector<Point>& first, const std::vect
         selectParts(secondParts, first, 3, false);
         break;
     case ConvexPolygonOperation::Difference:
-        selectParts(firstParts, second, 3, false);
+        selectParts(firstParts, second, 4, false);
         selectParts(secondParts, first, 0, true);
         break;
     }

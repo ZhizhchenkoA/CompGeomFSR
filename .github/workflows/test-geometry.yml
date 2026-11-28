@@ -1,0 +1,52 @@
+name: Test geometry
+
+on:
+  push:
+    paths:
+      - 'src/lib/geometry/**'
+      - 'tests/**'
+      - 'CMakeLists.txt'
+      - 'src/**/CMakeLists.txt'
+      - '.github/workflows/test-geometry.yml'
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - qt: '5'
+            package: qtbase5-dev
+          - qt: '6'
+            package: qt6-base-dev
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Qt ${{ matrix.qt }}
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes ${{ matrix.package }}
+
+      - name: Configure
+        run: cmake -S . -B build -DCMAKE_BUILD_TYPE=Debug -DBUILD_TESTING=ON -DGEOMETRY_QT_VERSION=${{ matrix.qt }}
+
+      - name: Build
+        run: cmake --build build --parallel 2
+
+      - name: Run tests
+        run: ctest --test-dir build --output-on-failure --output-junit test-results.xml
+
+      - name: Upload test report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: qt${{ matrix.qt }}-test-results
+          path: build/test-results.xml
+          if-no-files-found: ignore
