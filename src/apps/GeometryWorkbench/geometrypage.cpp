@@ -356,7 +356,7 @@ void GeometryPage::handleTurnClick(const QPointF &screenPos)
     }
     else
     {
-        ui->resultLabel->setText(QString("Результат: точек %1 из 3").arg(m_points.size()));
+        ui->resultLabel->setText(QString("Результат: точек %1 из 3").arg(static_cast<qulonglong>(m_points.size())));
     }
 }
 
@@ -468,7 +468,7 @@ void GeometryPage::handleIntersectionClick(const QPointF &screenPos)
     }
     else
     {
-        ui->resultLabel->setText(QString("Точек: %1 из 4").arg(m_points.size()));
+        ui->resultLabel->setText(QString("Точек: %1 из 4").arg(static_cast<qulonglong>(m_points.size())));
     }
 }
 
@@ -536,7 +536,7 @@ void GeometryPage::handleHullClick(const QPointF &screenPos)
     }
     else
     {
-        ui->resultLabel->setText(QString("Точек: %1").arg(m_points.size()));
+        ui->resultLabel->setText(QString("Точек: %1").arg(static_cast<qulonglong>(m_points.size())));
     }
 }
 
@@ -564,8 +564,8 @@ void GeometryPage::computeHull()
         screenHull.push_back(geometry_qt::toScreen(point));
     }
     ui->canvas->setConvexHull(screenHull);
-    ui->resultLabel->setText(QString("Вершин оболочки: %1").arg(hull.size()));
-    emit logMessage(QString("Выпуклая оболочка: %1 вершин.").arg(hull.size()));
+    ui->resultLabel->setText(QString("Вершин оболочки: %1").arg(static_cast<qulonglong>(hull.size())));
+    emit logMessage(QString("Выпуклая оболочка: %1 вершин.").arg(static_cast<qulonglong>(hull.size())));
 }
 
 // --- Задача 6: триангуляция Делоне ---
@@ -581,7 +581,7 @@ void GeometryPage::handleDelaunayClick(const QPointF &screenPos)
     }
     else
     {
-        ui->resultLabel->setText(QString("Точек: %1").arg(m_points.size()));
+        ui->resultLabel->setText(QString("Точек: %1").arg(static_cast<qulonglong>(m_points.size())));
     }
 }
 
@@ -616,8 +616,8 @@ void GeometryPage::computeDelaunay()
                              triangle.circumcircle.radius);
     }
     ui->canvas->setDelaunayTriangles(triangles, circles);
-    ui->resultLabel->setText(QString("Треугольников: %1").arg(triangles.size()));
-    emit logMessage(QString("Триангуляция Делоне: %1 треугольников.").arg(triangles.size()));
+    ui->resultLabel->setText(QString("Треугольников: %1").arg(static_cast<qulonglong>(triangles.size())));
+    emit logMessage(QString("Триангуляция Делоне: %1 треугольников.").arg(static_cast<qulonglong>(triangles.size())));
 }
 
 // --- Задачи 7--9: операции над выпуклыми многоугольниками ---
@@ -638,7 +638,9 @@ void GeometryPage::handlePolygonClick(const QPointF &screenPos)
     }
     else
     {
-        ui->resultLabel->setText(QString("A: %1, B: %2").arg(m_polygonA.size()).arg(m_polygonB.size()));
+        ui->resultLabel->setText(QString("A: %1, B: %2")
+                                     .arg(static_cast<qulonglong>(m_polygonA.size()))
+                                     .arg(static_cast<qulonglong>(m_polygonB.size())));
     }
 }
 
@@ -699,8 +701,9 @@ void GeometryPage::computePolygonOperation()
         resultColor = QColor(225, 29, 72); // разность
     }
     ui->canvas->setPolygonOperation(toScreen(first), toScreen(second), screenResult, resultColor);
-    ui->resultLabel->setText(QString("Контуров результата: %1").arg(result.size()));
-    emit logMessage(QString("Операция над выпуклыми многоугольниками: %1 контуров.").arg(result.size()));
+    ui->resultLabel->setText(QString("Контуров результата: %1").arg(static_cast<qulonglong>(result.size())));
+    emit logMessage(QString("Операция над выпуклыми многоугольниками: %1 контуров.")
+                        .arg(static_cast<qulonglong>(result.size())));
 }
 
 void GeometryPage::handleBezierClick(const QPointF &screenPos)
@@ -713,7 +716,7 @@ void GeometryPage::handleBezierClick(const QPointF &screenPos)
     if (ui->onlineCheckBox->isChecked())
         computeBezier();
     else
-        ui->resultLabel->setText(QString("Контрольных точек: %1").arg(m_points.size()));
+        ui->resultLabel->setText(QString("Контрольных точек: %1").arg(static_cast<qulonglong>(m_points.size())));
 }
 
 void GeometryPage::handleBezierDrag(int index, const QPointF &screenPos)
@@ -743,5 +746,7 @@ void GeometryPage::computeBezier()
         {std::vector<std::vector<QPointF>> r; for(const auto& level:bezier::deCasteljauLevels(m_points,t))r.push_back(convert(level));return r; }();
     const QPointF marker = m_points.empty() ? QPointF() : geometry_qt::toScreen(bezier::deCasteljau(m_points, t));
     ui->canvas->setBezierCurves(curves, levels, marker, m_points.size() >= 2);
-    ui->resultLabel->setText(QString("Контрольных точек: %1, t = %2").arg(m_points.size()).arg(t, 'f', 2));
+    ui->resultLabel->setText(QString("Контрольных точек: %1, t = %2")
+                                 .arg(static_cast<qulonglong>(m_points.size()))
+                                 .arg(t, 0, 'f', 2));
 }
